@@ -1,0 +1,56 @@
+@import "scss_assets/fonts.scss";
+@import "scss_assets/vars.scss";
+
+html {
+    font-size: $mainFontSize;
+    color: $mainFontColor;
+    max-width: 700px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    }
+
+body {
+    font-family: $mainFont;
+	font-size: $mainFontSize;
+    font-weight: $mainFontWeight;
+    margin: 0;
+    padding: 0;
+    }
+
+h1, h2, h3, h4, h5, h6 { 
+    margin: 0; 
+    }
+
+a {
+    text-decoration: none;
+    }
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    }
+
+.wrapper
+{
+    margin-left: 93px;
+    margin-top: 136px;
+    margin-right: 89px;
+   // border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: $smDesktopWidth) {
+        flex-wrap: wrap;
+      }
+}
+
+@import "../blocks/block_buttons/buttons.scss";
+// @import "../blocks/block_profile/profile.scss";
+// @import "../blocks/block_contact/contact.scss";
+// @import "../blocks/block_skills/skills.scss";
+// @import "../blocks/block_education/education.scss";
+// @import "../blocks/block_experience/experience.scss";
+// @import "../blocks/block_software/software.scss";
