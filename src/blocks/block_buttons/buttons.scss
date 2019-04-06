@@ -1,7 +1,7 @@
 .buttons
 {
     width: 100%;
-    .buttonts_wrapper
+    .buttons_wrapper
         {
             // margin-left: 117px;
             // margin-right: 117px;
@@ -10,12 +10,13 @@
                 text-align: center;
                 margin-bottom: 67px;
             }
-            .buttonts_wrapper__buttons-container
+            .buttons_wrapper__buttons-container
             {
                 display: flex;
                 flex-direction:row;
                 justify-content: space-between;
                 align-items: baseline;
+                margin-bottom: 55px;
             
                 .ripple 
                 {

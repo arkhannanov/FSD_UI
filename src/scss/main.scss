@@ -19,6 +19,7 @@ body {
     padding: 0;
     }
 
+
 h1, h2, h3, h4, h5, h6 { 
     margin: 0; 
     }
@@ -40,15 +41,16 @@ main {
     margin-top: 136px;
     margin-right: 89px;
    // border: 1px solid black;
+    align-items: center;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     @media screen and (max-width: $smDesktopWidth) {
         flex-wrap: wrap;
       }
 }
 
 @import "../blocks/block_buttons/buttons.scss";
-// @import "../blocks/block_profile/profile.scss";
+@import "../blocks/block_arrows/arrows.scss";
 // @import "../blocks/block_contact/contact.scss";
 // @import "../blocks/block_skills/skills.scss";
 // @import "../blocks/block_education/education.scss";
