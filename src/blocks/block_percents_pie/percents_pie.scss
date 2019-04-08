@@ -1,0 +1,26 @@
+@import "svg/percents1.scss";
+@import "svg/percents2.scss";
+@import "svg/percents3.scss";
+@import "svg/percents4.scss";
+@import "svg/pie.scss";
+.percents_pie
+    {
+        width: 100%;
+        .percents_pie_wrapper
+        {
+           width: 100%;
+           .percents_pie_wrapper__headline
+           {
+            text-align: center;
+            margin-bottom: 27px;
+           } 
+           .percents_pie_wrapper__container
+           {
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 37px;
+           }
+        }
+    }

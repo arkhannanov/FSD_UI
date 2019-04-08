@@ -1,0 +1,36 @@
+.pie
+    {
+
+        .pie_wrapper
+        {
+            width: 100px;
+            height: 100px;
+            
+
+            // .hole
+            // {
+            //     margin: auto;
+            // }
+
+            // .ring
+            // {
+            //     margin: auto; 
+            // }
+
+            // .segment
+            // {
+            //     width: 100%;
+            //     height: 100%; 
+            // }
+            .number
+            {
+                font-size: 40px;
+                font-weight: 300;
+                color: #9d9d9d;
+                letter-spacing: -2px;
+                line-height: 42px;
+                font-family: $secondFont;
+                transform: translate3d(-22px, 15px, 0px);
+            }
+        }
+    }
