@@ -3,6 +3,9 @@ import './js/slider1.js'
 import './js/slider2.js'
 import './js/stages.js'
 import './js/form.js'
+import './js/toggles.js'
+import './js/tick_boxes.js'
+
 //import './js/postcss.config.js'
 
 //import './css/main.css'
