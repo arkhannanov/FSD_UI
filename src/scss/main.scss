@@ -47,6 +47,21 @@ main {
     @media screen and (max-width: $smDesktopWidth) {
         flex-wrap: wrap;
       }
+    
+    .search_drop_down_user_profile
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .search_drop_down
+        {
+            width: 275px;
+        }
+        .user_profile
+        {
+            width: 275px; 
+        }
+    }
 }
 
 @import "../blocks/block_buttons/buttons.scss";
@@ -55,5 +70,7 @@ main {
 @import "../blocks/block_sliders/sliders.scss";
 @import "../blocks/block_stages/stages.scss";
 @import "../blocks/block_form/form.scss";
+@import "../blocks/block_headline/headline.scss";
+@import "../blocks/block_search/search.scss";
 // @import "../blocks/block_experience/experience.scss";
 // @import "../blocks/block_software/software.scss";

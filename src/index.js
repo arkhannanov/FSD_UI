@@ -5,6 +5,8 @@ import './js/stages.js'
 import './js/form.js'
 import './js/toggles.js'
 import './js/tick_boxes.js'
+import './js/search.js'
+
 
 //import './js/postcss.config.js'
 
