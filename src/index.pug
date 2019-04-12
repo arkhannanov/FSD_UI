@@ -18,9 +18,13 @@ html
 							include blocks/block_headline/headline.pug
 							+headline ("SEARCH / DROP DOWN")
 							include blocks/block_search/search.pug
+							include blocks/block_drop_down/drop_down.pug
 						.user_profile
 							include blocks/block_headline/headline.pug
-							+headline ("USER  PROFILE") 
+							+headline ("USER  PROFILE")
+							include blocks/block_user/user.pug
+							+user ("img/user1.png","John Smith","UX  DESIGNER")
+							+user ("img/user2.png","Sarah Brown","DEVELOPER")
 					//- include blocks/block_education/education.pug 
 					//- include blocks/block_experience/experience.pug
 					//- include blocks/block_software/software.pug 
