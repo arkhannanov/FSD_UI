@@ -6,6 +6,8 @@ import './js/form.js'
 import './js/toggles.js'
 import './js/tick_boxes.js'
 import './js/search.js'
+//import 'http://api-maps.yandex.ru/2.1/?lang=ru_RU'
+import './js/location.js'
 
 
 //import './js/postcss.config.js'
