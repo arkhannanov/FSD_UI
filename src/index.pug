@@ -25,7 +25,8 @@ html
 							include blocks/block_user/user.pug
 							+user ("img/user1.png","John Smith","UX  DESIGNER")
 							+user ("img/user2.png","Sarah Brown","DEVELOPER")
-					//- include blocks/block_education/education.pug 
-					//- include blocks/block_experience/experience.pug
-					//- include blocks/block_software/software.pug 
-	
+					.news_events
+						+headline ("NEWS  &  EVENTS")
+						.news_events_container
+							include blocks/block_side1/side1.pug
+							include blocks/block_side2/side2.pug
