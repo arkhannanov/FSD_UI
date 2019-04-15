@@ -1,0 +1,237 @@
+/*
+ * Box sizing fix
+ */
+//  *,
+//  *:before,
+//  *:after {
+//    box-sizing: border-box;
+//  }
+ 
+ /*
+  * Container
+  */
+  .calendar_wrapper {
+   margin: 0px auto 0;
+   width: 279px;
+ }
+ 
+ /*
+  * Calendar
+  */
+ .calendar {
+   padding: 0px;
+   
+   color: #1e2633;
+   font-family: $secondFont;
+   line-height: 1.2;
+   text-align: center;
+   
+   border: 0;
+   user-select: none;
+   &__day
+   {
+        
+       
+        width: 100px;
+        height: 100px;
+   }
+
+   &__upperheader
+     {
+    width: 279px;
+    height: 108px;
+    background-color: #e75735;
+    font-size: 80px;
+    color: #ffffff;
+    border-radius: 4px 4px 0 0;
+    }
+   
+   &__header {
+     position: relative;
+     background: #d54c2c;
+     font-family: $secondFont;
+     padding: 0px 35px;
+     color: #ffffff;
+     height: 43px;
+     line-height: 40px;
+     
+     font-size: 24px;
+     
+     letter-spacing: -0.72px;
+   }
+   
+   &__year {
+     //color: #b3b3b3;
+   }
+   
+   &__btn {
+     position: absolute;
+     top: 0px;
+     
+     display: block;
+     height: 43px;
+     padding: 0;
+     width: 25px;
+     
+     text-indent: -9999px;
+     
+     background: transparent;
+     border: none;
+     cursor: pointer;
+     outline: none;
+     
+    // overflow: hidden;
+     
+     &:before {
+       content: "";
+       
+       position: absolute;
+       top: 6px;
+       
+       display: block;
+       height: 20px;
+       width: 20px;
+       
+    //    border-left: 1px solid #1e2633;
+    //    border-top: 1px solid #1e2633;
+    //    transform-origin: center;
+     }
+     
+     &_prev {
+       left: 5px;
+       background-image: url('../img/Arrow_Left.png');
+       background-repeat: no-repeat;
+       background-position: 8px 14px;
+
+ 
+       &:before {
+         left: 0px;
+         transform: rotate(-45deg);
+       }
+     }
+   
+     &_next {
+       right: 5px;
+       background-image: url('../img/Arrow_Right.png');
+       background-repeat: no-repeat;
+       background-position: 8px 14px;
+ 
+       &:before {
+         right: 8px;
+         transform: rotate(135deg);
+       }
+     }
+     
+     &_disabled {
+       pointer-events: none;
+       
+       &:before {
+         border-color: #b2b2b2;
+       }
+     }
+     
+     &:hover {
+       &:before {
+         border-color: #985e5b;
+       }
+     }
+   }
+   &__table-row
+   {
+    background: #e75735;
+    font-family: $mainFont;
+    border-collapse: collapse;
+    position: relative;
+    z-index: 200;
+    margin-top: -20px;
+    
+    
+   }
+   &__table {
+     margin-top: 0px;
+     width: 279.29px;
+    // 
+     
+     table-layout: fixed;
+   }
+   
+   &__table-col-header {
+     padding: 0 0;
+     height: 22px;
+     color: #ffffff;
+     font-size: 9px;
+     letter-spacing: 0.45px;
+     text-transform: uppercase;
+     background-color: #e75735;
+     margin-top: -20px;
+     
+   }
+   
+   &__table-cell {
+     padding: 0 0;
+     
+     color: #868686;
+     font-size: 20px;
+     font-weight: 700;
+     letter-spacing: 0.05em;
+     border-collapse: separate;
+     font-family: $thirdFont;
+     background-color: #f2f2f2;
+     width: 39px;
+     height: 39px;
+     
+     cursor: pointer;
+     
+     &_disabled {
+       color: #d3dbe8;
+       pointer-events: none;
+     }
+     
+     &_selected,
+     &:hover {
+       color: #ffffff;
+       background: #e75735;
+     }
+   }
+ }
+ 
+ table
+
+ {
+    border-collapse: separate;
+    border-spacing: 2px;
+    margin: 0;
+    position: relative;
+    z-index: 100;
+    width: 278.8px;
+ }
+
+.patch
+
+{
+  width: 278.8px;
+  height: 27px;
+  background: #e75735;
+  margin-top: -26px;
+  margin-left: -1.7px;
+  position: relative;
+  z-index: -300;
+}
+
+.footer
+
+{
+  width: 259.8px;
+  height: 30px;
+  margin-left: 0px;
+  background-color: #e5e5e5;
+  font-family: $mainFont;
+  margin-left: -1.7px;
+  font-size: 13px;
+  letter-spacing: 0.65px;
+  color: #868686;
+  text-align: left;
+  padding-left:19px;
+  padding-top:19px;
+  margin-bottom: 35px;
+}
