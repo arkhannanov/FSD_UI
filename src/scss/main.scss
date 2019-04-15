@@ -69,6 +69,13 @@ main {
         flex-direction: row;
         justify-content: space-between;
     }
+    .calendar_messaging
+    {
+        width: 630px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 @import "../blocks/block_buttons/buttons.scss";
@@ -85,3 +92,4 @@ main {
 @import "../blocks/block_side2/side2.scss";
 @import "../blocks/block_location/location.scss";
 @import "../blocks/block_calendar/calendar.scss";
+@import "../blocks/block_messaging/messaging.scss";
