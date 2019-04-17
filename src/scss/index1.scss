@@ -1,0 +1,122 @@
+@import "scss_assets/fonts.scss";
+@import "scss_assets/vars.scss";
+
+.body
+
+{
+    max-width: 1200px;
+    margin: 0;
+    padding:0;
+    font-family: $mainFont;
+}
+
+.wrapper
+    {
+        max-width: 1200px;
+        margin: 0;
+        font-family: $mainFont; 
+        .header
+        {
+            width: 100%;
+          //  margin: 0 auto;
+            height: 30px;
+            background: #53b6a8;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            .logo
+            {
+                height: 30px;
+                flex-grow: 1;
+                background-image: url('../img/logo.png');
+                background-repeat: no-repeat;
+                background-position: 30px 3px; 
+            }
+        
+            .logout
+            {
+                
+                font-size: 10px;
+                font-weight: bold;
+                color: white;
+                line-height: 31px;
+                a
+                {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+            .name
+            {
+                font-size: 10px;
+                color: white;
+                line-height: 31px;
+                margin-left: 10px;
+            }
+            .avatar
+            {
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                background: #e5e5e5;
+                margin-left: 10px;
+                margin-top: 1px;
+            }
+            .search
+            {    margin-left: 10px;
+                width: 210px;
+                .search_wrapper
+    {
+        width: 210px;
+        margin: 0;
+        #search
+        {
+            width: 180px;
+            color: #888888;
+            font-family: $thirdFont;
+            letter-spacing: 0.14px;
+            padding-left: 10px;
+            padding-bottom: 0;
+            padding-top: 0;
+            height: 24px;
+            background-color: #e5e5e5;
+          //  margin-bottom: 50px;
+            border: 0;
+            border-radius: 3px;
+            position: relative;
+            font-size: 8px;
+            top: -5px;
+        }
+        
+        #search_icon
+        {
+            width: 24px;
+            height: 24px;
+            border: 0;
+            border-radius: 3px;
+            background-color:#e75735;
+            top: 3.1px;
+            margin-left: -27px;
+            position: relative;
+            background-image: url('../img/search_icon.png');
+            background-repeat: no-repeat;
+            background-position: 6.5px 6.5px; 
+            font-size: 8px;
+        }
+
+        #search_icon, 
+        #search_icon:active, 
+        #search_icon:focus {
+             outline: none;
+                }
+        #search_icon:hover
+        {
+            background-color: #e75735;
+        }
+        
+    }
+            }
+        }
+    }
+@import "../blocks/block_search/search.scss";

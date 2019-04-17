@@ -1,0 +1,44 @@
+doctype html
+html
+	head
+		meta(charset = 'utf-8')
+		meta(name='viewport', content="initial-scale=1.0, width=device-width")
+		title FSD_UI
+	body
+		main.page
+			.wrapper
+				.header
+					.logo
+					.logout
+						a(href="#", class="facebook") Logout
+					.name Petr Sidorov
+					.avatar
+						img(src="img/user.png", hspace="2", vspace="2")
+					.search
+						.search_wrapper
+							input(type="text", id="search", placeholder="Search")
+							button#search_icon
+				.container
+					.profile_container
+						.profile_headline
+						.profile_content
+							.profile_content_left_side
+								.profile_avatar_container
+									.profile_avatar
+									.profile_edit
+								.profile_calendar
+							.profile_content_right_side
+								.profile_content_right_side_header
+								.profile_content_right_side_contacts
+								.profile_content_right_side_skills
+					.right_side
+						.right_side_links_contaner
+							.right_side_links_contaner_line1
+							.right_side_links_contaner_line2
+							.right_side_links_contaner_line3
+						.right_side_news_container
+							.right_side_news_container_line1
+							.right_side_news_container_news1
+							.right_side_news_container_news2
+				.footer
+					.fotter_chat

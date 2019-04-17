@@ -9,7 +9,8 @@ const PATHS = {
 
 module.exports = {
   entry: {
-    app: './src/index.js'
+    app: './src/index.js',
+    index1: './src/index1.js'
   },
   output: {
     filename: '[name].js',
@@ -94,6 +95,12 @@ module.exports = {
         template: 'src/index.pug',
         inject: true
     }),
+    new HtmlWebpackPlugin({
+      filename: 'index1.html',
+      template: 'src/index1.pug',
+      inject: true,
+      chunks: ['index1']
+  }),
     new CopyWebpackPlugin([
       { from: PATHS.src + '/img', to: `img` },
       { from: PATHS.src + '/video', to: `video`}
