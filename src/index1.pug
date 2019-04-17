@@ -20,13 +20,16 @@ html
 							button#search_icon
 				.container
 					.profile_container
-						.profile_headline
+						.profile_headline MY PROFILE
 						.profile_content
 							.profile_content_left_side
 								.profile_avatar_container
 									.profile_avatar
 									.profile_edit
+										button(name="button",class="pfofile_button") EDIT
 								.profile_calendar
+									.calendar
+										include blocks/block_calendar/calendar.pug
 							.profile_content_right_side
 								.profile_content_right_side_header
 								.profile_content_right_side_contacts
