@@ -11,7 +11,7 @@ html
 					.logo
 					.logout
 						a(href="#", class="facebook") Logout
-					.name Petr Sidorov
+					.name Sarah Brown
 					.avatar
 						img(src="img/user.png", hspace="2", vspace="2")
 					.search
@@ -31,17 +31,47 @@ html
 									.calendar
 										include blocks/block_calendar/calendar.pug
 							.profile_content_right_side
-								.profile_content_right_side_header
+								.profile_content_right_side_header SARAH BROWN
 								.profile_content_right_side_contacts
+									.line1
+										.profession_title PFOFESSION
+										.profession Actress
+									.line2
+										.phone_title PHONE	
+										.phone +79263864674
+									.line3
+										.twitter_title TWITTER
+										.twitter twitter
+									.line4
+										.facebook_title FACEBOOK
+										.facebook facebook
 								.profile_content_right_side_skills
+									.skills
+										ul
+											li.li1
+												span Horror
+											li.li2 
+												span Thriller
+											li.li3
+												span Drama
+											li.li4 
+												span Comedy
+									.pie_chart
+										include blocks/block_percents_pie/svg/pie.pug
 					.right_side
 						.right_side_links_contaner
-							.right_side_links_contaner_line1
+							.right_side_links_contaner_line1 
+								a(href="#", class="profile") PROFILE
 							.right_side_links_contaner_line2
+								a(href="#", class="feedback") FEEDBACK
 							.right_side_links_contaner_line3
+								a(href="#", class="news_events") NEWS AND EVENTS
 						.right_side_news_container
-							.right_side_news_container_line1
+							.right_side_news_container_line1 LAST NEWS
 							.right_side_news_container_news1
+								include blocks/block_side1/side1.pug
 							.right_side_news_container_news2
-				.footer
+								include blocks/block_side2/side2.pug
+				.footer1
 					.fotter_chat
+						include blocks/block_messaging/messaging.pug
