@@ -15,10 +15,30 @@ html
                         .avatar
                         .edit
                             button(name="button",class="button") EDIT
-                    .tick_boxes
-                        
                     .form
-                    .toggle
+                        p#completeForm 
+                            .line1 
+                                input(type="text", id="input1", placeholder="Job title")
+                                div#message-container1
+                        p#input1_errorMessage 
+                            .line2
+                                input(type="text", id="input2", placeholder="Facebook link")
+                                div#message-container2
+                        p#input2_errorMessage 
+                            .line3
+                                input(type="text", id="input3", placeholder="Twitter link")
+                                div#message-container3
+                        p#input3_errorMessage 
+                            .line4
+                                input(type="text", id="input4", placeholder="Dribbble link")
+                                div#message-container4
+                        p#input4_errorMessage 
+                            .toggle
+                                include blocks/block_form/toggles.pug
+                                .toggle_content Get information about current events.
+                            .line5
+                                button#submit SUBMIT
+                    
                 .navigation_container
                             .button1
                                 button(name="button", class="btn", onclick="document.location='index1.html'") PAGE 1
