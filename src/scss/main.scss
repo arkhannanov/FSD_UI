@@ -76,13 +76,15 @@ main {
         flex-direction: row;
         justify-content: space-between;
     }
+  
     .navigation_container
     {
         width: 350px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+      //  justify-content: space-between;
         margin-bottom: 45px;
+        margin-left: 20px!important;
     }
 }
 
@@ -134,11 +136,10 @@ main {
 .btn:visited {
                     outline: none !important;
                   }
-.bt2::-moz-focus-inner {
+.btn::-moz-focus-inner {
                     border: 0 !important;
                   //  box-shadow: none;
                   }
-
 @import "../blocks/block_buttons/buttons.scss";
 @import "../blocks/block_arrows/arrows.scss";
 @import "../blocks/block_percents_pie/percents_pie.scss";

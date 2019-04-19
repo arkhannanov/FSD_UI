@@ -1,3 +1,5 @@
+
+@import "../blocks/block_headline/headline.scss";
 .form
 {
     width: 100%;
@@ -16,6 +18,7 @@
                 display: flex;
                 flex-direction:row;
                 justify-content: space-between;
+                margin-left: 100px;
                 .form-container
                 {
                     width: 275px;
@@ -248,6 +251,19 @@
                     //   //  box-shadow: none;
                     //   }
 
+                }
+                .toggles_tick-container
+                {
+                    .toggles_headline
+                    {
+                        margin-left:-35px;
+                        margin-bottom: -20px;
+                    }
+                    .tick_boxes_headline
+                    {
+                        margin-left:-35px;
+                        margin-bottom: -20px;
+                    }
                 }
             }
         }

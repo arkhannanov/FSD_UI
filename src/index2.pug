@@ -1,0 +1,30 @@
+doctype html
+html
+    head
+        meta(charset = 'utf-8')
+        meta(name='viewport', content="initial-scale=1.0, width=device-width")
+        title FSD_UI
+    body
+        main.page
+            .wrapper
+                .header APPLY FOR A JOB
+                .content
+                    .stages
+                        include blocks/block_stages/stages.pug
+                    .avatar_container
+                        .avatar
+                        .edit
+                            button(name="button",class="button") EDIT
+                    .tick_boxes
+                        
+                    .form
+                    .toggle
+                .navigation_container
+                            .button1
+                                button(name="button", class="btn", onclick="document.location='index1.html'") PAGE 1
+                            .button2
+                                button(name="button", class="btn", onclick="document.location='index2.html'") PAGE 2
+                            .button3
+                                button(name="button", class="btn") PAGE 3
+                            .button4
+                                button(name="button", class="btn") PAGE 4

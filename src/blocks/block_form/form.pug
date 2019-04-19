@@ -16,5 +16,10 @@
                 .line4
                     button#submit SUBMIT
             .toggles_tick-container
+                .toggles_headline
+                    include ../block_headline/headline.pug
+                    +headline ("TOGGLES")
                 include toggles.pug
+                .tick_boxes_headline
+                    +headline ("TICK BOXES")
                 include tick_boxes.pug
