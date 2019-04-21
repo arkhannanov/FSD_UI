@@ -1,0 +1,81 @@
+doctype html
+html
+    head
+        meta(charset = 'utf-8')
+        meta(name='viewport', content="initial-scale=1.0, width=device-width")
+        title FSD_UI
+    body
+        main.page
+            .wrapper
+                .header
+                    .fisrt_line
+                        .logo
+                            img(src="img/logo_3.png", hspace="10", vspace="5")
+                        .contacts
+                            .time Ежедневно с 9.00 до 22.00
+                            .tel +79263864674
+                    .second_line
+                        .glavnaya
+                            a(href="#", class="glavnaya") Главная
+                        .photo_rabot
+                            a(href="#", class="photo_rabot") Фото Работ
+                        .o_nas
+                            a(href="#", class="o_nas") О Нас
+                        .otzivi
+                            a(href="#", class="otzivi") Отзывы
+                        .regisration
+                            a(href="#", class="regisration") Регистрация
+                .content
+                    .div1
+                        .diagramm1
+                            include blocks/block_percents_pie/svg/percents1.pug
+                        .content1 Просроченных проектов.
+                    .div2
+                        .diagramm2
+                            include blocks/block_percents_pie/svg/percents2.pug
+                        .content2 Проектов, выполненных досрочно.
+                    .div3
+                        .diagramm3
+                            include blocks/block_percents_pie/svg/percents3.pug
+                        .content3 Нестарндарных проектов.
+                    .div4
+                        .diagramm4
+                            include blocks/block_percents_pie/svg/percents4.pug
+                        .content4 Довольных клиентов.
+                .comment_headline Оставить отзыв
+                .comment_container
+                    .calendar_container
+                        .calendar_headline Выбрать день публикации
+                        .calendar
+                            include blocks/block_calendar/calendar.pug
+                    .form_container
+                        .line1 
+                            input(type="text", id="input1", placeholder="Имя")
+                        .line2 
+                            input(type="text", id="input2", placeholder="E-mail")
+                        .raiting Рейтинг
+                        .line3
+                            include blocks/block_stages/stages.pug
+                        .line4
+                         textarea(type="text", id="input4", placeholder="Сообщение")
+                        .line5
+                            button(name="button", id="submit") Отправить
+
+                .navigation_container
+                            .button1
+                                button(name="button", class="btn", onclick="document.location='index1.html'") PAGE 1
+                            .button2
+                                button(name="button", class="btn", onclick="document.location='index2.html'") PAGE 2
+                            .button3
+                                button(name="button", class="btn", onclick="document.location='index3.html'") PAGE 3
+                            .button4
+                                button(name="button", class="btn") PAGE 4
+                .footer1
+                    .location
+                        .location_wrapper#map
+                            script(src="http://api-maps.yandex.ru/2.1.17/?lang=ru_RU", type="text/javascript")
+                        .location_content
+                            .title Meet us!
+                            .address 1259  CALIFORNIA ST SAN FRANCISCO, CA
+                            .icon1
+                            .icon2

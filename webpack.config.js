@@ -11,7 +11,8 @@ module.exports = {
   entry: {
     app: './src/index.js',
     index1: './src/index1.js',
-    index2: './src/index2.js'
+    index2: './src/index2.js',
+    index3: './src/index3.js'
   },
   output: {
     filename: '[name].js',
@@ -109,6 +110,12 @@ module.exports = {
     template: 'src/index2.pug',
     inject: true,
     chunks: ['index2']
+}),
+    new HtmlWebpackPlugin({
+    filename: 'index3.html',
+    template: 'src/index3.pug',
+    inject: true,
+    chunks: ['index3']
 }),
     new CopyWebpackPlugin([
       { from: PATHS.src + '/img', to: `img` },
