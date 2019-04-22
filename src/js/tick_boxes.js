@@ -20,12 +20,12 @@ for (var i = 0; i < INDEX.length; i++) {
     console.log(StatusOff[1]);
          if (StatusOff[i]==true)
         {
-             this.style.cssText="background-color: #4eb7a8; background-image: url('../img/tick_box1.png');";
+             this.style.cssText="background-color: #4eb7a8; background-image: url('./img/tick_box1.png');";
              StatusOff[i]=false;
         }
         else
         {
-            this.style.cssText="background-color: #e5e5e5; background-image: url('../img/tick_box2.png');";
+            this.style.cssText="background-color: #e5e5e5; background-image: url('./img/tick_box2.png');";
              StatusOff[i]=true;
         }
     }
