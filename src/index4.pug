@@ -1,0 +1,94 @@
+doctype html
+html
+    head
+        meta(charset = 'utf-8')
+        meta(name='viewport', content="initial-scale=1.0, width=device-width")
+        title FSD_UI
+    body
+        main.page
+            .wrapper
+                .header
+                    .header_fist_line
+                        .logo LOGOTIP
+                    .header_second_line
+                        .button1
+                            button(name="button", class="btn") ГЛАВНАЯ
+                        .button2
+                            button(name="button", class="btn") КАТАЛОГ
+                        .button3
+                            button(name="button", class="btn") О НАС
+                .content
+                    .left_side
+                        .drop_down1
+                            div.drop_down1_header Коробка передач:
+                            div#contentline1 Не выбрано
+                            button.drop1btn
+                            div.drop_down1_content
+                                div#option11 Механика
+                                div#option12 Автомат
+                        .drop_down2
+                            div.drop_down2_header Место оформления аренды:
+                            div#contentline2 Не выбрано
+                            button.drop2btn
+                            div.drop_down2_content
+                                div#option21 В офисе
+                                div#option22 Ваш адрес (по телефону)
+                        .slider
+                            include blocks/block_sliders/sliders/slider1.pug
+                        .add
+                            .add_headline Добавить в машину:
+                            .add_line1
+                                .tick_box
+                                    include blocks/block_form/tick_boxes.pug
+                                .add_line1_content Детское кресло
+                            .add_line2
+                                .tick_box
+                                    include blocks/block_form/tick_boxes.pug
+                                .add_line2_content Навигатор
+                            .add_line3
+                                .tick_box
+                                    include blocks/block_form/tick_boxes.pug
+                                .add_line3_content Автохолодильник
+                        .form
+                            .line1 
+                                input(type="text", id="input1", placeholder="Ваша фамилия")
+                                div#message-container1 ERROR
+                            p#input1_errorMessage Должно быть по крайней мере 3 символа.
+                            .line2
+                                input(type="text", id="input2", placeholder="Ваше имя")
+                                div#message-container2
+                            p#input2_errorMessage Должно быть по крайней мере 3 символа.
+                            .line3
+                                input(type="text", id="input3", placeholder="Ваше отчество")
+                                div#message-container3 
+                            p#input3_errorMessage Должно быть по крайней мере 3 символа.
+                            .line4
+                                input(type="text", id="input4", placeholder="Контактный телефон")
+                                div#message-container4
+                            p#input4_errorMessage Должно быть по крайней мере 3 символа.
+                            .line5
+                                input(type="text", id="input5", placeholder="E-mail адрес")
+                                div#message-container5
+                            p#input5_errorMessage Должно быть по крайней мере 3 символа.
+                    .right_side
+                        .calendar
+                            include blocks/block_calendar/calendar.pug
+                        button#submit Отправить заявку
+                .navigation_container
+                            .button1
+                                button(name="button", class="btn", onclick="document.location='index1.html'") PAGE 1
+                            .button2
+                                button(name="button", class="btn", onclick="document.location='index2.html'") PAGE 2
+                            .button3
+                                button(name="button", class="btn", onclick="document.location='index3.html'") PAGE 3
+                            .button4
+                                button(name="button", class="btn", onclick="document.location='index4.html'") PAGE 4
+                .fotter
+                    .logo LOGOTIP
+                    .menu
+                        .menu_line1
+                             a(href="#") Главная
+                        .menu_line2
+                            a(href="#") Каталог 
+                        .menu_line3
+                            a(href="#") Контакты 
