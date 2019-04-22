@@ -98,7 +98,7 @@ function submit(){
 if (Error1==true){
     input1_errorMessage.innerHTML=Message1;
     messagecontainer1.innerHTML="ERROR";
-    messagecontainer1.style.cssText="background-image: url('../img/formOrange.png');";
+    messagecontainer1.style.cssText="background-image: url('./img/formOrange.png');";
     setTimeout(() => {
         input1_errorMessage.innerHTML="";
        // errMessageActive = false;
@@ -110,7 +110,7 @@ else
 {
     input1_errorMessage.innerHTML="";
     messagecontainer1.innerHTML="THANKS!";
-    messagecontainer1.style.cssText="background-image: url('../img/formColor2.png');";
+    messagecontainer1.style.cssText="background-image: url('./img/formColor2.png');";
     setTimeout(() => {
         input1_errorMessage.innerHTML="";
        // errMessageActive = false;
@@ -122,7 +122,7 @@ else
 if (Error2==true){
     input2_errorMessage.innerHTML=Message2;
     messagecontainer2.innerHTML="ERROR";
-    messagecontainer2.style.cssText="background-image: url('../img/formOrange.png');";
+    messagecontainer2.style.cssText="background-image: url('./img/formOrange.png');";
     setTimeout(() => {
         input2_errorMessage.innerHTML="";
        // errMessageActive = false;
@@ -132,7 +132,7 @@ else
 {
     input2_errorMessage.innerHTML="";
     messagecontainer2.innerHTML="THANKS!";
-    messagecontainer2.style.cssText="background-image: url('../img/formColor2.png');";
+    messagecontainer2.style.cssText="background-image: url('./img/formColor2.png');";
     setTimeout(() => {
         input2_errorMessage.innerHTML="";
        // errMessageActive = false;
