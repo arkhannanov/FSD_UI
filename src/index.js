@@ -10,6 +10,7 @@ import './js/search.js'
 import './js/location.js'
 import './js/calendar.js'
 import './js/video.js'
+import './js/favicons.js'
 
 
 
