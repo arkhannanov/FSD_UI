@@ -1,114 +1,93 @@
-.user
-{
+.user {
+  width: 100%;
+  margin-left: 35px;
+  margin-bottom: 25px;
+  .user-wrapper {
     width: 100%;
-    margin-left: 35px;
-    margin-bottom: 25px;
-    .user_wrapper
-    {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        .avatar
-        {
-            width: 94px;
-            height: 94px;
-            border-radius: 50%;
-            background-color: #e5e5e5;
-        }
-        .content
-        {
-            background-image: url('../img/Slider1.png');
-            background-repeat: no-repeat;
-            background-position: 0px px;
-            margin-left: 4px;
-            width: 170px;
-            height: 93px;
-            .line1
-            {
-                font-family: $secondFont;
-                color: #e75735;
-                font-size: 18px;
-                text-align: center;
-              //  margin-left:10px;
-                margin-left: 6px;
-                margin-block-start: 14px;
-                margin-block-end: 0;
-            }
-            .line2
-            {
-                font-family: $mainFont;
-                color: #4f4f4f;
-                font-size: 11px;
-                letter-spacing: 0.55px;
-                text-align: center;
-                margin-left:6px;
-                margin-block-start: 3px;
-                margin-block-end: 0;
-            }
-            .line3
-            {
-                display: flex;
-                justify-content: space-between;
-                flex-direction: row; 
-                width: 100px;
-                margin-left: 38px;
-                margin-top: 5px;
-                .facebook
-                {
-                    width: 25px;
-                    height: 25px;
-                    background-image: url('../img/spritesheet.png');
-                    background-repeat: no-repeat;
-                    background-position: -2px -49px; 
-                    
-                }
-                .twitter
-                {
-                    width:25px;
-                    height: 25px;
-                    background-image: url('../img/spritesheet.png');
-                    background-repeat: no-repeat;
-                    background-position: -92px -8px;
-                   
-                }
-                .dribbble
-                {
-                    width:25px;
-                    height: 25px;
-                    background-image: url('../img/spritesheet.png');
-                    background-repeat: no-repeat;
-                    background-position: -8px -8px; 
-                  
-                }
-            }
-        }
-        .content:hover
-        {
-            background-image: url('../img/Slider2.png');          
-            .line1
-            {
-                color: #ffffff;
-            }
-            .line2
-            {
-                color: #ffffff;
-            }
-            .line3
-            {
-                .facebook
-                {
-                    background-position: -33px -49px;
-                }
-                .twitter
-                {
-                    background-position: -92px -47px; 
-                }
-                .dribbble
-                {
-                    background-position: -48px -8px; 
-                }
-            }
-        }
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    .avatar {
+      width: 94px;
+      height: 94px;
+      border-radius: 50%;
+      background-color: #e5e5e5;
     }
+    .content {
+      background-image: url('../img/slider-1.png');
+      background-repeat: no-repeat;
+      background-position: 0px px;
+      margin-left: 4px;
+      width: 170px;
+      height: 93px;
+      .line1 {
+        font-family: $secondFont;
+        color: #e75735;
+        font-size: 18px;
+        text-align: center;
+        margin-left: 6px;
+        margin-block-start: 14px;
+        margin-block-end: 0;
+      }
+      .line2 {
+        font-family: $mainFont;
+        color: #4f4f4f;
+        font-size: 11px;
+        letter-spacing: 0.55px;
+        text-align: center;
+        margin-left:6px;
+        margin-block-start: 3px;
+        margin-block-end: 0;
+      }
+      .line3 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row; 
+        width: 100px;
+        margin-left: 38px;
+        margin-top: 5px;
+        .facebook {
+          width: 25px;
+          height: 25px;
+          background-image: url('../img/spritesheet.png');
+          background-repeat: no-repeat;
+          background-position: -2px -49px;           
+        }
+        .twitter {
+          width:25px;
+          height: 25px;
+          background-image: url('../img/spritesheet.png');
+          background-repeat: no-repeat;
+          background-position: -92px -8px;         
+        }
+        .dribbble {
+          width:25px;
+          height: 25px;
+          background-image: url('../img/spritesheet.png');
+          background-repeat: no-repeat;
+          background-position: -8px -8px; 
+        }
+      }
+    }
+    .content:hover {
+      background-image: url('../img/slider-2.png');          
+      .line1 {
+        color: #ffffff;
+      }
+      .line2 {
+        color: #ffffff;
+      }
+      .line3 {
+        .facebook {
+          background-position: -33px -49px;
+        }
+        .twitter {
+          background-position: -92px -47px; 
+        }
+        .dribbble {
+          background-position: -48px -8px; 
+        }
+      }
+    }
+  }
 }

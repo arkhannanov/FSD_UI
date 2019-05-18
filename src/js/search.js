@@ -8,18 +8,18 @@ search.addEventListener('keyup', inputSearch);
 
 var inputValue;
 
-function inputSearch(e){
+function inputSearch(e) {
     let usedInput = e.target;
     inputValue = usedInput.value;
 }
 
 
-function clicksearch(){ 
+function clicksearch() { 
     search_error.style.cssText="background: transparent;";
     search_error.innerHTML="";
 }
 
-function clickbutton(){
+function clickbutton() {
     
     if(inputValue.length == 0)
     {

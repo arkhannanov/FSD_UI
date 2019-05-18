@@ -20,7 +20,6 @@ circle1.addEventListener('click', function() {
     div2.style.cssText = 'background: #e5e5e5;';
     div3.style.cssText = 'background: #e5e5e5;';
     div4.style.cssText = 'background: #e5e5e5;';
-
 });
 
 circle2.addEventListener('click', function() {

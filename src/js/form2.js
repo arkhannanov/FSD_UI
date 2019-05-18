@@ -38,9 +38,7 @@ input4.addEventListener('keyup', checkInput4);
 
 submitForm.addEventListener('click', submit);
 
-
-
-function checkInput1(e){
+function checkInput1(e) {
     let usedInput = e.target;
     let inputValue = usedInput.value;
 
@@ -63,7 +61,7 @@ function checkInput1(e){
 
 }
 
-function checkInput2(e){
+function checkInput2(e) {
     let usedInput = e.target;
     let inputValue = usedInput.value;
 
@@ -86,7 +84,7 @@ function checkInput2(e){
 
 }
 
-function checkInput3(e){
+function checkInput3(e) {
     let usedInput = e.target;
     let inputValue = usedInput.value;
 
@@ -109,7 +107,7 @@ function checkInput3(e){
 
 }
 
-function checkInput4(e){
+function checkInput4(e) {
     let usedInput = e.target;
     let inputValue = usedInput.value;
 
@@ -133,117 +131,88 @@ function checkInput4(e){
 }
 
 
-function submit(){
-
-// if (Error1==undefined)
-// {
-//     input1_errorMessage.innerHTML="";
-//     messagecontainer1.innerHTML="";
-//     messagecontainer1.style.cssText="background-image: none;";
-// }
+function submit() {
 
 if (Error1==true){
     input1_errorMessage.innerHTML=Message1;
     messagecontainer1.innerHTML="ERROR";
-    messagecontainer1.style.cssText="background-image: url('./img/formOrange.png');";
+    messagecontainer1.style.cssText="background-image: url('./img/form-orange.png');";
     setTimeout(() => {
         input1_errorMessage.innerHTML="";
-       // errMessageActive = false;
     }, 2000);
-    // console.log ("Первая ошибка");
-    // console.log (Error1);
 }
 else
 {
     input1_errorMessage.innerHTML="";
     messagecontainer1.innerHTML="THANKS!";
-    messagecontainer1.style.cssText="background-image: url('./img/formColor2.png');";
+    messagecontainer1.style.cssText="background-image: url('./img/form-color2.png');";
     setTimeout(() => {
         input1_errorMessage.innerHTML="";
-       // errMessageActive = false;
     }, 2000);
-
-     console.log ("Второй цвет фона");
 }
 
 if (Error2==true){
     input2_errorMessage.innerHTML=Message1;
     messagecontainer2.innerHTML="ERROR";
-    messagecontainer2.style.cssText="background-image: url('./img/formOrange.png');";
+    messagecontainer2.style.cssText="background-image: url('./img/form-orange.png');";
     setTimeout(() => {
         input2_errorMessage.innerHTML="";
-       // errMessageActive = false;
     }, 2000);
 }
 else
 {
     input2_errorMessage.innerHTML="";
     messagecontainer2.innerHTML="THANKS!";
-    messagecontainer2.style.cssText="background-image: url('./img/formColor2.png');";
+    messagecontainer2.style.cssText="background-image: url('./img/form-color2.png');";
     setTimeout(() => {
         input2_errorMessage.innerHTML="";
-       // errMessageActive = false;
     }, 2000);
 }
 
 if (Error3==true){
     input3_errorMessage.innerHTML=Message1;
     messagecontainer3.innerHTML="ERROR";
-    messagecontainer3.style.cssText="background-image: url('./img/formOrange.png');";
+    messagecontainer3.style.cssText="background-image: url('./img/form-orange.png');";
     setTimeout(() => {
         input3_errorMessage.innerHTML="";
-       // errMessageActive = false;
     }, 2000);
 }
 else
 {
     input3_errorMessage.innerHTML="";
     messagecontainer3.innerHTML="THANKS!";
-    messagecontainer3.style.cssText="background-image: url('./img/formColor2.png');";
+    messagecontainer3.style.cssText="background-image: url('./img/form-color2.png');";
     setTimeout(() => {
         input3_errorMessage.innerHTML="";
-       // errMessageActive = false;
     }, 2000);
 }
 
 if (Error4==true){
     input4_errorMessage.innerHTML=Message1;
     messagecontainer4.innerHTML="ERROR";
-    messagecontainer4.style.cssText="background-image: url('./img/formOrange.png');";
+    messagecontainer4.style.cssText="background-image: url('./img/form-orange.png');";
     setTimeout(() => {
         input4_errorMessage.innerHTML="";
-       // errMessageActive = false;
     }, 2000);
 }
 else
 {
     input4_errorMessage.innerHTML="";
     messagecontainer4.innerHTML="THANKS!";
-    messagecontainer4.style.cssText="background-image: url('./img/formColor2.png');";
+    messagecontainer4.style.cssText="background-image: url('./img/form-color2.png');";
     setTimeout(() => {
         input4_errorMessage.innerHTML="";
-       // errMessageActive = false;
     }, 2000);
 }
 
 if(fill1==false || fill2==false || fill3==false || fill4==false)
 {
     completeForm.innerHTML=FormNotComplete;
-    // console.log("Форма не закончена");
-    // console.log(fill1);
-    // console.log(fill2);
-    // console.log(fill3);
-    
 }
 else
 {
     completeForm.innerHTML="";
-    // console.log("Форма закончена"); 
-    // console.log(fill1);
-    // console.log(fill2);
-    // console.log(fill3);
 }
-
 }
 
 

@@ -1,39 +1,30 @@
-.tick_boxes
-{
-    width: 100%;
-    .tick_boxes_wrapper
-    {
-        width: 30px;
-        margin-left: 90px;
-        
-        .tick_boxes_wrapper__headline
-        {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .tick_boxes-container
-        {   
-            width: 30px;
-        }
-        #tick_boxes
-            {
-               width: 24px;
-               height: 24px;
-               background-color: #e5e5e5;
-               border-radius: 50%;
-               margin-left: 35px;
-               border: 0;
-               background-image: url('../img/tick_box2.png');
-               background-repeat: no-repeat;
-               background-position: 6px 6.5px;
-               
-            }
-
-            #tick_boxes, 
-            #tick_boxes:active, 
-            #tick_boxes:focus {
-             outline: none;
-                }
+.tick-boxes{
+  width: 100%;
+  .tick-boxes-wrapper {
+    width: 30px;
+    margin-left: 90px;
+    .tick-boxes-wrapper__headline {
+      text-align: center;
+      margin-bottom: 30px;
     }
+    .tick-boxes-container {   
+      width: 30px;
+    }
+    #tick_boxes {
+      width: 24px;
+      height: 24px;
+      background-color: #e5e5e5;
+      border-radius: 50%;
+      margin-left: 35px;
+      border: 0;
+      background-image: url('../img/tick-box-2.png');
+      background-repeat: no-repeat;
+      background-position: 6px 6.5px;
+    }
+    #tick_boxes, 
+    #tick_boxes:active, 
+    #tick_boxes:focus {
+      outline: none;
+    }
+  }
 }

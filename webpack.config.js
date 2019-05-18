@@ -126,7 +126,8 @@ new HtmlWebpackPlugin({
 }),
     new CopyWebpackPlugin([
       { from: PATHS.src + '/img', to: `img` },
-      { from: PATHS.src + '/video', to: `video`}
+      { from: PATHS.src + '/video', to: `video`},
+      { from: PATHS.src + '/img/favicons', to: `img/favicons` }
     ]), 
   ]
 }

@@ -1,54 +1,43 @@
-.toggles
-{
-    width: 100%;
-    .toggles_wrapper
-    {
-        width: 275px;
-        .toggles_wrapper__headline
-        {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .toggles-container
-        {
-            display: flex;
-            justify-content: space-evenly;
-            width: 134px;
-            flex-direction: row;
-            margin: auto;
-            #buttontoggles
-            {
-               width: 60px;
-               height: 24px;
-               background-color: #e5e5e5;
-               font-size: 12px;
-               font-weight: bol;
-               line-height: 20px;
-               letter-spacing: -0.3px;
-               border: 0;
-               color: #ffffff;
-               border-radius: 15px;
-               padding-left: 25px;
-               position: relative;
-               z-index: 0; 
-            }
-
-            #buttontoggles, 
-            #buttontoggles:active, 
-            #buttontoggles:focus {
-             outline: none;
-                }
-            #toggles_circle
-            {
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                margin-top: -22px;
-                z-index: 100;
-                position: relative;
-                margin-left: 2px;
-                background: #ffffff;
-            }
-        }
+.toggles {
+  width: 100%;
+  .toggles-wrapper {
+    width: 275px;
+    .toggles-container {
+      display: flex;
+      justify-content: space-evenly;
+      width: 134px;
+      flex-direction: row;
+      margin: auto;
+      #buttontoggles {
+        width: 60px;
+        height: 24px;
+        background-color: #e5e5e5;
+        font-size: 12px;
+        font-weight: bol;
+        line-height: 20px;
+        letter-spacing: -0.3px;
+        border: 0;
+        color: #ffffff;
+        border-radius: 15px;
+        padding-left: 25px;
+        position: relative;
+        z-index: 0; 
+      }
+      #buttontoggles, 
+      #buttontoggles:active, 
+      #buttontoggles:focus {
+        outline: none;
+      }
+      #toggles_circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-top: -22px;
+        z-index: 100;
+        position: relative;
+        margin-left: 2px;
+        background: #ffffff;
+      }
     }
+  }
 }

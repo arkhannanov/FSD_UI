@@ -389,13 +389,8 @@ const MonthNames = [
       const footer = document.createElement('div');
       footer.className = "footer";
       footer.innerHTML="TODAY";
-      //upperheader.innerHTML = 'Содержимое абзаца';
-      // this._dayElem = document.createElement('span');
-      // this._dayElem.className = ClassNames.DAY;
-      // upperheader.appendChild(this._dayElem);
 
       table.appendChild(footer);
-      
     }
     
     _updateUi() {

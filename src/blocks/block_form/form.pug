@@ -1,6 +1,6 @@
 .form
-    .form_wrapper
-        .page_elements
+    .form-wrapper
+        .page-elements
             .form-container
                 p#completeForm 
                 .line1 
@@ -15,12 +15,11 @@
                     textarea(type="text", id="input3", placeholder="Your Message")
                 .line4
                     button#submit SUBMIT
-            .toggles_tick-container
-                .toggles_headline
+            .toggles-tick-container
+                .toggles-headline
                     include ../block_headline/headline.pug
                     +headline ("TOGGLES")
                 include toggles.pug
-                .tick_boxes_headline
+                .tick-boxes-headline
                     +headline ("TICK BOXES")
                 include tick_boxes.pug
-                //- include tick_boxes.pug

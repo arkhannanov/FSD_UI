@@ -1,273 +1,215 @@
 
 @import "../blocks/block_headline/headline.scss";
-.form
-{
-    width: 100%;
-    .form_wrapper
-        {
-            // margin-left: 117px;
-            // margin-right: 117px;
-            .form__headline
-            {
-                text-align: center;
-                margin-bottom: 67px;
-            }
-            .page_elements
-            {
-                width: 550px;
-                display: flex;
-                flex-direction:row;
-                justify-content: space-between;
-                margin-left: 100px;
-                .form-container
-                {
-                    width: 275px;
-                    display: flex;
-                    flex-direction:column;
-                    justify-content: space-between;
-                    #completeForm
-                    {
-                        padding: 7px;
-                        border: 0;
-                        height: 15px;
-                        line-height: 5px;
-                        font-family: $mainFont;
-                        margin-top: -15px;
-                        font-size: 12px;
-                        line-height: 42px;
-                        letter-spacing: 0.5px;
-                        font-weight: lighter;
-                        color: red;
-                        margin-left: 80px;
-                    }
-                    .line1
-                    {
-                        width: 275px;
-                        height: 28px;
-                        display: flex;
-                        flex-direction:row;
-                        margin: 0;
-                        padding: 0;
-                        position: relative;
-                        #input1
-                        {
-                            width: 203px;
-                            height: 28px;
-                            margin: 0;  
-                            font-size: 12px; 
-                            margin: 0;
-                            padding-left: 10px;
-                            // padding-right: 10px;
-                            border: 0;
-                            background: #e5e5e5;
-                            font-size: 14px;
-                            font-family: $thirdFont;
-                            font-weight: 400;
-                            color: #888888;
-                            line-height: 42px;
-                            letter-spacing: 0.14px;
-                            border-radius: 3px;
-                        }
-                        #message-container1
-                        {
-                            width: 85px;
-                            height: 37px;
-                            padding: 0;
-                            margin: 0;
-                            margin: 0;
-                            padding: 0; 
-                            font-family: $mainFont;
-                            font-weight: 400;
-                            font-size: 10px;
-                            line-height: 46px;
-                            letter-spacing: 0.5px;
-                            text-align: center;
-                            margin-top: -6px;
-                            margin-left: 4px;
-                            vertical-align: middle;
-                        //    background-image: url('../img/formOrange.png');
-                            background-repeat: no-repeat;
-                            background-position: 0px 7px;
-                            background-color: transparent;
-                            color: #ffffff;
-                           
-                        }
-
-                    }
-                    #input1_errorMessage
-                    {
-                        padding: 7px;
-                        border: 0;
-                        height: 15px;
-                        line-height: 5px;
-                        font-family: $mainFont;
-                        margin-top: -15px;
-                        font-size: 10px;
-                        line-height: 42px;
-                        letter-spacing: 0.5px;
-                        font-weight: lighter;
-                        color: #888888;
-                    }
-                    .line2
-                    {
-                        width: 275px;
-                        height: 28px;
-                        display: flex;
-                        flex-direction:row;
-                        margin: 0;
-                        padding: 0;
-                        position: relative;
-                        #input2
-                        {
-                            width: 203px;
-                            height: 28px;
-                            margin: 0;  
-                            font-size: 12px; 
-                            margin: 0;
-                            padding-left: 10px;
-                            // padding-right: 10px;
-                            border: 0;
-                            background: #e5e5e5;
-                            font-size: 14px;
-                            font-family: $thirdFont;
-                            font-weight: 400;
-                            color: #888888;
-                            line-height: 42px;
-                            letter-spacing: 0.14px;
-                            border-radius: 3px;
-                        }
-                        #message-container2
-                        {
-                            width: 85px;
-                            height: 37px;
-                            padding: 0;
-                            margin: 0;
-                            margin: 0;
-                            padding: 0; 
-                            font-family: $mainFont;
-                            font-weight: 400;
-                            font-size: 10px;
-                            line-height: 44px;
-                            letter-spacing: 0.5px;
-                            text-align: center;
-                            margin-top: -6px;
-                            margin-left: 4px;
-                            vertical-align: middle;
-                         //   background-image: url('../img/formColor2.png');
-                            background-repeat: no-repeat;
-                            background-position: 0px 7px;
-                            background-color: transparent;
-                            color: #ffffff;
-                        }
-
-                    }
-                    #input2_errorMessage
-                    {
-                        padding: 7px;
-                        border: 0;
-                        height: 15px;
-                        line-height: 5px;
-                        font-family: $mainFont;
-                        margin-top: -15px;
-                        font-size: 10px;
-                        line-height: 42px;
-                        letter-spacing: 0.5px;
-                        font-weight: lighter;
-                        color: #888888;
-                    }
-
-                    .line3
-                    {
-                        width: 275px;
-                        height: 88px;
-                        position: relative;
-                        
-                        #input3
-                        {
-                            width: 255px!important;
-                            height: 88px;
-                            font-size: 12px; 
-                            margin: 0;
-                            padding: 10px;
-                            // padding-right: 10px;
-                            border: 0;
-                            background: #e5e5e5;
-                            font-size: 14px;
-                            font-family: $thirdFont;
-                            font-weight: 400;
-                            color: #888888;
-                         //   line-height: 12px;
-                            letter-spacing: 0.14px;
-                            border-radius: 3px;
-                            
-
-                            border: 0;                          
-                        }
-                    }
-
-                    #submit
-                    {
-                        width: 118px;
-                        height: 32px;
-                        border: 1px solid #4eb7a8;
-                        text-align: center;
-                        background: #ffffff;
-                        font-weight: bolder;
-                        color: #4eb7a8;
-                        letter-spacing: 0;
-                        font-size: 12px;
-                        border-radius: 5px;
-                        box-shadow: 0 -2px rgba(40, 162, 144, 1) inset;
-                        transition: 0.2s;
-                        vertical-align: middle;
-                        overflow: hidden;
-                        position: relative;
-                        margin-top: 26px;
-                        left: 157px;
-                        margin-bottom: 30px;
-                    }
-
-                    #submit:hover
-                    {
-                        background: #4eb7a8;
-                        color: #ffffff;
-                    }
-
-                    #submit, 
-                    #submit:active, 
-                    #submit:focus {
-                     outline: none;
-                        }
-
-                    // #submit:focus {
-                    //     outline: none !important;
-                    //     box-shadow: none;
-                    //   }
-                    // #submit:visited {
-                    //     outline: none !important;
-                    //   }
-                    // #submit::-moz-focus-inner {
-                    //     border: 0 !important;
-                    //   //  box-shadow: none;
-                    //   }
-
-                }
-                .toggles_tick-container
-                {
-                    .toggles_headline
-                    {
-                        margin-left:-35px;
-                        margin-bottom: -20px;
-                    }
-                    .tick_boxes_headline
-                    {
-                        margin-left:-35px;
-                        margin-bottom: -20px;
-                    }
-                }
-                
-            }
+.form {
+  width: 100%;
+  .form-wrapper {
+    .page-elements {
+      width: 550px;
+      display: flex;
+      flex-direction:row;
+      justify-content: space-between;
+      margin-left: 0px;
+      .form-container {
+        width: 275px;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        #completeForm {
+          padding: 7px;
+          border: 0;
+          height: 15px;
+          line-height: 5px;
+          font-family: $mainFont;
+          margin-top: -15px;
+          font-size: 12px;
+          line-height: 42px;
+          letter-spacing: 0.5px;
+          font-weight: lighter;
+          color: red;
+          margin-left: 80px;
         }
+        .line1 {
+          width: 275px;
+          height: 28px;
+          display: flex;
+          flex-direction:row;
+          margin: 0;
+          padding: 0;
+          position: relative;
+          #input1 {
+            width: 203px;
+            height: 28px;
+            margin: 0;  
+            font-size: 12px; 
+            margin: 0;
+            padding-left: 10px;
+            border: 0;
+            background: #e5e5e5;
+            font-size: 14px;
+            font-family: $thirdFont;
+            font-weight: 400;
+            color: #888888;
+            line-height: 42px;
+            letter-spacing: 0.14px;
+            border-radius: 3px;
+          }
+          #message-container1 {
+            width: 85px;
+            height: 37px;
+            padding: 0;
+            margin: 0;
+            padding: 0; 
+            font-family: $mainFont;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 46px;
+            letter-spacing: 0.5px;
+            text-align: center;
+            margin-top: -6px;
+            margin-left: 4px;
+            vertical-align: middle;
+            background-repeat: no-repeat;
+            background-position: 0px 7px;
+            background-color: transparent;
+            color: #ffffff;
+          }
+        }
+        #input1_errorMessage {
+          padding: 7px;
+          border: 0;
+          height: 15px;
+          line-height: 5px;
+          font-family: $mainFont;
+          margin-top: -15px;
+          font-size: 10px;
+          line-height: 42px;
+          letter-spacing: 0.5px;
+          font-weight: lighter;
+          color: #888888;
+        }
+        .line2 {
+          width: 275px;
+          height: 28px;
+          display: flex;
+          flex-direction:row;
+          margin: 0;
+          padding: 0;
+          position: relative;
+          #input2 {
+            width: 203px;
+            height: 28px;
+            margin: 0;  
+            font-size: 12px; 
+            margin: 0;
+            padding-left: 10px;
+            border: 0;
+            background: #e5e5e5;
+            font-size: 14px;
+            font-family: $thirdFont;
+            font-weight: 400;
+            color: #888888;
+            line-height: 42px;
+            letter-spacing: 0.14px;
+            border-radius: 3px;
+          }
+          #message-container2 {
+            width: 85px;
+            height: 37px;
+            padding: 0;
+            margin: 0;
+            margin: 0;
+            padding: 0; 
+            font-family: $mainFont;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 44px;
+            letter-spacing: 0.5px;
+            text-align: center;
+            margin-top: -6px;
+            margin-left: 4px;
+            vertical-align: middle;
+            background-repeat: no-repeat;
+            background-position: 0px 7px;
+            background-color: transparent;
+            color: #ffffff;
+          }
+        }
+        #input2_errorMessage {
+          padding: 7px;
+          border: 0;
+          height: 15px;
+          line-height: 5px;
+          font-family: $mainFont;
+          margin-top: -15px;
+          font-size: 10px;
+          line-height: 42px;
+          letter-spacing: 0.5px;
+          font-weight: lighter;
+          color: #888888;
+        }
+        .line3 {
+          width: 275px;
+          height: 88px;
+          position: relative;
+          #input3 {
+            width: 255px;
+            height: 88px;
+            font-size: 12px; 
+            margin: 0;
+            padding: 10px;
+            border: 0;
+            background: #e5e5e5;
+            font-size: 14px;
+            font-family: $thirdFont;
+            font-weight: 400;
+            color: #888888;
+            letter-spacing: 0.14px;
+            border-radius: 3px;
+            border: 0;                          
+          }
+        }
+        #submit {
+          width: 118px;
+          height: 32px;
+          border: 1px solid #4eb7a8;
+          text-align: center;
+          background: #ffffff;
+          font-weight: bolder;
+          color: #4eb7a8;
+          letter-spacing: 0;
+          font-size: 12px;
+          border-radius: 5px;
+          box-shadow: 0 -2px rgba(40, 162, 144, 1) inset;
+          transition: 0.2s;
+          vertical-align: middle;
+          overflow: hidden;
+          position: relative;
+          margin-top: 26px;
+          left: 157px;
+          margin-bottom: 30px;
+        }
+        #submit:hover {
+          background: #4eb7a8;
+          color: #ffffff;
+        }
+        #submit, 
+        #submit:active, 
+        #submit:focus {
+          outline: none;
+        }
+      }
+      .toggles-tick-container {
+        .toggles-headline {
+          margin-left:-35px;
+          margin-bottom: -20px;
+        }
+        .tick-boxes-headline {
+          margin-left:-35px;
+          margin-bottom: -20px;
+        }
+      }
+    }
+  }
 }
 @import "./toggles.scss";
 @import "./tick_boxes.scss";

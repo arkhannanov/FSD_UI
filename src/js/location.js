@@ -18,7 +18,7 @@ function init () {
                     },{
                     iconLayout: 'default#image',
                     // Путь до нашей картинки
-                    iconImageHref: 'img/location_icon.png', 
+                    iconImageHref: 'img/location-icon.png', 
                     // Размер по ширине и высоте
                     iconImageSize: [41, 56],
                     // Смещение левого верхнего угла иконки относительно
@@ -35,5 +35,4 @@ function init () {
     myMap.geoObjects.add(clusterer);
     // Отлючаем возможность изменения масштаба
     myMap.behaviors.disable('scrollZoom');
-
 }

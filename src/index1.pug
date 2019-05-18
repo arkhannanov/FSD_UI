@@ -3,6 +3,10 @@ html
 	head
 		meta(charset = 'utf-8')
 		meta(name='viewport', content="initial-scale=1.0, width=device-width")
+		meta(name="keywords", content="Ключевые слова")
+		meta(name="description", content="FSD Тестовое задение - Страница 1")
+		link(rel="apple-touch-icon", sizes="180x180", href="img/favicons/apple-touch-icon.png")
+		link(rel="icon", type="image/png", sizes="32x32", href="img/favicons/favicon-32x32.png")
 		title FSD_UI
 	body
 		main.page
@@ -15,37 +19,37 @@ html
 					.avatar
 						img(src="img/user.png", hspace="2", vspace="2")
 					.search
-						.search_wrapper
+						.search-wrapper
 							input(type="text", id="search", placeholder="Search")
 							button#search_icon
 				.container
-					.profile_container
-						.profile_headline MY PROFILE
-						.profile_content
-							.profile_content_left_side
-								.profile_avatar_container
-									.profile_avatar
-									.profile_edit
-										button(name="button",class="pfofile_button") EDIT
-								.profile_calendar
+					.profile-container
+						.profile-headline MY PROFILE
+						.profile-content
+							.profile-content-left-side
+								.profile-avatar-container
+									.profile-avatar
+									.profile-edit
+										button(name="button",class="pfofile-button") EDIT
+								.profile-calendar
 									.calendar
 										include blocks/block_calendar/calendar.pug
-							.profile_content_right_side
-								.profile_content_right_side_header SARAH BROWN
-								.profile_content_right_side_contacts
+							.profile-content-right-side
+								.profile-content-right-side-header SARAH BROWN
+								.profile-content-right-side-contacts
 									.line1
-										.profession_title PFOFESSION
+										.profession-title PFOFESSION
 										.profession Actress
 									.line2
-										.phone_title PHONE	
+										.phone-title PHONE	
 										.phone +79263864674
 									.line3
-										.twitter_title TWITTER
+										.twitter-title TWITTER
 										.twitter twitter
 									.line4
-										.facebook_title FACEBOOK
+										.facebook-title FACEBOOK
 										.facebook facebook
-								.profile_content_right_side_skills
+								.profile-content-right-side-skills
 									.skills
 										ul
 											li.li1
@@ -56,23 +60,23 @@ html
 												span Drama
 											li.li4 
 												span Comedy
-									.pie_chart
+									.pie-chart
 										include blocks/block_percents_pie/svg/pie.pug
-					.right_side
-						.right_side_links_contaner
-							.right_side_links_contaner_line1 
+					.right-side
+						.right-side-links-contaner
+							.right-side-links-contaner-line1 
 								a(href="#", class="profile") PROFILE
-							.right_side_links_contaner_line2
+							.right-side-links-contaner-line2
 								a(href="#", class="feedback") FEEDBACK
-							.right_side_links_contaner_line3
-								a(href="#", class="news_events") NEWS AND EVENTS
-						.right_side_news_container
-							.right_side_news_container_line1 LAST NEWS
-							.right_side_news_container_news1
+							.right-side-links-contaner-line3
+								a(href="#", class="news-events") NEWS AND EVENTS
+						.right-side-news-container
+							.right-side-news-container-line1 LAST NEWS
+							.right-side-news-container-news1
 								include blocks/block_side1/side1.pug
-							.right_side_news_container_news2
+							.right-side-news-container-news2
 								include blocks/block_side2/side2.pug
-				.navigation_container
+				.navigation-container
 							.button1
 								button(name="button", class="btn", onclick="document.location='index1.html'") PAGE 1
 							.button2
@@ -82,5 +86,5 @@ html
 							.button4
 								button(name="button", class="btn", onclick="document.location='index4.html'") PAGE 4				
 				.footer1
-					.fotter_chat
+					.fotter-chat
 						include blocks/block_messaging/messaging.pug

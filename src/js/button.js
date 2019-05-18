@@ -1,13 +1,10 @@
 var buttons = document.getElementsByName('button');
 
-Array.prototype.forEach.call(buttons, function(element)
-{
+Array.prototype.forEach.call(buttons, function(element) {
     element.addEventListener('click', createRipple);
-
 });
 
-function createRipple (e)
-{
+function createRipple (e) {
     var circle = document.createElement('div');
     this.append(circle);
 

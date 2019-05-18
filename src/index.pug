@@ -1,67 +1,71 @@
 doctype html
 html
-	head
-		meta(charset = 'utf-8')
-		meta(name='viewport', content="initial-scale=1.0, width=device-width")
-		title FSD_UI
-	body
-		main.page
-			.wrapper
-					.button
-						include blocks/block_headline/headline.pug
-						+headline ("STANDARD  BUTTONS")
-						include blocks/block_buttons/buttons.pug
-					.arrows
-						+headline ("ARROW  BUTTONS")
-						include blocks/block_arrows/arrows.pug
-					.percents_pie
-						+headline ("PERCENTAGES / PIE CHART")
-						include blocks/block_percents_pie/percents_pie.pug
-					.sliders
-						+headline ("SLIDERS")
-						include blocks/block_sliders/sliders.pug
-					.stages
-						+headline ("STAGES")
-						include blocks/block_stages/stages.pug
-					.form
-						+headline ("FORM  ELEMENTS")
-						include blocks/block_form/form.pug
-					.search_drop_down_user_profile
-						.search_drop_down
-							+headline ("SEARCH / DROP DOWN")
-							include blocks/block_search/search.pug
-							include blocks/block_drop_down/drop_down.pug
-						.user_profile
-							+headline ("USER  PROFILE")
-							include blocks/block_user/user.pug
-							+user ("img/user1.png","John Smith","UX  DESIGNER")
-							+user ("img/user2.png","Sarah Brown","DEVELOPER")
-					.news_events
-						+headline ("NEWS  &  EVENTS")
-						.news_events_container
-							include blocks/block_side1/side1.pug
-							include blocks/block_side2/side2.pug
-					.location
-						+headline ("LOCATION")
-						include blocks/block_location/location.pug
-					.calendar_messaging
-						.calendar_head
-							+headline ("CALENDAR")
-							include blocks/block_calendar/calendar.pug
-						.messaging
-							+headline ("MESSAGING")
-							include blocks/block_messaging/messaging.pug
-					.video
-						+headline ("VIDEO")
-						include blocks/block_video/video.pug
-					.page_navigation
-						+headline ("_______________________________________")
-						.navigation_container
-							.button1
-								button(name="button", class="btn", onclick="document.location='index1.html'") PAGE 1
-							.button2
-								button(name="button", class="btn", onclick="document.location='index2.html'") PAGE 2
-							.button3
-								button(name="button", class="btn", onclick="document.location='index3.html'") PAGE 3
-							.button4
-								button(name="button", class="btn", onclick="document.location='index4.html'") PAGE 4
+    head
+        meta(charset = 'utf-8')
+        meta(name='viewport', content="initial-scale=1.0, width=device-width")
+        meta(name="keywords", content="Ключевые слова")
+        meta(name="description", content="FSD Kit UI")
+        link(rel="apple-touch-icon", sizes="180x180", href="img/favicons/apple-touch-icon.png")
+        link(rel="icon", type="image/png", sizes="32x32", href="img/favicons/favicon-32x32.png")
+        title FSD_UI
+    body
+        main.page
+            .wrapper
+                .button
+                    include blocks/block_headline/headline.pug
+                    +headline ("STANDARD  BUTTONS")
+                    include blocks/block_buttons/buttons.pug
+                .arrows
+                    +headline ("ARROW  BUTTONS")
+                    include blocks/block_arrows/arrows.pug
+                .percents-pie
+                    +headline ("PERCENTAGES / PIE CHART")
+                    include blocks/block_percents_pie/percents_pie.pug
+                .sliders
+                    +headline ("SLIDERS")
+                    include blocks/block_sliders/sliders.pug
+                .stages
+                    +headline ("STAGES")
+                    include blocks/block_stages/stages.pug
+                .form
+                    +headline ("FORM  ELEMENTS")
+                    include blocks/block_form/form.pug
+                .search-drop-down-user-profile
+                    .search-drop-down
+                        +headline ("SEARCH / DROP DOWN")
+                        include blocks/block_search/search.pug
+                        include blocks/block_drop_down/drop_down.pug
+                    .user-profile
+                        +headline ("USER  PROFILE")
+                        include blocks/block_user/user.pug
+                        +user ("img/user-1.png","John Smith","UX  DESIGNER")
+                        +user ("img/user-2.png","Sarah Brown","DEVELOPER")
+                .news-events
+                    +headline ("NEWS  &  EVENTS")
+                    .news-events-container
+                        include blocks/block_side1/side1.pug
+                        include blocks/block_side2/side2.pug
+                .location
+                    +headline ("LOCATION")
+                    include blocks/block_location/location.pug
+                .calendar-messaging
+                    .calendar_head
+                        +headline ("CALENDAR")
+                        include blocks/block_calendar/calendar.pug
+                    .messaging
+                        +headline ("MESSAGING")
+                        include blocks/block_messaging/messaging.pug
+                .video
+                    +headline ("VIDEO")
+                    include blocks/block_video/video.pug
+                .page-navigation
+                    +headline ("_______________________________________")
+                    .navigation-container
+                        .button1
+                            button(name="button", class="btn", onclick="document.location='index1.html'") PAGE 1
+                        .button2
+                            button(name="button", class="btn", onclick="document.location='index2.html'") PAGE 2
+                        .button3
+                            button(name="button", class="btn", onclick="document.location='index3.html'") PAGE 3
+                        .button4
+                            button(name="button", class="btn", onclick="document.location='index4.html'") PAGE 4

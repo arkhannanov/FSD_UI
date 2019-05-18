@@ -3,14 +3,18 @@ html
     head
         meta(charset = 'utf-8')
         meta(name='viewport', content="initial-scale=1.0, width=device-width")
+        meta(name="keywords", content="Ключевые слова")
+        meta(name="description", content="FSD Тестовое задение - Страница 4")
+        link(rel="apple-touch-icon", sizes="180x180", href="img/favicons/apple-touch-icon.png")
+        link(rel="icon", type="image/png", sizes="32x32", href="img/favicons/favicon-32x32.png")
         title FSD_UI
     body
         main.page
             .wrapper
                 .header
-                    .header_fist_line
+                    .header-fist-line
                         .logo LOGOTIP
-                    .header_second_line
+                    .header-second-line
                         .button1
                             button(name="button", class="btn") ГЛАВНАЯ
                         .button2
@@ -18,37 +22,37 @@ html
                         .button3
                             button(name="button", class="btn") О НАС
                 .content
-                    .left_side
-                        .drop_down1
-                            div.drop_down1_header Коробка передач:
+                    .left-side
+                        .drop-down1
+                            div.drop-down1-header Коробка передач:
                             div#contentline1 Не выбрано
                             button.drop1btn
-                            div.drop_down1_content
+                            div.drop-down1-content
                                 div#option11 Механика
                                 div#option12 Автомат
-                        .drop_down2
-                            div.drop_down2_header Место оформления аренды:
+                        .drop-down2
+                            div.drop-down2-header Место оформления аренды:
                             div#contentline2 Не выбрано
                             button.drop2btn
-                            div.drop_down2_content
+                            div.drop-down2-content
                                 div#option21 В офисе
                                 div#option22 Ваш адрес (по телефону)
                         .slider
                             include blocks/block_sliders/sliders/slider1.pug
                         .add
-                            .add_headline Добавить в машину:
-                            .add_line1
-                                .tick_box
+                            .add-headline Добавить в машину:
+                            .add-line1
+                                .tick-box
                                     include blocks/block_form/tick_boxes.pug
-                                .add_line1_content Детское кресло
-                            .add_line2
-                                .tick_box
+                                .add-line1-content Детское кресло
+                            .add-line2
+                                .tick-box
                                     include blocks/block_form/tick_boxes.pug
-                                .add_line2_content Навигатор
-                            .add_line3
-                                .tick_box
+                                .add-line2-content Навигатор
+                            .add-line3
+                                .tick-box
                                     include blocks/block_form/tick_boxes.pug
-                                .add_line3_content Автохолодильник
+                                .add-line3-content Автохолодильник
                         .form
                             .line1 
                                 input(type="text", id="input1", placeholder="Ваша фамилия")
@@ -70,11 +74,11 @@ html
                                 input(type="text", id="input5", placeholder="E-mail адрес")
                                 div#message-container5
                             p#input5_errorMessage Должно быть по крайней мере 3 символа.
-                    .right_side
+                    .right-side
                         .calendar
                             include blocks/block_calendar/calendar.pug
                         button#submit Отправить заявку
-                .navigation_container
+                .navigation-container
                             .button1
                                 button(name="button", class="btn", onclick="document.location='index1.html'") PAGE 1
                             .button2
@@ -86,9 +90,9 @@ html
                 .fotter
                     .logo LOGOTIP
                     .menu
-                        .menu_line1
-                             a(href="#") Главная
-                        .menu_line2
-                            a(href="#") Каталог 
-                        .menu_line3
-                            a(href="#") Контакты 
+                        .menu-line1
+                             a(href="/mock-address/change-me") Главная
+                        .menu-line2
+                            a(href="/mock-address/change-me") Каталог 
+                        .menu-line3
+                            a(href="/mock-address/change-me") Контакты 
