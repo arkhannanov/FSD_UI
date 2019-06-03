@@ -10,7 +10,7 @@ import './js/location.js'
 import './js/calendar.js'
 import './js/video.js'
 import './js/favicons.js'
-import './js/postcss.config.js'
+
 
 import './main.scss'
 

@@ -75,7 +75,7 @@
     }
     &_prev {
       left: 5px;
-      background-image: url('../img/arrow-left.png');
+      background-image: url('../../img/arrow-left.png');
       background-repeat: no-repeat;
       background-position: 8px 14px;
       &:before {
@@ -85,7 +85,7 @@
     }
     &_next {
       right: 5px;
-      background-image: url('../img/arrow-right.png');
+      background-image: url('../../img/arrow-right.png');
       background-repeat: no-repeat;
       background-position: 8px 14px;
       &:before {

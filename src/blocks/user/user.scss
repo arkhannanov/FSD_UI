@@ -15,7 +15,7 @@
   }
 
   .user__content-container {
-    background-image: url('../img/slider-1.png');
+    background-image: url('../../img/slider-1.png');
     background-repeat: no-repeat;
     background-position: 0px px;
     margin-left: 4px;
@@ -55,7 +55,7 @@
       .user__facebook {
         width: 25px;
         height: 25px;
-        background-image: url('../img/spritesheet.png');
+        background-image: url('../../img/spritesheet.png');
         background-repeat: no-repeat;
         background-position: -2px -49px;           
       }
@@ -63,7 +63,7 @@
       .user__twitter {
         width:25px;
         height: 25px;
-        background-image: url('../img/spritesheet.png');
+        background-image: url('../../img/spritesheet.png');
         background-repeat: no-repeat;
         background-position: -92px -8px;         
       }
@@ -71,7 +71,7 @@
       .user__dribbble {
         width:25px;
         height: 25px;
-        background-image: url('../img/spritesheet.png');
+        background-image: url('../../img/spritesheet.png');
         background-repeat: no-repeat;
         background-position: -8px -8px; 
       }
@@ -79,7 +79,7 @@
   }
     
   .user__content-container:hover {
-    background-image: url('../img/slider-2.png');          
+    background-image: url('../../img/slider-2.png');          
     .user__name {
       color: #ffffff;
     }
