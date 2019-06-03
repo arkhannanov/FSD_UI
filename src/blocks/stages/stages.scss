@@ -1,0 +1,90 @@
+.stages {
+  width: 519px;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  margin-bottom: 55px;
+  width: 650px;
+  margin-left: -35px;
+  margin-right: auto;
+
+  .stages__div-wrapper {
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+
+    #stages__div-1, 
+    #stages__div-2, 
+    #stages__div-3, 
+    #stages__div-4 {
+      width: 146px;
+      height: 5px;
+      background: #e5e5e5;
+    }
+  }
+  .stages__circles-wrapper {
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width: 605px;
+    margin-top: -17px;
+
+    #stages__circle-1,
+    #stages__circle-2,
+    #stages__circle-3,
+    #stages__circle-4,
+    #stages__circle-5 {
+      width:29px;
+      height: 29px;
+      border-radius: 50%;
+      background: #e5e5e5;
+      border: 0px;
+      font-family: $mainFont;
+      font-size: 14px;
+      line-height: 30px;
+      letter-spacing: 0.7px;
+      color: #ffffff;
+    }
+
+    #stages__circle-1 {
+      background:#e75735; 
+    }
+
+    #stages__circle-2,
+    #stages__circle-3,
+    #stages__circle-4,
+    #stages__circle-5 {
+      color:#888888;
+    }
+
+    #stages__circle-1:active,
+    #stages__circle-1:focus,
+    #stages__circle-2:active,
+    #stages__circle-2:focus,
+    #stages__circle-3:active,
+    #stages__circle-3:focus,
+    #stages__circle-4:active,
+    #stages__circle-4:focus,
+    #stages__circle-5:active,
+    #stages__circle-5:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    #stages__circle-1:visited,
+    #stages__circle-2:visited,
+    #stages__circle-3:visited,
+    #stages__circle-4:visited,
+    #stages__circle-5:visited {
+      outline: none;
+    }
+
+    #stages__circle-1::-moz-focus-inner,
+    #stages__circle-2::-moz-focus-inner,
+    #stages__circle-3::-moz-focus-inner,
+    #stages__circle-4::-moz-focus-inner,
+    #stages__circle-5::-moz-focus-inner {
+      border: 0;
+    }
+  }
+}

@@ -1,12 +1,12 @@
-var input1 = document.getElementById('input1');
-var messagecontainer1 = document.getElementById('message-container1');
-var input1_errorMessage = document.getElementById('input1_errorMessage');
-var input2 = document.getElementById('input2');
-var messagecontainer2 = document.getElementById('message-container2');
-var input2_errorMessage = document.getElementById('input2_errorMessage');
-var input3 = document.getElementById('input3');
-var submitForm = document.getElementById('submit');
-var completeForm = document.getElementById('completeForm');
+var formNameInput = document.getElementById('form__name-input');
+var formNameMessageContainer = document.getElementById('form__name-message-container');
+var formNameInputerrormessage = document.getElementById('form__name-input-error-message');
+var formEmailInput = document.getElementById('form__email-input');
+var formEmailMessageContainer = document.getElementById('form__email-message-container');
+var formEmailInputErrorMessage = document.getElementById('form__email-input-error-message');
+var formMessageInput = document.getElementById('form__message-input');
+var formSubmitButton = document.getElementById('form__submit-button');
+var formConmpleform = document.getElementById('form__completeform');
 
 var fill1 = false;
 var fill2 = false;
@@ -19,11 +19,11 @@ var Message1 = "This field should at least contain 3 characters.";
 var Message2 = "This seems to be an invalid email.";
 var FormNotComplete = "Form is not complete.";
 
-input1.addEventListener('keyup', checkInput1);
-input2.addEventListener('keyup', checkInput2);
-input3.addEventListener('keyup', checkInput3);
+formNameInput.addEventListener('keyup', checkInput1);
+formEmailInput.addEventListener('keyup', checkInput2);
+formMessageInput.addEventListener('keyup', checkInput3);
 
-submitForm.addEventListener('click', submit);
+formSubmitButton.addEventListener('click', submit);
 
 function checkInput1(e) {
     let usedInput = e.target;
@@ -86,50 +86,48 @@ function checkInput3(e) {
 function submit(){
 
 if (Error1==true){
-    input1_errorMessage.innerHTML=Message1;
-    messagecontainer1.innerHTML="ERROR";
-    messagecontainer1.style.cssText="background-image: url('./img/form-orange.png');";
+    formNameInputerrormessage.innerHTML=Message1;
+    formNameMessageContainer.innerHTML="ERROR";
+    formNameMessageContainer.style.cssText="background-image: url('./img/form-orange.png');";
     setTimeout(() => {
         input1_errorMessage.innerHTML="";
     }, 2000);
 }
 else
 {
-    input1_errorMessage.innerHTML="";
-    messagecontainer1.innerHTML="THANKS!";
-    messagecontainer1.style.cssText="background-image: url('./img/form-color2.png');";
+    formNameInputerrormessage.innerHTML="";
+    formNameMessageContainer.innerHTML="THANKS!";
+    formNameMessageContainer.style.cssText="background-image: url('./img/form-color2.png');";
     setTimeout(() => {
-        input1_errorMessage.innerHTML="";
+        formNameInputerrormessage.innerHTML="";
     }, 2000);
-
-     console.log ("Второй цвет фона");
 }
 
 if (Error2==true){
-    input2_errorMessage.innerHTML=Message2;
-    messagecontainer2.innerHTML="ERROR";
-    messagecontainer2.style.cssText="background-image: url('./img/form-orange.png');";
+    formEmailInputErrorMessage.innerHTML=Message2;
+    formEmailMessageContainer.innerHTML="ERROR";
+    formEmailMessageContainer.style.cssText="background-image: url('./img/form-orange.png');";
     setTimeout(() => {
         input2_errorMessage.innerHTML="";
     }, 2000);
 }
 else
 {
-    input2_errorMessage.innerHTML="";
-    messagecontainer2.innerHTML="THANKS!";
-    messagecontainer2.style.cssText="background-image: url('./img/form-color2.png');";
+    formEmailInputErrorMessage.innerHTML="";
+    formEmailMessageContainer.innerHTML="THANKS!";
+    formEmailMessageContainer.style.cssText="background-image: url('./img/form-color2.png');";
     setTimeout(() => {
-        input2_errorMessage.innerHTML="";
+        formEmailInputErrorMessage.innerHTML="";
     }, 2000);
 }
 
 if(fill1==false || fill2==false || fill3==false)
 {
-    completeForm.innerHTML=FormNotComplete;
+    formConmpleform.innerHTML=FormNotComplete;
 }
 else
 {
-    completeForm.innerHTML="";
+    formConmpleform.innerHTML="";
 }
 }
 

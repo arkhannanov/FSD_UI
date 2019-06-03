@@ -1,0 +1,164 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; 
+}
+a {
+  text-decoration: none;
+}
+.page {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.page-wrapper
+{
+  margin-left: 93px;
+  margin-top: 136px;
+  margin-right: 89px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: $smDesktopWidth) {
+    flex-wrap: wrap;
+  }
+.search-drop-down-user-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .search-drop-down {
+    width: 275px;
+  }
+  .user-profile {
+    width: 275px; 
+  }
+}
+
+.sliders {
+  .sliders-container {
+    margin-top: -10px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-bottom: 55px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.form-tick-boxes-toggles {
+  
+  .form-tick-boxes-toggles-container {
+    display: flex;
+    flex-direction: row;
+    .form-tick-boxes-toggles__form {
+      margin-left: 100px;
+    }
+    .form-tick-boxes-toggles__tick-boxes-toggles {
+      margin-left: -60px;
+    }
+  }
+}
+.news-events {
+.news-events-container {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+}
+.calendar-messaging {
+  width: 630px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navigation-container {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 45px;
+  margin-left: 20px;
+}
+}
+
+.percents-pie__container {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 37px;
+}
+
+.ripple {
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.7;
+  position: absolute;
+  transform: scale(0);
+  animation: ripple 0.6s linear;
+}
+@keyframes ripple {
+  to {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+.btn {
+  border: 1px solid #4eb7a8;
+  text-align: center;
+  width: 80px;
+  height: 32px;
+  background: #ffffff;
+  font-weight: bolder;
+  color: #4eb7a8;
+  font-size: 12px;
+  border-radius: 5px;
+  box-shadow: 0 -2px rgba(40, 162, 144, 1) inset;
+  transition: 0.2s;
+  vertical-align: middle;
+  overflow: hidden;
+  position: relative;
+}
+.btn:hover {
+  background: #4eb7a8;
+  color: #ffffff;
+}
+.btn:active,
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn:visited {
+  outline: none;
+}
+.btn::-moz-focus-inner {
+  border: 0;
+}
+// @import "../blocks/buttons/buttons.scss";
+// @import "../blocks/arrows/arrows.scss";
+// @import "../blocks/slider-left/slider-left.scss";
+// @import "../blocks/slider-right/slider-right.scss";
+// @import "../blocks/stages/stages.scss";
+// @import "../blocks/form/form.scss";
+// @import "../blocks/headline/headline.scss";
+// @import "../blocks/search/search.scss";
+// @import "../blocks/drop-down/drop-down.scss";
+// @import "../blocks/user/user.scss";
+// @import "../blocks/side-left/side-left.scss";
+// @import "../blocks/side-right/side-right.scss";
+// @import "../blocks/location/location.scss";
+// @import "../blocks/calendar/calendar.scss";
+// @import "../blocks/messaging/messaging.scss";
+// @import "../blocks/player/player.scss";
+// @import "../blocks/toggles/toggles.scss";
+// @import "../blocks/tick-boxes/tick-boxes.scss";
+// @import "../blocks/percents1/percents1.scss";
+// @import "../blocks/percents2/percents2.scss";
+// @import "../blocks/percents3/percents3.scss";
+// @import "../blocks/percents4/percents4.scss";
+// @import "../blocks/pie/pie.scss";
+
+// @import "scss_assets/fonts.scss";
+// @import "scss_assets/vars.scss";
+

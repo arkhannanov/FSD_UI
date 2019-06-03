@@ -1,8 +1,8 @@
-var tick_boxes = document.getElementsByName('tick_boxes');
+var tickBoxes = document.getElementsByName('tick-boxes');
 var StatusOff = [];
 var INDEX = [];
 
-Array.prototype.forEach.call(tick_boxes, function(element,index)
+Array.prototype.forEach.call(tickBoxes, function(element,index)
 {
     element.addEventListener('click', chg);
     StatusOff[index]=true;

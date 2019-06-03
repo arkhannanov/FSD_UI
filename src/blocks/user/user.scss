@@ -1,0 +1,105 @@
+.user {
+  width: 100%;
+  margin-left: 35px;
+  margin-bottom: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+  &__avatar {
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    background-color: #e5e5e5;
+  }
+
+  .user__content-container {
+    background-image: url('../img/slider-1.png');
+    background-repeat: no-repeat;
+    background-position: 0px px;
+    margin-left: 4px;
+    width: 170px;
+    height: 93px;
+
+    .user__name {
+      font-family: $secondFont;
+      color: #e75735;
+      font-size: 18px;
+      text-align: center;
+      margin-left: 6px;
+      margin-block-start: 14px;
+      margin-block-end: 0;
+    }
+
+    .user__profession {
+      font-family: $mainFont;
+      color: #4f4f4f;
+      font-size: 11px;
+      letter-spacing: 0.55px;
+      text-align: center;
+      margin-left:6px;
+      margin-block-start: 3px;
+      margin-block-end: 0;
+      text-transform: lowercase;
+    }
+
+    .user__links-container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row; 
+      width: 100px;
+      margin-left: 38px;
+      margin-top: 5px;
+
+      .user__facebook {
+        width: 25px;
+        height: 25px;
+        background-image: url('../img/spritesheet.png');
+        background-repeat: no-repeat;
+        background-position: -2px -49px;           
+      }
+
+      .user__twitter {
+        width:25px;
+        height: 25px;
+        background-image: url('../img/spritesheet.png');
+        background-repeat: no-repeat;
+        background-position: -92px -8px;         
+      }
+
+      .user__dribbble {
+        width:25px;
+        height: 25px;
+        background-image: url('../img/spritesheet.png');
+        background-repeat: no-repeat;
+        background-position: -8px -8px; 
+      }
+    }
+  }
+    
+  .user__content-container:hover {
+    background-image: url('../img/slider-2.png');          
+    .user__name {
+      color: #ffffff;
+    }
+
+    .user__profession {
+      color: #ffffff;
+    }
+
+    .user__links-container {
+      .user__facebook {
+        background-position: -33px -49px;
+      }
+
+      .user__twitter {
+        background-position: -92px -47px; 
+      }
+
+      .user__dribbble {
+        background-position: -48px -8px; 
+      }
+    }
+  }
+}

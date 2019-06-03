@@ -1,0 +1,14 @@
+.percents4 {
+  width: 100px;
+  height: 100px;
+
+  &__number {
+    font-size: 40px;
+    font-weight: 300;
+    color: #9d9d9d;
+    letter-spacing: -2px;
+    line-height: 42px;
+    font-family: $secondFont;
+    transform: translate3d(-22px, 15px, 0px);
+  }
+}

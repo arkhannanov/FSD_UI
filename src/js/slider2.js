@@ -1,7 +1,7 @@
 import { compileFunction } from "vm";
 
 var rangeSlider2 = document.getElementById("rs-range-line2");
-var color = document.getElementById("color");
+var color = document.getElementById("slider-right_color");
 
 rangeSlider2.addEventListener("input", showSliderValue2, false);
 

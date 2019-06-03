@@ -2,13 +2,13 @@
 
 const player = document.querySelector('.player');
 const video = player.querySelector('.viewer');
-const progress = player.querySelector('.progress');
-const progressBar = player.querySelector('.progress__filled');
+const progress = player.querySelector('.player__progress');
+const progressBar = player.querySelector('.player__progress_filled');
 const toggle = player.querySelector('.toggle');
 const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player__slider');
 const fullscreen = player.querySelector('.fullscreen');
-const filled = player.querySelector('.progress__filled');
+const filled = player.querySelector('.player__progress_filled');
 
 // build functions
 

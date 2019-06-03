@@ -1,0 +1,22 @@
+mixin messaging(options = {name:"", message1:"", message2:"", buttontitle:""})
+    -let {name, message1, message2, buttontitle} = options;
+    .messaging
+        .messaging__name-container
+            p.messaging__name= name
+            //-  Sarah Brown
+        .messaging__dark-block
+        .messaging__avatar-container
+            img(src="img/user-2.png", alt="User 2", hspace="5", vspace="5", class= ".messaging__avatar")
+        .messaging__dark-container    
+            .messaging__icons  
+                .messaging__icon1
+                .messaging__icon2 
+            .messaging__message1-container
+                p.messaging__message1= message1
+                //- Hey! So are we cool to meet at the art gallery? Say 8pm
+            .messaging__message2-container
+                p.messaging__message2= message2
+                    //-  Yeah that sounds great. See you then.
+            button(name="button", class= "messaging__button")= buttontitle
+            //-  REPLY
+

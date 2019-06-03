@@ -38,20 +38,20 @@ html
                                 div#option21 В офисе
                                 div#option22 Ваш адрес (по телефону)
                         .slider
-                            include blocks/block_sliders/sliders/slider1.pug
+                            include blocks/slider-left/slider-left.pug
                         .add
                             .add-headline Добавить в машину:
                             .add-line1
                                 .tick-box
-                                    include blocks/block_form/tick_boxes.pug
+                                    include blocks/tick-boxes/tick-boxes.pug
                                 .add-line1-content Детское кресло
                             .add-line2
                                 .tick-box
-                                    include blocks/block_form/tick_boxes.pug
+                                    include blocks/tick-boxes/tick-boxes.pug
                                 .add-line2-content Навигатор
                             .add-line3
                                 .tick-box
-                                    include blocks/block_form/tick_boxes.pug
+                                    include blocks/tick-boxes/tick-boxes.pug
                                 .add-line3-content Автохолодильник
                         .form
                             .line1 
@@ -76,7 +76,8 @@ html
                             p#input5_errorMessage Должно быть по крайней мере 3 символа.
                     .right-side
                         .calendar
-                            include blocks/block_calendar/calendar.pug
+                            include blocks/calendar/calendar.pug
+                            +calendar
                         button#submit Отправить заявку
                 .navigation-container
                             .button1

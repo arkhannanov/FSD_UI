@@ -1,0 +1,11 @@
+mixin side-left(options = {title: "", date: "", text: ""})
+    -let {title, date, text } = options;
+    .side-left
+        img(src="img/pic-1.png", alt="Pic 1", class="side-left__image")
+        .side-left__content-container
+            .side-left__title-container
+                p.side-left__title= title
+            .side-left__date-container
+                p.side-left__date= date
+            .side-left__text-container
+                p.side-left__text= text

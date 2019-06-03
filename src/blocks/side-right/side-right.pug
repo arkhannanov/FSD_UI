@@ -1,0 +1,13 @@
+mixin side-right(options = {number: "", month: "", title: "", text: "", buttontitle: ""})
+    -let {number, month, title, text, buttontitle } = options;
+    .side-right
+        img(src="img/pic-2.png", alt="Pic 2", class="side-right__image")
+        .side-right__content-container
+            .side-right__date-container
+                .side-right__date-number= number
+                .side-right__date-month= month
+            .side-right__title-container
+                p.side-right__title= title
+            .side-right__text-container
+                p.side-right__text= text
+            button(name="button", class="side-right__button")= buttontitle

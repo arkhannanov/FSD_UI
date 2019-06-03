@@ -1,26 +1,25 @@
+var toggl = document.getElementById('toggles__toggl');
+var togglesCircle = document.getElementById('toggles__circle');
 
-var buttontoggles = document.getElementById('buttontoggles');
-var toggles_circle = document.getElementById('toggles_circle');
+var statusOff =true;
 
-var StatusOff =true;
-
-buttontoggles.addEventListener('click', chg);
+toggl.addEventListener('click', chg);
 
 function chg ()
 {
-    if (StatusOff==true)
+    if (statusOff==true)
     {
-        buttontoggles.style.cssText="background-color: #4eb7a8; padding-left: 12px; text-align: left;";
-        buttontoggles.innerHTML="ON";
-        toggles_circle.style.cssText="margin-left: 38px;";
-        StatusOff=false;
+        toggl.style.cssText="background: #4eb7a8; padding-left: 4px;";
+        toggl.innerHTML="on";
+        togglesCircle.style.cssText="margin-left: 38px;";
+        statusOff=false;
     }
     else
     {
-        buttontoggles.style.cssText="background-color: #e5e5e5; padding-left: 25px;; text-align: center;";
-        buttontoggles.innerHTML="OFF";
-        toggles_circle.style.cssText="margin-left: 2px;";
-        StatusOff=true;
+        toggl.style.cssText="background: #e5e5e5; padding-left: 32px;";
+        toggl.innerHTML="off";
+        togglesCircle.style.cssText="margin-left: 2px;";
+        statusOff=true;
     }
 
 }

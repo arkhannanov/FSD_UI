@@ -1,13 +1,13 @@
-var circle1 = document.getElementById('circle1');
-var circle2 = document.getElementById('circle2');
-var circle3 = document.getElementById('circle3');
-var circle4 = document.getElementById('circle4');
-var circle5 = document.getElementById('circle5');
+var circle1 = document.getElementById('stages__circle-1');
+var circle2 = document.getElementById('stages__circle-2');
+var circle3 = document.getElementById('stages__circle-3');
+var circle4 = document.getElementById('stages__circle-4');
+var circle5 = document.getElementById('stages__circle-5');
 
-var div1 = document.getElementById('div1');
-var div2 = document.getElementById('div2');
-var div3 = document.getElementById('div3');
-var div4 = document.getElementById('div4');
+var div1 = document.getElementById('stages__div-1');
+var div2 = document.getElementById('stages__div-2');
+var div3 = document.getElementById('stages__div-3');
+var div4 = document.getElementById('stages__div-4');
 
 circle1.addEventListener('click', function() {
     circle1.style.cssText = 'background: #e75735; color: white;';

@@ -32,26 +32,27 @@ html
                 .content
                     .div1
                         .diagramm1
-                            include blocks/block_percents_pie/svg/percents1.pug
+                           
                         .content1 Просроченных проектов.
                     .div2
                         .diagramm2
-                            include blocks/block_percents_pie/svg/percents2.pug
+                           
                         .content2 Проектов, выполненных досрочно.
                     .div3
                         .diagramm3
-                            include blocks/block_percents_pie/svg/percents3.pug
+                           
                         .content3 Нестарндарных проектов.
                     .div4
                         .diagramm4
-                            include blocks/block_percents_pie/svg/percents4.pug
+                            
                         .content4 Довольных клиентов.
                 .comment-headline Оставить отзыв
                 .comment-container
                     .calendar-container
                         .calendar-headline Выбрать день публикации
                         .calendar
-                            include blocks/block_calendar/calendar.pug
+                            include blocks/calendar/calendar.pug
+                            +calendar
                     .form-container
                         .line1 
                             input(type="text", id="input1", placeholder="Имя")
@@ -59,7 +60,7 @@ html
                             input(type="text", id="input2", placeholder="E-mail")
                         .raiting Рейтинг
                         .line3
-                            include blocks/block_stages/stages.pug
+                            include blocks/stages/stages.pug
                         .line4
                          textarea(type="text", id="input4", placeholder="Сообщение")
                         .line5

@@ -1,6 +1,6 @@
 @import "scss_assets/fonts.scss";
 @import "scss_assets/vars.scss";
-@import "../blocks/block_location/location.scss";
+@import "../blocks/location/location.scss";
 .wrapper {
   max-width: 700px;
   .header {
@@ -392,9 +392,5 @@
       }
     }
 }
-@import "../blocks/block_percents_pie/svg/percents1.scss";
-@import "../blocks/block_percents_pie/svg/percents2.scss";
-@import "../blocks/block_percents_pie/svg/percents3.scss";
-@import "../blocks/block_percents_pie/svg/percents4.scss";
-@import "../blocks/block_stages/stages.scss";
-@import "../blocks/block_calendar/calendar.scss";
+@import "../blocks/stages/stages.scss";
+@import "../blocks/calendar/calendar.scss";

@@ -6,22 +6,16 @@ import './js/form.js'
 import './js/toggles.js'
 import './js/tick_boxes.js'
 import './js/search.js'
-//import 'http://api-maps.yandex.ru/2.1/?lang=ru_RU'
 import './js/location.js'
 import './js/calendar.js'
 import './js/video.js'
 import './js/favicons.js'
+import './js/postcss.config.js'
 
+import './main.scss'
 
-
-//import './js/postcss.config.js'
-
-//import './css/main.css'
-import './scss/main.scss'
-
-// import Bootstrap from 'bootstrap/dist/css/bootstrap.min.css'
-// import 'bootstrap/dist/css/bootstrap.min.css'
-
-// import 'vue'
-// import Vue from 'vue'
-window.Vue = require('vue')
+function importAll(resolve) {
+    resolve.keys().forEach(resolve);
+  }
+  
+importAll(require.context('./', true, /\.(scss)$/));

@@ -1,6 +1,6 @@
 @import "scss_assets/fonts.scss";
 @import "scss_assets/vars.scss";
-@import "../blocks/block_messaging/messaging.scss";
+@import "../blocks/messaging/messaging.scss";
 
 .body {
   max-width: 1200px;
@@ -492,7 +492,7 @@
     }
   }
 }
-@import "../blocks/block_search/search.scss";
-@import "../blocks/block_calendar/calendar.scss";
-@import "../blocks/block_side1/side1.scss";
-@import "../blocks/block_side2/side2.scss";
+@import "../blocks/search/search.scss";
+@import "../blocks/calendar/calendar.scss";
+@import "../blocks/side-left/side-left.scss";
+@import "../blocks/side-right/side-right.scss";

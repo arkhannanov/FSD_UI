@@ -1,0 +1,133 @@
+include blocks/headline/headline.pug
+                include blocks/buttons/buttons.pug
+                include blocks/percents1/percents1.pug
+                include blocks/percents2/percents2.pug
+                include blocks/percents3/percents3.pug
+                include blocks/percents4/percents4.pug
+                //- 15% 25% 30% 30%
+                include blocks/pie/pie.pug
+                include blocks/slider-left/slider-left.pug
+                include blocks/slider-right/slider-right.pug
+                include blocks/stages/stages.pug
+                include blocks/form/form.pug
+                include blocks/toggles/toggles.pug
+                include blocks/tick-boxes/tick-boxes.pug
+                include blocks/search/search.pug
+                include blocks/drop-down/drop-down.pug
+                include blocks/user/user.pug
+                include blocks/side-left/side-left.pug
+                include blocks/side-right/side-right.pug
+                include blocks/location/location.pug
+                include blocks/calendar/calendar.pug
+                include blocks/messaging/messaging.pug
+                include blocks/player/player.pug
+                include blocks/arrows/arrows.pug
+
+mixin page
+    main.page
+            .page-wrapper
+                .button
+                    +headline ("standard buttons")
+                    +buttons
+                .arrows
+                    +headline ("arrow buttons")
+                    +arrows
+                .percents-pie
+                    +headline ("percentages / pie chart")
+                    .percents-pie__container
+                        +percents1 ({
+                            number: "0"
+                        })
+                        +percents2 ({
+                            number: "38"
+                        })
+                        +percents3 ({
+                            number: "62"
+                        })
+                        +percents4 ({
+                            number: "89"
+                        })
+                        +pie
+                .sliders
+                    +headline ("sliders")
+                    .sliders-container
+                        +slider-left
+                        +slider-right
+                .stages
+                    +headline ("stages")
+                    +stages
+                .form-tick-boxes-toggles
+                    +headline ("form elements")
+                    .form-tick-boxes-toggles-container
+                        .form-tick-boxes-toggles__form
+                            +form
+                        .form-tick-boxes-toggles__tick-boxes-toggles
+                            +headline ("toggles")
+                            +toggles
+                            +headline ("tick boxes")
+                            +tick-boxes
+                .search-drop-down-user-profile
+                    .search-drop-down
+                        +headline ("search / drop down")
+                        +search
+                        +drop-down ({contentline: "Choose An Option", option1: "Option 1", option2: "Option 2", option3: "Option 3"})
+                    .user-profile
+                        +headline ("user profile")
+                        +user ({
+                            source: "img/user-1.png",
+                            name: "John Smith",
+                            profession: "ux designer"
+                        })
+                        +user ({
+                            source: "img/user-2.png",
+                            name: "Sarah Brown",
+                            profession: "developer"
+                        })
+                .news-events
+                    +headline ("news & events")
+                    .news-events-container
+                        +side-left({
+                            title: "It’s all going downhill",
+                            date: "24  august 2013",
+                            text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.`
+                        })
+                        +side-right({
+                            number: "24",
+                            month: "Aug",
+                            title: `this is the title`,
+                            text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+                            buttontitle: "add to calendar"
+                        })
+                .location
+                    +headline ("location")
+                    +location({ 
+                        title: "Meet us!", 
+                        address: "1259  California St san Francisco, CA"
+                    })
+                .calendar-messaging
+                    .calendar_head
+                        +headline ("calendar")
+                        +calendar
+                    .messaging
+                        +headline ("messaging")
+                        +messaging ({
+                            name: "Sarah Brown", 
+                            message1: "Hey! So are we cool to meet at the art gallery? Say 8pm", 
+                            message2: "Yeah that sounds great. See you then.", 
+                            buttontitle: "reply"
+                        })
+                .video
+                    +headline ("video")
+                    +player
+                .page-navigation
+                    +headline ("_______________________________________")
+                    .navigation-container
+                        .button1
+                            button(name="button", class="btn", onclick="document.location='index1.html'") PAGE 1
+                        .button2
+                            button(name="button", class="btn", onclick="document.location='index2.html'") PAGE 2
+                        .button3
+                            button(name="button", class="btn", onclick="document.location='index3.html'") PAGE 3
+                        .button4
+                            button(name="button", class="btn", onclick="document.location='index4.html'") PAGE 4

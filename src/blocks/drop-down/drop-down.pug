@@ -1,0 +1,9 @@
+mixin drop-down(options = {contentline: "Choose An Option", option1: "Option 1", option2: "Option 2", option3: "Option 3"})
+    -let {contentline = "Choose An Option", option1 = "Option 1", option2 = "Option 2", option3 = "Option 3"} = options;
+    .drop-down
+        .drop-down__contentline= contentline
+        button.drop-down__btn
+        .drop-down__content
+            a(href="/mock-address/change-me")= option1
+            a(href="/mock-address/change-me")= option2
+            a(href="/mock-address/change-me")= option3 
