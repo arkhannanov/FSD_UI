@@ -1,9 +1,10 @@
 mixin location( options = {title:"", address:""})
     -let { title, address} = options;
-    .location__map#map
-        script(src="https://api-maps.yandex.ru/2.1.17/?lang=ru_RU", type="text/javascript")
-    .location__content
-        .location__content-title= title
-        .location__content-address= address
-        .location__content-icon1
-        .location__content-icon2
+    .location
+        .location__map#map
+            script(src="https://api-maps.yandex.ru/2.1.17/?lang=ru_RU", type="text/javascript")
+        .location__content
+            .location__content-title= title
+            .location__content-address= address
+            .location__content-icon1
+            .location__content-icon2

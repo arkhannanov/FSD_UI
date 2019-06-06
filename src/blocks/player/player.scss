@@ -4,68 +4,77 @@
   max-width: 594px;
   overflow: hidden;
   margin-bottom: 30px;
-}
-.player__video {
-  max-width: 100%;
-  border-radius: 5px;
-  overflow: hidden;
-}
-.player__controls {
-  position: relative;
-  display: none;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 100%;
-  height: 48px;
-  margin-top: -53px;
-}
-.player__progress-container {
-  flex-grow: 1;
-}
-.player:fullscreen {
-  border-width: 0;
-  max-width: none;
-  width: 100%;
-}
-.player:hover .player__controls {
-  display: flex;
-}
-.player__progress {
-  height: 5px;
-  transition: height 0.3s;
-  background: white;
-  height: 5px;
-  width: 98%;
-  margin-top: 22px;
-  border-radius: 3px;
-  cursor: pointer;
-}
-.player__button {
-  background: none;
-  border: 0;
-  line-height: 1;
-  color: white;
-  text-align: center;
-  outline: 0;
-  padding: 0;
-  cursor: pointer;
-  width: 48px;
-  height: 48px;
-}
-.player__button:focus {
-  border-color: #b8db92;
-}
 
-.fullscreen {
-  background-image: url('../../img/fullscreen.png');
-  background-repeat: no-repeat;
-  background-position: 0px 0px;
-}
-.player__progress_filled {
-  width: 50%;
-  background: #e75735;
-  height: 5px;
-  flex: 0;
-  flex-basis: 50%;
-  border-radius: 3px;
+  &__video {
+    max-width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  &__controls {
+    position: relative;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 48px;
+    margin-top: -53px;
+  }
+
+  &__progress-container {
+    flex-grow: 1;
+  }
+
+  &:fullscreen {
+    border-width: 0;
+    max-width: none;
+    width: 100%;
+  }
+
+  &:hover .player__controls {
+    display: flex;
+  }
+
+  &__progress {
+    height: 5px;
+    transition: height 0.3s;
+    background: white;
+    height: 5px;
+    width: 98%;
+    margin-top: 22px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  &__button {
+    background: none;
+    border: 0;
+    line-height: 1;
+    color: white;
+    text-align: center;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+  }
+
+  &__button:focus {
+    border-color: #b8db92;
+  }
+
+  .fullscreen {
+    background-image: url('../../img/fullscreen.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+  }
+
+  &__progress_filled {
+    width: 50%;
+    background: #e75735;
+    height: 5px;
+    flex: 0;
+    flex-basis: 50%;
+    border-radius: 3px;
+  }
 }
