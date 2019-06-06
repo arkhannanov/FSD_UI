@@ -1,7 +1,7 @@
 .arrows {
   width: 60%;
 
-  .arrows__arrows-container {
+  &__arrows-container {
     width: 130px;
     display: flex;
     flex-direction:row;
@@ -10,87 +10,89 @@
     align-content: center;
     margin-left: 4.167rem;
     margin-bottom: 2rem;
+  }
 
-    .bt1 {
-      border: 2px solid #4eb7a8;
-      text-align: center;
-      width:  2.083rem;
-      height: 2.083rem;
-      background-image: url('../../img/arrow1.png');
-      background-repeat: no-repeat;
-      background-position: 13px 11px;
-      background-color: white;
-      border-radius: 50%;
-      transition: 0.2s;
-      overflow: hidden;
-      position: relative;
-      padding: 0;
-    }
+  &__bt1 {
+    border: 2px solid #4eb7a8;
+    text-align: center;
+    width:  2.083rem;
+    height: 2.083rem;
+    background-image: url('../../img/arrow1.png');
+    background-repeat: no-repeat;
+    background-position: 13px 11px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.2s;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+  }
+  
+  &__bt1:hover {
+    background: #4eb7a8;
+    background-image: url('../../img/arrow3.png');
+    background-repeat: no-repeat;
+    background-position: 14px 12px;
+    border: none;
+  }
 
-    .bt1:hover {
-      background: #4eb7a8;
-      background-image: url('../../img/arrow3.png');
-      background-repeat: no-repeat;
-      background-position: 14px 12px;
-      border: none;
-    }
+  &__bt1:active, 
+  &__.bt1:focus {
+    outline: none;
+    background-image: url('../../img/arrow3.png');
+    background-repeat: no-repeat;
+    background-position: 14px 12px;
+    background-color: #e5e5e5;
+    border: none;
+  }
 
-    .bt1:active, .bt1:focus {
-      outline: none;
-      background-image: url('../../img/arrow3.png');
-      background-repeat: no-repeat;
-      background-position: 14px 12px;
-      background-color: #e5e5e5;
-      border: none;
-    }
+  &__bt1:visited {
+    outline: none;
+  }
 
-    .bt1:visited {
-      outline: none;
-    }
+  &__bt1::-moz-focus-inner {
+    border: 0;
+  }
 
-    .bt1::-moz-focus-inner {
-      border: 0;
-    }
+  &__bt2 {
+    border: 2px solid #4eb7a8;
+    text-align: center;
+    width:  2.083rem;
+    height: 2.083rem;
+    background-image: url('../../img/arrow2.png');
+    background-repeat: no-repeat;
+    background-position: 15px 11px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.2s;
+    overflow: hidden;
+    position: relative;
+    padding: 0px;
+  }
 
-    .bt2 {
-      border: 2px solid #4eb7a8;
-      text-align: center;
-      width:  2.083rem;
-      height: 2.083rem;
-      background-image: url('../../img/arrow2.png');
-      background-repeat: no-repeat;
-      background-position: 15px 11px;
-      background-color: white;
-      border-radius: 50%;
-      transition: 0.2s;
-      overflow: hidden;
-      position: relative;
-      padding: 0px;
-    }
+  &__bt2:hover {
+    background: #4eb7a8;
+    background-image: url('../../img/arrow4.png');
+    background-repeat: no-repeat;
+    background-position: 16px 12px;
+    border: none;
+  }
 
-    .bt2:hover {
-      background: #4eb7a8;
-      background-image: url('../../img/arrow4.png');
-      background-repeat: no-repeat;
-      background-position: 16px 12px;
-      border: none;
-    }
+  &__bt2:active, 
+  &__bt2:focus {
+    outline: none;
+    background-image: url('../../img/arrow4.png');
+    background-repeat: no-repeat;
+    background-position: 16px 12px;
+    background-color: #e5e5e5;
+    border: none;
+  }
 
-    .bt2:active, .bt2:focus {
-      outline: none;
-      background-image: url('../../img/arrow4.png');
-      background-repeat: no-repeat;
-      background-position: 16px 12px;
-      background-color: #e5e5e5;
-      border: none;
-    }
+  &__bt2:visited {
+    outline: none;
+  }
 
-    .bt2:visited {
-      outline: none;
-    }
-
-    .bt2::-moz-focus-inner {
-      border: 0;
-    }
-  }        
+  &__bt2::-moz-focus-inner {
+    border: 0;
+  }
 }

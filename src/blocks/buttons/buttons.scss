@@ -1,167 +1,175 @@
 .buttons {
 
-  .buttons__buttons-container {
+  &__buttons-container {
     display: flex;
     flex-direction:row;
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 2.292rem;
     width: 20.833rem;
+  }
 
-    .ripple {
-      border-radius: 50%;
-      background-color: white;
-      opacity: 0.7;
-      position: absolute;
-      transform: scale(0);
-      animation: ripple 0.6s linear;
-    }
+  .ripple {
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.7;
+    position: absolute;
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+  }
 
-    @keyframes ripple {
-      to {
-        transform: scale(1.3);
-        opacity: 0;
-      }
+  @keyframes ripple {
+    to {
+      transform: scale(1.3);
+      opacity: 0;
     }
+  }
 
-    .bt1 {
-      border: 1px solid #4eb7a8;
-      text-align: center;
-      width: 3.25rem;
-      height: 0.917rem;
-      background: #ffffff;
-      font-weight: bolder;
-      color: #4eb7a8;
-      font-size: 0.417rem;
-      border-radius: 0.208rem;
-      box-shadow: 0 -2px rgba(40, 162, 144, 1) inset;
-      transition: 0.2s;
-      vertical-align: middle;
-      overflow: hidden;
-      position: relative;
-    }
+  &__bt1 {
+    border: 1px solid #4eb7a8;
+    text-align: center;
+    width: 3.25rem;
+    height: 0.917rem;
+    background: #ffffff;
+    font-weight: bolder;
+    color: #4eb7a8;
+    font-size: 0.417rem;
+    border-radius: 0.208rem;
+    box-shadow: 0 -2px rgba(40, 162, 144, 1) inset;
+    transition: 0.2s;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+  }
 
-    .bt1:hover {
-      background: #4eb7a8;
-      color: #ffffff;
-    }
+  &__bt1:hover {
+    background: #4eb7a8;
+    color: #ffffff;
+  }
 
-    .bt1:active, .bt1:focus {
-      outline: none;
-      box-shadow: none;
-    }
+  &__bt1:active, 
+  &__bt1:focus {
+    outline: none;
+    box-shadow: none;
+  }
 
-    .bt1:visited {
-      outline: none;
-    }
+  &__bt1:visited {
+    outline: none;
+  }
 
-    .bt1::-moz-focus-inner {
-      border: 0;
-    }
+  &__bt1::-moz-focus-inner {
+    border: 0;
+  }
 
-    .bt2 {
-      border: 1px solid #4eb7a8;
-      text-align: center;
-      width: 4.917rem;
-      height: 1.333rem;
-      background: #ffffff;
-      font-weight: bolder;
-      color: #4eb7a8;
-      font-size: 0.5rem;
-      border-radius: 0.208rem;
-      box-shadow: 0 -2px rgba(40, 162, 144, 1) inset;
-      transition: 0.2s;
-      vertical-align: middle;
-      overflow: hidden;
-      position: relative;
-    }
+  &__bt2 {
+    border: 1px solid #4eb7a8;
+    text-align: center;
+    width: 4.917rem;
+    height: 1.333rem;
+    background: #ffffff;
+    font-weight: bolder;
+    color: #4eb7a8;
+    font-size: 0.5rem;
+    border-radius: 0.208rem;
+    box-shadow: 0 -2px rgba(40, 162, 144, 1) inset;
+    transition: 0.2s;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+  }
 
-    .bt2:hover {
-      background: #4eb7a8;
-      color: #ffffff;
-    }
+  &__bt2:hover {
+    background: #4eb7a8;
+    color: #ffffff;
+  }
 
-    .bt2:active, .bt2:focus {
-      outline: none;
-      box-shadow: none;
-    }
+  &__bt2:active, 
+  &__bt2:focus {
+    outline: none;
+    box-shadow: none;
+  }
 
-    .bt2:visited {
-      outline: none;
-    }
+  &__bt2:visited {
+    outline: none;
+  }
 
-    .bt2::-moz-focus-inner {
-      border: 0;
-    }
+  &__bt2::-moz-focus-inner {
+    border: 0;
+  }
 
-    .bt3 {
-      border: 1px solid #e75735;
-      text-align: center;
-      width: 4.917rem;
-      height: 1.333rem;
-      background: #ffffff;
-      font-weight: bolder;
-      color: #e75735;
-      font-size: 0.5rem;
-      border-radius: 0.208rem;
-      box-shadow: 0 -2px rgba(231, 87, 53, 1) inset;
-      transition: 0.2s;
-      vertical-align: middle;
-      overflow: hidden;
-      position: relative;
-    }
+  &__bt3 {
+    border: 1px solid #e75735;
+    text-align: center;
+    width: 4.917rem;
+    height: 1.333rem;
+    background: #ffffff;
+    font-weight: bolder;
+    color: #e75735;
+    font-size: 0.5rem;
+    border-radius: 0.208rem;
+    box-shadow: 0 -2px rgba(231, 87, 53, 1) inset;
+    transition: 0.2s;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+  }
 
-    .bt3:hover {
-      background: #e75735;
-      color: #ffffff;
-    }
+  &__bt3:hover {
+    background: #e75735;
+    color: #ffffff;
+  }
 
-    .bt3:active, .bt3:focus {
-      outline: none;
-      box-shadow: none;
-    }
-    
-    .bt3:visited {
-      outline: none;
-    }
+  &__bt3:active,
+  &__.bt3:focus {
+    outline: none;
+    box-shadow: none;
+  }
 
-    .bt3::-moz-focus-inner {
-      border: 0;
-    }
+  &__bt3:visited {
+    outline: none;
+  }
 
-    .bt4 {
-      border: 1px solid #e75735;
-      text-align: center;
-      width: 3.25rem;
-      height: 0.917rem;
-      background: #ffffff;
-      font-weight: bolder;
-      color: #e75735;
-      font-size: 0.417rem;
-      border-radius: 0.208rem;
-      box-shadow: 0 -2px rgba(231, 87, 53, 1) inset;
-      transition: 0.2s;
-      vertical-align: middle;
-      overflow: hidden;
-      position: relative;
-    }
+  &__bt3::-moz-focus-inner {
+    border: 0;
+  }
 
-    .bt4:hover {
-      background: #e75735;
-      color: #ffffff;
-    }
+  &__bt4 {
+    border: 1px solid #e75735;
+    text-align: center;
+    width: 3.25rem;
+    height: 0.917rem;
+    background: #ffffff;
+    font-weight: bolder;
+    color: #e75735;
+    font-size: 0.417rem;
+    border-radius: 0.208rem;
+    box-shadow: 0 -2px rgba(231, 87, 53, 1) inset;
+    transition: 0.2s;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+  }
 
-    .bt4:active, .bt4:focus {
-      outline: none;
-      box-shadow: none;
-    }
+  &__bt4:hover {
+    background: #e75735;
+    color: #ffffff;
+  }
 
-    .bt4:visited {
-      outline: none;
-    }
+  &__bt4:active,
+  &__bt4:focus {
+    outline: none;
+    box-shadow: none;
+  }
 
-    .bt4::-moz-focus-inner {
-      border: 0;
-    }
+  &__bt4:visited {
+    outline: none;
+  }
+
+  &__bt4::-moz-focus-inner {
+    border: 0;
   }
 }

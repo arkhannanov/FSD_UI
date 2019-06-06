@@ -23,7 +23,6 @@ function updateButton() {
 }
 
 function skip() {
-	console.log(this.dataset.skip);
 	video.currentTime += parseFloat(this.dataset.skip);
 }
 

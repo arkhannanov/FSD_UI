@@ -5,7 +5,7 @@
   margin-bottom: 2.917rem;
   margin-top: 0.333rem;
 
-  .drop-down__contentline {
+  &__contentline {
     font-family: $thirdFont;
     color: #888888;
     font-size: 0.583rem;
@@ -18,7 +18,7 @@
     padding-top: 0.208rem;
   }
 
-  .drop-down__btn {
+  &__btn {
     color: white;
     border: none;
     cursor: pointer;
@@ -35,7 +35,7 @@
     outline: none;
   }
 
-  .drop-down__content {
+  &__content {
     margin-top:-1.167rem;
     display: none;
     position: absolute;
@@ -64,10 +64,12 @@
       background-color: #f1f1f1;
     }
   }
-}
-.drop-down:hover .drop-down__content {
+
+  &:hover .drop-down__content {
   display: block;
-}
-.dropdown:hover .drop-down__btn {
-  background-color: #3e8e41;
+  }
+  
+  &:hover .drop-down__btn {
+    background-color: #3e8e41;
+  }
 }

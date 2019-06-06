@@ -3,5 +3,5 @@ const faviconsContext = require.context(
     true,
     /\.(svg|png|ico|xml|json)$/
   );
-  console.log('Работает ФавИкон');
+  
   faviconsContext.keys().forEach(faviconsContext);
