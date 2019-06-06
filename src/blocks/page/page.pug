@@ -1,9 +1,6 @@
 include ../headline/headline.pug
 include ../buttons/buttons.pug
-include ../percents1/percents1.pug
-include ../percents2/percents2.pug
-include ../percents3/percents3.pug
-include ../percents4/percents4.pug
+include ../percents/percents.pug
 //- 15% 25% 30% 30%
 include ../pie/pie.pug
 include ../slider-left/slider-left.pug
@@ -35,17 +32,17 @@ mixin page
                 .percents-pie
                     +headline ("percentages / pie chart")
                     .percents-pie__container
-                        +percents1 ({
-                            number: "0"
+                        +percents ({
+                            percent: 0
                         })
-                        +percents2 ({
-                            number: "38"
+                        +percents ({
+                            percent: 38
                         })
-                        +percents3 ({
-                            number: "62"
+                        +percents ({
+                            percent: 62
                         })
-                        +percents4 ({
-                            number: "89"
+                        +percents ({
+                            percent: 89
                         })
                         +pie
                 .sliders
