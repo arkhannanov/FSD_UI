@@ -1,0 +1,14 @@
+mixin header1(options={source, name})
+    - let {source, name} = options;    
+    .header1
+        .header1__logo
+        .header1__logout
+            a(href=`/mock-address/change-me`, class="header1__logout-href") Logout
+        .header1__name= name 
+            //- Sarah Brown
+        .header1__avatar
+            img(src=source, alt="User", hspace="2", vspace="2", class="header1__avatar-image")
+                    //- "img/user.png"
+        .header1__search
+            input(type="text", id="search", placeholder="Search", class="header1__search-input")
+            button(id="search_icon", class="header1__search-button")

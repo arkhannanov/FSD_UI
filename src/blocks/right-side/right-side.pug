@@ -1,0 +1,30 @@
+mixin right-side(options={link1:"", link2:"", link3:""})
+    - let {link1, link2, link3} = options;
+    .right-side
+        .right-side__links-contaner
+            .right-side__link1-container 
+                a(href="/mock-address/change-me", class="right-side__link1")= link1
+                                //-  PROFILE
+            .right-side__link2-container
+                a(href="/mock-address/change-me", class="right-side__link2")= link2
+                                //-  FEEDBACK
+            .right-side__link3-container
+                a(href="/mock-address/change-me", class="right-side__link3")= link3
+                                //-   NEWS AND EVENTS
+        .right-side__news-container
+            .right-side__news-header last news
+            .right-side__news1
+                +side-left({
+                    title: "It’s all going downhill",
+                    date: "24  august 2013",
+                    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.`
+                })
+            .right-side__news2
+                +side-right({
+                    number: "24",
+                    month: "Aug",
+                    title: `this is the title`,
+                    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+                    buttontitle: "add to calendar"
+                })

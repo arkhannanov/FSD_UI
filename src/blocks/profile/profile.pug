@@ -1,0 +1,41 @@
+mixin profile(options={headline:"", rightSideHeader:"", profession:"", phone:"", twitter:"", facebook:"", firstSkill:"", secondSkill:"", thirdSkill:"", fourthSkill:""})
+    -let {headline, rightSideHeader, profession, phone, twitter, facebook, firstSkill, secondSkill, thirdSkill, fourthSkill}=options
+    .profile
+        .profile__headline= headline
+        .profile__content-container
+            .profile__content-left-side-container
+                .profile__avatar-container
+                    .profile__avatar
+                    .profile__edit
+                        button(name="button",class="profile__edit-button") EDIT
+                .profile__calendar-container
+                    .profile__calendar
+                        +calendar
+            .profile__content-right-side-container
+                .profile__content-right-side-header= rightSideHeader
+                .profile__content-right-side-contacts
+                    .profile__profession-container
+                        .profile__profession-title profession
+                        .profile__profession=profession
+                    .profile__phone-container
+                        .profile__phone-title phone	
+                        .profile__phone= phone
+                    .profile__twitter-container
+                        .profile__twitter-title twitter
+                        .profile__twitter= twitter
+                    .profile__facebook-container
+                        .profile__facebook-title facebook
+                        .profile__facebook= facebook
+                .profile__content-right-side-skills
+                    .profile__skills-container
+                        ul.profile__skills-ul-container
+                            li.profile__first-skill-container
+                                span.profile__first-skill= firstSkill 
+                            li.profile__second-skill-container 
+                                span.profile__second-skill= secondSkill 
+                            li.profile__third-skill-container 
+                                span.profile__third-skill= thirdSkill
+                            li.profile__fourth-skill-container  
+                                span.profile__fourth-skill= fourthSkill
+                    .profile__pie-chart-container
+                        +pie

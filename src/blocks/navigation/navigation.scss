@@ -1,0 +1,62 @@
+.navigation {
+    width: 16.853rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.875rem;
+    margin: auto;
+    margin-bottom: 5%;
+
+    .ripple {
+      border-radius: 50%;
+      background-color: white;
+      opacity: 0.7;
+      position: absolute;
+      transform: scale(0);
+      animation: ripple 0.6s linear;
+    }
+
+    @keyframes ripple {
+      to {
+        transform: scale(1.3);
+        opacity: 0;
+      }
+    }
+
+    &__button {
+      border: 0.042rem solid #4eb7a8;
+      text-align: center;
+      width: 3.333rem;
+      height: 1.333rem;
+      background: #ffffff;
+      font-weight: bolder;
+      color: #4eb7a8;
+      font-size: 0.5rem;
+      border-radius: 0.208rem;
+      box-shadow: 0 -2px rgba(40, 162, 144, 1) inset;
+      transition: 0.2s;
+      vertical-align: middle;
+      overflow: hidden;
+      position: relative;
+      text-transform: uppercase;
+    }
+
+    &__button:hover {
+      background: #4eb7a8;
+      color: #ffffff;
+    }
+
+    &__button:active,
+    &__button:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    &__button:visited {
+      outline: none;
+    }
+
+    &__button::-moz-focus-inner {
+      border: 0;
+    }
+  }

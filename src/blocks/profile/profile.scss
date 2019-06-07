@@ -1,0 +1,294 @@
+.profile {
+  width: 50%;
+  height: 20.833rem;
+  display: flex;
+  flex-direction: column;
+
+  &__headline {
+    font-family: $mainFont;
+    height: 1.083rem;
+    font-size: 0.583rem;
+    color: black;
+    background: white;
+    -webkit-box-shadow: -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow:    -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
+    box-shadow:         -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
+    line-height: 1.167rem;
+    padding-left: 0.417rem;
+    margin-top: 0.417rem;
+    margin-bottom: 0.417rem;
+    margin-right: 0.417rem;
+    margin-left: 0.417rem;
+    width: 125.7%;
+    text-transform: uppercase;
+  }
+
+  &__content-container {
+    height: 20.833rem;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__content-left-side-container {
+    width: 5.833rem;
+    height: 20.833rem;            
+    margin-right: 0.417rem;
+    margin-left: 0.417rem;
+  }
+
+  &__avatar-container {
+    width: 5.833rem;
+    height: 6.875rem;
+    background-color: white;
+    -webkit-box-shadow: -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow:    -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
+    box-shadow:         -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
+    margin-bottom: 0.417rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  &__avatar {
+    width: 5.833rem;
+    height: 5.833rem;
+    background-image: url('../../img/user-large.png');
+    background-repeat: no-repeat;
+    background-position: 6.5px 6.5px;
+  }
+  
+  &__edit {
+    width: 5.417rem;
+    margin: auto;
+    margin-top: -0.083rem;
+
+    .ripple {
+      border-radius: 50%;
+      background-color: white;
+      opacity: 0.7;
+      position: absolute;
+      transform: scale(0);
+      animation: ripple 0.6s linear;
+    }
+
+    @keyframes ripple {
+      to {
+        transform: scale(1.3);
+        opacity: 0;
+      }
+    }
+  }
+
+  &__edit-button {
+    border: 0.042rem solid #4eb7a8;
+    text-align: center;
+    width: 5.25rem;
+    height: 0.917rem;
+    background: #ffffff;
+    font-weight: bolder;
+    color: #4eb7a8;
+    font-size: 0.417rem;
+    border-radius: 0.125rem;
+    box-shadow: 0 -2px rgba(40, 162, 144, 1) inset;
+    transition: 0.2s;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+  }
+
+  &__edit-button:hover {
+    background: #4eb7a8;
+    color: #ffffff;
+  }
+
+  &__edit-button:active,
+  &__edit-button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &__edit-button:visited {
+    outline: none;
+  }
+
+  &__edit-button::-moz-focus-inner {
+    border: 0;
+  }
+
+  &__calendar-container {
+    width: 5.833rem;
+    height: 8.75rem;
+    background-color: white;
+    -webkit-box-shadow: -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow:    -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
+    box-shadow:         -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
+  }
+
+  &__calendar {
+    transform: translateY(-5rem) translateX(-1.25rem) scale(0.44);
+    background: transparent;
+  }
+
+  &__content-right-side-container{
+    flex-grow: 1;
+    height: 16.042rem;
+    -webkit-box-shadow: -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow:    -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
+    box-shadow:         -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
+    background: white;
+    margin-right: 0.417rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__content-right-side-header {
+    font-size: 0.708rem;
+    width: 95%;
+    height: 0.917rem;
+    border-bottom: 2px solid black;
+    margin-left: 0.417rem;
+    line-height: 1.25rem;
+    padding-bottom: 0.208rem;
+    text-transform: uppercase;
+  }
+
+  &__content-right-side-contacts {
+    font-size: 0.708rem;
+    width: 95%;
+    margin-left: 0.417rem;
+    margin-top: 0.417rem;
+    border-bottom: 0.083rem solid black;
+    padding-bottom: 0.292rem;
+  }
+
+  &__profession-container {
+    display: flex;
+    flex-direction: row;
+    height: 0.833rem;
+    line-height: 0.833rem;
+  }
+
+  &__profession-title {
+    font-size: 0.583rem;
+    color: #8e8d9c;
+    width: 4.167rem;
+    text-transform: uppercase;
+  }
+
+  &__profession {
+    font-size: 0.583rem;  
+  }
+
+  &__phone-container {
+    display: flex;
+    flex-direction: row;
+    height: 0.833rem;
+    line-height: 0.833rem;
+  }
+
+  &__phone-title {
+    font-size: 0.583rem;
+    color: #8e8d9c;
+    width: 4.167rem;
+    text-transform: uppercase;
+  }
+
+   &__phone {
+    font-size: 0.583rem;  
+    color: #53b6a8;
+  }
+
+  &__twitter-container {
+    display: flex;
+    flex-direction: row;
+    height: 0.833rem;
+    line-height: 0.833rem;
+  }
+
+  &__twitter-title  {
+    font-size: 0.583rem;
+    color: #8e8d9c;
+    width: 4.167rem;
+    text-transform: uppercase;
+  }
+
+  &__twitter {
+    font-size: 0.583rem;
+    color: #53b6a8;
+  }
+
+  &__facebook-container {
+    display: flex;
+    flex-direction: row;
+    height: 0.833rem;
+    line-height: 0.833rem;
+  }
+
+  &__facebook-title {
+    font-size: 0.583rem;
+    color: #8e8d9c;
+    width: 4.167rem;
+    text-transform: uppercase;
+  }
+
+  &__facebook {
+    font-size: 0.583rem;
+    color: #53b6a8;  
+  }
+
+  &__content-right-side-skills {
+    width: 95%;
+    font-size: 0.583rem;
+  }
+
+  &__skills-container{
+    width: 4.167rem;
+    margin: auto;
+  }
+
+  &__first-skill-container {
+    margin-left: -0.5rem;
+    color: #747474;
+  }
+
+  &__first-skill {
+    color:#8e8d9c;
+  }
+  
+  &__second-skill-container  {
+    margin-left: -0.5rem;
+    color: #e75735;
+  }
+
+  &__second-skill {
+    color:#8e8d9c;
+  }
+
+  &__third-skill-container {
+    margin-left: -0.5rem;
+    color: #4eb7a8;
+  }
+
+  &__third-skill {
+    color:#8e8d9c;
+  }
+
+  &__fourth-skill-container {
+    margin-left: -0.5rem;
+    color: #e5e5e5;
+  }
+
+  &__fourth-skill {
+    color:#8e8d9c;
+  }
+
+  &__pie-chart-container {
+    width: 12.5rem;
+    height: 12.5rem;
+    transform: translateY(7.292rem) translateX(6.75rem) scale(1.7);
+    margin-top: -3.333rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

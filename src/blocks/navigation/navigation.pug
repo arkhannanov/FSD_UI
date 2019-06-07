@@ -1,0 +1,11 @@
+mixin navigation(options={page1:"", page2:"", page3:"", page4:""})
+    - let {page1, page2, page3, page4} = options;
+    .navigation
+        .navigation__page1
+            button(name="button", class="navigation__button", onclick="document.location='index1.html'")= page1
+        .navigation__page2
+            button(name="button", class="navigation__button", onclick="document.location='index2.html'")= page2
+        .navigation__page3
+            button(name="button", class="navigation__button", onclick="document.location='index3.html'")= page3
+        .navigation__page4
+            button(name="button", class="navigation__button", onclick="document.location='index4.html'")= page4	

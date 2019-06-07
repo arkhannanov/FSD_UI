@@ -1,48 +1,50 @@
-@import "scss_assets/fonts.scss";
-@import "scss_assets/vars.scss";
-@import "../blocks/location/location.scss";
+html,
+body {
+  font-family: $mainFont;
+}
+
 .wrapper {
-  max-width: 700px;
+  max-width: 29.167rem;
   .header {
     width: 100%;
-    height: 75px;
+    height: 3.125rem;
     background: white;
-    border: 1px solid black;
+    border: 0.042rem solid black;
     font-family: $mainFont;
     .fisrt-line {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       .contacts {
-        font-size:12px;
-        width: 200px;
-        margin-left: -20px;
-        margin-top: 15px;
+        font-size: 0.5rem;
+        width: 8.333rem;
+        margin-left: -0.833rem;
+        margin-top: 0.625rem;
         .tel {
-          font-size: 24px;
+          font-size: 1rem;
         }
       }
     }
     .second-line {
-      height: 30px;
+      height: 1.25rem;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      border:1px solid black;
+      border: 0.042rem solid black;
       border-top: none;
-      margin:-14px;
+      margin: -0.583rem;
       width: 100%;
       margin-left: auto;
       margin-right: auto;
-      margin-left:-1px;
+      margin-left: -0.042rem;
       .glavnaya {
         width: 20%;
-        font-size: 14px;
+        font-size: 0.853rem;
         text-align: center;
-        padding-left: 10px;
-        padding-right: 10px;
-        line-height: 30px;
-        border-right: 1px solid black;
+        padding-left: 0.417rem;
+        padding-right: 0.417rem;
+        line-height: 1.25rem;
+        border-right: 0.042rem solid black;
         a {
           border: none;
           color: black;
@@ -50,13 +52,13 @@
         }
       }
       .photo-rabot {
-        font-size: 14px;
+        font-size: 0.853rem;
         text-align: center;
-        padding-left: 10px;
-        padding-right: 10px;
-        line-height: 30px;
+        padding-left: 0.417rem;
+        padding-right: 0.417rem;
+        line-height: 1.25rem;
         width: 20%;
-        border-right: 1px solid black;
+        border-right: 0.042rem solid black;
         a {
           border: none;
           color: black;
@@ -64,13 +66,13 @@
         }
       }
       .o-nas {
-        font-size: 14px;
+        font-size: 0.583rem;
         text-align: center;
-        padding-left: 10px;
-        padding-right: 10px;
-        line-height: 30px;
+        padding-left: 0.417rem;
+        padding-right: 0.417rem;
+        line-height: 1.25rem;
         width: 20%;
-        border-right: 1px solid black;
+        border-right: 0.042rem solid black;
         a {
           border: none;
           color: black;
@@ -78,13 +80,13 @@
         }
       }
       .otzivi {
-        font-size: 14px;
+        font-size: 0.583rem;
         text-align: center;
-        padding-left: 10px;
-        padding-right: 10px;
-        line-height: 30px;
+        padding-left: 0.417rem;
+        padding-right: 0.417rem;
+        line-height: 1.24rem;
         width: 20%;
-        border-right: 1px solid black;
+        border-right: 0.042rem solid black;
         a {
           border: none;
           color: black;
@@ -92,11 +94,11 @@
         }
       }
       .regisration {
-        font-size: 14px;
+        font-size: 0.583rem;
         text-align: center;
-        padding-left: 10px;
-        padding-right: 10px;
-        line-height: 30px;
+        padding-left: 0.417rem;
+        padding-right: 0.417rem;
+        line-height: 1.25rem;
         width: 20%;
         a {
           border: none;
@@ -110,61 +112,61 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 2.083rem;
     justify-content: space-between;
     font-family: $mainFont;
     .div1 {
-      height: 120px;
+      height: 5rem;
       width: 49%;
       display: flex;
       flex-direction: row;
       .diagramm1 {
-        margin-top: 10px;
+        margin-top: 0.417rem;
       }
       .content1 {
-          line-height: 115px;
-          margin-left: 15px;
+          line-height: 4.792rem;
+          margin-left: 0.625rem;
       }
     }
     .div2 {
-      height: 120px;
+      height: 5rem;
       width: 49%;
       display: flex;
       flex-direction: row;
       .diagramm2 {
-        margin-top: 10px;
+        margin-top: 0.417rem;
       }
       .content2 {
-        margin-left: 15px;
-        margin-top: 40px;
+        margin-left: 0.625rem;
+        margin-top: 1.667rem;
       }
     }
     .div3 {
-      height: 120px;
+      height: 5rem;
       width: 49%;
       display: flex;
       flex-direction: row;
-      margin-top: 10px;
+      margin-top: 0.417rem;
       .diagramm3 {
-        margin-top: 10px;
+        margin-top: 0.417rem;
       }
       .content3 {
-        line-height: 115px;
-        margin-left: 15px;
+        line-height: 4.792rem;
+        margin-left: 0.625rem;
       }
     }
     .div4 {
-      height: 120px;
+      height: 5rem;
       width: 49%;
       display: flex;
       flex-direction: row;
-      margin-top: 10px;
+      margin-top: 0.417rem;
       .diagramm4 {
-        margin-top: 10px;
+        margin-top: 0.417rem;
       }
       .content4 {
-        line-height: 115px;
-        margin-left: 15px;
+        line-height: 4.792rem;
+        margin-left: 0.625rem;
       }
     }
   }
@@ -172,14 +174,14 @@
     text-align: center;
     margin: auto;
     font-family: $mainFont;
-    font-size: 20px;
-    margin-bottom: 10px;
-    margin-top: 20px;
+    font-size: 0.833rem;
+    margin-bottom: 0.417rem;
+    margin-top: 0.833rem;
   }
   .comment-container {
     display: flex;
     flex-direction: row;
-    width: 600px;
+    width: 25rem;
     margin:auto;
     font-family: $mainFont;
     justify-content: center;
@@ -191,22 +193,22 @@
     }
   }
   .form-container {
-    width: 250px;
-    margin-top: 18px;
+    width: 10.417rem;
+    margin-top: 0.75rem;
     .line1 {
-      width: 250px;
+      width: 10.417rem;
       #input1 {
-        width: 250px;
-        height: 30px;
+        width: 10.417rem;
+        height: 1.25rem;
         background: #e5e5e5;
         font-family: $mainFont;
       }
     }
     .line2 {
-      width: 250px;
+      width: 10.417rem;
       #input2 {
-        width: 250px;
-        height: 30px;
+        width: 10.417rem;
+        height: 1.25rem;
         background: #e5e5e5;
         font-family: $mainFont;
       }
@@ -214,21 +216,21 @@
     .raiting {
       font-family: $mainFont;
       color: #757575;
-      font-size: 13.3333px;
-      margin-top: 5px;
+      font-size: 0.556rem;
+      margin-top: 0.208rem;
     }
     .line3 {
       transform: scale(0.421);
-      margin-left: -140px;
-      margin-top: 0px;
-      margin-left: -95px;
+      margin-left: -5.833rem;
+      margin-top: 0;
+      margin-left: -3.958rem;
     }
     .line4 {
-      width: 250px;
-      margin-top: -50px;
+      width: 10.417rem;
+      margin-top: -2.083rem;
       #input4 {
-        width: 250px;
-        height: 90px;
+        width: 10.417rem;
+        height: 3.75rem;
         background: #e5e5e5;
         font-family: $mainFont;
       }
@@ -248,24 +250,24 @@
       }
     }
     #submit {
-      width: 118px;
-      height: 32px;
-      border: 1px solid #4eb7a8;
+      width: 4.917rem;
+      height: 1.333rem;
+      border: 0.042rem solid #4eb7a8;
       text-align: center;
       background: #ffffff;
       font-weight: bolder;
       color: #4eb7a8;
       letter-spacing: 0;
-      font-size: 12px;
-      border-radius: 5px;
+      font-size: 0.5rem;
+      border-radius: 0.208rem;
       box-shadow: 0 -2px rgba(40, 162, 144, 1) inset;
       transition: 0.2s;
       vertical-align: middle;
       overflow: hidden;
       position: relative;
-      margin-top: 5px;
-      left: 139px;
-      margin-bottom: 30px;
+      margin-top: 0.208rem;
+      left: 5.792rem;
+      margin-bottom: 1.25rem;
     }
     #submit:hover {
       background: #4eb7a8;
@@ -278,13 +280,13 @@
     }
   }
   .navigation-container {
-      width: 350px;
+      width: 14.583rem;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      margin-bottom: 45px;
+      margin-bottom: 1.875rem;
       margin-left: 30%;
-      margin-top: -100px;
+      margin-top: -4.167rem;
       .ripple {
         border-radius: 50%;
         background-color: white;
@@ -300,15 +302,15 @@
         }
       }
       .btn {
-        border: 1px solid #4eb7a8;
+        border: 0ю042куь solid #4eb7a8;
         text-align: center;
-        width: 80px;
-        height: 32px;
+        width: 3.333rem;
+        height: 1.333rem;
         background: #ffffff;
         font-weight: bolder;
         color: #4eb7a8;
-        font-size: 12px;
-        border-radius: 5px;
+        font-size: 0.5rem;
+        border-radius: 0.208rem;
         box-shadow: 0 -2px rgba(40, 162, 144, 1) inset;
         transition: 0.2s;
         vertical-align: middle;
@@ -339,58 +341,57 @@
       .location {
         width: 100%;
         .location-wrapper {
-          width: 594px;
-          height: 271px;
-          margin-left: 60px;
+          width: 24.75rem;
+          height: 11.292rem;
+          margin-left: 2.5rem;
           position: relative;
           z-index: 0;
         }
         .location-content {
-          width: 594px;
-          height: 69px;
+          width: 24.75rem;
+          height: 2.875rem;
           position: relative;
           z-index: 100;
-          margin-top: -69px;
-          margin-bottom: 50px;
-          margin-left: 60px;
-          border-radius: 0 0 3px 3px;
+          margin-top: -2.875rem;
+          margin-bottom: 2.083rem;
+          margin-left: 2.5rem;
+          border-radius: 0 0 0.125rem 0.125rem;
           background: #e75735;
           display:flex;
           flex-direction: row;
           .title {
             font-family: $secondFont;
-            font-size: 30px;
+            font-size: 1.25rem;
             color: #ffffff;
-            margin-top: 13px;
-            margin-left: 22px;
+            margin-top: 0.542rem;
+            margin-left: 0.917rem;
           }   
           .address {
-            width: 160px;
-            font-size: 13px;
+            width: 6.667rem;
+            font-size: 0.542rem;
             letter-spacing: 0.63px;
             color: #ffffff;
-            margin-top: 19px;
-            margin-left: 26px;
+            margin-top: 0.792rem;
+            margin-left: 1.083rem;
           }
           .icon1 {
-            width: 40px;
-            font-size: 40px;
-            background-image: url('../img/icon-my-location.png');
+            width: 1.667rem;
+            font-size: 1.667rem;
+            background-image: url('img/icon-my-location.png');
             background-repeat: no-repeat;
             background-position: 0 20px;
-            margin-left: 170px;
+            margin-left: 7.083rem;
           }
           .icon2 {
-            width: 40px;
-            font-size: 40px;
-            background-image: url('../img/icon-pin.png');
+            width: 1.667rem;
+            font-size: 1.667rem;
+            background-image: url('img/icon-pin.png');
             background-repeat: no-repeat;
             background-position: 0 21px;
-            margin-left: 10px;
+            margin-left: 0.417rem;
           }
         }
       }
     }
 }
-@import "../blocks/stages/stages.scss";
-@import "../blocks/calendar/calendar.scss";
+

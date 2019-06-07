@@ -19,6 +19,8 @@ include ../calendar/calendar.pug
 include ../messaging/messaging.pug
 include ../player/player.pug
 include ../arrows/arrows.pug
+include ../navigation/navigation.pug
+
 
 mixin page
     main.page
@@ -119,12 +121,10 @@ mixin page
                     +player
                 .page-navigation
                     +headline ("_______________________________________")
-                    .navigation-container
-                        .button1
-                            button(name="button", class="btn", onclick="document.location='index1.html'") PAGE 1
-                        .button2
-                            button(name="button", class="btn", onclick="document.location='index2.html'") PAGE 2
-                        .button3
-                            button(name="button", class="btn", onclick="document.location='index3.html'") PAGE 3
-                        .button4
-                            button(name="button", class="btn", onclick="document.location='index4.html'") PAGE 4
+                .navigation
+                    +navigation({
+                        page1: "page1", 
+                        page2: "page2", 
+                        page3: "page3", 
+                        page4: "page4"
+                    })
