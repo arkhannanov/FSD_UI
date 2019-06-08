@@ -1,5 +1,5 @@
-mixin location( options = {title:"", address:""})
-    -let { title, address} = options;
+mixin location( options ={ title:"", address:""})
+    -let {title, address} = options;
     .location
         .location__map#map
             script(src="https://api-maps.yandex.ru/2.1.17/?lang=ru_RU", type="text/javascript")

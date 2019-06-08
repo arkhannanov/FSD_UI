@@ -1,0 +1,13 @@
+mixin form3
+    .form3
+        .form3__name-container
+            input(type="text", id="form3__name-input", placeholder="Имя", class="form3__name-input")
+        .form3__email-container
+            input(type="text", id="form3__email-input", placeholder="E-mail", class="form3__email-input")
+        .form3__raiting-container
+            .form3__raiting Рейтинг
+            +stages
+        .form3__message-container
+            textarea(type="text", id="form3__message-text", placeholder="Сообщение", class="form3__message-text")
+        .form3__submit-container
+            button(name="button", id="form3__submit-button", class="form3__submit-button") Отправить
