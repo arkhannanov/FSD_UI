@@ -1,53 +1,53 @@
-var input1 = document.getElementById('input1');
-var messagecontainer1 = document.getElementById('message-container1');
-var input1_errorMessage = document.getElementById('input1_errorMessage');
+var jobTitleInput = document.getElementById('form2__job-title-input');
+var jobTitleMessage = document.getElementById('form2__job-title-message');
+var jobTitleErrorMessage = document.getElementById('form2__job-title-error-message');
 
-var input2 = document.getElementById('input2');
-var messagecontainer2 = document.getElementById('message-container2');
-var input2_errorMessage = document.getElementById('input2_errorMessage');
+var facebookInput = document.getElementById('form2__facebook-input');
+var facebookMessage = document.getElementById('form2__facebook-message');
+var facebookErrorMessage = document.getElementById('form2__facebook-error-message');
 
-var input3 = document.getElementById('input3');
-var messagecontainer3 = document.getElementById('message-container3');
-var input3_errorMessage = document.getElementById('input3_errorMessage');
+var twitterInput = document.getElementById('form2__twitter-input');
+var twitterMessage = document.getElementById('form2__twitter-message');
+var twitterErrorMessage = document.getElementById('form2__twitter-error-message');
 
-var input4 = document.getElementById('input4');
-var messagecontainer4 = document.getElementById('message-container4');
-var input4_errorMessage = document.getElementById('input4_errorMessage');
+var dribbbleInput = document.getElementById('form2__dribbble-input');
+var dribbbleMessage = document.getElementById('form2__dribbble-message');
+var dribbbleErrorMessage = document.getElementById('form2__dribbble-error-message');
 
 
-var submitForm = document.getElementById('submit');
-var completeForm = document.getElementById('completeForm');
+var submitButton = document.getElementById('form2__submit-button');
+var completeForm = document.getElementById('form2__completeform');
 
 var fill1 = false;
 var fill2 = false;
 var fill3 = false;
 var fill4 = false;
 
-var Error1 = true;
-var Error2 = true;
-var Error3 = true;
-var Error4 = true;
+var error1 = true;
+var error2 = true;
+var error3 = true;
+var error4 = true;
 
-var Message1 = "This field should at least contain 3 characters.";
-var FormNotComplete = "Form is not complete.";
+var message1 = "This field should at least contain 3 characters.";
+var formNotComplete = "Form is not complete.";
 
-input1.addEventListener('keyup', checkInput1);
-input2.addEventListener('keyup', checkInput2);
-input3.addEventListener('keyup', checkInput3);
-input4.addEventListener('keyup', checkInput4);
+jobTitleInput.addEventListener('keyup', checkJobTitleInput);
+facebookInput.addEventListener('keyup', checkFacebookInput);
+twitterInput.addEventListener('keyup', checkTwitterInput);
+dribbbleInput.addEventListener('keyup', checkDribbbleInput);
 
-submitForm.addEventListener('click', submit);
+submitButton.addEventListener('click', submit);
 
-function checkInput1(e) {
+function checkJobTitleInput(e) {
     let usedInput = e.target;
     let inputValue = usedInput.value;
 
     if(inputValue.length <= 3){
-        Error1=true;
+        error1=true;
     }
     else
     {
-        Error1=false;
+        error1=false;
     }
 
     if(inputValue.length>0)
@@ -61,16 +61,16 @@ function checkInput1(e) {
 
 }
 
-function checkInput2(e) {
+function checkFacebookInput(e) {
     let usedInput = e.target;
     let inputValue = usedInput.value;
 
     if(inputValue.length <= 3){
-        Error2=true;
+        error2=true;
     }
     else
     {
-        Error2=false;
+        error2=false;
     }
 
     if(inputValue.length>0)
@@ -84,16 +84,16 @@ function checkInput2(e) {
 
 }
 
-function checkInput3(e) {
+function checkTwitterInput(e) {
     let usedInput = e.target;
     let inputValue = usedInput.value;
 
     if(inputValue.length <= 3){
-        Error3=true;
+        error3=true;
     }
     else
     {
-        Error3=false;
+        error3=false;
     }
 
     if(inputValue.length>0)
@@ -107,16 +107,16 @@ function checkInput3(e) {
 
 }
 
-function checkInput4(e) {
+function checkDribbbleInput(e) {
     let usedInput = e.target;
     let inputValue = usedInput.value;
 
     if(inputValue.length <= 3){
-        Error4=true;
+        error4=true;
     }
     else
     {
-        Error4=false;
+        error4=false;
     }
 
     if(inputValue.length>0)
@@ -133,85 +133,85 @@ function checkInput4(e) {
 
 function submit() {
 
-if (Error1==true){
-    input1_errorMessage.innerHTML=Message1;
-    messagecontainer1.innerHTML="ERROR";
-    messagecontainer1.style.cssText="background-image: url('./img/form-orange.png');";
+if (error1==true){
+    jobTitleErrorMessage.innerHTML = message1;
+    jobTitleMessage.innerHTML = "error";
+    jobTitleMessage.style.cssText = "background-image: url('./img/form-orange.png');";
     setTimeout(() => {
-        input1_errorMessage.innerHTML="";
+        jobTitleErrorMessage.innerHTML = "";
     }, 2000);
 }
 else
 {
-    input1_errorMessage.innerHTML="";
-    messagecontainer1.innerHTML="THANKS!";
-    messagecontainer1.style.cssText="background-image: url('./img/form-color2.png');";
+    jobTitleErrorMessage.innerHTML="";
+    jobTitleMessage.innerHTML="thanks!";
+    jobTitleMessage.style.cssText = "background-image: url('./img/form-color2.png');";
     setTimeout(() => {
-        input1_errorMessage.innerHTML="";
+        jobTitleErrorMessage.innerHTML = "";
     }, 2000);
 }
 
-if (Error2==true){
-    input2_errorMessage.innerHTML=Message1;
-    messagecontainer2.innerHTML="ERROR";
-    messagecontainer2.style.cssText="background-image: url('./img/form-orange.png');";
+if (error2==true){
+    facebookErrorMessage.innerHTML= message1;
+    facebookMessage.innerHTML = "error";
+    facebookMessage.style.cssText = "background-image: url('./img/form-orange.png');";
     setTimeout(() => {
-        input2_errorMessage.innerHTML="";
+        facebookErrorMessage.innerHTML = "";
     }, 2000);
 }
 else
 {
-    input2_errorMessage.innerHTML="";
-    messagecontainer2.innerHTML="THANKS!";
-    messagecontainer2.style.cssText="background-image: url('./img/form-color2.png');";
+    facebookErrorMessage.innerHTML = "";
+    facebookMessage.innerHTML = "thanks!";
+    facebookMessage.style.cssText="background-image: url('./img/form-color2.png');";
     setTimeout(() => {
-        input2_errorMessage.innerHTML="";
+        facebookErrorMessage.innerHTML = "";
     }, 2000);
 }
 
-if (Error3==true){
-    input3_errorMessage.innerHTML=Message1;
-    messagecontainer3.innerHTML="ERROR";
-    messagecontainer3.style.cssText="background-image: url('./img/form-orange.png');";
+if (error3==true){
+    twitterErrorMessage.innerHTML = message1;
+    twitterMessage.innerHTML = "error";
+    twitterMessage.style.cssText = "background-image: url('./img/form-orange.png');";
     setTimeout(() => {
-        input3_errorMessage.innerHTML="";
+        twitterErrorMessage.innerHTML = "";
     }, 2000);
 }
 else
 {
-    input3_errorMessage.innerHTML="";
-    messagecontainer3.innerHTML="THANKS!";
-    messagecontainer3.style.cssText="background-image: url('./img/form-color2.png');";
+    twitterErrorMessage.innerHTML = "";
+    twitterMessage.innerHTML = "thanks!";
+    twitterMessage.style.cssText = "background-image: url('./img/form-color2.png');";
     setTimeout(() => {
-        input3_errorMessage.innerHTML="";
+        twitterErrorMessage.innerHTML = "";
     }, 2000);
 }
 
-if (Error4==true){
-    input4_errorMessage.innerHTML=Message1;
-    messagecontainer4.innerHTML="ERROR";
-    messagecontainer4.style.cssText="background-image: url('./img/form-orange.png');";
+if (error4==true){
+    dribbbleErrorMessage.innerHTML = message1;
+    dribbbleMessage.innerHTML="error";
+    dribbbleMessage.style.cssText = "background-image: url('./img/form-orange.png');";
     setTimeout(() => {
-        input4_errorMessage.innerHTML="";
+        dribbbleErrorMessage.innerHTML = "";
     }, 2000);
 }
 else
 {
-    input4_errorMessage.innerHTML="";
-    messagecontainer4.innerHTML="THANKS!";
-    messagecontainer4.style.cssText="background-image: url('./img/form-color2.png');";
+    dribbbleErrorMessage.innerHTML = "";
+    dribbbleMessage.innerHTML = "thanks!";
+    dribbbleMessage.style.cssText = "background-image: url('./img/form-color2.png');";
     setTimeout(() => {
-        input4_errorMessage.innerHTML="";
+        dribbbleErrorMessage.innerHTML = "";
     }, 2000);
 }
 
 if(fill1==false || fill2==false || fill3==false || fill4==false)
 {
-    completeForm.innerHTML=FormNotComplete;
+    completeForm.innerHTML = formNotComplete;
 }
 else
 {
-    completeForm.innerHTML="";
+    completeForm.innerHTML = "";
 }
 }
 

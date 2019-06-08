@@ -9,45 +9,5 @@ html
         link(rel="icon", type="image/png", sizes="32x32", href="img/favicons/favicon-32x32.png")
         title FSD_UI
     body
-        main.page
-            .wrapper
-                .header APPLY FOR A JOB
-                .content
-                    .stages
-                        include blocks/stages/stages.pug
-                    .avatar-container
-                        .avatar
-                        .edit
-                            button(name="button",class="button") EDIT
-                    .form
-                        p#completeForm 
-                            .line1 
-                                input(type="text", id="input1", placeholder="Job title")
-                                div#message-container1
-                        p#input1_errorMessage 
-                            .line2
-                                input(type="text", id="input2", placeholder="Facebook link")
-                                div#message-container2
-                        p#input2_errorMessage 
-                            .line3
-                                input(type="text", id="input3", placeholder="Twitter link")
-                                div#message-container3
-                        p#input3_errorMessage 
-                            .line4
-                                input(type="text", id="input4", placeholder="Dribbble link")
-                                div#message-container4
-                        p#input4_errorMessage 
-                            .toggle
-                                include blocks/toggles/toggles.pug
-                                .toggle_content Get information about current events.
-                            .line5
-                                button#submit SUBMIT
-                .navigation-container
-                            .button1
-                                button(name="button", class="btn", onclick="document.location='index1.html'") PAGE 1
-                            .button2
-                                button(name="button", class="btn", onclick="document.location='index2.html'") PAGE 2
-                            .button3
-                                button(name="button", class="btn", onclick="document.location='index3.html'") PAGE 3
-                            .button4
-                                button(name="button", class="btn", onclick="document.location='index4.html'") PAGE 4
+        include blocks/page2/page2.pug
+        +page2
