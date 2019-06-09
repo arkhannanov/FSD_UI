@@ -1,0 +1,231 @@
+.form4 {
+  width: 10.417rem;
+  margin-top: 0.75rem;
+  font-size: 0.583rem;
+  font-family: $mainFont;
+  margin-bottom: 1.25rem;
+
+  &__surname-container {
+    width: 10.417rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__surname-input {
+    width: 6.25rem;
+    height: 1.167rem;
+    background: #e5e5e5;
+    border: none;
+    border-radius: 0.125rem;
+    font-family: $mainFont;
+  }
+
+  #form4__surname-message {
+    width: 3.542rem;
+    height: 1.542rem;
+    padding: 0;
+    margin: 0; 
+    font-family: $mainFont;
+    font-weight: 400;
+    font-size: 0.417rem;
+    line-height: 1.917rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-top: -0.25rem;
+    margin-left: 0.167rem;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 0px 7px;
+    background-color: transparent;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  #form4__surname-error-message {
+    font-size: 0.417rem;
+    margin-top: -0.3px;
+    margin-bottom:-0.3px;
+    color: #555564;
+    height: 0.625rem;
+  }
+
+  &__name-container {
+    width: 10.417rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__name-input {
+    width: 6.25rem;
+    height: 1.083rem;
+    background: #e5e5e5;
+    border: none;
+    border-radius: 0.125rem;
+    margin-top: 0;
+    font-family: $mainFont;
+  }
+
+  #form4__name-message {
+    width: 3.542rem;
+    height: 1.542rem;
+    padding: 0;
+    margin: 0; 
+    font-family: $mainFont;
+    font-weight: 400;
+    font-size: 0.417rem;
+    line-height: 1.917rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-top: -0.25rem;
+    margin-left: 0.167rem;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 0px 7px;
+    background-color: transparent;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  #form4__name-error-message {
+    font-size: 0.417rem;
+    margin-top: -0.3px;
+    margin-bottom:-0.3px;
+    color: #555564;
+    height: 0.625rem;
+  }
+
+  &__patronymic-container {
+    width: 10.417rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__patronymic-input {
+    width: 6.25rem;
+    height: 1.083rem;
+    background: #e5e5e5;
+    border: none;
+    border-radius: 0.125rem;
+    margin-top: 0;
+    font-family: $mainFont;
+  }
+
+  #form4__patronymic-message {
+    width: 3.542rem;
+    height: 1.542rem;
+    padding: 0;
+    margin: 0;
+    font-family: $mainFont;
+    font-weight: 400;
+    font-size: 0.417rem;
+    line-height: 1.917rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-top: -0.25rem;
+    margin-left: 0.167rem;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 0px 7px;
+    background-color: transparent;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  #form4__patronymic-error-message {
+    font-size: 0.417rem;
+    margin-top: -0.3px;
+    margin-bottom:-0.3px;
+    color: #555564;
+    height: 0.625rem;
+  }
+
+  &__phone-container {
+    width: 10.417rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__phone-input{
+    width: 6.25rem;
+    height: 1.083rem;
+    background: #e5e5e5;
+    border: none;
+    border-radius: 0.125rem;
+    margin-top: 0;
+    font-family: $mainFont;
+  }
+  
+  #form4__phone-message{
+    width: 3.542rem;
+    height: 1.542rem;
+    padding: 0;
+    margin: 0;
+    font-family: $mainFont;
+    font-weight: 400;
+    font-size: 0.417rem;
+    line-height: 1.917rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-top: -0.25rem;
+    margin-left: 0.167rem;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 0px 7px;
+    background-color: transparent;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  #form4__phone-error-message {
+    font-size: 0.417rem;
+    margin-top: -0.3px;
+    margin-bottom:-0.3px;
+    color: #555564;
+    height: 0.625rem;
+  }
+
+  &__email-container {
+    width: 10.417rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__email-input {
+    width: 6.25rem;
+    height: 1.083rem;
+    background: #e5e5e5;
+    border: none;
+    border-radius: 0.125rem;
+    margin-top: 0;
+    font-family: $mainFont;
+  }
+
+  #form4__email-message {
+    width: 3.542rem;
+    height: 1.542rem;
+    padding: 0;
+    margin: 0; 
+    font-family: $mainFont;
+    font-weight: 400;
+    font-size: 0.417rem;
+    line-height: 1.917rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-top: -0.25rem;
+    margin-left: 0.167rem;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 0px 7px;
+    background-color: transparent;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  #form4__email-error-message {
+    font-size: 0.417rem;
+    margin-top: -0.3px;
+    margin-bottom:-0.3px;
+    color: #555564;
+    height: 0.625rem;
+  }
+}
