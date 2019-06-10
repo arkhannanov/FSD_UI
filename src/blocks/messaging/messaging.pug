@@ -1,17 +1,17 @@
-mixin messaging(options = {name:"", message1:"", message2:"", buttontitle:""})
-    -let {name, message1, message2, buttontitle} = options;
+mixin messaging(options = {name:"", source:"", firstMessage:"", secondMessage:"", buttonTitle:""})
+    -let {name, source, firstMessage, secondMessage, buttonTitle} = options;
     .messaging
         .messaging__name-container
             p.messaging__name= name
         .messaging__dark-block
         .messaging__avatar-container
-            img(src="img/user-2.png", alt="User 2", hspace="5", vspace="5", class= ".messaging__avatar")
+            img.messaging__avatar(src=source, alt="User 2", hspace="5", vspace="5")
         .messaging__dark-container    
             .messaging__icons  
-                .messaging__icon1
-                .messaging__icon2 
-            .messaging__message1-container
-                p.messaging__message1= message1
-            .messaging__message2-container
-                p.messaging__message2= message2
-            button(name="button", class= "messaging__button")= buttontitle
+                .messaging__first-icon
+                .messaging__second-icon 
+            .messaging__first-message-container
+                p.messaging__first-message= firstMessage
+            .messaging__second-message-container
+                p.messaging__second-message= secondMessage
+            button.messaging__button(name="button")= buttonTitle

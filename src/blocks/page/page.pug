@@ -1,12 +1,11 @@
 include ../headline/headline.pug
 include ../buttons/buttons.pug
 include ../percents/percents.pug
-//- 15% 25% 30% 30%
 include ../pie/pie.pug
 include ../slider-left/slider-left.pug
 include ../slider-right/slider-right.pug
 include ../stages/stages.pug
-include ../form/form.pug
+include ../form-index/form-index.pug
 include ../toggles/toggles.pug
 include ../tick-boxes/tick-boxes.pug
 include ../search/search.pug
@@ -59,7 +58,7 @@ mixin page
                     +headline ("form elements")
                     .form-tick-boxes-toggles-container
                         .form-tick-boxes-toggles__form
-                            +form
+                            +form-index
                         .form-tick-boxes-toggles__tick-boxes-toggles
                             +headline ("toggles")
                             +toggles
@@ -93,10 +92,11 @@ mixin page
                         })
                         +side-right({
                             number: "24",
+                            source: "img/pic-2.png",
                             month: "Aug",
                             title: `this is the title`,
                             text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
-                            buttontitle: "add to calendar"
+                            buttonTitle: "add to calendar"
                         })
                 .location
                     +headline ("location")
@@ -111,10 +111,11 @@ mixin page
                     .messaging
                         +headline ("messaging")
                         +messaging ({
-                            name: "Sarah Brown", 
-                            message1: "Hey! So are we cool to meet at the art gallery? Say 8pm", 
-                            message2: "Yeah that sounds great. See you then.", 
-                            buttontitle: "reply"
+                            name: "Sarah Brown",
+                            source: "img/user-2.png", 
+                            firstMessage: "Hey! So are we cool to meet at the art gallery? Say 8pm", 
+                            secondMessage: "Yeah that sounds great. See you then.", 
+                            buttonTitle: "reply"
                         })
                 .video
                     +headline ("video")
@@ -123,8 +124,8 @@ mixin page
                     +headline ("_______________________________________")
                 .navigation
                     +navigation({
-                        page1: "page1", 
-                        page2: "page2", 
-                        page3: "page3", 
-                        page4: "page4"
+                        firstPage: "page1", 
+                        secondPage: "page2", 
+                        thirdPage: "page3", 
+                        fourthPage: "page4"
                     })

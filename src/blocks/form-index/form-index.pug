@@ -1,0 +1,15 @@
+mixin form-index
+    .form-index
+        p#form-index__completeform
+        .form-index__name 
+            input(type="text", id="form-index__name-input", placeholder="Your Name")
+            #form-index__name-message-container
+        p#form-index__name-input-error-message
+        .form-index__email
+            input(type="text", id="form-index__email-input", placeholder="Your E-mail")
+            #form-index__email-message-container
+        p#form-index__email-input-error-message
+        .form-index__message
+            textarea(type="text", id="form-index__message-input", placeholder="Your Message")
+        .form-index__submit
+            button#form-index__submit-button SUBMIT

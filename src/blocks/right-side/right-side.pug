@@ -1,26 +1,26 @@
-mixin right-side(options={link1:"", link2:"", link3:""})
-    - let {link1, link2, link3} = options;
+include ../side-left/side-left.pug
+include ../side-right/side-right.pug
+
+mixin right-side(options={firstLink:"", secondLink:"", thirdLink:""})
+    - let {firstLink, secondLink, thirdLink} = options;
     .right-side
         .right-side__links-contaner
-            .right-side__link1-container 
-                a(href="/mock-address/change-me", class="right-side__link1")= link1
-                                //-  PROFILE
-            .right-side__link2-container
-                a(href="/mock-address/change-me", class="right-side__link2")= link2
-                                //-  FEEDBACK
-            .right-side__link3-container
-                a(href="/mock-address/change-me", class="right-side__link3")= link3
-                                //-   NEWS AND EVENTS
+            .right-side__first-link-container 
+                a.right-side__first-link(href="/mock-address/change-me")= firstLink
+            .right-side__second-link-container
+                a.right-side__second-link(href="/mock-address/change-me")= secondLink
+            .right-side__third-link-container
+                a.right-side__third-link(href="/mock-address/change-me")= thirdLink
         .right-side__news-container
             .right-side__news-header last news
-            .right-side__news1
+            .right-side__first-news
                 +side-left({
                     title: "It’s all going downhill",
                     date: "24  august 2013",
                     text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.`
                 })
-            .right-side__news2
+            .right-side__second-news
                 +side-right({
                     number: "24",
                     month: "Aug",

@@ -49,21 +49,21 @@
     margin-right: auto;
   }
 
-  &__icon1 {
+  &__first-icon {
     width: 1.25rem;
     background-image: url('../../img/chat-icon.png');
     background-repeat: no-repeat;
     background-position: 0.208rem 0.208rem;
   }
 
-  &__icon2 {
+  &__second-icon {
     width: 1.25rem;
     background-image: url('../../img/camera-icon.png');
     background-repeat: no-repeat;
     background-position: 0.208rem 0.208rem;
   }
 
-  &__message1-container {
+  &__first-message-container {
     margin-top: 0.625rem;
     width: 8.917rem;
     height: 2.833rem;
@@ -81,7 +81,7 @@
     padding-top: 0.333rem; 
   }
 
-  &__message2-container{
+  &__second-message-container{
     margin-top: 0.542rem;
     width: 9.667rem;
     margin-left: 1.333rem;
@@ -91,12 +91,12 @@
     margin-bottom: 1.25rem;
   }
 
-  &__message2 {
+  &__first-message {
     font-family: $secondFont;
-    margin-left: 0.125rem;
+    margin-left: -0.6rem;
     margin-top: 0.083rem;
     width: 8.667rem;
-    height: 3.167rem;
+    height: 2.3rem;
     font-size: 0.542rem;
     letter-spacing: 0.63px;
     font-weight: 700;
@@ -105,7 +105,23 @@
     padding-left: 0.75rem;
     padding-top: 0.333rem;
     display: inline-block;
-  }          
+  } 
+  
+  &__second-message {
+    font-family: $secondFont;
+    margin-left: 0.125rem;
+    margin-top: 0.083rem;
+    width: 8.667rem;
+    height: 2.9rem;
+    font-size: 0.542rem;
+    letter-spacing: 0.63px;
+    font-weight: 700;
+    background: #e5e5e5;
+    border-radius: 0.208rem;
+    padding-left: 0.75rem;
+    padding-top: 0.333rem;
+    display: inline-block;
+  }
 
   .ripple {
     border-radius: 50%;

@@ -25,7 +25,7 @@
     }
   }
 
-  &__bt1 {
+  &__first-button {
     border: 1px solid #4eb7a8;
     text-align: center;
     width: 3.25rem;
@@ -43,26 +43,26 @@
     text-transform: uppercase;
   }
 
-  &__bt1:hover {
+  &__first-button:hover {
     background: #4eb7a8;
     color: #ffffff;
   }
 
-  &__bt1:active, 
-  &__bt1:focus {
+  &__first-button:active, 
+  &__first-button:focus {
     outline: none;
     box-shadow: none;
   }
 
-  &__bt1:visited {
+  &__first-button:visited {
     outline: none;
   }
 
-  &__bt1::-moz-focus-inner {
+  &__first-button::-moz-focus-inner {
     border: 0;
   }
 
-  &__bt2 {
+  &__second-button {
     border: 1px solid #4eb7a8;
     text-align: center;
     width: 4.917rem;
@@ -80,26 +80,26 @@
     text-transform: uppercase;
   }
 
-  &__bt2:hover {
+  &__second-button:hover {
     background: #4eb7a8;
     color: #ffffff;
   }
 
-  &__bt2:active, 
-  &__bt2:focus {
+  &__second-button:active, 
+  &__second-button:focus {
     outline: none;
     box-shadow: none;
   }
 
-  &__bt2:visited {
+  &__second-button:visited {
     outline: none;
   }
 
-  &__bt2::-moz-focus-inner {
+  &__second-button::-moz-focus-inner {
     border: 0;
   }
 
-  &__bt3 {
+  &__third-button {
     border: 1px solid #e75735;
     text-align: center;
     width: 4.917rem;
@@ -117,26 +117,26 @@
     text-transform: uppercase;
   }
 
-  &__bt3:hover {
+  &__third-button:hover {
     background: #e75735;
     color: #ffffff;
   }
 
-  &__bt3:active,
-  &__.bt3:focus {
+  &__third-button:active,
+  &__.third-button:focus {
     outline: none;
     box-shadow: none;
   }
 
-  &__bt3:visited {
+  &__third-button:visited {
     outline: none;
   }
 
-  &__bt3::-moz-focus-inner {
+  &__third-button::-moz-focus-inner {
     border: 0;
   }
 
-  &__bt4 {
+  &__fourth-button {
     border: 1px solid #e75735;
     text-align: center;
     width: 3.25rem;
@@ -154,22 +154,22 @@
     text-transform: uppercase;
   }
 
-  &__bt4:hover {
+  &__fourth-button:hover {
     background: #e75735;
     color: #ffffff;
   }
 
-  &__bt4:active,
-  &__bt4:focus {
+  &__fourth-button:active,
+  &__fourth-button:focus {
     outline: none;
     box-shadow: none;
   }
 
-  &__bt4:visited {
+  &__fourth-button:visited {
     outline: none;
   }
 
-  &__bt4::-moz-focus-inner {
+  &__fourth-button::-moz-focus-inner {
     border: 0;
   }
 }

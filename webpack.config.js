@@ -10,10 +10,10 @@ const PATHS = {
 module.exports = {
   entry: {
     app: './src/index.js',
-    index1: './src/index1.js',
-    index2: './src/index2.js',
-    index3: './src/index3.js',
-    index4: './src/index4.js'
+    indexFirstPage: './src/pages/first-page/index-first-page.js',
+    indexSecondPage: './src/pages/second-page/index-second-page.js',
+    indexThirdPage: './src/pages/third-page/index-third-page.js',
+    indexFourthPage: './src/pages/fourth-page/index-fourth-page.js'
   },
   output: {
     filename: '[name].js',
@@ -107,28 +107,28 @@ module.exports = {
 
     }),
     new HtmlWebpackPlugin({
-      filename: 'index1.html',
-      template: 'src/index1.pug',
+      filename: 'index-first-page.html',
+      template: 'src/pages/first-page/index-first-page.pug',
       inject: true,
-      chunks: ['index1']
+      chunks: ['indexFirstPage']
   }),
     new HtmlWebpackPlugin({
-    filename: 'index2.html',
-    template: 'src/index2.pug',
+    filename: 'index-second-page.html',
+    template: 'src/pages/second-page/index-second-page.pug',
     inject: true,
-    chunks: ['index2']
+    chunks: ['indexSecondPage']
 }),
     new HtmlWebpackPlugin({
-    filename: 'index3.html',
-    template: 'src/index3.pug',
+    filename: 'index-third-page.html',
+    template: 'src/pages/third-page/index-third-page.pug',
     inject: true,
-    chunks: ['index3']
+    chunks: ['indexThirdPage']
 }),
 new HtmlWebpackPlugin({
-  filename: 'index4.html',
-  template: 'src/index4.pug',
+  filename: 'index-fourth-page.html',
+  template: 'src/pages/fourth-page/index-fourth-page.pug',
   inject: true,
-  chunks: ['index4']
+  chunks: ['indexFourthPage']
 }),
     new CopyWebpackPlugin([
       { from: PATHS.src + '/img', to: `img` },

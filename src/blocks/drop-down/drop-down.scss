@@ -42,31 +42,73 @@
     background-color: #f9f9f9;
     min-width: 6.667rem;
     z-index: 1;
+  }
 
-    a {
-      color: black;
-      padding: 0.5rem 0.667rem;
-      text-decoration: none;
-      display: block;
-      height: 0.75rem;
-      font-size: 0.583rem;
-      width: 11.458rem;
-      letter-spacing: 0.14px;
-      color: #888888;
-      background:#e5e5e5;
-      border-radius: 0.125rem;
-      font-family: $thirdFont;
-      padding: 0.167rem 0.417rem;
-      margin-bottom: 0.125rem;
-    }
+  &__first-link {
+    color: black;
+    padding: 0.5rem 0.667rem;
+    text-decoration: none;
+    display: block;
+    height: 0.75rem;
+    font-size: 0.583rem;
+    width: 11.458rem;
+    letter-spacing: 0.14px;
+    color: #888888;
+    background:#e5e5e5;
+    border-radius: 0.125rem;
+    font-family: $thirdFont;
+    padding: 0.167rem 0.417rem;
+    margin-bottom: 0.125rem;
+  }
 
-    a:hover {
-      background-color: #f1f1f1;
-    }
+  &__second-link {
+    color: black;
+    padding: 0.5rem 0.667rem;
+    text-decoration: none;
+    display: block;
+    height: 0.75rem;
+    font-size: 0.583rem;
+    width: 11.458rem;
+    letter-spacing: 0.14px;
+    color: #888888;
+    background:#e5e5e5;
+    border-radius: 0.125rem;
+    font-family: $thirdFont;
+    padding: 0.167rem 0.417rem;
+    margin-bottom: 0.125rem;
+  }
+
+  &__third-link {
+    color: black;
+    padding: 0.5rem 0.667rem;
+    text-decoration: none;
+    display: block;
+    height: 0.75rem;
+    font-size: 0.583rem;
+    width: 11.458rem;
+    letter-spacing: 0.14px;
+    color: #888888;
+    background:#e5e5e5;
+    border-radius: 0.125rem;
+    font-family: $thirdFont;
+    padding: 0.167rem 0.417rem;
+    margin-bottom: 0.125rem;
+  }
+
+  &__first-link:hover {
+    background-color: #f1f1f1;
+  }
+
+  &__second-link:hover {
+    background-color: #f1f1f1;
+  }
+
+  &__third-link:hover {
+    background-color: #f1f1f1;
   }
 
   &:hover .drop-down__content {
-  display: block;
+    display: block;
   }
   
   &:hover .drop-down__btn {

@@ -1,0 +1,61 @@
+include ../header-third-page/header-third-page.pug
+include ../percents/percents.pug
+include ../calendar/calendar.pug
+include ../form-third-page/form-third-page.pug
+include ../navigation/navigation.pug
+include ../location/location.pug
+
+mixin third-page
+    main.third-page
+        .third-page-wrapper
+            .header-third-page
+                +header-third-page({
+                    source: "img/logo-3.png"
+                })
+            .content
+                .diagramm-container
+                    .first-diagramm-container
+                        .first-diagramm
+                            +percents({
+                                percent: 0,
+                            })
+                        .first-diagramm__content Просроченных проектов.
+                    .second-diagramm-container
+                        .second-diagramm
+                            +percents({
+                                percent: 25,
+                            })
+                        .second-diagramm__content Проектов, выполненных досрочно.
+                    .third-diagramm-container
+                        .third-diagramm
+                            +percents({
+                                percent: 35
+                            })
+                        .third-diagramm__content Нестарндарных проектов.
+                    .fourth-diagramm-container
+                        .fourth-diagramm
+                            +percents ({
+                                percent: 87
+                            })
+                        .fourth-diagramm__content Довольных клиентов.
+                .feedback
+                    .feedback__headline Оставить отзыв
+                    .feedback__container
+                        .feedback__calendar-container
+                            .feedback__calendar-headline Выбрать день публикации
+                            .feedback__calendar
+                                +calendar
+                        .feedback__form
+                            +form-third-page
+                .navigation
+                    +navigation({
+                        firstPage: "page1", 
+                        secondPage: "page2", 
+                        thirdPage: "page3", 
+                        fourthPage: "page4"
+                    })
+            .footer3
+                +location({ 
+                    title: "Meet us!", 
+                    address: "1259  California St san Francisco, CA"
+                })

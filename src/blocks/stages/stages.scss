@@ -13,10 +13,10 @@
     flex-direction:row;
     justify-content:space-between;
 
-    #stages__div-1, 
-    #stages__div-2, 
-    #stages__div-3, 
-    #stages__div-4 {
+    #stages__first-div, 
+    #stages__second-div, 
+    #stages__third-div, 
+    #stages__fourth-div {
       width: 6.083rem;
       height: 0.208rem;
       background: #e5e5e5;
@@ -29,11 +29,11 @@
     width: 25.208rem;
     margin-top: -0.708rem;
 
-    #stages__circle-1,
-    #stages__circle-2,
-    #stages__circle-3,
-    #stages__circle-4,
-    #stages__circle-5 {
+    #stages__first-circle,
+    #stages__second-circle,
+    #stages__third-circle,
+    #stages__fourth-circle,
+    #stages__fifth-circle {
       width: 1.208rem;
       height: 1.208rem;
       border-radius: 50%;
@@ -46,44 +46,44 @@
       color: #ffffff;
     }
 
-    #stages__circle-1 {
+    #stages__first-circle {
       background:#e75735; 
     }
 
-    #stages__circle-2,
-    #stages__circle-3,
-    #stages__circle-4,
-    #stages__circle-5 {
+    #stages__second-circle,
+    #stages__third-circle,
+    #stages__fourth-circle,
+    #stages__fifth-circle {
       color:#888888;
     }
 
-    #stages__circle-1:active,
-    #stages__circle-1:focus,
-    #stages__circle-2:active,
-    #stages__circle-2:focus,
-    #stages__circle-3:active,
-    #stages__circle-3:focus,
-    #stages__circle-4:active,
-    #stages__circle-4:focus,
-    #stages__circle-5:active,
-    #stages__circle-5:focus {
+    #stages__first-circle:active,
+    #stages__first-circle:focus,
+    #stages__second-circle:active,
+    #stages__second-circle:focus,
+    #stages__third-circle:active,
+    #stages__third-circle:focus,
+    #stages__fourth-circle:active,
+    #stages__fourth-circle:focus,
+    #stages__fifth-circle:active,
+    #stages__fifth-circle:focus {
       outline: none;
       box-shadow: none;
     }
 
-    #stages__circle-1:visited,
-    #stages__circle-2:visited,
-    #stages__circle-3:visited,
-    #stages__circle-4:visited,
-    #stages__circle-5:visited {
+    #stages__first-circle:visited,
+    #stages__second-circle:visited,
+    #stages__third-circle:visited,
+    #stages__fourth-circle:visited,
+    #stages__fifth-circle:visited {
       outline: none;
     }
 
-    #stages__circle-1::-moz-focus-inner,
-    #stages__circle-2::-moz-focus-inner,
-    #stages__circle-3::-moz-focus-inner,
-    #stages__circle-4::-moz-focus-inner,
-    #stages__circle-5::-moz-focus-inner {
+    #stages__first-circle::-moz-focus-inner,
+    #stages__second-circle::-moz-focus-inner,
+    #stages__third-circle::-moz-focus-inner,
+    #stages__fourth-circle::-moz-focus-inner,
+    #stages__fifth-circle::-moz-focus-inner {
       border: 0;
     }
   }

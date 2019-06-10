@@ -2,11 +2,11 @@ mixin user( options = { source: "", name: "", profession: ""})
     - let {source, name, profession} = options;
     .user
         .user__avatar
-            img(src=source, alt="Picture", hspace="5", vspace="5", class="user__avatar-image")
+            img.user__avatar-image(src=source, alt="Picture", hspace="5", vspace="5")
         .user__content-container
             p.user__name= name
             p.user__profession= profession
             .user__links-container
-                a(href="/mock-address/change-me", class="user__facebook")
-                a(href="/mock-address/change-me", class="user__twitter")
-                a(href="/mock-address/change-me", class="user__dribbble")
+                a.user__facebook(href="/mock-address/change-me")
+                a.user__twitter(href="/mock-address/change-me")
+                a.user__dribbble(href="/mock-address/change-me")

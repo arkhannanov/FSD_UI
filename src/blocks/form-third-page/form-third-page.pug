@@ -1,0 +1,15 @@
+include ../stages/stages.pug
+
+mixin form-third-page
+    .form-third-page
+        .form-third-page__name-container
+            input.form-third-page__name-input(type="text", id="form-third-page__name-input", placeholder="Имя")
+        .form-third-page__email-container
+            input.form-third-page__email-input(type="text", id="form-third-page__email-input", placeholder="E-mail")
+        .form-third-page__raiting-container
+            .form-third-page__raiting Рейтинг
+            +stages
+        .form-third-page__message-container
+            textarea.form-third-page__message-text(type="text", id="form-third-page__message-text", placeholder="Сообщение")
+        .form-third-page__submit-container
+            button.form-third-page__submit-button(name="button", id="form-third-page__submit-button") Отправить

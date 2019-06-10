@@ -12,7 +12,7 @@
     margin-bottom: 2rem;
   }
 
-  &__bt1 {
+  &__first-button {
     border: 2px solid #4eb7a8;
     text-align: center;
     width:  2.083rem;
@@ -28,7 +28,7 @@
     padding: 0;
   }
   
-  &__bt1:hover {
+  &__first-button:hover {
     background: #4eb7a8;
     background-image: url('../../img/arrow3.png');
     background-repeat: no-repeat;
@@ -36,8 +36,8 @@
     border: none;
   }
 
-  &__bt1:active, 
-  &__.bt1:focus {
+  &__first-button:active, 
+  &__first-button:focus {
     outline: none;
     background-image: url('../../img/arrow3.png');
     background-repeat: no-repeat;
@@ -46,15 +46,15 @@
     border: none;
   }
 
-  &__bt1:visited {
+  &__first-button:visited {
     outline: none;
   }
 
-  &__bt1::-moz-focus-inner {
+  &__first-button::-moz-focus-inner {
     border: 0;
   }
 
-  &__bt2 {
+  &__second-button {
     border: 2px solid #4eb7a8;
     text-align: center;
     width:  2.083rem;
@@ -70,7 +70,7 @@
     padding: 0px;
   }
 
-  &__bt2:hover {
+  &__second-button:hover {
     background: #4eb7a8;
     background-image: url('../../img/arrow4.png');
     background-repeat: no-repeat;
@@ -78,8 +78,8 @@
     border: none;
   }
 
-  &__bt2:active, 
-  &__bt2:focus {
+  &__second-button:active, 
+  &__second-button:focus {
     outline: none;
     background-image: url('../../img/arrow4.png');
     background-repeat: no-repeat;
@@ -88,11 +88,11 @@
     border: none;
   }
 
-  &__bt2:visited {
+  &__second-button:visited {
     outline: none;
   }
 
-  &__bt2::-moz-focus-inner {
+  &__second-button::-moz-focus-inner {
     border: 0;
   }
 }

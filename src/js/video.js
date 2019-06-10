@@ -68,7 +68,7 @@ function toggleFullscreen() {
 
 // play/pause with space-bar and skip with left/right arrow
 function keyNav(e) {
-	console.log(e.code);
+  
 	if(e.code === "Space") {
 		togglePlay();
 	} else if (e.code === "ArrowRight") {

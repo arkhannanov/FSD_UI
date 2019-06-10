@@ -1,0 +1,26 @@
+include ../stages/stages.pug
+include ../form-second-page/form-second-page.pug
+include ../navigation/navigation.pug
+
+mixin second-page
+    main.second-page
+            .second-page-wrapper
+                .header-second-page Apply for a job
+                .content
+                    .stages
+                        +stages
+                    .avatar
+                        .avatar__image
+                        .avatar__edit
+                            button(name="button", class="avatar__edit-button") edit
+                    .form
+                        +form-second-page({
+                            toggleContent: "Get information about current events."
+                        })
+                .navigation
+                    +navigation({
+                        firstPage: "page1", 
+                        secondPage: "page2", 
+                        thirdPage: "page3", 
+                        fourthPage: "page4"
+                    })

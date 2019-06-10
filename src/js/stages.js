@@ -1,75 +1,75 @@
-var circle1 = document.getElementById('stages__circle-1');
-var circle2 = document.getElementById('stages__circle-2');
-var circle3 = document.getElementById('stages__circle-3');
-var circle4 = document.getElementById('stages__circle-4');
-var circle5 = document.getElementById('stages__circle-5');
+var firstCircle = document.getElementById('stages__first-circle');
+var secondCircle = document.getElementById('stages__second-circle');
+var thirdCircle = document.getElementById('stages__third-circle');
+var fourthCircle = document.getElementById('stages__fourth-circle');
+var fifthCircle = document.getElementById('stages__fifth-circle');
 
-var div1 = document.getElementById('stages__div-1');
-var div2 = document.getElementById('stages__div-2');
-var div3 = document.getElementById('stages__div-3');
-var div4 = document.getElementById('stages__div-4');
+var firstDiv = document.getElementById('stages__first-div');
+var secondDiv = document.getElementById('stages__second-div');
+var thirdDiv = document.getElementById('stages__third-div');
+var fourthDiv = document.getElementById('stages__fourth-div');
 
-circle1.addEventListener('click', function() {
-    circle1.style.cssText = 'background: #e75735; color: white;';
-    circle2.style.cssText = 'background: #e5e5e5; color: #888888;';
-    circle3.style.cssText = 'background: #e5e5e5; color: #888888';
-    circle4.style.cssText = 'background: #e5e5e5; color: #888888';
-    circle5.style.cssText = 'background: #e5e5e5; color: #888888';
+firstCircle.addEventListener('click', function() {
+    firstCircle.style.cssText = 'background: #e75735; color: white;';
+    secondCircle.style.cssText = 'background: #e5e5e5; color: #888888;';
+    thirdCircle.style.cssText = 'background: #e5e5e5; color: #888888';
+    fourthCircle.style.cssText = 'background: #e5e5e5; color: #888888';
+    fifthCircle.style.cssText = 'background: #e5e5e5; color: #888888';
 
-    div1.style.cssText = 'background: #e5e5e5;';
-    div2.style.cssText = 'background: #e5e5e5;';
-    div3.style.cssText = 'background: #e5e5e5;';
-    div4.style.cssText = 'background: #e5e5e5;';
+    firstDiv.style.cssText = 'background: #e5e5e5;';
+    secondDiv.style.cssText = 'background: #e5e5e5;';
+    thirdDiv.style.cssText = 'background: #e5e5e5;';
+    fourthDiv.style.cssText = 'background: #e5e5e5;';
 });
 
-circle2.addEventListener('click', function() {
-    circle1.style.cssText = 'background: #e75735; color: white;';
-    circle2.style.cssText = 'background: #e75735; color: white;';
-    circle3.style.cssText = 'background: #e5e5e5; color: #888888';
-    circle4.style.cssText = 'background: #e5e5e5; color: #888888';
-    circle5.style.cssText = 'background: #e5e5e5; color: #888888';
+secondCircle.addEventListener('click', function() {
+    firstCircle.style.cssText = 'background: #e75735; color: white;';
+    secondCircle.style.cssText = 'background: #e75735; color: white;';
+    thirdCircle.style.cssText = 'background: #e5e5e5; color: #888888';
+    fourthCircle.style.cssText = 'background: #e5e5e5; color: #888888';
+    fifthCircle.style.cssText = 'background: #e5e5e5; color: #888888';
 
-    div1.style.cssText = 'background: #e75735;';
-    div2.style.cssText = 'background: #e5e5e5;';
-    div3.style.cssText = 'background: #e5e5e5;';
-    div4.style.cssText = 'background: #e5e5e5;';
+    firstDiv.style.cssText = 'background: #e75735;';
+    secondDiv.style.cssText = 'background: #e5e5e5;';
+    thirdDiv.style.cssText = 'background: #e5e5e5;';
+    fourthDiv.style.cssText = 'background: #e5e5e5;';
 });
 
-circle3.addEventListener('click', function() {
-    circle1.style.cssText = 'background: #e75735; color: white;';
-    circle2.style.cssText = 'background: #e75735; color: white;';
-    circle3.style.cssText = 'background: #e75735; color: white;';
-    circle4.style.cssText = 'background: #e5e5e5; color: #888888';
-    circle5.style.cssText = 'background: #e5e5e5; color: #888888';
+thirdCircle.addEventListener('click', function() {
+    firstCircle.style.cssText = 'background: #e75735; color: white;';
+    secondCircle.style.cssText = 'background: #e75735; color: white;';
+    thirdCircle.style.cssText = 'background: #e75735; color: white;';
+    fourthCircle.style.cssText = 'background: #e5e5e5; color: #888888';
+    fifthCircle.style.cssText = 'background: #e5e5e5; color: #888888';
 
-    div1.style.cssText = 'background: #e75735;';
-    div2.style.cssText = 'background: #e75735;';
-    div3.style.cssText = 'background: #e5e5e5;';
-    div4.style.cssText = 'background: #e5e5e5;';
+    firstDiv.style.cssText = 'background: #e75735;';
+    secondDiv.style.cssText = 'background: #e75735;';
+    thirdDiv.style.cssText = 'background: #e5e5e5;';
+    fourthDiv.style.cssText = 'background: #e5e5e5;';
 });
 
-circle4.addEventListener('click', function() {
-    circle1.style.cssText = 'background: #e75735; color: white;';
-    circle2.style.cssText = 'background: #e75735; color: white;';
-    circle3.style.cssText = 'background: #e75735; color: white;';
-    circle4.style.cssText = 'background: #e75735; color: white;';
-    circle5.style.cssText = 'background: #e5e5e5; color: #888888';
+fourthCircle.addEventListener('click', function() {
+    firstCircle.style.cssText = 'background: #e75735; color: white;';
+    secondCircle.style.cssText = 'background: #e75735; color: white;';
+    thirdCircle.style.cssText = 'background: #e75735; color: white;';
+    fourthCircle.style.cssText = 'background: #e75735; color: white;';
+    fifthCircle.style.cssText = 'background: #e5e5e5; color: #888888';
 
-    div1.style.cssText = 'background: #e75735; ';
-    div2.style.cssText = 'background: #e75735;';
-    div3.style.cssText = 'background: #e75735;';
-    div4.style.cssText = 'background: #e5e5e5;';
+    firstDiv.style.cssText = 'background: #e75735; ';
+    secondDiv.style.cssText = 'background: #e75735;';
+    thirdDiv.style.cssText = 'background: #e75735;';
+    fourthDiv.style.cssText = 'background: #e5e5e5;';
 });
 
-circle5.addEventListener('click', function() {
-    circle1.style.cssText = 'background: #e75735; color: white;';
-    circle2.style.cssText = 'background: #e75735; color: white;';
-    circle3.style.cssText = 'background: #e75735; color: white;';
-    circle4.style.cssText = 'background: #e75735; color: white;';
-    circle5.style.cssText = 'background: #e75735; color: white;';
+fifthCircle.addEventListener('click', function() {
+    firstCircle.style.cssText = 'background: #e75735; color: white;';
+    secondCircle.style.cssText = 'background: #e75735; color: white;';
+    thirdCircle.style.cssText = 'background: #e75735; color: white;';
+    fourthCircle.style.cssText = 'background: #e75735; color: white;';
+    fifthCircle.style.cssText = 'background: #e75735; color: white;';
 
-    div1.style.cssText = 'background: #e75735;';
-    div2.style.cssText = 'background: #e75735;';
-    div3.style.cssText = 'background: #e75735;';
-    div4.style.cssText = 'background: #e75735;';
+    firstDiv.style.cssText = 'background: #e75735;';
+    secondDiv.style.cssText = 'background: #e75735;';
+    thirdDiv.style.cssText = 'background: #e75735;';
+    fourthDiv.style.cssText = 'background: #e75735;';
 });

@@ -1,0 +1,11 @@
+mixin footer-fourth-page(options={ firstLink: "", secondLink: "", thirdLink: "" })
+    - let {firstLink, secondLink, thirdLink } = options;
+    .footer-fourth-page
+        .footer-fourth-page__logo logotip
+        .footer-fourth-page__menu
+            .footer-fourth-page__first-link-container
+                a.footer-fourth-page__first-link(href="/mock-address/change-me")= firstLink
+            .footer-fourth-page__second-link-container
+                a.footer-fourth-page__second-link(href="/mock-address/change-me")= secondLink
+            .footer-fourth-page__third-link-container
+                a.footer-fourth-page__third-link(href="/mock-address/change-me")= thirdLink

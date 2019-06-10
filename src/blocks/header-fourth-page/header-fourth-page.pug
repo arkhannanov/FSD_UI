@@ -1,0 +1,12 @@
+mixin header-fourth-page(options={ firstButton:"", secondButton:"", thirdButton:""})
+    - let {firstButton, secondButton, thirdButton} = options;
+    .header-fourth-page
+        .header-fourth-page__first-line
+            .header-fourth-page__logo logotip
+        .header-fourth-page__second-line
+            .header-fourth-page__first-button-container
+                button.header-fourth-page__first-button(name="button")= firstButton
+            .header-fourth-page__second-button-container
+                button.header-fourth-page__second-button(name="button")= secondButton
+            .header-fourth-page__third-button-container
+                button.header-fourth-page__third-button(name="button")= thirdButton
