@@ -12,14 +12,14 @@
   */
 .calendar-container {
    margin: 0 auto 0;
-   width: 279px;
+   width: 11.625rem;
  }
  
  /*
   * Calendar
   */
 .calendar {
-  padding: 0px;
+  padding: 0;
   color: #1e2633;
   font-family: $secondFont;
   line-height: 1.2;
@@ -42,7 +42,7 @@
     position: relative;
     background: #d54c2c;
     font-family: $secondFont;
-    padding: 0px 1.458rem;
+    padding: 0 1.458rem;
     color: #ffffff;
     height: 1.792rem;
     line-height: 1.667rem;
@@ -77,7 +77,7 @@
       left: 0.208rem;
       background-image: url('../../img/arrow-left.png');
       background-repeat: no-repeat;
-      background-position: 8px 14px;
+      background-position: 0.333rem 0.583rem;
       &:before {
         left: 0;
         transform: rotate(-45deg);
@@ -87,7 +87,7 @@
       right: 0.208rem;
       background-image: url('../../img/arrow-right.png');
       background-repeat: no-repeat;
-      background-position: 8px 14px;
+      background-position: 0.333rem 0.583rem;
       &:before {
         right: 0.333rem;
         transform: rotate(135deg);
@@ -123,7 +123,7 @@
     height: 0.917rem;
     color: #ffffff;
     font-size: 0.375rem;
-    letter-spacing: 0.45px;
+    letter-spacing: 0.019rem;
     text-transform: uppercase;
     background-color: #e75735;
     margin-top: 0.833rem;
@@ -154,7 +154,7 @@
  
 table {
   border-collapse: separate;
-  border-spacing: 2px;
+  border-spacing: 0.083rem;
   margin: 0;
   position: relative;
   z-index: 100;
@@ -179,7 +179,7 @@ table {
   font-family: $mainFont;
   margin-left: -0.071rem;
   font-size: 0.542rem;
-  letter-spacing: 0.65px;
+  letter-spacing: 0.027rem;
   color: #868686;
   text-align: left;
   padding-left: 0.792rem;

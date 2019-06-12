@@ -8,7 +8,7 @@
     font-size: 1.417rem;
     color: #ffffff;
     background: #4eb7a8;
-    letter-spacing: -1.02px;
+    letter-spacing: -0.042rem;
     font-weight: lighter;
     text-align: center;
     line-height: 3.542rem;
@@ -72,11 +72,11 @@
     color: #868686;
     font-family: $secondFont;
     font-size: 0.542rem;
-    letter-spacing: 0.63px;
+    letter-spacing: 0.026rem;
     font-weight: 700;
     background-image: url('../../img/background.png');
     background-repeat: no-repeat;
-    background-position: 0.292rem 0px;  
+    background-position: 0.292rem 0;  
     padding-left: 1.042rem;
     padding-top: 0.333rem; 
   }
@@ -98,7 +98,7 @@
     width: 8.667rem;
     height: 2.3rem;
     font-size: 0.542rem;
-    letter-spacing: 0.63px;
+    letter-spacing: 0.026rem;
     font-weight: 700;
     background: #e5e5e5;
     border-radius: 0.208rem;
@@ -114,7 +114,7 @@
     width: 8.667rem;
     height: 2.9rem;
     font-size: 0.542rem;
-    letter-spacing: 0.63px;
+    letter-spacing: 0.026rem;
     font-weight: 700;
     background: #e5e5e5;
     border-radius: 0.208rem;
@@ -140,14 +140,14 @@
   }
 
   &__button {
-    border: 1px solid #4eb7a8;
+    border: 0.042rem solid #4eb7a8;
     text-align: center;
     background: #ffffff;
     font-weight: bolder;
     color: #4eb7a8;
     font-size: 0.417rem;
     border-radius: 0.208rem;
-    box-shadow: 0 -2px rgba(40, 162, 144, 1) inset;
+    box-shadow: 0 -0.083rem rgba(40, 162, 144, 1) inset;
     transition: 0.2s;
     vertical-align: middle;
     overflow: hidden;

@@ -11,7 +11,7 @@
     flex-grow: 1;
     background-image: url('../../img/logo.png');
     background-repeat: no-repeat;
-    background-position: 30px 3px; 
+    background-position: 1.25rem 0.125rem; 
   }
 
   &__logout {
@@ -50,7 +50,7 @@
       width: 7.5rem;
       color: #888888;
       font-family: $thirdFont;
-      letter-spacing: 0.14px;
+      letter-spacing: 0.006rem;
       padding-left: 0.417rem;
       padding-bottom: 0;
       padding-top: 0;
@@ -70,11 +70,11 @@
       border-radius: 0.125rem;
       background-color:#e75735;
       top: 0.129rem;
-      margin-left: -27px;
+      margin-left: -1.125rem;
       position: relative;
       background-image: url('../../img/search-icon.png');
       background-repeat: no-repeat;
-      background-position: 6.5px 6.5px; 
+      background-position: 0.271rem 0.271rem; 
       font-size: 0.333rem;
     }
 

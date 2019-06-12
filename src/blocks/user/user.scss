@@ -1,15 +1,15 @@
 .user {
   width: 100%;
-  margin-left: 35px;
-  margin-bottom: 25px;
+  margin-left: 1.458rem;
+  margin-bottom: 1.042rem;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: row;
 
   &__avatar {
-    width: 94px;
-    height: 94px;
+    width: 3.917rem;
+    height: 3.917rem;
     border-radius: 50%;
     background-color: #e5e5e5;
   }
@@ -17,7 +17,7 @@
   &__content-container {
     background-image: url('../../img/slider-1.png');
     background-repeat: no-repeat;
-    background-position: 0px 0px;
+    background-position: 0 0;
     margin-left: 0.167rem;
     width: 7.083rem;
     height: 3.875rem;
@@ -37,7 +37,7 @@
     font-family: $mainFont;
     color: #4f4f4f;
     font-size: 0.458rem;
-    letter-spacing: 0.55px;
+    letter-spacing: 0.023rem;
     text-align: center;
     margin-left: 0.25rem;
     margin-block-start: 0.125rem;
@@ -59,7 +59,7 @@
     height: 1.042rem;
     background-image: url('../../img/spritesheet.png');
     background-repeat: no-repeat;
-    background-position: -2px -49px;           
+    background-position: -0.083rem -2.042rem;           
   }
 
   &__twitter {
@@ -67,7 +67,7 @@
     height: 1.042rem;
     background-image: url('../../img/spritesheet.png');
     background-repeat: no-repeat;
-    background-position: -92px -8px;         
+    background-position: -3.833rem -0.333rem;         
   }
 
   &__dribbble {
@@ -75,7 +75,7 @@
     height: 1.042rem;
     background-image: url('../../img/spritesheet.png');
     background-repeat: no-repeat;
-    background-position: -8px -8px; 
+    background-position: -0.333rem -0.333rem; 
   }
     
   &__content-container:hover {
@@ -90,15 +90,15 @@
 
     .user__links-container {
       .user__facebook {
-        background-position: -33px -49px;
+        background-position: -1.375rem -2.042rem;
       }
 
       .user__twitter {
-        background-position: -92px -47px; 
+        background-position: -3.833rem -1.958rem; 
       }
 
       .user__dribbble {
-        background-position: -48px -8px; 
+        background-position: -2rem -0.333rem; 
       }
     }
   }

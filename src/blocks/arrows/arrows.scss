@@ -2,7 +2,7 @@
   width: 60%;
 
   &__arrows-container {
-    width: 130px;
+    width: 5.417rem;
     display: flex;
     flex-direction:row;
     justify-content: space-between;
@@ -13,13 +13,13 @@
   }
 
   &__first-button {
-    border: 2px solid #4eb7a8;
+    border: 0.083rem solid #4eb7a8;
     text-align: center;
     width:  2.083rem;
     height: 2.083rem;
     background-image: url('../../img/arrow1.png');
     background-repeat: no-repeat;
-    background-position: 13px 11px;
+    background-position: 0.542rem 0.458rem;
     background-color: white;
     border-radius: 50%;
     transition: 0.2s;
@@ -32,7 +32,7 @@
     background: #4eb7a8;
     background-image: url('../../img/arrow3.png');
     background-repeat: no-repeat;
-    background-position: 14px 12px;
+    background-position: 0.583rem 0.5rem;
     border: none;
   }
 
@@ -41,7 +41,7 @@
     outline: none;
     background-image: url('../../img/arrow3.png');
     background-repeat: no-repeat;
-    background-position: 14px 12px;
+    background-position: 0.583rem 0.5rem;
     background-color: #e5e5e5;
     border: none;
   }
@@ -55,26 +55,26 @@
   }
 
   &__second-button {
-    border: 2px solid #4eb7a8;
+    border: 0.083rem solid #4eb7a8;
     text-align: center;
     width:  2.083rem;
     height: 2.083rem;
     background-image: url('../../img/arrow2.png');
     background-repeat: no-repeat;
-    background-position: 15px 11px;
+    background-position: 0.625rem 0.458rem;
     background-color: white;
     border-radius: 50%;
     transition: 0.2s;
     overflow: hidden;
     position: relative;
-    padding: 0px;
+    padding: 0;
   }
 
   &__second-button:hover {
     background: #4eb7a8;
     background-image: url('../../img/arrow4.png');
     background-repeat: no-repeat;
-    background-position: 16px 12px;
+    background-position: 0.667rem 0.5rem;
     border: none;
   }
 
@@ -83,7 +83,7 @@
     outline: none;
     background-image: url('../../img/arrow4.png');
     background-repeat: no-repeat;
-    background-position: 16px 12px;
+    background-position: 0.667rem 0.5rem;
     background-color: #e5e5e5;
     border: none;
   }

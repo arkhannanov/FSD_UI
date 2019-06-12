@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     background: #e75735;
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 0.125rem 0.125rem 0;
   }
 
   &__title-container {
@@ -23,17 +23,17 @@
   }
 
   &__title {
-    margin-block-start: 0px;
-    margin-block-end: 0px;  
+    margin-block-start: 0;
+    margin-block-end: 0;  
   }
   
   &__date-container {
     font-family: $mainFont;
     color: #ffffff;
     font-size: 0.458rem;
-    letter-spacing: 0.55px;
+    letter-spacing: 0.023rem;
     margin-left: 1rem;
-    margin-top: -2px;
+    margin-top: -0.083rem;
   }
 
   &__date {
@@ -48,6 +48,6 @@
     font-size: 0.458rem;
     margin-left: 1rem;
     padding-right: 0.917rem;
-    letter-spacing: 0.55px;
+    letter-spacing: 0.023rem;
   }
 }

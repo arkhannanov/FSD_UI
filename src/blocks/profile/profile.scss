@@ -10,9 +10,9 @@
     font-size: 0.583rem;
     color: black;
     background: white;
-    -webkit-box-shadow: -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
-    -moz-box-shadow:    -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
-    box-shadow:         -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
+    -moz-box-shadow:    -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
+    box-shadow:         -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
     line-height: 1.167rem;
     padding-left: 0.417rem;
     margin-top: 0.417rem;
@@ -41,9 +41,9 @@
     width: 5.833rem;
     height: 6.875rem;
     background-color: white;
-    -webkit-box-shadow: -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
-    -moz-box-shadow:    -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
-    box-shadow:         -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
+    -moz-box-shadow:    -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
+    box-shadow:         -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
     margin-bottom: 0.417rem;
     display: flex;
     flex-direction: column;
@@ -54,7 +54,7 @@
     height: 5.833rem;
     background-image: url('../../img/user-large.png');
     background-repeat: no-repeat;
-    background-position: 6.5px 6.5px;
+    background-position: 0.271rem 0.271rem;
   }
   
   &__edit {
@@ -89,7 +89,7 @@
     color: #4eb7a8;
     font-size: 0.417rem;
     border-radius: 0.125rem;
-    box-shadow: 0 -2px rgba(40, 162, 144, 1) inset;
+    box-shadow: 0 -0.083rem rgba(40, 162, 144, 1) inset;
     transition: 0.2s;
     vertical-align: middle;
     overflow: hidden;
@@ -120,9 +120,9 @@
     width: 5.833rem;
     height: 8.75rem;
     background-color: white;
-    -webkit-box-shadow: -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
-    -moz-box-shadow:    -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
-    box-shadow:         -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
+    -moz-box-shadow:    -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
+    box-shadow:         -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
   }
 
   &__calendar {
@@ -133,9 +133,9 @@
   &__content-right-side-container{
     flex-grow: 1;
     height: 16.042rem;
-    -webkit-box-shadow: -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
-    -moz-box-shadow:    -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
-    box-shadow:         -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
+    -moz-box-shadow:    -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
+    box-shadow:         -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
     background: white;
     margin-right: 0.417rem;
     display: flex;
@@ -146,7 +146,7 @@
     font-size: 0.708rem;
     width: 95%;
     height: 0.917rem;
-    border-bottom: 2px solid black;
+    border-bottom: 0.083rem solid black;
     margin-left: 0.417rem;
     line-height: 1.25rem;
     padding-bottom: 0.208rem;

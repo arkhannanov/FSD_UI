@@ -14,7 +14,7 @@
     margin-top: -0.625rem;
     font-size: 0.5rem;
     line-height: 1.75rem;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.021rem;
     font-weight: lighter;
     color: red;
     margin-left: 3.333rem;
@@ -43,7 +43,7 @@
       font-weight: 400;
       color: #888888;
       line-height: 1.75rem;
-      letter-spacing: 0.14px;
+      letter-spacing: 0.006rem;
       border-radius: 0.125rem;
     }
 
@@ -56,13 +56,13 @@
       font-weight: 400;
       font-size: 0.417rem;
       line-height: 1.917rem;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.021rem;
       text-align: center;
       margin-top: -0.25rem;
       margin-left: 0.167rem;
       vertical-align: middle;
       background-repeat: no-repeat;
-      background-position: 0px 7px;
+      background-position: 0 0.292rem;
       background-color: transparent;
       color: #ffffff;
     }
@@ -77,7 +77,7 @@
     margin-top: -0.625rem;
     font-size: 0.417rem;
     line-height: 1.75rem;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.021rem;
     font-weight: lighter;
     color: #888888;
   }
@@ -105,7 +105,7 @@
       font-weight: 400;
       color: #888888;
       line-height: 1.75rem;
-      letter-spacing: 0.14px;
+      letter-spacing: 0.006rem;
       border-radius: 0.125rem;
     }
 
@@ -118,13 +118,13 @@
       font-weight: 400;
       font-size: 0.417rem;
       line-height: 1.833rem;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.021rem;
       text-align: center;
       margin-top: -0.25rem;
       margin-left: 0.167rem;
       vertical-align: middle;
       background-repeat: no-repeat;
-      background-position: 0px 0.292rem;
+      background-position: 0 0.292rem;
       background-color: transparent;
       color: #ffffff;
     }
@@ -139,7 +139,7 @@
     margin-top: -0.625rem;
     font-size: 0.417rem;
     line-height: 1.75rem;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.021rem;
     font-weight: lighter;
     color: #888888;
   }
@@ -161,7 +161,7 @@
       font-family: $thirdFont;
       font-weight: 400;
       color: #888888;
-      letter-spacing: 0.14px;
+      letter-spacing: 0.006rem;
       border-radius: 0.125rem;
       border: 0;                          
     }
@@ -170,7 +170,7 @@
   #form-index__submit-button {
     width: 4.917rem;
     height: 1.333rem;
-    border: 1px solid #4eb7a8;
+    border: 0.042rem solid #4eb7a8;
     text-align: center;
     background: #ffffff;
     font-weight: bolder;
@@ -178,7 +178,7 @@
     letter-spacing: 0;
     font-size: 0.5rem;
     border-radius: 0.208rem;
-    box-shadow: 0 -2px rgba(40, 162, 144, 1) inset;
+    box-shadow: 0 -0.083rem rgba(40, 162, 144, 1) inset;
     transition: 0.2s;
     vertical-align: middle;
     overflow: hidden;

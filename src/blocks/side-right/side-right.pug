@@ -1,7 +1,7 @@
-mixin side-right(options = {number: "", source:"", month: "", title: "", text: "", buttonTitle: ""})
-    -let {number, source, month, title, text, buttonTitle } = options;
+mixin side-right(options = {number: "", month: "", title: "", text: "", buttonTitle: ""})
+    -let {number, month, title, text, buttonTitle } = options;
     .side-right
-        img.side-right__image(src=source, alt="Pic 2")
+        img.side-right__image(src="img/pic-2.png", alt="Pic 2")
         .side-right__content-container
             .side-right__date-container
                 .side-right__date-number= number

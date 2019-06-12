@@ -24,9 +24,9 @@
   width: 5.833rem;
   height: 6.875rem;
   background-color: white;
-  -webkit-box-shadow: -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
-  -moz-box-shadow:    -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
-  box-shadow:         -2px 2px 13px 0px rgba(0, 0, 0, 0.64);
+  -webkit-box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
+  -moz-box-shadow:    -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
+  box-shadow:         -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
   margin-bottom: 0.417rem;
   display: flex;
   flex-direction: column;
@@ -39,7 +39,7 @@
     height: 5.833rem;
     background-image: url('../../img/user-large.png');
     background-repeat: no-repeat;
-    background-position: 6.5px 6.5px;
+    background-position: 0.271rem 0.271rem;
   }
   
   &__edit {
@@ -74,7 +74,7 @@
     color: #4eb7a8;
     font-size: 0.417rem;
     border-radius: 0.125rem;
-    box-shadow: 0 -2px rgba(40, 162, 144, 1) inset;
+    box-shadow: 0 -0.083rem rgba(40, 162, 144, 1) inset;
     transition: 0.2s;
     vertical-align: middle;
     overflow: hidden;
