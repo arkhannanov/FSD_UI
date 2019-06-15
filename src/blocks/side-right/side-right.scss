@@ -20,20 +20,20 @@
   }
 
   &__date-number {
-    font-family: $secondFont;
+    font-weight: lighter;
     font-size: 3.042rem;
     letter-spacing: -0.122rem;
   }
 
   &__date-month {
-    font-family: $secondFont;
+    font-weight: lighter;
     font-size: 1.25rem;
     margin-top: 1.708rem;
     margin-left: 0.375rem;
   } 
 
   &__title-container{
-    font-family: $mainFont;
+    font-weight: normal;
     color: #ffffff;
     font-size: 0.542rem;
     letter-spacing: 0.026rem;
@@ -48,7 +48,7 @@
   }
 
   &__text-container {
-    font-family: $secondFont;
+    font-weight: lighter;
     color: #ffffff;
     font-size: 0.458rem;
     margin-left: 1rem;

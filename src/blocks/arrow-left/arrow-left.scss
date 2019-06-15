@@ -5,7 +5,7 @@
     text-align: center;
     width:  2.083rem;
     height: 2.083rem;
-    background-image: url('../../img/arrow1.png');
+    background-image: url('./images/arrow1.png');
     background-repeat: no-repeat;
     background-position: 0.542rem 0.458rem;
     background-color: white;
@@ -18,7 +18,7 @@
   
   &__button:hover {
     background: #4eb7a8;
-    background-image: url('../../img/arrow3.png');
+    background-image: url('./images/arrow3.png');
     background-repeat: no-repeat;
     background-position: 0.583rem 0.5rem;
     border: none;
@@ -27,7 +27,7 @@
   &__button:active, 
   &__button:focus {
     outline: none;
-    background-image: url('../../img/arrow3.png');
+    background-image: url('./images/arrow3.png');
     background-repeat: no-repeat;
     background-position: 0.583rem 0.5rem;
     background-color: #e5e5e5;

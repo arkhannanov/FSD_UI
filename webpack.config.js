@@ -10,10 +10,10 @@ const PATHS = {
 module.exports = {
   entry: {
     app: './src/index.js',
-    alfa: './src/pages/page-alfa/alfa.js',
-    betta: './src/pages/page-betta/betta.js',
-    gamma: './src/pages/page-gamma/gamma.js',
-    sigma: './src/pages/page-sigma/sigma.js'
+    alfa: './src/pages/alfa/alfa.js',
+    betta: './src/pages/betta/betta.js',
+    gamma: './src/pages/gamma/gamma.js',
+    sigma: './src/pages/sigma/sigma.js'
   },
   output: {
     filename: '[name].js',
@@ -108,32 +108,32 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'alfa.html',
-      template: 'src/pages/page-alfa/alfa.pug',
+      template: 'src/pages/alfa/alfa.pug',
       inject: true,
       chunks: ['alfa']
   }),
     new HtmlWebpackPlugin({
     filename: 'betta.html',
-    template: 'src/pages/page-betta/betta.pug',
+    template: 'src/pages/betta/betta.pug',
     inject: true,
     chunks: ['betta']
 }),
     new HtmlWebpackPlugin({
     filename: 'gamma.html',
-    template: 'src/pages/page-gamma/gamma.pug',
+    template: 'src/pages/gamma/gamma.pug',
     inject: true,
     chunks: ['gamma']
 }),
 new HtmlWebpackPlugin({
   filename: 'sigma.html',
-  template: 'src/pages/page-sigma/sigma.pug',
+  template: 'src/pages/sigma/sigma.pug',
   inject: true,
   chunks: ['sigma']
 }),
     new CopyWebpackPlugin([
-      { from: PATHS.src + '/img', to: `img` },
+      { from: PATHS.src + 'blocks/form/images', to: `blocks/form/images` },
       { from: PATHS.src + '/video', to: `video`},
-      { from: PATHS.src + '/imgages/favicons', to: `images/favicons` }
+      { from: PATHS.src + '/images/favicons', to: `images/favicons` }
     ]), 
   ]
 }

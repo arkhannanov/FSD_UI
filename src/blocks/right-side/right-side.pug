@@ -15,6 +15,7 @@ mixin right-side(options={profile:"", feedback:"", newsAndEvents:""})
             .right-side__news-header last news
             .right-side__top-news
                 +side-left({
+                    source: "images/pic-1.png",
                     title: "It’s all going downhill",
                     date: "24  august 2013",
                     text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -22,9 +23,10 @@ mixin right-side(options={profile:"", feedback:"", newsAndEvents:""})
                 })
             .right-side__bottom-news
                 +side-right({
+                    source: "images/pic-2.png",
                     number: "24",
                     month: "Aug",
                     title: `this is the title`,
                     text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
-                    buttontitle: "add to calendar"
+                    buttonTitle: "add to calendar"
                 })

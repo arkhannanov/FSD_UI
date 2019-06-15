@@ -15,7 +15,7 @@
   }
 
   &__content-container {
-    background-image: url('../../img/slider-1.png');
+    background-image: url('./images/slider-1.png');
     background-repeat: no-repeat;
     background-position: 0 0;
     margin-left: 0.167rem;
@@ -24,7 +24,7 @@
   }
 
   &__name {
-    font-family: $secondFont;
+    font-weight: lighter;
     color: #e75735;
     font-size: 0.75rem;
     text-align: center;
@@ -34,7 +34,7 @@
   }
 
   &__profession {
-    font-family: $mainFont;
+    font-weight: normal;
     color: #4f4f4f;
     font-size: 0.458rem;
     letter-spacing: 0.023rem;
@@ -57,7 +57,7 @@
   &__facebook {
     width: 1.042rem;
     height: 1.042rem;
-    background-image: url('../../img/spritesheet.png');
+    background-image: url('./images/spritesheet.png');
     background-repeat: no-repeat;
     background-position: -0.083rem -2.042rem;           
   }
@@ -65,7 +65,7 @@
   &__twitter {
     width: 1.042rem;
     height: 1.042rem;
-    background-image: url('../../img/spritesheet.png');
+    background-image: url('./images/spritesheet.png');
     background-repeat: no-repeat;
     background-position: -3.833rem -0.333rem;         
   }
@@ -73,13 +73,13 @@
   &__dribbble {
     width: 1.042rem;
     height: 1.042rem;
-    background-image: url('../../img/spritesheet.png');
+    background-image: url('./images/spritesheet.png');
     background-repeat: no-repeat;
     background-position: -0.333rem -0.333rem; 
   }
     
   &__content-container:hover {
-    background-image: url('../../img/slider-2.png');          
+    background-image: url('./images/slider-2.png');          
     .user__name {
       color: #ffffff;
     }

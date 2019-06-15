@@ -21,7 +21,7 @@
 .calendar {
   padding: 0;
   color: #1e2633;
-  font-family: $secondFont;
+  font-weight: lighter;
   line-height: 1.2;
   text-align: center;
   border: 0;
@@ -41,7 +41,7 @@
    &__header {
     position: relative;
     background: #d54c2c;
-    font-family: $secondFont;
+    font-weight: lighter;
     padding: 0 1.458rem;
     color: #ffffff;
     height: 1.792rem;
@@ -75,7 +75,7 @@
     }
     &_prev {
       left: 0.208rem;
-      background-image: url('../../img/arrow-left.png');
+      background-image: url('./images/arrow-left.png');
       background-repeat: no-repeat;
       background-position: 0.333rem 0.583rem;
       &:before {
@@ -85,7 +85,7 @@
     }
     &_next {
       right: 0.208rem;
-      background-image: url('../../img/arrow-right.png');
+      background-image: url('./images/arrow-right.png');
       background-repeat: no-repeat;
       background-position: 0.333rem 0.583rem;
       &:before {
@@ -107,7 +107,7 @@
   }
   &__table-row {
     background: #e75735;
-    font-family: $mainFont;
+    font-weight: normal;
     border-collapse: collapse;
     position: relative;
     z-index: 200;
@@ -176,7 +176,7 @@ table {
   height: 1.25rem;
   margin-left: 0;
   background-color: #e5e5e5;
-  font-family: $mainFont;
+  font-weight: normal;
   margin-left: -0.071rem;
   font-size: 0.542rem;
   letter-spacing: 0.027rem;

@@ -24,7 +24,7 @@
   }
   
   &__content-title {
-    font-family: $secondFont;
+    font-weight: lighter;
     font-size: 1.25rem;
     color: #ffffff;
     margin-top: 0.542rem;
@@ -41,19 +41,19 @@
     text-transform: uppercase;
   }
 
-  &__content-icon1 {
+  &__content-icon-my-location {
     width: 1.667rem;
     font-size: 1.667rem;
-    background-image: url('../../img/icon-my-location.png');
+    background-image: url('./images/icon-my-location.png');
     background-repeat: no-repeat;
     background-position: 0 0.833rem;
     margin-left: 7.083rem;
   }
 
-  &__content-icon2 {
+  &__content-icon-pin {
     width: 1.667rem;
     font-size: 1.667rem;
-    background-image: url('../../img/icon-pin.png');
+    background-image: url('./images/icon-pin.png');
     background-repeat: no-repeat;
     background-position: 0 0.875rem;
     margin-left: 0.417rem;

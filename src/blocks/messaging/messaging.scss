@@ -49,16 +49,16 @@
     margin-right: auto;
   }
 
-  &__first-icon {
+  &__chat-icon {
     width: 1.25rem;
-    background-image: url('../../img/chat-icon.png');
+    background-image: url('./images/chat-icon.png');
     background-repeat: no-repeat;
     background-position: 0.208rem 0.208rem;
   }
 
-  &__second-icon {
+  &__camera-icon {
     width: 1.25rem;
-    background-image: url('../../img/camera-icon.png');
+    background-image: url('./images/camera-icon.png');
     background-repeat: no-repeat;
     background-position: 0.208rem 0.208rem;
   }
@@ -70,11 +70,11 @@
     margin-left: auto;
     margin-right: auto;
     color: #868686;
-    font-family: $secondFont;
+    font-weight: lighter;
     font-size: 0.542rem;
     letter-spacing: 0.026rem;
     font-weight: 700;
-    background-image: url('../../img/background.png');
+    background-image: url('./images/background.png');
     background-repeat: no-repeat;
     background-position: 0.292rem 0;  
     padding-left: 1.042rem;
@@ -92,7 +92,7 @@
   }
 
   &__first-message {
-    font-family: $secondFont;
+    font-weight: lighter;
     margin-left: -0.6rem;
     margin-top: 0.083rem;
     width: 8.667rem;
@@ -108,7 +108,7 @@
   } 
   
   &__second-message {
-    font-family: $secondFont;
+    font-weight: lighter;
     margin-left: 0.125rem;
     margin-top: 0.083rem;
     width: 8.667rem;

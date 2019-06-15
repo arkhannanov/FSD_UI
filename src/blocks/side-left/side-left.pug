@@ -1,7 +1,7 @@
-mixin side-left(options = {title: "", date: "", text: ""})
-    -let {title, date, text } = options;
+mixin side-left(options = {source: "",title: "", date: "", text: ""})
+    -let {source, title, date, text } = options;
     .side-left
-        img(src="img/pic-1.png", alt="Pic 1", class="side-left__image")
+        img(src=source, alt="Pic 1", class="side-left__image")
         .side-left__content-container
             .side-left__title-container
                 p.side-left__title= title

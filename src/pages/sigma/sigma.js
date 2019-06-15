@@ -1,9 +1,9 @@
-import '../../js/button.js'
-import '../../js/drop_down.js'
-import '../../js/slider-left.js'
-import '../../js/tick-boxes.js'
-import '../../js/calendar.js'
-import '../../js/form-sigma.js'
+import '../../blocks/button/js/button.js'
+import '../../blocks/page-sigma/js/drop-down.js'
+import '../../blocks/slider-left/js/slider-left.js'
+import '../../blocks/tick-boxes/js/tick-boxes.js'
+import '../../blocks/calendar/js/calendar.js'
+import '../../blocks/form-sigma/js/form-sigma.js'
 
 function importAll(resolve) {
     resolve.keys().forEach(resolve);

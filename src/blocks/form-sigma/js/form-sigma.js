@@ -160,7 +160,7 @@ function submit(){
 if (errorSurname==true){
     surnameErrorMessage.innerHTML=message;
     surnameMessage.innerHTML="error";
-    surnameMessage.style.cssText="background-image: url('./img/form-orange.png');";
+    surnameMessage.style.cssText="background-image: url('./images/form-orange.png');";
     setTimeout(() => {
         surnameErrorMessage.innerHTML="";
     }, 2000);
@@ -169,7 +169,7 @@ else
 {
     surnameErrorMessage.innerHTML="";
     surnameMessage.innerHTML="thanks!";
-    surnameMessage.style.cssText="background-image: url('./img/form-color2.png');";
+    surnameMessage.style.cssText="background-image: url('./images/form-color2.png');";
     setTimeout(() => {
         surnameErrorMessage.innerHTML="";
     }, 2000);
@@ -178,7 +178,7 @@ else
 if (errorName==true){
     nameErrorMessage.innerHTML=message;
     nameMessage.innerHTML="error";
-    nameMessage.style.cssText="background-image: url('./img/form-orange.png');";
+    nameMessage.style.cssText="background-image: url('./images/form-orange.png');";
     setTimeout(() => {
         nameErrorMessage.innerHTML="";
     }, 2000);
@@ -187,7 +187,7 @@ else
 {
     nameErrorMessage.innerHTML="";
     nameMessage.innerHTML="thanks!";
-    nameMessage.style.cssText="background-image: url('./img/form-color2.png');";
+    nameMessage.style.cssText="background-image: url('./images/form-color2.png');";
     setTimeout(() => {
         nameErrorMessage.innerHTML="";
     }, 2000);
@@ -196,7 +196,7 @@ else
 if (errorPatronymic==true){
     patronymicErrorMessage.innerHTML=message;
     patronymicMessage.innerHTML="error";
-    patronymicMessage.style.cssText="background-image: url('./img/form-orange.png');";
+    patronymicMessage.style.cssText="background-image: url('./images/form-orange.png');";
     setTimeout(() => {
         patronymicErrorMessage.innerHTML="";
     }, 2000);
@@ -205,7 +205,7 @@ else
 {
     patronymicErrorMessage.innerHTML="";
     patronymicMessage.innerHTML="thanks!";
-    patronymicMessage.style.cssText="background-image: url('./img/form-color2.png');";
+    patronymicMessage.style.cssText="background-image: url('./images/form-color2.png');";
     setTimeout(() => {
         patronymicErrorMessage.innerHTML="";
     }, 2000);
@@ -214,7 +214,7 @@ else
 if (errorPhone==true){
     phoneErrorMessage.innerHTML=message;
     phoneMessage.innerHTML="error";
-    phoneMessage.style.cssText="background-image: url('./img/form-orange.png');";
+    phoneMessage.style.cssText="background-image: url('./images/form-orange.png');";
     setTimeout(() => {
         phoneErrorMessage.innerHTML="";
     }, 2000);
@@ -223,7 +223,7 @@ else
 {
     phoneErrorMessage.innerHTML="";
     phoneMessage.innerHTML="thanks!";
-    phoneMessage.style.cssText="background-image: url('./img/form-color2.png');";
+    phoneMessage.style.cssText="background-image: url('./images/form-color2.png');";
     setTimeout(() => {
         phoneErrorMessage.innerHTML="";
     }, 2000);
@@ -232,7 +232,7 @@ else
 if (errorEmail==true){
     emailErrorMessage.innerHTML=message;
     emailMessage.innerHTML="error";
-    emailMessage.style.cssText="background-image: url('./img/form-orange.png');";
+    emailMessage.style.cssText="background-image: url('./images/form-orange.png');";
     setTimeout(() => {
         emailErrorMessage.innerHTML="";
     }, 2000);
@@ -241,7 +241,7 @@ else
 {
     emailErrorMessage.innerHTML="";
     emailMessage.innerHTML="thanks!";
-    emailMessage.style.cssText="background-image: url('./img/form-color2.png');";
+    emailMessage.style.cssText="background-image: url('./images/form-color2.png');";
     setTimeout(() => {
         emailErrorMessage.innerHTML="";
     }, 2000);

@@ -13,7 +13,7 @@
   }
 
   &__title-container {
-    font-family: $secondFont;
+    font-weight: lighter;
     color: #ffffff;
     font-size: 1.167rem;
     margin-left: 1rem;
@@ -28,7 +28,7 @@
   }
   
   &__date-container {
-    font-family: $mainFont;
+    font-weight: normal;
     color: #ffffff;
     font-size: 0.458rem;
     letter-spacing: 0.023rem;
@@ -43,7 +43,7 @@
   }
 
   &__text-container {
-    font-family: $secondFont;
+    font-weight: lighter;
     color: #ffffff;
     font-size: 0.458rem;
     margin-left: 1rem;

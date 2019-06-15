@@ -1,5 +1,5 @@
-import '../../js/button.js'
-import '../../js/calendar.js'
+import '../../blocks/button/js/button.js'
+import '../../blocks/calendar/js/calendar.js'
 
 function importAll(resolve) {
     resolve.keys().forEach(resolve);

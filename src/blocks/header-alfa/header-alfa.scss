@@ -9,7 +9,7 @@
   &__logo {
     height: 1.25rem;
     flex-grow: 1;
-    background-image: url('../../img/logo.png');
+    background-image: url('./images/logo.png');
     background-repeat: no-repeat;
     background-position: 1.25rem 0.125rem; 
   }
@@ -72,7 +72,7 @@
       top: 0.129rem;
       margin-left: -1.125rem;
       position: relative;
-      background-image: url('../../img/search-icon.png');
+      background-image: url('./images/search-icon.png');
       background-repeat: no-repeat;
       background-position: 0.271rem 0.271rem; 
       font-size: 0.333rem;

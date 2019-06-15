@@ -1,11 +1,8 @@
-mixin footer-fourth-page(options={ firstLink: "", secondLink: "", thirdLink: "" })
-    - let {firstLink, secondLink, thirdLink } = options;
-    .footer-fourth-page
-        .footer-fourth-page__logo logotip
-        .footer-fourth-page__menu
-            .footer-fourth-page__first-link-container
-                a.footer-fourth-page__first-link(href="/mock-address/change-me")= firstLink
-            .footer-fourth-page__second-link-container
-                a.footer-fourth-page__second-link(href="/mock-address/change-me")= secondLink
-            .footer-fourth-page__third-link-container
-                a.footer-fourth-page__third-link(href="/mock-address/change-me")= thirdLink
+mixin footer-sigma(options={ glavnaya: "", katalog: "", contacts: "" })
+    - let {glavnaya, katalog, contacts } = options;
+    .footer-sigma
+        .footer-sigma__logo logotip
+        .footer-sigma__menu-container
+            a.footer-sigma__glavnaya-link(href="/mock-address/change-me")= glavnaya
+            a.footer-sigma__katalog-link(href="/mock-address/change-me")= katalog
+            a.footer-sigma__contacts-link(href="/mock-address/change-me")= contacts

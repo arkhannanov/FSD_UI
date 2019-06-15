@@ -1,7 +1,7 @@
-import '../../js/stages.js'
-import '../../js/button.js'
-import '../../js/toggles.js'
-import '../../js/form-betta.js'
+import '../../blocks/stages/js/stages.js'
+import '../../blocks/button/js/button.js'
+import '../../blocks/toggles/js/toggles.js'
+import '../../blocks/form-betta/js/form-betta.js'
 
 function importAll(resolve) {
     resolve.keys().forEach(resolve);

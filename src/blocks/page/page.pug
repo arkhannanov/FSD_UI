@@ -5,7 +5,7 @@ include ../pie/pie.pug
 include ../slider-left/slider-left.pug
 include ../slider-right/slider-right.pug
 include ../stages/stages.pug
-include ../form-index/form-index.pug
+include ../form/form.pug
 include ../toggles/toggles.pug
 include ../tick-boxes/tick-boxes.pug
 include ../search/search.pug
@@ -87,7 +87,7 @@ mixin page
                     +headline ("form elements")
                     .form-tick-boxes-toggles-container
                         .form-tick-boxes-toggles__form
-                            +form-index
+                            +form
                         .form-tick-boxes-toggles__tick-boxes-toggles
                             +headline ("toggles")
                             +toggles
@@ -101,12 +101,12 @@ mixin page
                     .user-profile
                         +headline ("user profile")
                         +user ({
-                            source: "img/user-1.png",
+                            source: "images/user-1.png",
                             name: "John Smith",
                             profession: "ux designer"
                         })
                         +user ({
-                            source: "img/user-2.png",
+                            source: "images/user-2.png",
                             name: "Sarah Brown",
                             profession: "developer"
                         })
@@ -114,14 +114,15 @@ mixin page
                     +headline ("news & events")
                     .news-events-container
                         +side-left({
+                            source: "images/pic-1.png",
                             title: "It’s all going downhill",
                             date: "24  august 2013",
                             text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.`
                         })
                         +side-right({
+                            source: "images/pic-2.png",
                             number: "24",
-                            source: "img/pic-2.png",
                             month: "Aug",
                             title: `this is the title`,
                             text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
@@ -141,7 +142,7 @@ mixin page
                         +headline ("messaging")
                         +messaging ({
                             name: "Sarah Brown",
-                            source: "img/user-2.png", 
+                            source: "images/user-2.png", 
                             firstMessage: "Hey! So are we cool to meet at the art gallery? Say 8pm", 
                             secondMessage: "Yeah that sounds great. See you then.", 
                             buttonTitle: "reply"
@@ -153,8 +154,8 @@ mixin page
                     +headline ("_______________________________________")
                 .navigation
                     +navigation({
-                        firstPage: "page1", 
-                        secondPage: "page2", 
-                        thirdPage: "page3", 
-                        fourthPage: "page4"
+                        alfa: "Alfa", 
+                        betta: "Betta", 
+                        gamma: "Gamma", 
+                        sigma: "Sigma"
                     })

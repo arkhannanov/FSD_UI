@@ -2,8 +2,8 @@ var search = document.getElementById('search');
 var searchIcon = document.getElementById('search__icon');
 var searchError = document.getElementById('search__error');
 
-search.addEventListener('click', clicksearch);
-searchIcon.addEventListener('click', clickbutton);
+search.addEventListener('click', clickSearch);
+searchIcon.addEventListener('click', clickButton);
 search.addEventListener('keyup', inputSearch);
 
 var inputValue;
@@ -14,12 +14,12 @@ function inputSearch(e) {
 }
 
 
-function clicksearch() { 
+function clickSearch() { 
     searchError.style.cssText="background: transparent;";
     searchError.innerHTML="";
 }
 
-function clickbutton() {
+function clickButton() {
     
     if(inputValue.length == 0)
     {
@@ -28,7 +28,7 @@ function clickbutton() {
     }
     else
     {
-        searchError.style.cssText="background-image: url('../img/search_icon.png'); background-repeat: no-repeat; background-position: 273px 6px; background-color: #e75735;";
+        searchError.style.cssText="background-image: url('./img/search-icon.png'); background-repeat: no-repeat; background-position: 273px 6px; background-color: #e75735;";
         searchError.innerHTML="I’ve not found what I’m looking for...";
     }
 }
