@@ -10,10 +10,10 @@ const PATHS = {
 module.exports = {
   entry: {
     app: './src/index.js',
-    indexFirstPage: './src/pages/first-page/index-first-page.js',
-    indexSecondPage: './src/pages/second-page/index-second-page.js',
-    indexThirdPage: './src/pages/third-page/index-third-page.js',
-    indexFourthPage: './src/pages/fourth-page/index-fourth-page.js'
+    alfa: './src/pages/page-alfa/alfa.js',
+    betta: './src/pages/page-betta/betta.js',
+    gamma: './src/pages/page-gamma/gamma.js',
+    sigma: './src/pages/page-sigma/sigma.js'
   },
   output: {
     filename: '[name].js',
@@ -44,7 +44,7 @@ module.exports = {
           options: { sourceMap: true }
         }, {
           loader: 'postcss-loader',
-          options: { sourceMap: true, config: { path: 'src/js/postcss.config.js' } }
+          options: { sourceMap: true, config: { path: 'postcss.config.js' } }
         }, {
           loader: 'resolve-url-loader'
         }, {
@@ -66,7 +66,7 @@ module.exports = {
           options: { sourceMap: true }
         }, {
           loader: 'postcss-loader',
-          options: { sourceMap: true, config: { path: 'src/js/postcss.config.js' } }
+          options: { sourceMap: true, config: { path: 'postcss.config.js' } }
         }
       ]
     },
@@ -107,33 +107,33 @@ module.exports = {
 
     }),
     new HtmlWebpackPlugin({
-      filename: 'index-first-page.html',
-      template: 'src/pages/first-page/index-first-page.pug',
+      filename: 'alfa.html',
+      template: 'src/pages/page-alfa/alfa.pug',
       inject: true,
-      chunks: ['indexFirstPage']
+      chunks: ['alfa']
   }),
     new HtmlWebpackPlugin({
-    filename: 'index-second-page.html',
-    template: 'src/pages/second-page/index-second-page.pug',
+    filename: 'betta.html',
+    template: 'src/pages/page-betta/betta.pug',
     inject: true,
-    chunks: ['indexSecondPage']
+    chunks: ['betta']
 }),
     new HtmlWebpackPlugin({
-    filename: 'index-third-page.html',
-    template: 'src/pages/third-page/index-third-page.pug',
+    filename: 'gamma.html',
+    template: 'src/pages/page-gamma/gamma.pug',
     inject: true,
-    chunks: ['indexThirdPage']
+    chunks: ['gamma']
 }),
 new HtmlWebpackPlugin({
-  filename: 'index-fourth-page.html',
-  template: 'src/pages/fourth-page/index-fourth-page.pug',
+  filename: 'sigma.html',
+  template: 'src/pages/page-sigma/sigma.pug',
   inject: true,
-  chunks: ['indexFourthPage']
+  chunks: ['sigma']
 }),
     new CopyWebpackPlugin([
       { from: PATHS.src + '/img', to: `img` },
       { from: PATHS.src + '/video', to: `video`},
-      { from: PATHS.src + '/img/favicons', to: `img/favicons` }
+      { from: PATHS.src + '/imgages/favicons', to: `images/favicons` }
     ]), 
   ]
 }

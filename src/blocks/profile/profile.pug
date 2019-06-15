@@ -1,5 +1,8 @@
-mixin profile(options={headline:"", rightSideHeader:"", profession:"", phone:"", twitter:"", facebook:"", firstSkill:"", secondSkill:"", thirdSkill:"", fourthSkill:""})
-    -let {headline, rightSideHeader, profession, phone, twitter, facebook, firstSkill, secondSkill, thirdSkill, fourthSkill}=options
+include ../pie/pie.pug
+include ../calendar/calendar.pug
+
+mixin profile(options={headline:"", rightSideHeader:"", profession:"", phone:"", twitter:"", facebook:"", horror:"", thriller:"", drama:"", comedy:""})
+    -let {headline, rightSideHeader, profession, phone, twitter, facebook, horror, thriller, drama, comedy}=options
     .profile
         .profile__headline= headline
         .profile__content-container
@@ -29,13 +32,13 @@ mixin profile(options={headline:"", rightSideHeader:"", profession:"", phone:"",
                 .profile__content-right-side-skills
                     .profile__skills-container
                         ul.profile__skills-ul-container
-                            li.profile__first-skill-container
-                                span.profile__first-skill= firstSkill 
-                            li.profile__second-skill-container 
-                                span.profile__second-skill= secondSkill 
-                            li.profile__third-skill-container 
-                                span.profile__third-skill= thirdSkill
-                            li.profile__fourth-skill-container  
-                                span.profile__fourth-skill= fourthSkill
+                            li.profile__horror-container
+                                span.profile__horror= horror 
+                            li.profile__thriller-container 
+                                span.profile__thriller= thriller 
+                            li.profile__drama-container 
+                                span.profile__drama= drama
+                            li.profile__comedy-container  
+                                span.profile__comedy= comedy
                     .profile__pie-chart-container
                         +pie

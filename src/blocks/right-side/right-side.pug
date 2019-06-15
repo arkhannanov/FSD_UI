@@ -1,26 +1,26 @@
 include ../side-left/side-left.pug
 include ../side-right/side-right.pug
 
-mixin right-side(options={firstLink:"", secondLink:"", thirdLink:""})
-    - let {firstLink, secondLink, thirdLink} = options;
+mixin right-side(options={profile:"", feedback:"", newsAndEvents:""})
+    - let {profile, feedback, newsAndEvents} = options;
     .right-side
         .right-side__links-contaner
-            .right-side__first-link-container 
-                a.right-side__first-link(href="/mock-address/change-me")= firstLink
-            .right-side__second-link-container
-                a.right-side__second-link(href="/mock-address/change-me")= secondLink
-            .right-side__third-link-container
-                a.right-side__third-link(href="/mock-address/change-me")= thirdLink
+            .right-side__profile-container 
+                a.right-side__profile(href="/mock-address/change-me")= profile
+            .right-side__feedback-container
+                a.right-side__feedback(href="/mock-address/change-me")= feedback
+            .right-side__news-and-events-container
+                a.right-side__news-and-events(href="/mock-address/change-me")= newsAndEvents
         .right-side__news-container
             .right-side__news-header last news
-            .right-side__first-news
+            .right-side__top-news
                 +side-left({
                     title: "It’s all going downhill",
                     date: "24  august 2013",
                     text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.`
                 })
-            .right-side__second-news
+            .right-side__bottom-news
                 +side-right({
                     number: "24",
                     month: "Aug",

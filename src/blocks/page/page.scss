@@ -1,14 +1,7 @@
-.page {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
 .page-wrapper {
-  margin-left: 3.875rem;
+  margin: auto;
   margin-top: 5.667rem;
-  margin-right: 3.708rem;
+  
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -16,11 +9,11 @@
     flex-wrap: wrap;
   }
 
-.search-drop-down-user-profile {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: -3rem;
+  .search-drop-down-user-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: -3rem;
 
   .search-drop-down {
     width: 11.458rem;
@@ -28,6 +21,40 @@
 
   .user-profile {
     width: 11.458rem; 
+  }
+}
+
+.buttons {
+  margin: auto;
+  margin-bottom: 2rem;
+
+  &__header {
+    margin: auto;
+  }
+
+  &__container{
+    width: 110%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+  }
+}
+
+.arrows {
+  width: 15%;
+  margin: auto;
+  margin-bottom: 2rem;
+
+  &__header {
+    margin: auto;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
   }
 }
 

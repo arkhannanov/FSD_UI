@@ -10,9 +10,7 @@
     font-size: 0.583rem;
     color: black;
     background: white;
-    -webkit-box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
-    -moz-box-shadow:    -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
-    box-shadow:         -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
+    box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
     line-height: 1.167rem;
     padding-left: 0.417rem;
     margin-top: 0.417rem;
@@ -41,9 +39,7 @@
     width: 5.833rem;
     height: 6.875rem;
     background-color: white;
-    -webkit-box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
-    -moz-box-shadow:    -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
-    box-shadow:         -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
+    box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
     margin-bottom: 0.417rem;
     display: flex;
     flex-direction: column;
@@ -120,9 +116,7 @@
     width: 5.833rem;
     height: 8.75rem;
     background-color: white;
-    -webkit-box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
-    -moz-box-shadow:    -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
-    box-shadow:         -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
+    box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
   }
 
   &__calendar {
@@ -133,9 +127,7 @@
   &__content-right-side-container{
     flex-grow: 1;
     height: 16.042rem;
-    -webkit-box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
-    -moz-box-shadow:    -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
-    box-shadow:         -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
+    box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
     background: white;
     margin-right: 0.417rem;
     display: flex;
@@ -247,39 +239,39 @@
     margin: auto;
   }
 
-  &__first-skill-container {
+  &__horror-container {
     margin-left: -0.5rem;
     color: #747474;
   }
 
-  &__first-skill {
+  &__horror {
     color:#8e8d9c;
   }
   
-  &__second-skill-container  {
+  &__thriller-container  {
     margin-left: -0.5rem;
     color: #e75735;
   }
 
-  &__second-skill {
+  &__thriller {
     color:#8e8d9c;
   }
 
-  &__third-skill-container {
+  &__drama-container {
     margin-left: -0.5rem;
     color: #4eb7a8;
   }
 
-  &__third-skill {
+  &__drama {
     color:#8e8d9c;
   }
 
-  &__fourth-skill-container {
+  &__comedy-container {
     margin-left: -0.5rem;
     color: #e5e5e5;
   }
 
-  &__fourth-skill {
+  &__comedy {
     color:#8e8d9c;
   }
 

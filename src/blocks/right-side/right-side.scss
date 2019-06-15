@@ -4,8 +4,6 @@
   
   &__links-contaner {
     height: 2.708rem;
-    -webkit-box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
-    -moz-box-shadow:    -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
     box-shadow:         -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
     background: white;
     margin-left: 0.833rem;
@@ -13,47 +11,47 @@
     font-size: 0.583rem;
   }
 
-  &__first-link-container {
+  &__profile-container {
     padding-left: 0.417rem;
     padding-top: 0.333rem;
     text-transform: uppercase;
   }
 
-  &__first-link {
+  &__profile {
     text-decoration: none;
     color: #8e8d9c;
   }
 
-  &__first-link:hover {
+  &__profile:hover {
     color: #e9753e;
   }
 
-  &__second-link-container {
+  &__feedback-container {
     padding-left: 0.417rem;
     text-transform: uppercase;
   }
 
-  &__second-link {
+  &__feedback {
     text-decoration: none;
     color: #8e8d9c;
   }
    
-  &__second-link:hover {
+  &__feedback:hover {
       color: #e9753e;
   }
 
-  &__third-link-container {
+  &__news-and-events-container {
     padding-left: 0.417rem;
     padding-bottom: 0.208rem;
     text-transform: uppercase;
   }
 
-  &__third-link {
+  &__news-and-events {
     text-decoration: none;
     color: #8e8d9c;
   }
 
-  &__third-link:hover {
+  &__news-and-events:hover {
     color: #e9753e;
   }
   
@@ -76,13 +74,13 @@
     text-transform: uppercase;
   }
 
-  &__news1 {
+  &__top-news {
     transform: scale(0.6);
     margin-left: -1.667rem;
     margin-top: -1.458rem;
   }
 
-  &__news2 {
+  &__bottom-news {
     transform: scale(0.6);
     margin-left: -1.667rem;
     margin-top: -4.667rem;

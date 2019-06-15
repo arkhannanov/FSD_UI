@@ -1,0 +1,41 @@
+include ../header-alfa/header-alfa.pug
+include ../profile/profile.pug
+include ../right-side/right-side.pug
+include ../side-left/side-left.pug
+include ../side-right/side-right.pug
+include ../navigation/navigation.pug
+
+mixin page-alfa
+    main.page-alfa
+        .alfa-page-wrapper
+            .header
+                +header-alfa({
+                    source: "img/user.png",
+                    name: "Sarah Brown"
+                })
+            .content-container
+                +profile({
+                    headline:"my profile", 
+                    rightSideHeader:"Sarah Brown", 
+                    profession: "Actress", 
+                    phone: "+79263864674", 
+                    twitter: "twitter", 
+                    facebook: "facebook", 
+                    horror: "Horror", 
+                    thriller: "Thriller", 
+                    drama: "Drama", 
+                    comedy: "Comedy"
+                })
+                +right-side({
+                    profile: "Profile",
+                    feedback: "Feedback",
+                    newsAndEvents: "News and Events"
+                })
+            .navigation
+                +navigation({
+                    alfa: "alfa", 
+                    betta: "betta", 
+                    gamma: "gamma", 
+                    sigma: "sigma"
+                })
+            .footer-alfa

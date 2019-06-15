@@ -1,11 +1,11 @@
-mixin navigation(options={firstPage:"", secondPage:"", thirdPage:"", fourthPage:""})
-    - let {firstPage, secondPage, thirdPage, fourthPage} = options;
+mixin navigation(options={alfa:"", betta:"", gamma:"", sigma:""})
+    - let {alfa, betta, gamma, sigma} = options;
     .navigation
-        .navigation__first-page
-            button.navigation__button(name="button", onclick="document.location='index-first-page.html'")= firstPage
-        .navigation__second-page
-            button.navigation__button(name="button", onclick="document.location='index-second-page.html'")= secondPage
-        .navigation__third-page
-            button.navigation__button(name="button", onclick="document.location='index-third-page.html'")= thirdPage
-        .navigation__fourth-page
-            button.navigation__button(name="button", onclick="document.location='index-fourth-page.html'")= fourthPage	
+        .navigation__alfa
+            button.navigation__button(name="button", onclick="document.location='alfa.html'")= alfa
+        .navigation__betta
+            button.navigation__button(name="button", onclick="document.location='betta.html'")= betta
+        .navigation__gamma
+            button.navigation__button(name="button", onclick="document.location='gamma.html'")= gamma
+        .navigation__sigma
+            button.navigation__button(name="button", onclick="document.location='sigma.html'")= sigma	

@@ -1,0 +1,335 @@
+.form-betta {
+  width: 11.458rem;
+  margin-left: 4rem;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+
+  #form-betta__completeform {
+    padding: 0.292rem;
+    border: 0;
+    height: 0.625rem;
+    line-height: 0.208rem;
+    font-family: $mainFont;
+    margin-top: -0.625rem;
+    font-size: 0.5rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.021rem;
+    font-weight: lighter;
+    color: red;
+    margin-left: 2.917rem;
+  }
+  
+  &__job-title-container {
+    width: 11.458rem;
+    height: 1.167rem;
+    display: flex;
+    flex-direction:row;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  &__job-title-input {
+    width: 8.458rem;
+    height: 1.167rem;
+    margin: 0;  
+    font-size: 0.5rem; 
+    padding-left: 0.417rem;
+    border: 0;
+    background: #e5e5e5;
+    font-size: 0.583rem;
+    font-family: $thirdFont;
+    font-weight: 400;
+    color: #888888;
+    line-height: 1.75rem;
+    letter-spacing: 0.006rem;
+    border-radius: 0.125rem;
+  }
+
+  #form-betta__job-title-message {
+    width: 3.542rem;
+    height: 1.542rem;
+    padding: 0;
+    margin: 0;
+    font-family: $mainFont;
+    font-weight: 400;
+    font-size: 0.417rem;
+    line-height: 1.833rem;
+    letter-spacing: 0.021rem;
+    text-align: center;
+    margin-top: -0.25rem;
+    margin-left: 0.167rem;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 0 0.292rem;
+    background-color: transparent;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  #form-betta__job-title-error-message {
+    padding: 0.292rem;
+    border: 0;
+    height: 0.225rem;
+    line-height: 0.208rem;
+    font-family: $mainFont;
+    margin-top: -1.042rem;
+    font-size: 0.417rem;
+    line-height: 0;
+    letter-spacing: 0.021rem;
+    font-weight: lighter;
+    color: #888888;
+    position: relative;
+    top: -0.55rem;
+  }
+
+  &__facebook-container {
+    width: 11.458rem;
+    height: 1.167rem;
+    display: flex;
+    flex-direction:row;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-top: -0.917rem;
+  }
+
+  &__facebook-input{
+    width: 8.458rem;
+    height: 1.167rem;
+    margin: 0;  
+    font-size: 0.5rem; 
+    margin: 0;
+    padding-left: 0.417rem;
+    border: 0;
+    background: #e5e5e5;
+    font-size: 0.583rem;
+    font-family: $thirdFont;
+    font-weight: 400;
+    color: #888888;
+    line-height: 1.75rem;
+    letter-spacing: 0.006rem;
+    border-radius: 0.125rem;
+  }
+
+  #form-betta__facebook-message {
+    width: 3.542rem;
+    height: 1.542rem;
+    padding: 0;
+    margin: 0;
+    font-family: $mainFont;
+    font-weight: 400;
+    font-size: 0.417rem;
+    line-height: 1.833rem;
+    letter-spacing: 0.021rem;
+    text-align: center;
+    margin-top: -0.25rem;
+    margin-left: 0.167rem;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 0 0.292rem;
+    background-color: transparent;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  #form-betta__facebook-error-message {
+    padding: 0.292rem;
+    border: 0;
+    height: 0.625rem;
+    line-height: 0.208rem;
+    font-family: $mainFont;
+    margin-top: -1.042rem;
+    font-size: 0.417rem;
+    line-height: 0;
+    letter-spacing: 0.021rem;
+    font-weight: lighter;
+    color: #888888;
+    position: relative;
+    top: -0.55rem;
+  }
+
+  &__twitter-container {
+    width: 11.458rem;
+    height: 1.167rem;
+    display: flex;
+    flex-direction:row;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-top: -1.317rem;
+  }
+
+  &__twitter-input {
+    width: 8.458rem;
+    height: 1.167rem;
+    margin: 0;  
+    font-size: 0.5rem; 
+    padding-left: 0.417rem;
+    border: 0;
+    background: #e5e5e5;
+    font-size: 0.583rem;
+    font-family: $thirdFont;
+    font-weight: 400;
+    color: #888888;
+    line-height: 1.75rem;
+    letter-spacing: 0.006rem;
+    border-radius: 0.125rem;
+  }
+
+  #form-betta__twitter-message {
+    width: 3.542rem;
+    height: 1.542rem;
+    padding: 0;
+    margin: 0;
+    font-family: $mainFont;
+    font-weight: 400;
+    font-size: 0.417rem;
+    line-height: 1.833rem;
+    letter-spacing: 0.021rem;
+    text-align: center;
+    margin-top: -0.25rem;
+    margin-left: 0.167rem;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 0 0.292rem;
+    background-color: transparent;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  #form-betta__twitter-error-message {
+    padding: 0.292rem;
+    border: 0;
+    height: 0.625rem;
+    line-height: 0.208rem;
+    font-family: $mainFont;
+    margin-top: -1.042rem;
+    font-size: 0.417rem;
+    line-height: 0;
+    letter-spacing: 0.021rem;
+    font-weight: lighter;
+    color: #888888;
+    position: relative;
+    top: -0.55rem;
+  }
+
+  &__dribbble-container {
+    width: 11.458rem;
+    height: 1.167rem;
+    display: flex;
+    flex-direction:row;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-top: -1.317rem;
+  }
+
+  &__dribbble-input {
+    width: 8.458rem;
+    height: 1.167rem;
+    margin: 0;  
+    font-size: 0.5rem; 
+    padding-left: 0.417rem;
+    border: 0;
+    background: #e5e5e5;
+    font-size: 0.583rem;
+    font-family: $thirdFont;
+    font-weight: 400;
+    color: #888888;
+    line-height: 1.75rem;
+    letter-spacing: 0.006rem;
+    border-radius: 0.125rem;
+  }
+
+  #form-betta__dribbble-message {
+    width: 3.542rem;
+    height: 1.542rem;
+    padding: 0;
+    margin: 0;
+    font-family: $mainFont;
+    font-weight: 400;
+    font-size: 0.417rem;
+    line-height: 1.833rem;
+    letter-spacing: 0.021rem;
+    text-align: center;
+    margin-top: -0.25rem;
+    margin-left: 0.167rem;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 0 0.292rem;
+    background-color: transparent;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  #form-betta__dribbble-error-message {
+    padding: 0.292rem;
+    border: 0;
+    height: 0.625rem;
+    line-height: 0.208rem;
+    font-family: $mainFont;
+    margin-top: -1.042rem;
+    font-size: 0.417rem;
+    line-height: 0;
+    letter-spacing: 0.021rem;
+    font-weight: lighter;
+    color: #888888;
+    position: relative;
+    top: -0.55rem;
+  }
+
+  &__toggle {
+    display: flex;
+    flex-direction: row;
+    margin-left: -4.583rem;
+    margin-top: -0.833rem;
+  }
+
+  &__toggle-content {
+    font-size: 0.5rem;
+    width: 100%;
+    margin-left: -2.167rem;
+    white-space: nowrap;
+    line-height: 1rem;
+    color: #888888;
+  }
+
+  &__submit-container {
+    margin: auto;
+  }
+
+  &__submit-button {
+    width: 4.917rem;
+    height: 1.333rem;
+    border: 0.042rem solid #4eb7a8;
+    text-align: center;
+    background: #ffffff;
+    font-weight: bolder;
+    color: #4eb7a8;
+    letter-spacing: 0;
+    font-size: 0.5rem;
+    border-radius: 0.208rem;
+    box-shadow: 0 -0.083rem rgba(40, 162, 144, 1) inset;
+    transition: 0.2s;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+    margin-top: 0.417rem;
+    left: 6.542rem;
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+  }
+
+   &__submit-button:hover {
+    background: #4eb7a8;
+    color: #ffffff;
+  }
+
+  &__submit-button, 
+  &__submit-button:active, 
+  &__submit-button:focus {
+    outline: none;
+  }
+}

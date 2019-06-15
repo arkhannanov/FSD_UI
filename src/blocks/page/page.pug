@@ -1,5 +1,5 @@
 include ../headline/headline.pug
-include ../buttons/buttons.pug
+include ../button/button.pug
 include ../percents/percents.pug
 include ../pie/pie.pug
 include ../slider-left/slider-left.pug
@@ -17,19 +17,48 @@ include ../location/location.pug
 include ../calendar/calendar.pug
 include ../messaging/messaging.pug
 include ../player/player.pug
-include ../arrows/arrows.pug
+include ../arrow-left/arrow-left.pug
+include ../arrow-right/arrow-right.pug
 include ../navigation/navigation.pug
 
 
 mixin page
     main.page
             .page-wrapper
-                .button
-                    +headline ("standard buttons")
-                    +buttons
+                .buttons
+                    .buttons__header
+                        +headline ("standard buttons")
+                    .buttons__container
+                        +button({
+                            width: `3.25rem`, 
+                            height: `0.917rem`,
+                            color: `#4eb7a8`, 
+                            name: "button"
+                        })
+                        +button({
+                            width: `4.917rem`, 
+                            height: `1.333rem`,
+                            color: `#4eb7a8`, 
+                            name: "button"
+                        })
+                        +button({
+                            width: `4.917rem`, 
+                            height: `1.333rem`,
+                            color: `#e75735`, 
+                            name: "button"
+                        })
+                        +button({
+                            width: `3.25rem`, 
+                            height: `0.917rem`,
+                            color: `#e75735`, 
+                            name: "button"
+                        })
                 .arrows
-                    +headline ("arrow buttons")
-                    +arrows
+                    .arrows__header
+                        +headline ("arrows")
+                    .arrows__container
+                        +arrow-left
+                        +arrow-right
                 .percents-pie
                     +headline ("percentages / pie chart")
                     .percents-pie__container

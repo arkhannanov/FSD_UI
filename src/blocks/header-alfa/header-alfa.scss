@@ -1,0 +1,91 @@
+.header-alfa {
+  width: 100%;
+  height: 1.25rem;
+  background: #53b6a8;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  &__logo {
+    height: 1.25rem;
+    flex-grow: 1;
+    background-image: url('../../img/logo.png');
+    background-repeat: no-repeat;
+    background-position: 1.25rem 0.125rem; 
+  }
+
+  &__logout {
+    font-size: 0.417rem;
+    font-weight: bold;
+    color: white;
+    line-height: 1.292rem;
+
+    &-href {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  &__name {
+    font-size: 0.417rem;
+    color: white;
+    line-height: 1.292rem;
+    margin-left: 0.417rem;
+  }
+
+  &__avatar {
+    width: 1.167rem;
+    height: 1.167rem;
+    border-radius: 50%;
+    background: #e5e5e5;
+    margin-left: 0.417rem;
+    margin-top: 0.042rem;
+  }
+
+  &__search {
+    margin-left: 0.417rem;
+    width: 8.75rem;
+
+    &-input {
+      width: 7.5rem;
+      color: #888888;
+      font-family: $thirdFont;
+      letter-spacing: 0.006rem;
+      padding-left: 0.417rem;
+      padding-bottom: 0;
+      padding-top: 0;
+      height: 1rem;
+      background-color: #e5e5e5;
+      border: 0;
+      border-radius: 0.125rem;
+      position: relative;
+      font-size: 0.333rem;
+      top: -0.208rem;
+    }
+
+    &-button {
+      width: 1rem;
+      height: 1rem;
+      border: 0;
+      border-radius: 0.125rem;
+      background-color:#e75735;
+      top: 0.129rem;
+      margin-left: -1.125rem;
+      position: relative;
+      background-image: url('../../img/search-icon.png');
+      background-repeat: no-repeat;
+      background-position: 0.271rem 0.271rem; 
+      font-size: 0.333rem;
+    }
+
+    &-button, 
+    &-button:active, 
+    &-button:focus {
+      outline: none;
+    }
+
+    &-button:hover {
+      background-color: #e75735;
+    }
+  }
+}

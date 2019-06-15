@@ -1,0 +1,26 @@
+include ../stages/stages.pug
+include ../form-second-page/form-second-page.pug
+include ../navigation/navigation.pug
+
+mixin page-betta
+    main.page-betta
+            .page-betta-wrapper
+                .header-betta Apply for a job
+                .content
+                    .stages
+                        +stages
+                    .avatar
+                        .avatar__image
+                        .avatar__edit
+                            button(name="button", class="avatar__edit-button") edit
+                    .form
+                        +form-betta({
+                            toggleContent: "Get information about current events."
+                        })
+                .navigation
+                    +navigation({
+                        alfa: "alfa", 
+                        betta: "betta", 
+                        gamma: "gamma", 
+                        sigma: "sigma"
+                    })

@@ -1,0 +1,5 @@
+mixin button(options={width:"", height:"", color: "",name: ""})
+    - let {width, height, color, name} = options;
+    .button
+        button.button__item(name="button", style=`width: ${width}; height: ${height}; border: 0.042rem solid ${color}; box-shadow: 0 -0.083rem ${color} inset; color: ${color};`, onmouseover=`this.style.backgroundColor ='${color}'; this.style.color ='#ffffff'`, onmouseout=`this.style.backgroundColor='#ffffff'; this.style.color ='${color}' `)= name
+    

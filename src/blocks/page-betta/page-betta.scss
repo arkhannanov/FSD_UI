@@ -1,0 +1,102 @@
+
+.page-betta-wrapper {
+    max-width: 21.167rem;
+    font-family: $mainFont;
+    margin:auto;
+}
+  
+.header-betta {
+  width: 12.5rem;
+  font-size: 0.833rem;
+  color: #e4583d;
+  text-align: center;
+  margin:auto;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+  
+.stages {
+  margin-top: 1rem;
+  margin-left: -1.5rem;
+}
+  
+.avatar {
+  width: 5.833rem;
+  height: 6.875rem;
+  background-color: white;
+  box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
+  margin-bottom: 0.417rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -1.25rem;
+  
+  &__image {
+    width: 5.833rem;
+    height: 5.833rem;
+    background-image: url('../../img/user-large.png');
+    background-repeat: no-repeat;
+    background-position: 0.271rem 0.271rem;
+  }
+  
+  &__edit {
+    width: 5.417rem;
+    margin: auto;
+    margin-top: -0.083rem;
+  }
+  
+  .ripple {
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.7;
+    position: absolute;
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+  }
+  
+  @keyframes ripple {
+    to {
+      transform: scale(1.3);
+      opacity: 0;
+    }
+  }
+  
+  &__edit-button {
+    border: 0.042rem solid #4eb7a8;
+    text-align: center;
+    width: 5.25rem;
+    height: 0.917rem;
+    background: #ffffff;
+    font-weight: bolder;
+    color: #4eb7a8;
+    font-size: 0.417rem;
+    border-radius: 0.125rem;
+    box-shadow: 0 -0.083rem rgba(40, 162, 144, 1) inset;
+    transition: 0.2s;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    text-transform: uppercase;
+  }
+  
+  &__edit-button :hover {
+    background: #4eb7a8;
+    color: #ffffff;
+  }
+  
+  &__edit-button:active,
+  &__edit-button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  &__edit-button:visited {
+    outline: none;
+  }
+  
+  &__edit-button::-moz-focus-inner {
+    border: 0;
+  }
+}

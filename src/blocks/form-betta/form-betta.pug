@@ -1,0 +1,27 @@
+include ../toggles/toggles.pug
+
+mixin form-betta(options={toggleContent:""})
+    -let {toggleContent} = options;
+    .form-betta
+        p#form-betta__completeform 
+            .form-betta__job-title-container 
+                input(type="text", id="form-betta__job-title-input", placeholder="Job title", class="form-betta__job-title-input")
+                #form-betta__job-title-message
+        p#form-betta__job-title-error-message 
+            .form-betta__facebook-container
+                input(type="text", id="form-betta__facebook-input", placeholder="Facebook link", class="form-betta__facebook-input")
+                #form-betta__facebook-message
+        p#form-betta__facebook-error-message 
+            .form-betta__twitter-container
+                input(type="text", id="form-betta__twitter-input", placeholder="Twitter link", class="form-betta__twitter-input")
+                #form-betta__twitter-message
+        p#form-betta__twitter-error-message 
+            .form-betta__dribbble-container
+                input(type="text", id="form-betta__dribbble-input", placeholder="Dribbble link", class="form-betta__dribbble-input")
+                #form-betta__dribbble-message
+        p#form-betta__dribbble-error-message 
+        .form-betta__toggle
+            +toggles
+            .form-betta__toggle-content= toggleContent
+        .form-betta__submit-container
+            button(id="form-betta__submit-button", class="form-betta__submit-button") submit
