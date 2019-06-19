@@ -1,0 +1,7 @@
+mixin arrow(options = {direction: ""})
+    - let {direction} = options;
+    .arrow
+        if direction == "left"
+            button.arrow__button_left
+        if direction == "right"
+            button.arrow__button_right

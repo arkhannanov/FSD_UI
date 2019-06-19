@@ -1,0 +1,82 @@
+.arrow {
+
+  &__button_left {
+    border: 0.083rem solid #4eb7a8;
+    text-align: center;
+    width:  2.083rem;
+    height: 2.083rem;
+    background-image: url('./images/arrow1.png');
+    background-repeat: no-repeat;
+    background-position: 0.542rem 0.458rem;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.2s;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+  }
+  
+  &__button_left:hover {
+    background: #4eb7a8;
+    background-image: url('./images/arrow3.png');
+    background-repeat: no-repeat;
+    background-position: 0.583rem 0.5rem;
+    border: none;
+  }
+
+  &__button_left:active,
+  &__button_left:focus {
+    outline: none;
+    background-image: url('./images/arrow3.png');
+    background-repeat: no-repeat;
+    background-position: 0.583rem 0.5rem;
+    background-color: #e5e5e5;
+    border: none;
+  }
+
+  &__button_left:visited {
+    outline: none;
+  }
+
+  &__button_right {
+    border: 0.083rem solid #4eb7a8;
+    text-align: center;
+    width:  2.083rem;
+    height: 2.083rem;
+    background-image: url('./images/arrow2.png');
+    background-repeat: no-repeat;
+    background-position: 0.625rem 0.458rem;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.2s;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+  }
+
+  &__button_right:hover {
+    background: #4eb7a8;
+    background-image: url('./images/arrow4.png');
+    background-repeat: no-repeat;
+    background-position: 0.667rem 0.5rem;
+    border: none;
+  }
+
+  &__button_right:active,
+  &__button_right:focus {
+    outline: none;
+    background-image: url('./images/arrow4.png');
+    background-repeat: no-repeat;
+    background-position: 0.667rem 0.5rem;
+    background-color: #e5e5e5;
+    border: none;
+  }
+
+  &__button_right:visited {
+    outline: none;
+  }
+
+  &__button_right::-moz-focus-inner {
+    border: 0;
+  }
+}

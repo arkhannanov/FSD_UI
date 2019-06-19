@@ -17,8 +17,7 @@ include ../location/location.pug
 include ../calendar/calendar.pug
 include ../messaging/messaging.pug
 include ../player/player.pug
-include ../arrow-left/arrow-left.pug
-include ../arrow-right/arrow-right.pug
+include ../arrow/arrow.pug
 include ../navigation/navigation.pug
 
 
@@ -57,8 +56,12 @@ mixin page
                     .arrows__header
                         +headline ("arrows")
                     .arrows__container
-                        +arrow-left
-                        +arrow-right
+                        +arrow({
+                            direction: "left"
+                        })
+                        +arrow({
+                            direction: "right"
+                        })
                 .percents-pie
                     +headline ("percentages / pie chart")
                     .percents-pie__container
@@ -154,8 +157,8 @@ mixin page
                     +headline ("_______________________________________")
                 .navigation
                     +navigation({
-                        alfa: "Alfa", 
-                        betta: "Betta", 
-                        gamma: "Gamma", 
+                        alfa: "Alfa",
+                        betta: "Betta",
+                        gamma: "Gamma",
                         sigma: "Sigma"
                     })
