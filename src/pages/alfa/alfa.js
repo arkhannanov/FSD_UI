@@ -1,8 +1,8 @@
-import '../../blocks/button/js/button.js'
-import '../../blocks/calendar/js/calendar.js'
+import '../../blocks/calendar/calendar.js'
+import '../../blocks/button/button.js'
 
 function importAll(resolve) {
     resolve.keys().forEach(resolve);
   }
   
-importAll(require.context('../../.', true, /\.(scss)$/));
+importAll(require.context('./../../', true, /\.(scss)$/));

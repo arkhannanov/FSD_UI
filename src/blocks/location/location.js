@@ -18,7 +18,7 @@ function init () {
                     },{
                     iconLayout: 'default#image',
                     // Путь до нашей картинки
-                    iconImageHref: 'images/location-icon.png', 
+                    iconImageHref: './src/blocks/location/images/location-icon.png', 
                     // Размер по ширине и высоте
                     iconImageSize: [41, 56],
                     // Смещение левого верхнего угла иконки относительно
