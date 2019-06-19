@@ -28,7 +28,7 @@ function clickButton() {
     }
     else
     {
-        searchError.style.cssText="background-image: url('./img/search-icon.png'); background-repeat: no-repeat; background-position: 273px 6px; background-color: #e75735;";
+        searchError.style.cssText="background-image: url('./src/blocks/search/images/search-icon.png'); background-repeat: no-repeat; background-position: 273px 6px; background-color: #e75735;";
         searchError.innerHTML="I’ve not found what I’m looking for...";
     }
 }

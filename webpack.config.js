@@ -87,7 +87,7 @@ module.exports = {
 			exclude: [/fonts/],
 			options: {
         name: '[name].[ext]',
-        outputPath: 'img/'
+        outputPath: 'image/'
 			}
 		}
   ]

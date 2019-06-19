@@ -11,8 +11,8 @@ include ../tick-boxes/tick-boxes.pug
 include ../search/search.pug
 include ../drop-down/drop-down.pug
 include ../user/user.pug
-include ../side-left/side-left.pug
-include ../side-right/side-right.pug
+include ../news/news.pug
+include ../events/events
 include ../location/location.pug
 include ../calendar/calendar.pug
 include ../messaging/messaging.pug
@@ -113,15 +113,15 @@ mixin page
                 .news-events
                     +headline ("news & events")
                     .news-events-container
-                        +side-left({
-                            source: "src/blocks/side-left/images/pic-1.png",
+                        +news({
+                            source: "src/blocks/news/images/pic-1.png",
                             title: "It’s all going downhill",
                             date: "24  august 2013",
                             text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.`
                         })
-                        +side-right({
-                            source: "src/blocks/side-right/images/pic-2.png",
+                        +events({
+                            source: "src/blocks/events/images/pic-2.png",
                             number: "24",
                             month: "Aug",
                             title: `this is the title`,
