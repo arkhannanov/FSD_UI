@@ -101,12 +101,12 @@ mixin page
                     .user-profile
                         +headline ("user profile")
                         +user ({
-                            source: "images/user-1.png",
+                            source: "src/blocks/user/images/user-1.png",
                             name: "John Smith",
                             profession: "ux designer"
                         })
                         +user ({
-                            source: "images/user-2.png",
+                            source: "src/blocks/user/images/user-2.png",
                             name: "Sarah Brown",
                             profession: "developer"
                         })
@@ -114,14 +114,14 @@ mixin page
                     +headline ("news & events")
                     .news-events-container
                         +side-left({
-                            source: "images/pic-1.png",
+                            source: "src/blocks/side-left/images/pic-1.png",
                             title: "It’s all going downhill",
                             date: "24  august 2013",
                             text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.`
                         })
                         +side-right({
-                            source: "images/pic-2.png",
+                            source: "src/blocks/side-right/images/pic-2.png",
                             number: "24",
                             month: "Aug",
                             title: `this is the title`,
@@ -142,7 +142,7 @@ mixin page
                         +headline ("messaging")
                         +messaging ({
                             name: "Sarah Brown",
-                            source: "images/user-2.png", 
+                            source: "src/blocks/messaging/images/user-2.png", 
                             firstMessage: "Hey! So are we cool to meet at the art gallery? Say 8pm", 
                             secondMessage: "Yeah that sounds great. See you then.", 
                             buttonTitle: "reply"

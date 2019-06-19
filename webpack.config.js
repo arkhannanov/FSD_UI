@@ -131,7 +131,6 @@ new HtmlWebpackPlugin({
   chunks: ['sigma']
 }),
     new CopyWebpackPlugin([
-      { from: PATHS.src + 'blocks/form/images', to: `blocks/form/images` },
       { from: PATHS.src + '/video', to: `video`},
       { from: PATHS.src + '/images/favicons', to: `images/favicons` }
     ]), 
