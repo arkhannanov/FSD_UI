@@ -1,6 +1,6 @@
 import './blocks/button/button.js'
-import './blocks/slider-left/slider-left.js'
-import './blocks/slider-right/slider-right.js'
+import './blocks/slider/slider.js'
+import './blocks/step-slider/step-slider.js'
 import './blocks/stages/stages.js'
 import './blocks/form/form.js'
 import './blocks/toggles/toggles.js'

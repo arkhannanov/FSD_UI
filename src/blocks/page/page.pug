@@ -2,8 +2,8 @@ include ../headline/headline.pug
 include ../button/button.pug
 include ../percents/percents.pug
 include ../pie/pie.pug
-include ../slider-left/slider-left.pug
-include ../slider-right/slider-right.pug
+include ../slider/slider
+include ../step-slider/step-slider
 include ../stages/stages.pug
 include ../form/form.pug
 include ../toggles/toggles.pug
@@ -78,8 +78,8 @@ mixin page
                 .sliders
                     +headline ("sliders")
                     .sliders-container
-                        +slider-left
-                        +slider-right
+                        +slider
+                        +step-slider
                 .stages
                     +headline ("stages")
                     +stages
