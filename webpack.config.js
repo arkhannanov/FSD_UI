@@ -10,10 +10,10 @@ const PATHS = {
 module.exports = {
   entry: {
     app: './src/index.js',
-    alfa: './src/pages/alfa/alfa.js',
-    betta: './src/pages/betta/betta.js',
-    gamma: './src/pages/gamma/gamma.js',
-    sigma: './src/pages/sigma/sigma.js'
+    // alfa: './src/pages/alfa/alfa.js',
+    // betta: './src/pages/betta/betta.js',
+    // gamma: './src/pages/gamma/gamma.js',
+    // sigma: './src/pages/sigma/sigma.js'
   },
   output: {
     filename: '[name].js',
@@ -110,19 +110,19 @@ module.exports = {
       filename: 'alfa.html',
       template: 'src/pages/alfa/alfa.pug',
       inject: true,
-      chunks: ['alfa']
+      chunks: ['app']
   }),
     new HtmlWebpackPlugin({
     filename: 'betta.html',
     template: 'src/pages/betta/betta.pug',
     inject: true,
-    chunks: ['betta']
+    chunks: ['app']
 }),
     new HtmlWebpackPlugin({
     filename: 'gamma.html',
     template: 'src/pages/gamma/gamma.pug',
     inject: true,
-    chunks: ['gamma']
+    chunks: ['app']
 }),
 new HtmlWebpackPlugin({
   filename: 'sigma.html',

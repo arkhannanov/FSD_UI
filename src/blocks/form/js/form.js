@@ -90,7 +90,7 @@ function submit(){
 if (errorName==true){
     formNameInputerrormessage.innerHTML=firstMessage;
     formNameMessageContainer.innerHTML="ERROR";
-    formNameMessageContainer.style.cssText="background-image: url('./images/form-orange.png');";
+    formNameMessageContainer.style.cssText="background-image: url('./src/blocks/form/images/form-orange.png');";
     setTimeout(() => {
         input1_errorMessage.innerHTML="";
     }, 2000);
@@ -99,7 +99,7 @@ else
 {
     formNameInputerrormessage.innerHTML="";
     formNameMessageContainer.innerHTML="THANKS!";
-    formNameMessageContainer.style.cssText="background-image: url('./images/form-color2.png');";
+    formNameMessageContainer.style.cssText="background-image: url('./src/blocks/form/images/form-color2.png');";
     setTimeout(() => {
         formNameInputerrormessage.innerHTML="";
     }, 2000);
@@ -108,7 +108,7 @@ else
 if (errorEmail==true){
     formEmailInputErrorMessage.innerHTML=secondMessage;
     formEmailMessageContainer.innerHTML="ERROR";
-    formEmailMessageContainer.style.cssText="background-image: url('./images/form-orange.png');";
+    formEmailMessageContainer.style.cssText="background-image: url('./src/blocks/form/images/form-orange.png');";
     setTimeout(() => {
         formEmailInputErrorMessage.innerHTML="";
     }, 2000);
@@ -117,7 +117,7 @@ else
 {
     formEmailInputErrorMessage.innerHTML="";
     formEmailMessageContainer.innerHTML="THANKS!";
-    formEmailMessageContainer.style.cssText="background-image: url('./images/form-color2.png');";
+    formEmailMessageContainer.style.cssText="background-image: url('./src/blocks/form/images/form-color2.png');";
     setTimeout(() => {
         formEmailInputErrorMessage.innerHTML="";
     }, 2000);

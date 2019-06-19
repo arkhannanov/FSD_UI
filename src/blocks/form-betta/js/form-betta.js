@@ -136,7 +136,7 @@ function submit() {
 if (errorJob==true){
     jobTitleErrorMessage.innerHTML = message;
     jobTitleMessage.innerHTML = "error";
-    jobTitleMessage.style.cssText = "background-image: url('./images/form-orange.png');";
+    jobTitleMessage.style.cssText = "background-image: url('./src/blocks/form-betta/images/form-orange.png');";
     setTimeout(() => {
         jobTitleErrorMessage.innerHTML = "";
     }, 2000);
@@ -145,7 +145,7 @@ else
 {
     jobTitleErrorMessage.innerHTML="";
     jobTitleMessage.innerHTML="thanks!";
-    jobTitleMessage.style.cssText = "background-image: url('./images/form-color2.png');";
+    jobTitleMessage.style.cssText = "background-image: url('./src/blocks/form-betta/images/form-color2.png');";
     setTimeout(() => {
         jobTitleErrorMessage.innerHTML = "";
     }, 2000);
@@ -154,7 +154,7 @@ else
 if (errorFacebook==true){
     facebookErrorMessage.innerHTML= message;
     facebookMessage.innerHTML = "error";
-    facebookMessage.style.cssText = "background-image: url('./images/form-orange.png');";
+    facebookMessage.style.cssText = "background-image: url('./src/blocks/form-betta/images/form-orange.png');";
     setTimeout(() => {
         facebookErrorMessage.innerHTML = "";
     }, 2000);
@@ -163,7 +163,7 @@ else
 {
     facebookErrorMessage.innerHTML = "";
     facebookMessage.innerHTML = "thanks!";
-    facebookMessage.style.cssText="background-image: url('./images/form-color2.png');";
+    facebookMessage.style.cssText="background-image: url('./src/blocks/form-betta/images/form-color2.png');";
     setTimeout(() => {
         facebookErrorMessage.innerHTML = "";
     }, 2000);
@@ -172,7 +172,7 @@ else
 if (errorTwitter==true){
     twitterErrorMessage.innerHTML = message;
     twitterMessage.innerHTML = "error";
-    twitterMessage.style.cssText = "background-image: url('./images/form-orange.png');";
+    twitterMessage.style.cssText = "background-image: url('./src/blocks/form-betta/images/form-orange.png');";
     setTimeout(() => {
         twitterErrorMessage.innerHTML = "";
     }, 2000);
@@ -181,7 +181,7 @@ else
 {
     twitterErrorMessage.innerHTML = "";
     twitterMessage.innerHTML = "thanks!";
-    twitterMessage.style.cssText = "background-image: url('./images/form-color2.png');";
+    twitterMessage.style.cssText = "background-image: url('./src/blocks/form-betta/images/form-color2.png');";
     setTimeout(() => {
         twitterErrorMessage.innerHTML = "";
     }, 2000);
@@ -190,7 +190,7 @@ else
 if (errorDribbble==true){
     dribbbleErrorMessage.innerHTML = message;
     dribbbleMessage.innerHTML="error";
-    dribbbleMessage.style.cssText = "background-image: url('./images/form-orange.png');";
+    dribbbleMessage.style.cssText = "background-image: url('./src/blocks/form-betta/images/form-orange.png');";
     setTimeout(() => {
         dribbbleErrorMessage.innerHTML = "";
     }, 2000);
@@ -199,7 +199,7 @@ else
 {
     dribbbleErrorMessage.innerHTML = "";
     dribbbleMessage.innerHTML = "thanks!";
-    dribbbleMessage.style.cssText = "background-image: url('./images/form-color2.png');";
+    dribbbleMessage.style.cssText = "background-image: url('./src/blocks/form-betta/images/form-color2.png');";
     setTimeout(() => {
         dribbbleErrorMessage.innerHTML = "";
     }, 2000);
