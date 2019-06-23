@@ -28,64 +28,153 @@ mixin page
                     .buttons__header
                         +headline ("standard buttons")
                     .buttons__container
-                        +button({
-                            width: `3.25rem`, 
-                            height: `0.917rem`,
-                            color: `#4eb7a8`, 
-                            name: "button"
-                        })
-                        +button({
-                            width: `4.917rem`, 
-                            height: `1.333rem`,
-                            color: `#4eb7a8`, 
-                            name: "button"
-                        })
-                        +button({
-                            width: `4.917rem`, 
-                            height: `1.333rem`,
-                            color: `#e75735`, 
-                            name: "button"
-                        })
-                        +button({
-                            width: `3.25rem`, 
-                            height: `0.917rem`,
-                            color: `#e75735`, 
-                            name: "button"
-                        })
+                        .buttons__clicked
+                            +button({
+                                width: `3.25rem`,
+                                height: `1rem`,
+                                fontSize: `0.45rem`,
+                                color: `#4eb7a8`,
+                                name: "button"
+                            })
+                            +button({
+                                width: `4.917rem`,
+                                height: `1.5rem`,
+                                fontSize: `0.55rem`,
+                                color: `#4eb7a8`,
+                                name: "button"
+                            })
+                            +button({
+                                width: `4.917rem`,
+                                height: `1.5rem`,
+                                fontSize: `0.55rem`,
+                                color: `#e75735`,
+                                name: "button"
+                            })
+                            +button({
+                                width: `3.25rem`,
+                                height: `1rem`,
+                                fontSize: `0.45rem`,
+                                color: `#e75735`,
+                                name: "button"
+                            })
+                        .buttons__hovered
+                            +button({
+                                width: `3.25rem`,
+                                height: `1rem`,
+                                fontSize: `0.45rem`,
+                                color: `#4eb7a8`,
+                                name: "button"
+                            })
+                            +button({
+                                width: `4.917rem`,
+                                height: `1.5rem`,
+                                fontSize: `0.55rem`,
+                                color: `#4eb7a8`,
+                                name: "button"
+                            })
+                            +button({
+                                width: `4.917rem`,
+                                height: `1.5rem`,
+                                fontSize: `0.55rem`,
+                                color: `#e75735`,
+                                name: "button"
+                            })
+                            +button({
+                                width: `3.25rem`,
+                                height: `1rem`,
+                                fontSize: `0.45rem`,
+                                color: `#e75735`,
+                                name: "button"
+                            })
+                        .buttons__no-action
+                            +button({
+                                width: `3.25rem`,
+                                height: `1rem`,
+                                fontSize: `0.45rem`,
+                                color: `#4eb7a8`,
+                                name: "button"
+                            })
+                            +button({
+                                width: `4.917rem`,
+                                height: `1.5rem`,
+                                fontSize: `0.55rem`,
+                                color: `#4eb7a8`,
+                                name: "button"
+                            })
+                            +button({
+                                width: `4.917rem`,
+                                height: `1.5rem`,
+                                fontSize: `0.55rem`,
+                                color: `#e75735`,
+                                name: "button"
+                            })
+                            +button({
+                                width: `3.25rem`,
+                                height: `1rem`,
+                                fontSize: `0.45rem`,
+                                color: `#e75735`,
+                                name: "button"
+                            })
                 .arrows
                     .arrows__header
-                        +headline ("arrows")
+                        +headline ("arrow buttons")
                     .arrows__container
-                        +arrow({
-                            direction: "left"
-                        })
-                        +arrow({
-                            direction: "right"
-                        })
+                        .arrows__standard
+                            +arrow({
+                                direction: "left"
+                            })
+                        .arrows__standard
+                            +arrow({
+                                direction: "right"
+                            })
+                        .arrows__pressed
+                            +arrow({
+                                direction: "left"
+                            })
+                        .arrows__pressed
+                            +arrow({
+                                direction: "right"
+                            })
+                        .arrows__hovered
+                            +arrow({
+                                direction: "left"
+                            })
+                        .arrows__hovered
+                            +arrow({
+                                direction: "right"
+                            })
                 .percents-pie
                     +headline ("percentages / pie chart")
                     .percents-pie__container
-                        +percents ({
-                            percent: 0
-                        })
-                        +percents ({
-                            percent: 38
-                        })
-                        +percents ({
-                            percent: 62
-                        })
-                        +percents ({
-                            percent: 89
-                        })
-                        +pie
+                        .percents-pie__wrapper
+                            +percents ({
+                                percent: 0
+                            })
+                        .percents-pie__wrapper
+                            +percents ({
+                                percent: 38
+                            })
+                        .percents-pie__wrapper
+                            +percents ({
+                                percent: 62
+                            })
+                        .percents-pie__wrapper
+                            +percents ({
+                                percent: 89
+                            })
+                        .percents-pie__wrapper
+                            +pie
                 .sliders
                     +headline ("sliders")
                     .sliders-container
-                        +slider
-                        +step-slider
+                        .sliders_slider-wrapper
+                            +slider
+                        .sliders_step-slider-wrapper
+                            +step-slider
                 .stages
                     +headline ("stages")
-                    +stages
+                    .stages__stages-wrapper
+                        +stages
                 .form-tick-boxes-toggles
                     +headline ("form elements")
                     .form-tick-boxes-toggles-container
@@ -93,21 +182,29 @@ mixin page
                             +form
                         .form-tick-boxes-toggles__tick-boxes-toggles
                             +headline ("toggles")
-                            +toggles
+                            .form-tick-boxes-toggles__toggles-container
+                                +toggles
+                                +toggles
                             +headline ("tick boxes")
-                            +tick-boxes
+                            .form-tick-boxes-toggles__tick-boxes-container
+                                +tick-boxes
+                                +tick-boxes
                 .search-drop-down-user-profile
                     .search-drop-down
                         +headline ("search / drop down")
-                        +search
-                        +drop-down ({contentline: "Choose An Option", option1: "Option 1", option2: "Option 2", option3: "Option 3"})
+                        .search-drop-down__search
+                            +search
+                        .search-drop-down__drop-down
+                            +drop-down ({contentline: "Choose An Option", option1: "Option 1", option2: "Option 2", option3: "Option 3"})
                     .user-profile
-                        +headline ("user profile")
-                        +user ({
-                            source: "src/blocks/user/images/user-1.png",
-                            name: "John Smith",
-                            profession: "ux designer"
-                        })
+                        .user-profile__headline
+                            +headline ("user profile")
+                        .user-profile__users-container
+                            +user ({
+                                source: "src/blocks/user/images/user-1.png",
+                                name: "John Smith",
+                                profession: "ux designer"
+                            })
                         +user ({
                             source: "src/blocks/user/images/user-2.png",
                             name: "Sarah Brown",
@@ -133,23 +230,29 @@ mixin page
                         })
                 .location
                     +headline ("location")
-                    +location({ 
-                        title: "Meet us!", 
-                        address: "1259  California St san Francisco, CA"
-                    })
-                .calendar-messaging
-                    .calendar_head
-                        +headline ("calendar")
-                        +calendar
-                    .messaging
-                        +headline ("messaging")
-                        +messaging ({
-                            name: "Sarah Brown",
-                            source: "src/blocks/messaging/images/user-2.png", 
-                            firstMessage: "Hey! So are we cool to meet at the art gallery? Say 8pm", 
-                            secondMessage: "Yeah that sounds great. See you then.", 
-                            buttonTitle: "reply"
+                    .location-container
+                        +location({
+                            title: "Meet us!",
+                            address: "1259  California St san Francisco, CA"
                         })
+                .calendar-messaging
+                    .calendar__warapper
+                        .calendar_head
+                            +headline ("calendar")
+                        .calendar__calendar
+                            +calendar
+                    .messaging
+                        .messaging__wrapper
+                            .messaging__headline
+                                +headline ("messaging")
+                            .messaging__messaging
+                                +messaging ({
+                                    name: "Sarah Brown",
+                                    source: "src/blocks/messaging/images/user-2.png",
+                                    firstMessage: "Hey! So are we cool to meet at the art gallery? Say 8pm",
+                                    secondMessage: "Yeah that sounds great. See you then.",
+                                    buttonTitle: "reply"
+                                })
                 .video
                     +headline ("video")
                     +player

@@ -1,5 +1,6 @@
 mixin search
     .search
-        input(type="text", id="search", placeholder="Search")
-        button#search__icon
-        p#search__error
+        .search__input-container
+            input.search__input(type="text", id="search", placeholder="Search")
+            button#search__icon
+        #search__error

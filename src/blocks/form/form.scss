@@ -1,27 +1,24 @@
 
 .form {
-  width: 11.458rem;
   display: flex;
   flex-direction:column;
   justify-content: space-between;
+  margin-left: 0.7rem;
 
   #form__completeform {
-    padding: 0.292rem;
     border: 0;
-    height: 1.875rem;
-    line-height: 0.208rem;
+    height: 0.75rem;
     font-family: $mainFont;
-    margin-top: -0.625rem;
     font-size: 0.5rem;
-    line-height: 1.75rem;
     letter-spacing: 0.021rem;
     font-weight: lighter;
     color: red;
+    margin-bottom: 0.8rem;
     margin-left: 3.333rem;
   }
 
   &__name {
-    width: 11.458rem;
+    width: 14.458rem;
     height: 1.167rem;
     display: flex;
     flex-direction:row;
@@ -30,10 +27,8 @@
     position: relative;
 
     #form__name-input {
-      width: 8.458rem;
       height: 1.167rem;
-      margin: 0;  
-      font-size: 0.5rem; 
+      width: 57%;
       margin: 0;
       padding-left: 0.417rem;
       border: 0;
@@ -48,9 +43,8 @@
     }
 
     #form__name-message-container {
-      width: 3.542rem;
       height: 1.452rem;
-      padding: 0;
+      width: 25%;
       margin: 0;
       font-family: $mainFont;
       font-weight: 400;
@@ -69,21 +63,20 @@
   }
 
   #form__name-input-error-message {
-    padding: 0.292rem;
     border: 0;
-    height: 0.625rem;
-    line-height: 0.208rem;
+    height: 0.76rem;
     font-family: $mainFont;
     margin-top: -0.625rem;
-    font-size: 0.417rem;
+    font-size: 0.32rem;
     line-height: 1.75rem;
     letter-spacing: 0.021rem;
     font-weight: lighter;
     color: #888888;
+    padding-left: 0.4rem;
   }
 
   &__email {
-    width: 11.458rem;
+    width: 14.458rem;
     height: 1.167rem;
     display: flex;
     flex-direction:row;
@@ -92,10 +85,8 @@
     position: relative;
     
     #form__email-input {
-      width: 8.458rem;
+      width: 57%;
       height: 1.167rem;
-      margin: 0;  
-      font-size: 0.5rem; 
       margin: 0;
       padding-left: 0.417rem;
       border: 0;
@@ -110,7 +101,7 @@
     }
 
     #form__email-message-container {
-      width: 3.542rem;
+      width: 25%;
       height: 1.542rem;
       padding: 0;
       margin: 0; 
@@ -131,28 +122,25 @@
   }
 
   #form__email-input-error-message {
-    padding: 0.292rem;
     border: 0;
-    height: 0.625rem;
-    line-height: 0.208rem;
+    height: 0.015rem;
     font-family: $mainFont;
-    margin-top: -0.625rem;
-    font-size: 0.417rem;
-    line-height: 1.75rem;
+    line-height: 0.15rem;
     letter-spacing: 0.021rem;
     font-weight: lighter;
     color: #888888;
+    font-size: 0.32rem;
+    padding-left: 0.4rem;
   }
 
   &__message {
-    width: 11.458rem;
-    height: 3.667rem;
+    width: 14.458rem;
+    height: 2.93rem;
     position: relative;
 
     #form__message-input {
-      width: 10.625rem;
-      height: 3.667rem;
-      font-size: 0.5rem; 
+      width: 76.5%;
+      height: 2.8rem;
       margin: 0;
       padding: 0.417rem;
       border: 0;
@@ -163,13 +151,12 @@
       color: #888888;
       letter-spacing: 0.006rem;
       border-radius: 0.125rem;
-      border: 0;                          
     }
   }
 
   #form__submit-button {
-    width: 4.917rem;
-    height: 1.333rem;
+    width: 5rem;
+    height: 1.5rem;
     border: 0.042rem solid #4eb7a8;
     text-align: center;
     background: #ffffff;
@@ -184,7 +171,7 @@
     overflow: hidden;
     position: relative;
     margin-top: 1.083rem;
-    left: 6.542rem;
+    left: 7rem;
     margin-bottom: 1.25rem;
   }
 
