@@ -4,29 +4,30 @@ include ../events/events
 mixin right-side(options ={profile:"", feedback:"", newsAndEvents:""})
     - let {profile, feedback, newsAndEvents} = options;
     .right-side
-        .right-side__links-contaner
-            .right-side__profile-container 
-                a.right-side__profile(href="/mock-address/change-me")= profile
-            .right-side__feedback-container
-                a.right-side__feedback(href="/mock-address/change-me")= feedback
-            .right-side__news-and-events-container
-                a.right-side__news-and-events(href="/mock-address/change-me")= newsAndEvents
-        .right-side__news-container
-            .right-side__news-header last news
-            .right-side__top-news
-                +news({
-                    source: "src/blocks/news/images/pic-1.png",
-                    title: "It’s all going downhill",
-                    date: "24  august 2013",
-                    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.`
-                })
-            .right-side__bottom-news
-                +events({
-                    source: "src/blocks/events/images/pic-2.png",
-                    number: "24",
-                    month: "Aug",
-                    title: `this is the title`,
-                    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
-                    buttonTitle: "add to calendar"
-                })
+        .right-side__wrapper
+            .right-side__links-contaner
+                .right-side__profile-container
+                    a.right-side__profile(href="/mock-address/change-me")= profile
+                .right-side__feedback-container
+                    a.right-side__feedback(href="/mock-address/change-me")= feedback
+                .right-side__news-and-events-container
+                    a.right-side__news-and-events(href="/mock-address/change-me")= newsAndEvents
+            .right-side__news-container
+                .right-side__news-header last news
+                .right-side__top-news
+                    +news({
+                        source: "src/blocks/news/images/pic-1.png",
+                        title: "It’s all going downhill",
+                        date: "24  august 2013",
+                        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.`
+                    })
+                .right-side__bottom-news
+                    +events({
+                        source: "src/blocks/events/images/pic-2.png",
+                        number: "24",
+                        month: "Aug",
+                        title: `this is the title`,
+                        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+                        buttonTitle: "add to calendar"
+                    })

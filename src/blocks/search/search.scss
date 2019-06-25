@@ -7,16 +7,13 @@
   #search {
     width: 11.875rem;
     color: #888888;
-    font-family: $thirdFont;
+    font-family: normal 0.583rem $thirdFont;
     letter-spacing: 0.006rem;
-    padding-left: 0.417rem;
-    padding-bottom: 0;
-    padding-top: 0;
+    padding: 0 0 0 0.417rem;
     height: 1.167rem;
     background-color: #e5e5e5;
     border: 0;
     border-radius: 0.125rem;
-    font-size: 0.583rem;
   }
 
   #search__icon {
@@ -24,13 +21,10 @@
     height: 1.167rem;
     border: 0;
     border-radius: 0.125rem;
-    background-color:#e75735;
     top: -1.167rem;
     margin-left: 10.917rem;
-    background-image: url('./images/search-icon.png');
-    background-repeat: no-repeat;
+    background: #e75735 url('./images/search-icon.png') 0.412rem 0.333rem no-repeat;
     position: relative;
-    background-position: 0.412rem 0.333rem;
   }
 
   #search__icon, 
@@ -44,16 +38,13 @@
   }
 
   #search__error {
-    font-size: 0.583rem;
     color: #ffffff;
     width: 11.875rem;
     letter-spacing: 0.006rem;
-    font-family: $thirdFont;
-    padding-left: 0.417rem;
-    padding-top: 0.208rem;
+    font-family: normal 0.583rem $thirdFont;
+    padding: 0.208rem 0 0 0.417rem;
     line-height: 0.9rem;
     border-radius: 0.125rem;
-    margin-top: -0.5rem;
-    margin-bottom: 0.4rem;
+    margin: -0.5rem 0 0.4rem 0;
   }
 }

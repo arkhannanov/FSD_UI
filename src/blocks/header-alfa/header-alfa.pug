@@ -1,12 +1,13 @@
 mixin header-alfa(options={source, name})
     - let {source, name} = options;    
     .header-alfa
-        .header-alfa__logo
-        .header-alfa__logout
-            a(href=`/mock-address/change-me`, class="header-alfa__logout-href") Logout
-        .header-alfa__name= name 
-        .header-alfa__avatar
-            img(src=source, alt="User", hspace="2", vspace="2", class="header-alfa__avatar-image")
-        .header-alfa__search
-            input(type="text", id="search", placeholder="Search", class="header-alfa__search-input")
-            button(id="search_icon", class="header-alfa__search-button")
+        .header-alfa__wrapper
+            .header-alfa__logo
+            .header-alfa__logout
+                a.header-alfa__logout-href(href=`/mock-address/change-me`) Logout
+            .header-alfa__name= name
+            .header-alfa__avatar
+                img.header-alfa__avatar-image(src=source, alt="User", hspace="2", vspace="2")
+            .header-alfa__search
+                input.header-alfa__search-input(type="text", id="search", placeholder="Search")
+                button.header-alfa__search-button(id="search_icon")

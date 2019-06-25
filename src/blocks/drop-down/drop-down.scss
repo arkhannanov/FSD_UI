@@ -1,21 +1,24 @@
 .drop-down {
-  width: 11.875rem;
-  position: relative;
-  display: inline-block;
-  margin-bottom: 2.917rem;
-  margin-top: 0.333rem;
 
+  &__wrapper {
+    width: 12.2rem;
+    position: relative;
+    display: inline-block;
+    margin: 0.333rem 0 2.917rem 0;
+  }
+  .drop-down__content-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
   &__contentline {
-    font-family: $thirdFont;
+    font: 0.583rem $thirdFont;
     color: #888888;
-    font-size: 0.583rem;
     letter-spacing: 0.06rem;
     background:#e5e5e5;
-    padding-left: 0.417rem;
     width: 11.875rem;
     height: 0.958rem;
     border-radius: 0.125rem;
-    padding-top: 0.208rem;
+    padding: 0.208rem 0 0 0.417rem;
   }
 
   &__btn {
@@ -24,29 +27,20 @@
     cursor: pointer;
     width: 1.375rem;
     height: 1.167rem;
-    margin-left: 10.917rem;
-    top: -1.167rem; 
-    position: relative;
     border-radius: 0.125rem;
-    background-color: #4eb7a8;
-    background-image: url('./images/drop-down.png');
-    background-repeat: no-repeat;
-    background-position: 0.333rem 0.375rem;
+    background: #4eb7a8 url('./images/drop-down.png') 0.333rem 0.375rem no-repeat;
     outline: none;
   }
 
   &__content {
-    margin-top:-1.167rem;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 6.667rem;
     z-index: 1;
+    margin-top: 0.1rem;
   }
 
   &__first-link {
-    color: black;
-    padding: 0.5rem 0.667rem;
     text-decoration: none;
     display: block;
     height: 0.75rem;
@@ -62,8 +56,6 @@
   }
 
   &__second-link {
-    color: black;
-    padding: 0.5rem 0.667rem;
     text-decoration: none;
     display: block;
     height: 0.75rem;
@@ -79,8 +71,6 @@
   }
 
   &__third-link {
-    color: black;
-    padding: 0.5rem 0.667rem;
     text-decoration: none;
     display: block;
     height: 0.75rem;

@@ -1,8 +1,21 @@
 
 .page-betta-wrapper {
-    max-width: 21.167rem;
-    font-family: $mainFont;
-    margin:auto;
+  max-width: 21.167rem;
+  margin:auto;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form {
+    margin: auto;
+  }
+
+  .navigation {
+    margin-left: 2rem;
+    width: 103%;
+  }
 }
   
 .header-betta {
@@ -16,34 +29,27 @@
 }
   
 .stages {
-  margin-top: 1rem;
-  margin-left: -1.5rem;
+  margin-bottom: 0.5rem;
 }
   
 .avatar {
   width: 5.833rem;
-  height: 6.875rem;
+  height: 7.4rem;
   background-color: white;
   box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
-  margin-bottom: 0.417rem;
+  margin: 0 auto 0.417rem auto;
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -1.25rem;
   
   &__image {
     width: 5.833rem;
     height: 5.833rem;
-    background-image: url('./images/user-large.png');
-    background-repeat: no-repeat;
-    background-position: 0.271rem 0.271rem;
+    background: url('./images/user-large.png') 0.271rem 0.271rem no-repeat;
   }
   
   &__edit {
     width: 5.417rem;
     margin: auto;
-    margin-top: -0.083rem;
   }
   
   .ripple {
@@ -94,9 +100,5 @@
   
   &__edit-button:visited {
     outline: none;
-  }
-  
-  &__edit-button::-moz-focus-inner {
-    border: 0;
   }
 }

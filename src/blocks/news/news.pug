@@ -1,11 +1,9 @@
 mixin news(options = {source: "",title: "", date: "", text: ""})
     -let {source, title, date, text } = options;
     .news
-        img(src=source, alt="Pic 1", class="news__image")
-        .news__content-container
-            .news__title-container
-                p.news__title= title
-            .news__date-container
-                p.news__date= date
-            .news__text-container
-                p.news__text= text
+        .news__wrapper
+            img.news__image(src=source, alt="Pic 1")
+            .news__content-container
+                .news__title= title
+                .news__date= date
+                .news__text= text

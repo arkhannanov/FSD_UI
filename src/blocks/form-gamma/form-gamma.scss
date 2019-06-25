@@ -1,6 +1,9 @@
 .form-gamma {
-  width: 10.417rem;
-  margin-top: 0.75rem;
+
+  &__wrapper {
+    width: 10.417rem;
+    margin-top: 0.75rem;
+  }
 
   &__name-container {
     width: 10.417rem;
@@ -10,7 +13,6 @@
     width: 10.417rem;
     height: 1.25rem;
     background: #e5e5e5;
-    font-family: $mainFont;
   }
 
   &__email-container {
@@ -21,36 +23,27 @@
     width: 10.417rem;
     height: 1.25rem;
     background: #e5e5e5;
-    font-family: $mainFont;
   }
     
   &__raiting {
-    font-family: $mainFont;
     color: #757575;
-    font-size: 0.556rem;
-    margin-top: 0.208rem;
     font-size: 1.3rem;
-    margin-left: -0.6rem;
+    margin: 0.208rem 0 1rem 1rem;
   }
 
   &__raiting-container {
-    transform: scale(0.421);
-    margin-left: -5.833rem;
-    margin-top: -1rem;
-    margin-left: -3.958rem;
+    transform: translate(-3.4rem, -1rem) scale(0.421);
   }
 
   &__message-container {
     width: 10.417rem;
-    margin-top: -2.083rem;
   }
 
   &__message-text {
     width: 10.417rem;
     height: 3.75rem;
     background: #e5e5e5;
-    font-family: $mainFont;
-    margin-top: -0.7rem;
+    margin-top: -2rem;
   }
   
   .ripple {

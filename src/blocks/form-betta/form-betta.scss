@@ -1,23 +1,23 @@
 .form-betta {
-  width: 11.458rem;
-  margin-left: 4rem;
-  display: flex;
-  flex-direction:column;
-  justify-content: space-between;
+
+  &__wrapper {
+    width: 11.458rem;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+  }
 
   #form-betta__completeform {
     padding: 0.292rem;
     border: 0;
     height: 0.625rem;
-    line-height: 0.208rem;
-    font-family: $mainFont;
-    margin-top: -0.625rem;
     font-size: 0.5rem;
     line-height: 1.75rem;
     letter-spacing: 0.021rem;
     font-weight: lighter;
     color: red;
     margin-left: 2.917rem;
+    margin-bottom: 0.5rem;
   }
   
   &__job-title-container {
@@ -25,22 +25,15 @@
     height: 1.167rem;
     display: flex;
     flex-direction:row;
-    margin: 0;
-    padding: 0;
-    position: relative;
   }
 
   &__job-title-input {
     width: 8.458rem;
     height: 1.167rem;
-    margin: 0;  
-    font-size: 0.5rem; 
     padding-left: 0.417rem;
     border: 0;
     background: #e5e5e5;
-    font-size: 0.583rem;
-    font-family: $thirdFont;
-    font-weight: 400;
+    font: normal 0.583rem $thirdFont;
     color: #888888;
     line-height: 1.75rem;
     letter-spacing: 0.006rem;
@@ -50,20 +43,13 @@
   #form-betta__job-title-message {
     width: 3.542rem;
     height: 1.542rem;
-    padding: 0;
-    margin: 0;
-    font-family: $mainFont;
-    font-weight: 400;
-    font-size: 0.417rem;
-    line-height: 1.833rem;
+    font: normal 0.417rem $mainFont;
+    line-height: 1.2rem;
     letter-spacing: 0.021rem;
     text-align: center;
-    margin-top: -0.25rem;
     margin-left: 0.167rem;
     vertical-align: middle;
-    background-repeat: no-repeat;
-    background-position: 0 0.292rem;
-    background-color: transparent;
+    background: transparent no-repeat;
     color: #ffffff;
     text-transform: uppercase;
   }
@@ -72,16 +58,11 @@
     padding: 0.292rem;
     border: 0;
     height: 0.225rem;
-    line-height: 0.208rem;
-    font-family: $mainFont;
-    margin-top: -1.042rem;
     font-size: 0.417rem;
-    line-height: 0;
     letter-spacing: 0.021rem;
+    line-height: 0.2rem;
     font-weight: lighter;
     color: #888888;
-    position: relative;
-    top: -0.55rem;
   }
 
   &__facebook-container {
@@ -91,16 +72,11 @@
     flex-direction:row;
     margin: 0;
     padding: 0;
-    position: relative;
-    margin-top: -0.917rem;
   }
 
   &__facebook-input{
     width: 8.458rem;
     height: 1.167rem;
-    margin: 0;  
-    font-size: 0.5rem; 
-    margin: 0;
     padding-left: 0.417rem;
     border: 0;
     background: #e5e5e5;
@@ -116,20 +92,14 @@
   #form-betta__facebook-message {
     width: 3.542rem;
     height: 1.542rem;
-    padding: 0;
-    margin: 0;
-    font-family: $mainFont;
     font-weight: 400;
     font-size: 0.417rem;
-    line-height: 1.833rem;
+    line-height: 1.2rem;
     letter-spacing: 0.021rem;
     text-align: center;
-    margin-top: -0.25rem;
     margin-left: 0.167rem;
     vertical-align: middle;
-    background-repeat: no-repeat;
-    background-position: 0 0.292rem;
-    background-color: transparent;
+    background: transparent no-repeat ;
     color: #ffffff;
     text-transform: uppercase;
   }
@@ -137,17 +107,12 @@
   #form-betta__facebook-error-message {
     padding: 0.292rem;
     border: 0;
-    height: 0.625rem;
-    line-height: 0.208rem;
-    font-family: $mainFont;
-    margin-top: -1.042rem;
+    height: 0.225rem;
+    line-height: 0.2rem;
     font-size: 0.417rem;
-    line-height: 0;
     letter-spacing: 0.021rem;
     font-weight: lighter;
     color: #888888;
-    position: relative;
-    top: -0.55rem;
   }
 
   &__twitter-container {
@@ -155,23 +120,15 @@
     height: 1.167rem;
     display: flex;
     flex-direction:row;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    margin-top: -1.317rem;
   }
 
   &__twitter-input {
     width: 8.458rem;
     height: 1.167rem;
-    margin: 0;  
-    font-size: 0.5rem; 
     padding-left: 0.417rem;
     border: 0;
     background: #e5e5e5;
-    font-size: 0.583rem;
-    font-family: $thirdFont;
-    font-weight: 400;
+    font: normal 0.583rem $thirdFont;
     color: #888888;
     line-height: 1.75rem;
     letter-spacing: 0.006rem;
@@ -181,20 +138,14 @@
   #form-betta__twitter-message {
     width: 3.542rem;
     height: 1.542rem;
-    padding: 0;
-    margin: 0;
-    font-family: $mainFont;
     font-weight: 400;
     font-size: 0.417rem;
-    line-height: 1.833rem;
+    line-height: 1.2rem;
     letter-spacing: 0.021rem;
     text-align: center;
-    margin-top: -0.25rem;
     margin-left: 0.167rem;
     vertical-align: middle;
-    background-repeat: no-repeat;
-    background-position: 0 0.292rem;
-    background-color: transparent;
+    background: transparent no-repeat;
     color: #ffffff;
     text-transform: uppercase;
   }
@@ -202,17 +153,12 @@
   #form-betta__twitter-error-message {
     padding: 0.292rem;
     border: 0;
-    height: 0.625rem;
+    height: 0.225rem;
     line-height: 0.208rem;
-    font-family: $mainFont;
-    margin-top: -1.042rem;
     font-size: 0.417rem;
-    line-height: 0;
     letter-spacing: 0.021rem;
     font-weight: lighter;
     color: #888888;
-    position: relative;
-    top: -0.55rem;
   }
 
   &__dribbble-container {
@@ -220,23 +166,15 @@
     height: 1.167rem;
     display: flex;
     flex-direction:row;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    margin-top: -1.317rem;
   }
 
   &__dribbble-input {
     width: 8.458rem;
     height: 1.167rem;
-    margin: 0;  
-    font-size: 0.5rem; 
     padding-left: 0.417rem;
     border: 0;
     background: #e5e5e5;
-    font-size: 0.583rem;
-    font-family: $thirdFont;
-    font-weight: 400;
+    font: normal 0.583rem $thirdFont;
     color: #888888;
     line-height: 1.75rem;
     letter-spacing: 0.006rem;
@@ -246,20 +184,14 @@
   #form-betta__dribbble-message {
     width: 3.542rem;
     height: 1.542rem;
-    padding: 0;
-    margin: 0;
-    font-family: $mainFont;
     font-weight: 400;
     font-size: 0.417rem;
-    line-height: 1.833rem;
+    line-height: 1.2rem;
     letter-spacing: 0.021rem;
     text-align: center;
-    margin-top: -0.25rem;
     margin-left: 0.167rem;
     vertical-align: middle;
-    background-repeat: no-repeat;
-    background-position: 0 0.292rem;
-    background-color: transparent;
+    background: transparent no-repeat;
     color: #ffffff;
     text-transform: uppercase;
   }
@@ -267,30 +199,21 @@
   #form-betta__dribbble-error-message {
     padding: 0.292rem;
     border: 0;
-    height: 0.625rem;
     line-height: 0.208rem;
-    font-family: $mainFont;
-    margin-top: -1.042rem;
     font-size: 0.417rem;
-    line-height: 0;
     letter-spacing: 0.021rem;
     font-weight: lighter;
     color: #888888;
-    position: relative;
-    top: -0.55rem;
+    margin-bottom: 1rem;
   }
 
   &__toggle {
     display: flex;
     flex-direction: row;
-    margin-left: -4.583rem;
-    margin-top: -0.833rem;
   }
 
   &__toggle-content {
     font-size: 0.5rem;
-    width: 100%;
-    margin-left: -2.167rem;
     white-space: nowrap;
     line-height: 1rem;
     color: #888888;
@@ -315,10 +238,7 @@
     transition: 0.2s;
     vertical-align: middle;
     overflow: hidden;
-    position: relative;
-    margin-top: 0.417rem;
-    left: 6.542rem;
-    margin-bottom: 1.25rem;
+    margin: 0.417rem 0 1.25rem 4.5rem;
     text-transform: uppercase;
   }
 

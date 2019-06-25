@@ -1,15 +1,16 @@
 mixin form
     .form
-        #form__completeform
-        .form__name 
-            input(type="text", id="form__name-input", placeholder="Your Name")
-            #form__name-message-container
-        p#form__name-input-error-message
-        .form__email
-            input(type="text", id="form__email-input", placeholder="Your E-mail")
-            #form__email-message-container
-        p#form__email-input-error-message
-        .form__message
-            textarea(type="text", id="form__message-input", placeholder="Your Message")
-        .form__submit
-            button#form__submit-button SUBMIT
+        .form__wrapper
+            #form__completeform
+            .form__name
+                input(type="text", id="form__name-input", placeholder="Your Name")
+                #form__name-message-container
+            #form__name-input-error-message
+            .form__email
+                input(type="text", id="form__email-input", placeholder="Your E-mail")
+                #form__email-message-container
+            #form__email-input-error-message
+            .form__message
+                textarea(type="text", id="form__message-input", placeholder="Your Message")
+            .form__submit
+                button#form__submit-button SUBMIT

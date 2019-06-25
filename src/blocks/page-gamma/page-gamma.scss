@@ -10,7 +10,6 @@
   flex-wrap: wrap;
   margin-top: 2.083rem;
   justify-content: space-between;
-  font-family: $mainFont;
   
   .diagramm-container {
     display: flex;
@@ -19,8 +18,7 @@
     flex-wrap: wrap;
     width: 100%;
     font-size: 0.75rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0 1rem 0;
   }
   
   .first-diagramm-container {
@@ -51,8 +49,7 @@
   }
   
   .second-diagramm__content {
-    margin-left: 0.625rem;
-    margin-top: 1.667rem;
+    margin: 1.667rem 0 0 0.625rem;
   }
 
   .third-diagramm-container {
@@ -91,11 +88,7 @@
     
   .feedback__headline {
     text-align: center;
-    margin: auto;
-    font-family: $mainFont;
-    font-size: 0.833rem;
-    margin-bottom: 0.417rem;
-    margin-top: 0.833rem;
+    margin: 0.833rem auto 0.417rem auto;
     font-size: 1rem;
   }
   
@@ -104,7 +97,6 @@
     flex-direction: row;
     width: 25rem;
     margin:auto;
-    font-family: $mainFont;
     justify-content: center;
   }
 
@@ -116,4 +108,8 @@
   .feedback__calendar {
     transform: scale(0.92) translateY(-0.833rem);
   }
+}
+
+.footer-gamma {
+  margin-left: 2rem;
 }

@@ -1,7 +1,9 @@
 .toggles {
-  width: 2.5rem;
-  margin-right: 0.5rem;
 
+  &__wrapper {
+    width: 2.5rem;
+    margin-right: 0.5rem;
+  }
 
   &__container {
     display: flex;
@@ -15,17 +17,13 @@
     background-color: #e5e5e5;
     color: #ffffff;
     border-radius: 0.625rem;
-    position: relative;
     z-index: 0;
     text-transform: uppercase;
-    position: relative;
     font-size: 0.5rem;
-    font-weight: bol;
+    font-weight: bold;
     line-height: 0.833rem;
     letter-spacing: -0.013rem;
-    color: #ffffff;
     display: inline-block;
-    border-radius: 0.625rem;
     width: 2.5rem;
     padding-top: 0.125rem;
     height: 1rem;

@@ -7,7 +7,7 @@ include ../navigation/navigation.pug
 
 mixin page-alfa
     main.page-alfa
-        .alfa-page-wrapper
+        .page-alfa-wrapper
             .header
                 +header-alfa({
                     source: "src/blocks/header-alfa/images/user.png",
@@ -15,15 +15,15 @@ mixin page-alfa
                 })
             .content-container
                 +profile({
-                    headline:"my profile", 
-                    rightSideHeader:"Sarah Brown", 
-                    profession: "Actress", 
-                    phone: "+79263864674", 
-                    twitter: "twitter", 
-                    facebook: "facebook", 
-                    horror: "Horror", 
-                    thriller: "Thriller", 
-                    drama: "Drama", 
+                    headline: "my profile",
+                    rightSideHeader: "Sarah Brown",
+                    profession: "Actress",
+                    phone: "+79263864674",
+                    twitter: "twitter",
+                    facebook: "facebook",
+                    horror: "Horror",
+                    thriller: "Thriller",
+                    drama: "Drama",
                     comedy: "Comedy"
                 })
                 +right-side({

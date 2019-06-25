@@ -23,8 +23,7 @@
     font-weight: lighter;
     font-size: 1.25rem;
     color: #ffffff;
-    margin-top: 0.542rem;
-    margin-left: 0.917rem;
+    margin: 0.542rem 0 0 0.917rem;
   }
 
   &__content-address {
@@ -32,26 +31,21 @@
     font-size: 0.542rem;
     letter-spacing: 0.026rem;
     color: #ffffff;
-    margin-top: 0.792rem;
-    margin-left: 1.083rem;
+    margin: 0.792rem 0 0 1.083rem;
     text-transform: uppercase;
   }
 
   &__content-icon-my-location {
     width: 1.667rem;
     font-size: 1.667rem;
-    background-image: url('./images/icon-my-location.png');
-    background-repeat: no-repeat;
-    background-position: 0 0.833rem;
+    background: url('./images/icon-my-location.png') 0 0.833rem no-repeat;
     margin-left: 7.083rem;
   }
 
   &__content-icon-pin {
     width: 1.667rem;
     font-size: 1.667rem;
-    background-image: url('./images/icon-pin.png');
-    background-repeat: no-repeat;
-    background-position: 0 0.875rem;
+    background: url('./images/icon-pin.png') 0 0.875rem no-repeat;
     margin-left: 0.417rem;
   }
 }

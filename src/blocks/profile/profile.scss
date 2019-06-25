@@ -1,22 +1,20 @@
 .profile {
-  width: 50%;
-  height: 20.833rem;
-  display: flex;
-  flex-direction: column;
+
+  .profile__wrapper {
+    width: 75%;
+    height: 20.833rem;
+    display: flex;
+    flex-direction: column;
+  }
 
   &__headline {
-    font-family: $mainFont;
-    height: 1.083rem;
     font-size: 0.583rem;
     color: black;
     background: white;
     box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
     line-height: 1.167rem;
+    margin: 0.417rem;
     padding-left: 0.417rem;
-    margin-top: 0.417rem;
-    margin-bottom: 0.417rem;
-    margin-right: 0.417rem;
-    margin-left: 0.417rem;
     width: 125.7%;
     text-transform: uppercase;
   }
@@ -30,14 +28,11 @@
 
   &__content-left-side-container {
     width: 5.833rem;
-    height: 20.833rem;            
-    margin-right: 0.417rem;
-    margin-left: 0.417rem;
+    margin: 0 0.417rem 0 0.417rem;
   }
 
   &__avatar-container {
     width: 5.833rem;
-    height: 6.875rem;
     background-color: white;
     box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
     margin-bottom: 0.417rem;
@@ -48,15 +43,12 @@
   &__avatar {
     width: 5.833rem;
     height: 5.833rem;
-    background-image: url('./images/user-large.png');
-    background-repeat: no-repeat;
-    background-position: 0.271rem 0.271rem;
+    background: url('./images/user-large.png') 0.271rem 0.271rem no-repeat;
   }
   
   &__edit {
     width: 5.417rem;
     margin: auto;
-    margin-top: -0.083rem;
 
     .ripple {
       border-radius: 50%;
@@ -108,10 +100,6 @@
     outline: none;
   }
 
-  &__edit-button::-moz-focus-inner {
-    border: 0;
-  }
-
   &__calendar-container {
     width: 5.833rem;
     height: 8.75rem;
@@ -124,7 +112,7 @@
     background: transparent;
   }
 
-  &__content-events-container{
+  &__content-right-side-container{
     flex-grow: 1;
     height: 16.042rem;
     box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
@@ -148,8 +136,7 @@
   &__content-right-side-contacts {
     font-size: 0.708rem;
     width: 95%;
-    margin-left: 0.417rem;
-    margin-top: 0.417rem;
+    margin: 0.417rem 0 0 0.417rem;
     border-bottom: 0.083rem solid black;
     padding-bottom: 0.292rem;
   }
@@ -240,7 +227,6 @@
   }
 
   &__horror-container {
-    margin-left: -0.5rem;
     color: #747474;
   }
 
@@ -249,7 +235,6 @@
   }
   
   &__thriller-container  {
-    margin-left: -0.5rem;
     color: #e75735;
   }
 
@@ -258,7 +243,6 @@
   }
 
   &__drama-container {
-    margin-left: -0.5rem;
     color: #4eb7a8;
   }
 
@@ -267,7 +251,6 @@
   }
 
   &__comedy-container {
-    margin-left: -0.5rem;
     color: #e5e5e5;
   }
 
@@ -278,9 +261,7 @@
   &__pie-chart-container {
     width: 12.5rem;
     height: 12.5rem;
-    transform: translateY(7.292rem) translateX(6.75rem) scale(1.7);
-    margin-top: -3.333rem;
-    margin-right: auto;
-    margin-left: auto;
+    transform: translateY(4rem) translateX(6.75rem) scale(1.7);
+    margin: 0 auto 0 auto;
   }
 }

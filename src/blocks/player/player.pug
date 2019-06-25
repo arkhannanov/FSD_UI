@@ -1,9 +1,10 @@
 mixin player
     .player
-        video(class="player__video viewer", src="video/156181920.mp4")
-        .player__controls
-            button.player__button.toggle
-            .player__progress-container
-                .player__progress
-                    .player__progress_filled
-            button.player__button.fullscreen
+        .player__wrapper
+            video(class="player__video viewer", src="video/156181920.mp4")
+            .player__controls
+                button.player__button.toggle
+                .player__progress-container
+                    .player__progress
+                        .player__progress_filled
+                button.player__button.fullscreen

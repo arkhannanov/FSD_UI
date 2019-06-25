@@ -1,20 +1,20 @@
 
 .form {
-  display: flex;
-  flex-direction:column;
-  justify-content: space-between;
-  margin-left: 0.7rem;
+
+  &__wrapper {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin-left: 0.7rem;
+  }
 
   #form__completeform {
     border: 0;
     height: 0.75rem;
-    font-family: $mainFont;
-    font-size: 0.5rem;
+    font: normal lighter 0.5rem $mainFont;
     letter-spacing: 0.021rem;
-    font-weight: lighter;
     color: red;
-    margin-bottom: 0.8rem;
-    margin-left: 3.333rem;
+    margin: 0 0 0.8rem 3.333rem;
   }
 
   &__name {
@@ -22,9 +22,6 @@
     height: 1.167rem;
     display: flex;
     flex-direction:row;
-    margin: 0;
-    padding: 0;
-    position: relative;
 
     #form__name-input {
       height: 1.167rem;
@@ -33,9 +30,7 @@
       padding-left: 0.417rem;
       border: 0;
       background: #e5e5e5;
-      font-size: 0.583rem;
-      font-family: $thirdFont;
-      font-weight: 400;
+      font: normal 400 0.583rem $thirdFont;
       color: #888888;
       line-height: 1.75rem;
       letter-spacing: 0.006rem;
@@ -45,19 +40,15 @@
     #form__name-message-container {
       height: 1.452rem;
       width: 25%;
-      margin: 0;
       font-family: $mainFont;
       font-weight: 400;
       font-size: 0.417rem;
-      line-height: 1.917rem;
+      line-height: 1.2rem;
       letter-spacing: 0.021rem;
       text-align: center;
-      margin-top: -0.25rem;
-      margin-left: 0.167rem;
+      margin: 0 0 0 0.167rem;
       vertical-align: middle;
       background-repeat: no-repeat;
-      background-position: 0 0.292rem;
-      background-color: transparent;
       color: #ffffff;
     }
   }
@@ -65,12 +56,9 @@
   #form__name-input-error-message {
     border: 0;
     height: 0.76rem;
-    font-family: $mainFont;
-    margin-top: -0.625rem;
-    font-size: 0.32rem;
-    line-height: 1.75rem;
+    font: lighter 0.32rem $mainFont;
+    line-height: 0.8rem;
     letter-spacing: 0.021rem;
-    font-weight: lighter;
     color: #888888;
     padding-left: 0.4rem;
   }
@@ -80,9 +68,6 @@
     height: 1.167rem;
     display: flex;
     flex-direction:row;
-    margin: 0;
-    padding: 0;
-    position: relative;
     
     #form__email-input {
       width: 57%;
@@ -91,9 +76,7 @@
       padding-left: 0.417rem;
       border: 0;
       background: #e5e5e5;
-      font-size: 0.583rem;
-      font-family: $thirdFont;
-      font-weight: 400;
+      font: normal 0.583rem $thirdFont;
       color: #888888;
       line-height: 1.75rem;
       letter-spacing: 0.006rem;
@@ -103,33 +86,26 @@
     #form__email-message-container {
       width: 25%;
       height: 1.542rem;
-      padding: 0;
-      margin: 0; 
       font-family: $mainFont;
       font-weight: 400;
       font-size: 0.417rem;
-      line-height: 1.833rem;
+      line-height: 1.2rem;
       letter-spacing: 0.021rem;
       text-align: center;
-      margin-top: -0.25rem;
       margin-left: 0.167rem;
       vertical-align: middle;
       background-repeat: no-repeat;
-      background-position: 0 0.292rem;
-      background-color: transparent;
       color: #ffffff;
     }
   }
 
   #form__email-input-error-message {
     border: 0;
-    height: 0.015rem;
-    font-family: $mainFont;
-    line-height: 0.15rem;
+    height: 0.76rem;
+    font: lighter 0.32rem $mainFont;
+    line-height: 0.8rem;
     letter-spacing: 0.021rem;
-    font-weight: lighter;
     color: #888888;
-    font-size: 0.32rem;
     padding-left: 0.4rem;
   }
 
@@ -141,7 +117,6 @@
     #form__message-input {
       width: 76.5%;
       height: 2.8rem;
-      margin: 0;
       padding: 0.417rem;
       border: 0;
       background: #e5e5e5;
@@ -170,9 +145,8 @@
     vertical-align: middle;
     overflow: hidden;
     position: relative;
-    margin-top: 1.083rem;
+    margin: 1.083rem 0 1.25rem 0;
     left: 7rem;
-    margin-bottom: 1.25rem;
   }
 
   #form__submit-button:hover {

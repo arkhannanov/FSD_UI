@@ -1,11 +1,12 @@
 mixin navigation(options={alfa:"", betta:"", gamma:"", sigma:""})
     - let {alfa, betta, gamma, sigma} = options;
     .navigation
-        .navigation__alfa
-            button.navigation__button(name="button", onclick="document.location='alfa.html'")= alfa
-        .navigation__betta
-            button.navigation__button(name="button", onclick="document.location='betta.html'")= betta
-        .navigation__gamma
-            button.navigation__button(name="button", onclick="document.location='gamma.html'")= gamma
-        .navigation__sigma
-            button.navigation__button(name="button", onclick="document.location='sigma.html'")= sigma	
+        .navigation__wrapper
+            .navigation__alfa
+                button.navigation__button(name="button", onclick="document.location='alfa.html'")= alfa
+            .navigation__betta
+                button.navigation__button(name="button", onclick="document.location='betta.html'")= betta
+            .navigation__gamma
+                button.navigation__button(name="button", onclick="document.location='gamma.html'")= gamma
+            .navigation__sigma
+                button.navigation__button(name="button", onclick="document.location='sigma.html'")= sigma

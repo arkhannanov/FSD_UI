@@ -1,20 +1,21 @@
 mixin header-gamma(options={source:""})
     - let {source} = options;
     .header-gamma
-        .header-gamma__first-line
-            .header-gamma__logo
-                img.header-gamma_logo-image(src= source, alt="Logo", hspace="10", vspace="5")  
-            .header-gamma__contacts
-                .header-gamma__time Ежедневно с 9.00 до 22.00
-                .header-gamma__tel +79263864674
-        .header-gamma__second-line
-            .header-gamma__glavnaya
-                a.header-gamma__glavnaya-link(href="/mock-address/change-me") Главная
-            .header-gamma__photo-rabot
-                a.header-gamma__photo_rabot-link(href="/mock-address/change-me") Фото Работ
-            .header-gamma__o-nas
-                a.header-gamma__o-nas-link(href="/mock-address/change-me") О Нас
-            .header-gamma__otzivi
-                a.header-gamma__otzivi-link(href="/mock-address/change-me") Отзывы
-            .header-gamma__regisration
-                a.header-gamma__regisration-link(href="/mock-address/change-me") Регистрация
+        .header-gamma__wrapper
+            .header-gamma__first-line
+                .header-gamma__logo
+                    img.header-gamma_logo-image(src= source, alt="Logo", hspace="10", vspace="5")
+                .header-gamma__contacts
+                    .header-gamma__time Ежедневно с 9.00 до 22.00
+                    .header-gamma__tel +79263864674
+            .header-gamma__second-line
+                .header-gamma__glavnaya
+                    a.header-gamma__glavnaya-link(href="/mock-address/change-me") Главная
+                .header-gamma__photo-rabot
+                    a.header-gamma__photo_rabot-link(href="/mock-address/change-me") Фото Работ
+                .header-gamma__o-nas
+                    a.header-gamma__o-nas-link(href="/mock-address/change-me") О Нас
+                .header-gamma__otzivi
+                    a.header-gamma__otzivi-link(href="/mock-address/change-me") Отзывы
+                .header-gamma__regisration
+                    a.header-gamma__regisration-link(href="/mock-address/change-me") Регистрация

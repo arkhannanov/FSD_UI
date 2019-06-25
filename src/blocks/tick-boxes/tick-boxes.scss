@@ -1,19 +1,20 @@
 .tick-boxes {
-  width: 0.5rem;
-  margin: auto;
+
+  &__wrapper {
+    width: 0.5rem;
+    margin: auto;
+  }
 
   &__container {   
       width: 1.25rem;
   }
+
   #tick-boxes {
     width: 1rem;
     height: 1rem;
-    background-color: #e5e5e5;
     border-radius: 50%;
     border: 0;
-    background-image: url('./images/tick-box-2.png');
-    background-repeat: no-repeat;
-    background-position: 0.25rem 0.271rem;
+    background: #e5e5e5 url('./images/tick-box-2.png') 0.25rem 0.271rem no-repeat;
   }
 
   #tick-boxes, 

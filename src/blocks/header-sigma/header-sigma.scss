@@ -58,8 +58,7 @@
     vertical-align: middle;
     overflow: hidden;
     position: relative;
-    margin-left: 1.25rem;
-    margin-top: 0.333rem;
+    margin: 0.333rem 0 0 1.25rem;
     text-transform: uppercase;
   }
 
@@ -128,8 +127,7 @@
     vertical-align: middle;
     overflow: hidden;
     position: relative;
-    margin-left: 1.25rem;
-    margin-top: 0.333rem;
+    margin: 0.333rem 0 0 1.25rem;
     text-transform: uppercase;
   }
 
@@ -146,9 +144,5 @@
 
   &__o-nas-button:visited {
     outline: none;
-  }
-
-  &__o-nas-button::-moz-focus-inner {
-    border: 0;
   }
 }

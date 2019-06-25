@@ -1,8 +1,9 @@
 mixin footer-sigma(options={ glavnaya: "", katalog: "", contacts: "" })
     - let {glavnaya, katalog, contacts } = options;
     .footer-sigma
-        .footer-sigma__logo logotip
-        .footer-sigma__menu-container
-            a.footer-sigma__glavnaya-link(href="/mock-address/change-me")= glavnaya
-            a.footer-sigma__katalog-link(href="/mock-address/change-me")= katalog
-            a.footer-sigma__contacts-link(href="/mock-address/change-me")= contacts
+        .footer-sigma__wrapper
+            .footer-sigma__logo logotip
+            .footer-sigma__menu-container
+                a.footer-sigma__glavnaya-link(href="/mock-address/change-me")= glavnaya
+                a.footer-sigma__katalog-link(href="/mock-address/change-me")= katalog
+                a.footer-sigma__contacts-link(href="/mock-address/change-me")= contacts

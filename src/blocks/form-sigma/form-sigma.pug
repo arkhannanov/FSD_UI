@@ -1,22 +1,23 @@
 mixin form-sigma                            
     .form-sigma
-        .form-sigma__surname-container 
-            input(type="text", id="form-sigma__surname-input", placeholder="Ваша фамилия", class= "form-sigma__surname-input")
-            #form-sigma__surname-message
-        p#form-sigma__surname-error-message
-        .form-sigma__name-container
-            input(type="text", id="form-sigma__name-input", placeholder="Ваше имя", class= "form-sigma__name-input")
-            #form-sigma__name-message
-        p#form-sigma__name-error-message
-        .form-sigma__patronymic-container 
-            input(type="text", id="form-sigma__patronymic-input", placeholder="Ваше отчество", class= "form-sigma__patronymic-input")
-            #form-sigma__patronymic-message
-        p#form-sigma__patronymic-error-message
-        .form-sigma__phone-container 
-            input(type="text", id="form-sigma__phone-input", placeholder="Контактный телефон", class= "form-sigma__phone-input")
-            #form-sigma__phone-message
-        p#form-sigma__phone-error-message
-        .form-sigma__email-container 
-            input(type="text", id="form-sigma__email-input", placeholder="E-mail адрес", class= "form-sigma__email-input")
-            #form-sigma__email-message
-        p#form-sigma__email-error-message
+        .form-sigma__wrapper
+            .form-sigma__surname-container
+                input(type="text", id="form-sigma__surname-input", placeholder="Ваша фамилия", class= "form-sigma__surname-input")
+                #form-sigma__surname-message
+            #form-sigma__surname-error-message
+            .form-sigma__name-container
+                input(type="text", id="form-sigma__name-input", placeholder="Ваше имя", class= "form-sigma__name-input")
+                #form-sigma__name-message
+            #form-sigma__name-error-message
+            .form-sigma__patronymic-container
+                input(type="text", id="form-sigma__patronymic-input", placeholder="Ваше отчество", class= "form-sigma__patronymic-input")
+                #form-sigma__patronymic-message
+            #form-sigma__patronymic-error-message
+            .form-sigma__phone-container
+                input(type="text", id="form-sigma__phone-input", placeholder="Контактный телефон", class= "form-sigma__phone-input")
+                #form-sigma__phone-message
+            #form-sigma__phone-error-message
+            .form-sigma__email-container
+                input(type="text", id="form-sigma__email-input", placeholder="E-mail адрес", class= "form-sigma__email-input")
+                #form-sigma__email-message
+            #form-sigma__email-error-message

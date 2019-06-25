@@ -1,44 +1,45 @@
 include ../pie/pie.pug
 include ../calendar/calendar.pug
 
-mixin profile(options={headline:"", rightSideHeader:"", profession:"", phone:"", twitter:"", facebook:"", horror:"", thriller:"", drama:"", comedy:""})
+mixin profile(options = {headline: "", rightSideHeader: "", profession:"", phone:"", twitter:"", facebook:"", horror:"", thriller:"", drama:"", comedy:""})
     -let {headline, rightSideHeader, profession, phone, twitter, facebook, horror, thriller, drama, comedy}=options
     .profile
-        .profile__headline= headline
-        .profile__content-container
-            .profile__content-left-side-container
-                .profile__avatar-container
-                    .profile__avatar
-                    .profile__edit
-                        button(name="button",class="profile__edit-button") EDIT
-                .profile__calendar-container
-                    .profile__calendar
-                        +calendar
-            .profile__content-right-side-container
-                .profile__content-right-side-header= rightSideHeader
-                .profile__content-right-side-contacts
-                    .profile__profession-container
-                        .profile__profession-title profession
-                        .profile__profession=profession
-                    .profile__phone-container
-                        .profile__phone-title phone	
-                        .profile__phone= phone
-                    .profile__twitter-container
-                        .profile__twitter-title twitter
-                        .profile__twitter= twitter
-                    .profile__facebook-container
-                        .profile__facebook-title facebook
-                        .profile__facebook= facebook
-                .profile__content-right-side-skills
-                    .profile__skills-container
-                        ul.profile__skills-ul-container
-                            li.profile__horror-container
-                                span.profile__horror= horror 
-                            li.profile__thriller-container 
-                                span.profile__thriller= thriller 
-                            li.profile__drama-container 
-                                span.profile__drama= drama
-                            li.profile__comedy-container  
-                                span.profile__comedy= comedy
-                    .profile__pie-chart-container
-                        +pie
+        .profile__wrapper
+            .profile__headline= headline
+            .profile__content-container
+                .profile__content-left-side-container
+                    .profile__avatar-container
+                        .profile__avatar
+                        .profile__edit
+                            button.profile__edit-button(name="button") EDIT
+                    .profile__calendar-container
+                        .profile__calendar
+                            +calendar
+                .profile__content-right-side-container
+                    .profile__content-right-side-header= rightSideHeader
+                    .profile__content-right-side-contacts
+                        .profile__profession-container
+                            .profile__profession-title profession
+                            .profile__profession=profession
+                        .profile__phone-container
+                            .profile__phone-title phone
+                            .profile__phone= phone
+                        .profile__twitter-container
+                            .profile__twitter-title twitter
+                            .profile__twitter= twitter
+                        .profile__facebook-container
+                            .profile__facebook-title facebook
+                            .profile__facebook= facebook
+                    .profile__content-right-side-skills
+                        .profile__skills-container
+                            ul.profile__skills-ul-container
+                                li.profile__horror-container
+                                    span.profile__horror= horror
+                                li.profile__thriller-container
+                                    span.profile__thriller= thriller
+                                li.profile__drama-container
+                                    span.profile__drama= drama
+                                li.profile__comedy-container
+                                    span.profile__comedy= comedy
+                        .profile__pie-chart-container
+                            +pie

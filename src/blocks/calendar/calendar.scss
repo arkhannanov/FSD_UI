@@ -26,18 +26,21 @@
   text-align: center;
   border: 0;
   user-select: none;
+
   &__day {
     width: 4.167rem;
     height: 4.167rem;
   }
+
   &__upperheader {
     width: 11.625rem;
     height: 4.5rem;
     background-color: #e75735;
     font-size: 3.333rem;
     color: #ffffff;
-    border-radius: o.167rem 0.167rem 0 0;
+    margin: 0.167rem 0.167rem 0 0;
   }
+
    &__header {
     position: relative;
     background: #d54c2c;
@@ -50,9 +53,7 @@
     font-size: 1rem;
     letter-spacing: -0.03rem;
   }
-  &__year {
-     //color: #b3b3b3;
-  }
+
   &__btn {
     position: absolute;
     top: 0;
@@ -65,6 +66,7 @@
     border: none;
     cursor: pointer;
     outline: none;
+
     &:before {
       content: "";
       position: absolute;
@@ -73,21 +75,21 @@
       height: 0.833rem;
       width: 0.833rem;
     }
+
     &_prev {
       left: 0.208rem;
-      background-image: url('./images/arrow-left.png');
-      background-repeat: no-repeat;
-      background-position: 0.333rem 0.583rem;
+      background: url('./images/arrow-left.png') 0.333rem 0.583rem no-repeat;
+
       &:before {
         left: 0;
         transform: rotate(-45deg);
       }
     }
+
     &_next {
       right: 0.208rem;
-      background-image: url('./images/arrow-right.png');
-      background-repeat: no-repeat;
-      background-position: 0.333rem 0.583rem;
+      background: url('./images/arrow-right.png') 0.333rem 0.583rem no-repeat ;
+
       &:before {
         right: 0.333rem;
         transform: rotate(135deg);
@@ -95,6 +97,7 @@
     }
     &_disabled {
       pointer-events: none;
+
       &:before {
         border-color: #b2b2b2;
       }
@@ -113,11 +116,12 @@
     z-index: 200;
     margin-top: -0.833rem;
   }
+
   &__table {
-    margin-top: 0;
     width: 11.637rem;
     table-layout: fixed;
   }
+
   &__table-col-header {
     padding: 0 0;
     height: 0.917rem;
@@ -128,22 +132,23 @@
     background-color: #e75735;
     margin-top: 0.833rem;
   }
+
   &__table-cell {
     padding: 0 0;
     color: #868686;
-    font-size: 0.833rem;
-    font-weight: 700;
+    font: 700 0.833rem $thirdFont;
     letter-spacing: 0.05em;
     border-collapse: separate;
-    font-family: $thirdFont;
     background-color: #f2f2f2;
     width: 1.625rem;
     height: 1.625rem;
     cursor: pointer;
+
     &_disabled {
       color: #d3dbe8;
       pointer-events: none;
     }
+
     &_selected,
     &:hover {
       color: #ffffff;
@@ -165,8 +170,7 @@ table {
   width: 11.617rem;
   height: 1.125rem;
   background: #e75735;
-  margin-top: -1.083rem;
-  margin-left: -0.071rem;
+  margin: -1.083rem 0 0 -0.071rem;
   position: relative;
   z-index: -300;
 }
@@ -174,15 +178,12 @@ table {
 .footer {
   width: 10.825rem;
   height: 1.25rem;
-  margin-left: 0;
   background-color: #e5e5e5;
   font-weight: normal;
-  margin-left: -0.071rem;
   font-size: 0.542rem;
   letter-spacing: 0.027rem;
   color: #868686;
   text-align: left;
-  padding-left: 0.792rem;
-  padding-top: 0.792rem;
-  margin-bottom: 1.458rem;
+  padding: 0.792rem 0 0 0.792rem;
+  margin: 0 0 1.458rem -0.071rem;
 }
