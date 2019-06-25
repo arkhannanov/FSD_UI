@@ -1,13 +1,13 @@
-var firstCircle = document.getElementById('stages__first-circle');
-var secondCircle = document.getElementById('stages__second-circle');
-var thirdCircle = document.getElementById('stages__third-circle');
-var fourthCircle = document.getElementById('stages__fourth-circle');
-var fifthCircle = document.getElementById('stages__fifth-circle');
+let firstCircle = document.getElementById('stages__first-circle');
+let secondCircle = document.getElementById('stages__second-circle');
+let thirdCircle = document.getElementById('stages__third-circle');
+let fourthCircle = document.getElementById('stages__fourth-circle');
+let fifthCircle = document.getElementById('stages__fifth-circle');
 
-var firstDiv = document.getElementById('stages__first-div');
-var secondDiv = document.getElementById('stages__second-div');
-var thirdDiv = document.getElementById('stages__third-div');
-var fourthDiv = document.getElementById('stages__fourth-div');
+let firstDiv = document.getElementById('stages__first-div');
+let secondDiv = document.getElementById('stages__second-div');
+let thirdDiv = document.getElementById('stages__third-div');
+let fourthDiv = document.getElementById('stages__fourth-div');
 
 firstCircle.addEventListener('click', function() {
     firstCircle.style.cssText = 'background: #e75735; color: white;';

@@ -1,19 +1,19 @@
-var buttons = document.getElementsByName('button');
+let buttons = document.getElementsByName('button');
 
-Array.prototype.forEach.call(buttons, function(element) {
-    element.addEventListener('click', createRipple);
+Array.prototype.forEach.call(buttons, function(item) {
+    item.addEventListener('click', createRipple);
 });
 
-function createRipple (e) {
-    var circle = document.createElement('div');
+function createRipple (element) {
+    let circle = document.createElement('div');
     this.append(circle);
 
-    var d = Math.max(this.clientWidth, this.clientHeight);
+    let diametr = Math.max(this.clientWidth, this.clientHeight);
 
-    circle.style.width = circle.style.height = d + 'px';
+    circle.style.width = circle.style.height = diametr + 'px';
 
-    circle.style.left = e.clientX - this.offsetLeft - d/2 + 'px';
-    circle.style.top = e.clientY - this.offsetTop + window.pageYOffset - d/2 + 'px';   
+    circle.style.left = element.clientX - this.offsetLeft - diametr/2 + 'px';
+    circle.style.top = element.clientY - this.offsetTop + window.pageYOffset - diametr/2 + 'px';
 
-    circle.classList.add('ripple')
+    circle.classList.add('ripple');
 }

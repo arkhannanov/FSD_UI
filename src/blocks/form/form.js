@@ -1,21 +1,21 @@
-var formNameInput = document.getElementById('form__name-input');
-var formNameMessageContainer = document.getElementById('form__name-message-container');
-var formNameInputerrormessage = document.getElementById('form__name-input-error-message');
+let formNameInput = document.getElementById('form__name-input');
+let formNameMessageContainer = document.getElementById('form__name-message-container');
+let formNameInputerrormessage = document.getElementById('form__name-input-error-message');
 
-var formEmailInput = document.getElementById('form__email-input');
-var formEmailMessageContainer = document.getElementById('form__email-message-container');
-var formEmailInputErrorMessage = document.getElementById('form__email-input-error-message');
+let formEmailInput = document.getElementById('form__email-input');
+let formEmailMessageContainer = document.getElementById('form__email-message-container');
+let formEmailInputErrorMessage = document.getElementById('form__email-input-error-message');
 
-var formMessageInput = document.getElementById('form__message-input');
-var formSubmitButton = document.getElementById('form__submit-button');
-var formCompleteform = document.getElementById('form__completeform');
+let formMessageInput = document.getElementById('form__message-input');
+let formSubmitButton = document.getElementById('form__submit-button');
+let formCompleteform = document.getElementById('form__completeform');
 
-var fillName = false;
-var fillEmail = false;
-var fillMessage = false;
+let fillName = false;
+let fillEmail = false;
+let fillMessage = false;
 
-var errorName = true;
-var errorEmail = true;
+let errorName = true;
+let errorEmail = true;
 
 var firstMessage = "This field should at least contain 3 characters.";
 var secondMessage = "This seems to be an invalid email.";

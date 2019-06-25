@@ -1,10 +1,10 @@
-var korobkaContentline = document.getElementById('drop-down-korobka__contentline');
-var mechanic = document.getElementById('drop-down-korobka__mechanic');
-var automat = document.getElementById('drop-down-korobka__automat');
+let korobkaContentline = document.getElementById('drop-down-korobka__contentline');
+let mechanic = document.getElementById('drop-down-korobka__mechanic');
+let automat = document.getElementById('drop-down-korobka__automat');
 
-var placeContentline= document.getElementById('drop-down-place__contentline');
-var office = document.getElementById('drop-down-place__office');
-var phone = document.getElementById('drop-down-place__phone');
+let placeContentline= document.getElementById('drop-down-place__contentline');
+let office = document.getElementById('drop-down-place__office');
+let phone = document.getElementById('drop-down-place__phone');
 
 mechanic.addEventListener('click', checkMechanic);
 automat.addEventListener('click', checkAutomat);

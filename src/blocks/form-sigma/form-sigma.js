@@ -1,41 +1,41 @@
-var surnameInput = document.getElementById('form-sigma__surname-input');
-var surnameMessage = document.getElementById('form-sigma__surname-message');
-var surnameErrorMessage = document.getElementById('form-sigma__surname-error-message');
+let surnameInput = document.getElementById('form-sigma__surname-input');
+let surnameMessage = document.getElementById('form-sigma__surname-message');
+let surnameErrorMessage = document.getElementById('form-sigma__surname-error-message');
 
-var nameInput = document.getElementById('form-sigma__name-input');
-var nameMessage = document.getElementById('form-sigma__name-message');
-var nameErrorMessage = document.getElementById('form-sigma__name-error-message');
+let nameInput = document.getElementById('form-sigma__name-input');
+let nameMessage = document.getElementById('form-sigma__name-message');
+let nameErrorMessage = document.getElementById('form-sigma__name-error-message');
 
-var patronymicInput = document.getElementById('form-sigma__patronymic-input');
-var patronymicMessage = document.getElementById('form-sigma__patronymic-message');
-var patronymicErrorMessage = document.getElementById('form-sigma__patronymic-error-message');
+let patronymicInput = document.getElementById('form-sigma__patronymic-input');
+let patronymicMessage = document.getElementById('form-sigma__patronymic-message');
+let patronymicErrorMessage = document.getElementById('form-sigma__patronymic-error-message');
 
-var phoneInput = document.getElementById('form-sigma__phone-input');
-var phoneMessage = document.getElementById('form-sigma__phone-message');
-var phoneErrorMessage = document.getElementById('form-sigma__phone-error-message');
+let phoneInput = document.getElementById('form-sigma__phone-input');
+let phoneMessage = document.getElementById('form-sigma__phone-message');
+let phoneErrorMessage = document.getElementById('form-sigma__phone-error-message');
 
-var emailInput = document.getElementById('form-sigma__email-input');
-var emailMessage = document.getElementById('form-sigma__email-message');
-var emailErrorMessage = document.getElementById('form-sigma__email-error-message');
+let emailInput = document.getElementById('form-sigma__email-input');
+let emailMessage = document.getElementById('form-sigma__email-message');
+let emailErrorMessage = document.getElementById('form-sigma__email-error-message');
 
 
-var submitForm = document.getElementById('submit');
-var completeForm = document.getElementById('completeform');
+let submitForm = document.getElementById('submit');
+let completeForm = document.getElementById('completeform');
 
-var fillSurname = false;
-var fillName = false;
-var fillPatronymic = false;
-var fillPhone = false;
-var fillEmail = false;
+let fillSurname = false;
+let fillName = false;
+let fillPatronymic = false;
+let fillPhone = false;
+let fillEmail = false;
 
-var errorSurname = true;
-var errorName = true;
-var errorPatronymic = true;
-var errorPhone = true;
-var errorEmail = true;
+let errorSurname = true;
+let errorName = true;
+let errorPatronymic = true;
+let errorPhone = true;
+let errorEmail = true;
 
-var message = "Должно быть по крайней мере 3 симовола.";
-var formNotComplete = "Форма не закончена!"
+let message = "Должно быть по крайней мере 3 симовола.";
+let formNotComplete = "Форма не закончена!"
 
 surnameInput.addEventListener('keyup', checkSurnameInput);
 nameInput.addEventListener('keyup', checkNameInput);

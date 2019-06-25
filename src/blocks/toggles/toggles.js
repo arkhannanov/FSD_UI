@@ -1,6 +1,6 @@
-var toggl = document.getElementsByName('toggles__toggl');
-var togglesCircle = document.getElementsByName('toggles__circle');
-var statusOff = [];
+let toggl = document.getElementsByName('toggles__toggl');
+let togglesCircle = document.getElementsByName('toggles__circle');
+let statusOff = [];
 
 Array.prototype.forEach.call(toggl, function(element,index) {
     element.addEventListener('click', chg);

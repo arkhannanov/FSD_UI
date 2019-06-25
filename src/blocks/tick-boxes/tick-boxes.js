@@ -1,5 +1,5 @@
-var tickBoxes = document.getElementsByName('tick-boxes');
-var statusOff = [];
+let tickBoxes = document.getElementsByName('tick-boxes');
+let statusOff = [];
 
 Array.prototype.forEach.call(tickBoxes, function(element,index)
 {
@@ -10,7 +10,7 @@ Array.prototype.forEach.call(tickBoxes, function(element,index)
 function chg ()
 {
    
-for (var i = 0; i < statusOff.length; i++) {
+for (let i = 0; i < statusOff.length; i++) {
   
          if (statusOff[i]==true)
         {

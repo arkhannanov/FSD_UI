@@ -1,35 +1,35 @@
-var jobTitleInput = document.getElementById('form-betta__job-title-input');
-var jobTitleMessage = document.getElementById('form-betta__job-title-message');
-var jobTitleErrorMessage = document.getElementById('form-betta__job-title-error-message');
+let jobTitleInput = document.getElementById('form-betta__job-title-input');
+let jobTitleMessage = document.getElementById('form-betta__job-title-message');
+let jobTitleErrorMessage = document.getElementById('form-betta__job-title-error-message');
 
-var facebookInput = document.getElementById('form-betta__facebook-input');
-var facebookMessage = document.getElementById('form-betta__facebook-message');
-var facebookErrorMessage = document.getElementById('form-betta__facebook-error-message');
+let facebookInput = document.getElementById('form-betta__facebook-input');
+let facebookMessage = document.getElementById('form-betta__facebook-message');
+let facebookErrorMessage = document.getElementById('form-betta__facebook-error-message');
 
-var twitterInput = document.getElementById('form-betta__twitter-input');
-var twitterMessage = document.getElementById('form-betta__twitter-message');
-var twitterErrorMessage = document.getElementById('form-betta__twitter-error-message');
+let twitterInput = document.getElementById('form-betta__twitter-input');
+let twitterMessage = document.getElementById('form-betta__twitter-message');
+let twitterErrorMessage = document.getElementById('form-betta__twitter-error-message');
 
-var dribbbleInput = document.getElementById('form-betta__dribbble-input');
-var dribbbleMessage = document.getElementById('form-betta__dribbble-message');
-var dribbbleErrorMessage = document.getElementById('form-betta__dribbble-error-message');
+let dribbbleInput = document.getElementById('form-betta__dribbble-input');
+let dribbbleMessage = document.getElementById('form-betta__dribbble-message');
+let dribbbleErrorMessage = document.getElementById('form-betta__dribbble-error-message');
 
 
-var submitButton = document.getElementById('form-betta__submit-button');
-var completeForm = document.getElementById('form-betta__completeform');
+let submitButton = document.getElementById('form-betta__submit-button');
+let completeForm = document.getElementById('form-betta__completeform');
 
-var fillJob = false;
-var fillFacebook = false;
-var fillTwitter = false;
-var fillDribbble = false;
+let fillJob = false;
+let fillFacebook = false;
+let fillTwitter = false;
+let fillDribbble = false;
 
-var errorJob = true;
-var errorFacebook = true;
-var errorTwitter = true;
-var errorDribbble = true;
+let errorJob = true;
+let errorFacebook = true;
+let errorTwitter = true;
+let errorDribbble = true;
 
-var message = "This field should at least contain 3 characters.";
-var formNotComplete = "Form is not complete.";
+let message = "This field should at least contain 3 characters.";
+let formNotComplete = "Form is not complete.";
 
 jobTitleInput.addEventListener('keyup', checkJobTitleInput);
 facebookInput.addEventListener('keyup', checkFacebookInput);
