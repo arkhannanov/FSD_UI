@@ -16,7 +16,7 @@
 
   .search-drop-down {
     width: 11.458rem;
-
+    margin-right: 0.7rem;
   }
 
     .news-events-container {
@@ -24,7 +24,7 @@
     }
   .user-profile {
     width: 11.458rem;
-    margin-right: 3rem;
+    margin-right: 2.6rem;
 
     &__headline {
       margin-left: 2rem;
@@ -37,7 +37,6 @@
 }
 
 .buttons {
-  margin: 0 auto;
   width: 100%;
 
   &__container{
@@ -45,8 +44,7 @@
     padding-top: 2.5rem;
     display: flex;
     flex-direction: column;
-    margin: auto;
-    margin-bottom: 1.5rem;
+    margin: auto auto 1.5rem auto;
   }
 
   &__clicked,
@@ -86,10 +84,8 @@
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-    margin-bottom: 1rem;
     width: 25rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 1rem auto;
   }
 
   .sliders_slider-wrapper {}
@@ -99,7 +95,7 @@
     margin: auto;
 
     &__stages-wrapper {
-      margin-top: 0.9rem;
+      margin-top: 1.5rem;
       margin-bottom: 2.2rem;
     }
   }
@@ -109,7 +105,7 @@
     display: flex;
     flex-direction: row;
     width: 40%;
-    margin-bottom: 1.4rem;
+    margin-bottom: 0.8rem;
   }
 
   &__form {
@@ -127,32 +123,28 @@
   &__toggle-container {
     display: flex;
     flex-direction: row;
-    margin-top: 1.3rem;
-    margin-bottom: 0.55rem;
+    margin: 1.3rem 0 1.45rem 0;
   }
 
   &__tick-boxes-container {
     display: flex;
     flex-direction: row;
-    margin-top: 1.2rem;
+    margin: 1.2rem 0 1rem 1.4rem;
     width: 70%;
-    margin-left: 0.6rem;
   }
 }
 
   .percents-pie {
     .percents-pie__container {
-      margin-bottom: 1rem;
-      margin-top: 1rem;
+      margin: 1rem 0 1rem 0;
     }
     .percents-pie__wrapper {
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
+      margin: 0 0.5rem 0 0.5rem;
     }
   }
 
   .search-drop-down {
-    margin-left: 4%;
+    margin-left: 2%;
   }
   .search-drop-down__search {
     margin: auto;
@@ -194,8 +186,6 @@
     margin-left: 2rem;
   }
   .messaging__messaging {
-    margin-right: 2rem;
-    margin-top: 0.5rem;
   }
 }
 

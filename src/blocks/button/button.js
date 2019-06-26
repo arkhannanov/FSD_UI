@@ -10,10 +10,10 @@ function createRipple (element) {
 
     let diametr = Math.max(this.clientWidth, this.clientHeight);
 
-    circle.style.width = circle.style.height = diametr + 'px';
+    circle.style.width = circle.style.height = `${diametr}px`;
 
-    circle.style.left = element.clientX - this.offsetLeft - diametr/2 + 'px';
-    circle.style.top = element.clientY - this.offsetTop + window.pageYOffset - diametr/2 + 'px';
+    circle.style.left = element.clientX - this.offsetLeft - `${diametr/2}px`;
+    circle.style.top = element.clientY - this.offsetTop + window.pageYOffset - `${diametr/2}px`;
 
     circle.classList.add('ripple');
 }
