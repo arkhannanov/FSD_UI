@@ -1,5 +1,6 @@
-mixin tick-boxes
+mixin tick-boxes(options = {id:""})
+    - let {id} = options;
     .tick-boxes
         .tick-boxes__wrapper
-            .tick-boxes__container
-                button(id="tick-boxes",name="tick-boxes")
+            label(for=`${id}`)
+                input(id=`${id}`,type="checkbox", checked)

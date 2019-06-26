@@ -39,15 +39,21 @@ mixin page-sigma
                         .add__headline Добавить в машину:
                         .add__kreslo-container
                             .add__tick-box
-                                +tick-boxes
+                                +tick-boxes({
+                                    id: "1"
+                                })
                             .add__kreslo Детское кресло
                         .add__navigator-container
                             .add__tick-box
-                                +tick-boxes
+                                +tick-boxes({
+                                    id: "2"
+                                })
                             .add__navigator Навигатор
                         .add__holodilnik-container
                             .add__tick-box
-                                +tick-boxes
+                                +tick-boxes({
+                                    id: "3"
+                                })
                             .add__holodilnik Автохолодильник
                     .form
                         +form-sigma

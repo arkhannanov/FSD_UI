@@ -103,7 +103,7 @@
       margin-bottom: 2.2rem;
     }
   }
-.form-tick-boxes-toggles {
+.form-tick-boxes-toggle {
   
   &-container {
     display: flex;
@@ -118,13 +118,13 @@
     margin-right: 4.4rem;
   }
 
-  &__tick-boxes-toggles {
+  &__tick-boxes-toggle {
     margin-top: 1.3rem;
     width: 5rem;
     margin-left: 1rem;
   }
 
-  &__toggles-container {
+  &__toggle-container {
     display: flex;
     flex-direction: row;
     margin-top: 1.3rem;

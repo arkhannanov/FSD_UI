@@ -1,4 +1,4 @@
-include ../toggles/toggles.pug
+include ../toggle/toggle.pug
 
 mixin form-betta(options={toggleContent:""})
     -let {toggleContent} = options;
@@ -22,7 +22,9 @@ mixin form-betta(options={toggleContent:""})
                 #form-betta__dribbble-message
             #form-betta__dribbble-error-message
             .form-betta__toggle
-                +toggles
+                +toggle({
+                    id: "1"
+                })
                 .form-betta__toggle-content= toggleContent
             .form-betta__submit-container
                 button(id="form-betta__submit-button", class="form-betta__submit-button") submit

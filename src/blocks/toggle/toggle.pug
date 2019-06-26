@@ -1,0 +1,9 @@
+mixin toggle(options = {id:""})
+    - let {id} = options;
+    .toggle
+        .toggle__wrapper
+            .toggle__container
+                input.toggle__input(type="checkbox", id=`toggle__input_${id}`, checked)
+                label.toggle__label(for=`toggle__input_${id}`)
+                    span.toggle__inner
+                    span.toggle__switch

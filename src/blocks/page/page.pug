@@ -6,7 +6,7 @@ include ../slider/slider
 include ../step-slider/step-slider
 include ../stages/stages.pug
 include ../form/form.pug
-include ../toggles/toggles.pug
+include ../toggle/toggle.pug
 include ../tick-boxes/tick-boxes.pug
 include ../search/search.pug
 include ../drop-down/drop-down.pug
@@ -175,20 +175,28 @@ mixin page
                     +headline ("stages")
                     .stages__stages-wrapper
                         +stages
-                .form-tick-boxes-toggles
+                .form-tick-boxes-toggle
                     +headline ("form elements")
-                    .form-tick-boxes-toggles-container
-                        .form-tick-boxes-toggles__form
+                    .form-tick-boxes-toggle-container
+                        .form-tick-boxes-toggle__form
                             +form
-                        .form-tick-boxes-toggles__tick-boxes-toggles
-                            +headline ("toggles")
-                            .form-tick-boxes-toggles__toggles-container
-                                +toggles
-                                +toggles
+                        .form-tick-boxes-toggle__tick-boxes-toggle
+                            +headline ("toggle")
+                            .form-tick-boxes-toggle__toggle-container
+                                +toggle({
+                                    id: "1"
+                                })
+                                +toggle({
+                                    id: "2"
+                                })
                             +headline ("tick boxes")
-                            .form-tick-boxes-toggles__tick-boxes-container
-                                +tick-boxes
-                                +tick-boxes
+                            .form-tick-boxes-toggle__tick-boxes-container
+                                +tick-boxes({
+                                    id: "1"
+                                })
+                                +tick-boxes({
+                                    id: "2"
+                                })
                 .search-drop-down-user-profile
                     .search-drop-down
                         +headline ("search / drop down")

@@ -1,0 +1,79 @@
+.toggle {
+
+  &__wrapper {
+    width: 2.5rem;
+    margin-right: 0.5rem;
+  }
+
+  &__container {
+    position: relative;
+    width: 2.5rem;
+    -webkit-user-select:none;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 1.208rem;
+  }
+
+  &__inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+  }
+
+  &__inner:before, &__inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 1rem;
+    padding: 0;
+    line-height: 1rem;
+    font-size: 0.5rem;
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+
+  &__inner:before {
+    content: "on";
+    padding-left: 0.333rem;
+    background-color: #4EB7A8;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+
+  &__inner:after {
+    content: "off";
+    padding-right: 0.333rem;
+    background-color: #E5E5E5; color: #FFFFFF;
+    text-align: right;
+    text-transform: uppercase;
+  }
+
+  &__switch {
+    display: block;
+    width: 0.75rem;
+    margin: 0.125rem;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 1.333rem;
+    border-radius: 1.208rem;
+    transition: all 0.3s ease-in 0s;
+  }
+  .toggle__input:checked + .toggle__label .toggle__inner {
+    margin-left: 0;
+  }
+  .toggle__input:checked + .toggle__label .toggle__switch {
+    right: 0px;
+  }
+}

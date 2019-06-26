@@ -1,25 +1,36 @@
 .tick-boxes {
 
-  &__wrapper {
-    width: 0.5rem;
-    margin: auto;
-  }
 
-  &__container {   
-      width: 1.25rem;
-  }
-
-  #tick-boxes {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    border: 0;
-    background: #e5e5e5 url('./images/tick-box-2.png') 0.25rem 0.271rem no-repeat;
-  }
-
-  #tick-boxes, 
-  #tick-boxes:active, 
-  #tick-boxes:focus {
+  input[type=checkbox] {
+    position: relative;
+    appearance: none;
+    width: 3em;
+    margin: 0;
     outline: none;
+    transition: 300ms ease-out;
+
+    &::after {
+      content: ''; // circle
+      display: inline-block;
+      width: 1.5em;
+      height: 0.83rem;
+      background: #E5E5E5 url("./images/tick-box-2.png") 0.16rem 0.2rem no-repeat;
+      border-radius: 50%;
+    }
+
+    &:checked::after {
+      font-weight: 900;
+    }
+    &:active {
+      transform: scale(.6);
+    }
+  }
+
+  input[type=checkbox]:checked::after {
+    content: '';
+    background: #4EB7A8 url("./images/tick-box-1.png") 0.16rem 0.2rem no-repeat;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 0.83rem;
   }
 }
