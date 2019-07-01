@@ -1,15 +1,3 @@
-let formNameInput = document.getElementById('form__name-input');
-let formNameMessageContainer = document.getElementById('form__name-message-container');
-let formNameInputerrormessage = document.getElementById('form__name-input-error-message');
-
-let formEmailInput = document.getElementById('form__email-input');
-let formEmailMessageContainer = document.getElementById('form__email-message-container');
-let formEmailInputErrorMessage = document.getElementById('form__email-input-error-message');
-
-let formMessageInput = document.getElementById('form__message-input');
-let formSubmitButton = document.getElementById('form__submit-button');
-let formCompleteform = document.getElementById('form__completeform');
-
 let fillName = false;
 let fillEmail = false;
 let fillMessage = false;
@@ -17,120 +5,141 @@ let fillMessage = false;
 let errorName = true;
 let errorEmail = true;
 
-var firstMessage = "This field should at least contain 3 characters.";
-var secondMessage = "This seems to be an invalid email.";
-var formNotComplete = "Form is not complete.";
+const firstMessage = 'This field should at least contain 3 characters.';
+const secondMessage = 'This seems to be an invalid email.';
+const formNotComplete = 'Form is not complete.';
 
-formNameInput.addEventListener('keyup', checkFormNameInput);
-formEmailInput.addEventListener('keyup', checkFormEmailInput);
-formMessageInput.addEventListener('keyup', checkFormMessageInput);
-
-formSubmitButton.addEventListener('click', submit);
-
-function checkFormNameInput(e) {
-    let usedInput = e.target;
-    let inputValue = usedInput.value;
-
-    if(inputValue.length <= 3){
-        errorName=true;
+class Form {
+    constructor(root) {
+        this.formNameInput = root.formNameInput;
+        this.formNameMessageContainer = root.formNameMessageContainer;
+        this.formNameInputErrorMessage = root.formNameInputErrorMessage;
+        this.formEmailInput = root.formEmailInput;
+        this.formEmailMessageContainer = root.formEmailMessageContainer;
+        this.formEmailInputErrorMessage = root.formEmailInputErrorMessage;
+        this.formMessageInput = root.formMessageInput;
+        this.formSubmitButton = root.formSubmitButton;
+        this.formCompleteform = root.formCompleteform;
+        this.enableFormNameInput();
+        this.enableFormEmailInput();
+        this.enableFormMessageInput();
+        this.enableFormSubmitButton();
     }
-    else
-    {
-        errorName=false;
+
+    enableFormNameInput() {
+        this.formNameInput.addEventListener('keyup', this.checkFormNameInput.bind(this));
     }
 
-    if(inputValue.length>0)
-    {
-        fillName = true;
+    enableFormEmailInput() {
+        this.formEmailInput.addEventListener('keyup', this.checkFormEmailInput.bind(this));
     }
-    else
-    {
-        fillName = false; 
+
+    enableFormMessageInput() {
+        this.formMessageInput.addEventListener('keyup', this.checkFormMessageInput.bind(this));
+    }
+
+    enableFormSubmitButton() {
+        this.formSubmitButton.addEventListener('click', this.submit.bind(this));
+    }
+
+    checkFormNameInput(element) {
+        const usedInput = element.target;
+        const inputValue = usedInput.value;
+
+        if (inputValue.length <= 3) {
+            errorName = true;
+        } else {
+            errorName = false;
+        }
+
+        if (inputValue.length > 0) {
+            fillName = true;
+        } else {
+            fillName = false;
+        }
+    }
+
+    checkFormEmailInput(element) {
+        const usedInput = element.target;
+        const inputValue = usedInput.value;
+
+        if (!inputValue.includes('@') || !inputValue.includes('.')) {
+            errorEmail = true;
+        } else {
+            errorEmail = false;
+        }
+
+        if (inputValue.length > 0) {
+            fillEmail = true;
+        } else {
+            fillEmail = false;
+        }
+    }
+
+    checkFormMessageInput(element) {
+        const usedInput = element.target;
+        const inputValue = usedInput.value;
+
+        if (inputValue.length > 0) {
+            fillMessage = true;
+        } else {
+            fillMessage = false;
+        }
+    }
+
+    submit() {
+
+        if (errorName === true) {
+            this.formNameInputErrorMessage.innerHTML = firstMessage;
+            this.formNameMessageContainer.innerHTML = 'ERROR';
+            this.formNameMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-orange.png\');';
+            setTimeout(() => {
+                this.formNameInputErrorMessage.innerHTML = '';
+            }, 2000);
+        } else {
+            this.formNameInputErrorMessage.innerHTML = '';
+            this.formNameMessageContainer.innerHTML = 'THANKS!';
+            this.formNameMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-color2.png\');';
+            setTimeout(() => {
+                this.formNameInputErrorMessage.innerHTML = '';
+            }, 2000);
+        }
+
+        if (errorEmail === true) {
+            this.formEmailInputErrorMessage.innerHTML = secondMessage;
+            this.formEmailMessageContainer.innerHTML = 'ERROR';
+            this.formEmailMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-orange.png\');';
+            setTimeout(() => {
+                this.formEmailInputErrorMessage.innerHTML = '';
+            }, 2000);
+        } else {
+            this.formEmailInputErrorMessage.innerHTML = '';
+            this.formEmailMessageContainer.innerHTML = 'THANKS!';
+            this.formEmailMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-color2.png\');';
+            setTimeout(() => {
+                this.formEmailInputErrorMessage.innerHTML = '';
+            }, 2000);
+        }
+
+        if (fillName === false || fillEmail === false || fillMessage === false) {
+            this.formCompleteform.innerHTML = formNotComplete;
+        } else {
+            this.formCompleteform.innerHTML = '';
+        }
     }
 }
 
-function checkFormEmailInput(e) {
-    let usedInput = e.target;
-    let inputValue = usedInput.value;
 
-    if(!inputValue.includes ('@') || !inputValue.includes ('.')){
-        errorEmail=true;
-    }
-    else
-    {
-        errorEmail=false;
-    }
+const root = {
+    formNameInput: document.getElementById('form__name-input'),
+    formNameMessageContainer: document.getElementById('form__name-message-container'),
+    formNameInputErrorMessage: document.getElementById('form__name-input-error-message'),
+    formEmailInput: document.getElementById('form__email-input'),
+    formEmailMessageContainer: document.getElementById('form__email-message-container'),
+    formEmailInputErrorMessage: document.getElementById('form__email-input-error-message'),
+    formMessageInput: document.getElementById('form__message-input'),
+    formSubmitButton: document.getElementById('form__submit-button'),
+    formCompleteform: document.getElementById('form__completeform'),
+};
 
-    if(inputValue.length>0)
-    {
-        fillEmail = true;
-    }
-    else
-    {
-        fillEmail = false; 
-    }
-}
-
-function checkFormMessageInput(e) {
-    let usedInput = e.target;
-    let inputValue = usedInput.value;
-
-    if(inputValue.length>0)
-    {
-        fillMessage = true;
-    }
-    else
-    {
-        fillMessage = false; 
-    }
-}
-
-function submit(){
-
-if (errorName==true){
-    formNameInputerrormessage.innerHTML=firstMessage;
-    formNameMessageContainer.innerHTML="ERROR";
-    formNameMessageContainer.style.cssText="background-image: url('./src/blocks/form/images/form-orange.png');";
-    setTimeout(() => {
-        input1_errorMessage.innerHTML="";
-    }, 2000);
-}
-else
-{
-    formNameInputerrormessage.innerHTML="";
-    formNameMessageContainer.innerHTML="THANKS!";
-    formNameMessageContainer.style.cssText="background-image: url('./src/blocks/form/images/form-color2.png');";
-    setTimeout(() => {
-        formNameInputerrormessage.innerHTML="";
-    }, 2000);
-}
-
-if (errorEmail==true){
-    formEmailInputErrorMessage.innerHTML=secondMessage;
-    formEmailMessageContainer.innerHTML="ERROR";
-    formEmailMessageContainer.style.cssText="background-image: url('./src/blocks/form/images/form-orange.png');";
-    setTimeout(() => {
-        formEmailInputErrorMessage.innerHTML="";
-    }, 2000);
-}
-else
-{
-    formEmailInputErrorMessage.innerHTML="";
-    formEmailMessageContainer.innerHTML="THANKS!";
-    formEmailMessageContainer.style.cssText="background-image: url('./src/blocks/form/images/form-color2.png');";
-    setTimeout(() => {
-        formEmailInputErrorMessage.innerHTML="";
-    }, 2000);
-}
-
-if(fillName==false || fillEmail==false || fillMessage==false)
-{
-    formCompleteform.innerHTML=formNotComplete;
-}
-else
-{
-    formCompleteform.innerHTML="";
-}
-}
-
-
+new Form(root);

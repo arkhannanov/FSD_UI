@@ -1,104 +1,143 @@
-// get elements
-
-const player = document.querySelector('.player');
-const video = player.querySelector('.viewer');
-const progress = player.querySelector('.player__progress');
-const progressBar = player.querySelector('.player__progress_filled');
-const toggle = player.querySelector('.toggle');
-const skipButtons = player.querySelectorAll('[data-skip]');
-const ranges = player.querySelectorAll('.player__slider');
-const fullscreen = player.querySelector('.fullscreen');
-const filled = player.querySelector('.player__progress_filled');
-
-// build functions
-
-function togglePlay() {
-	const method = video.paused ? 'play' : 'pause';
-	video[method]();
-}
-
-function updateButton() {
-	const icon = this.paused ? '►' : '❚ ❚';
-	toggle.textContent = icon;
-}
-
-function skip() {
-	video.currentTime += parseFloat(this.dataset.skip);
-}
-
-function handleRangeUpdate() {
-	video[this.name] = this.value;
-}
-
-function handleProgress() {
-	const percent = (video.currentTime / video.duration) * 100;
-	filled.style.width = `${percent}%`;
-}
-
-function scrub(e) {
-	const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
-	video.currentTime = scrubTime;
-}
-
-// fullscreen function
-function toggleFullscreen() {
-  if (!document.fullscreenElement && !document.mozFullScreenElement &&
-    !document.webkitFullscreenElement && !document.msFullscreenElement) {
-    if (player.requestFullscreen) {
-      player.requestFullscreen();
-    } else if (player.msRequestFullscreen) {
-      player.msRequestFullscreen();
-    } else if (player.mozRequestFullScreen) {
-      player.mozRequestFullScreen();
-    } else if (player.webkitRequestFullscreen) {
-      player.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
-    }
-  } else {
-    if (document.exitFullscreen) {
-      document.exitFullscreen();
-    } else if (document.msExitFullscreen) {
-      document.msExitFullscreen();
-    } else if (document.mozCancelFullScreen) {
-      document.mozCancelFullScreen();
-    } else if (document.webkitExitFullscreen) {
-      document.webkitExitFullscreen();
-    }
-  }
-}
-
-// play/pause with space-bar and skip with left/right arrow
-function keyNav(e) {
-  
-	if(e.code === "Space") {
-		togglePlay();
-	} else if (e.code === "ArrowRight") {
-		video.currentTime += 25;
-	} else if (e.code === "ArrowLeft") {
-		video.currentTime -= 10;
-	}
-}
-
-// hook up the eventlisteners
-
-video.addEventListener('click', togglePlay);
-video.addEventListener('play', updateButton);
-video.addEventListener('pause', updateButton); 
-video.addEventListener('timeupdate', handleProgress);
-
-toggle.addEventListener('click', togglePlay);
-skipButtons.forEach(button => button.addEventListener('click', skip));
-
-ranges.forEach(range => range.addEventListener('change', handleRangeUpdate));
-ranges.forEach(range => range.addEventListener('mousemove', handleRangeUpdate));
-
 let mousedown = false;
-progress.addEventListener('click', scrub);
-progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
-progress.addEventListener('mousedown', () => mousedown = true);
-progress.addEventListener('mouseup', () => mousedown = false);
 
-// fullscreen button
-fullscreen.addEventListener('click', toggleFullscreen);
+class Player {
+    constructor(root) {
+        this.playerMain = root.playerMain;
+        this.video = root.video;
+        this.progress = root.progress;
+        this.progressBar = root.progressBar;
+        this.toggle = root.toggle;
+        this.fullscreen = root.fullscreen;
+        this.filled = root.filled;
+        this.enableTogglePlay();
+        this.enableUpdateButtonPlay();
+        this.enableUpdateButtonPause();
+        this.enableHandleProgress();
+        this.enableTogglePlay();
+        this.enableProgressClick();
+        this.enableProgressMouseMove();
+        this.enableProgressMouseDown();
+        this.enableProgressMouseUp();
+        this.enableToggleFullscreen();
+        this.enableKeyNav();
+    }
 
-// play/pause with spacebar
-window.addEventListener('keyup', keyNav);
+    enableTogglePlay() {
+        this.video.addEventListener('click', this.togglePlay.bind(this));
+    }
+
+    enableUpdateButtonPlay() {
+        this.video.addEventListener('play', this.updateButton.bind(this));
+    }
+
+    enableUpdateButtonPause() {
+        this.video.addEventListener('pause', this.updateButton.bind(this));
+    }
+
+    enableHandleProgress() {
+        this.video.addEventListener('timeupdate', this.handleProgress.bind(this));
+    }
+
+    enableProgressClick() {
+        this.progress.addEventListener('click', this.scrub.bind(this));
+    }
+
+    enableProgressMouseMove() {
+        this.progress.addEventListener('mousemove', (element) => mousedown && this.scrub(element).bind(this));
+    }
+
+    enableProgressMouseDown() {
+        this.progress.addEventListener('mousedown', () => mousedown = true);
+    }
+
+    enableProgressMouseUp() {
+        this.progress.addEventListener('mouseup', () => mousedown = false);
+    }
+
+    enableToggleFullscreen() {
+        this.fullscreen.addEventListener('click', this.toggleFullscreen.bind(this));
+    }
+
+    enableKeyNav() {
+        window.addEventListener('keyup', this.keyNav.bind(this));
+    }
+
+    togglePlay() {
+        const method = this.video.paused ? 'play' : 'pause';
+        this.video[method]();
+        console.log(this.video.paused);
+    }
+
+    updateButton() {
+        const icon = this.video.paused ? '►' : '❚ ❚';
+        this.toggle.textContent = icon;
+    }
+
+    skip() {
+        this.video.currentTime += parseFloat(this.dataset.skip);
+    }
+
+    handleRangeUpdate() {
+        this.video[this.name] = this.value;
+    }
+
+    handleProgress() {
+        const percent = (this.video.currentTime / this.video.duration) * 100;
+        this.filled.style.width = `${percent}%`;
+    }
+
+    scrub(element) {
+        const scrubTime = (element.offsetX / this.progress.offsetWidth) * this.video.duration;
+        this.video.currentTime = scrubTime;
+
+    }
+
+    toggleFullscreen() {
+        if (!document.fullscreenElement && !document.mozFullScreenElement &&
+            !document.webkitFullscreenElement && !document.msFullscreenElement) {
+            if (this.playerMain.requestFullscreen) {
+                this.playerMain.requestFullscreen();
+            } else if (this.playerMain.msRequestFullscreen) {
+                this.playerMain.msRequestFullscreen();
+            } else if (this.playerMain.mozRequestFullScreen) {
+                this.playerMain.mozRequestFullScreen();
+            } else if (this.playerMain.webkitRequestFullscreen) {
+                this.playerMain.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+            }
+        } else {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.msExitFullscreen) {
+                document.msExitFullscreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
+            }
+        }
+    }
+
+    keyNav(element) {
+        if(element.code === "Space") {
+            this.togglePlay();
+        } else if (element.code === "ArrowRight") {
+            this.video.currentTime += 25;
+        } else if (element.code === "ArrowLeft") {
+            this.video.currentTime -= 10;
+        }
+    }
+}
+
+const playerDoc = document.querySelector('.player');
+// get elements
+const root = {
+    playerMain: document.querySelector('.player'),
+    video: playerDoc.querySelector('.viewer'),
+    progress: playerDoc.querySelector('.player__progress'),
+    progressBar: playerDoc.querySelector('.player__progress_filled'),
+    toggle: playerDoc.querySelector('.toggle'),
+    fullscreen: playerDoc.querySelector('.fullscreen'),
+    filled: playerDoc.querySelector('.player__progress_filled'),
+};
+
+new Player(root);

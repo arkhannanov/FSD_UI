@@ -1,10 +1,11 @@
-import '../../blocks/button/button.js'
-import '../../blocks/calendar/calendar.js'
-import '../../blocks/form-sigma/form-sigma.js'
-import '../../blocks/slider/slider.js'
+import '../../blocks/button/button';
+import '../../blocks/calendar/calendar';
+import '../../blocks/form-sigma/form-sigma';
+import '../../blocks/slider/slider';
+import '../../blocks/page-sigma/drop-down';
 
 function importAll(resolve) {
     resolve.keys().forEach(resolve);
-  }
-  
+}
+
 importAll(require.context('./../../', true, /\.(scss)$/));

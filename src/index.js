@@ -1,16 +1,16 @@
-import './blocks/button/button.js'
-import './blocks/slider/slider.js'
-import './blocks/step-slider/step-slider.js'
-import './blocks/stages/stages.js'
-import './blocks/form/form.js'
-import './blocks/search/search.js'
-import './blocks/location/location.js'
-import './blocks/calendar/calendar.js'
-import './blocks/player/player.js'
-import './js/favicons.js'
+import './blocks/button/button';
+import './blocks/slider/slider';
+import './blocks/step-slider/step-slider';
+import './blocks/stages/stages';
+import './blocks/form/form';
+import './blocks/search/search';
+import './blocks/location/location';
+import './blocks/calendar/calendar';
+import './blocks/player/player';
+import './js/favicons';
 
 function importAll(resolve) {
     resolve.keys().forEach(resolve);
-  }
-  
+}
+
 importAll(require.context('./', true, /\.(scss)$/));

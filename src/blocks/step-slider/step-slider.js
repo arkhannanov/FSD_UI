@@ -1,11 +1,22 @@
-import { compileFunction } from "vm";
+class StepSlider {
+    constructor(root) {
+        this.rangeSlider = root.rangeSlider;
+        this.color = root.color;
+        this.enableRangeSlider();
+    }
 
-let rangeSlider2 = document.getElementById("rs-range-line2");
-let color = document.getElementById("step-slider_color");
+    enableRangeSlider() {
+        this.rangeSlider.addEventListener('input', this.showSliderValue.bind(this), false);
+    }
 
-rangeSlider2.addEventListener("input", showSliderValue2, false);
-
-function showSliderValue2() {
-  let bulletPosition2 = (rangeSlider2.value /rangeSlider2.max);
-  color.style.width = (bulletPosition2 * 235) + 6 + "px";
+    showSliderValue() {
+        const bulletPosition = (this.rangeSlider.value / this.rangeSlider.max);
+        this.color.style.width = `${(bulletPosition * 235) + 6}px`;
+    }
 }
+const root = {
+    rangeSlider: document.getElementById('step-slider__rs-range'),
+    color: document.getElementById('step-slider_color'),
+};
+
+new StepSlider(root);

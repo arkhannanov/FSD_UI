@@ -17,9 +17,11 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
+    sourceMapFilename: "[name].js.map",
     path: path.resolve(__dirname, './dist'),
     publicPath: ''
   },
+  devtool: 'source-map',
   module: {
     rules: [
       { 
