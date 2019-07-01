@@ -10,6 +10,7 @@ class Player {
         this.fullscreen = root.fullscreen;
         this.filled = root.filled;
         this.enableTogglePlay();
+        this.enablePlayButton();
         this.enableUpdateButtonPlay();
         this.enableUpdateButtonPause();
         this.enableHandleProgress();
@@ -24,6 +25,10 @@ class Player {
 
     enableTogglePlay() {
         this.video.addEventListener('click', this.togglePlay.bind(this));
+    }
+
+    enablePlayButton() {
+        this.toggle.addEventListener('click', this.togglePlay.bind(this));
     }
 
     enableUpdateButtonPlay() {
@@ -65,7 +70,6 @@ class Player {
     togglePlay() {
         const method = this.video.paused ? 'play' : 'pause';
         this.video[method]();
-        console.log(this.video.paused);
     }
 
     updateButton() {
