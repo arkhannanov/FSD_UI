@@ -1,0 +1,46 @@
+.footer-rent-auto {
+
+  &__wrapper {
+    height: 3.75rem;
+    background: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: normal;
+  }
+
+  &__logo {
+    width: 8.333rem;
+    height: 2.083rem;
+    font-size: 0.917rem;
+    color: green;
+    margin-left: 1.25rem;
+    line-height: 3.6rem;
+    text-transform: uppercase;
+  }
+
+  &__menu-container {
+    width: 5rem;
+    line-height: 0.958rem;
+    font-size: 0.708rem;
+    margin-top: 0.417rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__glavnaya-link {
+    text-decoration: none;
+    color:white;
+  }
+
+  &__katalog-link {
+    text-decoration: none;
+    color:white;
+  }
+
+  &__contacts-link {
+    text-decoration: none;
+    color:white;
+  }
+}
+  

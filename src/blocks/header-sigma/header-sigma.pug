@@ -1,9 +1,0 @@
-mixin header-sigma(options={ glavnaya:"", katalog:"", oNas:""})
-    - let {glavnaya, katalog, oNas} = options;
-    .header-sigma
-        .header-sigma__logotip-container
-            .header-sigma__logotip logotip
-        .header-sigma__menu-container
-            button.header-sigma__glavnaya-button(name="button")= glavnaya
-            button.header-sigma__katalog-button(name="button")= katalog
-            button.header-sigma__o-nas-button(name="button")= oNas

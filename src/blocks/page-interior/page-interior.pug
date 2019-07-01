@@ -1,0 +1,61 @@
+include ../header-interior/header-interior.pug
+include ../percents/percents.pug
+include ../calendar/calendar.pug
+include ../form-interior/form-interior
+include ../navigation/navigation.pug
+include ../location/location.pug
+
+mixin page-interior
+    main.page-interior
+        .page-interior-wrapper
+            .header-interior
+                +header-interior({
+                    source: "src/blocks/header-interior/images/logo-3.png"
+                })
+            .content
+                .diagramm-container
+                    .first-diagramm-container
+                        .first-diagramm
+                            +percents({
+                                percent: 0,
+                            })
+                        .first-diagramm__content Просроченных проектов.
+                    .second-diagramm-container
+                        .second-diagramm
+                            +percents({
+                                percent: 25,
+                            })
+                        .second-diagramm__content Проектов, выполненных досрочно.
+                    .third-diagramm-container
+                        .third-diagramm
+                            +percents({
+                                percent: 35
+                            })
+                        .third-diagramm__content Нестарндарных проектов.
+                    .fourth-diagramm-container
+                        .fourth-diagramm
+                            +percents ({
+                                percent: 87
+                            })
+                        .fourth-diagramm__content Довольных клиентов.
+                .feedback
+                    .feedback__headline Оставить отзыв
+                    .feedback__container
+                        .feedback__calendar-container
+                            .feedback__calendar-headline Выбрать день публикации
+                            .feedback__calendar
+                                +calendar
+                        .feedback__form
+                            +form-interior
+                .navigation
+                    +navigation({
+                        socialNetwork: "social-network",
+                        job: "job",
+                        interior: "interior",
+                        rentAuto: "rent-auto"
+                    })
+            .footer-interior
+                +location({ 
+                    title: "Meet us!", 
+                    address: "1259  California St san Francisco, CA"
+                })

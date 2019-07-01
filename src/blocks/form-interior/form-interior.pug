@@ -1,0 +1,16 @@
+include ../stages/stages.pug
+
+mixin form-interior
+    .form-interior
+        .form-interior__wrapper
+            .form-interior__name-container
+                input.form-interior__name-input(type="text", id="form-interior__name-input", placeholder="Имя")
+            .form-interior__email-container
+                input.form-interior__email-input(type="text", id="form-interior__email-input", placeholder="E-mail")
+            .form-interior__raiting-container
+                .form-interior__raiting Рейтинг
+                +stages
+            .form-interior__message-container
+                textarea.form-interior__message-text(type="text", id="form-interior__message-text", placeholder="Сообщение")
+            .form-interior__submit-container
+                button.form-interior__submit-button(name="button", id="form-interior__submit-button") Отправить

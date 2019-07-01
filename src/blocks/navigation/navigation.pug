@@ -1,12 +1,12 @@
-mixin navigation(options={alfa:"", betta:"", gamma:"", sigma:""})
-    - let {alfa, betta, gamma, sigma} = options;
+mixin navigation(options={socialNetwork:"", job:"", interior:"", rentAuto:""})
+    - let {socialNetwork, job, interior, rentAuto} = options;
     .navigation
         .navigation__wrapper
-            .navigation__alfa
-                button.navigation__button(name="button", onclick="document.location='alfa.html'")= alfa
-            .navigation__betta
-                button.navigation__button(name="button", onclick="document.location='betta.html'")= betta
-            .navigation__gamma
-                button.navigation__button(name="button", onclick="document.location='gamma.html'")= gamma
-            .navigation__sigma
-                button.navigation__button(name="button", onclick="document.location='sigma.html'")= sigma
+            .navigation__social-network
+                button.navigation__button(name="button", onclick="document.location='social-network.html'")= socialNetwork
+            .navigation__job
+                button.navigation__button(name="button", onclick="document.location='job.html'")= job
+            .navigation__interior
+                button.navigation__button(name="button", onclick="document.location='interior.html'")= interior
+            .navigation__rent-auto
+                button.navigation__button(name="button", onclick="document.location='rent-auto.html'")= rentAuto

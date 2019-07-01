@@ -1,0 +1,115 @@
+
+.page-interior-wrapper {
+    max-width: 29.167rem;
+    color: black;
+}
+  
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 2.083rem;
+  justify-content: space-between;
+  
+  .diagramm-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 0.75rem;
+    margin: 1rem 0 1rem 0;
+  }
+  
+  .first-diagramm-container {
+    height: 5rem;
+    width: 49%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .first-diagramm {
+    margin-top: 0.417rem;
+  }
+  
+  .first-diagramm__content {
+    line-height: 4.792rem;
+    margin-left: 0.625rem;
+  }
+  
+  .second-diagramm-container {
+    height: 5rem;
+    width: 49%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .second-diagramm {
+    margin-top: 0.417rem;
+  }
+  
+  .second-diagramm__content {
+    margin: 1.667rem 0 0 0.625rem;
+  }
+
+  .third-diagramm-container {
+    height: 5rem;
+    width: 49%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.417rem;
+  }
+  
+  .third-diagramm {
+    margin-top: 0.417rem;
+  }
+  
+  .third-diagramm__content {
+    line-height: 4.792rem;
+    margin-left: 0.625rem;
+  }
+  
+  .fourth-diagramm-container {
+    height: 5rem;
+    width: 49%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.417rem;
+  }
+
+  .fourth-diagramm {
+    margin-top: 0.417rem;
+  }
+  
+  .fourth-diagramm__content {
+    line-height: 4.792rem;
+    margin-left: 0.625rem;
+  }
+    
+  .feedback__headline {
+    text-align: center;
+    margin: 0.833rem auto 0.417rem auto;
+    font-size: 1rem;
+  }
+  
+  .feedback__container {
+    display: flex;
+    flex-direction: row;
+    width: 25rem;
+    margin:auto;
+    justify-content: center;
+  }
+
+  .feedback__calendar-headline {
+    text-align: center;
+    font-size: 0.75rem;
+  }
+  
+  .feedback__calendar {
+    transform: scale(0.92) translateY(-0.833rem);
+  }
+}
+
+.footer-interior {
+  margin-left: 2rem;
+}
