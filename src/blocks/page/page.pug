@@ -162,7 +162,7 @@ mixin page
                             +percents ({
                                 percent: 89
                             })
-                        .percents-pie__wrapper
+                        .percents-pie__wrapper_pie
                             +pie
                 .sliders
                     +headline ("sliders")
@@ -181,7 +181,8 @@ mixin page
                         .form-tick-boxes-toggle__form
                             +form
                         .form-tick-boxes-toggle__tick-boxes-toggle
-                            +headline ("toggle")
+                            .form-tick-boxes-toggle__toggle-headline
+                                +headline ("toggles")
                             .form-tick-boxes-toggle__toggle-container
                                 +toggle({
                                     id: "1"
@@ -189,7 +190,8 @@ mixin page
                                 +toggle({
                                     id: "2"
                                 })
-                            +headline ("tick boxes")
+                            .form-tick-boxes-toggle__tick-boxes-headline
+                                +headline ("tick boxes")
                             .form-tick-boxes-toggle__tick-boxes-container
                                 +tick-boxes({
                                     id: "1"
@@ -199,7 +201,8 @@ mixin page
                                 })
                 .search-drop-down-user-profile
                     .search-drop-down
-                        +headline ("search / drop down")
+                        .search-drop-down__search-headline
+                            +headline ("search / drop down")
                         .search-drop-down__search
                             +search
                         .search-drop-down__drop-down

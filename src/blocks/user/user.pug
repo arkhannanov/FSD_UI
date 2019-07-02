@@ -4,8 +4,8 @@ mixin user( options = { source: "", name: "", profession: ""})
         .user__avatar
             img.user__avatar-image(src=source, alt="Picture", hspace="5", vspace="5")
         .user__content-container
-            p.user__name= name
-            p.user__profession= profession
+            .user__name= name
+            .user__profession= profession
             .user__links-container
                 a.user__facebook(href="/mock-address/change-me")
                 a.user__twitter(href="/mock-address/change-me")

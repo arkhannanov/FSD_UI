@@ -38,7 +38,7 @@ class Search {
             this.searchError.style.cssText = 'background: transparent;';
             this.searchError.innerHTML = '';
         } else {
-            this.searchError.style.cssText = 'background-image: url(\'./src/blocks/search/images/search-icon.png\'); background-repeat: no-repeat; background-position: 273px 6px; background-color: #e75735;';
+            this.searchError.style.cssText = 'background-image: url(\'./src/blocks/search/images/search-icon.png\'); background-repeat: no-repeat; background-position: 11.1rem 0.25rem; background-color: #e75735;';
             this.searchError.innerHTML = 'I’ve not found what I’m looking for...';
         }
     }

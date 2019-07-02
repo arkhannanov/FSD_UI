@@ -5,7 +5,7 @@
     height: 8.833rem;
     display: flex;
     flex-direction: row;
-    margin: 1rem 0 1.9rem 0;
+    margin: 1rem 0 0 0;
   }
 
   &__content-container {
@@ -28,6 +28,7 @@
     font-size: 0.458rem;
     letter-spacing: 0.023rem;
     margin-left: 1rem;
+    line-height: 0.5rem;
     text-transform: uppercase;
   }
 
@@ -36,7 +37,8 @@
     color: #ffffff;
     font-size: 0.458rem;
     margin-left: 1rem;
-    padding-right: 0.917rem;
+    padding-right: 0.317rem;
     letter-spacing: 0.023rem;
+    margin-top: 0.5rem;
   }
 }

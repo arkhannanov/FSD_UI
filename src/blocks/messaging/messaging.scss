@@ -2,8 +2,8 @@
 
   &_wrapper {
     width: 12rem;
-    margin-top: 1.2rem;
-    margin-left: 1.2rem;
+    margin-top: 1rem;
+    margin-left: 1.15rem;
   }
   
   &__name-container {
@@ -13,7 +13,7 @@
     background: #4eb7a8;
     letter-spacing: -0.042rem;
     text-align: center;
-    line-height: 3.542rem;
+    line-height: 3.1rem;
     border-radius: 0.125rem 0.125rem 0 0;
   }
 
@@ -34,7 +34,7 @@
   &__dark-container {
     width: 12rem;
     margin-top: -1.958rem;
-    height: 12.083rem;
+    height: 13.5rem;
     background: #f2f2f2;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@
 
   &__icons  {
     width: 10rem;
-    height: 1.083rem;
+    height: 2.4rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -51,57 +51,55 @@
 
   &__chat-icon {
     width: 1.25rem;
-    background: url('./images/chat-icon.png') 0.208rem 0.208rem no-repeat;
+    background: url('./images/chat-icon.png') 0.12rem 1rem no-repeat;
   }
 
   &__camera-icon {
     width: 1.25rem;
-    background: url('./images/camera-icon.png') 0.208rem 0.208rem no-repeat;
+    background: url('./images/camera-icon.png') 0.12rem 1rem no-repeat;
   }
 
   &__first-message-container {
-    margin: 0.625rem auto 0 auto;
-    width: 9.917rem;
-    height: 2.833rem;
+    margin: 0 auto 0 auto;
+    width: 10.917rem;
+    height: 3.833rem;
     color: #868686;
     font-weight: lighter;
     font-size: 0.542rem;
     letter-spacing: 0.026rem;
     background: url('./images/background.png') 0.292rem 0 no-repeat;
-    padding-top: 0.333rem;
   }
 
   &__second-message-container{
-    margin: 0.542rem 0 0 1.333rem;
-    width: 9.667rem;
-    height: 3.417rem;
+    margin: 0rem auto 0 auto;
+    width: 10.2rem;
+    height: 4rem;
     background: #ffffff;
     border-radius: 0.208rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.25rem;
   }
 
   &__first-message {
-    font-weight: lighter;
+    font-weight: bold;
     margin: 0.083rem 0 0 0.4rem;
-    width: 8.667rem;
-    height: 2.3rem;
-    font-size: 0.542rem;
+    width: 8.2rem;
+    height: 1.7rem;
+    font-size: 0.55rem;
     letter-spacing: 0.026rem;
-    background: #e5e5e5;
     border-radius: 0.208rem;
-    padding: 0.333rem 0 0 0.75rem;
+    padding: 0.833rem 1rem 0 0.75rem;
   } 
   
   &__second-message {
-    font-weight: lighter;
-    margin: 0.083rem 0 0 0.125rem;
-    width: 8.667rem;
+    font-weight: bold;
+    margin: 0.083rem auto 0 auto;
+    width: 9.2rem;
     height: 2.9rem;
     font-size: 0.542rem;
     letter-spacing: 0.026rem;
     background: #e5e5e5;
     border-radius: 0.208rem;
-    padding: 0.333rem 0 0 0.75rem;
+    padding: 0.7rem 0 0 0.7rem;
   }
 
   .ripple {
@@ -126,16 +124,16 @@
     background: #ffffff;
     font-weight: bolder;
     color: #4eb7a8;
-    font-size: 0.417rem;
+    font-size: 0.517rem;
     border-radius: 0.208rem;
     box-shadow: 0 -0.083rem rgba(40, 162, 144, 1) inset;
     transition: 0.2s;
     vertical-align: middle;
     overflow: hidden;
     position: relative;
-    width: 9.667rem;
-    height: 1.333rem;
-    margin-left: 1.375rem;
+    width: 10.2rem;
+    height: 1.45rem;
+    margin-left: 0.88rem;
     text-transform: uppercase;
   }
 
