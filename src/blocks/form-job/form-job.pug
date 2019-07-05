@@ -1,0 +1,30 @@
+include ../toggle/toggle.pug
+
+mixin form-job(options={toggleContent:""})
+    -let {toggleContent} = options;
+    .form-job
+        .form-job__wrapper
+            #form-job__completeform
+            .form-job__job-title-container
+                input(type="text", id="form-job__job-title-input", placeholder="Job title", class="form-job__job-title-input")
+                #form-job__job-title-message
+            #form-job__job-title-error-message
+            .form-job__facebook-container
+                input(type="text", id="form-job__facebook-input", placeholder="Facebook link", class="form-job__facebook-input")
+                #form-job__facebook-message
+            #form-job__facebook-error-message
+            .form-job__twitter-container
+                input(type="text", id="form-job__twitter-input", placeholder="Twitter link", class="form-job__twitter-input")
+                #form-job__twitter-message
+            #form-job__twitter-error-message
+            .form-job__dribbble-container
+                input(type="text", id="form-job__dribbble-input", placeholder="Dribbble link", class="form-job__dribbble-input")
+                #form-job__dribbble-message
+            #form-job__dribbble-error-message
+            .form-job__toggle
+                +toggle({
+                    id: "1"
+                })
+                .form-job__toggle-content= toggleContent
+            .form-job__submit-container
+                button(id="form-job__submit-button", class="form-job__submit-button") submit

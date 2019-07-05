@@ -1,0 +1,9 @@
+mixin header-rent-auto(options={ glavnaya:"", katalog:"", oNas:""})
+    - let {glavnaya, katalog, oNas} = options;
+    .header-rent-auto
+        .header-rent-auto__logotip-container
+            .header-rent-auto__logotip logotip
+        .header-rent-auto__menu-container
+            button.header-rent-auto__glavnaya-button(name="button")= glavnaya
+            button.header-rent-auto__katalog-button(name="button")= katalog
+            button.header-rent-auto__o-nas-button(name="button")= oNas

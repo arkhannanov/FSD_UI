@@ -1,0 +1,201 @@
+.form-rent-auto {
+
+  &__wrapper {
+    width: 10.417rem;
+    font-size: 0.583rem;
+    margin: 0.75rem 0 1.25rem 0;
+  }
+
+  &__surname-container {
+    width: 10.417rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__surname-input {
+    width: 6.25rem;
+    height: 1.167rem;
+    background: #e5e5e5;
+    border: none;
+    border-radius: 0.125rem;
+  }
+
+  #form-rent-auto__surname-message {
+    width: 3.542rem;
+    height: 1.542rem;
+    font-weight: 400;
+    font-size: 0.417rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.021rem;
+    text-align: center;
+    margin-left: 0.167rem;
+    vertical-align: middle;
+    background: transparent no-repeat;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  #form-rent-auto__surname-error-message {
+    font-size: 0.417rem;
+    color: #555564;
+    height: 0.125rem;
+    line-height: 0.1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  &__name-container {
+    width: 10.417rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__name-input {
+    width: 6.25rem;
+    height: 1.083rem;
+    background: #e5e5e5;
+    border: none;
+    border-radius: 0.125rem;
+    margin-top: 0;
+    font-family: $mainFont;
+  }
+
+  #form-rent-auto__name-message {
+    width: 3.542rem;
+    height: 1.542rem;
+    font-weight: 400;
+    font-size: 0.417rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.021rem;
+    text-align: center;
+    margin-left: 0.167rem;
+    vertical-align: middle;
+    background: transparent no-repeat;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  #form-rent-auto__name-error-message {
+    font-size: 0.417rem;
+    color: #555564;
+    height: 0.125rem;
+    line-height: 0.1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  &__patronymic-container {
+    width: 10.417rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__patronymic-input {
+    width: 6.25rem;
+    height: 1.083rem;
+    background: #e5e5e5;
+    border: none;
+    border-radius: 0.125rem;
+    margin-top: 0;
+    font-family: $mainFont;
+  }
+
+  #form-rent-auto__patronymic-message {
+    width: 3.542rem;
+    height: 1.542rem;
+    font-weight: 400;
+    font-size: 0.417rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.021rem;
+    text-align: center;
+    margin-left: 0.167rem;
+    vertical-align: middle;
+    background: transparent no-repeat;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  #form-rent-auto__patronymic-error-message {
+    font-size: 0.417rem;
+    color: #555564;
+    height: 0.125rem;
+    line-height: 0.1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  &__phone-container {
+    width: 10.417rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__phone-input{
+    width: 6.25rem;
+    height: 1.083rem;
+    background: #e5e5e5;
+    border: none;
+    border-radius: 0.125rem;
+    margin-top: 0;
+    font-family: $mainFont;
+  }
+  
+  #form-rent-auto__phone-message{
+    width: 3.542rem;
+    height: 1.542rem;
+    font-weight: 400;
+    font-size: 0.417rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.021rem;
+    text-align: center;
+    margin-left: 0.167rem;
+    vertical-align: middle;
+    background: transparent no-repeat;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  #form-rent-auto__phone-error-message {
+    font-size: 0.417rem;
+    color: #555564;
+    height: 0.125rem;
+    line-height: 0.1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  &__email-container {
+    width: 10.417rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__email-input {
+    width: 6.25rem;
+    height: 1.083rem;
+    background: #e5e5e5;
+    border: none;
+    border-radius: 0.125rem;
+    margin-top: 0;
+    font-family: $mainFont;
+  }
+
+  #form-rent-auto__email-message {
+    width: 3.542rem;
+    height: 1.542rem;
+    font-weight: 400;
+    font-size: 0.417rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.021rem;
+    text-align: center;
+    margin-left: 0.167rem;
+    vertical-align: middle;
+    background: transparent no-repeat;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  #form-rent-auto__email-error-message {
+    font-size: 0.417rem;
+    color: #555564;
+    height: 0.125rem;
+    line-height: 0.1rem;
+    margin-bottom: 0.3rem;
+  }
+}

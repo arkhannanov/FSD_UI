@@ -1,0 +1,13 @@
+mixin header-social-network(options={source, name})
+    - let {source, name} = options;    
+    .header-social-network
+        .header-social-network__wrapper
+            .header-social-network__logo
+            .header-social-network__logout
+                a.header-social-network__logout-href(href=`/mock-address/change-me`) Logout
+            .header-social-network__name= name
+            .header-social-network__avatar
+                img.header-social-network__avatar-image(src=source, alt="User", hspace="2", vspace="2")
+            .header-social-network__search
+                input.header-social-network__search-input(type="text", id="search", placeholder="Search")
+                button.header-social-network__search-button(id="search_icon")

@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8157867f-740d-4692-8a34-f0abfefb57ba" name="Default Changelist" comment="Refactoring #7" />
+    <ignored path="$PROJECT_DIR$/dist/" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/page/page.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3519">
+              <caret line="207" column="18" selection-start-line="207" selection-start-column="18" selection-end-line="207" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/user/user.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/user/user.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="884">
+              <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/messaging/messaging.pug">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/messaging/messaging.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2142">
+              <caret line="126" column="17" selection-start-line="126" selection-start-column="17" selection-end-line="126" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/news/news.pug">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/blocks/news/news.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/events/events.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1258">
+              <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/events/events.pug">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/page/page.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3825">
+              <caret line="225" column="20" selection-start-line="225" selection-start-column="20" selection-end-line="225" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>side-left</find>
+      <find>right-side</find>
+      <find>side-right</find>
+      <find>img</find>
+      <find>slider-left</find>
+      <find>slider-right</find>
+      <find>arrow-left</find>
+      <find>button</find>
+      <find>margin-bottom</find>
+      <find>margin-left: -1.458rem</find>
+      <find>relative</find>
+      <find>-message</find>
+      <find>e</find>
+      <find>var</find>
+      <find>toggles</find>
+      <find>myon</find>
+      <find>onoffswitch-checkbox</find>
+      <find>toggle</find>
+      <find>onoffswitch-label</find>
+      <find>onoffswitch-inner</find>
+      <find>onoffswitch-switch</find>
+      <find>_tableBody</find>
+      <find>_root</find>
+      <find>.eslintrc</find>
+      <find>player</find>
+      <find>alfa</find>
+      <find>betta</find>
+      <find>gamma</find>
+      <find>sigma</find>
+      <find>lighter</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>events</replace>
+      <replace>image</replace>
+      <replace>slider</replace>
+      <replace>step-slider</replace>
+      <replace>arrow</replace>
+      <replace>let</replace>
+      <replace>toggle</replace>
+      <replace>toggle__input</replace>
+      <replace>toggle__label</replace>
+      <replace>toggle__inner</replace>
+      <replace>toggle__switch</replace>
+      <replace>social-network</replace>
+      <replace>job</replace>
+      <replace>interior</replace>
+      <replace>rent-auto</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\Artur Khannanov\Desktop\FSD_CV\FSD_UI\src\blocks</dir>
+      <dir>C:\Users\Artur Khannanov\Desktop\FSD\FSD_UI</dir>
+      <dir>C:\Users\Artur Khannanov\Desktop\FSD\FSD_UI\src</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/blocks/form/form.js" />
+        <option value="$PROJECT_DIR$/src/blocks/form-betta/form-betta.js" />
+        <option value="$PROJECT_DIR$/src/blocks/form-sigma/form-sigma.js" />
+        <option value="$PROJECT_DIR$/src/blocks/location/location.js" />
+        <option value="$PROJECT_DIR$/src/blocks/page-sigma/page-sigma.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/button/button.js" />
+        <option value="$PROJECT_DIR$/src/blocks/page-sigma/drop-down.js" />
+        <option value="$PROJECT_DIR$/src/blocks/player/player.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/stages/stages.js" />
+        <option value="$PROJECT_DIR$/src/blocks/step-slider/step-slider.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/slider/slider.js" />
+        <option value="$PROJECT_DIR$/src/blocks/step-slider/step-slider.js" />
+        <option value="$PROJECT_DIR$/src/pages/sigma/sigma.js" />
+        <option value="$PROJECT_DIR$/src/pages/alfa/alfa.js" />
+        <option value="$PROJECT_DIR$/src/pages/betta/betta.js" />
+        <option value="$PROJECT_DIR$/src/pages/gamma/gamma.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/globals.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/page-alfa/page-alfa.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/page-betta/page-betta.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/page-gamma/page-gamma.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/page-sigma/page-sigma.pug" />
+        <option value="$PROJECT_DIR$/src/pages/betta/betta.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/page-betta/page-betta.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/form-job/form-job.js" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/src/blocks/page-social-network/page-social-network.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/page-interior/page-interior.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/navigation/navigation.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/header-rent-auto/header-rent-auto.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/header-rent-auto/header-rent-auto.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/page-job/page-job.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.js" />
+        <option value="$PROJECT_DIR$/src/fonts/fonts.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/player/player.js" />
+        <option value="$PROJECT_DIR$/src/blocks/headline/headline.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/percents/percents.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/form/form.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/page/page.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/search/search.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/search/search.js" />
+        <option value="$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/user/user.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/user/user.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/page/page.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/messaging/messaging.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/events/events.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/news/news.scss" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="button" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="calendar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="drop-down" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="footer-rent-auto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="form-interior" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="form-job" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="form-rent-auto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="header-rent-auto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="headline" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="location" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="messaging" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="navigation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="page-interior" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="page-rent-auto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="page-social-network" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="percents" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="pie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="profile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="right-side" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="slider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="stages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="step-slider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="tick-boxes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="toggle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="interior" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="job" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="rent-auto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="social-network" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.linters.configure.manually.selectedeslint" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.eslintrc.js" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.postfix.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Artur Khannanov\Desktop\FSD_CV\FSD_UI\src\blocks\arrow\images" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.form.js">
+    <configuration name="button.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="button.js" working-dir="$PROJECT_DIR$/src/blocks/button">
+      <method v="2" />
+    </configuration>
+    <configuration name="form.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="form.js" working-dir="$PROJECT_DIR$/src/blocks/form">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.form.js" />
+        <item itemvalue="Node.js.button.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8157867f-740d-4692-8a34-f0abfefb57ba" name="Default Changelist" comment="" />
+      <created>1560948189176</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560948189176</updated>
+      <workItem from="1560948196250" duration="1297000" />
+      <workItem from="1560949574337" duration="11061000" />
+      <workItem from="1561097035626" duration="7020000" />
+      <workItem from="1561177076219" duration="15849000" />
+      <workItem from="1561272221060" duration="7813000" />
+      <workItem from="1561353840142" duration="20102000" />
+      <workItem from="1561442298636" duration="5512000" />
+      <workItem from="1561529836270" duration="6093000" />
+      <workItem from="1561535990311" duration="2955000" />
+      <workItem from="1561566095209" duration="1661000" />
+      <workItem from="1561569558751" duration="1143000" />
+      <workItem from="1561704473118" duration="21148000" />
+      <workItem from="1561791075806" duration="11659000" />
+      <workItem from="1561872601120" duration="3374000" />
+      <workItem from="1561877175838" duration="780000" />
+      <workItem from="1561878148135" duration="7744000" />
+      <workItem from="1561957509414" duration="21088000" />
+      <workItem from="1561988752219" duration="1261000" />
+      <workItem from="1561992043193" duration="162000" />
+      <workItem from="1561992307735" duration="1025000" />
+      <workItem from="1561995843347" duration="380000" />
+      <workItem from="1561996376258" duration="628000" />
+      <workItem from="1561997056884" duration="968000" />
+      <workItem from="1561999919007" duration="2664000" />
+      <workItem from="1562061833259" duration="11713000" />
+      <workItem from="1562221658293" duration="613000" />
+    </task>
+    <task id="LOCAL-00001" summary="Refactoring #6">
+      <created>1560953526396</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560953526396</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Refactoring #6">
+      <created>1560954450657</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1560954450658</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Refactoring #6">
+      <created>1560956210541</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560956210541</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Refactoring #7">
+      <created>1561274372578</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1561274372578</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Refactoring #10">
+      <created>1561445661707</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1561445661707</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Refactoring #9">
+      <created>1561470475100</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1561470475101</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Refactoring #9">
+      <created>1561535571964</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1561535571964</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Refactoring #9">
+      <created>1561536021250</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1561536021250</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Refactoring #7">
+      <created>1561538111931</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1561538111931</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Refactoring #8">
+      <created>1561569951631</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1561569951631</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Refactoring #9">
+      <created>1561987441606</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1561987441606</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Refactoring #3">
+      <created>1561997529400</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1561997529400</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Refactoring #7">
+      <created>1561997987144</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1561997987144</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="165713000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.86206895" visible="true" weight="0.12802951" />
+      <window_info id="Structure" order="1" sideWeight="0.13793103" side_tool="true" weight="0.12802951" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49578503" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.48946258" weight="0.30877572" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5105374" side_tool="true" weight="0.30985916" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.48946258" visible="true" weight="0.30985916" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49947312" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactoring #6" />
+    <MESSAGE value="Refactoring #10" />
+    <MESSAGE value="Refactoring #8" />
+    <MESSAGE value="Refactoring #9" />
+    <MESSAGE value="Refactoring #3" />
+    <MESSAGE value="Refactoring #7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring #7" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/blocks/stages/stages.js</url>
+          <line>77</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/page-interior/page-interior.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/form-betta/form-betta.js" />
+    <entry file="file://$PROJECT_DIR$/src/blocks/page-betta/page-betta.pug" />
+    <entry file="file://$PROJECT_DIR$/src/blocks/page-betta/page-betta.scss" />
+    <entry file="file://$PROJECT_DIR$/src/pages/social-network/social-network.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/job/job.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/social-network/social-network.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/navigation/navigation.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/page-social-network/page-social-network.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/page-sigma/page-sigma.pug" />
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2057">
+          <caret line="121" column="11" selection-start-line="121" selection-start-column="11" selection-end-line="121" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/form-job/form-job.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3689">
+          <caret line="217" column="9" selection-start-line="217" selection-start-column="9" selection-end-line="217" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/form-interior/form-interior.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/form/form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="69" column="45" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/header-rent-auto/header-rent-auto.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fonts/lato-black.svg" />
+    <entry file="file://$PROJECT_DIR$/src/blocks/header-rent-auto/header-rent-auto.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/footer-rent-auto/footer-rent-auto.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/footer-rent-auto/footer-rent-auto.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/page-job/page-job.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4488">
+          <caret line="264" column="8" selection-start-line="264" selection-start-column="8" selection-end-line="264" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fonts/fonts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/globals.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/button/button.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/headline/headline.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/percents/percents.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/percents/percents.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/form/form.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/form/form.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/search/search.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/search/search.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/search/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="40" column="172" selection-start-line="40" selection-start-column="172" selection-end-line="40" selection-end-column="172" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/drop-down/drop-down.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/page/page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3519">
+          <caret line="207" column="18" selection-start-line="207" selection-start-column="18" selection-end-line="207" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/user/user.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/user/user.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/messaging/messaging.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/messaging/messaging.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2142">
+          <caret line="126" column="17" selection-start-line="126" selection-start-column="17" selection-end-line="126" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/news/news.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/events/events.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/events/events.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/page/page.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3825">
+          <caret line="225" column="20" selection-start-line="225" selection-start-column="20" selection-end-line="225" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/news/news.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

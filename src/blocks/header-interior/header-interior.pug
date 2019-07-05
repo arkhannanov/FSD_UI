@@ -1,0 +1,21 @@
+mixin header-interior(options={source:""})
+    - let {source} = options;
+    .header-interior
+        .header-interior__wrapper
+            .header-interior__first-line
+                .header-interior__logo
+                    img.header-interior_logo-image(src= source, alt="Logo", hspace="10", vspace="5")
+                .header-interior__contacts
+                    .header-interior__time Ежедневно с 9.00 до 22.00
+                    .header-interior__tel +79263864674
+            .header-interior__second-line
+                .header-interior__glavnaya
+                    a.header-interior__glavnaya-link(href="/mock-address/change-me") Главная
+                .header-interior__photo-rabot
+                    a.header-interior__photo_rabot-link(href="/mock-address/change-me") Фото Работ
+                .header-interior__o-nas
+                    a.header-interior__o-nas-link(href="/mock-address/change-me") О Нас
+                .header-interior__otzivi
+                    a.header-interior__otzivi-link(href="/mock-address/change-me") Отзывы
+                .header-interior__regisration
+                    a.header-interior__regisration-link(href="/mock-address/change-me") Регистрация

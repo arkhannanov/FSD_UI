@@ -1,0 +1,255 @@
+.form-job {
+
+  &__wrapper {
+    width: 11.458rem;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+  }
+
+  #form-job__completeform {
+    padding: 0.292rem;
+    border: 0;
+    height: 0.625rem;
+    font-size: 0.5rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.021rem;
+    font-weight: lighter;
+    color: red;
+    margin-left: 2.917rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  &__job-title-container {
+    width: 11.458rem;
+    height: 1.167rem;
+    display: flex;
+    flex-direction:row;
+  }
+
+  &__job-title-input {
+    width: 8.458rem;
+    height: 1.167rem;
+    padding-left: 0.417rem;
+    border: 0;
+    background: #e5e5e5;
+    font: normal 0.583rem $thirdFont;
+    color: #888888;
+    line-height: 1.75rem;
+    letter-spacing: 0.006rem;
+    border-radius: 0.125rem;
+  }
+
+  #form-job__job-title-message {
+    width: 3.542rem;
+    height: 1.542rem;
+    font: normal 0.417rem $mainFont;
+    line-height: 1.2rem;
+    letter-spacing: 0.021rem;
+    text-align: center;
+    margin-left: 0.167rem;
+    vertical-align: middle;
+    background: transparent no-repeat;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  #form-job__job-title-error-message {
+    padding: 0.292rem;
+    border: 0;
+    height: 0.225rem;
+    font-size: 0.417rem;
+    letter-spacing: 0.021rem;
+    line-height: 0.2rem;
+    font-weight: lighter;
+    color: #888888;
+  }
+
+  &__facebook-container {
+    width: 11.458rem;
+    height: 1.167rem;
+    display: flex;
+    flex-direction:row;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__facebook-input{
+    width: 8.458rem;
+    height: 1.167rem;
+    padding-left: 0.417rem;
+    border: 0;
+    background: #e5e5e5;
+    font-size: 0.583rem;
+    font-family: $thirdFont;
+    font-weight: 400;
+    color: #888888;
+    line-height: 1.75rem;
+    letter-spacing: 0.006rem;
+    border-radius: 0.125rem;
+  }
+
+  #form-job__facebook-message {
+    width: 3.542rem;
+    height: 1.542rem;
+    font-weight: 400;
+    font-size: 0.417rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.021rem;
+    text-align: center;
+    margin-left: 0.167rem;
+    vertical-align: middle;
+    background: transparent no-repeat ;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  #form-job__facebook-error-message {
+    padding: 0.292rem;
+    border: 0;
+    height: 0.225rem;
+    line-height: 0.2rem;
+    font-size: 0.417rem;
+    letter-spacing: 0.021rem;
+    font-weight: lighter;
+    color: #888888;
+  }
+
+  &__twitter-container {
+    width: 11.458rem;
+    height: 1.167rem;
+    display: flex;
+    flex-direction:row;
+  }
+
+  &__twitter-input {
+    width: 8.458rem;
+    height: 1.167rem;
+    padding-left: 0.417rem;
+    border: 0;
+    background: #e5e5e5;
+    font: normal 0.583rem $thirdFont;
+    color: #888888;
+    line-height: 1.75rem;
+    letter-spacing: 0.006rem;
+    border-radius: 0.125rem;
+  }
+
+  #form-job__twitter-message {
+    width: 3.542rem;
+    height: 1.542rem;
+    font-weight: 400;
+    font-size: 0.417rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.021rem;
+    text-align: center;
+    margin-left: 0.167rem;
+    vertical-align: middle;
+    background: transparent no-repeat;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  #form-job__twitter-error-message {
+    padding: 0.292rem;
+    border: 0;
+    height: 0.225rem;
+    line-height: 0.208rem;
+    font-size: 0.417rem;
+    letter-spacing: 0.021rem;
+    font-weight: lighter;
+    color: #888888;
+  }
+
+  &__dribbble-container {
+    width: 11.458rem;
+    height: 1.167rem;
+    display: flex;
+    flex-direction:row;
+  }
+
+  &__dribbble-input {
+    width: 8.458rem;
+    height: 1.167rem;
+    padding-left: 0.417rem;
+    border: 0;
+    background: #e5e5e5;
+    font: normal 0.583rem $thirdFont;
+    color: #888888;
+    line-height: 1.75rem;
+    letter-spacing: 0.006rem;
+    border-radius: 0.125rem;
+  }
+
+  #form-job__dribbble-message {
+    width: 3.542rem;
+    height: 1.542rem;
+    font-weight: 400;
+    font-size: 0.417rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.021rem;
+    text-align: center;
+    margin-left: 0.167rem;
+    vertical-align: middle;
+    background: transparent no-repeat;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  #form-job__dribbble-error-message {
+    padding: 0.292rem;
+    border: 0;
+    line-height: 0.208rem;
+    font-size: 0.417rem;
+    letter-spacing: 0.021rem;
+    font-weight: lighter;
+    color: #888888;
+    margin-bottom: 1rem;
+  }
+
+  &__toggle {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__toggle-content {
+    font-size: 0.5rem;
+    white-space: nowrap;
+    line-height: 1rem;
+    color: #888888;
+  }
+
+  &__submit-container {
+    margin: auto;
+  }
+
+  &__submit-button {
+    width: 4.917rem;
+    height: 1.333rem;
+    border: 0.042rem solid #4eb7a8;
+    text-align: center;
+    background: #ffffff;
+    font-weight: bolder;
+    color: #4eb7a8;
+    letter-spacing: 0;
+    font-size: 0.5rem;
+    border-radius: 0.208rem;
+    box-shadow: 0 -0.083rem rgba(40, 162, 144, 1) inset;
+    transition: 0.2s;
+    vertical-align: middle;
+    overflow: hidden;
+    margin: 0.417rem 0 1.25rem 4.5rem;
+    text-transform: uppercase;
+  }
+
+   &__submit-button:hover {
+    background: #4eb7a8;
+    color: #ffffff;
+  }
+
+  &__submit-button, 
+  &__submit-button:active, 
+  &__submit-button:focus {
+    outline: none;
+  }
+}

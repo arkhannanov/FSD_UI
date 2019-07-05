@@ -1,0 +1,106 @@
+.header-interior {
+
+  &__wrapper {
+    height: 3.125rem;
+    background: white;
+    border: 0.042rem solid black;
+    font-size: 0.75rem;
+  }
+
+  &__first-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 3.15rem;
+  }
+
+  &__contacts {
+    font-size: 0.5rem;
+    width: 8.333rem;
+    margin-top: 0.625rem;
+  }
+
+  &__tel {
+    font-size: 1rem;
+  }
+
+  &__second-line {
+    height: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 0.042rem solid black;
+    border-top: none;
+    margin-right: auto;
+
+  }
+
+  &__glavnaya {
+    width: 20%;
+    text-align: center;
+    padding: 0 0.417rem 0 0.417rem;
+    line-height: 1.3rem;
+    border-right: 0.042rem solid black;
+  }
+
+  &__glavnaya-link {
+    border: none;
+    color: black;
+    text-decoration: none;
+  }
+
+  &__photo-rabot {
+    text-align: center;
+    padding: 0 0.417rem 0 0.417rem;
+    line-height: 1.25rem;
+    width: 20%;
+    border-right: 0.042rem solid black;
+  }
+
+  &__photo_rabot-link {
+    border: none;
+    color: black;
+    text-decoration: none;
+  }
+
+  &__o-nas {
+    text-align: center;
+    padding: 0 0.417rem 0 0.417rem;
+    line-height: 1.25rem;
+    width: 20%;
+    border-right: 0.042rem solid black;
+  }
+
+  &__o-nas-link {
+    border: none;
+    color: black;
+    text-decoration: none;
+  }
+
+  &__otzivi {
+    text-align: center;
+    padding: 0 0.417rem 0 0.417rem;
+    line-height: 1.24rem;
+    width: 20%;
+    border-right: 0.042rem solid black;
+  }
+
+  &__otzivi-link {
+    border: none;
+    color: black;
+    text-decoration: none;
+  }
+
+  &__regisration {
+    text-align: center;
+    padding: 0 0.417rem 0 0.417rem;
+    line-height: 1.25rem;
+    width: 20%;
+  }
+
+  &__regisration-link {
+    border: none;
+    color: black;
+    text-decoration: none;
+  }
+}
