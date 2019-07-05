@@ -5,10 +5,7 @@
     text-align: center;
     width:  2.083rem;
     height: 2.083rem;
-    background-image: url('./images/arrow1.png');
-    background-repeat: no-repeat;
-    background-position: 0.542rem 0.458rem;
-    background-color: white;
+    background: white url('./images/arrow1.png') 0.542rem 0.458rem no-repeat;
     border-radius: 50%;
     transition: 0.2s;
     overflow: hidden;
@@ -18,19 +15,14 @@
   
   &__button_left:hover {
     background: #4eb7a8;
-    background-image: url('./images/arrow3.png');
-    background-repeat: no-repeat;
-    background-position: 0.583rem 0.5rem;
+    background-image: url('./images/arrow3.png') 0.583rem 0.5rem no-repeat;
     border: none;
   }
 
   &__button_left:active,
   &__button_left:focus {
     outline: none;
-    background-image: url('./images/arrow3.png');
-    background-repeat: no-repeat;
-    background-position: 0.583rem 0.5rem;
-    background-color: #e5e5e5;
+    background: #e5e5e5 url('./images/arrow3.png') 0.583rem 0.5rem no-repeat;
     border: none;
   }
 
@@ -43,10 +35,7 @@
     text-align: center;
     width:  2.083rem;
     height: 2.083rem;
-    background-image: url('./images/arrow2.png');
-    background-repeat: no-repeat;
-    background-position: 0.625rem 0.458rem;
-    background-color: white;
+    background: white url('./images/arrow2.png') 0.625rem 0.458rem no-repeat;
     border-radius: 50%;
     transition: 0.2s;
     overflow: hidden;
@@ -56,27 +45,18 @@
 
   &__button_right:hover {
     background: #4eb7a8;
-    background-image: url('./images/arrow4.png');
-    background-repeat: no-repeat;
-    background-position: 0.667rem 0.5rem;
+    background: url('./images/arrow4.png') 0.667rem 0.5rem no-repeat;
     border: none;
   }
 
   &__button_right:active,
   &__button_right:focus {
     outline: none;
-    background-image: url('./images/arrow4.png');
-    background-repeat: no-repeat;
-    background-position: 0.667rem 0.5rem;
-    background-color: #e5e5e5;
+    background: #e5e5e5 url('./images/arrow4.png') 0.667rem 0.5rem no-repeat;
     border: none;
   }
 
   &__button_right:visited {
     outline: none;
-  }
-
-  &__button_right::-moz-focus-inner {
-    border: 0;
   }
 }
