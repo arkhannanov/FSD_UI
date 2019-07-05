@@ -49,6 +49,8 @@
       vertical-align: middle;
       background-repeat: no-repeat;
       color: #ffffff;
+      background-image: url('./images/form-orange.png');
+      text-transform: uppercase;
     }
   }
 
@@ -95,6 +97,8 @@
       vertical-align: middle;
       background-repeat: no-repeat;
       color: #ffffff;
+      background-image: url('./images/form-orange.png');
+      text-transform: uppercase;
     }
   }
 
@@ -125,6 +129,7 @@
       color: #888888;
       letter-spacing: 0.006rem;
       border-radius: 0.125rem;
+      resize: none;
     }
   }
 
@@ -146,6 +151,7 @@
     position: relative;
     margin: 1.083rem 0 1.25rem 0;
     left: 7rem;
+    text-transform: uppercase;
   }
 
   #form__submit-button:hover {
