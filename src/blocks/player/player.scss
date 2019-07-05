@@ -1,25 +1,28 @@
 
 .player {
 
-  .player__wrapper {
+  &__wrapper {
     border-radius: 0.208rem;
-    max-width: 24.75rem;
+    width: 24.75rem;
+    height: 15rem;
     overflow: hidden;
     margin: 1rem 0 1.25rem 0;
   }
 
   &__video {
     border-radius: 0.208rem;
-    overflow: hidden;
+  }
+
+  &__controls-wrapper {
+    display: none;
   }
 
   &__controls {
     position: relative;
-    display: none;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 2rem;
-    margin-top: -2.2rem;
   }
 
   &__progress-container {
@@ -32,8 +35,9 @@
     width: 100%;
   }
 
-  &:hover .player__controls {
-    display: flex;
+  &:hover &__controls-wrapper {
+    display: block;
+    margin-top: -2.3rem;
   }
 
   &__progress {
