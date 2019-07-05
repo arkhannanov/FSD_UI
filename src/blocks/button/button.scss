@@ -24,7 +24,6 @@
     color: #4eb7a8;
     font-size: 0.417rem;
     border-radius: 0.208rem;
-    box-shadow: 0 -0.083rem #4eb7a8 inset;
     transition: 0.2s;
     vertical-align: middle;
     overflow: hidden;
@@ -35,7 +34,7 @@
   &__item:active, 
   &__item:focus {
     outline: none;
-    box-shadow: none;
+    box-shadow: none!important;
   }
 
   &__item:visited {

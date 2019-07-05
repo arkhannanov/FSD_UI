@@ -1,5 +1,4 @@
-mixin button(options={width:"", height:"", fontSize: "", color: "",name: ""})
-    - let {width, height, fontSize, color, name} = options;
+mixin button(options={width:"", height:"", fontSize: "", color: "", shadowHoverColor: "", name: ""})
+    - let {width, height, fontSize, color, shadowHoverColor, name} = options;
     .button
-        button.button__item(name="button", style=`width: ${width}; height: ${height}; font-size:${fontSize}; border: 0.042rem solid ${color}; box-shadow: 0 -0.083rem ${color} inset; color: ${color};`, onmouseover=`this.style.backgroundColor ='${color}'; this.style.color ='#ffffff'`, onmouseout=`this.style.backgroundColor='#ffffff'; this.style.color ='${color}' `)= name
-    
+        button.button__item(name="button", style=`width: ${width}; height: ${height}; font-size:${fontSize}; border: 0.042rem solid ${color}; box-shadow: 0 -0.083rem ${color} inset; color: ${color};`, onmouseover=`this.style.boxShadow = '0 -0.083rem ${shadowHoverColor} inset';this.style.backgroundColor ='${color}'; this.style.color ='#ffffff'`, onmouseout=`this.style.boxShadow = '0 -0.083rem ${color} inset'; this.style.backgroundColor='#ffffff'; this.style.color ='${color}';`)= name
