@@ -200,7 +200,15 @@ const MonthNames = [
     /*
      * Public
      */
-    
+    today() {
+      const today = new Date();
+      this._month = today.getMonth();
+      this._year = today.getFullYear();
+      this._date = today.getDate();
+
+      this._updateUi();
+    }
+
     setDate(date) {
       if (date.getTime() < this._minDate.getTime()) {
         return;
@@ -386,11 +394,17 @@ const MonthNames = [
 
       tableHead.appendChild(tableHeadRow);
 
-      const footer = document.createElement('div');
-      footer.className = "footer";
-      footer.innerHTML="TODAY";
+      this._footer = document.createElement('div');
 
-      table.appendChild(footer);
+      this._footer.className = "footer";
+      this._footer.innerHTML="TODAY";
+      this._footer.addEventListener('click', () => {
+        this.today();
+      });
+
+      table.appendChild(this._footer);
+
+
     }
     
     _updateUi() {
