@@ -218,7 +218,14 @@ mixin page
                         .search-drop-down__search
                             +search
                         .search-drop-down__drop-down
-                            +drop-down ({contentline: "Choose An Option", option1: "Option 1", option2: "Option 2", option3: "Option 3"})
+                            +drop-down ({
+                                contentContainer: [
+                                    {content: "This option 1"},
+                                    {content: "This option 2"},
+                                    {content: "This option 3"},
+                                    {content: "This option 4"},
+                                ]
+                            })
                     .user-profile
                         .user-profile__headline
                             +headline ("user profile")

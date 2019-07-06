@@ -1,11 +1,11 @@
-mixin drop-down(options = {contentline: "Choose An Option", firstOption: "Option 1", secondOption: "Option 2", thirdOption: "Option 3"})
-    -let {contentline = "Choose An Option", firstOption = "Option 1", secondOption = "Option 2", thirdOption = "Option 3"} = options;
+mixin drop-down(options = {contentContainer:[]})
+    -let {contentContainer} = options;
     .drop-down
         .drop-down__wrapper
             .drop-down__content-wrapper
-                .drop-down__contentline= contentline
+                .drop-down__contentline Choose an Option
                 button.drop-down__btn
             .drop-down__content
-                a.drop-down__first-link(href="/mock-address/change-me")= firstOption
-                a.drop-down__second-link(href="/mock-address/change-me")= secondOption
-                a.drop-down__third-link(href="/mock-address/change-me")= thirdOption
+                -contentContainer.forEach(function(item) {
+                    a.drop-down__item-link(href="/mock-address/change-me")= item.content
+                -});

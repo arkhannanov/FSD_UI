@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8157867f-740d-4692-8a34-f0abfefb57ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/player/player.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/player/player.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/player/player.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/player/player.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/drop-down/drop-down.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/drop-down/drop-down.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/page/page.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page/page.pug" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,28 +20,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/form/form.pug">
+        <entry file="file://$PROJECT_DIR$/src/blocks/toggle/toggle.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+            <state relative-caret-position="450">
+              <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/messaging/messaging.scss">
+        <entry file="file://$PROJECT_DIR$/src/blocks/drop-down/drop-down.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="95" column="14" selection-start-line="95" selection-start-column="14" selection-end-line="95" selection-end-column="14" />
+            <state relative-caret-position="85">
+              <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/blocks/player/player.scss">
+        <entry file="file://$PROJECT_DIR$/src/blocks/page/page.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            <state relative-caret-position="441">
+              <caret line="226" column="60" selection-start-line="226" selection-start-column="60" selection-end-line="226" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -57,7 +67,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/player/player.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1402">
+            <state relative-caret-position="595">
               <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
             </state>
           </provider>
@@ -66,7 +76,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/form/form.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
+            <state relative-caret-position="2227">
               <caret line="131" column="19" selection-start-line="131" selection-start-column="19" selection-end-line="131" selection-end-column="19" />
             </state>
           </provider>
@@ -75,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/calendar/calendar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3432">
+            <state relative-caret-position="6783">
               <caret line="401" column="18" selection-start-line="401" selection-start-column="18" selection-end-line="401" selection-end-column="18" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -97,16 +107,7 @@
         <entry file="file://$PROJECT_DIR$/src/blocks/calendar/calendar.pug">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/form/form.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="94" column="59" lean-forward="true" selection-start-line="94" selection-start-column="59" selection-end-line="94" selection-end-column="127" />
+              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -175,8 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/blocks/step-slider/step-slider.js" />
-        <option value="$PROJECT_DIR$/src/pages/sigma/sigma.js" />
         <option value="$PROJECT_DIR$/src/pages/alfa/alfa.js" />
         <option value="$PROJECT_DIR$/src/pages/betta/betta.js" />
         <option value="$PROJECT_DIR$/src/pages/gamma/gamma.js" />
@@ -206,13 +205,11 @@
         <option value="$PROJECT_DIR$/src/blocks/percents/percents.scss" />
         <option value="$PROJECT_DIR$/src/blocks/search/search.scss" />
         <option value="$PROJECT_DIR$/src/blocks/search/search.js" />
-        <option value="$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss" />
         <option value="$PROJECT_DIR$/src/blocks/user/user.pug" />
         <option value="$PROJECT_DIR$/src/blocks/user/user.scss" />
         <option value="$PROJECT_DIR$/src/blocks/page/page.scss" />
         <option value="$PROJECT_DIR$/src/blocks/events/events.scss" />
         <option value="$PROJECT_DIR$/src/blocks/news/news.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/page/page.pug" />
         <option value="$PROJECT_DIR$/src/blocks/button/button.scss" />
         <option value="$PROJECT_DIR$/src/blocks/button/button.pug" />
         <option value="$PROJECT_DIR$/src/blocks/arrow/arrow.scss" />
@@ -226,6 +223,10 @@
         <option value="$PROJECT_DIR$/src/blocks/messaging/messaging.scss" />
         <option value="$PROJECT_DIR$/src/blocks/player/player.pug" />
         <option value="$PROJECT_DIR$/src/blocks/player/player.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/toggle/toggle.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/drop-down/drop-down.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/page/page.pug" />
       </list>
     </option>
   </component>
@@ -241,10 +242,10 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="154" />
+    <option name="y" value="75" />
+    <option name="width" value="1305" />
+    <option name="height" value="904" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -252,6 +253,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -544,7 +546,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -629,7 +630,8 @@
       <workItem from="1561999919007" duration="2664000" />
       <workItem from="1562061833259" duration="11713000" />
       <workItem from="1562221658293" duration="613000" />
-      <workItem from="1562312283279" duration="10890000" />
+      <workItem from="1562312283279" duration="12873000" />
+      <workItem from="1562397037990" duration="2051000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring #6">
       <created>1560953526396</created>
@@ -778,11 +780,25 @@
       <option name="project" value="LOCAL" />
       <updated>1562324036331</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Refactoring #7 Отображение видеоплеера исправлено.">
+      <created>1562325356629</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1562325356629</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Refactoring #7 Симметричность toggles отредактирована.">
+      <created>1562326049637</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1562326049637</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176603000" />
+    <option name="totallyTimeSpent" value="180637000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -875,7 +891,9 @@
     <MESSAGE value="Refactoring #7 Исправлена форма." />
     <MESSAGE value="Refactoring #7 Исправлены недочеты в календаре." />
     <MESSAGE value="Refactoring #7 Рамка исправлена." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring #7 Рамка исправлена." />
+    <MESSAGE value="Refactoring #7 Отображение видеоплеера исправлено." />
+    <MESSAGE value="Refactoring #7 Симметричность toggles отредактирована." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring #7 Симметричность toggles отредактирована." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -889,14 +907,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/blocks/page-sigma/page-sigma.pug" />
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2057">
-          <caret line="121" column="11" selection-start-line="121" selection-start-column="11" selection-end-line="121" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/form-job/form-job.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3689">
@@ -1021,16 +1031,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/drop-down/drop-down.pug">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/user/user.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1075,13 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="207" column="18" selection-start-line="207" selection-start-column="18" selection-end-line="207" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/page/page.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="52" column="58" selection-start-line="52" selection-start-column="58" selection-end-line="52" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -1140,17 +1133,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/messaging/messaging.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="95" column="14" selection-start-line="95" selection-start-column="14" selection-end-line="95" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/toggle/toggle.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/form/form.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
+        <state relative-caret-position="2227">
           <caret line="131" column="19" selection-start-line="131" selection-start-column="19" selection-end-line="131" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/calendar/calendar.pug">
+    <entry file="file://$PROJECT_DIR$/src/blocks/calendar/calendar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        <state relative-caret-position="6783">
+          <caret line="401" column="18" selection-start-line="401" selection-start-column="18" selection-end-line="401" selection-end-column="18" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1161,41 +1188,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/calendar/calendar.js">
+    <entry file="file://$PROJECT_DIR$/src/blocks/calendar/calendar.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3432">
-          <caret line="401" column="18" selection-start-line="401" selection-start-column="18" selection-end-line="401" selection-end-column="18" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/messaging/messaging.scss">
+    <entry file="file://$PROJECT_DIR$/src/blocks/toggle/toggle.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="95" column="14" selection-start-line="95" selection-start-column="14" selection-end-line="95" selection-end-column="14" />
+        <state relative-caret-position="450">
+          <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.js">
+    <entry file="file://$PROJECT_DIR$/src/blocks/drop-down/drop-down.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1402">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        <state relative-caret-position="85">
+          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.pug">
+    <entry file="file://$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="37" />
+        <state relative-caret-position="450">
+          <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.scss">
+    <entry file="file://$PROJECT_DIR$/src/blocks/page/page.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        <state relative-caret-position="441">
+          <caret line="226" column="60" selection-start-line="226" selection-start-column="60" selection-end-line="226" selection-end-column="60" />
         </state>
       </provider>
     </entry>
