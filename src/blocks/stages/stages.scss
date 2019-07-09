@@ -5,6 +5,7 @@
     flex-direction:column;
     align-items:center;
     width: 27.083rem;
+    position: relative;
   }
 
   &__div-wrapper {
@@ -26,7 +27,8 @@
     flex-direction:row;
     justify-content:space-between;
     width: 25.208rem;
-    margin-top: -0.708rem;
+    position: absolute;
+    top: -0.5rem;
 
     #stages__first-circle,
     #stages__second-circle,
