@@ -1,7 +1,5 @@
 import '../../js/jquery.range';
 
-console.log('тест');
-
 class Slider {
     constructor(root) {
         this.root = $(root);

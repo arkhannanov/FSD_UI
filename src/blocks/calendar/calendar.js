@@ -1,192 +1,21 @@
-/*
- * Default month names
- */
-const MonthNames = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'SeptemberP',
-    'October',
-    'November',
-    'December',
-  ];
-  
-  /*
-   * Default weekday names
-   */
-  const DayNames = [
-    'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'
-  ];
-  
-  /*
-   * Add your locale here (if the first weekday isn't Sunday)
-   */
-  const StartOfWeek = {
-    'ar-BH': 6,
-    'ar-DZ': 6,
-    'ar-JO': 6,
-    'ar-KW': 6,
-    'ar-LB': 6,
-    'ar-LY': 6,
-    'ar-MA': 6,
-    'ar-OM': 6,
-    'ar-QA': 6,
-    'ar-SA': 6,
-    'ar-SD': 6,
-    'ar-SY': 6,
-    'ar-TN': 6,
-    'ar-AE': 6,
-    'ar-YE': 6,
-    'ca-ES': 1,
-    'ca': 1,
-    'cs-CZ': 1,
-    'cs': 1,
-    'da_DK': 1,
-    'da': 1,
-    'de-AT': 1,
-    'de-DE': 1,
-    'de-LU': 1,
-    'de-CH': 1,
-    'de': 1,
-    'el-GR': 1,
-    'el': 1,
-    'en_GB': 1,
-    'en-IE': 1,
-    'es-AR': 1,
-    'es-BO': 1,
-    'es-CL': 1,
-    'es-CO': 1,
-    'es-CR': 1,
-    'es-DO': 1,
-    'es-EC': 1,
-    'es-SV': 1,
-    'es-GT': 1,
-    'es-HN': 1,
-    'es-MX': 1,
-    'es-NI': 1,
-    'es-PA': 1,
-    'es-PY': 1,
-    'es-PE': 1,
-    'es-PR': 1,
-    'es-ES': 1,
-    'es-UY': 1,
-    'es-VE': 1,
-    'et-EE': 1,
-    'et': 1,
-    'fi-FI': 1,
-    'fi': 1,
-    'fr-BE': 1,
-    'fr-KM': 1,
-    'fr-FR': 1,
-    'fr-GN': 1,
-    'fr-LU': 1,
-    'fr-MC': 1,
-    'fr-CH': 1,
-    'fr': 1,
-    'hr-HR': 1,
-    'hr': 1,
-    'hu-HU': 1,
-    'hu': 1,
-    'id-ID': 1,
-    'is-IS': 1,
-    'is': 1,
-    'it-IT': 1,
-    'it-CH': 1,
-    'it': 1,
-    'lt-LT': 1,
-    'lt': 1,
-    'nl-BE': 1,
-    'nl-NL': 1,
-    'nl': 1,
-    'nb-NO': 1,
-    'nb': 1,
-    'nn-NO': 1,
-    'nn': 1,
-    'pl-PL': 1,
-    'pl': 1,
-    'pt-MZ': 1,
-    'pt-PT': 1,
-    'pt': 1,
-    'ro-MD': 1,
-    'ro-RO': 1,
-    'ro': 1,
-    'sq-AL': 6,
-    'ru-MD': 1,
-    'ru-RU': 1,
-    'ru-UA': 1,
-    'ru': 1,
-    'sk-SK': 1,
-    'sk': 1,
-    'sl-SI': 1,
-    'sl': 1,
-    'sr-Cyrl': 1,
-    'sr-Cyrl-BA': 1,
-    'sr-Cyrl-ME': 1,
-    'sr-Cyrl-RS': 1,
-    'sr-Latn': 1,
-    'sr-Latn-BA': 1,
-    'sr-Latn-ME': 1,
-    'sr-Latn-RS': 1,
-    'sr': 1,
-    'sr-BA': 1,
-    'sr-ME': 1,
-    'sr-RS': 1,
-    'sv-FI': 1,
-    'sv-SE': 1,
-    'sv': 1,
-    'tr-TR': 1,
-    'tr': 1,
-    'uk-UA': 1,
-    'uk': 1,
-  };
-  
+import * as Const from './const';
 
-  /*
-   * Constants
-   */
-  
-  const Events = {
-    DATE_SELECTED: 'dateSelected',
-  };
-  
-  const ClassNames = {
-    DAY: 'calendar__day',
-    UPPER_HEADER: 'calendar__upperheader',
-    BTN: 'calendar__btn',
-    BTN_DISABLED: 'calendar__btn_disabled',
-    BTN_PREV: 'calendar__btn_prev',
-    BTN_NEXT: 'calendar__btn_next',
-    HEADER: 'calendar__header',
-    MONTH: 'calendar__month',
-    ROOT: 'calendar',
-    TABLE: 'calendar__table',
-    TABLE_BODY: 'calendar__table-body',
-    TABLE_CELL: 'calendar__table-cell',
-    TABLE_CELL_DISABLED: 'calendar__table-cell_disabled',
-    TABLE_CELL_SELECTED: 'calendar__table-cell_selected',
-    TABLE_COL_HEADER: 'calendar__table-col-header',
-    TABLE_HEAD: 'calendar__table-head',
-    TABLE_ROW: 'calendar__table-row',
-    YEAR: 'calendar__year',
-  };
-  
-  /*
-   * Default options
-   */
-  const Defaults = {
-    minDate: new Date(-8640000000000000),
-    maxDate: new Date(8640000000000000),
-  };
-  
-  class Calendar {
+const DayNames = Const.DayNames;
+const StartOfWeek = Const.StartOfWeek;
+const Events = Const.Events;
+const ClassNames = Const.ClassNames;
+const Defaults = Const.Defaults;
+const MonthNames = Const.MonthNames;
+
+class Calendar {
     constructor(root, {minDate, maxDate, selectedDate}) {
-      this._root = root;
-  
+      this._root = root.calendarElem;
+      this._dayElem = root._dayElem;
+      this._header = root._header;
+      this._monthElem = root._monthElem;
+      this._prevBtn = root._prevBtn;
+      this._nextBtn = root._nextBtn;
+
       this._minDate = minDate || Defaults.minDate;
       this._maxDate = maxDate || Defaults.maxDate;
       
@@ -289,62 +118,24 @@ const MonthNames = [
     }
     
     _createUi() {
-      this._root.classList.add(ClassNames.ROOT);
 
-      const upperheader = document.createElement('div');
-      upperheader.className = ClassNames.UPPER_HEADER;
-      //upperheader.innerHTML = 'Содержимое абзаца';
-      this._dayElem = document.createElement('span');
-      this._dayElem.className = ClassNames.DAY;
-      upperheader.appendChild(this._dayElem);
-
-      this._root.appendChild(upperheader);
-
-      const header = document.createElement('div');
-      header.className = ClassNames.HEADER;
-      
-      this._monthElem = document.createElement('span');
-      this._monthElem.className = ClassNames.MONTH;
-      header.appendChild(this._monthElem);
-      
-      header.appendChild(document.createTextNode(' '));
-      
-      this._yearElem = document.createElement('span');
-      this._yearElem.className = ClassNames.YEAR;
-     // header.appendChild(this._yearElem);
-    
-      
-      this._prevBtn = document.createElement('button');
-      this._prevBtn.classList.add(
-        ClassNames.BTN,
-        ClassNames.BTN_PREV
-      );
+      this._header.appendChild(document.createTextNode(' '));
       this._prevBtn.addEventListener('click', () => {
         this.prevMonth();
       });
-      header.appendChild(this._prevBtn);
-      
-      this._nextBtn = document.createElement('button');
-      this._nextBtn.classList.add(
-        ClassNames.BTN,
-        ClassNames.BTN_NEXT
-      );
       this._nextBtn.addEventListener('click', () => {
         this.nextMonth();
       });
-      header.appendChild(this._nextBtn);
-      
-      this._root.appendChild(header);
-      
+
       const table = document.createElement('table');
       table.className = ClassNames.TABLE;
-      
+
       const tableHead = document.createElement('thead');
       tableHead.className = ClassNames.TABLE_HEAD;
-      
+
       const tableHeadRow = document.createElement('tr');
       tableHeadRow.className = ClassNames.TABLE_ROW;
-      
+
       for (let i = 0; i < 7; i++) {
         const day = this._dayNames[(i + this._startOfWeek) % 7];
         const colHeader = document.createElement('th');
@@ -353,24 +144,15 @@ const MonthNames = [
         colHeader.textContent = day;
         tableHeadRow.appendChild(colHeader);
       }
-      
+
       tableHead.appendChild(tableHeadRow);
-
-      const patch = document.createElement('div');
-      patch.className = "patch";
-      //upperheader.innerHTML = 'Содержимое абзаца';
-      // this._dayElem = document.createElement('span');
-      // this._dayElem.className = ClassNames.DAY;
-      // upperheader.appendChild(this._dayElem);
-
       table.appendChild(tableHead);
-      table.appendChild(patch);
-      
+
       this._tableBody = document.createElement('tbody');
       this._tableBody.className = ClassNames.TABLE_BODY;
       this._tableBody.addEventListener('click', (event) => {
         const target = event.target;
-  
+
         if (
           target.classList.contains(ClassNames.TABLE_CELL) &&
           target.dataset.date
@@ -384,19 +166,19 @@ const MonthNames = [
               ),
             },
           });
-          
+
           this._root.dispatchEvent(event);
         }
       });
       table.appendChild(this._tableBody);
-      
+
       this._root.appendChild(table);
 
       tableHead.appendChild(tableHeadRow);
 
       this._footer = document.createElement('div');
 
-      this._footer.className = "footer";
+      this._footer.className = ClassNames.FOOTER;
       this._footer.innerHTML="TODAY";
       this._footer.addEventListener('click', () => {
         this.today();
@@ -404,13 +186,13 @@ const MonthNames = [
 
       table.appendChild(this._footer);
 
-
     }
     
     _updateUi() {
       this._monthElem.textContent = this._monthNames[this._month];
-      this._yearElem.textContent = this._year;
       this._dayElem.textContent = this._date;
+
+      console.log(root._dayElem);
   
       if (this._isMinMonth()) {
         this._prevBtn.classList.add(ClassNames.BTN_DISABLED);
@@ -479,13 +261,23 @@ const MonthNames = [
       );
     }
   }
-  
+
+
+const root = {
+  calendarElem : document.getElementById('calendar'),
+ _dayElem : document.getElementsByClassName('calendar__day')[0],
+  _header : document.getElementsByClassName('calendar__header')[0],
+  _monthElem: document.getElementsByClassName('calendar__month')[0],
+  _prevBtn: document.getElementsByClassName('calendar__btn_prev')[0],
+  _nextBtn: document.getElementsByClassName('calendar__btn_next')[0],
+  _tableContainer: document.getElementsByClassName('calendar__table-container')[0],
+}
+
   window.onload = () => {
-    const calendarElem = document.getElementById('calendar');
-    if (calendarElem != null) {
+    if (root != null) {
       const today = new Date();
       
-      const calendar = new Calendar(calendarElem, {
+      const calendar = new Calendar(root, {
         minDate: new Date(
           today.getFullYear(),
           today.getMonth(),
@@ -497,8 +289,8 @@ const MonthNames = [
           today.getDate()
         ),
       });
-      
-      calendarElem.addEventListener(Events.DATE_SELECTED, (event) => {
+
+      root.calendarElem.addEventListener(Events.DATE_SELECTED, (event) => {
         calendar.setDate(event.detail.date);
       });
     }
