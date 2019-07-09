@@ -43,10 +43,11 @@
   }
 
   &__search {
-    width: 8.75rem;
+    width: 6.75rem;
     display: flex;
     flex-direction: row;
-    margin: 0.35rem 0 0 0.417rem;
+    margin: 0.35rem 0 2rem 0.417rem;
+    padding-right: 1rem;
 
     &-input {
       width: 7.5rem;
@@ -57,18 +58,17 @@
       height: 0.9rem;
       background-color: #e5e5e5;
       border: 0;
-      border-radius: 0.125rem;
+      border-radius: 0.125rem 0 0 0.125rem;
     }
 
     &-button {
-      width: 1rem;
-      height: 1rem;
+      width: 1.25rem;
+      height: 0.98rem;
       border: 0;
-      border-radius: 0.125rem;
+      border-radius: 0 0.125rem 0.125rem 0;
       position: relative;
       background: #e75735 url('./images/search-icon.png') 0.271rem 0.2rem no-repeat;
       font-size: 0.333rem;
-      margin-left: -1rem;
     }
 
     &-button, 
