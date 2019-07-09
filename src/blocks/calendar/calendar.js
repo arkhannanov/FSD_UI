@@ -264,7 +264,7 @@ class Calendar {
 
 
 const root = {
-  calendarElem : document.getElementById('calendar'),
+  calendarElem : document.getElementsByClassName('page-calendar')[0],
  _dayElem : document.getElementsByClassName('calendar__day')[0],
   _header : document.getElementsByClassName('calendar__header')[0],
   _monthElem: document.getElementsByClassName('calendar__month')[0],
