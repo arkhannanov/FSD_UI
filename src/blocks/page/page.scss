@@ -56,7 +56,7 @@
 }
 
 .arrows {
-  margin: auto auto 1.65rem auto;
+  margin: auto auto 1.75rem auto;
 
   &__container {
     display: flex;
@@ -81,15 +81,17 @@
     flex-direction:row;
     justify-content: space-between;
     width: 25rem;
-    margin: 0 auto 1.2rem auto;
+    margin: 1.45rem auto 2.5rem auto;
   }
 
   &_slider-wrapper {
-    padding-top: 0.27rem;
+    padding-top: 0.4rem;
+    margin-left: 0.1rem;
   }
 
   &_step-slider-wrapper {
-    padding-top: 0.1rem;
+    padding-top: 0.4rem;
+    padding-right: 0.3rem;
   }
 
 }
@@ -98,7 +100,7 @@
 
     &__stages-wrapper {
       margin-top: 1.5rem;
-      margin-bottom: 2.2rem;
+      margin-bottom: 2.3rem;
     }
   }
 .form-tick-boxes-toggle {

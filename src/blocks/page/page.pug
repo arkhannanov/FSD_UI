@@ -2,8 +2,6 @@ include ../headline/headline.pug
 include ../button/button.pug
 include ../percents/percents.pug
 include ../pie/pie.pug
-include ../slider/slider
-include ../step-slider/step-slider
 include ../stages/stages.pug
 include ../form/form.pug
 include ../toggle/toggle.pug
@@ -19,6 +17,8 @@ include ../messaging/messaging.pug
 include ../player/player.pug
 include ../arrow/arrow.pug
 include ../navigation/navigation.pug
+include ../navigation/navigation.pug
+include ../slider/slider
 
 
 mixin page
@@ -30,102 +30,78 @@ mixin page
                     .buttons__container
                         .buttons__clicked
                             +button({
-                                width: `3.25rem`,
-                                height: `1rem`,
-                                fontSize: `0.45rem`,
-                                color: `#4eb7a8`,
-                                shadowHoverColor: `#28a290`,
-                                name: "button"
+                                size: `small`,
+                                color: `green`,
+                                name: `ripple`,
+                                title: `button`,
                             })
                             +button({
-                                width: `4.917rem`,
-                                height: `1.5rem`,
-                                fontSize: `0.55rem`,
-                                color: `#4eb7a8`,
-                                shadowHoverColor: `#28a290`,
-                                name: "button"
+                                size: `big`,
+                                color: `green`,
+                                name: `ripple`,
+                                title: `button`,
                             })
                             +button({
-                                width: `4.917rem`,
-                                height: `1.5rem`,
-                                fontSize: `0.55rem`,
-                                color: `#e75735`,
-                                shadowHoverColor: `#bf3e1f`,
-                                name: "button"
+                                size: `big`,
+                                color: `orange`,
+                                name: `ripple`,
+                                title: `button`,
                             })
                             +button({
-                                width: `3.25rem`,
-                                height: `1rem`,
-                                fontSize: `0.45rem`,
-                                color: `#e75735`,
-                                shadowHoverColor: `#bf3e1f`,
-                                name: "button"
+                                size: `small`,
+                                color: `orange`,
+                                name: `ripple`,
+                                title: `button`,
                             })
                         .buttons__hovered
                             +button({
-                                width: `3.25rem`,
-                                height: `1rem`,
-                                fontSize: `0.45rem`,
-                                color: `#4eb7a8`,
-                                shadowHoverColor: `#28a290`,
-                                name: "button"
+                                size: `small`,
+                                color: `green`,
+                                name: `noripple`,
+                                title: `button`,
                             })
                             +button({
-                                width: `4.917rem`,
-                                height: `1.5rem`,
-                                fontSize: `0.55rem`,
-                                color: `#4eb7a8`,
-                                shadowHoverColor: `#28a290`,
-                                name: "button"
+                                size: `big`,
+                                color: `green`,
+                                name: `noripple`,
+                                title: `button`,
                             })
                             +button({
-                                width: `4.917rem`,
-                                height: `1.5rem`,
-                                fontSize: `0.55rem`,
-                                color: `#e75735`,
-                                shadowHoverColor: `#bf3e1f`,
-                                name: "button"
+                                size: `big`,
+                                color: `orange`,
+                                name: `noripple`,
+                                title: `button`,
                             })
                             +button({
-                                width: `3.25rem`,
-                                height: `1rem`,
-                                fontSize: `0.45rem`,
-                                color: `#e75735`,
-                                shadowHoverColor: `#bf3e1f`,
-                                name: "button"
+                                size: `small`,
+                                color: `orange`,
+                                name: `noripple`,
+                                title: `button`,
                             })
                         .buttons__no-action
                             +button({
-                                width: `3.25rem`,
-                                height: `1rem`,
-                                fontSize: `0.45rem`,
-                                color: `#4eb7a8`,
-                                shadowHoverColor: `#28a290`,
-                                name: "button"
+                                size: `small`,
+                                color: `green`,
+                                name: `noripple`,
+                                title: `button`,
                             })
                             +button({
-                                width: `4.917rem`,
-                                height: `1.5rem`,
-                                fontSize: `0.55rem`,
-                                color: `#4eb7a8`,
-                                shadowHoverColor: `#28a290`,
-                                name: "button"
+                                size: `big`,
+                                color: `green`,
+                                name: `noripple`,
+                                title: `button`,
                             })
                             +button({
-                                width: `4.917rem`,
-                                height: `1.5rem`,
-                                fontSize: `0.55rem`,
-                                color: `#e75735`,
-                                shadowHoverColor: `#bf3e1f`,
-                                name: "button"
+                                size: `big`,
+                                color: `orange`,
+                                name: `noripple`,
+                                title: `button`,
                             })
                             +button({
-                                width: `3.25rem`,
-                                height: `1rem`,
-                                fontSize: `0.45rem`,
-                                color: `#e75735`,
-                                shadowHoverColor: `#bf3e1f`,
-                                name: "button"
+                                size: `small`,
+                                color: `orange`,
+                                name: `noripple`,
+                                title: `button`,
                             })
                 .arrows
                     .arrows__header
@@ -180,9 +156,25 @@ mixin page
                     +headline ("sliders")
                     .sliders-container
                         .sliders_slider-wrapper
-                            +slider
+                            +slider({
+                                min: 0,
+                                max: 100,
+                                step: 1,
+                                value: 40,
+                                label: 'true',
+                                dial: 'false',
+                                color: 'orange',
+                            })
                         .sliders_step-slider-wrapper
-                            +step-slider
+                            +slider({
+                                min: 0,
+                                max: 100,
+                                step: 25,
+                                value: 75,
+                                label: 'false',
+                                dial: 'true',
+                                color: 'greenkit',
+                            })
                 .stages
                     +headline ("stages")
                     .stages__stages-wrapper
@@ -295,3 +287,4 @@ mixin page
                         interior: "interior",
                         rentAuto: "rent-auto"
                     })
+                .test

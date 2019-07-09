@@ -17,10 +17,13 @@ class Button {
         circle.style.left = `${elem.clientX - this.offsetLeft + window.pageXOffset - diametr / 2}px`;
         circle.style.top = `${elem.clientY - this.offsetTop + window.pageYOffset - diametr / 2}px`;
         circle.classList.add('ripple');
+        setTimeout(() => {
+            this.removeChild(circle);
+        }, 2000);
     }
 }
 
-const buttons = document.getElementsByName('button');
+const buttons = document.getElementsByName('ripple');
 
 buttons.forEach((item) => {
     new Button(item);

@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const webpack = require('webpack');
 
 const PATHS = {
     src: path.join(__dirname, './src'),
@@ -136,5 +137,11 @@ module.exports = {
             { from: `${PATHS.src}/video`, to: 'video' },
             { from: `${PATHS.src}/images/favicons`, to: 'images/favicons' },
         ]),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery\'',
+            'window.$': 'jquery',
+        }),
     ],
 };
