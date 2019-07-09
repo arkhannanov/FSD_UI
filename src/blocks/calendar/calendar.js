@@ -191,8 +191,6 @@ class Calendar {
     _updateUi() {
       this._monthElem.textContent = this._monthNames[this._month];
       this._dayElem.textContent = this._date;
-
-      console.log(root._dayElem);
   
       if (this._isMinMonth()) {
         this._prevBtn.classList.add(ClassNames.BTN_DISABLED);

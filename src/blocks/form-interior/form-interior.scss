@@ -37,13 +37,15 @@
 
   &__message-container {
     width: 10.417rem;
+    position: relative;
   }
 
   &__message-text {
     width: 10.417rem;
     height: 3.75rem;
     background: #e5e5e5;
-    margin-top: -2rem;
+    position: absolute;
+    top: -2rem;
   }
   
   .ripple {
@@ -62,6 +64,9 @@
     }
   }
 
+  &__submit-container {
+    position: relative;
+  }
   &__submit-button {
     width: 4.917rem;
     height: 1.333rem;
@@ -77,9 +82,10 @@
     transition: 0.2s;
     vertical-align: middle;
     overflow: hidden;
-    position: relative;
-    margin-top: 0.208rem;
+    top: 2.5rem;
     left: 5.792rem;
+    position: absolute;
+
     margin-bottom: 1.25rem;
   }
 
