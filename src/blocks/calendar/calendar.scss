@@ -132,6 +132,7 @@
     table-layout: fixed;
     margin-top: -1rem;
     border-spacing: 0.083rem;
+    position: relative;
   }
 
   &__table-col-header {
@@ -178,7 +179,9 @@
     color: #868686;
     text-align: left;
     padding: 0.792rem 0 0 0.792rem;
-    margin: 0 0 1.458rem -0.071rem;
     text-transform: uppercase;
+    position: absolute;
+    top: 9.55rem;
+    left: 0rem;
   }
 }
