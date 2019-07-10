@@ -268,8 +268,8 @@ const root = {
  _dayElem : document.getElementsByClassName('calendar__day')[0],
   _header : document.getElementsByClassName('calendar__header')[0],
   _monthElem: document.getElementsByClassName('calendar__month')[0],
-  _prevBtn: document.getElementsByClassName('calendar__btn_prev')[0],
-  _nextBtn: document.getElementsByClassName('calendar__btn_next')[0],
+  _prevBtn: document.getElementsByClassName('calendar__btn-prev')[0],
+  _nextBtn: document.getElementsByClassName('calendar__btn-next')[0],
   _tableContainer: document.getElementsByClassName('calendar__table-container')[0],
 }
 
