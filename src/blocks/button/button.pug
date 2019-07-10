@@ -1,4 +1,4 @@
 mixin button(options={size:"", color:"", name: "", title: ""})
     - let {size, color, name, title} = options;
     .button
-        button( class = `button__item_${size}_${color}`, name = `${name}`)= title
+        button( class = `button__item button__item_size_${size} button__item_color_${color}`, name = `${name}`)= title
