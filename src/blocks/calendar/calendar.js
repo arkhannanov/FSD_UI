@@ -34,6 +34,7 @@ class Calendar {
       this._month = today.getMonth();
       this._year = today.getFullYear();
       this._date = today.getDate();
+      this._selectedDate = today;
 
       this._updateUi();
     }
@@ -56,6 +57,7 @@ class Calendar {
       this._month = this._selectedDate.getMonth();
       this._year = this._selectedDate.getFullYear();
       this._date = this._selectedDate.getDate();
+
   
       this._updateUi();
     }
@@ -229,7 +231,7 @@ class Calendar {
                 this._selectedDate.getMonth(),
                 this._selectedDate.getDate()
               ).getTime()) {
-                cell.classList.add(ClassNames.TABLE_CELL_SELECTED);
+                  cell.classList.add(ClassNames.TABLE_CELL_SELECTED);
               }
             } else {
               cell.classList.add(ClassNames.TABLE_CELL_DISABLED);
