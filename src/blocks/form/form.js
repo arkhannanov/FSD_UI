@@ -131,15 +131,15 @@ class Form {
 
 
 const root = {
-    formNameInput: document.getElementById('form__name-input'),
-    formNameMessageContainer: document.getElementById('form__name-message-container'),
-    formNameInputErrorMessage: document.getElementById('form__name-input-error-message'),
-    formEmailInput: document.getElementById('form__email-input'),
-    formEmailMessageContainer: document.getElementById('form__email-message-container'),
-    formEmailInputErrorMessage: document.getElementById('form__email-input-error-message'),
-    formMessageInput: document.getElementById('form__message-input'),
-    formSubmitButton: document.getElementById('form__submit-button'),
-    formCompleteform: document.getElementById('form__completeform'),
+    formNameInput: document.getElementsByClassName('form__name-input')[0],
+    formNameMessageContainer: document.getElementsByClassName('form__name-message-container')[0],
+    formNameInputErrorMessage: document.getElementsByClassName('form__name-input-error-message')[0],
+    formEmailInput: document.getElementsByClassName('form__email-input')[0],
+    formEmailMessageContainer: document.getElementsByClassName('form__email-message-container')[0],
+    formEmailInputErrorMessage: document.getElementsByClassName('form__email-input-error-message')[0],
+    formMessageInput: document.getElementsByClassName('form__message-input')[0],
+    formSubmitButton: document.getElementsByClassName('form__submit-button')[0],
+    formCompleteform: document.getElementsByClassName('form__completeform')[0],
 };
 
 new Form(root);

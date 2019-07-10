@@ -20,7 +20,7 @@
     border-radius: 0.125rem;
   }
 
-  #form-rent-auto__surname-message {
+  &__surname-message {
     width: 3.542rem;
     height: 1.542rem;
     font-weight: 400;
@@ -35,7 +35,7 @@
     text-transform: uppercase;
   }
 
-  #form-rent-auto__surname-error-message {
+  &__surname-error-message {
     font-size: 0.417rem;
     color: #555564;
     height: 0.125rem;
@@ -56,10 +56,9 @@
     border: none;
     border-radius: 0.125rem;
     margin-top: 0;
-    font-family: $mainFont;
   }
 
-  #form-rent-auto__name-message {
+  &__name-message {
     width: 3.542rem;
     height: 1.542rem;
     font-weight: 400;
@@ -74,7 +73,7 @@
     text-transform: uppercase;
   }
 
-  #form-rent-auto__name-error-message {
+  &__name-error-message {
     font-size: 0.417rem;
     color: #555564;
     height: 0.125rem;
@@ -95,10 +94,9 @@
     border: none;
     border-radius: 0.125rem;
     margin-top: 0;
-    font-family: $mainFont;
   }
 
-  #form-rent-auto__patronymic-message {
+  &__patronymic-message {
     width: 3.542rem;
     height: 1.542rem;
     font-weight: 400;
@@ -113,7 +111,7 @@
     text-transform: uppercase;
   }
 
-  #form-rent-auto__patronymic-error-message {
+  &__patronymic-error-message {
     font-size: 0.417rem;
     color: #555564;
     height: 0.125rem;
@@ -134,10 +132,9 @@
     border: none;
     border-radius: 0.125rem;
     margin-top: 0;
-    font-family: $mainFont;
   }
   
-  #form-rent-auto__phone-message{
+  &__phone-message{
     width: 3.542rem;
     height: 1.542rem;
     font-weight: 400;
@@ -152,7 +149,7 @@
     text-transform: uppercase;
   }
 
-  #form-rent-auto__phone-error-message {
+  &__phone-error-message {
     font-size: 0.417rem;
     color: #555564;
     height: 0.125rem;
@@ -173,10 +170,9 @@
     border: none;
     border-radius: 0.125rem;
     margin-top: 0;
-    font-family: $mainFont;
   }
 
-  #form-rent-auto__email-message {
+  &__email-message {
     width: 3.542rem;
     height: 1.542rem;
     font-weight: 400;
@@ -191,7 +187,7 @@
     text-transform: uppercase;
   }
 
-  #form-rent-auto__email-error-message {
+  &__email-error-message {
     font-size: 0.417rem;
     color: #555564;
     height: 0.125rem;

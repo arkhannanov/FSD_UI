@@ -53,12 +53,12 @@ class DropDown {
     }
 }
 const root = {
-    korobkaContentline: document.getElementById('drop-down-korobka__contentline'),
-    mechanic: document.getElementById('drop-down-korobka__mechanic'),
-    automat: document.getElementById('drop-down-korobka__automat'),
-    placeContentline: document.getElementById('drop-down-place__contentline'),
-    office: document.getElementById('drop-down-place__office'),
-    phone: document.getElementById('drop-down-place__phone'),
+    korobkaContentline: document.getElementsByClassName('drop-down-korobka__contentline')[0],
+    mechanic: document.getElementsByClassName('drop-down-korobka__mechanic')[0],
+    automat: document.getElementsByClassName('drop-down-korobka__automat')[0],
+    placeContentline: document.getElementsByClassName('drop-down-place__contentline')[0],
+    office: document.getElementsByClassName('drop-down-place__office')[0],
+    phone: document.getElementsByClassName('drop-down-place__phone')[0],
 };
 
 new DropDown(root);

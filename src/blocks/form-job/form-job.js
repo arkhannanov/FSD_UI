@@ -199,20 +199,20 @@ class FormJob {
 }
 
 const root = {
-    jobTitleInput: document.getElementById('form-job__job-title-input'),
-    jobTitleMessage: document.getElementById('form-job__job-title-message'),
-    jobTitleErrorMessage: document.getElementById('form-job__job-title-error-message'),
-    facebookInput: document.getElementById('form-job__facebook-input'),
-    facebookMessage: document.getElementById('form-job__facebook-message'),
-    facebookErrorMessage: document.getElementById('form-job__facebook-error-message'),
-    twitterInput: document.getElementById('form-job__twitter-input'),
-    twitterMessage: document.getElementById('form-job__twitter-message'),
-    twitterErrorMessage: document.getElementById('form-job__twitter-error-message'),
-    dribbbleInput: document.getElementById('form-job__dribbble-input'),
-    dribbbleMessage: document.getElementById('form-job__dribbble-message'),
-    dribbbleErrorMessage: document.getElementById('form-job__dribbble-error-message'),
-    submitButton: document.getElementById('form-job__submit-button'),
-    completeForm: document.getElementById('form-job__completeform'),
+    jobTitleInput: document.getElementsByClassName('form-job__job-title-input')[0],
+    jobTitleMessage: document.getElementsByClassName('form-job__job-title-message')[0],
+    jobTitleErrorMessage: document.getElementsByClassName('form-job__job-title-error-message')[0],
+    facebookInput: document.getElementsByClassName('form-job__facebook-input')[0],
+    facebookMessage: document.getElementsByClassName('form-job__facebook-message')[0],
+    facebookErrorMessage: document.getElementsByClassName('form-job__facebook-error-message')[0],
+    twitterInput: document.getElementsByClassName('form-job__twitter-input')[0],
+    twitterMessage: document.getElementsByClassName('form-job__twitter-message')[0],
+    twitterErrorMessage: document.getElementsByClassName('form-job__twitter-error-message')[0],
+    dribbbleInput: document.getElementsByClassName('form-job__dribbble-input')[0],
+    dribbbleMessage: document.getElementsByClassName('form-job__dribbble-message')[0],
+    dribbbleErrorMessage: document.getElementsByClassName('form-job__dribbble-error-message')[0],
+    submitButton: document.getElementsByClassName('form-job__submit-button')[0],
+    completeForm: document.getElementsByClassName('form-job__completeform')[0],
 };
 
 new FormJob(root);

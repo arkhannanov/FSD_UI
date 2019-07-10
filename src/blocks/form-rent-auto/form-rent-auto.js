@@ -20,7 +20,7 @@ class FormRentAuto {
         this.surnameErrorMessage = root.surnameErrorMessage;
         this.nameInput = root.nameInput;
         this.nameMessage = root.nameMessage;
-        this.nameErrorMessage = root.surnameErrorMessage;
+        this.nameErrorMessage = root.nameErrorMessage;
         this.patronymicInput = root.patronymicInput;
         this.patronymicMessage = root.patronymicMessage;
         this.patronymicErrorMessage = root.patronymicErrorMessage;
@@ -243,23 +243,23 @@ class FormRentAuto {
 }
 
 const root = {
-    surnameInput: document.getElementById('form-rent-auto__surname-input'),
-    surnameMessage: document.getElementById('form-rent-auto__surname-message'),
-    surnameErrorMessage: document.getElementById('form-rent-auto__surname-error-message'),
-    nameInput: document.getElementById('form-rent-auto__name-input'),
-    nameMessage: document.getElementById('form-rent-auto__name-message'),
-    nameErrorMessage: document.getElementById('form-rent-auto__name-error-message'),
-    patronymicInput: document.getElementById('form-rent-auto__patronymic-input'),
-    patronymicMessage: document.getElementById('form-rent-auto__patronymic-message'),
-    patronymicErrorMessage: document.getElementById('form-rent-auto__patronymic-error-message'),
-    phoneInput: document.getElementById('form-rent-auto__phone-input'),
-    phoneMessage: document.getElementById('form-rent-auto__phone-message'),
-    phoneErrorMessage: document.getElementById('form-rent-auto__phone-error-message'),
-    emailInput: document.getElementById('form-rent-auto__email-input'),
-    emailMessage: document.getElementById('form-rent-auto__email-message'),
-    emailErrorMessage: document.getElementById('form-rent-auto__email-error-message'),
-    submitForm: document.getElementById('submit'),
-    completeForm: document.getElementById('completeform'),
+    surnameInput: document.getElementsByClassName('form-rent-auto__surname-input')[0],
+    surnameMessage: document.getElementsByClassName('form-rent-auto__surname-message')[0],
+    surnameErrorMessage: document.getElementsByClassName('form-rent-auto__surname-error-message')[0],
+    nameInput: document.getElementsByClassName('form-rent-auto__name-input')[0],
+    nameMessage: document.getElementsByClassName('form-rent-auto__name-message')[0],
+    nameErrorMessage: document.getElementsByClassName('form-rent-auto__name-error-message')[0],
+    patronymicInput: document.getElementsByClassName('form-rent-auto__patronymic-input')[0],
+    patronymicMessage: document.getElementsByClassName('form-rent-auto__patronymic-message')[0],
+    patronymicErrorMessage: document.getElementsByClassName('form-rent-auto__patronymic-error-message')[0],
+    phoneInput: document.getElementsByClassName('form-rent-auto__phone-input')[0],
+    phoneMessage: document.getElementsByClassName('form-rent-auto__phone-message')[0],
+    phoneErrorMessage: document.getElementsByClassName('form-rent-auto__phone-error-message')[0],
+    emailInput: document.getElementsByClassName('form-rent-auto__email-input')[0],
+    emailMessage: document.getElementsByClassName('form-rent-auto__email-message')[0],
+    emailErrorMessage: document.getElementsByClassName('form-rent-auto__email-error-message')[0],
+    submitForm: document.getElementsByClassName('form-rent-auto-submit')[0],
+    completeForm: document.getElementsByClassName('form-rent-auto-completeform')[0],
 };
 
 new FormRentAuto(root);

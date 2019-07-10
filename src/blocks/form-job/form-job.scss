@@ -7,7 +7,7 @@
     justify-content: space-between;
   }
 
-  #form-job__completeform {
+  &__completeform {
     padding: 0.292rem;
     border: 0;
     height: 0.625rem;
@@ -40,7 +40,7 @@
     border-radius: 0.125rem;
   }
 
-  #form-job__job-title-message {
+  &__job-title-message {
     width: 3.542rem;
     height: 1.542rem;
     font: normal 0.417rem $mainFont;
@@ -54,7 +54,7 @@
     text-transform: uppercase;
   }
 
-  #form-job__job-title-error-message {
+  &__job-title-error-message {
     padding: 0.292rem;
     border: 0;
     height: 0.225rem;
@@ -89,7 +89,7 @@
     border-radius: 0.125rem;
   }
 
-  #form-job__facebook-message {
+  &__facebook-message {
     width: 3.542rem;
     height: 1.542rem;
     font-weight: 400;
@@ -104,7 +104,7 @@
     text-transform: uppercase;
   }
 
-  #form-job__facebook-error-message {
+  &__facebook-error-message {
     padding: 0.292rem;
     border: 0;
     height: 0.225rem;
@@ -135,7 +135,7 @@
     border-radius: 0.125rem;
   }
 
-  #form-job__twitter-message {
+  &__twitter-message {
     width: 3.542rem;
     height: 1.542rem;
     font-weight: 400;
@@ -150,7 +150,7 @@
     text-transform: uppercase;
   }
 
-  #form-job__twitter-error-message {
+  &__twitter-error-message {
     padding: 0.292rem;
     border: 0;
     height: 0.225rem;
@@ -181,7 +181,7 @@
     border-radius: 0.125rem;
   }
 
-  #form-job__dribbble-message {
+  &__dribbble-message {
     width: 3.542rem;
     height: 1.542rem;
     font-weight: 400;
@@ -196,7 +196,7 @@
     text-transform: uppercase;
   }
 
-  #form-job__dribbble-error-message {
+  &__dribbble-error-message {
     padding: 0.292rem;
     border: 0;
     line-height: 0.208rem;

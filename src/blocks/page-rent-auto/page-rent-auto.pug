@@ -20,21 +20,29 @@ mixin page-rent-auto
                     .drop-down-korobka
                         .drop-down-korobka__header Коробка передач:
                         .drop-down-korobka__wrapper
-                            #drop-down-korobka__contentline Не выбрано
+                            .drop-down-korobka__contentline Не выбрано
                             button.drop-down-korobka__button
                         .drop-down-korobka__content-container
-                            #drop-down-korobka__mechanic Механика
-                            #drop-down-korobka__automat Автомат
+                            .drop-down-korobka__mechanic Механика
+                            .drop-down-korobka__automat Автомат
                     .drop-down-place
                         .drop-down-place__header Место оформления аренды:
                         .drop-down-place__wrapper
-                            #drop-down-place__contentline Не выбрано
+                            .drop-down-place__contentline Не выбрано
                             button.drop-down-place__button
                         .drop-down-place__content-container
-                            #drop-down-place__office В офисе
-                            #drop-down-place__phone Ваш адрес (по телефону)
-                    .slider    
-                        +slider
+                            .drop-down-place__office В офисе
+                            .drop-down-place__phone Ваш адрес (по телефону)
+                    .slider
+                        +slider({
+                            min: 0,
+                            max: 100,
+                            step: 1,
+                            value: 40,
+                            label: 'true',
+                            dial: 'false',
+                            color: 'orange',
+                        })
                     .add
                         .add__headline Добавить в машину:
                         .add__kreslo-container
@@ -61,8 +69,8 @@ mixin page-rent-auto
                     .right-side__calendar
                         +calendar
                     .right-side__submit
-                        #completeform
-                        button#submit Отправить заявку
+                        .form-rent-auto-completeform
+                        button.form-rent-auto-submit Отправить заявку
             .navigation
                     +navigation({
                         socialNetwork: "social-network",

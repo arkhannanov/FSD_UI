@@ -21,12 +21,12 @@
         font-size: 0.583rem;
       }
 
-      .drop-down-korobka__wrapper {
+      &__wrapper {
         display: flex;
         flex-direction: row;
       }
 
-      #drop-down-korobka__contentline {
+      &__contentline {
         width: 10rem;
         height: 1.167rem;
         font-size: 0.583rem;
@@ -53,7 +53,7 @@
         position: absolute;
         z-index: 1;
 
-        #drop-down-korobka__mechanic {
+        .drop-down-korobka__mechanic {
           width: 10rem;
           height: 1.167rem;
           font-size: 0.583rem;
@@ -64,7 +64,7 @@
           color: white;
         }
 
-        #drop-down-korobka__automat {
+        .drop-down-korobka__automat {
           margin-top: 0.125rem;
           width: 10rem;
           height: 1.167rem;
@@ -91,12 +91,12 @@
         font-size: 0.583rem;
       }
 
-      .drop-down-place__wrapper {
+      &__wrapper {
         display: flex;
         flex-direction: row;
       }
 
-      #drop-down-place__contentline {
+      &__contentline {
         width: 10rem;
         height: 1.167rem;
         font-size: 0.583rem;
@@ -123,7 +123,7 @@
         position: absolute;
         z-index: 1;
 
-        #drop-down-place__office {
+        .drop-down-place__office {
           width: 10rem;
           height: 1.167rem;
           font-size: 0.583rem;
@@ -134,7 +134,7 @@
           color: white;
         }
 
-        #drop-down-place__phone {
+        .drop-down-place__phone {
           margin-top: 0.125rem;
           width: 10rem;
           height: 1.167rem;
@@ -217,7 +217,7 @@
     flex-direction: column;
   }
 
-  #completeform {
+  .form-rent-auto-completeform {
     display: inline-block;
     margin-left: 1.6rem;
     font-size: 1rem;
@@ -226,7 +226,7 @@
     font-weight: bold;
   }
 
-  #submit {
+  .form-rent-auto-submit {
     width: 8.333rem;
     height: 2.083rem;
     border: 0.042rem solid #e75736;
@@ -244,14 +244,14 @@
     margin: 2rem 0 1.25rem 2rem;
   }
 
-  #submit:hover {
+  .form-rent-auto-submit:hover {
     background: #e75736;
     color: #ffffff;
   }
 
-  #submit,
-  #submit:active,
-  #submit:focus {
+  .form-rent-auto-submit,
+  .form-rent-auto-submit:active,
+  .form-rent-auto-submit:focus {
     outline: none;
   }
 }

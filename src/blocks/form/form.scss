@@ -7,7 +7,7 @@
     justify-content: space-between;
   }
 
-  #form__completeform {
+  &__completeform {
     border: 0;
     height: 0.75rem;
     font: normal lighter 0.5rem $mainFont;
@@ -22,7 +22,7 @@
     display: flex;
     flex-direction:row;
 
-    #form__name-input {
+    &-input {
       height: 1.167rem;
       width: 57%;
       margin: 0;
@@ -36,7 +36,7 @@
       border-radius: 0.125rem;
     }
 
-    #form__name-message-container {
+    &-message-container {
       height: 1.452rem;
       width: 25%;
       font-family: $mainFont;
@@ -54,7 +54,7 @@
     }
   }
 
-  #form__name-input-error-message {
+  &__name-input-error-message {
     border: 0;
     height: 0.76rem;
     font: lighter 0.32rem $mainFont;
@@ -70,7 +70,7 @@
     display: flex;
     flex-direction:row;
     
-    #form__email-input {
+    &-input {
       width: 57%;
       height: 1.167rem;
       margin: 0;
@@ -84,7 +84,7 @@
       border-radius: 0.125rem;
     }
 
-    #form__email-message-container {
+    &-message-container {
       width: 25%;
       height: 1.542rem;
       font-family: $mainFont;
@@ -102,7 +102,7 @@
     }
   }
 
-  #form__email-input-error-message {
+  &__email-input-error-message {
     border: 0;
     height: 0.76rem;
     font: lighter 0.32rem $mainFont;
@@ -117,7 +117,7 @@
     height: 2.93rem;
     position: relative;
 
-    #form__message-input {
+    &-input {
       width: 76.5%;
       height: 2.8rem;
       padding: 0.417rem;
@@ -133,7 +133,7 @@
     }
   }
 
-  #form__submit-button {
+  &__submit-button {
     width: 5rem;
     height: 1.5rem;
     border: 0.042rem solid #4eb7a8;
@@ -154,14 +154,14 @@
     text-transform: uppercase;
   }
 
-  #form__submit-button:hover {
+  &__submit-button:hover {
     background: #4eb7a8;
     color: #ffffff;
   }
 
-  #form__submit-button, 
-  #form__submit-button:active, 
-  #form__submit-button:focus {
+  &__submit-button,
+  &__submit-button:active,
+  &__submit-button:focus {
     outline: none;
   }
 }

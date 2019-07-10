@@ -98,15 +98,15 @@ class Stages {
 }
 
 const root = {
-    firstCircle: document.getElementById('stages__first-circle'),
-    secondCircle: document.getElementById('stages__second-circle'),
-    thirdCircle: document.getElementById('stages__third-circle'),
-    fourthCircle: document.getElementById('stages__fourth-circle'),
-    fifthCircle: document.getElementById('stages__fifth-circle'),
-    firstDiv: document.getElementById('stages__first-div'),
-    secondDiv: document.getElementById('stages__second-div'),
-    thirdDiv: document.getElementById('stages__third-div'),
-    fourthDiv: document.getElementById('stages__fourth-div'),
+    firstCircle: document.getElementsByClassName('stages__first-circle')[0],
+    secondCircle: document.getElementsByClassName('stages__second-circle')[0],
+    thirdCircle: document.getElementsByClassName('stages__third-circle')[0],
+    fourthCircle: document.getElementsByClassName('stages__fourth-circle')[0],
+    fifthCircle: document.getElementsByClassName('stages__fifth-circle')[0],
+    firstDiv: document.getElementsByClassName('stages__first-div')[0],
+    secondDiv: document.getElementsByClassName('stages__second-div')[0],
+    thirdDiv: document.getElementsByClassName('stages__third-div')[0],
+    fourthDiv: document.getElementsByClassName('stages__fourth-div')[0],
 };
 
 new Stages(root);

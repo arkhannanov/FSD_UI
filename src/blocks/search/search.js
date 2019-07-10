@@ -45,9 +45,9 @@ class Search {
 }
 
 const root = {
-    search: document.getElementById('search'),
-    searchIcon: document.getElementById('search__icon'),
-    searchError: document.getElementById('search__error'),
+    search: document.getElementsByClassName('search__input')[0],
+    searchIcon: document.getElementsByClassName('search__icon')[0],
+    searchError: document.getElementsByClassName('search__error')[0],
 };
 
 new Search(root);
