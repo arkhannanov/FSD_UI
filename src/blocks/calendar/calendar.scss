@@ -14,6 +14,7 @@
     text-align: center;
     border: 0;
     user-select: none;
+    position: relative;
 
     &-day {
       width: 4.167rem;
@@ -120,9 +121,9 @@
     &-table {
       width: 11.637rem;
       table-layout: fixed;
-      margin-top: -1rem;
       border-spacing: 0.083rem;
-      position: relative;
+      position: absolute;
+      top: 6.4rem;
     }
 
     &-table-col-header {
