@@ -1,4 +1,57 @@
-.button {
+.button__item {
+  text-align: center;
+  background: #ffffff;
+  font-weight: bolder;
+  border-radius: 0.208rem;
+  transition: 0.2s;
+  vertical-align: middle;
+  overflow: hidden;
+  position: relative;
+  text-transform: uppercase;
+
+  &_size {
+
+    &_small {
+      width: 3.25rem;
+      height: 1rem;
+      font-size: 0.45rem;
+    }
+
+    &_big {
+      width: 4.917rem;
+      height: 1.5rem;
+      font-size: 0.55rem;
+    }
+  }
+
+  &_color {
+
+    &_green {
+      border: 0.042rem solid #4eb7a8;
+      color: #4eb7a8;
+      box-shadow: 0 -0.083rem #4eb7a8 inset;
+    }
+
+    &_green:hover {
+      border: 0.042rem solid #4eb7a8;
+      box-shadow: 0 -0.083rem #28a290 inset;
+      background: #4eb7a8;
+      color: #ffffff;
+    }
+
+    &_orange {
+      border: 0.042rem solid #e75735;
+      color: #e75735;
+      box-shadow: 0 -0.083rem #e75735 inset;
+    }
+
+    &_orange:hover {
+      border: 0.042rem solid #e75735;
+      box-shadow: 0 -0.083rem #bf3e1f inset;
+      background: #e75735;
+      color: #ffffff;
+    }
+  }
 
   .ripple {
     border-radius: 50%;
@@ -16,64 +69,14 @@
     }
   }
 
-  &__item {
-    text-align: center;
-    background: #ffffff;
-    font-weight: bolder;
-    border-radius: 0.208rem;
-    transition: 0.2s;
-    vertical-align: middle;
-    overflow: hidden;
-    position: relative;
-    text-transform: uppercase;
-  }
-
-  &__item:active,
-  &__item:focus {
+  &:active,
+  &:focus {
     outline: none;
     box-shadow: none;
   }
 
-  &__item:visited {
+  &:visited {
     outline: none;
-  }
-
-  &__item_size_small {
-    width: 3.25rem;
-    height: 1rem;
-    font-size: 0.45rem;
-  }
-
-  &__item_size_big {
-    width: 4.917rem;
-    height: 1.5rem;
-    font-size: 0.55rem;
-  }
-
-  &__item_color_green {
-    border: 0.042rem solid #4eb7a8;
-    color: #4eb7a8;
-    box-shadow: 0 -0.083rem #4eb7a8 inset;
-  }
-
-  &__item_color_green:hover {
-    border: 0.042rem solid #4eb7a8;
-    box-shadow: 0 -0.083rem #28a290 inset;
-    background: #4eb7a8;
-    color: #ffffff;
-  }
-
-  &__item_color_orange {
-    border: 0.042rem solid #e75735;
-    color: #e75735;
-    box-shadow: 0 -0.083rem #e75735 inset;
-  }
-
-  &__item_color_orange:hover {
-    border: 0.042rem solid #e75735;
-    box-shadow: 0 -0.083rem #bf3e1f inset;
-    background: #e75735;
-    color: #ffffff;
   }
 }
 
