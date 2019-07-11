@@ -1,59 +1,58 @@
 .arrow {
 
-  &__button_left {
+  &__button {
     border: 0.083rem solid #4eb7a8;
     text-align: center;
     width:  2.083rem;
     height: 2.083rem;
-    background: white url('./images/arrow1.png') 0.542rem 0.458rem no-repeat;
     border-radius: 50%;
     transition: 0.2s;
     overflow: hidden;
     position: relative;
     padding: 0;
-  }
-  
-  &__button_left:hover {
-    background: #4eb7a8 url('./images/arrow3.png') 0.583rem 0.5rem no-repeat;
-    border: 0.083rem solid transparent;
-  }
 
-  &__button_left:active,
-  &__button_left:focus {
-    outline: none;
-    background: #e5e5e5 url('./images/arrow3.png') 0.583rem 0.5rem no-repeat;
-    border: 0.083rem solid transparent;
-  }
+    &:active,
+    &:focus {
+      outline: none;
+      border: 0.083rem solid transparent;
+    }
 
-  &__button_left:visited {
-    outline: none;
-  }
 
-  &__button_right {
-    border: 0.083rem solid #4eb7a8;
-    text-align: center;
-    width:  2.083rem;
-    height: 2.083rem;
-    background: white url('./images/arrow2.png') 0.625rem 0.458rem no-repeat;
-    border-radius: 50%;
-    transition: 0.2s;
-    overflow: hidden;
-    position: relative;
-  }
+    &:visited {
+      outline: none;
+    }
 
-  &__button_right:hover {
-    background: #4eb7a8 url('./images/arrow4.png') 0.667rem 0.5rem no-repeat;
-    border: 0.083rem solid transparent;
-  }
+    &_direction {
 
-  &__button_right:active,
-  &__button_right:focus {
-    outline: none;
-    background: #e5e5e5 url('./images/arrow4.png') 0.667rem 0.5rem no-repeat;
-    border: 0.083rem solid transparent;
-  }
+      &_left {
+        border: 0.083rem solid #4eb7a8;
+        background: white url('./images/arrow1.png') 0.542rem 0.458rem no-repeat;
+      }
 
-  &__button_right:visited {
-    outline: none;
+      &_left:hover {
+        background: #4eb7a8 url('./images/arrow3.png') 0.583rem 0.5rem no-repeat;
+        border: 0.083rem solid transparent;
+      }
+
+      &_right {
+        border: 0.083rem solid #4eb7a8;
+        background: white url('./images/arrow2.png') 0.625rem 0.458rem no-repeat;
+      }
+
+      &_right:hover {
+        background: #4eb7a8 url('./images/arrow4.png') 0.667rem 0.5rem no-repeat;
+        border: 0.083rem solid transparent;
+      }
+
+      &_left:active,
+      &_left:focus {
+        background: #e5e5e5 url('./images/arrow3.png') 0.583rem 0.5rem no-repeat;
+      }
+
+      &_right:active,
+      &_right:focus {
+        background: #e5e5e5 url('./images/arrow4.png') 0.583rem 0.5rem no-repeat
+      }
+    }
   }
 }
