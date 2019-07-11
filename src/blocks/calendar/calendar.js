@@ -264,13 +264,12 @@ class Calendar {
 
 
 const root = {
-  calendarElem : document.getElementsByClassName('page-calendar')[0],
- _dayElem : document.getElementsByClassName('calendar__day')[0],
-  _header : document.getElementsByClassName('calendar__header')[0],
-  _monthElem: document.getElementsByClassName('calendar__month')[0],
-  _prevBtn: document.getElementsByClassName('calendar__btn-prev')[0],
-  _nextBtn: document.getElementsByClassName('calendar__btn-next')[0],
-  _tableContainer: document.getElementsByClassName('calendar__table-container')[0],
+  calendarElem : document.getElementsByClassName('calendar__item')[0],
+ _dayElem : document.getElementsByClassName('calendar__item-day')[0],
+  _header : document.getElementsByClassName('calendar__item-header')[0],
+  _monthElem: document.getElementsByClassName('calendar__item-month')[0],
+  _prevBtn: document.getElementsByClassName('calendar__item-button-previous')[0],
+  _nextBtn: document.getElementsByClassName('calendar__item-button-next')[0],
 }
 
   window.onload = () => {
