@@ -15,14 +15,14 @@
     height: 1.167rem;
     background-color: #e5e5e5;
     border: 0;
-    border-radius: 0.125rem;
+    border-radius: 0.125rem 0 0 0.125rem;
   }
 
   &__icon {
     width: 1.375rem;
     height: 1.167rem;
     border: 0;
-    border-radius: 0.125rem;
+    border-radius: 0 0.125rem 0.125rem 0;
     background: #e75735 url('./images/search-icon.png') 0.412rem 0.333rem no-repeat;
   }
 
