@@ -1,4 +1,3 @@
-
 .player {
 
   &__wrapper {
@@ -7,26 +6,21 @@
     height: 15rem;
     overflow: hidden;
     margin: 1rem 0 1.25rem 0;
+    position: relative;
   }
 
   &__video {
     border-radius: 0.208rem;
   }
 
-  &__controls-wrapper {
-    display: none;
-  }
-
   &__controls {
-    position: relative;
     display: flex;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     height: 2rem;
-  }
-
-  &__progress-container {
-    flex-grow: 1;
+    position: absolute;
+    top: 13rem;
   }
 
   &:fullscreen {
@@ -35,19 +29,15 @@
     width: 100%;
   }
 
-  &:hover &__controls-wrapper {
-    display: block;
-    margin-top: -2.3rem;
-  }
-
   &__progress {
     height: 0.208rem;
     transition: height 0.3s;
     background: white;
     width: 98%;
-    margin-top: 0.917rem;
+    margin: 0.917rem 0.5rem 0 0;
     border-radius: 0.125rem;
     cursor: pointer;
+    flex-grow: 1;
   }
 
   &__button {
@@ -63,12 +53,18 @@
     height: 2rem;
   }
 
+  .after:after {
+    content: '►';
+  }
+
   &__button:focus {
     border-color: #b8db92;
   }
 
   .fullscreen {
     background: url('./images/fullscreen.png') 0 0 no-repeat;
+    width: 2.3rem;
+
   }
 
   &__progress_filled {

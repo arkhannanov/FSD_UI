@@ -2,10 +2,8 @@ mixin player
     .player
         .player__wrapper
             video.player__video.viewer(src="video/156181920.mp4")
-            .player__controls-wrapper
-                .player__controls
-                    button.player__button.toggle
-                    .player__progress-container
-                        .player__progress
-                            .player__progress_filled
-                    button.player__button.fullscreen
+            .player__controls
+                button.player__button.toggle.after
+                .player__progress
+                    .player__progress_filled
+                button.player__button.fullscreen

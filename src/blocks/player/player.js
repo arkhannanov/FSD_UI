@@ -74,6 +74,7 @@ class Player {
 
     updateButton() {
         const icon = this.video.paused ? '►' : '❚ ❚';
+        this.toggle.classList.remove('after');
         this.toggle.textContent = icon;
     }
 
