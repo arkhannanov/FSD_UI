@@ -1,18 +1,17 @@
 mixin messaging(options = {name:"", source:"", firstMessage:"", secondMessage:"", buttonTitle:""})
     -let {name, source, firstMessage, secondMessage, buttonTitle} = options;
     .messaging
-        .messaging__wrapper
-            .messaging__name-container
-                .messaging__name= name
-            .messaging__dark-block
-            .messaging__avatar-container
-                img.messaging__avatar(src=source, alt="User 2", hspace="5", vspace="5")
-            .messaging__dark-container
-                .messaging__icons
-                    .messaging__chat-icon
-                    .messaging__camera-icon
-                .messaging__first-message-container
-                    .messaging__first-message= firstMessage
-                .messaging__second-message-container
-                    .messaging__second-message= secondMessage
-                button.messaging__button(name="button")= buttonTitle
+        .messaging__name-container
+            .messaging__name= name
+        .messaging__dark-block
+        .messaging__avatar-container
+            img.messaging__avatar(src=source, alt="User 2", hspace="5", vspace="5")
+        .messaging__dark-container
+            .messaging__icons
+                .messaging__chat-icon
+                .messaging__camera-icon
+            .messaging__first-message-container
+                .messaging__first-message= firstMessage
+            .messaging__second-message-container
+                .messaging__second-message= secondMessage
+            button.messaging__button(name="button")= buttonTitle

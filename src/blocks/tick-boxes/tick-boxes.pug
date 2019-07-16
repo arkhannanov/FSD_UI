@@ -1,6 +1,5 @@
 mixin tick-boxes(options = {id:""})
     - let {id} = options;
     .tick-boxes
-        .tick-boxes__wrapper
-            label(for=`${id}`)
-                input(id=`${id}`,type="checkbox", checked)
+        label(for=`${id}`)
+            input(id=`${id}`,type="checkbox", checked)

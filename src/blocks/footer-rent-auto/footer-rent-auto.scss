@@ -1,16 +1,14 @@
 .footer-rent-auto {
 
-  &__wrapper {
-    height: 3.75rem;
-    background: grey;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-weight: normal;
-  }
+  height: 3.75rem;
+  background: grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: normal;
 
   &__logo {
-    width: 8.333rem;
+    width: 24.333rem;
     height: 2.083rem;
     font-size: 0.917rem;
     color: green;

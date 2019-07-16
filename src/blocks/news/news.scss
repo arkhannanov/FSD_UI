@@ -1,12 +1,9 @@
 .news {
-
-  &__wrapper {
-    width: 11.875rem;
-    height: 8.833rem;
-    display: flex;
-    flex-direction: row;
-    margin: 1rem 0 0 0;
-  }
+  width: 11.875rem;
+  height: 8.833rem;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0 0 0;
 
   &__content-container {
     display: flex;
@@ -14,14 +11,14 @@
     background: #e75735;
   }
 
-  &__title{
+  &__title {
     font-weight: lighter;
     color: #ffffff;
     font-size: 1.167rem;
     margin: 0.833rem 0 0.625rem 1rem;
     line-height: 1.083rem;
   }
-  
+
   &__date {
     font-weight: normal;
     color: #ffffff;

@@ -1,12 +1,7 @@
 .messaging {
+  width: 12rem;
+  position: relative;
 
-  &__wrapper {
-    width: 12rem;
-    margin-top: 1rem;
-    margin-left: 1.15rem;
-    position: relative;
-  }
-  
   &__name-container {
     height: 3.375rem;
     font: lighter 1.417rem $thirdFont;
@@ -45,7 +40,7 @@
     flex-direction: column;
   }
 
-  &__icons  {
+  &__icons {
     width: 10rem;
     height: 2.4rem;
     display: flex;
@@ -75,7 +70,7 @@
     background: url('./images/background.png') 0.292rem 0 no-repeat;
   }
 
-  &__second-message-container{
+  &__second-message-container {
     margin: 0rem auto 0.25rem auto;
     width: 10.2rem;
     height: 4rem;
@@ -92,8 +87,8 @@
     letter-spacing: 0.026rem;
     border-radius: 0.208rem;
     padding: 0.833rem 1rem 0 0.75rem;
-  } 
-  
+  }
+
   &__second-message {
     font-weight: bold;
     margin: 0.083rem auto 0 auto;
@@ -145,7 +140,6 @@
       color: #ffffff;
     }
   }
-
 
 
   &__button:active,

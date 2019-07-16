@@ -1,14 +1,13 @@
 mixin events(options = {source: "", number: "", month: "", title: "", text: "", buttonTitle: ""})
     -let {source, number, month, title, text, buttonTitle } = options;
     .events
-        .events__wrapper
-            img.events__image(src=source, alt="Pic 2")
-            .events__content-container
-                .events__date-container
-                    .events__date-number= number
-                    .events__date-month= month
-                .events__title-container
-                    .events__title= title
-                .events__text-container
-                    .events__text= text
-                button.events__button(name="button")= buttonTitle
+        img.events__image(src=source, alt="Pic 2")
+        .events__content-container
+            .events__date-container
+                .events__date-number= number
+                .events__date-month= month
+            .events__title-container
+                .events__title= title
+            .events__text-container
+                .events__text= text
+            button.events__button(name="button")= buttonTitle

@@ -1,15 +1,12 @@
 .form-interior {
-
-  &__wrapper {
-    width: 10.417rem;
-    margin-top: 0.75rem;
-  }
+  width: 10.417rem;
+  margin-top: 0.75rem;
 
   &__name-container {
     width: 10.417rem;
   }
 
-  &__name-input{
+  &__name-input {
     width: 10.417rem;
     height: 1.25rem;
     background: #e5e5e5;
@@ -24,7 +21,7 @@
     height: 1.25rem;
     background: #e5e5e5;
   }
-    
+
   &__raiting {
     color: #757575;
     font-size: 1.3rem;
@@ -47,7 +44,7 @@
     position: absolute;
     top: -2rem;
   }
-  
+
   .ripple {
     border-radius: 50%;
     background-color: white;
@@ -67,6 +64,7 @@
   &__submit-container {
     position: relative;
   }
+
   &__submit-button {
     width: 4.917rem;
     height: 1.333rem;
@@ -94,9 +92,8 @@
   }
 
 
-
-  &__submit-button, 
-  &__submit-button:active, 
+  &__submit-button,
+  &__submit-button:active,
   &__submit-button:focus {
     outline: none;
   }

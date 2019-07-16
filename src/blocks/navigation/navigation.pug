@@ -1,12 +1,11 @@
 mixin navigation(options={socialNetwork:"", job:"", interior:"", rentAuto:""})
     - let {socialNetwork, job, interior, rentAuto} = options;
     .navigation
-        .navigation__wrapper
-            .navigation__social-network
-                button.navigation__button(name="button", onclick="document.location='social-network.html'")= socialNetwork
-            .navigation__job
-                button.navigation__button(name="button", onclick="document.location='job.html'")= job
-            .navigation__interior
-                button.navigation__button(name="button", onclick="document.location='interior.html'")= interior
-            .navigation__rent-auto
-                button.navigation__button(name="button", onclick="document.location='rent-auto.html'")= rentAuto
+        .navigation__social-network
+            button.navigation__button(name="button", onclick="document.location='social-network.html'")= socialNetwork
+        .navigation__job
+            button.navigation__button(name="button", onclick="document.location='job.html'")= job
+        .navigation__interior
+            button.navigation__button(name="button", onclick="document.location='interior.html'")= interior
+        .navigation__rent-auto
+            button.navigation__button(name="button", onclick="document.location='rent-auto.html'")= rentAuto

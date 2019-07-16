@@ -1,12 +1,9 @@
 .stages {
-
-  .stages__wrapper {
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-    width: 27.083rem;
-    position: relative;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 27.083rem;
+  position: relative;
 
   &__div-wrapper {
     display: flex;
@@ -50,14 +47,14 @@
   }
 
   &__first-circle {
-    background:#e75735;
+    background: #e75735;
   }
 
   &__second-circle,
   &__third-circle,
   &__fourth-circle,
   &__fifth-circle {
-    color:#888888;
+    color: #888888;
   }
 
   &__first-circle:active,

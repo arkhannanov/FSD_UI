@@ -1,13 +1,10 @@
 .navigation {
-
-  .navigation__wrapper {
-    width: 16.853rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: auto;
-    margin-bottom: 5%;
-  }
+  width: 16.853rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 5%;
 
   .ripple {
     border-radius: 50%;
@@ -47,7 +44,6 @@
       color: #ffffff;
     }
   }
-
 
 
   &__button:active,

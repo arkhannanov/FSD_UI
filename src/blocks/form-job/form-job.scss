@@ -1,11 +1,9 @@
 .form-job {
+  width: 11.458rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-  &__wrapper {
-    width: 11.458rem;
-    display: flex;
-    flex-direction:column;
-    justify-content: space-between;
-  }
 
   &__completeform {
     padding: 0.292rem;
@@ -19,12 +17,12 @@
     margin-left: 2.917rem;
     margin-bottom: 0.5rem;
   }
-  
+
   &__job-title-container {
     width: 11.458rem;
     height: 1.167rem;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
   }
 
   &__job-title-input {
@@ -69,12 +67,12 @@
     width: 11.458rem;
     height: 1.167rem;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     margin: 0;
     padding: 0;
   }
 
-  &__facebook-input{
+  &__facebook-input {
     width: 8.458rem;
     height: 1.167rem;
     padding-left: 0.417rem;
@@ -99,7 +97,7 @@
     text-align: center;
     margin-left: 0.167rem;
     vertical-align: middle;
-    background: transparent no-repeat ;
+    background: transparent no-repeat;
     color: #ffffff;
     text-transform: uppercase;
   }
@@ -119,7 +117,7 @@
     width: 11.458rem;
     height: 1.167rem;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
   }
 
   &__twitter-input {
@@ -165,7 +163,7 @@
     width: 11.458rem;
     height: 1.167rem;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
   }
 
   &__dribbble-input {
@@ -247,8 +245,8 @@
     }
   }
 
-  &__submit-button, 
-  &__submit-button:active, 
+  &__submit-button,
+  &__submit-button:active,
   &__submit-button:focus {
     outline: none;
   }

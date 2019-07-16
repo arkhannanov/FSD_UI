@@ -239,7 +239,7 @@ mixin page
                             source: "src/blocks/news/images/pic-1.png",
                             title: "It’s all going downhill",
                             date: "24  august 2013",
-                            text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.`
                         })
                         +events({
@@ -258,23 +258,22 @@ mixin page
                             address: "1259  California St san Francisco, CA"
                         })
                 .calendar-messaging
-                    .calendar__warapper
+                    .calendar__wrapper
                         .calendar_head
                             +headline ("calendar")
                         .calendar__calendar
                             +calendar
-                    .messaging
-                        .messaging__wrapper
-                            .messaging__headline
-                                +headline ("messaging")
-                            .messaging__messaging
-                                +messaging ({
-                                    name: "Sarah Brown",
-                                    source: "src/blocks/messaging/images/user-2.png",
-                                    firstMessage: "Hey! So are we cool to meet at the art gallery? Say 8pm",
-                                    secondMessage: "Yeah that sounds great. See you then.",
-                                    buttonTitle: "reply"
-                                })
+                    .messaging__wrapper
+                        .messaging__headline
+                            +headline ("messaging")
+                        .messaging__messaging
+                            +messaging ({
+                                name: "Sarah Brown",
+                                source: "src/blocks/messaging/images/user-2.png",
+                                firstMessage: "Hey! So are we cool to meet at the art gallery? Say 8pm",
+                                secondMessage: "Yeah that sounds great. See you then.",
+                                buttonTitle: "reply"
+                            })
                 .video
                     +headline ("video")
                     +player

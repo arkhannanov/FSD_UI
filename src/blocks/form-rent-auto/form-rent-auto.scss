@@ -1,10 +1,8 @@
 .form-rent-auto {
+  width: 10.417rem;
+  font-size: 0.583rem;
+  margin: 0.75rem 0 1.25rem 0;
 
-  &__wrapper {
-    width: 10.417rem;
-    font-size: 0.583rem;
-    margin: 0.75rem 0 1.25rem 0;
-  }
 
   &__surname-container {
     width: 10.417rem;
@@ -125,7 +123,7 @@
     flex-direction: row;
   }
 
-  &__phone-input{
+  &__phone-input {
     width: 6.25rem;
     height: 1.083rem;
     background: #e5e5e5;
@@ -133,8 +131,8 @@
     border-radius: 0.125rem;
     margin-top: 0;
   }
-  
-  &__phone-message{
+
+  &__phone-message {
     width: 3.542rem;
     height: 1.542rem;
     font-weight: 400;

@@ -1,14 +1,11 @@
 .toggle {
-
-  &__wrapper {
-    width: 2.5rem;
-    margin-right: 0.5rem;
-  }
+  width: 2.5rem;
+  margin-right: 0.5rem;
 
   &__container {
     position: relative;
     width: 2.5rem;
-    -webkit-user-select:none;
+    -webkit-user-select: none;
   }
 
   &__input {
@@ -53,7 +50,8 @@
   &__inner:after {
     content: "off";
     padding-right: 0.333rem;
-    background-color: #E5E5E5; color: #FFFFFF;
+    background-color: #E5E5E5;
+    color: #FFFFFF;
     text-align: right;
     text-transform: uppercase;
   }
@@ -70,9 +68,11 @@
     border-radius: 1.208rem;
     transition: all 0.3s ease-in 0s;
   }
+
   .toggle__input:checked + .toggle__label .toggle__inner {
     margin-left: 0;
   }
+
   .toggle__input:checked + .toggle__label .toggle__switch {
     right: 0.125rem;
   }

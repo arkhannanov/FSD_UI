@@ -1,12 +1,9 @@
 .header-social-network {
-
-  .header-social-network__wrapper {
-    height: 1.7rem;
-    background: #53b6a8;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
+  height: 1.7rem;
+  background: #53b6a8;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 
   &__logo {
     flex-grow: 1;
@@ -54,7 +51,7 @@
       color: #888888;
       font: normal 0.333rem $thirdFont;
       letter-spacing: 0.006rem;
-      padding-left:0.417rem;
+      padding-left: 0.417rem;
       height: 0.9rem;
       background-color: #e5e5e5;
       border: 0;
@@ -75,8 +72,8 @@
       }
     }
 
-    &-button, 
-    &-button:active, 
+    &-button,
+    &-button:active,
     &-button:focus {
       outline: none;
     }

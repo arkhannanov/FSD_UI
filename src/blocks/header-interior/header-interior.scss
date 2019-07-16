@@ -1,11 +1,8 @@
 .header-interior {
-
-  &__wrapper {
-    height: 3.125rem;
-    background: white;
-    border: 0.042rem solid black;
-    font-size: 0.75rem;
-  }
+  height: 3.125rem;
+  background: white;
+  border: 0.042rem solid black;
+  font-size: 0.75rem;
 
   &__first-line {
     display: flex;

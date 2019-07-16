@@ -1,12 +1,10 @@
 .events {
 
-  &__wrapper {
-    width: 11.875rem;
-    height: 8.833rem;
-    display: flex;
-    flex-direction: row;
-    margin: 1rem 0.5rem 2rem 0;
-  }
+  width: 11.875rem;
+  height: 8.833rem;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0.5rem 2rem 0;
 
   &__content-container {
     display: flex;

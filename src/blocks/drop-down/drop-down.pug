@@ -1,11 +1,10 @@
 mixin drop-down(options = {contentContainer:[]})
     -let {contentContainer} = options;
     .drop-down
-        .drop-down__wrapper
-            .drop-down__content-wrapper
-                .drop-down__contentline Choose an Option
-                button.drop-down__btn
-            .drop-down__content
-                -contentContainer.forEach(function(item) {
-                    a.drop-down__item-link(href="/mock-address/change-me")= item.content
-                -});
+        .drop-down__content-wrapper
+            .drop-down__contentline Choose an Option
+            button.drop-down__btn
+        .drop-down__content
+            -contentContainer.forEach(function(item) {
+                a.drop-down__item-link(href="/mock-address/change-me")= item.content
+            -});
