@@ -139,12 +139,14 @@
     height: 1.45rem;
     margin-left: 0.88rem;
     text-transform: uppercase;
+
+    &:hover {
+      background: #4eb7a8;
+      color: #ffffff;
+    }
   }
 
-  &__button:hover {
-    background: #4eb7a8;
-    color: #ffffff;
-  }
+
 
   &__button:active,
   &__button:focus {

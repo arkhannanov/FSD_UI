@@ -85,11 +85,11 @@
     position: relative;
     margin: auto;
     text-transform: uppercase;
-  }
-  
-  &__edit-button :hover {
-    background: #4eb7a8;
-    color: #ffffff;
+
+    &:hover {
+      background: #4eb7a8;
+      color: #ffffff;
+    }
   }
   
   &__edit-button:active,

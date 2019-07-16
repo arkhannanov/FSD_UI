@@ -90,11 +90,11 @@
     letter-spacing: 0.021rem;
     outline: none;
     text-transform: uppercase;
-  }
 
-  &__button:hover {
-    background: #4eb7a8;
-    color: #ffffff;
+    &:hover {
+      background: #4eb7a8;
+      color: #ffffff;
+    }
   }
 
   &__button:active, 

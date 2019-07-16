@@ -85,14 +85,15 @@
     top: 2.5rem;
     left: 5.792rem;
     position: absolute;
-
     margin-bottom: 1.25rem;
+
+    &:hover {
+      background: #4eb7a8;
+      color: #ffffff;
+    }
   }
 
-  &__submit-button:hover {
-    background: #4eb7a8;
-    color: #ffffff;
-  }
+
 
   &__submit-button, 
   &__submit-button:active, 

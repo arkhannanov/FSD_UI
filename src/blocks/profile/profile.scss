@@ -83,12 +83,14 @@
     overflow: hidden;
     position: relative;
     margin: auto;
+
+    &:hover {
+      background: #4eb7a8;
+      color: #ffffff;
+    }
   }
 
-  &__edit-button:hover {
-    background: #4eb7a8;
-    color: #ffffff;
-  }
+
 
   &__edit-button:active,
   &__edit-button:focus {

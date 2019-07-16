@@ -41,12 +41,14 @@
     overflow: hidden;
     position: relative;
     text-transform: uppercase;
+
+    &:hover {
+      background: #4eb7a8;
+      color: #ffffff;
+    }
   }
 
-  &__button:hover {
-    background: #4eb7a8;
-    color: #ffffff;
-  }
+
 
   &__button:active,
   &__button:focus {

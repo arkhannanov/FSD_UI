@@ -69,16 +69,16 @@
       position: relative;
       background: #e75735 url('./images/search-icon.png') 0.271rem 0.2rem no-repeat;
       font-size: 0.333rem;
+
+      &:hover {
+        background-color: #e75735;
+      }
     }
 
     &-button, 
     &-button:active, 
     &-button:focus {
       outline: none;
-    }
-
-    &-button:hover {
-      background-color: #e75735;
     }
   }
 }

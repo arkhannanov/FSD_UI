@@ -262,11 +262,11 @@
   vertical-align: middle;
   overflow: hidden;
   position: relative;
-}
 
-.btn:hover {
-  background: #4eb7a8;
-  color: #ffffff;
+  &:hover {
+    background: #4eb7a8;
+    color: #ffffff;
+  }
 }
 
 .btn:active,

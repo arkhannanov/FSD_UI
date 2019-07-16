@@ -60,11 +60,11 @@
     position: relative;
     margin: 0.333rem 0 0 1.25rem;
     text-transform: uppercase;
-  }
 
-  &__glavnaya-button:hover {
-    background: #4eb7a8;
-    color: #ffffff;
+    &:hover {
+      background: #4eb7a8;
+      color: #ffffff;
+    }
   }
 
   &__glavnaya-button:active,
@@ -95,11 +95,11 @@
     margin-left: 1.25rem;
     margin-top: 0.333rem;
     text-transform: uppercase;
-  }
 
-  &__katalog-button:hover {
-    background: #4eb7a8;
-    color: #ffffff;
+    &:hover {
+      background: #4eb7a8;
+      color: #ffffff;
+    }
   }
 
   &__katalog-button:active,
@@ -129,11 +129,11 @@
     position: relative;
     margin: 0.333rem 0 0 1.25rem;
     text-transform: uppercase;
-  }
 
-  &__o-nas-button:hover {
-    background: #4eb7a8;
-    color: #ffffff;
+    &:hover {
+      background: #4eb7a8;
+      color: #ffffff;
+    }
   }
 
   &__o-nas-button:active,

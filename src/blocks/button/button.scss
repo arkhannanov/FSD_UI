@@ -32,26 +32,26 @@
         border: 0.042rem solid #4eb7a8;
         color: #4eb7a8;
         box-shadow: 0 -0.083rem #4eb7a8 inset;
-      }
 
-      &_green:hover {
-        border: 0.042rem solid #4eb7a8;
-        box-shadow: 0 -0.083rem #28a290 inset;
-        background: #4eb7a8;
-        color: #ffffff;
+        &:hover {
+          border: 0.042rem solid #4eb7a8;
+          box-shadow: 0 -0.083rem #28a290 inset;
+          background: #4eb7a8;
+          color: #ffffff;
+        }
       }
 
       &_orange {
         border: 0.042rem solid #e75735;
         color: #e75735;
         box-shadow: 0 -0.083rem #e75735 inset;
-      }
 
-      &_orange:hover {
-        border: 0.042rem solid #e75735;
-        box-shadow: 0 -0.083rem #bf3e1f inset;
-        background: #e75735;
-        color: #ffffff;
+        &:hover {
+          border: 0.042rem solid #e75735;
+          box-shadow: 0 -0.083rem #bf3e1f inset;
+          background: #e75735;
+          color: #ffffff;
+        }
       }
     }
 

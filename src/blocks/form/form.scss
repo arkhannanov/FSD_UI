@@ -152,11 +152,11 @@
     margin: 1.083rem 0 1.25rem 0;
     left: 7rem;
     text-transform: uppercase;
-  }
 
-  &__submit-button:hover {
-    background: #4eb7a8;
-    color: #ffffff;
+    &:hover {
+      background: #4eb7a8;
+      color: #ffffff;
+    }
   }
 
   &__submit-button,

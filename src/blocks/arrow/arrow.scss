@@ -27,21 +27,21 @@
       &_left {
         border: 0.083rem solid #4eb7a8;
         background: white url('./images/arrow1.png') 0.542rem 0.458rem no-repeat;
-      }
 
-      &_left:hover {
-        background: #4eb7a8 url('./images/arrow3.png') 0.583rem 0.5rem no-repeat;
-        border: 0.083rem solid transparent;
+        &:hover {
+          background: #4eb7a8 url('./images/arrow3.png') 0.583rem 0.5rem no-repeat;
+          border: 0.083rem solid transparent;
+        }
       }
 
       &_right {
         border: 0.083rem solid #4eb7a8;
         background: white url('./images/arrow2.png') 0.625rem 0.458rem no-repeat;
-      }
 
-      &_right:hover {
-        background: #4eb7a8 url('./images/arrow4.png') 0.667rem 0.5rem no-repeat;
-        border: 0.083rem solid transparent;
+        &:hover {
+          background: #4eb7a8 url('./images/arrow4.png') 0.667rem 0.5rem no-repeat;
+          border: 0.083rem solid transparent;
+        }
       }
 
       &_left:active,

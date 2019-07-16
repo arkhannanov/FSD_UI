@@ -242,11 +242,11 @@
     vertical-align: middle;
     overflow: hidden;
     margin: 2rem 0 1.25rem 2rem;
-  }
 
-  .form-rent-auto-submit:hover {
-    background: #e75736;
-    color: #ffffff;
+    &:hover {
+      background: #e75736;
+      color: #ffffff;
+    }
   }
 
   .form-rent-auto-submit,
