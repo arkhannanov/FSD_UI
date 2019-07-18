@@ -1,6 +1,6 @@
 .tick-boxes {
 
-  tick-boxes__input {
+  &__input {
     position: relative;
     appearance: none;
     width: 3em;
@@ -25,7 +25,7 @@
     }
   }
 
-  tick-boxes__input:checked:after {
+  &__input:checked:after {
     content: '';
     background: #4EB7A8 url("./images/tick-box-1.png") 0.16rem 0.2rem no-repeat;
     border-radius: 50%;

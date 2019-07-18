@@ -1,61 +1,60 @@
-include ../header-interior/header-interior.pug
-include ../percents/percents.pug
-include ../calendar/calendar.pug
+include ../header-interior/header-interior
+include ../percents/percents
+include ../calendar/calendar
 include ../form-interior/form-interior
-include ../navigation/navigation.pug
-include ../location/location.pug
+include ../navigation/navigation
+include ../location/location
 
 mixin page-interior
     main.page-interior
-        .page-interior-wrapper
-            .header-interior
-                +header-interior({
-                    source: "src/blocks/header-interior/images/logo-3.png"
+        .page-interior__header-interior
+            +header-interior({
+                source: "src/blocks/header-interior/images/logo-3.png"
+            })
+        .page-interior__content
+            .page-interior__diagramm-container
+                .page-interior__first-diagramm-container
+                    .page-interior__first-diagramm
+                        +percents({
+                            percent: 0,
+                        })
+                    .page-interior__first-diagramm-content Просроченных проектов.
+                .page-interior__second-diagramm-container
+                    .page-interior__second-diagramm
+                        +percents({
+                            percent: 25,
+                        })
+                    .page-interior__second-diagramm-content Проектов, выполненных досрочно.
+                .page-interior__third-diagramm-container
+                    .page-interior__third-diagramm
+                        +percents({
+                            percent: 35
+                        })
+                    .page-interior__third-diagramm-content Нестарндарных проектов.
+                .page-interior__fourth-diagramm-container
+                    .page-interior__fourth-diagramm
+                        +percents ({
+                            percent: 87
+                        })
+                    .page-interior__fourth-diagramm-content Довольных клиентов.
+            .page-interior__feedback
+                .page-interior__feedback-headline Оставить отзыв
+                .page-interior__feedback-container
+                    .page-interior__feedback-calendar-container
+                        .page-interior__feedback-calendar-headline Выбрать день публикации
+                        .page-interior__feedback-calendar
+                            +calendar
+                    .page-interior__feedback-form
+                        +form-interior
+            .page-interior__navigation
+                +navigation({
+                    socialNetwork: "social-network",
+                    job: "job",
+                    interior: "interior",
+                    rentAuto: "rent-auto"
                 })
-            .content
-                .diagramm-container
-                    .first-diagramm-container
-                        .first-diagramm
-                            +percents({
-                                percent: 0,
-                            })
-                        .first-diagramm__content Просроченных проектов.
-                    .second-diagramm-container
-                        .second-diagramm
-                            +percents({
-                                percent: 25,
-                            })
-                        .second-diagramm__content Проектов, выполненных досрочно.
-                    .third-diagramm-container
-                        .third-diagramm
-                            +percents({
-                                percent: 35
-                            })
-                        .third-diagramm__content Нестарндарных проектов.
-                    .fourth-diagramm-container
-                        .fourth-diagramm
-                            +percents ({
-                                percent: 87
-                            })
-                        .fourth-diagramm__content Довольных клиентов.
-                .feedback
-                    .feedback__headline Оставить отзыв
-                    .feedback__container
-                        .feedback__calendar-container
-                            .feedback__calendar-headline Выбрать день публикации
-                            .feedback__calendar
-                                +calendar
-                        .feedback__form
-                            +form-interior
-                .navigation
-                    +navigation({
-                        socialNetwork: "social-network",
-                        job: "job",
-                        interior: "interior",
-                        rentAuto: "rent-auto"
-                    })
-            .footer-interior
-                +location({
-                    title: "Meet us!",
-                    address: "1259  California St san Francisco, CA"
-                })
+        .page-interior__footer-interior
+            +location({
+                title: "Meet us!",
+                address: "1259  California St san Francisco, CA"
+            })

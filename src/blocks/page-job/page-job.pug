@@ -1,32 +1,31 @@
-include ../stages/stages.pug
-include ../form-job/form-job.pug
-include ../navigation/navigation.pug
-include ../button/button.pug
+include ../stages/stages
+include ../form-job/form-job
+include ../navigation/navigation
+include ../button/button
 
 mixin page-job
     main.page-job
-            .page-job-wrapper
-                .header-job Apply for a job
-                .content
-                    .stages
-                        +stages
-                    .avatar
-                        .avatar__image
-                        .avatar__edit
-                            +button({
-                                size: `avatar-edit-button`,
-                                color: `green`,
-                                name: `ripple`,
-                                title: `edit`
-                            })
-                    .form
-                        +form-job({
-                            toggleContent: "Get information about current events."
-                        })
-                .navigation
-                    +navigation({
-                        socialNetwork: "social-network",
-                        job: "job",
-                        interior: "interior",
-                        rentAuto: "rent-auto"
+        .page-job__header Apply for a job
+        .page-job__content
+            .page-job__stages
+                +stages
+            .page-job__avatar
+                .page-job__avatar-image
+                .page-job__avatar-edit
+                    +button({
+                        size: `avatar-edit-button`,
+                        color: `green`,
+                        name: `ripple`,
+                        title: `edit`
                     })
+            .page-job__form
+                +form-job({
+                    toggleContent: "Get information about current events."
+                })
+        .page-job__navigation
+            +navigation({
+                socialNetwork: "social-network",
+                job: "job",
+                interior: "interior",
+                rentAuto: "rent-auto"
+            })

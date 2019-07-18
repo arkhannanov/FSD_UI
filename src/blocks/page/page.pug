@@ -1,289 +1,282 @@
-include ../headline/headline.pug
-include ../button/button.pug
-include ../percents/percents.pug
-include ../pie/pie.pug
-include ../stages/stages.pug
-include ../form/form.pug
-include ../toggle/toggle.pug
-include ../tick-boxes/tick-boxes.pug
-include ../search/search.pug
-include ../drop-down/drop-down.pug
-include ../user/user.pug
-include ../news/news.pug
+include ../headline/headline
+include ../button/button
+include ../percents/percents
+include ../pie/pie
+include ../stages/stages
+include ../form/form
+include ../toggle/toggle
+include ../tick-boxes/tick-boxes
+include ../search/search
+include ../drop-down/drop-down
+include ../user/user
+include ../news/news
 include ../events/events
-include ../location/location.pug
-include ../calendar/calendar.pug
-include ../messaging/messaging.pug
-include ../player/player.pug
-include ../arrow/arrow.pug
-include ../navigation/navigation.pug
-include ../navigation/navigation.pug
+include ../location/location
+include ../calendar/calendar
+include ../messaging/messaging
+include ../player/player
+include ../arrow/arrow
+include ../navigation/navigation
+include ../navigation/navigation
 include ../slider/slider
 
 
 mixin page
     main.page
-            .page-wrapper
-                .buttons
-                    .buttons__header
-                        +headline ("standard buttons")
-                    .buttons__container
-                        .buttons__clicked
-                            +button({
-                                size: `small`,
-                                color: `green`,
-                                name: `ripple`,
-                                title: `button`,
+            .page__buttons
+                .page__buttons-header
+                    +headline ("standard buttons")
+                .page__buttons-container
+                    .page__buttons-clicked
+                        +button({
+                            size: `small`,
+                            color: `green`,
+                            name: `ripple`,
+                            title: `button`,
+                        })
+                        +button({
+                            size: `big`,
+                            color: `green`,
+                            name: `ripple`,
+                            title: `button`,
+                        })
+                        +button({
+                            size: `big`,
+                            color: `orange`,
+                            name: `ripple`,
+                            title: `button`,
+                        })
+                        +button({
+                            size: `small`,
+                            color: `orange`,
+                            name: `ripple`,
+                            title: `button`,
+                        })
+                    .page__buttons-hovered
+                        +button({
+                            size: `small`,
+                            color: `green`,
+                            name: `noripple`,
+                            title: `button`,
+                        })
+                        +button({
+                            size: `big`,
+                            color: `green`,
+                            name: `noripple`,
+                            title: `button`,
+                        })
+                        +button({
+                            size: `big`,
+                            color: `orange`,
+                            name: `noripple`,
+                            title: `button`,
+                        })
+                        +button({
+                            size: `small`,
+                            color: `orange`,
+                            name: `noripple`,
+                            title: `button`,
+                        })
+                    .page__buttons-no-action
+                        +button({
+                            size: `small`,
+                            color: `green`,
+                            name: `noripple`,
+                            title: `button`,
+                        })
+                        +button({
+                            size: `big`,
+                            color: `green`,
+                            name: `noripple`,
+                            title: `button`,
+                        })
+                        +button({
+                            size: `big`,
+                            color: `orange`,
+                            name: `noripple`,
+                            title: `button`,
+                        })
+                        +button({
+                            size: `small`,
+                            color: `orange`,
+                            name: `noripple`,
+                            title: `button`,
+                        })
+            .page__arrows
+                .page__arrows-header
+                    +headline ("arrow buttons")
+                .page__arrows-container
+                    .page__arrows-standard
+                        +arrow({
+                            direction: "left"
+                        })
+                    .page__arrows-standard
+                        +arrow({
+                            direction: "right"
+                        })
+                    .page__arrows-pressed
+                        +arrow({
+                            direction: "left"
+                        })
+                    .page__arrows-pressed
+                        +arrow({
+                            direction: "right"
+                        })
+                    .page__arrows-hovered
+                        +arrow({
+                            direction: "left"
+                        })
+                    .page__arrows-hovered
+                        +arrow({
+                            direction: "right"
+                        })
+            .page__percents-pie
+                +headline ("percentages / pie chart")
+                .page__percents-pie-container
+                    +percents ({
+                        percent: 0
+                    })
+                    +percents ({
+                        percent: 38
+                    })
+                    +percents ({
+                        percent: 62
+                    })
+                    +percents ({
+                        percent: 89
+                    })
+                    +pie
+            .page__sliders
+                +headline ("sliders")
+                .page__sliders-container
+                    .page__sliders-slider-wrapper
+                        +slider({
+                            min: 0,
+                            max: 100,
+                            step: 1,
+                            value: 40,
+                            label: 'true',
+                            dial: 'false',
+                            color: 'orange',
+                        })
+                    .page__sliders-step-slider-wrapper
+                        +slider({
+                            min: 0,
+                            max: 100,
+                            step: 25,
+                            value: 75,
+                            label: 'false',
+                            dial: 'true',
+                            color: 'greenkit',
+                        })
+            .page__stages
+                +headline ("stages")
+                .page__stages-wrapper
+                    +stages
+            .page__form-tick-boxes-toggle
+                +headline ("form elements")
+                .page__form-tick-boxes-toggle-container
+                    .page__form-tick-boxes-toggle-form
+                        +form
+                    .page__form-tick-boxes-toggle-tick-boxes-toggle
+                        .page__form-tick-boxes-toggle-toggle-headline
+                            +headline ("toggles")
+                        .page__form-tick-boxes-toggle-toggle-container
+                            +toggle({
+                                id: "1"
                             })
-                            +button({
-                                size: `big`,
-                                color: `green`,
-                                name: `ripple`,
-                                title: `button`,
+                            +toggle({
+                                id: "2"
                             })
-                            +button({
-                                size: `big`,
-                                color: `orange`,
-                                name: `ripple`,
-                                title: `button`,
+                        .page__form-tick-boxes-toggle-tick-boxes-headline
+                            +headline ("tick boxes")
+                        .page__form-tick-boxes-toggle-tick-boxes-container
+                            +tick-boxes({
+                                id: "1"
                             })
-                            +button({
-                                size: `small`,
-                                color: `orange`,
-                                name: `ripple`,
-                                title: `button`,
+                            +tick-boxes({
+                                id: "2"
                             })
-                        .buttons__hovered
-                            +button({
-                                size: `small`,
-                                color: `green`,
-                                name: `noripple`,
-                                title: `button`,
-                            })
-                            +button({
-                                size: `big`,
-                                color: `green`,
-                                name: `noripple`,
-                                title: `button`,
-                            })
-                            +button({
-                                size: `big`,
-                                color: `orange`,
-                                name: `noripple`,
-                                title: `button`,
-                            })
-                            +button({
-                                size: `small`,
-                                color: `orange`,
-                                name: `noripple`,
-                                title: `button`,
-                            })
-                        .buttons__no-action
-                            +button({
-                                size: `small`,
-                                color: `green`,
-                                name: `noripple`,
-                                title: `button`,
-                            })
-                            +button({
-                                size: `big`,
-                                color: `green`,
-                                name: `noripple`,
-                                title: `button`,
-                            })
-                            +button({
-                                size: `big`,
-                                color: `orange`,
-                                name: `noripple`,
-                                title: `button`,
-                            })
-                            +button({
-                                size: `small`,
-                                color: `orange`,
-                                name: `noripple`,
-                                title: `button`,
-                            })
-                .arrows
-                    .arrows__header
-                        +headline ("arrow buttons")
-                    .arrows__container
-                        .arrows__standard
-                            +arrow({
-                                direction: "left"
-                            })
-                        .arrows__standard
-                            +arrow({
-                                direction: "right"
-                            })
-                        .arrows__pressed
-                            +arrow({
-                                direction: "left"
-                            })
-                        .arrows__pressed
-                            +arrow({
-                                direction: "right"
-                            })
-                        .arrows__hovered
-                            +arrow({
-                                direction: "left"
-                            })
-                        .arrows__hovered
-                            +arrow({
-                                direction: "right"
-                            })
-                .percents-pie
-                    +headline ("percentages / pie chart")
-                    .percents-pie__container
-                        .percents-pie__wrapper
-                            +percents ({
-                                percent: 0
-                            })
-                        .percents-pie__wrapper
-                            +percents ({
-                                percent: 38
-                            })
-                        .percents-pie__wrapper
-                            +percents ({
-                                percent: 62
-                            })
-                        .percents-pie__wrapper
-                            +percents ({
-                                percent: 89
-                            })
-                        .percents-pie__wrapper_pie
-                            +pie
-                .sliders
-                    +headline ("sliders")
-                    .sliders-container
-                        .sliders_slider-wrapper
-                            +slider({
-                                min: 0,
-                                max: 100,
-                                step: 1,
-                                value: 40,
-                                label: 'true',
-                                dial: 'false',
-                                color: 'orange',
-                            })
-                        .sliders_step-slider-wrapper
-                            +slider({
-                                min: 0,
-                                max: 100,
-                                step: 25,
-                                value: 75,
-                                label: 'false',
-                                dial: 'true',
-                                color: 'greenkit',
-                            })
-                .stages
-                    +headline ("stages")
-                    .stages__stages-wrapper
-                        +stages
-                .form-tick-boxes-toggle
-                    +headline ("form elements")
-                    .form-tick-boxes-toggle-container
-                        .form-tick-boxes-toggle__form
-                            +form
-                        .form-tick-boxes-toggle__tick-boxes-toggle
-                            .form-tick-boxes-toggle__toggle-headline
-                                +headline ("toggles")
-                            .form-tick-boxes-toggle__toggle-container
-                                +toggle({
-                                    id: "1"
-                                })
-                                +toggle({
-                                    id: "2"
-                                })
-                            .form-tick-boxes-toggle__tick-boxes-headline
-                                +headline ("tick boxes")
-                            .form-tick-boxes-toggle__tick-boxes-container
-                                +tick-boxes({
-                                    id: "1"
-                                })
-                                +tick-boxes({
-                                    id: "2"
-                                })
-                .search-drop-down-user-profile
-                    .search-drop-down
-                        .search-drop-down__search-headline
-                            +headline ("search / drop down")
-                        .search-drop-down__search
-                            +search
-                        .search-drop-down__drop-down
-                            +drop-down ({
-                                contentContainer: [
-                                    {content: "This option 1"},
-                                    {content: "This option 2"},
-                                    {content: "This option 3"},
-                                    {content: "This option 4"},
-                                ]
-                            })
-                    .user-profile
-                        .user-profile__headline
-                            +headline ("user profile")
-                        .user-profile__users-container
-                            +user ({
-                                source: "src/blocks/user/images/user-1.png",
-                                name: "John Smith",
-                                profession: "ux designer"
-                            })
+            .page__search-drop-down-user-profile-container
+                .page__search-drop-down-container
+                    .page__search-drop-down-search-headline
+                        +headline ("search / drop down")
+                    .page__search-drop-down-search
+                        +search
+                    .page__search-drop-down-drop-down
+                        +drop-down ({
+                            contentContainer: [
+                                {content: "This option 1"},
+                                {content: "This option 2"},
+                                {content: "This option 3"},
+                                {content: "This option 4"},
+                            ]
+                        })
+                .page__user-profile
+                    .page__user-profile-headline
+                        +headline ("user profile")
+                    .page__user-profile-users-container
+                        +user ({
+                            source: "src/blocks/user/images/user-1.png",
+                            name: "John Smith",
+                            profession: "ux designer"
+                        })
                         +user ({
                             source: "src/blocks/user/images/user-2.png",
                             name: "Sarah Brown",
                             profession: "developer"
                         })
-                .news-events
-                    +headline ("news & events")
-                    .news-events-container
-                        +news({
-                            source: "src/blocks/news/images/pic-1.png",
-                            title: "It’s all going downhill",
-                            date: "24  august 2013",
-                            text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.`
+            .page__news-events
+                +headline ("news & events")
+                .page__news-events-container
+                    +news({
+                        source: "src/blocks/news/images/pic-1.png",
+                        title: "It’s all going downhill",
+                        date: "24  august 2013",
+                        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.`
+                    })
+                    +events({
+                        source: "src/blocks/events/images/pic-2.png",
+                        number: "24",
+                        month: "Aug",
+                        title: `this is the title`,
+                        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+                        buttonTitle: "add to calendar"
+                    })
+            .page__location
+                +headline ("location")
+                .page__location-container
+                    +location({
+                        title: "Meet us!",
+                        address: "1259  California St san Francisco, CA"
+                    })
+            .page__calendar-messaging
+                .page__calendar-wrapper
+                    .page__calendar-headline
+                        +headline ("calendar")
+                    .page__calendar
+                        +calendar
+                .page__messaging-wrapper
+                    .page__messaging-headline
+                        +headline ("messaging")
+                    .page__messaging
+                        +messaging ({
+                            name: "Sarah Brown",
+                            source: "src/blocks/messaging/images/user-2.png",
+                            firstMessage: "Hey! So are we cool to meet at the art gallery? Say 8pm",
+                            secondMessage: "Yeah that sounds great. See you then.",
+                            buttonTitle: "reply"
                         })
-                        +events({
-                            source: "src/blocks/events/images/pic-2.png",
-                            number: "24",
-                            month: "Aug",
-                            title: `this is the title`,
-                            text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
-                            buttonTitle: "add to calendar"
-                        })
-                .location
-                    +headline ("location")
-                    .location-container
-                        +location({
-                            title: "Meet us!",
-                            address: "1259  California St san Francisco, CA"
-                        })
-                .calendar-messaging
-                    .calendar__wrapper
-                        .calendar_head
-                            +headline ("calendar")
-                        .calendar__calendar
-                            +calendar
-                    .messaging__wrapper
-                        .messaging__headline
-                            +headline ("messaging")
-                        .messaging__messaging
-                            +messaging ({
-                                name: "Sarah Brown",
-                                source: "src/blocks/messaging/images/user-2.png",
-                                firstMessage: "Hey! So are we cool to meet at the art gallery? Say 8pm",
-                                secondMessage: "Yeah that sounds great. See you then.",
-                                buttonTitle: "reply"
-                            })
-                .video
-                    +headline ("video")
-                    +player
-                .page-navigation
-                    +headline ("_______________________________________")
-                .navigation
+            .page__video
+                +headline ("video")
+                +player
+            .page__navigation-container
+                +headline ("_______________________________________")
+                .page__navigation
                     +navigation({
                         socialNetwork: "social-network",
                         job: "job",
                         interior: "interior",
                         rentAuto: "rent-auto"
                     })
-                .test

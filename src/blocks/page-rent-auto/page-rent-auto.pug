@@ -1,94 +1,93 @@
-include ../header-rent-auto/header-rent-auto.pug
+include ../header-rent-auto/header-rent-auto
 include ../slider/slider
-include ../form-rent-auto/form-rent-auto.pug
-include ../calendar/calendar.pug
-include ../navigation/navigation.pug
-include ../footer-rent-auto/footer-rent-auto.pug
-include ../tick-boxes/tick-boxes.pug
-include ../button/button.pug
+include ../form-rent-auto/form-rent-auto
+include ../calendar/calendar
+include ../navigation/navigation
+include ../footer-rent-auto/footer-rent-auto
+include ../tick-boxes/tick-boxes
+include ../button/button
 
 mixin page-rent-auto
-   main.page-rent-auto
-        .page-rent-auto-wrapper
-            .header-rent-auto
-               +header-rent-auto({
-                   glavnaya: "Главная", 
-                   katalog: "Каталог", 
-                   oNas: "О нас"
-               })
-            .content
-                .left-side
-                    .drop-down-korobka
-                        .drop-down-korobka__header Коробка передач:
-                        .drop-down-korobka__wrapper
-                            .drop-down-korobka__contentline Не выбрано
-                            button.drop-down-korobka__button
-                        .drop-down-korobka__content-container
-                            .drop-down-korobka__mechanic Механика
-                            .drop-down-korobka__automat Автомат
-                    .drop-down-place
-                        .drop-down-place__header Место оформления аренды:
-                        .drop-down-place__wrapper
-                            .drop-down-place__contentline Не выбрано
-                            button.drop-down-place__button
-                        .drop-down-place__content-container
-                            .drop-down-place__office В офисе
-                            .drop-down-place__phone Ваш адрес (по телефону)
-                    .slider
-                        +slider({
-                            min: 0,
-                            max: 100,
-                            step: 1,
-                            value: 40,
-                            label: 'true',
-                            dial: 'false',
-                            color: 'orange',
-                        })
-                    .add
-                        .add__headline Добавить в машину:
-                        .add__kreslo-container
-                            .add__tick-box
-                                +tick-boxes({
-                                    id: "1"
-                                })
-                            .add__kreslo Детское кресло
-                        .add__navigator-container
-                            .add__tick-box
-                                +tick-boxes({
-                                    id: "2"
-                                })
-                            .add__navigator Навигатор
-                        .add__holodilnik-container
-                            .add__tick-box
-                                +tick-boxes({
-                                    id: "3"
-                                })
-                            .add__holodilnik Автохолодильник
-                    .form
-                        +form-rent-auto
-                .right-side
-                    .right-side__calendar
-                        +calendar
-                    .right-side__submit
-                        .form-rent-auto-completeform
-                        .form-rent-auto-submit
-                            +button({
-                                size: `rent-auto-sumit-button`,
-                                color: `orange`,
-                                name: `ripple`,
-                                title: `Отправить заявку`,
-                                addClassName: 'form-rent-auto-submit'
-                            })
-            .navigation
-                    +navigation({
-                        socialNetwork: "social-network",
-                        job: "job",
-                        interior: "interior",
-                        rentAuto: "rent-auto"
+    main.page-rent-auto
+        .page-rent-auto__header
+            +header-rent-auto({
+                glavnaya: "Главная",
+                katalog: "Каталог",
+                oNas: "О нас"
+            })
+        .page-rent-auto__content
+            .page-rent-auto__left-side
+                .page-rent-auto__drop-down-korobka
+                    .page-rent-auto__drop-down-korobka-header Коробка передач:
+                    .page-rent-auto__drop-down-korobka-wrapper
+                        .page-rent-auto__drop-down-korobka-contentline Не выбрано
+                        button.page-rent-auto__drop-down-korobka-button
+                    .page-rent-auto__drop-down-korobka__content-container
+                        .page-rent-auto__drop-down-korobka-mechanic Механика
+                        .page-rent-auto__drop-down-korobka-automat Автомат
+                .page-rent-auto__drop-down-place
+                    .page-rent-auto__drop-down-place-header Место оформления аренды:
+                    .page-rent-auto__drop-down-place-wrapper
+                        .page-rent-auto__drop-down-place-contentline Не выбрано
+                        button.page-rent-auto__drop-down-place-button
+                    .page-rent-auto__drop-down-place__content-container
+                        .page-rent-auto__drop-down-place-office В офисе
+                        .page-rent-auto__drop-down-place-phone Ваш адрес (по телефону)
+                .page-rent-auto__slider
+                    +slider({
+                        min: 0,
+                        max: 100,
+                        step: 1,
+                        value: 40,
+                        label: 'true',
+                        dial: 'false',
+                        color: 'orange',
                     })
-            .footer-rent-auto
-                +footer-rent-auto({
-                     glavnaya: "Главная", 
-                     katalog: "Каталог", 
-                     contacts: "Контакты" 
-                })
+                .page-rent-auto__add
+                    .page-rent-auto__add-headline Добавить в машину:
+                    .page-rent-auto__add-kreslo-container
+                        .page-rent-auto__add-tick-box
+                            +tick-boxes({
+                                id: "1"
+                            })
+                        .page-rent-auto__add-kreslo Детское кресло
+                    .page-rent-auto__add-navigator-container
+                        .page-rent-auto__add-tick-box
+                            +tick-boxes({
+                                id: "2"
+                            })
+                        .page-rent-auto__add-navigator Навигатор
+                    .page-rent-auto__add-holodilnik-container
+                        .page-rent-auto__add-tick-box
+                            +tick-boxes({
+                                id: "3"
+                            })
+                        .page-rent-auto__add-holodilnik Автохолодильник
+                .page-rent-auto__form
+                    +form-rent-auto
+            .page-rent-auto__right-side
+                .page-rent-auto__calendar
+                    +calendar
+                .page-rent-auto__submit
+                    .page-rent-auto__form-rent-auto-completeform
+                    .page-rent-auto__form-rent-auto-submit
+                        +button({
+                            size: `rent-auto-sumit-button`,
+                            color: `orange`,
+                            name: `ripple`,
+                            title: `Отправить заявку`,
+                            addClassName: 'form-rent-auto-submit'
+                        })
+        .page-rent-auto__navigation
+            +navigation({
+                socialNetwork: "social-network",
+                job: "job",
+                interior: "interior",
+                rentAuto: "rent-auto"
+            })
+        .page-rent-auto__footer-rent-auto
+            +footer-rent-auto({
+                glavnaya: "Главная",
+                katalog: "Каталог",
+                contacts: "Контакты"
+            })

@@ -1,54 +1,52 @@
 
-.page-job-wrapper {
-  max-width: 21.167rem;
-  margin:auto;
+.page-job {
 
-  .content {
+  &__header {
+    width: 12.5rem;
+    font-size: 0.833rem;
+    color: #e4583d;
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+    margin-top: 2rem;
+  }
+
+  &__content {
     display: flex;
     flex-direction: column;
   }
 
-  .form {
-    margin: auto;
+  &__stages {
+    margin: 1rem 0 2rem 0;
   }
 
-  .navigation {
-    margin-left: 2rem;
-    width: 103%;
-  }
-}
-  
-.header-job {
-  width: 12.5rem;
-  font-size: 0.833rem;
-  color: #e4583d;
-  text-align: center;
-  margin-left: 7rem;
-  text-transform: uppercase;
-  margin-top: 2rem;
-}
-  
-.stages {
-  margin-bottom: 0.5rem;
-}
-  
-.avatar {
-  width: 5.833rem;
-  height: 7.4rem;
-  background-color: white;
-  box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
-  margin: 0 auto 0.417rem auto;
-  display: flex;
-  flex-direction: column;
-  
-  &__image {
+  &__avatar {
     width: 5.833rem;
-    height: 5.833rem;
-    background: url('./images/user-large.png') 0.271rem 0.271rem no-repeat;
+    height: 7.4rem;
+    background-color: white;
+    box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
+    margin: 0 auto 0.417rem auto;
+    display: flex;
+    flex-direction: column;
+
+    &-image {
+      width: 5.833rem;
+      height: 5.833rem;
+      background: url('./images/user-large.png') 0.271rem 0.271rem no-repeat;
+    }
+
+    &-edit {
+      width: 5.417rem;
+      margin-left: 0.3rem;
+    }
   }
-  
-  &__edit {
-    width: 5.417rem;
-    margin-left: 0.3rem;
+
+  &__form {
+    margin: auto;
   }
 }
+  
+
+  
+
+  
