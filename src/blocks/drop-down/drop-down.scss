@@ -4,7 +4,7 @@
   display: inline-block;
   margin: 0.333rem 0 2.917rem 0;
 
-  .drop-down__content-wrapper {
+  &__content-wrapper {
     display: flex;
     flex-direction: row;
   }
