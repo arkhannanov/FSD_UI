@@ -69,11 +69,11 @@
     transition: all 0.3s ease-in 0s;
   }
 
-  .toggle__input:checked + .toggle__label .toggle__inner {
+  &__input:checked + &__label &__inner {
     margin-left: 0;
   }
 
-  .toggle__input:checked + .toggle__label .toggle__switch {
+  &__input:checked + &__label &__switch {
     right: 0.125rem;
   }
 }
