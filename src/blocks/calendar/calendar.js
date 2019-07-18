@@ -3,296 +3,296 @@ import Const from './const';
 const {MonthNames, DayNames, StartOfWeek, Events, ClassNames, Defaults} = Const;
 
 class Calendar {
-    constructor(root, {minDate, maxDate, selectedDate}) {
-        this._root = root.calendarElem;
-        this._dayElem = root._dayElem;
-        this._header = root._header;
-        this._monthElem = root._monthElem;
-        this._previosButton = root._previosButton;
-        this._nextButton = root._nextButton;
+  constructor(root, {minDate, maxDate, selectedDate}) {
+    this._root = root.calendarElem;
+    this._dayElem = root._dayElem;
+    this._header = root._header;
+    this._monthElem = root._monthElem;
+    this._previosButton = root._previosButton;
+    this._nextButton = root._nextButton;
 
-        this._minDate = minDate || Defaults.minDate;
-        this._maxDate = maxDate || Defaults.maxDate;
+    this._minDate = minDate || Defaults.minDate;
+    this._maxDate = maxDate || Defaults.maxDate;
 
-        this._localize();
+    this._localize();
 
-        this._createUi();
+    this._createUi();
 
-        this.setDate(selectedDate || new Date());
+    this.setDate(selectedDate || new Date());
+  }
+
+  /*
+   * Public
+   */
+  today() {
+    const today = new Date();
+    this._month = today.getMonth();
+    this._year = today.getFullYear();
+    this._date = today.getDate();
+    this._selectedDate = today;
+
+    this._updateUi();
+  }
+
+  setDate(date) {
+    if (date.getTime() < this._minDate.getTime()) {
+      return;
     }
 
-    /*
-     * Public
-     */
-    today() {
-        const today = new Date();
-        this._month = today.getMonth();
-        this._year = today.getFullYear();
-        this._date = today.getDate();
-        this._selectedDate = today;
-
-        this._updateUi();
+    if (date.getTime() > this._maxDate.getTime()) {
+      return;
     }
 
-    setDate(date) {
-        if (date.getTime() < this._minDate.getTime()) {
-            return;
-        }
+    this._selectedDate = date;
 
-        if (date.getTime() > this._maxDate.getTime()) {
-            return;
-        }
+    this.reset();
+  }
 
-        this._selectedDate = date;
+  reset() {
+    this._month = this._selectedDate.getMonth();
+    this._year = this._selectedDate.getFullYear();
+    this._date = this._selectedDate.getDate();
 
-        this.reset();
+
+    this._updateUi();
+  }
+
+  previosMonth() {
+
+
+    if (this._isMinMonth()) {
+      return;
     }
 
-    reset() {
-        this._month = this._selectedDate.getMonth();
-        this._year = this._selectedDate.getFullYear();
-        this._date = this._selectedDate.getDate();
+    this._month = this._month - 1;
 
-
-        this._updateUi();
+    if (this._month < 0) {
+      this._month += 12;
+      this._year -= 1;
     }
 
-    previosMonth() {
+    this._updateUi();
+  }
 
-
-        if (this._isMinMonth()) {
-            return;
-        }
-
-        this._month = this._month - 1;
-
-        if (this._month < 0) {
-            this._month += 12;
-            this._year -= 1;
-        }
-
-        this._updateUi();
+  nextMonth() {
+    if (this._isMaxMonth()) {
+      return;
     }
 
-    nextMonth() {
-        if (this._isMaxMonth()) {
-            return;
-        }
+    this._month = this._month + 1;
 
-        this._month = this._month + 1;
-
-        if (this._month >= 12) {
-            this._month -= 12;
-            this._year += 1;
-        }
-
-        this._updateUi();
+    if (this._month >= 12) {
+      this._month -= 12;
+      this._year += 1;
     }
 
-    /*
-     * Private
-     */
+    this._updateUi();
+  }
 
-    _localize(locale) {
+  /*
+   * Private
+   */
 
-        locale = 'en-IE';
+  _localize(locale) {
 
-        //   locale = locale ||
-        //     (navigator.languages && navigator.languages[0]) ||
-        //     navigator.language ||
-        //     navigator.userLanguage;
+    locale = 'en-IE';
 
-        const date = new Date();
-        date.setDate(date.getDate() - date.getDay());
+    //   locale = locale ||
+    //     (navigator.languages && navigator.languages[0]) ||
+    //     navigator.language ||
+    //     navigator.userLanguage;
 
-        this._dayNames = DayNames.map((defaultDay, i) => {
-            const date = new Date();
-            date.setDate(date.getDate() - date.getDay() + i);
-            return date.toLocaleString(locale, {weekday: 'short'}) || defaultDay;
+    const date = new Date();
+    date.setDate(date.getDate() - date.getDay());
+
+    this._dayNames = DayNames.map((defaultDay, i) => {
+      const date = new Date();
+      date.setDate(date.getDate() - date.getDay() + i);
+      return date.toLocaleString(locale, {weekday: 'short'}) || defaultDay;
+    });
+
+    this._monthNames = MonthNames.map((defaultMonth, i) => {
+      const date = new Date();
+      date.setMonth(i);
+      return date.toLocaleString(locale, {month: 'long'}) || defaultMonth;
+    });
+
+    this._startOfWeek = StartOfWeek[locale] || 0;
+  }
+
+  _createUi() {
+
+    this._header.appendChild(document.createTextNode(' '));
+    this._previosButton.addEventListener('click', () => {
+      this.previosMonth();
+    });
+    this._nextButton.addEventListener('click', () => {
+      this.nextMonth();
+    });
+
+    const table = document.createElement('table');
+    table.className = ClassNames.TABLE;
+
+    const tableHead = document.createElement('thead');
+    tableHead.className = ClassNames.TABLE_HEAD;
+
+    const tableHeadRow = document.createElement('tr');
+    tableHeadRow.className = ClassNames.TABLE_ROW;
+
+    for (let i = 0; i < 7; i++) {
+      const day = this._dayNames[(i + this._startOfWeek) % 7];
+      const colHeader = document.createElement('th');
+      colHeader.scope = 'col';
+      colHeader.className = ClassNames.TABLE_COL_HEADER;
+      colHeader.textContent = day;
+      tableHeadRow.appendChild(colHeader);
+    }
+
+    tableHead.appendChild(tableHeadRow);
+    table.appendChild(tableHead);
+
+    this._tableBody = document.createElement('tbody');
+    this._tableBody.className = ClassNames.TABLE_BODY;
+    this._tableBody.addEventListener('click', (event) => {
+      const target = event.target;
+
+      if (
+        target.classList.contains(ClassNames.TABLE_CELL) &&
+        target.dataset.date
+      ) {
+        const event = new CustomEvent(Events.DATE_SELECTED, {
+          detail: {
+            date: new Date(
+              this._year,
+              this._month,
+              target.dataset.date,
+            ),
+          },
         });
 
-        this._monthNames = MonthNames.map((defaultMonth, i) => {
-            const date = new Date();
-            date.setMonth(i);
-            return date.toLocaleString(locale, {month: 'long'}) || defaultMonth;
-        });
+        this._root.dispatchEvent(event);
+      }
+    });
+    table.appendChild(this._tableBody);
 
-        this._startOfWeek = StartOfWeek[locale] || 0;
+    this._root.appendChild(table);
+
+    tableHead.appendChild(tableHeadRow);
+
+    this._footer = document.createElement('div');
+
+    this._footer.className = ClassNames.FOOTER;
+    this._footer.innerHTML = "TODAY";
+    this._footer.addEventListener('click', () => {
+      this.today();
+    });
+
+    table.appendChild(this._footer);
+
+  }
+
+  _updateUi() {
+    this._monthElem.textContent = this._monthNames[this._month];
+    this._dayElem.textContent = this._date;
+
+    if (this._isMinMonth()) {
+      this._previosButton.classList.add(ClassNames.BUTTON_DISABLED);
+    } else {
+      this._previosButton.classList.remove(ClassNames.BUTTON_DISABLED);
     }
 
-    _createUi() {
+    if (this._isMaxMonth()) {
+      this._nextButton.classList.add(ClassNames.BUTTON_DISABLED);
+    } else {
+      this._nextButton.classList.remove(ClassNames.BUTTON_DISABLED);
+    }
 
-        this._header.appendChild(document.createTextNode(' '));
-        this._previosButton.addEventListener('click', () => {
-            this.previosMonth();
-        });
-        this._nextButton.addEventListener('click', () => {
-            this.nextMonth();
-        });
+    this._tableBody.innerHTML = '';
 
-        const table = document.createElement('table');
-        table.className = ClassNames.TABLE;
+    const date = new Date(this._year, this._month, 1);
+    date.setDate(1 - (date.getDay() + 7 - this._startOfWeek) % 7);
 
-        const tableHead = document.createElement('thead');
-        tableHead.className = ClassNames.TABLE_HEAD;
+    do {
+      const row = document.createElement('tr');
 
-        const tableHeadRow = document.createElement('tr');
-        tableHeadRow.className = ClassNames.TABLE_ROW;
+      for (let i = 0; i < 7; i += 1) {
+        const cell = document.createElement('td');
+        cell.classList.add(ClassNames.TABLE_CELL);
 
-        for (let i = 0; i < 7; i++) {
-            const day = this._dayNames[(i + this._startOfWeek) % 7];
-            const colHeader = document.createElement('th');
-            colHeader.scope = 'col';
-            colHeader.className = ClassNames.TABLE_COL_HEADER;
-            colHeader.textContent = day;
-            tableHeadRow.appendChild(colHeader);
-        }
+        if (date.getMonth() == this._month) {
+          cell.textContent = date.getDate();
 
-        tableHead.appendChild(tableHeadRow);
-        table.appendChild(tableHead);
-
-        this._tableBody = document.createElement('tbody');
-        this._tableBody.className = ClassNames.TABLE_BODY;
-        this._tableBody.addEventListener('click', (event) => {
-            const target = event.target;
-
-            if (
-                target.classList.contains(ClassNames.TABLE_CELL) &&
-                target.dataset.date
-            ) {
-                const event = new CustomEvent(Events.DATE_SELECTED, {
-                    detail: {
-                        date: new Date(
-                            this._year,
-                            this._month,
-                            target.dataset.date,
-                        ),
-                    },
-                });
-
-                this._root.dispatchEvent(event);
+          if (
+            (this._minDate.getTime() <= date.getTime()) &&
+            (this._maxDate.getTime() >= date.getTime())
+          ) {
+            cell.dataset.date = date.getDate();
+            if (date.getTime() == new Date(
+              this._selectedDate.getFullYear(),
+              this._selectedDate.getMonth(),
+              this._selectedDate.getDate()
+            ).getTime()) {
+              cell.classList.add(ClassNames.TABLE_CELL_SELECTED);
             }
-        });
-        table.appendChild(this._tableBody);
-
-        this._root.appendChild(table);
-
-        tableHead.appendChild(tableHeadRow);
-
-        this._footer = document.createElement('div');
-
-        this._footer.className = ClassNames.FOOTER;
-        this._footer.innerHTML = "TODAY";
-        this._footer.addEventListener('click', () => {
-            this.today();
-        });
-
-        table.appendChild(this._footer);
-
-    }
-
-    _updateUi() {
-        this._monthElem.textContent = this._monthNames[this._month];
-        this._dayElem.textContent = this._date;
-
-        if (this._isMinMonth()) {
-            this._previosButton.classList.add(ClassNames.BUTTON_DISABLED);
-        } else {
-            this._previosButton.classList.remove(ClassNames.BUTTON_DISABLED);
+          } else {
+            cell.classList.add(ClassNames.TABLE_CELL_DISABLED);
+          }
         }
 
-        if (this._isMaxMonth()) {
-            this._nextButton.classList.add(ClassNames.BUTTON_DISABLED);
-        } else {
-            this._nextButton.classList.remove(ClassNames.BUTTON_DISABLED);
-        }
+        row.appendChild(cell);
 
-        this._tableBody.innerHTML = '';
+        date.setDate(date.getDate() + 1);
+      }
 
-        const date = new Date(this._year, this._month, 1);
-        date.setDate(1 - (date.getDay() + 7 - this._startOfWeek) % 7);
+      this._tableBody.appendChild(row);
+    } while (date.getMonth() == this._month);
+  }
 
-        do {
-            const row = document.createElement('tr');
+  _isMinMonth() {
+    return (
+      (this._month == this._minDate.getMonth()) &&
+      (this._year == this._minDate.getFullYear())
+    );
+  }
 
-            for (let i = 0; i < 7; i += 1) {
-                const cell = document.createElement('td');
-                cell.classList.add(ClassNames.TABLE_CELL);
-
-                if (date.getMonth() == this._month) {
-                    cell.textContent = date.getDate();
-
-                    if (
-                        (this._minDate.getTime() <= date.getTime()) &&
-                        (this._maxDate.getTime() >= date.getTime())
-                    ) {
-                        cell.dataset.date = date.getDate();
-                        if (date.getTime() == new Date(
-                            this._selectedDate.getFullYear(),
-                            this._selectedDate.getMonth(),
-                            this._selectedDate.getDate()
-                        ).getTime()) {
-                            cell.classList.add(ClassNames.TABLE_CELL_SELECTED);
-                        }
-                    } else {
-                        cell.classList.add(ClassNames.TABLE_CELL_DISABLED);
-                    }
-                }
-
-                row.appendChild(cell);
-
-                date.setDate(date.getDate() + 1);
-            }
-
-            this._tableBody.appendChild(row);
-        } while (date.getMonth() == this._month);
-    }
-
-    _isMinMonth() {
-        return (
-            (this._month == this._minDate.getMonth()) &&
-            (this._year == this._minDate.getFullYear())
-        );
-    }
-
-    _isMaxMonth() {
-        return (
-            (this._month == this._maxDate.getMonth()) &&
-            (this._year == this._maxDate.getFullYear())
-        );
-    }
+  _isMaxMonth() {
+    return (
+      (this._month == this._maxDate.getMonth()) &&
+      (this._year == this._maxDate.getFullYear())
+    );
+  }
 }
 
 
 const root = {
-    calendarElem: document.getElementsByClassName('calendar__item')[0],
-    _dayElem: document.getElementsByClassName('calendar__item-day')[0],
-    _header: document.getElementsByClassName('calendar__item-header')[0],
-    _monthElem: document.getElementsByClassName('calendar__item-month')[0],
-    _previosButton: document.getElementsByClassName('calendar__item-button-previous')[0],
-    _nextButton: document.getElementsByClassName('calendar__item-button-next')[0],
+  calendarElem: document.getElementsByClassName('calendar__item')[0],
+  _dayElem: document.getElementsByClassName('calendar__item-day')[0],
+  _header: document.getElementsByClassName('calendar__item-header')[0],
+  _monthElem: document.getElementsByClassName('calendar__item-month')[0],
+  _previosButton: document.getElementsByClassName('calendar__item-button-previous')[0],
+  _nextButton: document.getElementsByClassName('calendar__item-button-next')[0],
 }
 
 window.onload = () => {
-    if (root != null) {
-        const today = new Date();
+  if (root != null) {
+    const today = new Date();
 
-        const calendar = new Calendar(root, {
-            minDate: new Date(
-                today.getFullYear(),
-                today.getMonth(),
-                today.getDate()
-            ),
-            maxDate: new Date(
-                today.getFullYear() + 1,
-                today.getMonth(),
-                today.getDate()
-            ),
-        });
+    const calendar = new Calendar(root, {
+      minDate: new Date(
+        today.getFullYear(),
+        today.getMonth(),
+        today.getDate()
+      ),
+      maxDate: new Date(
+        today.getFullYear() + 1,
+        today.getMonth(),
+        today.getDate()
+      ),
+    });
 
-        root.calendarElem.addEventListener(Events.DATE_SELECTED, (event) => {
-            calendar.setDate(event.detail.date);
-        });
-    }
+    root.calendarElem.addEventListener(Events.DATE_SELECTED, (event) => {
+      calendar.setDate(event.detail.date);
+    });
+  }
 };
   
