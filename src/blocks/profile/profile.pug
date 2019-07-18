@@ -1,5 +1,6 @@
 include ../pie/pie.pug
 include ../calendar/calendar.pug
+include ../button/button.pug
 
 mixin profile(options = {headline: "", rightSideHeader: "", profession:"", phone:"", twitter:"", facebook:"", horror:"", thriller:"", drama:"", comedy:""})
     -let {headline, rightSideHeader, profession, phone, twitter, facebook, horror, thriller, drama, comedy}=options
@@ -10,7 +11,12 @@ mixin profile(options = {headline: "", rightSideHeader: "", profession:"", phone
                 .profile__avatar-container
                     .profile__avatar
                     .profile__edit
-                        button.profile__edit-button(name="button") edit
+                        +button({
+                            size: `profile-edit-button`,
+                            color: `green`,
+                            name: `ripple`,
+                            title: `edit`
+                        })
                 .profile__calendar-container
                     .profile__calendar
                         +calendar

@@ -1,4 +1,5 @@
 include ../stages/stages.pug
+include ../button/button.pug
 
 mixin form-interior
     .form-interior
@@ -12,4 +13,9 @@ mixin form-interior
         .form-interior__message-container
             textarea.form-interior__message-text(type="text", id="form-interior__message-text", placeholder="Сообщение")
         .form-interior__submit-container
-            button.form-interior__submit-button(name="button", id="form-interior__submit-button") Отправить
+            +button({
+                size: `submit`,
+                color: `green`,
+                name: `ripple`,
+                title: `Отправить`,
+            })

@@ -1,6 +1,7 @@
 include ../toggle/toggle.pug
+include ../button/button.pug
 
-mixin form-job(options={toggleContent:""})
+mixin form-job(options = {toggleContent: ""})
     -let {toggleContent} = options;
     .form-job
         .form-job__completeform
@@ -26,4 +27,10 @@ mixin form-job(options={toggleContent:""})
             })
             .form-job__toggle-content= toggleContent
         .form-job__submit-container
-            button.form-job__submit-button submit
+            +button({
+                size: `submit`,
+                color: `green`,
+                name: `ripple`,
+                title: `submit`,
+                addClassName: 'form-job__submit-button'
+            })

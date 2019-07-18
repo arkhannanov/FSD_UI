@@ -44,42 +44,7 @@
 
   &__edit {
     width: 5.417rem;
-    margin: auto;
-  }
-
-  &__edit-button {
-    border: 0.042rem solid #4eb7a8;
-    text-align: center;
-    width: 5.25rem;
-    height: 0.917rem;
-    background: #ffffff;
-    font-weight: bolder;
-    color: #4eb7a8;
-    font-size: 0.417rem;
-    border-radius: 0.125rem;
-    box-shadow: 0 -0.083rem rgba(40, 162, 144, 1) inset;
-    transition: 0.2s;
-    vertical-align: middle;
-    overflow: hidden;
-    position: relative;
-    margin: auto;
-    text-transform: uppercase;
-
-    &:hover {
-      background: #4eb7a8;
-      color: #ffffff;
-    }
-  }
-
-
-  &__edit-button:active,
-  &__edit-button:focus {
-    outline: none;
-    box-shadow: none;
-  }
-
-  &__edit-button:visited {
-    outline: none;
+    margin-left: 0.3rem;
   }
 
   &__calendar-container {

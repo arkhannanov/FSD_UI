@@ -52,6 +52,30 @@
         width: 10.2rem;
         height: 1.45rem;
       }
+
+      &_navigation {
+        width: 3.333rem;
+        height: 1.333rem;
+        font-size: 0.5rem;
+      }
+
+      &_profile-edit-button {
+        width: 5.25rem;
+        height: 0.917rem;
+        font-size: 0.417rem;
+      }
+
+      &_avatar-edit-button {
+        width: 5.25rem;
+        height: 0.917rem;
+        font-size: 0.417rem;
+      }
+
+      &_rent-auto-sumit-button {
+        width: 8.333rem;
+        height: 2.083rem;
+        font-size: 0.55rem;
+      }
     }
 
     &_color {

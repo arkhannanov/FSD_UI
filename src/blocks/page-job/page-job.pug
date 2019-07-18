@@ -1,6 +1,7 @@
 include ../stages/stages.pug
 include ../form-job/form-job.pug
 include ../navigation/navigation.pug
+include ../button/button.pug
 
 mixin page-job
     main.page-job
@@ -12,7 +13,12 @@ mixin page-job
                     .avatar
                         .avatar__image
                         .avatar__edit
-                            button(name="button", class="avatar__edit-button") edit
+                            +button({
+                                size: `avatar-edit-button`,
+                                color: `green`,
+                                name: `ripple`,
+                                title: `edit`
+                            })
                     .form
                         +form-job({
                             toggleContent: "Get information about current events."

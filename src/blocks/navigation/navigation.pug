@@ -1,11 +1,33 @@
+include ../button/button.pug
+
 mixin navigation(options={socialNetwork:"", job:"", interior:"", rentAuto:""})
     - let {socialNetwork, job, interior, rentAuto} = options;
     .navigation
-        .navigation__social-network
-            button.navigation__button(name="button", onclick="document.location='social-network.html'")= socialNetwork
-        .navigation__job
-            button.navigation__button(name="button", onclick="document.location='job.html'")= job
-        .navigation__interior
-            button.navigation__button(name="button", onclick="document.location='interior.html'")= interior
-        .navigation__rent-auto
-            button.navigation__button(name="button", onclick="document.location='rent-auto.html'")= rentAuto
+        +button({
+            size: `navigation`,
+            color: `green`,
+            name: `ripple`,
+            title: `${socialNetwork}`,
+            location: `document.location='social-network.html'`
+        })
+        +button({
+            size: `navigation`,
+            color: `green`,
+            name: `ripple`,
+            title: `${job}`,
+            location: `document.location='job.html'`
+        })
+        +button({
+            size: `navigation`,
+            color: `green`,
+            name: `ripple`,
+            title: `${interior}`,
+            location: `document.location='interior.html'`
+        })
+        +button({
+            size: `navigation`,
+            color: `green`,
+            name: `ripple`,
+            title: `${rentAuto}`,
+            location: `document.location='rent-auto.html'`
+        })

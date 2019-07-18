@@ -46,39 +46,6 @@
   }
 
   &__submit-container {
-    position: relative;
-  }
-
-  &__submit-button {
-    width: 4.917rem;
-    height: 1.333rem;
-    border: 0.042rem solid #4eb7a8;
-    text-align: center;
-    background: #ffffff;
-    font-weight: bolder;
-    color: #4eb7a8;
-    letter-spacing: 0;
-    font-size: 0.5rem;
-    border-radius: 0.208rem;
-    box-shadow: 0 -0.083rem rgba(40, 162, 144, 1) inset;
-    transition: 0.2s;
-    vertical-align: middle;
-    overflow: hidden;
-    top: 2.5rem;
-    left: 5.792rem;
-    position: absolute;
-    margin-bottom: 1.25rem;
-
-    &:hover {
-      background: #4eb7a8;
-      color: #ffffff;
-    }
-  }
-
-
-  &__submit-button,
-  &__submit-button:active,
-  &__submit-button:focus {
-    outline: none;
+    margin: 3rem 0 0 5.7rem;
   }
 }

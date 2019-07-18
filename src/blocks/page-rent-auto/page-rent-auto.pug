@@ -5,6 +5,7 @@ include ../calendar/calendar.pug
 include ../navigation/navigation.pug
 include ../footer-rent-auto/footer-rent-auto.pug
 include ../tick-boxes/tick-boxes.pug
+include ../button/button.pug
 
 mixin page-rent-auto
    main.page-rent-auto
@@ -70,7 +71,14 @@ mixin page-rent-auto
                         +calendar
                     .right-side__submit
                         .form-rent-auto-completeform
-                        button.form-rent-auto-submit Отправить заявку
+                        .form-rent-auto-submit
+                            +button({
+                                size: `rent-auto-sumit-button`,
+                                color: `orange`,
+                                name: `ripple`,
+                                title: `Отправить заявку`,
+                                addClassName: 'form-rent-auto-submit'
+                            })
             .navigation
                     +navigation({
                         socialNetwork: "social-network",
