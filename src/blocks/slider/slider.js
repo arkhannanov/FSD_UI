@@ -1,4 +1,4 @@
-import '../../js/jquery.range';
+import '../../vendors/jquery.range';
 
 class Slider {
     constructor(root) {
