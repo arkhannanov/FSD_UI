@@ -74,7 +74,7 @@ class Player {
 
     updateButton() {
         const icon = this.video.paused ? '►' : '❚ ❚';
-        this.toggle.classList.remove('after');
+        this.toggle.classList.remove('player__after');
         this.toggle.textContent = icon;
     }
 
@@ -140,8 +140,8 @@ const root = {
     video: playerDoc.querySelector('.viewer'),
     progress: playerDoc.querySelector('.player__progress'),
     progressBar: playerDoc.querySelector('.player__progress_filled'),
-    toggle: playerDoc.querySelector('.toggle'),
-    fullscreen: playerDoc.querySelector('.fullscreen'),
+    toggle: playerDoc.querySelector('.player__toggle'),
+    fullscreen: playerDoc.querySelector('.player__fullscreen'),
     filled: playerDoc.querySelector('.player__progress_filled'),
 };
 
