@@ -273,26 +273,29 @@ const root = {
   _nextButton: document.getElementsByClassName('calendar__item-button-next')[0],
 }
 
-window.onload = () => {
-  if (root != null) {
-    const today = new Date();
+if (typeof root.calendarElem !== 'undefined') {
+  window.onload = () => {
+    if (root != null) {
+      const today = new Date();
 
-    const calendar = new Calendar(root, {
-      minDate: new Date(
-        today.getFullYear(),
-        today.getMonth(),
-        today.getDate()
-      ),
-      maxDate: new Date(
-        today.getFullYear() + 1,
-        today.getMonth(),
-        today.getDate()
-      ),
-    });
+      const calendar = new Calendar(root, {
+        minDate: new Date(
+          today.getFullYear(),
+          today.getMonth(),
+          today.getDate()
+        ),
+        maxDate: new Date(
+          today.getFullYear() + 1,
+          today.getMonth(),
+          today.getDate()
+        ),
+      });
 
-    root.calendarElem.addEventListener(Events.DATE_SELECTED, (event) => {
-      calendar.setDate(event.detail.date);
-    });
-  }
-};
+      root.calendarElem.addEventListener(Events.DATE_SELECTED, (event) => {
+        calendar.setDate(event.detail.date);
+      });
+    }
+  };
+}
+
   

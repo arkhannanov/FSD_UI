@@ -50,5 +50,7 @@ const root = {
   searchError: document.getElementsByClassName('search__error')[0],
 };
 
-new Search(root);
+if (typeof root.search !== 'undefined') {
+  new Search(root);
+}
 

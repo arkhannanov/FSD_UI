@@ -215,4 +215,6 @@ const root = {
   completeForm: document.getElementsByClassName('form-job__completeform')[0],
 };
 
-new FormJob(root);
+if (typeof root.jobTitleInput !== 'undefined') {
+  new FormJob(root);
+}

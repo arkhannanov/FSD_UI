@@ -262,4 +262,6 @@ const root = {
   completeForm: document.getElementsByClassName('form-rent-auto-completeform')[0],
 };
 
-new FormRentAuto(root);
+if (typeof root.surnameInput !== 'undefined') {
+  new FormRentAuto(root);
+}

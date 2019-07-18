@@ -142,4 +142,6 @@ const root = {
   formCompleteform: document.getElementsByClassName('form__completeform')[0],
 };
 
-new Form(root);
+if (typeof root.formNameInput !== 'undefined') {
+  new Form(root);
+}

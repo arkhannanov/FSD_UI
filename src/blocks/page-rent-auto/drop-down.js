@@ -62,4 +62,6 @@ const root = {
   phone: document.getElementsByClassName('page-rent-auto__drop-down-place-phone')[0],
 };
 
-new DropDown(root);
+if (typeof root.boxContentline !== 'undefined') {
+  new DropDown(root);
+}

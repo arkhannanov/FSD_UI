@@ -1,4 +1,6 @@
-ymaps.ready(init);
+if (typeof ymaps !== 'undefined') {
+  ymaps.ready(init);
+}
 
 function init() {
   const myMap = new ymaps.Map('map', {

@@ -109,4 +109,6 @@ const root = {
   fourthDiv: document.getElementsByClassName('stages__fourth-div')[0],
 };
 
-new Stages(root);
+if (typeof root.firstCircle !== 'undefined') {
+  new Stages(root);
+}

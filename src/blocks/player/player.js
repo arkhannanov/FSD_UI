@@ -134,15 +134,17 @@ class Player {
 }
 
 const playerDoc = document.querySelector('.player');
-// get elements
-const root = {
-  playerMain: document.querySelector('.player'),
-  video: playerDoc.querySelector('.viewer'),
-  progress: playerDoc.querySelector('.player__progress'),
-  progressBar: playerDoc.querySelector('.player__progress_filled'),
-  toggle: playerDoc.querySelector('.player__toggle'),
-  fullscreen: playerDoc.querySelector('.player__fullscreen'),
-  filled: playerDoc.querySelector('.player__progress_filled'),
-};
 
-new Player(root);
+if (playerDoc !== null) {
+  const root = {
+    playerMain: document.querySelector('.player'),
+    video: playerDoc.querySelector('.viewer'),
+    progress: playerDoc.querySelector('.player__progress'),
+    progressBar: playerDoc.querySelector('.player__progress_filled'),
+    toggle: playerDoc.querySelector('.player__toggle'),
+    fullscreen: playerDoc.querySelector('.player__fullscreen'),
+    filled: playerDoc.querySelector('.player__progress_filled'),
+  };
+
+  new Player(root);
+}
