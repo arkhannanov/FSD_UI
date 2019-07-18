@@ -14,4 +14,10 @@ mixin messaging(options = {name:"", source:"", firstMessage:"", secondMessage:""
                 .messaging__first-message= firstMessage
             .messaging__second-message-container
                 .messaging__second-message= secondMessage
-            button.messaging__button(name="button")= buttonTitle
+            .messaging__button-container
+                +button({
+                    size: `messaging`,
+                    color: `green`,
+                    name: `ripple`,
+                    title: `${buttonTitle}`
+                })

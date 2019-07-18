@@ -101,38 +101,7 @@
     padding: 0.7rem 0 0 0.7rem;
   }
 
-  &__button {
-    border: 0.042rem solid #4eb7a8;
-    text-align: center;
-    background: #ffffff;
-    font-weight: bolder;
-    color: #4eb7a8;
-    font-size: 0.517rem;
-    border-radius: 0.208rem;
-    box-shadow: 0 -0.083rem rgba(40, 162, 144, 1) inset;
-    transition: 0.2s;
-    vertical-align: middle;
-    overflow: hidden;
-    position: relative;
-    width: 10.2rem;
-    height: 1.45rem;
-    margin-left: 0.88rem;
-    text-transform: uppercase;
-
-    &:hover {
-      background: #4eb7a8;
-      color: #ffffff;
-    }
-  }
-
-
-  &__button:active,
-  &__button:focus {
-    outline: none;
-    box-shadow: none;
-  }
-
-  &__button:visited {
-    outline: none;
+  &__button-container {
+    margin-left: 0.9rem;
   }
 }
