@@ -1,11 +1,6 @@
-import * as Const from './const';
+import Const from './const';
 
-const DayNames = Const.DayNames;
-const StartOfWeek = Const.StartOfWeek;
-const Events = Const.Events;
-const ClassNames = Const.ClassNames;
-const Defaults = Const.Defaults;
-const MonthNames = Const.MonthNames;
+const {MonthNames, DayNames, StartOfWeek, Events, ClassNames, Defaults} = Const;
 
 class Calendar {
     constructor(root, {minDate, maxDate, selectedDate}) {
