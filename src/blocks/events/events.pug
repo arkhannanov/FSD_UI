@@ -1,3 +1,5 @@
+include ../button/button.pug
+
 mixin events(options = {source: "", number: "", month: "", title: "", text: "", buttonTitle: ""})
     -let {source, number, month, title, text, buttonTitle } = options;
     .events
@@ -10,4 +12,10 @@ mixin events(options = {source: "", number: "", month: "", title: "", text: "", 
                 .events__title= title
             .events__text-container
                 .events__text= text
-            button.events__button(name="button")= buttonTitle
+            .events__button-container
+                +button({
+                    size: `events`,
+                    color: `green`,
+                    name: `ripple`,
+                    title: `${buttonTitle}`,
+                })
