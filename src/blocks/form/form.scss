@@ -130,35 +130,8 @@
     }
   }
 
-  &__submit-button {
-    width: 5rem;
-    height: 1.5rem;
-    border: 0.042rem solid #4eb7a8;
-    text-align: center;
-    background: #ffffff;
-    font-weight: bolder;
-    color: #4eb7a8;
-    letter-spacing: 0;
-    font-size: 0.5rem;
-    border-radius: 0.208rem;
-    box-shadow: 0 -0.083rem rgba(40, 162, 144, 1) inset;
-    transition: 0.2s;
-    vertical-align: middle;
-    overflow: hidden;
-    position: relative;
-    margin: 1.083rem 0 1.25rem 0;
-    left: 7rem;
-    text-transform: uppercase;
+  &__submit {
+    margin: 0.9rem 0 0 7rem;
 
-    &:hover {
-      background: #4eb7a8;
-      color: #ffffff;
-    }
-  }
-
-  &__submit-button,
-  &__submit-button:active,
-  &__submit-button:focus {
-    outline: none;
   }
 }

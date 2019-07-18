@@ -1,3 +1,5 @@
+include ../button/button.pug
+
 mixin form
     .form
         .form__completeform
@@ -12,4 +14,9 @@ mixin form
         .form__message
             textarea.form__message-input(type="text", placeholder="Your Message")
         .form__submit
-            button.form__submit-button submit
+            +button({
+                size: `submit`,
+                color: `green`,
+                name: `ripple`,
+                title: `submit`,
+            })
