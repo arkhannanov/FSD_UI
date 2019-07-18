@@ -1,13 +1,10 @@
 .player {
-
-  &__wrapper {
-    border-radius: 0.208rem;
-    width: 24.75rem;
-    height: 15rem;
-    overflow: hidden;
-    margin: 1rem 0 1.25rem 0;
-    position: relative;
-  }
+  border-radius: 0.208rem;
+  width: 24.75rem;
+  height: 14rem;
+  overflow: hidden;
+  margin: 0.8rem 0 1.25rem 0;
+  position: relative;
 
   &__video {
     border-radius: 0.208rem;
@@ -20,7 +17,7 @@
     justify-content: space-between;
     height: 2rem;
     position: absolute;
-    top: 13rem;
+    top: 12rem;
   }
 
   &:fullscreen {
