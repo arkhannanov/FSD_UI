@@ -13,8 +13,8 @@ class Calendar {
       this._dayElem = root._dayElem;
       this._header = root._header;
       this._monthElem = root._monthElem;
-      this._prevBtn = root._prevBtn;
-      this._nextBtn = root._nextBtn;
+      this._previosButton = root._previosButton;
+      this._nextButton = root._nextButton;
 
       this._minDate = minDate || Defaults.minDate;
       this._maxDate = maxDate || Defaults.maxDate;
@@ -62,7 +62,7 @@ class Calendar {
       this._updateUi();
     }
     
-    prevMonth() {
+    previosMonth() {
       if (this._isMinMonth()) {
         return;
       }
@@ -122,10 +122,10 @@ class Calendar {
     _createUi() {
 
       this._header.appendChild(document.createTextNode(' '));
-      this._prevBtn.addEventListener('click', () => {
-        this.prevMonth();
+      this._previosButton.addEventListener('click', () => {
+        this.previosMonth();
       });
-      this._nextBtn.addEventListener('click', () => {
+      this._nextButton.addEventListener('click', () => {
         this.nextMonth();
       });
 
@@ -195,15 +195,15 @@ class Calendar {
       this._dayElem.textContent = this._date;
   
       if (this._isMinMonth()) {
-        this._prevBtn.classList.add(ClassNames.BTN_DISABLED);
+        this._previosButton.classList.add(ClassNames.BUTTON_DISABLED);
       } else {
-        this._prevBtn.classList.remove(ClassNames.BTN_DISABLED);
+        this._previosButton.classList.remove(ClassNames.BUTTON_DISABLED);
       }
       
       if (this._isMaxMonth()) {
-        this._nextBtn.classList.add(ClassNames.BTN_DISABLED);
+        this._nextButton.classList.add(ClassNames.BUTTON_DISABLED);
       } else {
-        this._nextBtn.classList.remove(ClassNames.BTN_DISABLED);
+        this._nextButton.classList.remove(ClassNames.BUTTON_DISABLED);
       }
   
       this._tableBody.innerHTML = '';
@@ -268,8 +268,8 @@ const root = {
  _dayElem : document.getElementsByClassName('calendar__item-day')[0],
   _header : document.getElementsByClassName('calendar__item-header')[0],
   _monthElem: document.getElementsByClassName('calendar__item-month')[0],
-  _prevBtn: document.getElementsByClassName('calendar__item-button-previous')[0],
-  _nextBtn: document.getElementsByClassName('calendar__item-button-next')[0],
+  _previosButton: document.getElementsByClassName('calendar__item-button-previous')[0],
+  _nextButton: document.getElementsByClassName('calendar__item-button-next')[0],
 }
 
   window.onload = () => {

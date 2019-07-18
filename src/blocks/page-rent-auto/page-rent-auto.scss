@@ -10,7 +10,7 @@
     color: black;
   }
 
-  &__drop-down-korobka {
+  &__drop-down-box {
     width: 10.417rem;
     margin-top: 2.667rem;
     margin-bottom: 3rem;
@@ -75,10 +75,9 @@
       color: white;
     }
 
-    &:hover &__content-container {
+    &:hover &-content-container {
       display: block;
     }
-
   }
 
   &__drop-down-place {
@@ -167,7 +166,7 @@
       z-index: 100;
     }
 
-    &-kreslo-container {
+    &-chair-container {
       display: flex;
       flex-direction: row;
       margin-left: 0;
@@ -183,7 +182,7 @@
       z-index: 0;
     }
 
-    &-holodilnik-container {
+    &-refrigerator-container {
       display: flex;
       flex-direction: row;
       position: relative;

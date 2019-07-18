@@ -171,8 +171,7 @@ mixin page
                         })
             .page__stages
                 +headline ("stages")
-                .page__stages-wrapper
-                    +stages
+                +stages
             .page__form-tick-boxes-toggle
                 +headline ("form elements")
                 .page__form-tick-boxes-toggle-container
@@ -246,11 +245,10 @@ mixin page
                     })
             .page__location
                 +headline ("location")
-                .page__location-container
-                    +location({
-                        title: "Meet us!",
-                        address: "1259  California St san Francisco, CA"
-                    })
+                +location({
+                    title: "Meet us!",
+                    address: "1259  California St san Francisco, CA"
+                })
             .page__calendar-messaging
                 .page__calendar-wrapper
                     .page__calendar-headline

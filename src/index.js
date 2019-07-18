@@ -5,7 +5,7 @@ import './blocks/search/search';
 import './blocks/location/location';
 import './blocks/calendar/calendar';
 import './blocks/player/player';
-import './js/favicons';
+import './vendors/favicons';
 import './blocks/slider/slider';
 
 function importAll(resolve) {

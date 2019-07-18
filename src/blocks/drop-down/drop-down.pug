@@ -3,7 +3,7 @@ mixin drop-down(options = {contentContainer:[]})
     .drop-down
         .drop-down__content-wrapper
             .drop-down__contentline Choose an Option
-            button.drop-down__btn
+            button.drop-down__button
         .drop-down__content
             -contentContainer.forEach(function(item) {
                 a.drop-down__item-link(href="/mock-address/change-me")= item.content

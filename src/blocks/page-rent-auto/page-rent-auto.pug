@@ -11,26 +11,26 @@ mixin page-rent-auto
     main.page-rent-auto
         .page-rent-auto__header
             +header-rent-auto({
-                glavnaya: "Главная",
-                katalog: "Каталог",
-                oNas: "О нас"
+                mainPage: "Главная",
+                catalogue: "Каталог",
+                aboutUs: "О нас"
             })
         .page-rent-auto__content
             .page-rent-auto__left-side
-                .page-rent-auto__drop-down-korobka
-                    .page-rent-auto__drop-down-korobka-header Коробка передач:
-                    .page-rent-auto__drop-down-korobka-wrapper
-                        .page-rent-auto__drop-down-korobka-contentline Не выбрано
-                        button.page-rent-auto__drop-down-korobka-button
-                    .page-rent-auto__drop-down-korobka__content-container
-                        .page-rent-auto__drop-down-korobka-mechanic Механика
-                        .page-rent-auto__drop-down-korobka-automat Автомат
+                .page-rent-auto__drop-down-box
+                    .page-rent-auto__drop-down-box-header Коробка передач:
+                    .page-rent-auto__drop-down-box-wrapper
+                        .page-rent-auto__drop-down-box-contentline Не выбрано
+                        button.page-rent-auto__drop-down-box-button
+                    .page-rent-auto__drop-down-box-content-container
+                        .page-rent-auto__drop-down-box-mechanic Механика
+                        .page-rent-auto__drop-down-box-automat Автомат
                 .page-rent-auto__drop-down-place
                     .page-rent-auto__drop-down-place-header Место оформления аренды:
                     .page-rent-auto__drop-down-place-wrapper
                         .page-rent-auto__drop-down-place-contentline Не выбрано
                         button.page-rent-auto__drop-down-place-button
-                    .page-rent-auto__drop-down-place__content-container
+                    .page-rent-auto__drop-down-place-content-container
                         .page-rent-auto__drop-down-place-office В офисе
                         .page-rent-auto__drop-down-place-phone Ваш адрес (по телефону)
                 .page-rent-auto__slider
@@ -45,24 +45,24 @@ mixin page-rent-auto
                     })
                 .page-rent-auto__add
                     .page-rent-auto__add-headline Добавить в машину:
-                    .page-rent-auto__add-kreslo-container
+                    .page-rent-auto__add-chair-container
                         .page-rent-auto__add-tick-box
                             +tick-boxes({
                                 id: "1"
                             })
-                        .page-rent-auto__add-kreslo Детское кресло
+                        .page-rent-auto__add-chair Детское кресло
                     .page-rent-auto__add-navigator-container
                         .page-rent-auto__add-tick-box
                             +tick-boxes({
                                 id: "2"
                             })
                         .page-rent-auto__add-navigator Навигатор
-                    .page-rent-auto__add-holodilnik-container
+                    .page-rent-auto__add-refrigerator-container
                         .page-rent-auto__add-tick-box
                             +tick-boxes({
                                 id: "3"
                             })
-                        .page-rent-auto__add-holodilnik Автохолодильник
+                        .page-rent-auto__add-refrigerator Автохолодильник
                 .page-rent-auto__form
                     +form-rent-auto
             .page-rent-auto__right-side
@@ -87,7 +87,7 @@ mixin page-rent-auto
             })
         .page-rent-auto__footer-rent-auto
             +footer-rent-auto({
-                glavnaya: "Главная",
-                katalog: "Каталог",
+                mainPage: "Главная",
+                catalogue: "Каталог",
                 contacts: "Контакты"
             })

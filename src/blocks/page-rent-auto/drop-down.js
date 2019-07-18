@@ -1,6 +1,6 @@
 class DropDown {
     constructor(root) {
-        this.korobkaContentline = root.korobkaContentline;
+        this.boxContentline = root.boxContentline;
         this.mechanic = root.mechanic;
         this.automat = root.automat;
         this.placeContentline = root.placeContentline;
@@ -29,15 +29,15 @@ class DropDown {
     }
 
     checkMechanic() {
-        this.korobkaContentline.innerHTML = 'Механика';
-        this.korobkaContentline.style.backgroundColor = '#4eb7a8';
-        this.korobkaContentline.style.color = 'white';
+        this.boxContentline.innerHTML = 'Механика';
+        this.boxContentline.style.backgroundColor = '#4eb7a8';
+        this.boxContentline.style.color = 'white';
     }
 
     checkAutomat() {
-        this.korobkaContentline.innerHTML = 'Автомат';
-        this.korobkaContentline.style.backgroundColor = '#4eb7a8';
-        this.korobkaContentline.style.color = 'white';
+        this.boxContentline.innerHTML = 'Автомат';
+        this.boxContentline.style.backgroundColor = '#4eb7a8';
+        this.boxContentline.style.color = 'white';
     }
 
     checkOffice() {
@@ -53,12 +53,12 @@ class DropDown {
     }
 }
 const root = {
-    korobkaContentline: document.getElementsByClassName('drop-down-korobka__contentline')[0],
-    mechanic: document.getElementsByClassName('drop-down-korobka__mechanic')[0],
-    automat: document.getElementsByClassName('drop-down-korobka__automat')[0],
-    placeContentline: document.getElementsByClassName('drop-down-place__contentline')[0],
-    office: document.getElementsByClassName('drop-down-place__office')[0],
-    phone: document.getElementsByClassName('drop-down-place__phone')[0],
+    boxContentline: document.getElementsByClassName('page-rent-auto__drop-down-box-contentline')[0],
+    mechanic: document.getElementsByClassName('page-rent-auto__drop-down-box-mechanic')[0],
+    automat: document.getElementsByClassName('page-rent-auto__drop-down-box-automat')[0],
+    placeContentline: document.getElementsByClassName('page-rent-auto__drop-down-place-contentline')[0],
+    office: document.getElementsByClassName('page-rent-auto__drop-down-place-office')[0],
+    phone: document.getElementsByClassName('page-rent-auto__drop-down-place-phone')[0],
 };
 
 new DropDown(root);

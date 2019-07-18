@@ -81,15 +81,6 @@
     }
   }
 
-  &__stages {
-    margin: auto;
-
-    &-wrapper {
-      margin-top: 1.5rem;
-      margin-bottom: 2.85rem;
-    }
-  }
-
   &__form-tick-boxes-toggle {
 
     &-container {
@@ -184,13 +175,6 @@
     }
   }
 
-  &__location {
-
-    &-container {
-      margin-top: 1.4rem;
-    }
-  }
-
   &__calendar-messaging {
     display: flex;
     flex-direction: row;
@@ -200,11 +184,6 @@
 
   &__calendar-wrapper {
     margin-right: 1.2rem;
-  }
-
-  &__calendar,
-  &__messaging {
-    margin-top: 1rem;
   }
 }
 

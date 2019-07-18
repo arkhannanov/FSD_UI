@@ -1,8 +1,8 @@
-mixin footer-rent-auto(options={ glavnaya: "", katalog: "", contacts: "" })
-    - let {glavnaya, katalog, contacts } = options;
+mixin footer-rent-auto(options={ mainPage: "", catalogue: "", contacts: "" })
+    - let {mainPage, catalogue, contacts } = options;
     .footer-rent-auto
         .footer-rent-auto__logo logotip
         .footer-rent-auto__menu-container
-            a.footer-rent-auto__glavnaya-link(href="/mock-address/change-me")= glavnaya
-            a.footer-rent-auto__katalog-link(href="/mock-address/change-me")= katalog
+            a.footer-rent-auto__main-page-link(href="/mock-address/change-me")= mainPage
+            a.footer-rent-auto__catalogue-link(href="/mock-address/change-me")= catalogue
             a.footer-rent-auto__contacts-link(href="/mock-address/change-me")= contacts

@@ -27,7 +27,7 @@
     margin-top: -2.5rem;
   }
 
-  &__glavnaya-button {
+  &__main-page-button {
     border: 0.042rem solid #4eb7a8;
     text-align: center;
     width: 3.25rem;
@@ -51,17 +51,17 @@
     }
   }
 
-  &__glavnaya-button:active,
-  &__glavnaya-button:focus {
+  &__main-page-button:active,
+  &__main-page-button:focus {
     outline: none;
     box-shadow: none;
   }
 
-  &__glavnaya-button:visited {
+  &__main-page-button:visited {
     outline: none;
   }
 
-  &__katalog-button {
+  &__catalogue-button {
     border: 0.042rem solid #4eb7a8;
     text-align: center;
     width: 3.25rem;
@@ -86,17 +86,17 @@
     }
   }
 
-  &__katalog-button:active,
-  &__katalog-button:focus {
+  &__catalogue-button:active,
+  &__catalogue-button:focus {
     outline: none;
     box-shadow: none;
   }
 
-  &__katalog-button:visited {
+  &__catalogue-button:visited {
     outline: none;
   }
 
-  &__o-nas-button {
+  &__about-us-button {
     border: 0.042rem solid #4eb7a8;
     text-align: center;
     width: 3.25rem;
@@ -120,13 +120,13 @@
     }
   }
 
-  &__o-nas-button:active,
-  &__o-nas-button:focus {
+  &__about-us-button:active,
+  &__about-us-button:focus {
     outline: none;
     box-shadow: none;
   }
 
-  &__o-nas-button:visited {
+  &__about-us-button:visited {
     outline: none;
   }
 }

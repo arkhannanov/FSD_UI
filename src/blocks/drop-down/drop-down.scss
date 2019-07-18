@@ -20,7 +20,7 @@
     padding: 0.208rem 0 0 0.417rem;
   }
 
-  &__btn {
+  &__button {
     color: white;
     border: none;
     cursor: pointer;
@@ -68,7 +68,7 @@
     display: block;
   }
 
-  &:hover &__btn {
+  &:hover &__button {
     border-radius: 0 0.125rem 0 0;
   }
 }
