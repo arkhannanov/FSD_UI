@@ -11,6 +11,16 @@
     position: relative;
     text-transform: uppercase;
 
+    &:active,
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    &:visited {
+      outline: none;
+    }
+
     &_size {
 
       &_small {
@@ -69,16 +79,6 @@
         transform: scale(1.3);
         opacity: 0;
       }
-    }
-
-    &:active,
-    &:focus {
-      outline: none;
-      box-shadow: none;
-    }
-
-    &:visited {
-      outline: none;
     }
   }
 }

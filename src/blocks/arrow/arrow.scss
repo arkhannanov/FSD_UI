@@ -32,6 +32,11 @@
           background: #4eb7a8 url('./images/arrow3.png') 0.583rem 0.5rem no-repeat;
           border: 0.083rem solid transparent;
         }
+
+        &:active,
+        &:focus {
+          background: #e5e5e5 url('./images/arrow3.png') 0.583rem 0.5rem no-repeat;
+        }
       }
 
       &_right {
@@ -42,17 +47,14 @@
           background: #4eb7a8 url('./images/arrow4.png') 0.667rem 0.5rem no-repeat;
           border: 0.083rem solid transparent;
         }
+
+        &t:active,
+        &:focus {
+          background: #e5e5e5 url('./images/arrow4.png') 0.583rem 0.5rem no-repeat
+        }
       }
 
-      &_left:active,
-      &_left:focus {
-        background: #e5e5e5 url('./images/arrow3.png') 0.583rem 0.5rem no-repeat;
-      }
 
-      &_right:active,
-      &_right:focus {
-        background: #e5e5e5 url('./images/arrow4.png') 0.583rem 0.5rem no-repeat
-      }
     }
   }
 }
