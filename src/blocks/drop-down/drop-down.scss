@@ -64,7 +64,7 @@
     border-radius: 0 0 0.125rem 0.125rem;
   }
 
-  &:hover .drop-down__content {
+  &:hover &__content {
     display: block;
   }
 

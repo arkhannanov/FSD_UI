@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8157867f-740d-4692-8a34-f0abfefb57ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/arrow/arrow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/arrow/arrow.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/button/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/button/button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -59,7 +58,11 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="66" column="11" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -177,7 +180,6 @@
         <option value="$PROJECT_DIR$/src/blocks/footer-rent-auto/footer-rent-auto.scss" />
         <option value="$PROJECT_DIR$/src/blocks/calendar/calendar.scss" />
         <option value="$PROJECT_DIR$/src/blocks/calendar/calendar.pug" />
-        <option value="$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss" />
         <option value="$PROJECT_DIR$/src/blocks/drop-down/drop-down.pug" />
         <option value="$PROJECT_DIR$/src/blocks/events/events.scss" />
         <option value="$PROJECT_DIR$/src/blocks/events/events.pug" />
@@ -220,6 +222,7 @@
         <option value="$PROJECT_DIR$/src/blocks/page/page.scss" />
         <option value="$PROJECT_DIR$/src/blocks/arrow/arrow.scss" />
         <option value="$PROJECT_DIR$/src/blocks/button/button.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss" />
       </list>
     </option>
   </component>
@@ -656,7 +659,7 @@
       <workItem from="1563169539591" duration="785000" />
       <workItem from="1563257937553" duration="5835000" />
       <workItem from="1563355026599" duration="668000" />
-      <workItem from="1563429114838" duration="1295000" />
+      <workItem from="1563429114838" duration="1533000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring #6">
       <created>1560953526396</created>
@@ -959,11 +962,25 @@
       <option name="project" value="LOCAL" />
       <updated>1563259731113</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Refactoring #12 Вложены :active и :focus">
+      <created>1563432146157</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1563432146157</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Refactoring #12 Исправлено drop-down">
+      <created>1563432254143</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1563432254143</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260138000" />
+    <option name="totallyTimeSpent" value="260376000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -978,7 +995,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.86206895" visible="true" weight="0.12802951" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.86206895" visible="true" weight="0.12802951" />
       <window_info id="Structure" order="1" sideWeight="0.13793103" side_tool="true" weight="0.12802951" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -990,9 +1007,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.48946258" weight="0.30877572" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.48946258" visible="true" weight="0.30877572" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5105374" side_tool="true" weight="0.30985916" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.48946258" visible="true" weight="0.30985916" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.48946258" weight="0.30985916" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49947312" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1043,8 +1060,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactoring #7 Исправлено на 3 состояния. Без !important в такой конструкции не обойтись." />
-    <MESSAGE value="Refactoring #10" />
     <MESSAGE value="Refactoring #7 Исправлено прыгание стрелок при наведении и клике." />
     <MESSAGE value="Refactoring #7 Исправлено отображение слайдера и добавлен шаг." />
     <MESSAGE value="Refactoring #7 Исправлена форма." />
@@ -1068,7 +1083,9 @@
     <MESSAGE value="Refactoring #14 Стили messaging подправлены." />
     <MESSAGE value="Refactoring #15 Убрал ненужные обертки." />
     <MESSAGE value="Refactoring #12 Вложены :hover" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring #12 Вложены :hover" />
+    <MESSAGE value="Refactoring #12 Вложены :active и :focus" />
+    <MESSAGE value="Refactoring #12 Исправлено drop-down" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring #12 Исправлено drop-down" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1383,7 +1400,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="66" column="11" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
