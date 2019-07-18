@@ -1,10 +1,5 @@
-import '../../blocks/button/button';
-import '../../blocks/calendar/calendar';
-import '../../blocks/location/location';
-import '../../blocks/stages/stages';
-
-function importAll(resolve) {
-    resolve.keys().forEach(resolve);
+function requireAll(r) {
+  return r.keys().map(r);
 }
 
-importAll(require.context('./../../', true, /\.(scss)$/));
+requireAll(require.context('./../../', true, /\.js|scss$/));

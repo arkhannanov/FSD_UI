@@ -1,9 +1,5 @@
-import '../../blocks/stages/stages';
-import '../../blocks/form-job/form-job';
-import '../../blocks/button/button';
-
-function importAll(resolve) {
-    resolve.keys().forEach(resolve);
+function requireAll(r) {
+  return r.keys().map(r);
 }
 
-importAll(require.context('./../../', true, /\.(scss)$/));
+requireAll(require.context('./../../', true, /\.js|scss$/));

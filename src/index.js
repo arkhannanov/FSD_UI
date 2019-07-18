@@ -1,15 +1,5 @@
-import './blocks/button/button';
-import './blocks/stages/stages';
-import './blocks/form/form';
-import './blocks/search/search';
-import './blocks/location/location';
-import './blocks/calendar/calendar';
-import './blocks/player/player';
-import './vendors/favicons';
-import './blocks/slider/slider';
-
-function importAll(resolve) {
-    resolve.keys().forEach(resolve);
+function requireAll(r) {
+  return r.keys().map(r);
 }
 
-importAll(require.context('./', true, /\.(scss)$/));
+requireAll(require.context('./', true, /\.js|scss$/));
