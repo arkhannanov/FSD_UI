@@ -171,7 +171,10 @@ mixin page
                         })
             .page__stages
                 +headline ("stages")
-                +stages
+                +stages({
+                  numberOfPoints: 5,
+                  startPoint: 3
+                })
             .page__form-tick-boxes-toggle
                 +headline ("form elements")
                 .page__form-tick-boxes-toggle-container

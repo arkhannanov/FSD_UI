@@ -1,114 +1,85 @@
 class Stages {
   constructor(root) {
-    this.firstCircle = root.firstCircle;
-    this.secondCircle = root.secondCircle;
-    this.thirdCircle = root.thirdCircle;
-    this.fourthCircle = root.fourthCircle;
-    this.fifthCircle = root.fifthCircle;
-    this.firstDiv = root.firstDiv;
-    this.secondDiv = root.secondDiv;
-    this.thirdDiv = root.thirdDiv;
-    this.fourthDiv = root.fourthDiv;
-    this.enableFirstCircle();
-    this.enableSecondCircle();
-    this.enableThirdCircle();
-    this.enableFourthCircle();
-    this.enableFifthCircle();
+    this.sections = root.sections;
+    this.points = root.points;
+    this.pointsArray = [];
+    this.targetPoint;
+    this.createSections();
+    this.createPoints();
+    this.enablePoints();
+    this.fillArray();
+    this.fillStages();
   }
 
-  enableFirstCircle() {
-    this.firstCircle.addEventListener('click', this.checkFirstCircle.bind(this));
+  createSections() {
+    const numberOfSections = this.sections.dataset.numberOfPoints - 1;
+
+    for (let i = 0; i < numberOfSections; i += 1) {
+      const section = document.createElement('div');
+      section.classList.add('stages__section');
+      section.style.width = `${this.sections.offsetWidth / numberOfSections}px`;
+
+      this.sections.appendChild(section);
+    }
   }
 
-  enableSecondCircle() {
-    this.secondCircle.addEventListener('click', this.checkSecondCircle.bind(this));
+  createPoints() {
+    const numberOfPoints = this.sections.dataset.numberOfPoints;
+    this.targetPoint = this.sections.dataset.startPoint;
+
+    for (let i = 0; i < numberOfPoints; i += 1) {
+      const point = document.createElement('div');
+      point.innerHTML = i + 1;
+      point.classList.add('stages__point');
+      this.points.appendChild(point);
+    }
   }
 
-  enableThirdCircle() {
-    this.thirdCircle.addEventListener('click', this.checkThirdCircle.bind(this));
+  fillArray() {
+    for (let i = 0; i < this.points.childNodes.length; i += 1) {
+      if (i < this.targetPoint) {
+        this.pointsArray[i] = true;
+      } else {
+        this.pointsArray[i] = false;
+      }
+    }
+
+    this.fillStages();
   }
 
-  enableFourthCircle() {
-    this.fourthCircle.addEventListener('click', this.checkFourthCircle.bind(this));
+  enablePoints() {
+    for (let i = 0; i < this.points.childNodes.length; i += 1) {
+      this.points.childNodes[i].addEventListener('click', () => {
+        this.targetPoint = i + 1;
+        this.fillArray();
+      });
+    }
   }
 
-  enableFifthCircle() {
-    this.fifthCircle.addEventListener('click', this.checkFifthCircle.bind(this));
-  }
+  fillStages() {
+    if (this.pointsArray[0] === true) {
+      this.points.children[0].classList.add('stages__point_color_orange');
+    }
 
-  checkFirstCircle() {
-    this.firstCircle.style.cssText = 'background: #e75735; color: white;';
-    this.secondCircle.style.cssText = 'background: #e5e5e5; color: #888888;';
-    this.thirdCircle.style.cssText = 'background: #e5e5e5; color: #888888';
-    this.fourthCircle.style.cssText = 'background: #e5e5e5; color: #888888';
-    this.fifthCircle.style.cssText = 'background: #e5e5e5; color: #888888';
-    this.firstDiv.style.cssText = 'background: #e5e5e5;';
-    this.secondDiv.style.cssText = 'background: #e5e5e5;';
-    this.thirdDiv.style.cssText = 'background: #e5e5e5;';
-    this.fourthDiv.style.cssText = 'background: #e5e5e5;';
-  }
-
-  checkSecondCircle() {
-    this.firstCircle.style.cssText = 'background: #e75735; color: white;';
-    this.secondCircle.style.cssText = 'background: #e75735; color: white;';
-    this.thirdCircle.style.cssText = 'background: #e5e5e5; color: #888888';
-    this.fourthCircle.style.cssText = 'background: #e5e5e5; color: #888888';
-    this.fifthCircle.style.cssText = 'background: #e5e5e5; color: #888888';
-    this.firstDiv.style.cssText = 'background: #e75735;';
-    this.secondDiv.style.cssText = 'background: #e5e5e5;';
-    this.thirdDiv.style.cssText = 'background: #e5e5e5;';
-    this.fourthDiv.style.cssText = 'background: #e5e5e5;';
-  }
-
-  checkThirdCircle() {
-    this.firstCircle.style.cssText = 'background: #e75735; color: white;';
-    this.secondCircle.style.cssText = 'background: #e75735; color: white;';
-    this.thirdCircle.style.cssText = 'background: #e75735; color: white;';
-    this.fourthCircle.style.cssText = 'background: #e5e5e5; color: #888888';
-    this.fifthCircle.style.cssText = 'background: #e5e5e5; color: #888888';
-    this.firstDiv.style.cssText = 'background: #e75735;';
-    this.secondDiv.style.cssText = 'background: #e75735;';
-    this.thirdDiv.style.cssText = 'background: #e5e5e5;';
-    this.fourthDiv.style.cssText = 'background: #e5e5e5;';
-  }
-
-  checkFourthCircle() {
-    this.firstCircle.style.cssText = 'background: #e75735; color: white;';
-    this.secondCircle.style.cssText = 'background: #e75735; color: white;';
-    this.thirdCircle.style.cssText = 'background: #e75735; color: white;';
-    this.fourthCircle.style.cssText = 'background: #e75735; color: white;';
-    this.fifthCircle.style.cssText = 'background: #e5e5e5; color: #888888';
-    this.firstDiv.style.cssText = 'background: #e75735; ';
-    this.secondDiv.style.cssText = 'background: #e75735;';
-    this.thirdDiv.style.cssText = 'background: #e75735;';
-    this.fourthDiv.style.cssText = 'background: #e5e5e5;';
-  }
-
-  checkFifthCircle() {
-    this.firstCircle.style.cssText = 'background: #e75735; color: white;';
-    this.secondCircle.style.cssText = 'background: #e75735; color: white;';
-    this.thirdCircle.style.cssText = 'background: #e75735; color: white;';
-    this.fourthCircle.style.cssText = 'background: #e75735; color: white;';
-    this.fifthCircle.style.cssText = 'background: #e75735; color: white;';
-    this.firstDiv.style.cssText = 'background: #e75735;';
-    this.secondDiv.style.cssText = 'background: #e75735;';
-    this.thirdDiv.style.cssText = 'background: #e75735;';
-    this.fourthDiv.style.cssText = 'background: #e75735;';
+    for (let i = 0; i < this.pointsArray.length; i += 1) {
+      if (i > 0 && this.pointsArray[i] === true) {
+        this.points.children[i].classList.add('stages__point_color_orange');
+        this.sections.children[i - 1].classList.add('stages__section_color_orange');
+      }
+      if (i > 0 && this.pointsArray[i] === false) {
+        this.points.children[i].classList.remove('stages__point_color_orange');
+        this.sections.children[i - 1].classList.remove('stages__section_color_orange');
+      }
+    }
   }
 }
 
 const root = {
-  firstCircle: document.getElementsByClassName('stages__first-circle')[0],
-  secondCircle: document.getElementsByClassName('stages__second-circle')[0],
-  thirdCircle: document.getElementsByClassName('stages__third-circle')[0],
-  fourthCircle: document.getElementsByClassName('stages__fourth-circle')[0],
-  fifthCircle: document.getElementsByClassName('stages__fifth-circle')[0],
-  firstDiv: document.getElementsByClassName('stages__first-div')[0],
-  secondDiv: document.getElementsByClassName('stages__second-div')[0],
-  thirdDiv: document.getElementsByClassName('stages__third-div')[0],
-  fourthDiv: document.getElementsByClassName('stages__fourth-div')[0],
+  sections: document.getElementsByClassName('stages__sections')[0],
+  points: document.getElementsByClassName('stages__points')[0],
 };
 
-if (typeof root.firstCircle !== 'undefined') {
+if (typeof root.sections !== 'undefined') {
+  console.log('Тест');
   new Stages(root);
 }

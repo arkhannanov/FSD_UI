@@ -2,89 +2,54 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 27.083rem;
+  width: 23.8rem;
   position: relative;
-  margin: 1.5rem 0 2.85rem 0;
+  margin: 1.53rem 0 2.85rem 0;
 
-  &__div-wrapper {
+  &__sections {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    width: 100%;
   }
 
-  &__first-div,
-  &__second-div,
-  &__third-div,
-  &__fourth-div {
-    width: 6.083rem;
-    height: 0.208rem;
+  &__section {
+    height: 0.16rem;
     background: #e5e5e5;
+
+    &_color {
+
+      &_orange {
+        background: #e75735;
+      }
+    }
   }
 
-  &__circles-wrapper {
+  &__points {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 25.208rem;
+    width: 104%;
     position: absolute;
-    top: -0.5rem;
+    top: -0.45rem;
+    color: #8e8e8e;
   }
 
-  &__first-circle,
-  &__second-circle,
-  &__third-circle,
-  &__fourth-circle,
-  &__fifth-circle {
-    width: 1.208rem;
-    height: 1.208rem;
+  &__point {
     border-radius: 50%;
     background: #e5e5e5;
-    border: 0;
-    font-size: 0.583rem;
-    line-height: 1.25rem;
-    letter-spacing: 0.029rem;
-    color: #ffffff;
+    width: 1.15rem;
+    height: 1.15rem;
+    color: black;
     text-align: center;
-  }
+    font-size: 0.621rem;
+    line-height: 1.23rem;
 
-  &__first-circle {
-    background: #e75735;
-  }
+    &_color {
 
-  &__second-circle,
-  &__third-circle,
-  &__fourth-circle,
-  &__fifth-circle {
-    color: #888888;
-  }
-
-  &__first-circle:active,
-  &__first-circle:focus,
-  &__second-circle:active,
-  &__second-circle:focus,
-  &__third-circle:active,
-  &__third-circle:focus,
-  &__fourth-circle:active,
-  &__fourth-circle:focus,
-  &__fifth-circle:active,
-  &__fifth-circle:focus {
-    outline: none;
-    box-shadow: none;
-  }
-
-  &__first-circle:visited,
-  &__second-circle:visited,
-  &__third-circle:visited,
-  &__fourth-circle:visited,
-  &__fifth-circle:visited {
-    outline: none;
-  }
-
-  &__first-circle::-moz-focus-inner,
-  &__second-circle::-moz-focus-inner,
-  &__third-circle::-moz-focus-inner,
-  &__fourth-circle::-moz-focus-inner,
-  &__fifth-circle::-moz-focus-inner {
-    border: 0;
+      &_orange {
+        background: #e75735;
+        color: white;
+      }
+    }
   }
 }

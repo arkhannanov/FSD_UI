@@ -8,7 +8,10 @@ mixin page-job
         .page-job__header Apply for a job
         .page-job__content
             .page-job__stages
-                +stages
+                +stages({
+                  numberOfPoints: 5,
+                  startPoint: 3
+                })
             .page-job__avatar
                 .page-job__avatar-image
                 .page-job__avatar-edit

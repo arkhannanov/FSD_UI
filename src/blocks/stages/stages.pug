@@ -1,13 +1,5 @@
-mixin stages
+mixin stages(options = {numberOfPoints: "", startPoint:""})
+    - let {numberOfPoints, startPoint } = options;
     .stages
-        .stages__div-wrapper
-            .stages__first-div
-            .stages__second-div
-            .stages__third-div
-            .stages__fourth-div
-        .stages__circles-wrapper
-            .stages__first-circle 1
-            .stages__second-circle 2
-            .stages__third-circle 3
-            .stages__fourth-circle 4
-            .stages__fifth-circle 5
+        .stages__sections(data-number-of-points = numberOfPoints, data-start-point = startPoint)
+        .stages__points

@@ -9,7 +9,10 @@ mixin form-interior
             input.form-interior__email-input(type="text", id="form-interior__email-input", placeholder="E-mail")
         .form-interior__raiting-container
             .form-interior__raiting Рейтинг
-            +stages
+            +stages({
+              numberOfPoints: 5,
+              startPoint: 3
+            })
         .form-interior__message-container
             textarea.form-interior__message-text(type="text", id="form-interior__message-text", placeholder="Сообщение")
         .form-interior__submit-container
