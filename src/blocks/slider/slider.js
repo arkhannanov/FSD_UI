@@ -7,18 +7,15 @@ class Slider {
   }
 
   enableSlider() {
-    const value1 = this.root.data('min');
-    const value5 = this.root.data('max');
+    const min = this.root.data('min');
+    const max = this.root.data('max');
     const step = (this.root.data('max') - this.root.data('min')) / 4;
-    const value2 = value1 + step;
-    const value3 = value2 + step;
-    const value4 = value3 + step;
 
     this.root.jRange({
       from: this.root.data('min'),
       to: this.root.data('max'),
       step: this.root.data('step'),
-      scale: [value1, value2, value3, value4, value5],
+      scale: [min, min + step, min + 2 * step, min + 3 * step, max],
       format: '%s',
       width: 260,
       showLabels: this.root.data('label'),

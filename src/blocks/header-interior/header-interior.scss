@@ -4,7 +4,7 @@
   border: 0.042rem solid black;
   font-size: 0.75rem;
 
-  &__first-line {
+  &__top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -21,7 +21,7 @@
     font-size: 1rem;
   }
 
-  &__second-line {
+  &__bottom {
     height: 1.5rem;
     display: flex;
     flex-direction: row;
@@ -46,7 +46,7 @@
     text-decoration: none;
   }
 
-  &__photo-rabot {
+  &__photo {
     text-align: center;
     padding: 0 0.417rem 0 0.417rem;
     line-height: 1.25rem;
@@ -54,7 +54,7 @@
     border-right: 0.042rem solid black;
   }
 
-  &__photo_rabot-link {
+  &__photo-link {
     border: none;
     color: black;
     text-decoration: none;
@@ -74,7 +74,7 @@
     text-decoration: none;
   }
 
-  &__otzivi {
+  &__feedback {
     text-align: center;
     padding: 0 0.417rem 0 0.417rem;
     line-height: 1.24rem;
@@ -82,7 +82,7 @@
     border-right: 0.042rem solid black;
   }
 
-  &__otzivi-link {
+  &__feedback-link {
     border: none;
     color: black;
     text-decoration: none;

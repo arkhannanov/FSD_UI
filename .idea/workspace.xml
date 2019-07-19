@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8157867f-740d-4692-8a34-f0abfefb57ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/calendar/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/calendar/calendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/form-job/form-job.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form-job/form-job.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/form/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form/form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/location/location.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/location/location.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/page-rent-auto/drop-down.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-rent-auto/drop-down.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/player/player.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/player/player.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/search/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/stages/stages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/stages/stages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/header-interior/header-interior.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header-interior/header-interior.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/header-interior/header-interior.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header-interior/header-interior.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/slider/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/slider/slider.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,41 +20,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/form/form.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="146" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/location/location.pug">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/location/location.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/location/location.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="11" selection-start-column="11" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/page-rent-auto/drop-down.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="1088">
               <caret line="64" selection-start-line="64" selection-end-line="66" selection-end-column="1" />
             </state>
           </provider>
@@ -69,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/player/player.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="149" column="1" lean-forward="true" selection-start-line="149" selection-start-column="1" selection-end-line="149" selection-end-column="1" />
+            <state relative-caret-position="2533">
+              <caret line="149" column="1" selection-start-line="149" selection-start-column="1" selection-end-line="149" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -78,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/search/search.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="884">
               <caret line="52" selection-start-line="52" selection-end-line="54" selection-end-column="1" />
             </state>
           </provider>
@@ -87,17 +49,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/stages/stages.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="1853">
               <caret line="109" column="2" selection-start-line="109" selection-start-column="2" selection-end-line="109" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/calendar/calendar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="285" column="10" lean-forward="true" selection-start-line="285" selection-start-column="10" selection-end-line="285" selection-end-column="10" />
+            <state relative-caret-position="4845">
+              <caret line="285" column="10" selection-start-line="285" selection-start-column="10" selection-end-line="285" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/webstorm.exe.vmoptions">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -105,7 +76,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/slider/slider.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-145" />
+            <state relative-caret-position="425">
+              <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/page/page.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="164" column="35" selection-start-line="164" selection-start-column="35" selection-end-line="164" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/header-interior/header-interior.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/blocks/header-interior/header-interior.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="84" column="13" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -188,9 +188,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/blocks/navigation/navigation.pug" />
-        <option value="$PROJECT_DIR$/src/blocks/form-job/form-job.pug" />
-        <option value="$PROJECT_DIR$/src/blocks/form-interior/form-interior.pug" />
         <option value="$PROJECT_DIR$/src/blocks/button/button.scss" />
         <option value="$PROJECT_DIR$/src/blocks/user/user.scss" />
         <option value="$PROJECT_DIR$/src/blocks/toggle/toggle.scss" />
@@ -214,7 +211,6 @@
         <option value="$PROJECT_DIR$/src/blocks/player/player.scss" />
         <option value="$PROJECT_DIR$/src/blocks/stages/stages.scss" />
         <option value="$PROJECT_DIR$/src/blocks/location/location.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/page/page.pug" />
         <option value="$PROJECT_DIR$/src/blocks/calendar/calendar.scss" />
         <option value="$PROJECT_DIR$/src/blocks/messaging/messaging.scss" />
         <option value="$PROJECT_DIR$/src/blocks/page/page.scss" />
@@ -222,7 +218,6 @@
         <option value="$PROJECT_DIR$/src/blocks/button/button.js" />
         <option value="$PROJECT_DIR$/.eslintrc.js" />
         <option value="$PROJECT_DIR$/src/blocks/calendar/const.js" />
-        <option value="$PROJECT_DIR$/src/blocks/slider/slider.js" />
         <option value="$PROJECT_DIR$/src/vendors/jquery.range.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/pages/interior/interior.js" />
@@ -239,6 +234,11 @@
         <option value="$PROJECT_DIR$/src/blocks/search/search.js" />
         <option value="$PROJECT_DIR$/src/blocks/stages/stages.js" />
         <option value="$PROJECT_DIR$/src/blocks/calendar/calendar.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/webstorm.exe.vmoptions" />
+        <option value="$PROJECT_DIR$/src/blocks/slider/slider.js" />
+        <option value="$PROJECT_DIR$/src/blocks/page/page.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/header-interior/header-interior.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/header-interior/header-interior.scss" />
       </list>
     </option>
   </component>
@@ -265,6 +265,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -288,127 +289,7 @@
               <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="button" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="calendar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="calendar" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="drop-down" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="footer-rent-auto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="form-interior" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="form-job" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="form-rent-auto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
               <item name="header-interior" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="header-rent-auto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="header-social-network" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="headline" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="location" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="messaging" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="navigation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="news" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
@@ -422,151 +303,12 @@
               <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="page-interior" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="page-job" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="page-rent-auto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="page-social-network" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="percents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="pie" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="player" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="right-side" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
               <item name="slider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="stages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="tick-boxes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="toggle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="interior" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="job" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="rent-auto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="social-network" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="vendors" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -671,6 +413,14 @@
       <workItem from="1563257937553" duration="5835000" />
       <workItem from="1563355026599" duration="668000" />
       <workItem from="1563429114838" duration="35616000" />
+      <workItem from="1563522406638" duration="129000" />
+      <workItem from="1563522775914" duration="245000" />
+      <workItem from="1563523238775" duration="92000" />
+      <workItem from="1561928455391" duration="27000" />
+      <workItem from="1564520440031" duration="38000" />
+      <workItem from="1564520448422" duration="74000" />
+      <workItem from="1563525319393" duration="160000" />
+      <workItem from="1563525561212" duration="1895000" />
     </task>
     <task id="LOCAL-00018" summary="Refactoring #7 Исправлено отображение слайдера и добавлен шаг.">
       <created>1562320427997</created>
@@ -1019,7 +769,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="294459000" />
+    <option name="totallyTimeSpent" value="297119000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1136,26 +886,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/index.js</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/blocks/pie/pie.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/footer-rent-auto/footer-rent-auto.pug">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/player/player.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1219,13 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/page/page.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="909">
-          <caret line="250" column="16" selection-start-line="250" selection-start-column="16" selection-end-line="250" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1382,15 +1111,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/location/location.pug">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/location/location.scss">
+    <entry file="file://$PROJECT_DIR$/src/blocks/form/form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        <state relative-caret-position="2448">
+          <caret line="144" selection-start-line="144" selection-end-line="146" selection-end-column="1" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/location/location.pug">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/location/location.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1399,50 +1128,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.js">
+    <entry file="file://$PROJECT_DIR$/src/blocks/location/location.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="149" column="1" lean-forward="true" selection-start-line="149" selection-start-column="1" selection-end-line="149" selection-end-column="1" />
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/page-rent-auto/drop-down.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="1088">
           <caret line="64" selection-start-line="64" selection-end-line="66" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/slider/slider.js">
+    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145" />
+        <state relative-caret-position="2533">
+          <caret line="149" column="1" selection-start-line="149" selection-start-column="1" selection-end-line="149" selection-end-column="1" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/search/search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="884">
           <caret line="52" selection-start-line="52" selection-end-line="54" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/stages/stages.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="1853">
           <caret line="109" column="2" selection-start-line="109" selection-start-column="2" selection-end-line="109" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/form/form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="146" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/calendar/calendar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="285" column="10" lean-forward="true" selection-start-line="285" selection-start-column="10" selection-end-line="285" selection-end-column="10" />
+        <state relative-caret-position="4845">
+          <caret line="285" column="10" selection-start-line="285" selection-start-column="10" selection-end-line="285" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/webstorm.exe.vmoptions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/slider/slider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/page/page.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="164" column="35" selection-start-line="164" selection-start-column="35" selection-end-line="164" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/header-interior/header-interior.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/header-interior/header-interior.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="84" column="13" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
         </state>
       </provider>
     </entry>
