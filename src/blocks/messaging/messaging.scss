@@ -3,25 +3,21 @@
   position: relative;
   margin-top: 1rem;
 
-  &__name-container {
-    height: 3.375rem;
+  &__header {
+    background: linear-gradient(to bottom, #4eb7a8 3.375rem, #46ab9d 1.417rem);
+  }
+
+  &__name {
+    height: 4.792rem;
     font: lighter 1.417rem $thirdFont;
     color: #ffffff;
-    background: #4eb7a8;
     letter-spacing: -0.042rem;
     text-align: center;
     line-height: 3.1rem;
     border-radius: 0.125rem 0.125rem 0 0;
   }
 
-  &__dark-block {
-    background: #46ab9d;
-    height: 1.417rem;
-    position: relative;
-    z-index: 2;
-  }
-
-  &__avatar-container {
+  &__avatar {
     height: 3.917rem;
     width: 3.9017rem;
     background: #e5e5e5;
@@ -33,7 +29,7 @@
     z-index: 3;
   }
 
-  &__dark-container {
+  &__messages-container {
     width: 12rem;
     height: 13.5rem;
     background: #f2f2f2;
@@ -60,7 +56,7 @@
     background: url('./images/camera-icon.png') 0.12rem 1rem no-repeat;
   }
 
-  &__first-message-container {
+  &__top-message-container {
     margin: 0 auto 0 auto;
     width: 10.917rem;
     height: 3.833rem;
@@ -71,7 +67,7 @@
     background: url('./images/background.png') 0.292rem 0 no-repeat;
   }
 
-  &__second-message-container {
+  &__bottom-message-container {
     margin: 0rem auto 0.25rem auto;
     width: 10.2rem;
     height: 4rem;
@@ -79,7 +75,7 @@
     border-radius: 0.208rem;
   }
 
-  &__first-message {
+  &__top-message {
     font-weight: bold;
     margin: 0.083rem 0 0 0.4rem;
     width: 8.2rem;
@@ -90,7 +86,7 @@
     padding: 0.833rem 1rem 0 0.75rem;
   }
 
-  &__second-message {
+  &__bottom-message {
     font-weight: bold;
     margin: 0.083rem auto 0 auto;
     width: 9.3rem;

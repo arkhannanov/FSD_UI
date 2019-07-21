@@ -1,23 +1,22 @@
-mixin messaging(options = {name:"", source:"", firstMessage:"", secondMessage:"", buttonTitle:""})
-    -let {name, source, firstMessage, secondMessage, buttonTitle} = options;
+mixin messaging(options = {name:"", source:"", topMessage:"", bottomMessage:"", buttonTitle:""})
+    -let {name, source, topMessage, bottomMessage, buttonTitle} = options;
     .messaging
-        .messaging__name-container
+        .messaging__header
             .messaging__name= name
-        .messaging__dark-block
-        .messaging__avatar-container
+            .messaging__dark-block
             img.messaging__avatar(src=source, alt="User 2", hspace="5", vspace="5")
-        .messaging__dark-container
+        .messaging__messages-container
             .messaging__icons
                 .messaging__chat-icon
                 .messaging__camera-icon
-            .messaging__first-message-container
-                .messaging__first-message= firstMessage
-            .messaging__second-message-container
-                .messaging__second-message= secondMessage
+            .messaging__top-message-container
+                .messaging__top-message= topMessage
+            .messaging__bottom-message-container
+                .messaging__bottom-message= bottomMessage
             .messaging__button-container
                 +button({
-                    size: `messaging`,
-                    color: `green`,
-                    name: `ripple`,
-                    title: `${buttonTitle}`
+                  size: `messaging`,
+                  color: `green`,
+                  name: `ripple`,
+                  title: `${buttonTitle}`
                 })

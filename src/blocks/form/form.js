@@ -5,8 +5,8 @@ let fillMessage = false;
 let errorName = true;
 let errorEmail = true;
 
-const firstMessage = 'This field should at least contain 3 characters.';
-const secondMessage = 'This seems to be an invalid email.';
+const lengthMessage = 'This field should at least contain 3 characters.';
+const emailMessage = 'This seems to be an invalid email.';
 const formNotComplete = 'Form is not complete.';
 
 class Form {
@@ -90,7 +90,7 @@ class Form {
   submit() {
 
     if (errorName === true) {
-      this.formNameInputErrorMessage.innerHTML = firstMessage;
+      this.formNameInputErrorMessage.innerHTML = lengthMessage;
       this.formNameMessageContainer.innerHTML = 'ERROR';
       this.formNameMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-orange.png\');';
       setTimeout(() => {
@@ -106,7 +106,7 @@ class Form {
     }
 
     if (errorEmail === true) {
-      this.formEmailInputErrorMessage.innerHTML = secondMessage;
+      this.formEmailInputErrorMessage.innerHTML = emailMessage;
       this.formEmailMessageContainer.innerHTML = 'ERROR';
       this.formEmailMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-orange.png\');';
       setTimeout(() => {
