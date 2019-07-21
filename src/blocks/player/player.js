@@ -74,7 +74,7 @@ class Player {
 
   updateButton() {
     const icon = this.video.paused ? '►' : '❚ ❚';
-    this.toggle.classList.remove('player__after');
+    this.toggle.classList.remove('player__button_unclicked');
     this.toggle.textContent = icon;
   }
 
@@ -138,11 +138,11 @@ const playerDoc = document.querySelector('.player');
 if (playerDoc !== null) {
   const root = {
     playerMain: document.querySelector('.player'),
-    video: playerDoc.querySelector('.viewer'),
+    video: playerDoc.querySelector('.player__video'),
     progress: playerDoc.querySelector('.player__progress'),
     progressBar: playerDoc.querySelector('.player__progress_filled'),
-    toggle: playerDoc.querySelector('.player__toggle'),
-    fullscreen: playerDoc.querySelector('.player__fullscreen'),
+    toggle: playerDoc.querySelector('.player__button'),
+    fullscreen: playerDoc.querySelector('.player__fullscreen-button'),
     filled: playerDoc.querySelector('.player__progress_filled'),
   };
 

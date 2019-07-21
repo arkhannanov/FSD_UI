@@ -48,20 +48,27 @@
     cursor: pointer;
     width: 2rem;
     height: 2rem;
-  }
 
-  &__after:after {
-    content: '►';
+    &_unclicked:after {
+      content: '►';
+    }
   }
 
   &__button:focus {
     border-color: #b8db92;
   }
 
-  &__fullscreen {
+  &__fullscreen-button {
     background: url('./images/fullscreen.png') 0 0 no-repeat;
     width: 2.3rem;
-
+    border: 0;
+    line-height: 1;
+    color: white;
+    text-align: center;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 2rem;
   }
 
   &__progress_filled {
