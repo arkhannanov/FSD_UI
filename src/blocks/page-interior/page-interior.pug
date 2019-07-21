@@ -13,30 +13,30 @@ mixin page-interior
             })
         .page-interior__content
             .page-interior__diagramm-container
-                .page-interior__first-diagramm-container
-                    .page-interior__first-diagramm
+                .page-interior__overdue-project-diagramm-container
+                    .page-interior__overdue-project-diagramm
                         +percents({
                             percent: 0,
                         })
-                    .page-interior__first-diagramm-content Просроченных проектов.
-                .page-interior__second-diagramm-container
-                    .page-interior__second-diagramm
+                    .page-interior__overdue-project-diagramm-content Просроченных проектов.
+                .page-interior__early-project-diagramm-container
+                    .page-interior__early-project-diagramm
                         +percents({
                             percent: 25,
                         })
-                    .page-interior__second-diagramm-content Проектов, выполненных досрочно.
-                .page-interior__third-diagramm-container
-                    .page-interior__third-diagramm
+                    .page-interior__early-project-diagramm-content Проектов, выполненных досрочно.
+                .page-interior__custom-project-diagramm-container
+                    .page-interior__custom-project-diagramm
                         +percents({
                             percent: 35
                         })
-                    .page-interior__third-diagramm-content Нестарндарных проектов.
-                .page-interior__fourth-diagramm-container
-                    .page-interior__fourth-diagramm
+                    .page-interior__custom-project-diagramm-content Нестарндарных проектов.
+                .page-interior__satisfied-client-diagramm-container
+                    .page-interior__satisfied-client-diagramm
                         +percents ({
                             percent: 87
                         })
-                    .page-interior__fourth-diagramm-content Довольных клиентов.
+                    .page-interior__satisfied-client-diagramm-content Довольных клиентов.
             .page-interior__feedback
                 .page-interior__feedback-headline Оставить отзыв
                 .page-interior__feedback-container

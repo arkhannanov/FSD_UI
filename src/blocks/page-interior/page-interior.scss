@@ -21,38 +21,38 @@
     margin: 1rem 0 1rem 0;
   }
 
-  &__first-diagramm-container {
+  &__overdue-project-diagramm-container {
     height: 5rem;
     width: 49%;
     display: flex;
     flex-direction: row;
   }
 
-  &__first-diagramm {
+  &__overdue-project-diagramm {
     margin-top: 0.417rem;
   }
 
-  &__first-diagramm-content {
+  &__overdue-project-diagramm-content {
     line-height: 4.792rem;
     margin-left: 0.625rem;
   }
 
-  &__bottom-diagramm-container {
+  &__early-project-diagramm-container {
     height: 5rem;
     width: 49%;
     display: flex;
     flex-direction: row;
   }
 
-  &__second-diagramm {
+  &__early-project-diagramm {
     margin-top: 0.417rem;
   }
 
-  &__second-diagramm-content {
+  &__early-project-diagramm-content {
     margin: 1.667rem 0 0 0.625rem;
   }
 
-  &__third-diagramm-container {
+  &__custom-project-diagramm-container {
     height: 5rem;
     width: 49%;
     display: flex;
@@ -60,16 +60,16 @@
     margin-top: 0.417rem;
   }
 
-  &__third-diagramm {
+  &__custom-project-diagramm {
     margin-top: 0.417rem;
   }
 
-  &__third-diagramm-content {
+  &__custom-project-diagramm-content {
     line-height: 4.792rem;
     margin-left: 0.625rem;
   }
 
-  &__fourth-diagramm-container {
+  &__satisfied-client-diagramm-container {
     height: 5rem;
     width: 49%;
     display: flex;
@@ -77,11 +77,11 @@
     margin-top: 0.417rem;
   }
 
-  &__fourth-diagramm {
+  &__satisfied-client-diagramm {
     margin-top: 0.417rem;
   }
 
-  &__fourth-diagramm-content {
+  &__satisfied-client-diagramm-content {
     line-height: 4.792rem;
     margin-left: 0.625rem;
   }
