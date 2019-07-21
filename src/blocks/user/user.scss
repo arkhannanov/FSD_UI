@@ -23,24 +23,24 @@
     &:hover {
       background-image: url('./images/slider-2.png');
 
-      .user__name {
-        color: #ffffff;
-      }
+      .user {
+        &__name {
+          color: #ffffff;
+        }
 
-      .user__profession {
-        color: #ffffff;
-      }
+        &__profession {
+          color: #ffffff;
+        }
 
-      .user__links-container {
-        .user__facebook {
+        &__facebook {
           background-position: -1.375rem -2.042rem;
         }
 
-        .user__twitter {
+        &__twitter {
           background-position: -3.833rem -1.958rem;
         }
 
-        .user__dribbble {
+        &__dribbble {
           background-position: -2rem -0.333rem;
         }
       }
@@ -72,7 +72,7 @@
   &__links-container {
     display: flex;
     justify-content: space-between;
-    flex-direction: row; 
+    flex-direction: row;
     width: 4.167rem;
     margin: 0.408rem 0 0 1.583rem;
   }
@@ -82,7 +82,7 @@
     height: 1.042rem;
     background-image: url('./images/spritesheet.png');
     background-repeat: no-repeat;
-    background-position: -0.083rem -2.042rem;           
+    background-position: -0.083rem -2.042rem;
   }
 
   &__twitter {
@@ -90,7 +90,7 @@
     height: 1.042rem;
     background-image: url('./images/spritesheet.png');
     background-repeat: no-repeat;
-    background-position: -3.833rem -0.333rem;         
+    background-position: -3.833rem -0.333rem;
   }
 
   &__dribbble {
@@ -98,6 +98,6 @@
     height: 1.042rem;
     background-image: url('./images/spritesheet.png');
     background-repeat: no-repeat;
-    background-position: -0.333rem -0.333rem; 
+    background-position: -0.333rem -0.333rem;
   }
 }
