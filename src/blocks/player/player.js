@@ -48,7 +48,7 @@ class Player {
   }
 
   enableProgressMouseMove() {
-    this.progress.addEventListener('mousemove', (element) => mousedown && this.scrub(element).bind(this));
+    this.progress.addEventListener('mousemove', element => mousedown && this.scrub(element).bind(this));
   }
 
   enableProgressMouseDown() {
@@ -94,12 +94,11 @@ class Player {
   scrub(element) {
     const scrubTime = (element.offsetX / this.progress.offsetWidth) * this.video.duration;
     this.video.currentTime = scrubTime;
-
   }
 
   toggleFullscreen() {
-    if (!document.fullscreenElement && !document.mozFullScreenElement &&
-      !document.webkitFullscreenElement && !document.msFullscreenElement) {
+    if (!document.fullscreenElement && !document.mozFullScreenElement
+      && !document.webkitFullscreenElement && !document.msFullscreenElement) {
       if (this.playerMain.requestFullscreen) {
         this.playerMain.requestFullscreen();
       } else if (this.playerMain.msRequestFullscreen) {
@@ -109,25 +108,23 @@ class Player {
       } else if (this.playerMain.webkitRequestFullscreen) {
         this.playerMain.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
       }
-    } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      } else if (document.msExitFullscreen) {
-        document.msExitFullscreen();
-      } else if (document.mozCancelFullScreen) {
-        document.mozCancelFullScreen();
-      } else if (document.webkitExitFullscreen) {
-        document.webkitExitFullscreen();
-      }
+    } else if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.msExitFullscreen) {
+      document.msExitFullscreen();
+    } else if (document.mozCancelFullScreen) {
+      document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
     }
   }
 
   keyNav(element) {
-    if (element.code === "Space") {
+    if (element.code === 'Space') {
       this.togglePlay();
-    } else if (element.code === "ArrowRight") {
+    } else if (element.code === 'ArrowRight') {
       this.video.currentTime += 25;
-    } else if (element.code === "ArrowLeft") {
+    } else if (element.code === 'ArrowLeft') {
       this.video.currentTime -= 10;
     }
   }

@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8157867f-740d-4692-8a34-f0abfefb57ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/page-interior/page-interior.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-interior/page-interior.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/page-interior/page-interior.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-interior/page-interior.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/player/player.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/player/player.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,7 +20,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/user/user.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
+            <state relative-caret-position="799">
               <caret line="47" column="3" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
             </state>
           </provider>
@@ -48,17 +47,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/page-interior/page-interior.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="646">
               <caret line="38" column="52" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/page-interior/page-interior.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
+            <state relative-caret-position="1411">
               <caret line="83" column="21" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/player/player.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/blocks/player/player.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="122" column="25" selection-start-line="122" selection-start-column="25" selection-end-line="122" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/player/player.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1020">
+              <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -71,33 +97,6 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/user/user.pug">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/form-interior/form-interior.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/stages/stages.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="95" selection-start-line="3" selection-start-column="85" selection-end-line="3" selection-end-column="95" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/stages/stages.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -191,8 +190,6 @@
         <option value="$PROJECT_DIR$/src/js/favicons.js" />
         <option value="$PROJECT_DIR$/src/blocks/navigation/navigation.scss" />
         <option value="$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/player/player.pug" />
-        <option value="$PROJECT_DIR$/src/blocks/player/player.scss" />
         <option value="$PROJECT_DIR$/src/blocks/location/location.scss" />
         <option value="$PROJECT_DIR$/src/blocks/calendar/calendar.scss" />
         <option value="$PROJECT_DIR$/src/blocks/page/page.scss" />
@@ -210,7 +207,6 @@
         <option value="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.js" />
         <option value="$PROJECT_DIR$/src/blocks/page-rent-auto/drop-down.js" />
         <option value="$PROJECT_DIR$/src/blocks/location/location.js" />
-        <option value="$PROJECT_DIR$/src/blocks/player/player.js" />
         <option value="$PROJECT_DIR$/src/blocks/search/search.js" />
         <option value="$PROJECT_DIR$/src/blocks/calendar/calendar.js" />
         <option value="$APPLICATION_CONFIG_DIR$/webstorm.exe.vmoptions" />
@@ -231,6 +227,9 @@
         <option value="$PROJECT_DIR$/src/blocks/messaging/messaging.pug" />
         <option value="$PROJECT_DIR$/src/blocks/page-interior/page-interior.pug" />
         <option value="$PROJECT_DIR$/src/blocks/page-interior/page-interior.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/player/player.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/player/player.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/player/player.js" />
       </list>
     </option>
   </component>
@@ -337,6 +336,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="blocks" type="462c0819:PsiDirectoryNode" />
               <item name="page-job" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
@@ -489,14 +495,8 @@
       <workItem from="1564520448422" duration="74000" />
       <workItem from="1563525319393" duration="160000" />
       <workItem from="1563525561212" duration="13630000" />
-      <workItem from="1563709157878" duration="4156000" />
-    </task>
-    <task id="LOCAL-00022" summary="Refactoring #7 Отображение видеоплеера исправлено.">
-      <created>1562325356629</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1562325356629</updated>
+      <workItem from="1563709157878" duration="4774000" />
+      <workItem from="1563777921272" duration="209000" />
     </task>
     <task id="LOCAL-00023" summary="Refactoring #7 Симметричность toggles отредактирована.">
       <created>1562326049637</created>
@@ -834,11 +834,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563731757101</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Refactoring #10 Исрпвлено перечисление в названиях классов.">
+      <created>1563732497362</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1563732497362</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="313010000" />
+    <option name="totallyTimeSpent" value="313628000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -853,7 +860,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.86206895" visible="true" weight="0.12802951" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.86206895" visible="true" weight="0.12802951" />
       <window_info id="Structure" order="1" sideWeight="0.13793103" side_tool="true" weight="0.12802951" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -865,7 +872,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.48946258" visible="true" weight="0.30877572" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.48946258" visible="true" weight="0.30877572" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5105374" side_tool="true" weight="0.30985916" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.48946258" weight="0.30985916" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49947312" weight="0.32936078" />
@@ -918,8 +925,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactoring #12 Вложены :hover" />
-    <MESSAGE value="Refactoring #12 Вложены :active и :focus" />
     <MESSAGE value="Refactoring #12 Исправлено drop-down" />
     <MESSAGE value="Refactoring #12 ripple - элемент button" />
     <MESSAGE value="Refactoring #12 ripple удален отовсюду кроме button" />
@@ -943,7 +948,9 @@
     <MESSAGE value="Refactoring #9 Переделал stages под нужные требования." />
     <MESSAGE value="Refactoring #12 Оформление вложенноести стилей. Блок user" />
     <MESSAGE value="Refactoring #17 Исправление messaging" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring #17 Исправление messaging" />
+    <MESSAGE value="Refactoring #10 Исрпвлено перечисление в названиях классов." />
+    <MESSAGE value="Refactoring #18 Меликие правки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring #18 Меликие правки" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -961,20 +968,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/blocks/toggle/toggle.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/toggle/toggle.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/page/page.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3213">
@@ -1122,13 +1115,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2533">
-          <caret line="149" column="1" selection-start-line="149" selection-start-column="1" selection-end-line="149" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/search/search.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
@@ -1251,12 +1237,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/user/user.pug">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/user/user.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
+        <state relative-caret-position="799">
           <caret line="47" column="3" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
         </state>
       </provider>
@@ -1275,20 +1258,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/interior/interior.pug">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/page-interior/page-interior.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="646">
           <caret line="38" column="52" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/page-interior/page-interior.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state relative-caret-position="1411">
           <caret line="83" column="21" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/interior/interior.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/user/user.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="122" column="25" selection-start-line="122" selection-start-column="25" selection-end-line="122" selection-end-column="25" />
         </state>
       </provider>
     </entry>
