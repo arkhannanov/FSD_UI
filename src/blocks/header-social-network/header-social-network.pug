@@ -1,3 +1,5 @@
+include ../search/search
+
 mixin header-social-network(options={source, name})
     - let {source, name} = options;
     .header-social-network
@@ -8,5 +10,6 @@ mixin header-social-network(options={source, name})
         .header-social-network__avatar
             img.header-social-network__avatar-image(src=source, alt="User", hspace="2", vspace="2")
         .header-social-network__search
-            input.header-social-network__search-input(type="text", id="search", placeholder="Search")
-            button.header-social-network__search-button(id="search_icon")
+            +search({
+              error: 'true'
+            })
