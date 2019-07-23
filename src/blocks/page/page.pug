@@ -204,7 +204,12 @@ mixin page
                     .page__search-drop-down-search-headline
                         +headline ("search / drop down")
                     .page__search-drop-down-search
-                        +search
+                        +search({
+                          error: 'false'
+                        })
+                        +search({
+                          error: 'true'
+                        })
                     .page__search-drop-down-drop-down
                         +drop-down ({
                             contentContainer: [

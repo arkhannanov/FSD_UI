@@ -1,5 +1,7 @@
 .search {
 
+  margin-bottom: 0.6rem;
+
   &__input-container {
     display: flex;
     flex-direction: row;
@@ -16,6 +18,13 @@
     background-color: #e5e5e5;
     border: 0;
     border-radius: 0.125rem 0 0 0.125rem;
+    outline: none;
+
+    &_error {
+      color: #ffffff;
+      line-height: 0.9rem;
+      background-color: #e75735;
+    }
   }
 
   &__icon {
@@ -24,27 +33,11 @@
     border: 0;
     border-radius: 0 0.125rem 0.125rem 0;
     background: #e75735 url('./images/search-icon.png') 0.412rem 0.333rem no-repeat;
-
-    &:hover {
-      background-color: #e75735;
-    }
-  }
-
-  &__icon,
-  &__icon:active,
-  &__icon:focus {
     outline: none;
-  }
 
-  &__error {
-    color: #ffffff;
-    width: 11.5rem;
-    height: 1rem;;
-    letter-spacing: 0.006rem;
-    font: normal 0.6rem $thirdFont;
-    padding: 0.1rem 0 0 0.417rem;
-    line-height: 0.9rem;
-    border-radius: 0.125rem;
-    margin: 0.7rem 0 0.4rem 0;
+    &:active,
+    &:focus {
+      outline: none;
+    }
   }
 }
