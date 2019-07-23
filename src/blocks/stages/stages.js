@@ -80,6 +80,5 @@ const root = {
 };
 
 if (typeof root.sections !== 'undefined') {
-  console.log('Тест');
   new Stages(root);
 }
