@@ -56,7 +56,7 @@
     background: url('./images/camera-icon.png') 0.12rem 1rem no-repeat;
   }
 
-  &__top-message-container {
+  &__incoming-message-container {
     margin: 0 auto 0 auto;
     width: 10.917rem;
     height: 3.833rem;
@@ -67,15 +67,7 @@
     background: url('./images/background.png') 0.292rem 0 no-repeat;
   }
 
-  &__bottom-message-container {
-    margin: 0rem auto 0.25rem auto;
-    width: 10.2rem;
-    height: 4rem;
-    background: #ffffff;
-    border-radius: 0.208rem;
-  }
-
-  &__top-message {
+  &__incoming-message {
     font-weight: bold;
     margin: 0.083rem 0 0 0.4rem;
     width: 8.2rem;
@@ -86,16 +78,33 @@
     padding: 0.833rem 1rem 0 0.75rem;
   }
 
-  &__bottom-message {
+  &__new-message-container {
+    margin: 0 auto 0.25rem auto;
+    width: 10.2rem;
+    height: 4rem;
+    background: #ffffff;
+    border-radius: 0.208rem;
+  }
+
+  &__new-message {
     font-weight: bold;
-    margin: 0.083rem auto 0 auto;
-    width: 9.3rem;
-    height: 3.15rem;
+    margin: 0.2rem;
+    width: 8.4rem;
+    height: 2.2rem;
     font-size: 0.542rem;
     letter-spacing: 0.026rem;
     background: #e5e5e5;
     border-radius: 0.208rem;
-    padding: 0.7rem 0 0 0.7rem;
+    padding: 0.7rem;
+    outline: none;
+    border: 0;
+    resize: none;
+
+    &:active,
+    &:focus {
+      outline: none;
+      border: 0;
+    }
   }
 
   &__button-container {
