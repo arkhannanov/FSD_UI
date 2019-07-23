@@ -35,6 +35,15 @@
     border-radius: 0.125rem;
     cursor: pointer;
     flex-grow: 1;
+
+    &-filling {
+      width: 50%;
+      background: #e75735;
+      height: 0.208rem;
+      flex: 0;
+      flex-basis: 50%;
+      border-radius: 0.125rem;
+    }
   }
 
   &__button {
@@ -69,14 +78,5 @@
     padding: 0;
     cursor: pointer;
     height: 2rem;
-  }
-
-  &__progress_filled {
-    width: 50%;
-    background: #e75735;
-    height: 0.208rem;
-    flex: 0;
-    flex-basis: 50%;
-    border-radius: 0.125rem;
   }
 }

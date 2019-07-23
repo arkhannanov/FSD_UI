@@ -137,10 +137,9 @@ if (playerDoc !== null) {
     playerMain: document.querySelector('.player'),
     video: playerDoc.querySelector('.player__video'),
     progress: playerDoc.querySelector('.player__progress'),
-    progressBar: playerDoc.querySelector('.player__progress_filled'),
     toggle: playerDoc.querySelector('.player__button'),
     fullscreen: playerDoc.querySelector('.player__fullscreen-button'),
-    filled: playerDoc.querySelector('.player__progress_filled'),
+    filled: playerDoc.querySelector('.player__progress-filling'),
   };
 
   new Player(root);
