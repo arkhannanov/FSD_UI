@@ -11,12 +11,21 @@ class Search {
   }
 
   initSearch() {
+
+    const isTrue = (this.root.dataset.error === 'true');
+
     const inputContainder = document.createElement('div');
     inputContainder.classList.add('search__input-container');
     this.searchInput = document.createElement('input');
     this.searchInput.type = 'text';
     this.searchInput.placeholder = 'Search';
-    this.searchInput.classList.add('search__input')
+    this.searchInput.classList.add('search__input');
+
+    if (isTrue) {
+      this.searchInput.classList.add('search__input_error');
+      this.searchInput.value = 'I’ve not found what I’m looking for...';
+    }
+
     this.searchIcon = document.createElement('button');
     this.searchIcon.classList.add('search__icon');
     this.root.appendChild(inputContainder);
@@ -47,9 +56,7 @@ class Search {
   }
 
   clickButton() {
-    const isTrue = (this.root.dataset.error === 'true');
-
-    if (this.value.length > 0 && isTrue) {
+    if (this.value.length > 0) {
       this.searchInput.classList.add('search__input_error');
       this.searchInput.value = 'I’ve not found what I’m looking for...';
     }
