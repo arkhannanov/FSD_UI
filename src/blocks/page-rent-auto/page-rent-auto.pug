@@ -6,6 +6,7 @@ include ../navigation/navigation
 include ../footer-rent-auto/footer-rent-auto
 include ../tick-boxes/tick-boxes
 include ../button/button
+include ../drop-down/drop-down
 
 mixin page-rent-auto
     main.page-rent-auto
@@ -17,22 +18,20 @@ mixin page-rent-auto
             })
         .page-rent-auto__content
             .page-rent-auto__left-side
-                .page-rent-auto__drop-down-box
-                    .page-rent-auto__drop-down-box-header Коробка передач:
-                    .page-rent-auto__drop-down-box-wrapper
-                        .page-rent-auto__drop-down-box-contentline Не выбрано
-                        button.page-rent-auto__drop-down-box-button
-                    .page-rent-auto__drop-down-box-content-container
-                        .page-rent-auto__drop-down-box-mechanic Механика
-                        .page-rent-auto__drop-down-box-automat Автомат
-                .page-rent-auto__drop-down-place
-                    .page-rent-auto__drop-down-place-header Место оформления аренды:
-                    .page-rent-auto__drop-down-place-wrapper
-                        .page-rent-auto__drop-down-place-contentline Не выбрано
-                        button.page-rent-auto__drop-down-place-button
-                    .page-rent-auto__drop-down-place-content-container
-                        .page-rent-auto__drop-down-place-office В офисе
-                        .page-rent-auto__drop-down-place-phone Ваш адрес (по телефону)
+                .page-rent-auto__drop-down-box-header Коробка передач:
+                +drop-down ({
+                    contentContainer: [
+                        {content: 'Механика'},
+                        {content: 'Автомат'},
+                    ]
+                })
+                .page-rent-auto__drop-down-place-header Место оформления аренды:
+                +drop-down ({
+                    contentContainer: [
+                        {content: 'В офисе'},
+                        {content: 'Ваш адрес (по телефону)'},
+                    ]
+                })
                 .page-rent-auto__slider
                     +slider({
                         min: 0,

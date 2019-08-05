@@ -6,5 +6,5 @@ mixin drop-down(options = {contentContainer:[]})
             button.drop-down__button
         .drop-down__content
             -contentContainer.forEach(function(item) {
-                a.drop-down__item-link(href="/mock-address/change-me")= item.content
+                .drop-down__item= item.content
             -});
