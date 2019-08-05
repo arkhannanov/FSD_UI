@@ -49,8 +49,8 @@
   }
 
   &__early-project-diagramm-content {
-    margin: 1.667rem 0 0 0.625rem;
-    min-width: 12rem;
+    margin: 1.2rem 0 0 0.625rem;
+    min-width: 8rem;
   }
 
   &__custom-project-diagramm-container {
@@ -67,8 +67,7 @@
 
   &__custom-project-diagramm-content {
     line-height: 0.792rem;
-    margin-top: 1.8rem;
-    margin-left: 0.625rem;
+    margin: 1.8rem 0 0 0.625rem;
   }
 
   &__satisfied-client-diagramm-container {
@@ -86,6 +85,7 @@
   &__satisfied-client-diagramm-content {
     line-height: 4.792rem;
     margin-left: 0.625rem;
+    min-width: 12rem;
   }
 
   &__feedback-headline {
@@ -99,16 +99,21 @@
     flex-direction: row;
     width: 25rem;
     margin: auto;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   &__feedback-calendar-headline {
     text-align: center;
     font-size: 0.75rem;
+    margin-left: 5.7rem;
   }
 
   &__feedback-calendar {
-    transform: scale(0.92) translateY(-0.833rem);
+    transform: scale(0.92) translate(3rem,-1.5rem);
+  }
+
+  &__feedback-form {
+    margin: 0.29rem 0 0 2.5rem;
   }
 
   &__navigation {
