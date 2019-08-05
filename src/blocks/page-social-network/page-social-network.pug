@@ -9,32 +9,33 @@ mixin page-social-network
     main.page-social-network
         .page-social-network__header
             +header-social-network({
-                source: "src/blocks/header-social-network/images/user.png",
-                name: "Sarah Brown"
+              source: "src/blocks/header-social-network/images/user.png",
+              name: "Sarah Brown"
             })
-        .page-social-network__content-container
-            +profile({
-                headline: "my profile",
-                rightSideHeader: "Sarah Brown",
-                profession: "Actress",
-                phone: "+79263864674",
-                twitter: "twitter",
-                facebook: "facebook",
-                horror: "Horror",
-                thriller: "Thriller",
-                drama: "Drama",
-                comedy: "Comedy"
-            })
-            +right-side({
-                profile: "Profile",
-                feedback: "Feedback",
-                newsAndEvents: "News and Events"
-            })
+        .page-social-network__content
+            .page-social-network__main-content
+                +profile({
+                  headline: "my profile",
+                  rightSideHeader: "Sarah Brown",
+                  profession: "Actress",
+                  phone: "+79263864674",
+                  twitter: "twitter",
+                  facebook: "facebook",
+                  horror: "Horror",
+                  thriller: "Thriller",
+                  drama: "Drama",
+                  comedy: "Comedy"
+                })
+                +right-side({
+                  profile: "Profile",
+                  feedback: "Feedback",
+                  newsAndEvents: "News and Events"
+                })
         .page-social-network__navigation
             +navigation({
-                socialNetwork: "social-network",
-                job: "job",
-                interior: "interior",
-                rentAuto: "rent-auto"
+              socialNetwork: "social-network",
+              job: "job",
+              interior: "interior",
+              rentAuto: "rent-auto"
             })
         .page-social-network__footer-social-network

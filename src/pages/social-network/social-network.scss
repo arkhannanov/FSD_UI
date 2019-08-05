@@ -1,6 +1,16 @@
-html,
+html, body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
 body {
-  max-width: 50rem;
+  display: table-cell;
+  vertical-align: middle;
   font-family: $mainFont;
   font-weight: normal;
+  max-width: 37.75rem;
 }
