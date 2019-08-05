@@ -133,19 +133,24 @@ mixin page
             .page__percents-pie
                 +headline ("percentages / pie chart")
                 .page__percents-pie-container
-                    +percents ({
-                        percent: 0
-                    })
-                    +percents ({
-                        percent: 38
-                    })
-                    +percents ({
-                        percent: 62
-                    })
-                    +percents ({
-                        percent: 89
-                    })
-                    +pie
+                    .page__percents-pie-percents-0
+                        +percents ({
+                            percent: 0
+                        })
+                    .page__percents-pie-percents-38
+                        +percents ({
+                            percent: 38
+                        })
+                    .page__percents-pie-percents-62
+                        +percents ({
+                            percent: 62
+                        })
+                    .page__percents-pie-percents-89
+                        +percents ({
+                            percent: 89
+                        })
+                    .page__percents-pie-pie
+                        +pie
             .page__sliders
                 +headline ("sliders")
                 .page__sliders-container
