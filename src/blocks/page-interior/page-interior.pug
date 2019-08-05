@@ -1,9 +1,9 @@
 include ../header-interior/header-interior
 include ../percents/percents
 include ../calendar/calendar
-include ../form-interior/form-interior
 include ../navigation/navigation
 include ../location/location
+include ../form/form
 
 mixin page-interior
     main.page-interior
@@ -45,7 +45,7 @@ mixin page-interior
                         .page-interior__feedback-calendar
                             +calendar
                     .page-interior__feedback-form
-                        +form-interior
+                        +form
             .page-interior__navigation
                 +navigation({
                     socialNetwork: "social-network",
