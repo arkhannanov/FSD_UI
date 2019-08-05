@@ -9,15 +9,10 @@
     flex: 1 0 auto;;
   }
 
-  .page-social-network__main-content {
+  &__main-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-  }
-
-  &__navigation {
-    flex: 0 0 auto;
-    height: 3rem;
+    justify-content: space-evenly;
   }
 
   &__footer-social-network {

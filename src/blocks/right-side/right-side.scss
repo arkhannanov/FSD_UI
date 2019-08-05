@@ -1,7 +1,6 @@
 .right-side {
-  width: 32%;
+  width: 34%;
   height: 20.833rem;
-  margin-right: 2rem;
 
   &__links-contaner {
     height: 2.708rem;
@@ -56,9 +55,8 @@
     }
   }
 
-
   &__news-container {
-    height: 12.708rem;
+    height: 16rem;
     background: white;
     box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
     margin: 0.417rem 0 0 0.833rem;
@@ -73,10 +71,10 @@
   }
 
   &__top-news {
-    transform: translate(-1rem, -2.3rem) scale(0.6);
+    transform: translate(-0.6rem, -1.5rem) scale(0.8);
   }
 
   &__bottom-news {
-    transform: translate(-1rem, -7.3rem) scale(0.6);
+    transform: translate(-0.6rem, -4rem) scale(0.8);
   }
 }
