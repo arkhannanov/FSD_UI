@@ -1,6 +1,5 @@
 
 .page-interior {
-  max-width: 29.167rem;
   color: black;
 
   &__content {
@@ -26,15 +25,16 @@
     width: 49%;
     display: flex;
     flex-direction: row;
+    position: relative;
   }
 
   &__overdue-project-diagramm {
-    margin-top: 0.417rem;
+    margin: 0.417rem 0 0 0.8rem;
   }
 
   &__overdue-project-diagramm-content {
-    line-height: 4.792rem;
-    margin-left: 0.625rem;
+    line-height: 0.792rem;
+    margin-top: 1.8rem;
   }
 
   &__early-project-diagramm-container {
@@ -50,6 +50,7 @@
 
   &__early-project-diagramm-content {
     margin: 1.667rem 0 0 0.625rem;
+    min-width: 12rem;
   }
 
   &__custom-project-diagramm-container {
@@ -65,7 +66,8 @@
   }
 
   &__custom-project-diagramm-content {
-    line-height: 4.792rem;
+    line-height: 0.792rem;
+    margin-top: 1.8rem;
     margin-left: 0.625rem;
   }
 
@@ -78,7 +80,7 @@
   }
 
   &__satisfied-client-diagramm {
-    margin-top: 0.417rem;
+    margin: 0.417rem 0 0 0.1rem;
   }
 
   &__satisfied-client-diagramm-content {
