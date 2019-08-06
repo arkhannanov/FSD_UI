@@ -4,12 +4,12 @@
   display: inline-block;
   margin: 0.333rem 0 4.5rem 0;
 
-  &__content-wrapper {
+  &__select {
     display: flex;
     flex-direction: row;
   }
 
-  &__contentline {
+  &__select-title {
     font: 0.583rem $thirdFont;
     color: #888888;
     letter-spacing: 0.02rem;
@@ -20,7 +20,7 @@
     padding: 0.208rem 0 0 0.417rem;
   }
 
-  &__button {
+  &__select-button {
     color: white;
     border: none;
     cursor: pointer;
@@ -32,7 +32,7 @@
   }
 
 
-  &__content {
+  &__options {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -42,7 +42,7 @@
   &__item {
     display: block;
     height: 0.75rem;
-    width: 11.02rem;
+    width: 11.01rem;
     letter-spacing: 0.006rem;
     color: white;
     background: #4eb7a8;
@@ -55,19 +55,19 @@
     }
   }
 
-  &__content &__item-link:first-child {
+  &__options &__item:first-child {
     border-radius: 0.125rem 0 0 0;
   }
 
-  &__content &__item-link:last-child {
+  &__options &__item:last-child {
     border-radius: 0 0 0.125rem 0.125rem;
   }
 
-  &:hover &__content {
+  &:hover &__options {
     display: block;
   }
 
-  &:hover &__button {
+  &:hover &__select-button {
     border-radius: 0 0.125rem 0 0;
   }
 }
