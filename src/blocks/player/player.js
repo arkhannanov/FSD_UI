@@ -16,7 +16,7 @@ class Player {
     this.enableProgressMouseDown();
     this.enableProgressMouseUp();
     this.enableToggleFullscreen();
-    this.enableKeyNav();
+    this.enablekeyNavigation();
   }
 
   enableElements() {
@@ -68,8 +68,8 @@ class Player {
     this.root.fullscreen.addEventListener('click', this.toggleFullscreen.bind(this));
   }
 
-  enableKeyNav() {
-    window.addEventListener('keyup', this.keyNav.bind(this));
+  enablekeyNavigation() {
+    window.addEventListener('keyup', this.keyNavigation.bind(this));
   }
 
   togglePlay() {
@@ -124,7 +124,7 @@ class Player {
     }
   }
 
-  keyNav(element) {
+  keyNavigation(element) {
     if (element.code === 'Space') {
       this.togglePlay();
     } else if (element.code === 'ArrowRight') {
