@@ -61,6 +61,10 @@
     &_unclicked:after {
       content: '►';
     }
+
+    &_clicked:after {
+      content: '❚ ❚';
+    }
   }
 
   &__button:focus {

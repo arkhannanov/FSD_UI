@@ -73,8 +73,8 @@ class Player {
   }
 
   togglePlay() {
-    const method = this.root.video.paused ? 'play' : 'pause';
-    this.root.video[method]();
+    const methodTitle = this.root.video.paused ? 'play' : 'pause';
+    this.root.video[methodTitle]();
   }
 
   updateButton() {

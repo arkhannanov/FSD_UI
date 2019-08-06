@@ -3,43 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8157867f-740d-4692-8a34-f0abfefb57ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/button/button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/button/button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/calendar/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/calendar/calendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/calendar/calendar.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/calendar/calendar.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/calendar/calendar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/calendar/calendar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/calendar/const.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/calendar/const.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/drop-down/drop-down.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/drop-down/drop-down.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/drop-down/drop-down.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/drop-down/drop-down.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/events/events.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/events/events.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/form-interior/form-interior.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form-interior/form-interior.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/form-job/form-job.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form-job/form-job.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/form-job/form-job.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form-job/form-job.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/form-job/form-job.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form-job/form-job.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/form/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form/form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/form/form.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form/form.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/form/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form/form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/messaging/messaging.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/messaging/messaging.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/navigation/navigation.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/navigation/navigation.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/page-job/page-job.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-job/page-job.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/page/page.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page/page.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/player/player.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/player/player.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/player/player.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/player/player.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/player/player.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/player/player.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/profile/profile.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/profile.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/search/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/search/search.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/search/search.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/search/search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/search/search.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/slider/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/slider/slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/slider/slider.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/slider/slider.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/stages/stages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/stages/stages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/stages/stages.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/stages/stages.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/stages/stages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/stages/stages.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -53,13 +18,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/stages/stages.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="680">
               <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/interior/interior.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -107,29 +77,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/search/search.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="4" selection-start-column="4" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/search/search.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/blocks/player/player.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="137" column="49" selection-start-line="137" selection-start-column="49" selection-end-line="137" selection-end-column="49" />
+            <state relative-caret-position="396">
+              <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/player/player.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="64" column="6" lean-forward="true" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -154,7 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>kreslo</find>
       <find>holodilnik</find>
       <find>glavnaya</find>
       <find>katalog</find>
@@ -184,9 +144,9 @@
       <find>rent-auto-completeform</find>
       <find>player</find>
       <find>search</find>
+      <find>keyNav</find>
     </findStrings>
     <replaceStrings>
-      <replace>image</replace>
       <replace>slider</replace>
       <replace>step-slider</replace>
       <replace>arrow</replace>
@@ -216,6 +176,7 @@
       <replace>js-form-rent-auto</replace>
       <replace>js-player</replace>
       <replace>js-search</replace>
+      <replace>keyNavigation</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\Artur Khannanov\Desktop\FSD_CV\FSD_UI\src\blocks</dir>
@@ -230,7 +191,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/blocks/messaging/messaging.pug" />
-        <option value="$PROJECT_DIR$/src/blocks/player/player.scss" />
         <option value="$PROJECT_DIR$/src/blocks/header-social-network/header-social-network.pug" />
         <option value="$PROJECT_DIR$/src/blocks/percents/percents.scss" />
         <option value="$PROJECT_DIR$/src/blocks/pie/pie.scss" />
@@ -271,7 +231,6 @@
         <option value="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.js" />
         <option value="$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.pug" />
         <option value="$PROJECT_DIR$/src/blocks/player/player.pug" />
-        <option value="$PROJECT_DIR$/src/blocks/player/player.js" />
         <option value="$PROJECT_DIR$/src/blocks/search/search.pug" />
         <option value="$PROJECT_DIR$/src/blocks/search/search.scss" />
         <option value="$PROJECT_DIR$/src/blocks/search/search.js" />
@@ -280,6 +239,8 @@
         <option value="$PROJECT_DIR$/src/blocks/stages/stages.pug" />
         <option value="$PROJECT_DIR$/src/blocks/stages/stages.scss" />
         <option value="$PROJECT_DIR$/src/blocks/stages/stages.js" />
+        <option value="$PROJECT_DIR$/src/blocks/player/player.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/player/player.js" />
       </list>
     </option>
   </component>
@@ -728,21 +689,7 @@
       <workItem from="1564124893775" duration="102000" />
       <workItem from="1564914658459" duration="1572000" />
       <workItem from="1564976516741" duration="18521000" />
-      <workItem from="1565073165553" duration="13722000" />
-    </task>
-    <task id="LOCAL-00037" summary="Refactoring #13 Исправлено отображение drop-down по макету.">
-      <created>1562824866315</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1562824866316</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Refactoring #12 Исправлены стили и модификаторы для кнопок и стрелок.">
-      <created>1562826694081</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1562826694081</updated>
+      <workItem from="1565073165553" duration="14451000" />
     </task>
     <task id="LOCAL-00039" summary="Refactoring #13 Исправлен блок поиска по макету.">
       <created>1562826867201</created>
@@ -1073,11 +1020,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565083963014</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Refactoring #9 Добавлены префиксы js.">
+      <created>1565087933541</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1565087933541</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Refactoring #9 Избавился от сокращения keyNav">
+      <created>1565088205754</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1565088205754</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="362251000" />
+    <option name="totallyTimeSpent" value="362980000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1092,7 +1053,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.86206895" visible="true" weight="0.18018967" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.86206895" visible="true" weight="0.18018967" />
       <window_info id="Structure" order="1" sideWeight="0.13793103" side_tool="true" weight="0.12802951" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -1107,7 +1068,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.48946258" weight="0.30877572" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5105374" side_tool="true" weight="0.30985916" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49947312" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.48946258" visible="true" weight="0.25785482" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.48946258" visible="true" weight="0.25785482" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1157,8 +1118,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactoring #10 Компоновка компонент на странице." />
-    <MESSAGE value="Refactoring #9 Сделана декомпозиция." />
     <MESSAGE value="Refactoring #10 Убрана грязь" />
     <MESSAGE value="Refactoring #10 Избавился от грязи)" />
     <MESSAGE value="Refactoring #10 Отступы в 2 пробела." />
@@ -1182,7 +1141,9 @@
     <MESSAGE value="Refactoring #16 Использовал drop-down компонену на rent-auto страницы. Дописал необходимый js код." />
     <MESSAGE value="Refactoring #14 Исправлен drop-down по БЭМ." />
     <MESSAGE value="Refactoring #19 Исправлены классы JS." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring #19 Исправлены классы JS." />
+    <MESSAGE value="Refactoring #9 Добавлены префиксы js." />
+    <MESSAGE value="Refactoring #9 Избавился от сокращения keyNav" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring #9 Избавился от сокращения keyNav" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1200,13 +1161,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pages/interior/interior.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/job/job.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1449,23 +1403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="137" column="49" selection-start-line="137" selection-start-column="49" selection-end-line="137" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/search/search.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1519,6 +1456,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/interior/interior.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="64" column="6" lean-forward="true" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
         </state>
       </provider>
     </entry>
