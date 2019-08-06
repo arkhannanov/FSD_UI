@@ -1,10 +1,10 @@
 mixin drop-down(options = {contentContainer:[]})
     -let {contentContainer} = options;
-    .drop-down
-        .drop-down__select
-            .drop-down__select-title Choose an Option
-            button.drop-down__select-button
-        .drop-down__options
+    .js-drop-down
+        .js-drop-down__select
+            .js-drop-down__select-title Choose an Option
+            button.js-drop-down__select-button
+        .js-drop-down__options
             -contentContainer.forEach(function(item) {
-                .drop-down__item= item.content
+                .js-drop-down__item= item.content
             -});

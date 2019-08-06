@@ -23,7 +23,7 @@ class Button {
   }
 }
 
-const buttons = document.getElementsByName('ripple');
+const buttons = document.getElementsByName('js-ripple');
 
 buttons.forEach((item) => {
   new Button(item);

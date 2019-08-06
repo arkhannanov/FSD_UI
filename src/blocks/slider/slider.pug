@@ -1,4 +1,4 @@
 mixin slider(options = {min: "", max:"", step:"", value:"", label:"", dial:"", color: ""})
     - let {min = 0, max = 100, step = 1, value= 40, label = 'true', dial = 'false', color = 'orange'} = options;
     .slider
-        input(type="hidden", class="newslider", value="40", data-min = min, data-max = max, data-step = step, data-value = value, data-label = label, data-dial = dial, data-color = color)
+        input(type="hidden", class="js-newslider", value="40", data-min = min, data-max = max, data-step = step, data-value = value, data-label = label, data-dial = dial, data-color = color)

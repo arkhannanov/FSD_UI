@@ -22,7 +22,7 @@ class DropDown {
   }
 }
 
-const root = document.getElementsByClassName('drop-down');
+const root = document.getElementsByClassName('js-drop-down');
 
 for (let i = 0; i < root.length; i += 1) {
   new DropDown(root[i]);

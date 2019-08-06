@@ -266,7 +266,7 @@ class Calendar {
   }
 }
 
-const root = document.getElementsByClassName('calendar__item');
+const root = document.getElementsByClassName('js-calendar__item');
 
 for (let i = 0; i < root.length; i += 1) {
   window.onload = () => {

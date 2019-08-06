@@ -3,34 +3,34 @@ include ../button/button.pug
 
 mixin form-job(options = {toggleContent: ""})
     -let {toggleContent} = options;
-    .form-job
-        .form-job__completeform
-        .form-job__job-title-container
-            input.form-job__job-title-input(type="text", placeholder="Job title")
-            .form-job__job-title-message
-        .form-job__job-title-error-message
-        .form-job__facebook-container
-            input.form-job__facebook-input(type="text", placeholder="Facebook link")
-            .form-job__facebook-message
-        .form-job__facebook-error-message
-        .form-job__twitter-container
-            input.form-job__twitter-input(type="text", placeholder="Twitter link", )
-            .form-job__twitter-message
-        .form-job__twitter-error-message
-        .form-job__dribbble-container
-            input.form-job__dribbble-input(type="text", placeholder="Dribbble link", )
-            .form-job__dribbble-message
-        .form-job__dribbble-error-message
-        .form-job__toggle
+    .js-form-job
+        .js-form-job__completeform
+        .js-form-job__job-title-container
+            input.js-form-job__job-title-input(type="text", placeholder="Job title")
+            .js-form-job__job-title-message
+        .js-form-job__job-title-error-message
+        .js-form-job__facebook-container
+            input.js-form-job__facebook-input(type="text", placeholder="Facebook link")
+            .js-form-job__facebook-message
+        .js-form-job__facebook-error-message
+        .js-form-job__twitter-container
+            input.js-form-job__twitter-input(type="text", placeholder="Twitter link", )
+            .js-form-job__twitter-message
+        .js-form-job__twitter-error-message
+        .js-form-job__dribbble-container
+            input.js-form-job__dribbble-input(type="text", placeholder="Dribbble link", )
+            .js-form-job__dribbble-message
+        .js-form-job__dribbble-error-message
+        .js-form-job__toggle
             +toggle({
                 id: "1"
             })
-            .form-job__toggle-content= toggleContent
-        .form-job__submit-container
+            .js-form-job__toggle-content= toggleContent
+        .js-form-job__submit-container
             +button({
                 size: `submit`,
                 color: `green`,
-                name: `ripple`,
+                name: `js-ripple`,
                 title: `submit`,
-                addClassName: 'form-job__submit-button'
+                addClassName: 'js-form-job__submit-button'
             })

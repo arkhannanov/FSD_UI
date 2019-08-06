@@ -204,7 +204,7 @@ class FormJob {
   }
 }
 
-const root = document.getElementsByClassName('form-job');
+const root = document.getElementsByClassName('js-form-job');
 
 for (let i = 0; i < root.length; i += 1) {
   new FormJob(root[i]);

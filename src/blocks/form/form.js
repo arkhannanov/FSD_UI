@@ -136,7 +136,7 @@ class Form {
 }
 
 
-const root = document.getElementsByClassName('form');
+const root = document.getElementsByClassName('js-form');
 
 for (let i = 0; i < root.length; i += 1) {
   new Form(root[i]);

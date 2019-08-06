@@ -79,7 +79,7 @@ class Player {
 
   updateButton() {
     const icon = this.root.video.paused ? '►' : '❚ ❚';
-    this.root.toggle.classList.remove('player__button_unclicked');
+    this.root.toggle.classList.remove('js-player__button_unclicked');
     this.root.toggle.textContent = icon;
   }
 
@@ -135,7 +135,7 @@ class Player {
   }
 }
 
-const root = document.getElementsByClassName('player');
+const root = document.getElementsByClassName('js-player');
 
 for (let i = 0; i < root.length; i += 1) {
   new Player(root[i]);

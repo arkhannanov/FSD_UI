@@ -28,7 +28,7 @@ class Slider {
   }
 }
 
-const $sliders = $('.newslider');
+const $sliders = $('.js-newslider');
 
 $sliders.each(function createSlider() {
   new Slider(this);

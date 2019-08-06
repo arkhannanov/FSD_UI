@@ -24,7 +24,7 @@ class Stages {
 
     for (let i = 0; i < numberOfSections; i += 1) {
       const section = document.createElement('div');
-      section.classList.add('stages__section');
+      section.classList.add('js-stages__section');
       section.style.width = `${this.root.sections.offsetWidth / numberOfSections}px`;
 
       this.root.sections.appendChild(section);
@@ -38,7 +38,7 @@ class Stages {
     for (let i = 0; i < numberOfPoints; i += 1) {
       const point = document.createElement('div');
       point.innerHTML = i + 1;
-      point.classList.add('stages__point');
+      point.classList.add('js-stages__point');
       this.root.points.appendChild(point);
     }
   }
@@ -66,23 +66,23 @@ class Stages {
 
   fillStages() {
     if (this.pointsArray[0] === true) {
-      this.root.points.children[0].classList.add('stages__point_color_orange');
+      this.root.points.children[0].classList.add('js-stages__point_color_orange');
     }
 
     for (let i = 0; i < this.pointsArray.length; i += 1) {
       if (i > 0 && this.pointsArray[i] === true) {
-        this.root.points.children[i].classList.add('stages__point_color_orange');
-        this.root.sections.children[i - 1].classList.add('stages__section_color_orange');
+        this.root.points.children[i].classList.add('js-stages__point_color_orange');
+        this.root.sections.children[i - 1].classList.add('js-stages__section_color_orange');
       }
       if (i > 0 && this.pointsArray[i] === false) {
-        this.root.points.children[i].classList.remove('stages__point_color_orange');
-        this.root.sections.children[i - 1].classList.remove('stages__section_color_orange');
+        this.root.points.children[i].classList.remove('js-stages__point_color_orange');
+        this.root.sections.children[i - 1].classList.remove('js-stages__section_color_orange');
       }
     }
   }
 }
 
-const root = document.getElementsByClassName('stages');
+const root = document.getElementsByClassName('js-stages');
 
 for (let i = 0; i < root.length; i += 1) {
   new Stages(root[i]);

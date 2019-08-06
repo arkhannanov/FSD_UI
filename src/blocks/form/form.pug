@@ -1,23 +1,23 @@
 include ../button/button.pug
 
 mixin form
-    .form
-        .form__completeform
-        .form__name
-            input.form__name-input(type="text", placeholder="Your Name")
-            .form__name-message-container error
-        .form__name-input-error-message
-        .form__email
-            input.form__email-input(type="text", placeholder="Your E-mail")
-            .form__email-message-container error
-        .form__email-input-error-message
-        .form__message
-            textarea.form__message-input(type="text", placeholder="Your Message")
-        .form__submit
+    .js-form
+        .js-form__completeform
+        .js-form__name
+            input.js-form__name-input(type="text", placeholder="Your Name")
+            .js-form__name-message-container error
+        .js-form__name-input-error-message
+        .js-form__email
+            input.js-form__email-input(type="text", placeholder="Your E-mail")
+            .js-form__email-message-container error
+        .js-form__email-input-error-message
+        .js-form__message
+            textarea.js-form__message-input(type="text", placeholder="Your Message")
+        .js-form__submit
             +button({
                 size: `submit`,
                 color: `green`,
-                name: `ripple`,
+                name: `js-ripple`,
                 title: `submit`,
                 addClassName: 'form__submit-button'
             })
