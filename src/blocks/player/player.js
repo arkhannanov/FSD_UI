@@ -3,7 +3,10 @@ let mousedown = false;
 class Player {
   constructor(root) {
     this.root = root;
+    this.startPlayer();
+  }
 
+  startPlayer() {
     this.enableElements();
     this.enableTogglePlay();
     this.enablePlayButton();

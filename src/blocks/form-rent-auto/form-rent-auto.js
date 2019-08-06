@@ -17,6 +17,10 @@ class FormRentAuto {
   constructor(root) {
     this.root = root;
 
+    this.startFormRentAuto();
+  }
+
+  startFormRentAuto() {
     this.enableElements();
     this.enableSurnameInput();
     this.enableNameInput();

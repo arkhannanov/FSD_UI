@@ -15,6 +15,10 @@ class FormJob {
   constructor(root) {
     this.root = root;
 
+    this.startFormJob();
+  }
+
+  startFormJob() {
     this.enableElements();
     this.enableJobTitleInput();
     this.enableFacebookInput();

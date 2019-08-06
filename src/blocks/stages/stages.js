@@ -5,6 +5,10 @@ class Stages {
     this.pointsArray = [];
     this.targetPoint;
 
+    this.startStages();
+  }
+
+  startStages() {
     this.enableElements();
     this.createSections();
     this.createPoints();

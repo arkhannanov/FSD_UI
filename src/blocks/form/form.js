@@ -13,6 +13,10 @@ class Form {
   constructor(root) {
     this.root = root;
 
+    this.startForm();
+  }
+
+  startForm() {
     this.enableElements();
     this.enableFormNameInput();
     this.enableFormEmailInput();

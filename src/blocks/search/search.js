@@ -5,13 +5,9 @@ class Search {
     this.searchIcon = null;
     this.value = 0;
     this.initSearch();
-    this.enableSearchIcon();
-    this.enableSearchKeyup();
-    this.enableSearchClick();
   }
 
   initSearch() {
-
     const isTrue = (this.root.dataset.error === 'true');
 
     const inputContainder = document.createElement('div');
@@ -31,6 +27,10 @@ class Search {
     this.root.appendChild(inputContainder);
     inputContainder.appendChild(this.searchInput);
     inputContainder.appendChild(this.searchIcon);
+
+    this.enableSearchIcon();
+    this.enableSearchKeyup();
+    this.enableSearchClick();
   }
 
   enableSearchIcon() {
