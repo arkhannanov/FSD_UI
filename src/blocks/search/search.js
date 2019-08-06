@@ -34,28 +34,28 @@ class Search {
   }
 
   enableSearchIcon() {
-    this.searchIcon.addEventListener('click', this.clickButton.bind(this));
+    this.searchIcon.addEventListener('click', this.handleSearchIconClick.bind(this));
   }
 
   enableSearchKeyup() {
-    this.searchInput.addEventListener('keyup', this.inputSearch.bind(this));
+    this.searchInput.addEventListener('keyup', this.handleSearchKeyup.bind(this));
   }
 
   enableSearchClick() {
-    this.searchInput.addEventListener('click', this.clearInput.bind(this));
+    this.searchInput.addEventListener('click', this.handleSearchClick.bind(this));
   }
 
-  inputSearch(element) {
+  handleSearchKeyup(element) {
     const usedInput = element.target;
     this.value = usedInput.value;
   }
 
-  clearInput() {
+  handleSearchClick() {
     this.searchInput.classList.remove('js-search__input_error');
     this.searchInput.value = '';
   }
 
-  clickButton() {
+  handleSearchIconClick() {
     if (this.value.length > 0) {
       this.searchInput.classList.add('js-search__input_error');
       this.searchInput.value = 'I’ve not found what I’m looking for...';

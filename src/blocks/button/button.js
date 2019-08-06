@@ -5,10 +5,10 @@ class Button {
   }
 
   enableRippleEffect() {
-    this.root.addEventListener('click', this.createRipple);
+    this.root.addEventListener('click', this.handleButtonClick);
   }
 
-  createRipple(elem) {
+  handleButtonClick(elem) {
     const circle = document.createElement('div');
     this.append(circle);
     const diametr = Math.max(this.clientWidth, this.clientHeight);

@@ -33,22 +33,22 @@ class Form {
   }
 
   enableFormNameInput() {
-    this.root.formNameInput.addEventListener('keyup', this.checkFormNameInput.bind(this));
+    this.root.formNameInput.addEventListener('keyup', this.handleFormNameInputKeyUp.bind(this));
   }
 
   enableFormEmailInput() {
-    this.root.formEmailInput.addEventListener('keyup', this.checkFormEmailInput.bind(this));
+    this.root.formEmailInput.addEventListener('keyup', this.handleFormEmailInputKeyUp.bind(this));
   }
 
   enableFormMessageInput() {
-    this.root.formMessageInput.addEventListener('keyup', this.checkFormMessageInput.bind(this));
+    this.root.formMessageInput.addEventListener('keyup', this.handleFormMessageInputKeyUp.bind(this));
   }
 
   enableFormSubmitButton() {
-    this.root.formSubmitButton.addEventListener('click', this.submit.bind(this));
+    this.root.formSubmitButton.addEventListener('click', this.handleSubmitButtonClick.bind(this));
   }
 
-  checkFormNameInput(element) {
+  handleFormNameInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -65,7 +65,7 @@ class Form {
     }
   }
 
-  checkFormEmailInput(element) {
+  handleFormEmailInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -82,7 +82,7 @@ class Form {
     }
   }
 
-  checkFormMessageInput(element) {
+  handleFormMessageInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -93,7 +93,7 @@ class Form {
     }
   }
 
-  submit() {
+  handleSubmitButtonClick() {
 
     if (errorName === true) {
       this.root.formNameInputErrorMessage.innerHTML = lengthMessage;

@@ -41,26 +41,26 @@ class FormJob {
   }
 
   enableJobTitleInput() {
-    this.root.jobTitleInput.addEventListener('keyup', this.checkJobTitleInput.bind(this));
+    this.root.jobTitleInput.addEventListener('keyup', this.hadleJobTitleInputKeyUp.bind(this));
   }
 
   enableFacebookInput() {
-    this.root.facebookInput.addEventListener('keyup', this.checkFacebookInput.bind(this));
+    this.root.facebookInput.addEventListener('keyup', this.handleFacebookInputKeyUp.bind(this));
   }
 
   enableTwitterInput() {
-    this.root.twitterInput.addEventListener('keyup', this.checkTwitterInput.bind(this));
+    this.root.twitterInput.addEventListener('keyup', this.handleTwitterInputKeyUp.bind(this));
   }
 
   enableDribbbleInput() {
-    this.root.dribbbleInput.addEventListener('keyup', this.checkDribbbleInput.bind(this));
+    this.root.dribbbleInput.addEventListener('keyup', this.handleDribbbleInputKeyUp.bind(this));
   }
 
   enableSubmitButton() {
-    this.root.submitButton.addEventListener('click', this.submit.bind(this));
+    this.root.submitButton.addEventListener('click', this.handleSubmitClick.bind(this));
   }
 
-  checkJobTitleInput(element) {
+  hadleJobTitleInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -77,7 +77,7 @@ class FormJob {
     }
   }
 
-  checkFacebookInput(element) {
+  handleFacebookInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -94,7 +94,7 @@ class FormJob {
     }
   }
 
-  checkTwitterInput(element) {
+  handleTwitterInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -111,7 +111,7 @@ class FormJob {
     }
   }
 
-  checkDribbbleInput(element) {
+  handleDribbbleInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -128,7 +128,7 @@ class FormJob {
     }
   }
 
-  submit() {
+  handleSubmitClick() {
     if (errorJob === true) {
       this.root.jobTitleErrorMessage.innerHTML = message;
       this.root.jobTitleMessage.innerHTML = 'error';

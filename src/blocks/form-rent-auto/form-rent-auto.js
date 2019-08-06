@@ -47,30 +47,30 @@ class FormRentAuto {
   }
 
   enableSurnameInput() {
-    this.root.surnameInput.addEventListener('keyup', this.checkSurnameInput.bind(this));
+    this.root.surnameInput.addEventListener('keyup', this.handleSurnameInputKeyUp.bind(this));
   }
 
   enableNameInput() {
-    this.root.nameInput.addEventListener('keyup', this.checkNameInput.bind(this));
+    this.root.nameInput.addEventListener('keyup', this.handleNameInputKeyUp.bind(this));
   }
 
   enablePatronymicInput() {
-    this.root.patronymicInput.addEventListener('keyup', this.checkPatronymicInput.bind(this));
+    this.root.patronymicInput.addEventListener('keyup', this.handlePatronymicInputKeyUp.bind(this));
   }
 
   enablePhoneInput() {
-    this.root.phoneInput.addEventListener('keyup', this.checkPhoneInput.bind(this));
+    this.root.phoneInput.addEventListener('keyup', this.handlePhoneInputKeyUp.bind(this));
   }
 
   enableEmailInput() {
-    this.root.emailInput.addEventListener('keyup', this.checkEmailInput.bind(this));
+    this.root.emailInput.addEventListener('keyup', this.handleEmailInputKeyUp.bind(this));
   }
 
   enableSubmitForm() {
-    this.root.submitForm.addEventListener('click', this.submit.bind(this));
+    this.root.submitForm.addEventListener('click', this.handleSubmitFormClick.bind(this));
   }
 
-  checkSurnameInput(element) {
+  handleSurnameInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -87,7 +87,7 @@ class FormRentAuto {
     }
   }
 
-  checkNameInput(element) {
+  handleNameInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -104,7 +104,7 @@ class FormRentAuto {
     }
   }
 
-  checkPatronymicInput(element) {
+  handlePatronymicInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -121,7 +121,7 @@ class FormRentAuto {
     }
   }
 
-  checkPhoneInput(element) {
+  handlePhoneInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -138,7 +138,7 @@ class FormRentAuto {
     }
   }
 
-  checkEmailInput(element) {
+  handleEmailInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -155,7 +155,7 @@ class FormRentAuto {
     }
   }
 
-  submit() {
+  handleSubmitFormClick() {
     if (errorSurname === true) {
       this.root.surnameErrorMessage.innerHTML = message;
       this.root.surnameMessage.innerHTML = 'error';
