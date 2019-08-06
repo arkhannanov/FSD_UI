@@ -11,11 +11,11 @@ class Button {
   handleButtonClick(elem) {
     const circle = document.createElement('div');
     this.append(circle);
-    const diametr = Math.max(this.clientWidth, this.clientHeight);
-    circle.style.width = `${diametr}px`;
-    circle.style.height = `${diametr}px`;
-    circle.style.left = `${elem.clientX - this.offsetLeft + window.pageXOffset - diametr / 2}px`;
-    circle.style.top = `${elem.clientY - this.offsetTop + window.pageYOffset - 80 - diametr / 2}px`;
+    const diameter = Math.max(this.clientWidth, this.clientHeight);
+    circle.style.width = `${diameter}px`;
+    circle.style.height = `${diameter}px`;
+    circle.style.left = `${elem.clientX - this.offsetLeft + window.pageXOffset - 625- diameter / 2}px`;
+    circle.style.top = `${elem.clientY - this.offsetTop + window.pageYOffset - 80 - diameter / 2}px`;
     circle.classList.add('button__ripple');
     setTimeout(() => {
       this.removeChild(circle);
