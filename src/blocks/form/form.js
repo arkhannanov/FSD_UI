@@ -11,35 +11,41 @@ const formNotComplete = 'Form is not complete.';
 
 class Form {
   constructor(root) {
-    this.formNameInput = root.formNameInput;
-    this.formNameMessageContainer = root.formNameMessageContainer;
-    this.formNameInputErrorMessage = root.formNameInputErrorMessage;
-    this.formEmailInput = root.formEmailInput;
-    this.formEmailMessageContainer = root.formEmailMessageContainer;
-    this.formEmailInputErrorMessage = root.formEmailInputErrorMessage;
-    this.formMessageInput = root.formMessageInput;
-    this.formSubmitButton = root.formSubmitButton;
-    this.formCompleteform = root.formCompleteform;
+    this.root = root;
+
+    this.enableElements();
     this.enableFormNameInput();
     this.enableFormEmailInput();
     this.enableFormMessageInput();
     this.enableFormSubmitButton();
   }
 
+  enableElements() {
+    this.root.formNameInput = this.root.children[1].children[0];
+    this.root.formNameMessageContainer = this.root.children[1].children[1];
+    this.root.formNameInputErrorMessage = this.root.children[2];
+    this.root.formEmailInput = this.root.children[3].children[0];
+    this.root.formEmailMessageContainer = this.root.children[3].children[1];
+    this.root.formEmailInputErrorMessage = this.root.children[4];
+    this.root.formMessageInput = this.root.children[5].children[0];
+    this.root.formSubmitButton = this.root.children[6].children[0];
+    this.root.formCompleteform = this.root.children[0];
+  }
+
   enableFormNameInput() {
-    this.formNameInput.addEventListener('keyup', this.checkFormNameInput.bind(this));
+    this.root.formNameInput.addEventListener('keyup', this.checkFormNameInput.bind(this));
   }
 
   enableFormEmailInput() {
-    this.formEmailInput.addEventListener('keyup', this.checkFormEmailInput.bind(this));
+    this.root.formEmailInput.addEventListener('keyup', this.checkFormEmailInput.bind(this));
   }
 
   enableFormMessageInput() {
-    this.formMessageInput.addEventListener('keyup', this.checkFormMessageInput.bind(this));
+    this.root.formMessageInput.addEventListener('keyup', this.checkFormMessageInput.bind(this));
   }
 
   enableFormSubmitButton() {
-    this.formSubmitButton.addEventListener('click', this.submit.bind(this));
+    this.root.formSubmitButton.addEventListener('click', this.submit.bind(this));
   }
 
   checkFormNameInput(element) {
@@ -90,58 +96,48 @@ class Form {
   submit() {
 
     if (errorName === true) {
-      this.formNameInputErrorMessage.innerHTML = lengthMessage;
-      this.formNameMessageContainer.innerHTML = 'ERROR';
-      this.formNameMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-orange.png\');';
+      this.root.formNameInputErrorMessage.innerHTML = lengthMessage;
+      this.root.formNameMessageContainer.innerHTML = 'ERROR';
+      this.root.formNameMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-orange.png\');';
       setTimeout(() => {
-        this.formNameInputErrorMessage.innerHTML = '';
+        this.root.formNameInputErrorMessage.innerHTML = '';
       }, 2000);
     } else {
-      this.formNameInputErrorMessage.innerHTML = '';
-      this.formNameMessageContainer.innerHTML = 'THANKS!';
-      this.formNameMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-color2.png\');';
+      this.root.formNameInputErrorMessage.innerHTML = '';
+      this.root.formNameMessageContainer.innerHTML = 'THANKS!';
+      this.root.formNameMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-color2.png\');';
       setTimeout(() => {
-        this.formNameInputErrorMessage.innerHTML = '';
+        this.root.formNameInputErrorMessage.innerHTML = '';
       }, 2000);
     }
 
     if (errorEmail === true) {
-      this.formEmailInputErrorMessage.innerHTML = emailMessage;
-      this.formEmailMessageContainer.innerHTML = 'ERROR';
-      this.formEmailMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-orange.png\');';
+      this.root.formEmailInputErrorMessage.innerHTML = emailMessage;
+      this.root.formEmailMessageContainer.innerHTML = 'ERROR';
+      this.root.formEmailMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-orange.png\');';
       setTimeout(() => {
-        this.formEmailInputErrorMessage.innerHTML = '';
+        this.root.formEmailInputErrorMessage.innerHTML = '';
       }, 2000);
     } else {
-      this.formEmailInputErrorMessage.innerHTML = '';
-      this.formEmailMessageContainer.innerHTML = 'THANKS!';
-      this.formEmailMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-color2.png\');';
+      this.root.formEmailInputErrorMessage.innerHTML = '';
+      this.root.formEmailMessageContainer.innerHTML = 'THANKS!';
+      this.root.formEmailMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-color2.png\');';
       setTimeout(() => {
-        this.formEmailInputErrorMessage.innerHTML = '';
+        this.root.formEmailInputErrorMessage.innerHTML = '';
       }, 2000);
     }
 
     if (fillName === false || fillEmail === false || fillMessage === false) {
-      this.formCompleteform.innerHTML = formNotComplete;
+      this.root.formCompleteform.innerHTML = formNotComplete;
     } else {
-      this.formCompleteform.innerHTML = '';
+      this.root.formCompleteform.innerHTML = '';
     }
   }
 }
 
 
-const root = {
-  formNameInput: document.getElementsByClassName('form__name-input')[0],
-  formNameMessageContainer: document.getElementsByClassName('form__name-message-container')[0],
-  formNameInputErrorMessage: document.getElementsByClassName('form__name-input-error-message')[0],
-  formEmailInput: document.getElementsByClassName('form__email-input')[0],
-  formEmailMessageContainer: document.getElementsByClassName('form__email-message-container')[0],
-  formEmailInputErrorMessage: document.getElementsByClassName('form__email-input-error-message')[0],
-  formMessageInput: document.getElementsByClassName('form__message-input')[0],
-  formSubmitButton: document.getElementsByClassName('form__submit-button')[0],
-  formCompleteform: document.getElementsByClassName('form__completeform')[0],
-};
+const root = document.getElementsByClassName('form');
 
-if (typeof root.formNameInput !== 'undefined') {
-  new Form(root);
+for (let i = 0; i < root.length; i += 1) {
+  new Form(root[i]);
 }

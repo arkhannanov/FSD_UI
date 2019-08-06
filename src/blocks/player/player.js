@@ -2,13 +2,9 @@ let mousedown = false;
 
 class Player {
   constructor(root) {
-    this.playerMain = root.playerMain;
-    this.video = root.video;
-    this.progress = root.progress;
-    this.progressBar = root.progressBar;
-    this.toggle = root.toggle;
-    this.fullscreen = root.fullscreen;
-    this.filled = root.filled;
+    this.root = root;
+
+    this.enableElements();
     this.enableTogglePlay();
     this.enablePlayButton();
     this.enableUpdateButtonPlay();
@@ -23,44 +19,53 @@ class Player {
     this.enableKeyNav();
   }
 
+  enableElements() {
+    this.root.playerMain = this.root;
+    this.root.video = this.root.children[0];
+    this.root.progress = this.root.children[1].children[1];
+    this.root.toggle = this.root.children[1].children[0];
+    this.root.fullscreen = this.root.children[1].children[2];
+    this.root.filled = this.root.children[1].children[1].children[0];
+  }
+
   enableTogglePlay() {
-    this.video.addEventListener('click', this.togglePlay.bind(this));
+    this.root.video.addEventListener('click', this.togglePlay.bind(this));
   }
 
   enablePlayButton() {
-    this.toggle.addEventListener('click', this.togglePlay.bind(this));
+    this.root.toggle.addEventListener('click', this.togglePlay.bind(this));
   }
 
   enableUpdateButtonPlay() {
-    this.video.addEventListener('play', this.updateButton.bind(this));
+    this.root.video.addEventListener('play', this.updateButton.bind(this));
   }
 
   enableUpdateButtonPause() {
-    this.video.addEventListener('pause', this.updateButton.bind(this));
+    this.root.video.addEventListener('pause', this.updateButton.bind(this));
   }
 
   enableHandleProgress() {
-    this.video.addEventListener('timeupdate', this.handleProgress.bind(this));
+    this.root.video.addEventListener('timeupdate', this.handleProgress.bind(this));
   }
 
   enableProgressClick() {
-    this.progress.addEventListener('click', this.scrub.bind(this));
+    this.root.progress.addEventListener('click', this.scrub.bind(this));
   }
 
   enableProgressMouseMove() {
-    this.progress.addEventListener('mousemove', element => mousedown && this.scrub(element).bind(this));
+    this.root.progress.addEventListener('mousemove', element => mousedown && this.scrub(element).bind(this));
   }
 
   enableProgressMouseDown() {
-    this.progress.addEventListener('mousedown', () => mousedown = true);
+    this.root.progress.addEventListener('mousedown', () => mousedown = true);
   }
 
   enableProgressMouseUp() {
-    this.progress.addEventListener('mouseup', () => mousedown = false);
+    this.root.progress.addEventListener('mouseup', () => mousedown = false);
   }
 
   enableToggleFullscreen() {
-    this.fullscreen.addEventListener('click', this.toggleFullscreen.bind(this));
+    this.root.fullscreen.addEventListener('click', this.toggleFullscreen.bind(this));
   }
 
   enableKeyNav() {
@@ -68,45 +73,45 @@ class Player {
   }
 
   togglePlay() {
-    const method = this.video.paused ? 'play' : 'pause';
-    this.video[method]();
+    const method = this.root.video.paused ? 'play' : 'pause';
+    this.root.video[method]();
   }
 
   updateButton() {
-    const icon = this.video.paused ? '►' : '❚ ❚';
-    this.toggle.classList.remove('player__button_unclicked');
-    this.toggle.textContent = icon;
+    const icon = this.root.video.paused ? '►' : '❚ ❚';
+    this.root.toggle.classList.remove('player__button_unclicked');
+    this.root.toggle.textContent = icon;
   }
 
   skip() {
-    this.video.currentTime += parseFloat(this.dataset.skip);
+    this.root.video.currentTime += parseFloat(this.dataset.skip);
   }
 
   handleRangeUpdate() {
-    this.video[this.name] = this.value;
+    this.root.video[this.name] = this.value;
   }
 
   handleProgress() {
-    const percent = (this.video.currentTime / this.video.duration) * 100;
-    this.filled.style.width = `${percent}%`;
+    const percent = (this.root.video.currentTime / this.root.video.duration) * 100;
+    this.root.filled.style.width = `${percent}%`;
   }
 
   scrub(element) {
-    const scrubTime = (element.offsetX / this.progress.offsetWidth) * this.video.duration;
-    this.video.currentTime = scrubTime;
+    const scrubTime = (element.offsetX / this.root.progress.offsetWidth) * this.root.video.duration;
+    this.root.video.currentTime = scrubTime;
   }
 
   toggleFullscreen() {
     if (!document.fullscreenElement && !document.mozFullScreenElement
       && !document.webkitFullscreenElement && !document.msFullscreenElement) {
-      if (this.playerMain.requestFullscreen) {
-        this.playerMain.requestFullscreen();
-      } else if (this.playerMain.msRequestFullscreen) {
-        this.playerMain.msRequestFullscreen();
-      } else if (this.playerMain.mozRequestFullScreen) {
-        this.playerMain.mozRequestFullScreen();
-      } else if (this.playerMain.webkitRequestFullscreen) {
-        this.playerMain.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+      if (this.root.playerMain.requestFullscreen) {
+        this.root.playerMain.requestFullscreen();
+      } else if (this.root.playerMain.msRequestFullscreen) {
+        this.root.playerMain.msRequestFullscreen();
+      } else if (this.root.playerMain.mozRequestFullScreen) {
+        this.root.playerMain.mozRequestFullScreen();
+      } else if (this.root.playerMain.webkitRequestFullscreen) {
+        this.root.playerMain.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
       }
     } else if (document.exitFullscreen) {
       document.exitFullscreen();
@@ -123,24 +128,15 @@ class Player {
     if (element.code === 'Space') {
       this.togglePlay();
     } else if (element.code === 'ArrowRight') {
-      this.video.currentTime += 25;
+      this.root.video.currentTime += 25;
     } else if (element.code === 'ArrowLeft') {
-      this.video.currentTime -= 10;
+      this.root.video.currentTime -= 10;
     }
   }
 }
 
-const playerDoc = document.querySelector('.player');
+const root = document.getElementsByClassName('player');
 
-if (playerDoc !== null) {
-  const root = {
-    playerMain: document.querySelector('.player'),
-    video: playerDoc.querySelector('.player__video'),
-    progress: playerDoc.querySelector('.player__progress'),
-    toggle: playerDoc.querySelector('.player__button'),
-    fullscreen: playerDoc.querySelector('.player__fullscreen-button'),
-    filled: playerDoc.querySelector('.player__progress-filling'),
-  };
-
-  new Player(root);
+for (let i = 0; i < root.length; i += 1) {
+  new Player(root[i]);
 }

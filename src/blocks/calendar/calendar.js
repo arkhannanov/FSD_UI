@@ -4,15 +4,12 @@ const {MonthNames, DayNames, StartOfWeek, Events, ClassNames, Defaults} = Const;
 
 class Calendar {
   constructor(root, {minDate, maxDate, selectedDate}) {
-    this._root = root.calendarElem;
-    this._dayElem = root._dayElem;
-    this._header = root._header;
-    this._monthElem = root._monthElem;
-    this._previosButton = root._previosButton;
-    this._nextButton = root._nextButton;
+    this.root = root;
 
     this._minDate = minDate || Defaults.minDate;
     this._maxDate = maxDate || Defaults.maxDate;
+
+    this.selectElements();
 
     this._localize();
 
@@ -21,9 +18,15 @@ class Calendar {
     this.setDate(selectedDate || new Date());
   }
 
-  /*
-   * Public
-   */
+  selectElements() {
+
+    this.root.dayElem = this.root.childNodes[1].children[0];
+    this.root.header = this.root.childNodes[3];
+    this.root.monthElem = this.root.childNodes[3].children[0];
+    this.root.previosButton = this.root.childNodes[3].children[1];
+    this.root.nextButton = this.root.childNodes[3].children[2];
+  }
+
   today() {
     const today = new Date();
     this._month = today.getMonth();
@@ -122,11 +125,11 @@ class Calendar {
 
   _createUi() {
 
-    this._header.appendChild(document.createTextNode(' '));
-    this._previosButton.addEventListener('click', () => {
+    this.root.header.appendChild(document.createTextNode(' '));
+    this.root.previosButton.addEventListener('click', () => {
       this.previosMonth();
     });
-    this._nextButton.addEventListener('click', () => {
+    this.root.nextButton.addEventListener('click', () => {
       this.nextMonth();
     });
 
@@ -170,12 +173,12 @@ class Calendar {
           },
         });
 
-        this._root.dispatchEvent(event);
+        this.root.dispatchEvent(event);
       }
     });
     table.appendChild(this._tableBody);
 
-    this._root.appendChild(table);
+    this.root.appendChild(table);
 
     tableHead.appendChild(tableHeadRow);
 
@@ -192,19 +195,19 @@ class Calendar {
   }
 
   _updateUi() {
-    this._monthElem.textContent = this._monthNames[this._month];
-    this._dayElem.textContent = this._date;
+    this.root.monthElem.textContent = this._monthNames[this._month];
+    this.root.dayElem.textContent = this._date;
 
     if (this._isMinMonth()) {
-      this._previosButton.classList.add(ClassNames.BUTTON_DISABLED);
+      this.root.previosButton.classList.add(ClassNames.BUTTON_DISABLED);
     } else {
-      this._previosButton.classList.remove(ClassNames.BUTTON_DISABLED);
+      this.root.previosButton.classList.remove(ClassNames.BUTTON_DISABLED);
     }
 
     if (this._isMaxMonth()) {
-      this._nextButton.classList.add(ClassNames.BUTTON_DISABLED);
+      this.root.nextButton.classList.add(ClassNames.BUTTON_DISABLED);
     } else {
-      this._nextButton.classList.remove(ClassNames.BUTTON_DISABLED);
+      this.root.nextButton.classList.remove(ClassNames.BUTTON_DISABLED);
     }
 
     this._tableBody.innerHTML = '';
@@ -263,22 +266,14 @@ class Calendar {
   }
 }
 
+const root = document.getElementsByClassName('calendar__item');
 
-const root = {
-  calendarElem: document.getElementsByClassName('calendar__item')[0],
-  _dayElem: document.getElementsByClassName('calendar__item-day')[0],
-  _header: document.getElementsByClassName('calendar__item-header')[0],
-  _monthElem: document.getElementsByClassName('calendar__item-month')[0],
-  _previosButton: document.getElementsByClassName('calendar__item-button-previous')[0],
-  _nextButton: document.getElementsByClassName('calendar__item-button-next')[0],
-}
-
-if (typeof root.calendarElem !== 'undefined') {
+for (let i = 0; i < root.length; i += 1) {
   window.onload = () => {
-    if (root != null) {
+    if (root[i] != null) {
       const today = new Date();
 
-      const calendar = new Calendar(root, {
+      const calendar = new Calendar(root[i], {
         minDate: new Date(
           today.getFullYear(),
           today.getMonth(),
@@ -291,11 +286,12 @@ if (typeof root.calendarElem !== 'undefined') {
         ),
       });
 
-      root.calendarElem.addEventListener(Events.DATE_SELECTED, (event) => {
+      root[i].addEventListener(Events.DATE_SELECTED, (event) => {
         calendar.setDate(event.detail.date);
       });
     }
   };
-}
+};
+
 
   

@@ -15,23 +15,9 @@ const formNotComplete = 'Форма не закончена!';
 
 class FormRentAuto {
   constructor(root) {
-    this.surnameInput = root.surnameInput;
-    this.surnameMessage = root.surnameMessage;
-    this.surnameErrorMessage = root.surnameErrorMessage;
-    this.nameInput = root.nameInput;
-    this.nameMessage = root.nameMessage;
-    this.nameErrorMessage = root.nameErrorMessage;
-    this.patronymicInput = root.patronymicInput;
-    this.patronymicMessage = root.patronymicMessage;
-    this.patronymicErrorMessage = root.patronymicErrorMessage;
-    this.phoneInput = root.phoneInput;
-    this.phoneMessage = root.phoneMessage;
-    this.phoneErrorMessage = root.phoneErrorMessage;
-    this.emailInput = root.emailInput;
-    this.emailMessage = root.emailMessage;
-    this.emailErrorMessage = root.emailErrorMessage;
-    this.submitForm = root.submitForm;
-    this.completeForm = root.completeForm;
+    this.root = root;
+
+    this.enableElements();
     this.enableSurnameInput();
     this.enableNameInput();
     this.enablePatronymicInput();
@@ -40,28 +26,48 @@ class FormRentAuto {
     this.enableSubmitForm();
   }
 
+  enableElements() {
+    this.root.surnameInput = this.root.children[0].children[0];
+    this.root.surnameMessage = this.root.children[0].children[1];
+    this.root.surnameErrorMessage = this.root.children[1];
+    this.root.nameInput = this.root.children[2].children[0];
+    this.root.nameMessage = this.root.children[2].children[1];
+    this.root.nameErrorMessage = this.root.children[3];
+    this.root.patronymicInput = this.root.children[4].children[0];
+    this.root.patronymicMessage = this.root.children[4].children[1];
+    this.root.patronymicErrorMessage = this.root.children[5];
+    this.root.phoneInput = this.root.children[6].children[0];
+    this.root.phoneMessage = this.root.children[6].children[1];
+    this.root.phoneErrorMessage = this.root.children[7];
+    this.root.emailInput = this.root.children[8].children[0];
+    this.root.emailMessage = this.root.children[8].children[1];
+    this.root.emailErrorMessage = this.root.children[9];
+    this.root.submitForm = document.getElementsByClassName('form-rent-auto-submit')[0];
+    this.root.completeForm = document.getElementsByClassName('page-rent-auto__form-rent-auto-completeform')[0];
+  }
+
   enableSurnameInput() {
-    this.surnameInput.addEventListener('keyup', this.checkSurnameInput.bind(this));
+    this.root.surnameInput.addEventListener('keyup', this.checkSurnameInput.bind(this));
   }
 
   enableNameInput() {
-    this.nameInput.addEventListener('keyup', this.checkNameInput.bind(this));
+    this.root.nameInput.addEventListener('keyup', this.checkNameInput.bind(this));
   }
 
   enablePatronymicInput() {
-    this.patronymicInput.addEventListener('keyup', this.checkPatronymicInput.bind(this));
+    this.root.patronymicInput.addEventListener('keyup', this.checkPatronymicInput.bind(this));
   }
 
   enablePhoneInput() {
-    this.phoneInput.addEventListener('keyup', this.checkPhoneInput.bind(this));
+    this.root.phoneInput.addEventListener('keyup', this.checkPhoneInput.bind(this));
   }
 
   enableEmailInput() {
-    this.emailInput.addEventListener('keyup', this.checkEmailInput.bind(this));
+    this.root.emailInput.addEventListener('keyup', this.checkEmailInput.bind(this));
   }
 
   enableSubmitForm() {
-    this.submitForm.addEventListener('click', this.submit.bind(this));
+    this.root.submitForm.addEventListener('click', this.submit.bind(this));
   }
 
   checkSurnameInput(element) {
@@ -151,82 +157,82 @@ class FormRentAuto {
 
   submit() {
     if (errorSurname === true) {
-      this.surnameErrorMessage.innerHTML = message;
-      this.surnameMessage.innerHTML = 'error';
-      this.surnameMessage.style.cssText = 'background-image: url(\'./src/blocks/form-rent-auto/images/form-orange.png\');';
+      this.root.surnameErrorMessage.innerHTML = message;
+      this.root.surnameMessage.innerHTML = 'error';
+      this.root.surnameMessage.style.cssText = 'background-image: url(\'./src/blocks/form-rent-auto/images/form-orange.png\');';
       setTimeout(() => {
-        this.surnameErrorMessage.innerHTML = '';
+        this.root.surnameErrorMessage.innerHTML = '';
       }, 2000);
     } else {
-      this.surnameErrorMessage.innerHTML = '';
-      this.surnameMessage.innerHTML = 'thanks!';
-      this.surnameMessage.style.cssText = 'background-image: url(\'./src/blocks/form-rent-auto/images/form-color2.png\');';
+      this.root.surnameErrorMessage.innerHTML = '';
+      this.root.surnameMessage.innerHTML = 'thanks!';
+      this.root.surnameMessage.style.cssText = 'background-image: url(\'./src/blocks/form-rent-auto/images/form-color2.png\');';
       setTimeout(() => {
-        this.surnameErrorMessage.innerHTML = '';
+        this.root.surnameErrorMessage.innerHTML = '';
       }, 2000);
     }
 
     if (errorName === true) {
-      this.nameErrorMessage.innerHTML = message;
-      this.nameMessage.innerHTML = 'error';
-      this.nameMessage.style.cssText = 'background-image: url(\'./src/blocks/form-rent-auto/images/form-orange.png\');';
+      this.root.nameErrorMessage.innerHTML = message;
+      this.root.nameMessage.innerHTML = 'error';
+      this.root.nameMessage.style.cssText = 'background-image: url(\'./src/blocks/form-rent-auto/images/form-orange.png\');';
       setTimeout(() => {
-        this.nameErrorMessage.innerHTML = '';
+        this.root.nameErrorMessage.innerHTML = '';
       }, 2000);
     } else {
-      this.nameErrorMessage.innerHTML = '';
-      this.nameMessage.innerHTML = 'thanks!';
-      this.nameMessage.style.cssText = 'background-image: url(\'./src/blocks/form-rent-auto/images/form-color2.png\');';
+      this.root.nameErrorMessage.innerHTML = '';
+      this.root.nameMessage.innerHTML = 'thanks!';
+      this.root.nameMessage.style.cssText = 'background-image: url(\'./src/blocks/form-rent-auto/images/form-color2.png\');';
       setTimeout(() => {
-        this.nameErrorMessage.innerHTML = '';
+        this.root.nameErrorMessage.innerHTML = '';
       }, 2000);
     }
 
     if (errorPatronymic === true) {
-      this.patronymicErrorMessage.innerHTML = message;
-      this.patronymicMessage.innerHTML = 'error';
-      this.patronymicMessage.style.cssText = 'background-image: url(\'./src/blocks/form-rent-auto/images/form-orange.png\');';
+      this.root.patronymicErrorMessage.innerHTML = message;
+      this.root.patronymicMessage.innerHTML = 'error';
+      this.root.patronymicMessage.style.cssText = 'background-image: url(\'./src/blocks/form-rent-auto/images/form-orange.png\');';
       setTimeout(() => {
-        this.patronymicErrorMessage.innerHTML = '';
+        this.root.patronymicErrorMessage.innerHTML = '';
       }, 2000);
     } else {
-      this.patronymicErrorMessage.innerHTML = '';
-      this.patronymicMessage.innerHTML = 'thanks!';
-      this.patronymicMessage.style.cssText = 'background-image: url(\'./src/blocks/form-rent-auto/images/form-color2.png\');';
+      this.root.patronymicErrorMessage.innerHTML = '';
+      this.root.patronymicMessage.innerHTML = 'thanks!';
+      this.root.patronymicMessage.style.cssText = 'background-image: url(\'./src/blocks/form-rent-auto/images/form-color2.png\');';
       setTimeout(() => {
-        this.patronymicErrorMessage.innerHTML = '';
+        this.root.patronymicErrorMessage.innerHTML = '';
       }, 2000);
     }
 
     if (errorPhone === true) {
-      this.phoneErrorMessage.innerHTML = message;
-      this.phoneMessage.innerHTML = 'error';
-      this.phoneMessage.style.cssText = 'background-image: url(\'./src/blocks/form-rent-auto/images/form-orange.png\');';
+      this.root.phoneErrorMessage.innerHTML = message;
+      this.root.phoneMessage.innerHTML = 'error';
+      this.root.phoneMessage.style.cssText = 'background-image: url(\'./src/blocks/form-rent-auto/images/form-orange.png\');';
       setTimeout(() => {
-        this.phoneErrorMessage.innerHTML = '';
+        this.root.phoneErrorMessage.innerHTML = '';
       }, 2000);
     } else {
-      this.phoneErrorMessage.innerHTML = '';
-      this.phoneMessage.innerHTML = 'thanks!';
-      this.phoneMessage.style.cssText = 'background-image: url(\'./src/blocks/form-rent-auto/images/form-color2.png\');';
+      this.root.phoneErrorMessage.innerHTML = '';
+      this.root.phoneMessage.innerHTML = 'thanks!';
+      this.root.phoneMessage.style.cssText = 'background-image: url(\'./src/blocks/form-rent-auto/images/form-color2.png\');';
       setTimeout(() => {
-        this.phoneErrorMessage.innerHTML = '';
+        this.root.phoneErrorMessage.innerHTML = '';
       }, 2000);
     }
 
     if (errorEmail === true) {
-      this.emailErrorMessage.innerHTML = message;
-      this.emailMessage.innerHTML = 'error';
-      this.emailMessage.style.cssText = 'background-image: url(\'./src/blocks/form-rent-auto/images/form-orange.png\');';
+      this.root.emailErrorMessage.innerHTML = message;
+      this.root.emailMessage.innerHTML = 'error';
+      this.root.emailMessage.style.cssText = 'background-image: url(\'./src/blocks/form-rent-auto/images/form-orange.png\');';
       setTimeout(() => {
-        this.emailErrorMessage.innerHTML = '';
+        this.root.emailErrorMessage.innerHTML = '';
       }, 2000);
     } else {
-      this.emailErrorMessage.innerHTML = '';
-      this.emailMessage.innerHTML = 'thanks!';
-      this.emailMessage.style.cssText = 'background-image: url(\'./src/blocks/form-rent-auto/images/form-color2.png\');';
+      this.root.emailErrorMessage.innerHTML = '';
+      this.root.emailMessage.innerHTML = 'thanks!';
+      this.root.emailMessage.style.cssText = 'background-image: url(\'./src/blocks/form-rent-auto/images/form-color2.png\');';
       setTimeout(() => {
-        this.emailErrorMessage.innerHTML = '';
+        this.root.emailErrorMessage.innerHTML = '';
       }, 2000);
     }
 
@@ -235,33 +241,15 @@ class FormRentAuto {
       || fillPatronymic === false
       || fillPhone === false
       || fillEmail === false) {
-      this.completeForm.innerHTML = formNotComplete;
+      this.root.completeForm.innerHTML = formNotComplete;
     } else {
-      this.completeForm.innerHTML = '';
+      this.root.completeForm.innerHTML = '';
     }
   }
 }
 
-const root = {
-  surnameInput: document.getElementsByClassName('form-rent-auto__surname-input')[0],
-  surnameMessage: document.getElementsByClassName('form-rent-auto__surname-message')[0],
-  surnameErrorMessage: document.getElementsByClassName('form-rent-auto__surname-error-message')[0],
-  nameInput: document.getElementsByClassName('form-rent-auto__name-input')[0],
-  nameMessage: document.getElementsByClassName('form-rent-auto__name-message')[0],
-  nameErrorMessage: document.getElementsByClassName('form-rent-auto__name-error-message')[0],
-  patronymicInput: document.getElementsByClassName('form-rent-auto__patronymic-input')[0],
-  patronymicMessage: document.getElementsByClassName('form-rent-auto__patronymic-message')[0],
-  patronymicErrorMessage: document.getElementsByClassName('form-rent-auto__patronymic-error-message')[0],
-  phoneInput: document.getElementsByClassName('form-rent-auto__phone-input')[0],
-  phoneMessage: document.getElementsByClassName('form-rent-auto__phone-message')[0],
-  phoneErrorMessage: document.getElementsByClassName('form-rent-auto__phone-error-message')[0],
-  emailInput: document.getElementsByClassName('form-rent-auto__email-input')[0],
-  emailMessage: document.getElementsByClassName('form-rent-auto__email-message')[0],
-  emailErrorMessage: document.getElementsByClassName('form-rent-auto__email-error-message')[0],
-  submitForm: document.getElementsByClassName('form-rent-auto-submit')[0],
-  completeForm: document.getElementsByClassName('form-rent-auto-completeform')[0],
-};
+const root = document.getElementsByClassName('form-rent-auto');
 
-if (typeof root.surnameInput !== 'undefined') {
-  new FormRentAuto(root);
+for (let i = 0; i < root.length; i += 1) {
+  new FormRentAuto(root[i]);
 }

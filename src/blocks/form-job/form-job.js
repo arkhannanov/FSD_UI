@@ -13,20 +13,9 @@ const formNotComplete = 'Form is not complete.';
 
 class FormJob {
   constructor(root) {
-    this.jobTitleInput = root.jobTitleInput;
-    this.jobTitleMessage = root.jobTitleMessage;
-    this.jobTitleErrorMessage = root.jobTitleErrorMessage;
-    this.facebookInput = root.facebookInput;
-    this.facebookMessage = root.facebookMessage;
-    this.facebookErrorMessage = root.facebookErrorMessage;
-    this.twitterInput = root.twitterInput;
-    this.twitterMessage = root.twitterMessage;
-    this.twitterErrorMessage = root.twitterErrorMessage;
-    this.dribbbleInput = root.dribbbleInput;
-    this.dribbbleMessage = root.dribbbleMessage;
-    this.dribbbleErrorMessage = root.dribbbleErrorMessage;
-    this.submitButton = root.submitButton;
-    this.completeForm = root.completeForm;
+    this.root = root;
+
+    this.enableElements();
     this.enableJobTitleInput();
     this.enableFacebookInput();
     this.enableTwitterInput();
@@ -34,24 +23,41 @@ class FormJob {
     this.enableSubmitButton();
   }
 
+  enableElements() {
+    this.root.jobTitleInput = this.root.children[1].children[0];
+    this.root.jobTitleMessage = this.root.children[1].children[1];
+    this.root.jobTitleErrorMessage = this.root.children[2];
+    this.root.facebookInput = this.root.children[3].children[0];
+    this.root.facebookMessage = this.root.children[3].children[1];
+    this.root.facebookErrorMessage = this.root.children[4];
+    this.root.twitterInput = this.root.children[5].children[0];
+    this.root.twitterMessage = this.root.children[5].children[1];
+    this.root.twitterErrorMessage = this.root.children[6];
+    this.root.dribbbleInput = this.root.children[7].children[0];
+    this.root.dribbbleMessage = this.root.children[7].children[1];
+    this.root.dribbbleErrorMessage = this.root.children[8];
+    this.root.submitButton = this.root.children[10].children[0];
+    this.root.completeForm = this.root.children[0];
+  }
+
   enableJobTitleInput() {
-    this.jobTitleInput.addEventListener('keyup', this.checkJobTitleInput.bind(this));
+    this.root.jobTitleInput.addEventListener('keyup', this.checkJobTitleInput.bind(this));
   }
 
   enableFacebookInput() {
-    this.facebookInput.addEventListener('keyup', this.checkFacebookInput.bind(this));
+    this.root.facebookInput.addEventListener('keyup', this.checkFacebookInput.bind(this));
   }
 
   enableTwitterInput() {
-    this.twitterInput.addEventListener('keyup', this.checkTwitterInput.bind(this));
+    this.root.twitterInput.addEventListener('keyup', this.checkTwitterInput.bind(this));
   }
 
   enableDribbbleInput() {
-    this.dribbbleInput.addEventListener('keyup', this.checkDribbbleInput.bind(this));
+    this.root.dribbbleInput.addEventListener('keyup', this.checkDribbbleInput.bind(this));
   }
 
   enableSubmitButton() {
-    this.submitButton.addEventListener('click', this.submit.bind(this));
+    this.root.submitButton.addEventListener('click', this.submit.bind(this));
   }
 
   checkJobTitleInput(element) {
@@ -124,66 +130,66 @@ class FormJob {
 
   submit() {
     if (errorJob === true) {
-      this.jobTitleErrorMessage.innerHTML = message;
-      this.jobTitleMessage.innerHTML = 'error';
-      this.jobTitleMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-orange.png\');';
+      this.root.jobTitleErrorMessage.innerHTML = message;
+      this.root.jobTitleMessage.innerHTML = 'error';
+      this.root.jobTitleMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-orange.png\');';
       setTimeout(() => {
-        this.jobTitleErrorMessage.innerHTML = '';
+        this.root.jobTitleErrorMessage.innerHTML = '';
       }, 2000);
     } else {
-      this.jobTitleErrorMessage.innerHTML = '';
-      this.jobTitleMessage.innerHTML = 'thanks!';
-      this.jobTitleMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-color2.png\');';
+      this.root.jobTitleErrorMessage.innerHTML = '';
+      this.root.jobTitleMessage.innerHTML = 'thanks!';
+      this.root.jobTitleMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-color2.png\');';
       setTimeout(() => {
-        this.jobTitleErrorMessage.innerHTML = '';
+        this.root.jobTitleErrorMessage.innerHTML = '';
       }, 2000);
     }
 
     if (errorFacebook === true) {
-      this.facebookErrorMessage.innerHTML = message;
-      this.facebookMessage.innerHTML = 'error';
-      this.facebookMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-orange.png\');';
+      this.root.facebookErrorMessage.innerHTML = message;
+      this.root.facebookMessage.innerHTML = 'error';
+      this.root.facebookMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-orange.png\');';
       setTimeout(() => {
-        this.facebookErrorMessage.innerHTML = '';
+        this.root.facebookErrorMessage.innerHTML = '';
       }, 2000);
     } else {
-      this.facebookErrorMessage.innerHTML = '';
-      this.facebookMessage.innerHTML = 'thanks!';
-      this.facebookMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-color2.png\');';
+      this.root.facebookErrorMessage.innerHTML = '';
+      this.root.facebookMessage.innerHTML = 'thanks!';
+      this.root.facebookMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-color2.png\');';
       setTimeout(() => {
-        this.facebookErrorMessage.innerHTML = '';
+        this.root.facebookErrorMessage.innerHTML = '';
       }, 2000);
     }
 
     if (errorTwitter === true) {
-      this.twitterErrorMessage.innerHTML = message;
-      this.twitterMessage.innerHTML = 'error';
-      this.twitterMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-orange.png\');';
+      this.root.twitterErrorMessage.innerHTML = message;
+      this.root.twitterMessage.innerHTML = 'error';
+      this.root.twitterMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-orange.png\');';
       setTimeout(() => {
-        this.twitterErrorMessage.innerHTML = '';
+        this.root.twitterErrorMessage.innerHTML = '';
       }, 2000);
     } else {
-      this.twitterErrorMessage.innerHTML = '';
-      this.twitterMessage.innerHTML = 'thanks!';
-      this.twitterMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-color2.png\');';
+      this.root.twitterErrorMessage.innerHTML = '';
+      this.root.twitterMessage.innerHTML = 'thanks!';
+      this.root.twitterMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-color2.png\');';
       setTimeout(() => {
-        this.twitterErrorMessage.innerHTML = '';
+        this.root.twitterErrorMessage.innerHTML = '';
       }, 2000);
     }
 
     if (errorDribbble === true) {
-      this.dribbbleErrorMessage.innerHTML = message;
-      this.dribbbleMessage.innerHTML = 'error';
-      this.dribbbleMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-orange.png\');';
+      this.root.dribbbleErrorMessage.innerHTML = message;
+      this.root.dribbbleMessage.innerHTML = 'error';
+      this.root.dribbbleMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-orange.png\');';
       setTimeout(() => {
-        this.dribbbleErrorMessage.innerHTML = '';
+        this.root.dribbbleErrorMessage.innerHTML = '';
       }, 2000);
     } else {
-      this.dribbbleErrorMessage.innerHTML = '';
-      this.dribbbleMessage.innerHTML = 'thanks!';
-      this.dribbbleMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-color2.png\');';
+      this.root.dribbbleErrorMessage.innerHTML = '';
+      this.root.dribbbleMessage.innerHTML = 'thanks!';
+      this.root.dribbbleMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-color2.png\');';
       setTimeout(() => {
-        this.dribbbleErrorMessage.innerHTML = '';
+        this.root.dribbbleErrorMessage.innerHTML = '';
       }, 2000);
     }
 
@@ -191,30 +197,15 @@ class FormJob {
       || fillFacebook === false
       || fillTwitter === false
       || fillDribbble === false) {
-      this.completeForm.innerHTML = formNotComplete;
+      this.root.completeForm.innerHTML = formNotComplete;
     } else {
-      this.completeForm.innerHTML = '';
+      this.root.completeForm.innerHTML = '';
     }
   }
 }
 
-const root = {
-  jobTitleInput: document.getElementsByClassName('form-job__job-title-input')[0],
-  jobTitleMessage: document.getElementsByClassName('form-job__job-title-message')[0],
-  jobTitleErrorMessage: document.getElementsByClassName('form-job__job-title-error-message')[0],
-  facebookInput: document.getElementsByClassName('form-job__facebook-input')[0],
-  facebookMessage: document.getElementsByClassName('form-job__facebook-message')[0],
-  facebookErrorMessage: document.getElementsByClassName('form-job__facebook-error-message')[0],
-  twitterInput: document.getElementsByClassName('form-job__twitter-input')[0],
-  twitterMessage: document.getElementsByClassName('form-job__twitter-message')[0],
-  twitterErrorMessage: document.getElementsByClassName('form-job__twitter-error-message')[0],
-  dribbbleInput: document.getElementsByClassName('form-job__dribbble-input')[0],
-  dribbbleMessage: document.getElementsByClassName('form-job__dribbble-message')[0],
-  dribbbleErrorMessage: document.getElementsByClassName('form-job__dribbble-error-message')[0],
-  submitButton: document.getElementsByClassName('form-job__submit-button')[0],
-  completeForm: document.getElementsByClassName('form-job__completeform')[0],
-};
+const root = document.getElementsByClassName('form-job');
 
-if (typeof root.jobTitleInput !== 'undefined') {
-  new FormJob(root);
+for (let i = 0; i < root.length; i += 1) {
+  new FormJob(root[i]);
 }
