@@ -8,7 +8,7 @@ let errorFacebook = true;
 let errorTwitter = true;
 let errorDribbble = true;
 
-const message = 'This field should at least contain 3 characters.';
+const message = 'This field should at least contain 4 characters.';
 const formNotComplete = 'Form is not complete.';
 
 class FormJob {

@@ -10,7 +10,7 @@ let errorPatronymic = true;
 let errorPhone = true;
 let errorEmail = true;
 
-const message = 'Должно быть по крайней мере 3 симовола.';
+const message = 'Должно быть по крайней мере 4 симовола.';
 const formNotComplete = 'Форма не закончена!';
 
 class FormRentAuto {

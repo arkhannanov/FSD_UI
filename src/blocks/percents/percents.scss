@@ -1,5 +1,7 @@
 .percents {
 
+  position: relative;
+
   &__svg {
     width: 4rem;
     height: 4rem;
@@ -7,10 +9,15 @@
 
   &__number {
     font-size: 1.667rem;
-    color: #9d9d9d;
+    color: black;
     letter-spacing: -0.083rem;
     line-height: 1.75rem;
     font-weight: lighter;
-    transform: translate3d(-0.917rem, 0.625rem, 0);
+    text-align: center;
+    position: absolute;
+    width: 3.6rem;
+    height: 2rem;
+    left: 0.2rem;
+    top: 1rem;
   }
 }

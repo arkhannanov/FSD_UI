@@ -5,7 +5,7 @@ let fillMessage = false;
 let errorName = true;
 let errorEmail = true;
 
-const lengthMessage = 'This field should at least contain 3 characters.';
+const lengthMessage = 'This field should at least contain 4 characters.';
 const emailMessage = 'This seems to be an invalid email.';
 const formNotComplete = 'Form is not complete.';
 
