@@ -1,6 +1,7 @@
-mixin calendar
+mixin calendar(options={monthSize:"", dayNameSize:"", daySize:"", todaySize: ""})
+    - let {monthSize, dayNameSize, daySize, todaySize} = options;
     .calendar
-        .js-calendar__item
+        .js-calendar__item(data-month-size = monthSize, data-day-name-size = dayNameSize, data-day-size = daySize, data-today-size = todaySize)
             .js-calendar__item-upperheader
                 span.js-calendar__item-day
             .js-calendar__item-header

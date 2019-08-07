@@ -19,7 +19,12 @@ mixin profile(options = {headline: "", rightSideHeader: "", profession:"", phone
                         })
                 .profile__calendar-container
                     .profile__calendar
-                        +calendar
+                        +calendar({
+                          monthSize: '1.7rem',
+                          dayNameSize: '0.6rem',
+                          daySize: '1.2rem',
+                          todaySize: 'larger'
+                        })
             .profile__content-right-side-container
                 .profile__content-right-side-header= rightSideHeader
                 .profile__content-right-side-contacts

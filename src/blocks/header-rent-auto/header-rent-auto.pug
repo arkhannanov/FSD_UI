@@ -4,6 +4,24 @@ mixin header-rent-auto(options={ mainPage:"", catalogue:"", aboutUs:""})
         .header-rent-auto__logotip-container
             .header-rent-auto__logotip logotip
         .header-rent-auto__menu-container
-            button.header-rent-auto__main-page-button(name="button")= mainPage
-            button.header-rent-auto__catalogue-button(name="button")= catalogue
-            button.header-rent-auto__about-us-button(name="button")= aboutUs
+            +button({
+              size: `navigation`,
+              color: `green`,
+              name: `js-ripple`,
+              title: `${mainPage}`
+            })
+            +button({
+              size: `navigation`,
+              color: `green`,
+              name: `js-ripple`,
+              title: `${catalogue}`
+            })
+            +button({
+              size: `navigation`,
+              color: `green`,
+              name: `js-ripple`,
+              title: `${aboutUs}`
+            })
+            //button.header-rent-auto__main-page-button(name="button")= mainPage
+            //button.header-rent-auto__catalogue-button(name="button")= catalogue
+            //button.header-rent-auto__about-us-button(name="button")= aboutUs

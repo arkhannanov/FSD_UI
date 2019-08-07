@@ -173,7 +173,20 @@
         position: absolute;
         top: 9.55rem;
         left: 0;
+
+        &_size{
+
+          &_larger {
+            font-size: 1.5rem;
+            padding: 0;
+            text-align: center;
+            height: 2rem;
+            line-height: 2.1rem;
+            width: 11.617rem;
+          }
+        }
       }
+
     }
   }
 }

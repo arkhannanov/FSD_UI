@@ -10,6 +10,7 @@ class Calendar {
     this._maxDate = maxDate || Defaults.maxDate;
 
     this.selectElements();
+    this.setItemsSize();
 
     this._localize();
 
@@ -18,8 +19,16 @@ class Calendar {
     this.setDate(selectedDate || new Date());
   }
 
-  selectElements() {
+  setItemsSize() {
 
+
+    //
+
+
+
+  }
+
+  selectElements() {
     this.root.dayElem = this.root.childNodes[1].children[0];
     this.root.header = this.root.childNodes[3];
     this.root.monthElem = this.root.childNodes[3].children[0];
@@ -125,6 +134,10 @@ class Calendar {
 
   _createUi() {
 
+    if (this.root.dataset.monthSize !== '') {
+      this.root.monthElem.style.fontSize = `${this.root.dataset.monthSize}`;
+    }
+
     this.root.header.appendChild(document.createTextNode(' '));
     this.root.previosButton.addEventListener('click', () => {
       this.previosMonth();
@@ -147,7 +160,11 @@ class Calendar {
       const colHeader = document.createElement('th');
       colHeader.scope = 'col';
       colHeader.className = ClassNames.TABLE_COL_HEADER;
+      if (this.root.dataset.dayNameSize !== '') {
+        colHeader.style.fontSize = `${this.root.dataset.dayNameSize}`;
+        }
       colHeader.textContent = day;
+
       tableHeadRow.appendChild(colHeader);
     }
 
@@ -186,6 +203,10 @@ class Calendar {
 
     this._footer.className = ClassNames.FOOTER;
     this._footer.innerHTML = "TODAY";
+    if (this.root.dataset.todaySize !== '') {
+      this._footer.classList.add('js-calendar__item-table-footer_size_larger');
+    }
+
     this._footer.addEventListener('click', () => {
       this.today();
     });
@@ -221,6 +242,10 @@ class Calendar {
       for (let i = 0; i < 7; i += 1) {
         const cell = document.createElement('td');
         cell.classList.add(ClassNames.TABLE_CELL);
+
+        if (this.root.dataset.daySize !== '') {
+          cell.style.fontSize = `${this.root.dataset.daySize}`;
+        }
 
         if (date.getMonth() == this._month) {
           cell.textContent = date.getDate();
