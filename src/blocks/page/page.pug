@@ -176,10 +176,11 @@ mixin page
                         })
             .page__stages
                 +headline ("stages")
-                +stages({
-                  numberOfPoints: 5,
-                  startPoint: 3
-                })
+                .page__stages-content
+                    +stages({
+                        numberOfPoints: 5,
+                        startPoint: 3
+                    })
             .page__form-tick-boxes-toggle
                 +headline ("form elements")
                 .page__form-tick-boxes-toggle-container
@@ -189,12 +190,14 @@ mixin page
                         .page__form-tick-boxes-toggle-toggle-headline
                             +headline ("toggles")
                         .page__form-tick-boxes-toggle-toggle-container
-                            +toggle({
-                                id: "1"
-                            })
-                            +toggle({
-                                id: "2"
-                            })
+                            .page__form-tick-boxes-toggle-toggle
+                                +toggle({
+                                    id: "1"
+                                })
+                            .page__form-tick-boxes-toggle-toggle
+                                +toggle({
+                                    id: "2"
+                                })
                         .page__form-tick-boxes-toggle-tick-boxes-headline
                             +headline ("tick boxes")
                         .page__form-tick-boxes-toggle-tick-boxes-container
@@ -209,12 +212,14 @@ mixin page
                     .page__search-drop-down-search-headline
                         +headline ("search / drop down")
                     .page__search-drop-down-search
-                        +search({
-                          error: 'false'
-                        })
-                        +search({
-                          error: 'true'
-                        })
+                        .page__search-drop-down-search-false
+                            +search({
+                                error: 'false'
+                            })
+                        .page__search-drop-down-search-true
+                            +search({
+                                error: 'true'
+                            })
                     .page__search-drop-down-drop-down
                         +drop-down ({
                             contentContainer: [
@@ -228,16 +233,18 @@ mixin page
                     .page__user-profile-headline
                         +headline ("user profile")
                     .page__user-profile-users-container
-                        +user ({
-                            source: "src/blocks/user/images/user-1.png",
-                            name: "John Smith",
-                            profession: "ux designer"
-                        })
-                        +user ({
-                            source: "src/blocks/user/images/user-2.png",
-                            name: "Sarah Brown",
-                            profession: "developer"
-                        })
+                        .page__user
+                            +user ({
+                                source: "src/blocks/user/images/user-1.png",
+                                name: "John Smith",
+                                profession: "ux designer"
+                            })
+                        .page__user
+                            +user ({
+                                source: "src/blocks/user/images/user-2.png",
+                                name: "Sarah Brown",
+                                profession: "developer"
+                            })
             .page__news-events
                 +headline ("news & events")
                 .page__news-events-container
@@ -249,19 +256,20 @@ mixin page
                             Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.`
                     })
                     +events({
-                        source: "src/blocks/events/images/pic-2.png",
-                        number: "24",
-                        month: "Aug",
-                        title: `this is the title`,
-                        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
-                        buttonTitle: "add to calendar"
+                      source: "src/blocks/events/images/pic-2.png",
+                      number: "24",
+                      month: "Aug",
+                      title: `this is the title`,
+                      text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+                      buttonTitle: "add to calendar"
                     })
             .page__location
                 +headline ("location")
-                +location({
-                    title: "Meet us!",
-                    address: "1259  California St san Francisco, CA"
-                })
+                .page__location-map
+                    +location({
+                        title: "Meet us!",
+                        address: "1259  California St san Francisco, CA"
+                    })
             .page__calendar-messaging
                 .page__calendar-wrapper
                     .page__calendar-headline
@@ -280,7 +288,8 @@ mixin page
                         })
             .page__video
                 +headline ("video")
-                +player
+                .page__video-player
+                    +player
             .page__navigation-container
                 +headline ("_______________________________________")
                 .page__navigation

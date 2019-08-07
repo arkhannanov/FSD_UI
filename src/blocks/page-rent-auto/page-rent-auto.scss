@@ -1,4 +1,3 @@
-
 .page-rent-auto {
   max-width: 29.167rem;
 
@@ -14,24 +13,16 @@
     margin-top: 2rem;
   }
 
-  &__drop-down-box {
-    width: 10.417rem;
-    margin-top: 2.667rem;
-    margin-bottom: 3rem;
-
-    &-header {
+  &__drop-down-box-header {
       font-size: 0.583rem;
-    }
   }
 
-  &__drop-down-place {
-    width: 10.417rem;
-    margin-top: 2.667rem;
-    margin-bottom: 3rem;
-
-    &-header {
+  &__drop-down-place-header {
       font-size: 0.583rem;
-    }
+  }
+
+  &__drop-down {
+    margin-bottom: 4rem;
   }
 
   &__slider {
@@ -43,7 +34,7 @@
     width: 10.417rem;
     font-size: 0.583rem;
     line-height: 0.958rem;
-    margin-top: 0.417rem;
+    margin: 1rem 0 1rem 0;
 
     &-tick-box {
       position: relative;
@@ -96,5 +87,9 @@
     position: absolute;
     top: 2rem;
     margin-left: 1.8rem;
+  }
+
+  &__navigation {
+    margin-top: 1rem;
   }
 }
