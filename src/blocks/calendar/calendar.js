@@ -159,7 +159,7 @@ class Calendar {
       const day = this._dayNames[(i + this._startOfWeek) % 7];
       const colHeader = document.createElement('th');
       colHeader.scope = 'col';
-      colHeader.className = ClassNames.TABLE_COL_HEADER;
+      colHeader.className = ClassNames.TABLE_COLUMN_HEADER;
       if (this.root.dataset.dayNameSize !== '') {
         colHeader.style.fontSize = `${this.root.dataset.dayNameSize}`;
         }

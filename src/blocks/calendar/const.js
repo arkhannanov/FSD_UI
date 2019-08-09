@@ -167,7 +167,7 @@ const Const = {
     TABLE_CELL: 'calendar__item-table-cell',
     TABLE_CELL_DISABLED: 'calendar__item-table-cell_disabled',
     TABLE_CELL_SELECTED: 'calendar__item-table-cell_selected',
-    TABLE_COL_HEADER: 'calendar__item-table-col-header',
+    TABLE_COLUMN_HEADER: 'calendar__item-table-column-header',
     TABLE_HEAD: 'calendar__item-table-head',
     TABLE_ROW: 'calendar__item-table-row',
     YEAR: 'calendar__item-year',

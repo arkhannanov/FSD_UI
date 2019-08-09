@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8157867f-740d-4692-8a34-f0abfefb57ba" name="Default Changelist" comment="" />
+    <list default="true" id="8157867f-740d-4692-8a34-f0abfefb57ba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/calendar/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/calendar/calendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/calendar/calendar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/calendar/calendar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/calendar/const.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/calendar/const.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -14,15 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/player/player.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/search/search.pug">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,9 +51,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/interior/interior.pug">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/blocks/calendar/calendar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="161" column="58" selection-start-line="161" selection-start-column="58" selection-end-line="161" selection-end-column="58" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -101,10 +106,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dayElem</find>
-      <find>header</find>
-      <find>monthElem</find>
-      <find>previosButton</find>
       <find>nextButton</find>
       <find>root</find>
       <find>this</find>
@@ -131,10 +132,12 @@
       <find>js-form-rent-auto</find>
       <find>js-player</find>
       <find>js-stages</find>
+      <find>upperheader</find>
+      <find>__tel</find>
+      <find>table-col-header</find>
+      <find>TABLE_COL_HEADER</find>
     </findStrings>
     <replaceStrings>
-      <replace>toggle__switch</replace>
-      <replace>social-network</replace>
       <replace>job</replace>
       <replace>interior</replace>
       <replace>rent-auto</replace>
@@ -163,11 +166,13 @@
       <replace>form-rent-auto</replace>
       <replace>player</replace>
       <replace>stages</replace>
+      <replace>upper-header</replace>
+      <replace>__phone-number</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\Artur Khannanov\Desktop\FSD_CV\FSD_UI\src\blocks</dir>
-      <dir>C:\Users\Artur Khannanov\Desktop\FSD\FSD_UI\src</dir>
       <dir>C:\Users\Artur Khannanov\Desktop\FSD\FSD_UI</dir>
+      <dir>C:\Users\Artur Khannanov\Desktop\FSD\FSD_UI\src</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -176,7 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/blocks/slider/slider.js" />
         <option value="$PROJECT_DIR$/src/blocks/slider/slider.pug" />
         <option value="$PROJECT_DIR$/src/blocks/drop-down/drop-down.js" />
         <option value="$PROJECT_DIR$/src/blocks/player/player.js" />
@@ -215,8 +219,6 @@
         <option value="$PROJECT_DIR$/src/blocks/page/page.scss" />
         <option value="$PROJECT_DIR$/src/blocks/page-interior/page-interior.scss" />
         <option value="$PROJECT_DIR$/src/blocks/calendar/calendar.pug" />
-        <option value="$PROJECT_DIR$/src/blocks/calendar/calendar.js" />
-        <option value="$PROJECT_DIR$/src/blocks/calendar/calendar.scss" />
         <option value="$PROJECT_DIR$/src/blocks/drop-down/drop-down.pug" />
         <option value="$PROJECT_DIR$/src/blocks/form/form.pug" />
         <option value="$PROJECT_DIR$/src/blocks/form-job/form-job.pug" />
@@ -227,6 +229,9 @@
         <option value="$PROJECT_DIR$/src/blocks/player/player.pug" />
         <option value="$PROJECT_DIR$/src/blocks/search/search.pug" />
         <option value="$PROJECT_DIR$/src/blocks/stages/stages.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/calendar/calendar.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/calendar/const.js" />
+        <option value="$PROJECT_DIR$/src/blocks/calendar/calendar.js" />
       </list>
     </option>
   </component>
@@ -678,21 +683,7 @@
       <workItem from="1565073165553" duration="17641000" />
       <workItem from="1565170979538" duration="13306000" />
       <workItem from="1565271624379" duration="897000" />
-      <workItem from="1565329274086" duration="2588000" />
-    </task>
-    <task id="LOCAL-00047" summary="Refactoring #12 ripple - элемент button">
-      <created>1563434079501</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1563434079501</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Refactoring #12 ripple удален отовсюду кроме button">
-      <created>1563434309389</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1563434309389</updated>
+      <workItem from="1565329274086" duration="2962000" />
     </task>
     <task id="LOCAL-00049" summary="Refactoring #12 ripple удален отовсюду кроме button">
       <created>1563435024017</created>
@@ -1023,11 +1014,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565331626688</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="Refactoring #10 Исправлено upperheader">
+      <created>1565331949381</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1565331949383</updated>
+    </task>
+    <task id="LOCAL-00097" summary="Refactoring #10 Исправлено &amp;__tel">
+      <created>1565332126392</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1565332126392</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="382961000" />
+    <option name="totallyTimeSpent" value="383335000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1040,6 +1045,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.86206895" visible="true" weight="0.18018967" />
       <window_info id="Structure" order="1" sideWeight="0.13793103" side_tool="true" weight="0.12802951" />
@@ -1127,8 +1133,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactoring #17 Исправление messaging" />
-    <MESSAGE value="Refactoring #10 Исрпвлено перечисление в названиях классов." />
     <MESSAGE value="Refactoring #18 Меликие правки" />
     <MESSAGE value="Refactoring #17 Исправлено messaging." />
     <MESSAGE value="Refactoring #18 Исправлен модификатор." />
@@ -1152,7 +1156,9 @@
     <MESSAGE value="Refactoring #16 Правки размеров шрифтов." />
     <MESSAGE value="Refactoring #16 Избавился от внешней геометрии для блоков." />
     <MESSAGE value="Refactoring #10 Исправлены js-префиксы." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring #10 Исправлены js-префиксы." />
+    <MESSAGE value="Refactoring #10 Исправлено upperheader" />
+    <MESSAGE value="Refactoring #10 Исправлено &amp;__tel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring #10 Исправлено &amp;__tel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1386,13 +1392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/calendar/calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="293" column="49" selection-start-line="293" selection-start-column="49" selection-end-line="293" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/calendar/calendar.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1478,6 +1477,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/interior/interior.pug">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/calendar/calendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="161" column="58" selection-start-line="161" selection-start-column="58" selection-end-line="161" selection-end-column="58" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
