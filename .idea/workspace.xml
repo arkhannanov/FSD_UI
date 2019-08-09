@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8157867f-740d-4692-8a34-f0abfefb57ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/form-job/form-job.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form-job/form-job.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/form/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form/form.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/player/player.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/player/player.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -19,29 +17,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/button/button.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/blocks/player/player.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="74" column="30" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
+            <state relative-caret-position="187">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/calendar/calendar.js">
+        <entry file="file://$PROJECT_DIR$/src/blocks/search/search.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="22" column="6" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="6" />
+            <state relative-caret-position="867">
+              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/stages/stages.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1258">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/calendar/const.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="165" selection-start-line="165" selection-end-line="165" />
             </state>
           </provider>
         </entry>
@@ -49,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
+            <state relative-caret-position="-3044">
               <caret line="53" column="59" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="59" />
             </state>
           </provider>
@@ -67,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/form/form.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="27" column="70" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
+            <state relative-caret-position="-1">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -76,15 +83,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/form-job/form-job.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
+            <state relative-caret-position="-902">
               <caret line="134" column="25" selection-start-line="134" selection-start-column="25" selection-end-line="134" selection-end-column="25" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/location/location.pug">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -221,7 +223,6 @@
         <option value="$PROJECT_DIR$/src/blocks/search/search.pug" />
         <option value="$PROJECT_DIR$/src/blocks/stages/stages.pug" />
         <option value="$PROJECT_DIR$/src/blocks/calendar/calendar.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/calendar/const.js" />
         <option value="$PROJECT_DIR$/src/blocks/header-social-network/header-social-network.pug" />
         <option value="$PROJECT_DIR$/src/blocks/header-social-network/header-social-network.scss" />
         <option value="$PROJECT_DIR$/src/blocks/percents/percents.pug" />
@@ -235,12 +236,13 @@
         <option value="$PROJECT_DIR$/src/blocks/stages/stages.js" />
         <option value="$PROJECT_DIR$/src/blocks/form/form.pug" />
         <option value="$PROJECT_DIR$/src/blocks/form/form.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/calendar/calendar.js" />
         <option value="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.js" />
         <option value="$PROJECT_DIR$/src/blocks/location/location.js" />
         <option value="$PROJECT_DIR$/src/blocks/location/location-init.js" />
         <option value="$PROJECT_DIR$/src/blocks/form-job/form-job.js" />
+        <option value="$PROJECT_DIR$/src/blocks/calendar/calendar.js" />
         <option value="$PROJECT_DIR$/src/blocks/form/form.js" />
+        <option value="$PROJECT_DIR$/src/blocks/calendar/const.js" />
         <option value="$PROJECT_DIR$/src/blocks/player/player.js" />
       </list>
     </option>
@@ -693,21 +695,7 @@
       <workItem from="1565073165553" duration="17641000" />
       <workItem from="1565170979538" duration="13306000" />
       <workItem from="1565271624379" duration="897000" />
-      <workItem from="1565329274086" duration="14089000" />
-    </task>
-    <task id="LOCAL-00056" summary="Refactoring #16 Исправлен pixel perfect после правок.">
-      <created>1563462098094</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1563462098095</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Refactoring #10 Создана папка vendors, стили и js файл плагина перемещен в нее, также файл favicons.js">
-      <created>1563462707452</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1563462707453</updated>
+      <workItem from="1565329274086" duration="14948000" />
     </task>
     <task id="LOCAL-00058" summary="Refactoring #10 Исправлены сокращения btn и prev">
       <created>1563464241969</created>
@@ -1038,11 +1026,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565340057276</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="Refactoring #9 Исправлены наименования хендлеров.">
+      <created>1565344523696</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1565344523696</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Refactoring #9 Удалены ненужные комментарии.">
+      <created>1565344807246</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1565344807246</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="394462000" />
+    <option name="totallyTimeSpent" value="395321000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1057,7 +1059,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.86206895" visible="true" weight="0.18018967" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.86206895" visible="true" weight="0.18018967" />
       <window_info id="Structure" order="1" sideWeight="0.13793103" side_tool="true" weight="0.12802951" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -1072,7 +1074,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.48946258" weight="0.30877572" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5105374" side_tool="true" weight="0.30985916" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49947312" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.48946258" visible="true" weight="0.25785482" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.48946258" visible="true" weight="0.25785482" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1143,7 +1145,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactoring #16 Выравнение чисел в Interior." />
     <MESSAGE value="Refactoring #16 Редактирование формы Interior. Использовал готовую компоненту." />
     <MESSAGE value="Refactoring #16 Текст текстом в Лого и мелкие правки." />
     <MESSAGE value="Refactoring #16 Использовал drop-down компонену на rent-auto страницы. Дописал необходимый js код." />
@@ -1154,7 +1155,6 @@
     <MESSAGE value="Refactoring #9 Изменил method на methodTitle" />
     <MESSAGE value="Refactoring #9 Исправлены имена обработчиков событий." />
     <MESSAGE value="Refactoring #9 Удалены избыточные методы из конструкторов." />
-    <MESSAGE value="Refactoring #9 Удалены ненужные комментарии." />
     <MESSAGE value="Refactoring #16 Доработки." />
     <MESSAGE value="Refactoring #16 Правки размеров шрифтов." />
     <MESSAGE value="Refactoring #16 Избавился от внешней геометрии для блоков." />
@@ -1168,7 +1168,9 @@
     <MESSAGE value="Refactoring #10 Единообразное использование for" />
     <MESSAGE value="Refactoring #9 Исправил выборку элементов." />
     <MESSAGE value="Refactoring #9 Добавил класс Location" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring #9 Добавил класс Location" />
+    <MESSAGE value="Refactoring #9 Исправлены наименования хендлеров." />
+    <MESSAGE value="Refactoring #9 Удалены ненужные комментарии." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring #9 Удалены ненужные комментарии." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1234,15 +1236,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
           <caret line="73" column="58" selection-start-line="73" selection-start-column="58" selection-end-line="73" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/calendar/const.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2601">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1425,36 +1418,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/search/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/stages/stages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/location/location.pug">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/location/location.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/location/location-init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/button/button.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1465,8 +1430,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/calendar/calendar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="22" column="6" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="6" />
+        <state relative-caret-position="-3061">
+          <caret line="95" column="21" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1477,31 +1442,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/form/form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/form-job/form-job.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
+        <state relative-caret-position="-902">
           <caret line="134" column="25" selection-start-line="134" selection-start-column="25" selection-end-line="134" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
+        <state relative-caret-position="-3044">
           <caret line="53" column="59" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/form/form.js">
+    <entry file="file://$PROJECT_DIR$/src/blocks/search/search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="27" column="70" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
+        <state relative-caret-position="867">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/stages/stages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/calendar/const.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="165" selection-start-line="165" selection-end-line="165" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/location/location-init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/location/location.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/player/player.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="74" column="30" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
+        <state relative-caret-position="187">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
         </state>
       </provider>
     </entry>

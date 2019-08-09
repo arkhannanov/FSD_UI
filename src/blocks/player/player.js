@@ -10,7 +10,6 @@ class Player {
     this.enableElements();
     this.enableTogglePlay();
     this.enablePlayButton();
-    this.enableUpdateButtonPlay();
     this.enableProgress();
     this.enableTogglePlay();
     this.enableProgressClick();
@@ -36,10 +35,6 @@ class Player {
 
   enablePlayButton() {
     this.toggle.addEventListener('click', this.handleTogglePlayClick.bind(this));
-  }
-
-  enableUpdateButtonPlay() {
-    this.video.addEventListener('play', this.handlePlayButtonClick.bind(this));
   }
 
   enableProgress() {
@@ -73,10 +68,6 @@ class Player {
   handleTogglePlayClick() {
     const methodTitle = this.video.paused ? 'play' : 'pause';
     this.video[methodTitle]();
-    this.handlePlayButtonClick();
-  }
-
-  handlePlayButtonClick() {
     const icon = this.video.paused ? '►' : '❚ ❚';
     this.toggle.classList.remove('player__button_unclicked');
     this.toggle.textContent = icon;
