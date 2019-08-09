@@ -61,7 +61,7 @@ class FormJob {
   }
 
   enableSubmitButton() {
-    this.submitButton.addEventListener('click', this.handleSubmitClick.bind(this));
+    this.submitButton.addEventListener('click', this.handleSubmitButtonClick.bind(this));
   }
 
   hadleJobTitleInputKeyUp(element) {
@@ -132,7 +132,7 @@ class FormJob {
     }
   }
 
-  handleSubmitClick() {
+  handleSubmitButtonClick() {
     if (errorJob === true) {
       this.jobTitleErrorMessage.innerHTML = message;
       this.jobTitleMessage.innerHTML = 'error';

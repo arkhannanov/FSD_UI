@@ -11,7 +11,7 @@ class Player {
     this.enableTogglePlay();
     this.enablePlayButton();
     this.enableUpdateButtonPlay();
-    this.enableHandleProgress();
+    this.enableProgress();
     this.enableTogglePlay();
     this.enableProgressClick();
     this.enableProgressMouseMove();
@@ -39,10 +39,10 @@ class Player {
   }
 
   enableUpdateButtonPlay() {
-    this.video.addEventListener('play', this.handleUpdateButtonPlay.bind(this));
+    this.video.addEventListener('play', this.handlePlayButtonClick.bind(this));
   }
 
-  enableHandleProgress() {
+  enableProgress() {
     this.video.addEventListener('timeupdate', this.handleProgressTimeupdate.bind(this));
   }
 
@@ -67,22 +67,19 @@ class Player {
   }
 
   enablekeyNavigation() {
-    window.addEventListener('keyup', this.handleKeyNavigationKeyUp.bind(this));
+    window.addEventListener('keyup', this.handleWindowKeyUp.bind(this));
   }
 
   handleTogglePlayClick() {
     const methodTitle = this.video.paused ? 'play' : 'pause';
     this.video[methodTitle]();
+    this.handlePlayButtonClick();
   }
 
-  handleUpdateButtonPlay() {
+  handlePlayButtonClick() {
     const icon = this.video.paused ? '►' : '❚ ❚';
     this.toggle.classList.remove('player__button_unclicked');
     this.toggle.textContent = icon;
-  }
-
-  skip() {
-    this.video.currentTime += parseFloat(this.dataset.skip);
   }
 
   handleRangeUpdate() {
@@ -122,7 +119,7 @@ class Player {
     }
   }
 
-  handleKeyNavigationKeyUp(element) {
+  handleWindowKeyUp(element) {
     if (element.code === 'Space') {
       this.togglePlay();
     } else if (element.code === 'ArrowRight') {

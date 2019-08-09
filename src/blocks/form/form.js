@@ -49,7 +49,7 @@ class Form {
   }
 
   enableFormSubmitButton() {
-    this.formSubmitButton.addEventListener('click', this.handleSubmitButtonClick.bind(this));
+    this.formSubmitButton.addEventListener('click', this.handleFormSubmitButtonClick.bind(this));
   }
 
   handleFormNameInputKeyUp(element) {
@@ -97,7 +97,7 @@ class Form {
     }
   }
 
-  handleSubmitButtonClick() {
+  handleFormSubmitButtonClick() {
 
     if (errorName === true) {
       this.formNameInputErrorMessage.innerHTML = lengthMessage;
