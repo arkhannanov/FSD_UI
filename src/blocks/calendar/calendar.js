@@ -10,7 +10,6 @@ class Calendar {
     this._maxDate = maxDate || Defaults.maxDate;
 
     this.selectElements();
-    this.setItemsSize();
 
     this._localize();
 
@@ -19,21 +18,12 @@ class Calendar {
     this.setDate(selectedDate || new Date());
   }
 
-  setItemsSize() {
-
-
-    //
-
-
-
-  }
-
   selectElements() {
-    this.root.dayElem = this.root.childNodes[1].children[0];
-    this.root.header = this.root.childNodes[3];
-    this.root.monthElem = this.root.childNodes[3].children[0];
-    this.root.previosButton = this.root.childNodes[3].children[1];
-    this.root.nextButton = this.root.childNodes[3].children[2];
+    this.dayElem = this.root.querySelector('.calendar__item-day');
+    this.header = this.root.querySelector('.calendar__item-header');
+    this.monthElem = this.root.querySelector('.calendar__item-month');
+    this.previosButton = this.root.querySelector('.calendar__item-button-previous');
+    this.nextButton = this.root.querySelector('.calendar__item-button-next');
   }
 
   today() {
@@ -135,14 +125,14 @@ class Calendar {
   _createUi() {
 
     if (this.root.dataset.monthSize !== '') {
-      this.root.monthElem.style.fontSize = `${this.root.dataset.monthSize}`;
+      this.monthElem.style.fontSize = `${this.root.dataset.monthSize}`;
     }
 
-    this.root.header.appendChild(document.createTextNode(' '));
-    this.root.previosButton.addEventListener('click', () => {
+    this.header.appendChild(document.createTextNode(' '));
+    this.previosButton.addEventListener('click', () => {
       this.previosMonth();
     });
-    this.root.nextButton.addEventListener('click', () => {
+    this.nextButton.addEventListener('click', () => {
       this.nextMonth();
     });
 
@@ -216,19 +206,19 @@ class Calendar {
   }
 
   _updateUi() {
-    this.root.monthElem.textContent = this._monthNames[this._month];
-    this.root.dayElem.textContent = this._date;
+    this.monthElem.textContent = this._monthNames[this._month];
+    this.dayElem.textContent = this._date;
 
     if (this._isMinMonth()) {
-      this.root.previosButton.classList.add(ClassNames.BUTTON_DISABLED);
+      this.previosButton.classList.add(ClassNames.BUTTON_DISABLED);
     } else {
-      this.root.previosButton.classList.remove(ClassNames.BUTTON_DISABLED);
+      this.previosButton.classList.remove(ClassNames.BUTTON_DISABLED);
     }
 
     if (this._isMaxMonth()) {
-      this.root.nextButton.classList.add(ClassNames.BUTTON_DISABLED);
+      this.nextButton.classList.add(ClassNames.BUTTON_DISABLED);
     } else {
-      this.root.nextButton.classList.remove(ClassNames.BUTTON_DISABLED);
+      this.nextButton.classList.remove(ClassNames.BUTTON_DISABLED);
     }
 
     this._tableBody.innerHTML = '';

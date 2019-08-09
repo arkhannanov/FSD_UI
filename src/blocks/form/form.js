@@ -25,31 +25,31 @@ class Form {
   }
 
   enableElements() {
-    this.root.formNameInput = this.root.children[1].children[0];
-    this.root.formNameMessageContainer = this.root.children[1].children[1];
-    this.root.formNameInputErrorMessage = this.root.children[2];
-    this.root.formEmailInput = this.root.children[3].children[0];
-    this.root.formEmailMessageContainer = this.root.children[3].children[1];
-    this.root.formEmailInputErrorMessage = this.root.children[4];
-    this.root.formMessageInput = this.root.children[5].children[0];
-    this.root.formSubmitButton = this.root.children[6].children[0];
-    this.root.formCompleteform = this.root.children[0];
+    this.formNameInput = this.root.querySelector('.form__name-input');
+    this.formNameMessageContainer = this.root.querySelector('.form__name-message-container');
+    this.formNameInputErrorMessage = this.root.querySelector('.form__name-input-error-message');
+    this.formEmailInput = this.root.querySelector('.form__email-input');
+    this.formEmailMessageContainer = this.root.querySelector('.form__email-message-container');
+    this.formEmailInputErrorMessage = this.root.querySelector(' .form__email-input-error-message');
+    this.formMessageInput = this.root.querySelector('.form__message-input');
+    this.formSubmitButton = this.root.querySelector('.form__submit-button');
+    this.formCompleteform = this.root.querySelector('.form__completeform');
   }
 
   enableFormNameInput() {
-    this.root.formNameInput.addEventListener('keyup', this.handleFormNameInputKeyUp.bind(this));
+    this.formNameInput.addEventListener('keyup', this.handleFormNameInputKeyUp.bind(this));
   }
 
   enableFormEmailInput() {
-    this.root.formEmailInput.addEventListener('keyup', this.handleFormEmailInputKeyUp.bind(this));
+    this.formEmailInput.addEventListener('keyup', this.handleFormEmailInputKeyUp.bind(this));
   }
 
   enableFormMessageInput() {
-    this.root.formMessageInput.addEventListener('keyup', this.handleFormMessageInputKeyUp.bind(this));
+    this.formMessageInput.addEventListener('keyup', this.handleFormMessageInputKeyUp.bind(this));
   }
 
   enableFormSubmitButton() {
-    this.root.formSubmitButton.addEventListener('click', this.handleSubmitButtonClick.bind(this));
+    this.formSubmitButton.addEventListener('click', this.handleSubmitButtonClick.bind(this));
   }
 
   handleFormNameInputKeyUp(element) {
@@ -100,41 +100,41 @@ class Form {
   handleSubmitButtonClick() {
 
     if (errorName === true) {
-      this.root.formNameInputErrorMessage.innerHTML = lengthMessage;
-      this.root.formNameMessageContainer.innerHTML = 'ERROR';
-      this.root.formNameMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-orange.png\');';
+      this.formNameInputErrorMessage.innerHTML = lengthMessage;
+      this.formNameMessageContainer.innerHTML = 'ERROR';
+      this.formNameMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-orange.png\');';
       setTimeout(() => {
-        this.root.formNameInputErrorMessage.innerHTML = '';
+        this.formNameInputErrorMessage.innerHTML = '';
       }, 2000);
     } else {
-      this.root.formNameInputErrorMessage.innerHTML = '';
-      this.root.formNameMessageContainer.innerHTML = 'THANKS!';
-      this.root.formNameMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-color2.png\');';
+      this.formNameInputErrorMessage.innerHTML = '';
+      this.formNameMessageContainer.innerHTML = 'THANKS!';
+      this.formNameMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-color2.png\');';
       setTimeout(() => {
-        this.root.formNameInputErrorMessage.innerHTML = '';
+        this.formNameInputErrorMessage.innerHTML = '';
       }, 2000);
     }
 
     if (errorEmail === true) {
-      this.root.formEmailInputErrorMessage.innerHTML = emailMessage;
-      this.root.formEmailMessageContainer.innerHTML = 'ERROR';
-      this.root.formEmailMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-orange.png\');';
+      this.formEmailInputErrorMessage.innerHTML = emailMessage;
+      this.formEmailMessageContainer.innerHTML = 'ERROR';
+      this.formEmailMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-orange.png\');';
       setTimeout(() => {
-        this.root.formEmailInputErrorMessage.innerHTML = '';
+        this.formEmailInputErrorMessage.innerHTML = '';
       }, 2000);
     } else {
-      this.root.formEmailInputErrorMessage.innerHTML = '';
-      this.root.formEmailMessageContainer.innerHTML = 'THANKS!';
-      this.root.formEmailMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-color2.png\');';
+      this.formEmailInputErrorMessage.innerHTML = '';
+      this.formEmailMessageContainer.innerHTML = 'THANKS!';
+      this.formEmailMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-color2.png\');';
       setTimeout(() => {
-        this.root.formEmailInputErrorMessage.innerHTML = '';
+        this.formEmailInputErrorMessage.innerHTML = '';
       }, 2000);
     }
 
     if (fillName === false || fillEmail === false || fillMessage === false) {
-      this.root.formCompleteform.innerHTML = formNotComplete;
+      this.formCompleteform.innerHTML = formNotComplete;
     } else {
-      this.root.formCompleteform.innerHTML = '';
+      this.formCompleteform.innerHTML = '';
     }
   }
 }

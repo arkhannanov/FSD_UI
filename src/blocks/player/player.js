@@ -22,48 +22,48 @@ class Player {
   }
 
   enableElements() {
-    this.root.playerMain = this.root;
-    this.root.video = this.root.children[0];
-    this.root.progress = this.root.children[1].children[1];
-    this.root.toggle = this.root.children[1].children[0];
-    this.root.fullscreen = this.root.children[1].children[2];
-    this.root.filled = this.root.children[1].children[1].children[0];
+    this.playerMain = this.root;
+    this.video = this.root.querySelector('.player__video');
+    this.progress = this.root.querySelector('.player__progress');
+    this.toggle = this.root.querySelector('.player__button');
+    this.fullscreen = this.root.querySelector('.player__fullscreen-button');
+    this.filled = this.root.querySelector('.player__progress-filling');
   }
 
   enableTogglePlay() {
-    this.root.video.addEventListener('click', this.handleTogglePlayClick.bind(this));
+    this.video.addEventListener('click', this.handleTogglePlayClick.bind(this));
   }
 
   enablePlayButton() {
-    this.root.toggle.addEventListener('click', this.handleTogglePlayClick.bind(this));
+    this.toggle.addEventListener('click', this.handleTogglePlayClick.bind(this));
   }
 
   enableUpdateButtonPlay() {
-    this.root.video.addEventListener('play', this.handleUpdateButtonPlay.bind(this));
+    this.video.addEventListener('play', this.handleUpdateButtonPlay.bind(this));
   }
 
   enableHandleProgress() {
-    this.root.video.addEventListener('timeupdate', this.handleProgressTimeupdate.bind(this));
+    this.video.addEventListener('timeupdate', this.handleProgressTimeupdate.bind(this));
   }
 
   enableProgressClick() {
-    this.root.progress.addEventListener('click', this.handleProgressClick.bind(this));
+    this.progress.addEventListener('click', this.handleProgressClick.bind(this));
   }
 
   enableProgressMouseMove() {
-    this.root.progress.addEventListener('mousemove', element => mousedown && this.scrub(element).bind(this));
+    this.progress.addEventListener('mousemove', element => mousedown && this.scrub(element).bind(this));
   }
 
   enableProgressMouseDown() {
-    this.root.progress.addEventListener('mousedown', () => mousedown = true);
+    this.progress.addEventListener('mousedown', () => mousedown = true);
   }
 
   enableProgressMouseUp() {
-    this.root.progress.addEventListener('mouseup', () => mousedown = false);
+    this.progress.addEventListener('mouseup', () => mousedown = false);
   }
 
   enableToggleFullscreen() {
-    this.root.fullscreen.addEventListener('click', this.handleToggleFullscreenClick.bind(this));
+    this.fullscreen.addEventListener('click', this.handleToggleFullscreenClick.bind(this));
   }
 
   enablekeyNavigation() {
@@ -71,45 +71,45 @@ class Player {
   }
 
   handleTogglePlayClick() {
-    const methodTitle = this.root.video.paused ? 'play' : 'pause';
-    this.root.video[methodTitle]();
+    const methodTitle = this.video.paused ? 'play' : 'pause';
+    this.video[methodTitle]();
   }
 
   handleUpdateButtonPlay() {
-    const icon = this.root.video.paused ? '►' : '❚ ❚';
-    this.root.toggle.classList.remove('js-player__button_unclicked');
-    this.root.toggle.textContent = icon;
+    const icon = this.video.paused ? '►' : '❚ ❚';
+    this.toggle.classList.remove('player__button_unclicked');
+    this.toggle.textContent = icon;
   }
 
   skip() {
-    this.root.video.currentTime += parseFloat(this.dataset.skip);
+    this.video.currentTime += parseFloat(this.dataset.skip);
   }
 
   handleRangeUpdate() {
-    this.root.video[this.name] = this.value;
+    this.video[this.name] = this.value;
   }
 
   handleProgressTimeupdate() {
-    const percent = (this.root.video.currentTime / this.root.video.duration) * 100;
-    this.root.filled.style.width = `${percent}%`;
+    const percent = (this.video.currentTime / this.video.duration) * 100;
+    this.filled.style.width = `${percent}%`;
   }
 
   handleProgressClick(element) {
-    const scrubTime = (element.offsetX / this.root.progress.offsetWidth) * this.root.video.duration;
-    this.root.video.currentTime = scrubTime;
+    const scrubTime = (element.offsetX / this.progress.offsetWidth) * this.video.duration;
+    this.video.currentTime = scrubTime;
   }
 
   handleToggleFullscreenClick() {
     if (!document.fullscreenElement && !document.mozFullScreenElement
       && !document.webkitFullscreenElement && !document.msFullscreenElement) {
-      if (this.root.playerMain.requestFullscreen) {
-        this.root.playerMain.requestFullscreen();
-      } else if (this.root.playerMain.msRequestFullscreen) {
-        this.root.playerMain.msRequestFullscreen();
-      } else if (this.root.playerMain.mozRequestFullScreen) {
-        this.root.playerMain.mozRequestFullScreen();
-      } else if (this.root.playerMain.webkitRequestFullscreen) {
-        this.root.playerMain.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+      if (this.playerMain.requestFullscreen) {
+        this.playerMain.requestFullscreen();
+      } else if (this.playerMain.msRequestFullscreen) {
+        this.playerMain.msRequestFullscreen();
+      } else if (this.playerMain.mozRequestFullScreen) {
+        this.playerMain.mozRequestFullScreen();
+      } else if (this.playerMain.webkitRequestFullscreen) {
+        this.playerMain.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
       }
     } else if (document.exitFullscreen) {
       document.exitFullscreen();
@@ -126,9 +126,9 @@ class Player {
     if (element.code === 'Space') {
       this.togglePlay();
     } else if (element.code === 'ArrowRight') {
-      this.root.video.currentTime += 25;
+      this.video.currentTime += 25;
     } else if (element.code === 'ArrowLeft') {
-      this.root.video.currentTime -= 10;
+      this.video.currentTime -= 10;
     }
   }
 }
