@@ -91,18 +91,9 @@ class Calendar {
     this._updateUi();
   }
 
-  /*
-   * Private
-   */
-
   _localize(locale) {
 
     locale = 'en-IE';
-
-    //   locale = locale ||
-    //     (navigator.languages && navigator.languages[0]) ||
-    //     navigator.language ||
-    //     navigator.userLanguage;
 
     const date = new Date();
     date.setDate(date.getDate() - date.getDay());

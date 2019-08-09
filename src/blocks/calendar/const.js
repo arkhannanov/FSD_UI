@@ -1,7 +1,5 @@
-/*
- * Default month names
- */
 const Const = {
+  
   MonthNames: [
     'January',
     'February',
@@ -16,15 +14,11 @@ const Const = {
     'November',
     'December',
   ],
-  /*
-   * Default weekday names
-   */
+
   DayNames: [
     'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'
   ],
-  /*
-   * Add your locale here (if the first weekday isn't Sunday)
-   */
+
   StartOfWeek: {
     'ar-BH': 6,
     'ar-DZ': 6,
@@ -144,10 +138,6 @@ const Const = {
     'uk': 1,
   },
 
-  /*
-   * Constants
-   */
-
   Events: {
     DATE_SELECTED: 'dateSelected',
   },
@@ -174,9 +164,6 @@ const Const = {
     FOOTER: 'calendar__item-table-footer',
   },
 
-  /*
-   * Default options
-   */
   Defaults: {
     minDate: new Date(-8640000000000000),
     maxDate: new Date(8640000000000000),
