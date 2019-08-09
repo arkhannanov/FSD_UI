@@ -77,7 +77,7 @@ class Player {
 
   handleUpdateButtonPlay() {
     const icon = this.root.video.paused ? '►' : '❚ ❚';
-    this.root.toggle.classList.remove('js-player__button_unclicked');
+    this.root.toggle.classList.remove('player__button_unclicked');
     this.root.toggle.textContent = icon;
   }
 

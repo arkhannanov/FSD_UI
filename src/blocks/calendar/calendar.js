@@ -204,7 +204,7 @@ class Calendar {
     this._footer.className = ClassNames.FOOTER;
     this._footer.innerHTML = "TODAY";
     if (this.root.dataset.todaySize !== '') {
-      this._footer.classList.add('js-calendar__item-table-footer_size_larger');
+      this._footer.classList.add('calendar__item-table-footer_size_larger');
     }
 
     this._footer.addEventListener('click', () => {

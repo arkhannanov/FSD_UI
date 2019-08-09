@@ -47,7 +47,7 @@ class FormRentAuto {
     this.root.emailMessage = this.root.children[8].children[1];
     this.root.emailErrorMessage = this.root.children[9];
     this.root.submitForm = document.getElementsByClassName('js-form-rent-auto-submit')[0];
-    this.root.completeForm = document.getElementsByClassName('page-rent-auto__js-form-rent-auto-completeform')[0];
+    this.root.completeForm = document.getElementsByClassName('js-page-rent-auto__form-rent-auto-completeform')[0];
   }
 
   enableSurnameInput() {
