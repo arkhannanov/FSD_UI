@@ -1,8 +1,8 @@
-
 .form {
   display: flex;
   flex-direction:column;
   justify-content: space-between;
+  white-space: nowrap;
 
   &__completeform {
     border: 0;
@@ -133,6 +133,5 @@
 
   &__submit {
     margin: 0.9rem 0 0 7rem;
-
   }
 }
