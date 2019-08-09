@@ -1,6 +1,11 @@
 .right-side {
-  width: 34%;
+  width: 90%;
   height: 20.833rem;
+
+  @media screen and (max-width: 720px) {
+    width: 56%;
+    margin: auto;
+  }
 
   &__links-contaner {
     height: 2.708rem;
@@ -71,10 +76,18 @@
   }
 
   &__top-news {
-    transform: translate(-0.6rem, -1.5rem) scale(0.8);
+    transform: translate(-0.6rem, -0.5rem) scale(0.8);
+
+    @media screen and (max-width: 720px) {
+      transform: translate(-0.6rem, -0.5rem) scale(0.8);
+    }
   }
 
   &__bottom-news {
-    transform: translate(-0.6rem, -4rem) scale(0.8);
+    transform: translate(-0.6rem, -2rem) scale(0.8);
+
+    @media screen and (max-width: 720px) {
+      transform: translate(-0.6rem, -2rem) scale(0.8);
+    }
   }
 }

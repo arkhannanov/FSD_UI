@@ -13,6 +13,11 @@
     margin: 0.417rem;
     padding-left: 0.417rem;
     text-transform: uppercase;
+    width: 125%;
+
+    @media screen and (max-width: 720px) {
+      width: 125%;
+    }
   }
 
   &__content-container {

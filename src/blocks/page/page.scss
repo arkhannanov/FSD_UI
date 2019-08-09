@@ -1,9 +1,11 @@
 .page {
+  margin: auto;
   margin-top: 3.37rem;
   align-items: center;
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 100%;
 
   @media screen and (max-width: $smDesktopWidth) {
     flex-wrap: wrap;
@@ -28,6 +30,10 @@
       justify-content: space-between;
       margin-bottom: 0.65rem;
       align-items: center;
+
+      @media screen and (max-width: 720px) {
+        flex-wrap: wrap;
+      }
     }
   }
 
@@ -58,31 +64,59 @@
       align-items: baseline;
       margin: 0.85rem 0 5.565rem 0;
       position: relative;
+
+      @media screen and (max-width: 720px) {
+        margin-bottom: 15rem;
+
+      }
     }
 
     &-percents-0 {
       position: absolute;
       left: -6.6rem;
+
+      @media screen and (max-width: 720px) {
+        left: 1em;
+      }
     }
 
     &-percents-38 {
       position: absolute;
       left: -2.6rem;
+
+      @media screen and (max-width: 720px) {
+        left: 6em;
+      }
     }
 
     &-percents-62 {
       position: absolute;
       left: 3rem;
+
+      @media screen and (max-width: 720px) {
+        left: 1em;
+        top: 5rem;
+      }
     }
 
     &-percents-89 {
       position: absolute;
       left: 8.45rem;
+
+      @media screen and (max-width: 720px) {
+        left: 6em;
+        top: 5rem;
+      }
     }
 
     &-pie {
       position: absolute;
       left: 13.75rem;
+
+      @media screen and (max-width: 720px) {
+        left: 4em;
+        top: 10rem;
+      }
     }
   }
 
@@ -94,22 +128,42 @@
       justify-content: space-between;
       width: 25rem;
       margin: 1.45rem auto 2.5rem auto;
+
+      @media screen and (max-width: 720px) {
+        flex-wrap: wrap;
+      }
     }
 
     &-slider-wrapper {
       padding-top: 0.4rem;
       margin-left: 0.1rem;
+
+      @media screen and (max-width: 720px) {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 2rem;
+      }
     }
 
     &-step-slider-wrapper {
       padding-top: 0.4rem;
       padding-right: 0.3rem;
+
+      @media screen and (max-width: 720px) {
+        width: 50%;
+        margin: auto;
+      }
     }
   }
 
   &__stages-content {
     margin: 1.53rem 0 2.85rem 0;
+
+    @media screen and (max-width: 720px) {
+      transform: scale(0.7);
+    }
   }
+
   &__form-tick-boxes-toggle {
 
     &-container {
@@ -119,6 +173,10 @@
       margin-bottom: 2.6rem;
       position: relative;
       height: 11rem;
+
+      @media screen and (max-width: 720px) {
+        margin-bottom: 10rem;
+      }
     }
 
     &-form {
@@ -126,6 +184,10 @@
       width: 107%;
       position: absolute;
       left: -8.8rem;
+
+      @media screen and (max-width: 720px) {
+        left: -2.5rem;
+      }
     }
 
     &-tick-boxes-toggle {
@@ -133,6 +195,11 @@
       position: absolute;
       left: 7rem;
       top: 1.8rem;
+
+      @media screen and (max-width: 720px) {
+        left: 0;
+        top: 12rem;
+      }
     }
 
     &-toggle-headline {
@@ -167,6 +234,10 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 2.7rem;
+
+    @media screen and (max-width: 720px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__search-drop-down {
@@ -174,10 +245,19 @@
     &-container {
       margin-left: 5%;
       width: 120%;
+
+      @media screen and (max-width: 720px) {
+        width: 100%;
+        margin-left: 25%;
+      }
     }
 
     &-search-headline {
       margin-left: 0.7rem;
+
+      @media screen and (max-width: 720px) {
+        margin-right: 8rem;
+      }
     }
 
     &-search {
@@ -201,6 +281,11 @@
     width: 11.458rem;
     margin-right: 3.9rem;
 
+    @media screen and (max-width: 720px) {
+      width: 50%;
+      margin: auto;
+    }
+
     &__headline {
       margin-left: 2rem;
     }
@@ -222,6 +307,26 @@
       flex-direction: row;
       justify-content: space-between;
       margin: 1.5rem 0 1.9rem 0;
+
+      @media screen and (max-width: 720px) {
+        flex-wrap: wrap;
+      }
+    }
+
+    .page__news {
+
+      @media screen and (max-width: 720px) {
+        width: 100%;
+        margin: 0 0 1rem 25%;
+      }
+    }
+
+    .page__events {
+
+      @media screen and (max-width: 720px) {
+        width: 100%;
+        margin-left: 25%;
+      }
     }
 
   }
@@ -231,10 +336,41 @@
     flex-direction: row;
     justify-content: space-evenly;
     margin-bottom: 0.4rem;
+
+    @media screen and (max-width: 720px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__calendar-wrapper {
     margin-right: 1.2rem;
+
+    @media screen and (max-width: 720px) {
+      width: 100%;
+      margin-left: 25%;
+    }
+  }
+
+  &__calendar-headline {
+
+    @media screen and (max-width: 720px) {
+      margin-right: 5rem;
+    }
+  }
+
+  &__messaging-headline {
+
+    @media screen and (max-width: 720px) {
+      margin-right: 6rem;
+    }
+  }
+
+  &__messaging-wrapper {
+
+    @media screen and (max-width: 720px) {
+      width: 100%;
+      margin-left: 25%;
+    }
   }
 
   &__calendar {
@@ -243,10 +379,18 @@
 
   &__location-map {
     margin: 1.4rem 0 0.05rem 0;
+
+    @media screen and (max-width: 720px) {
+      transform: scale(0.7);
+    }
   }
 
   &__video-player {
     margin: 0.8rem 0 1.25rem 0;
+
+    @media screen and (max-width: 720px) {
+      transform: scale(0.7);
+    }
   }
 }
 

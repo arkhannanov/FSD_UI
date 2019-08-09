@@ -4,13 +4,33 @@
   min-height: 100%;
 
   &__content {
-    flex: 1 0 auto;;
+    flex: 1 0 auto;
   }
 
   &__main-content {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
+    @media screen and (max-width: 720px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__profile {
+
+    @media screen and (max-width: 720px) {
+      width: 100%;
+      margin: auto;
+    }
+  }
+
+  &__right-side {
+
+    @media screen and (max-width: 720px) {
+      width: 100%;
+      margin: auto;
+    }
   }
 
   &__footer-social-network {

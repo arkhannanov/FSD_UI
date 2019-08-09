@@ -1,5 +1,4 @@
 .page-rent-auto {
-  max-width: 29.167rem;
 
   &__content {
     display: flex;
@@ -7,10 +6,28 @@
     justify-content: space-evenly;
     margin-top: 1.25rem;
     color: black;
+
+    @media screen and (max-width: 620px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__left-side {
     margin-top: 2rem;
+
+    @media screen and (max-width: 620px) {
+      width: 100%;
+      margin-left: 30%;
+    }
+  }
+
+  &__right-side {
+
+    @media screen and (max-width: 620px) {
+      width: 100%;
+      margin: 0 0 4rem 30%;
+
+    }
   }
 
   &__drop-down-box-header {

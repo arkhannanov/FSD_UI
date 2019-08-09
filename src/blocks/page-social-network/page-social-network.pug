@@ -14,23 +14,25 @@ mixin page-social-network
             })
         .page-social-network__content
             .page-social-network__main-content
-                +profile({
-                  headline: "my profile",
-                  rightSideHeader: "Sarah Brown",
-                  profession: "Actress",
-                  phone: "+79263864674",
-                  twitter: "twitter",
-                  facebook: "facebook",
-                  horror: "Horror",
-                  thriller: "Thriller",
-                  drama: "Drama",
-                  comedy: "Comedy"
-                })
-                +right-side({
-                  profile: "Profile",
-                  feedback: "Feedback",
-                  newsAndEvents: "News and Events"
-                })
+                .page-social-network__profile
+                    +profile({
+                        headline: "my profile",
+                        rightSideHeader: "Sarah Brown",
+                        profession: "Actress",
+                        phone: "+79263864674",
+                        twitter: "twitter",
+                        facebook: "facebook",
+                        horror: "Horror",
+                        thriller: "Thriller",
+                        drama: "Drama",
+                        comedy: "Comedy"
+                    })
+                .page-social-network__right-side
+                    +right-side({
+                        profile: "Profile",
+                        feedback: "Feedback",
+                        newsAndEvents: "News and Events"
+                    })
         .page-social-network__navigation
             +navigation({
               socialNetwork: "social-network",

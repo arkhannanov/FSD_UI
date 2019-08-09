@@ -248,21 +248,23 @@ mixin page
             .page__news-events
                 +headline ("news & events")
                 .page__news-events-container
-                    +news({
-                        source: "src/blocks/news/images/pic-1.png",
-                        title: "It’s all going downhill",
-                        date: "24  august 2013",
-                        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.`
-                    })
-                    +events({
-                      source: "src/blocks/events/images/pic-2.png",
-                      number: "24",
-                      month: "Aug",
-                      title: `this is the title`,
-                      text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
-                      buttonTitle: "add to calendar"
-                    })
+                    .page__news
+                        +news({
+                            source: "src/blocks/news/images/pic-1.png",
+                            title: "It’s all going downhill",
+                            date: "24  august 2013",
+                            text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.`
+                        })
+                    .page__events
+                        +events({
+                            source: "src/blocks/events/images/pic-2.png",
+                            number: "24",
+                            month: "Aug",
+                            title: `this is the title`,
+                            text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+                            buttonTitle: "add to calendar"
+                        })
             .page__location
                 +headline ("location")
                 .page__location-map

@@ -10,4 +10,6 @@ function init() {
   const map = new Location(myMap);
 }
 
-ymaps.ready(init);
+if (typeof ymaps !== 'undefined') {
+  ymaps.ready(init);
+}

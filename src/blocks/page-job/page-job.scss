@@ -17,6 +17,10 @@
 
   &__stages {
     margin: 1rem auto 2rem auto;
+
+    @media screen and (max-width: 630px) {
+      transform: scale(0.7);
+    }
   }
 
   &__avatar {
