@@ -154,7 +154,7 @@ const Const = {
 
   ClassNames: {
     DAY: 'calendar__item-day',
-    UPPER_HEADER: 'calendar__item-upperheader',
+    UPPER_HEADER: 'calendar__item-upper-header',
     BUTTON: 'calendar__item-button',
     BUTTON_DISABLED: 'calendar__item-button_disabled',
     BUTTON_PREVIOS: 'calendar__item-button-previous',
