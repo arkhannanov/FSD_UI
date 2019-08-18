@@ -88,6 +88,4 @@ class Stages {
 
 const root = document.getElementsByClassName('js-stages');
 
-for (let i = 0; i < root.length; i += 1) {
-  new Stages(root[i]);
-}
+Array.prototype.forEach.call(root, item => new Stages(item));

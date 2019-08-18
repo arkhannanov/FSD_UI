@@ -141,6 +141,4 @@ class Form {
 
 const root = document.getElementsByClassName('js-form');
 
-for (let i = 0; i < root.length; i += 1) {
-  new Form(root[i]);
-}
+Array.prototype.forEach.call(root, item => new Form(item));

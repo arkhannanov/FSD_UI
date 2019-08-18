@@ -24,6 +24,5 @@ class DropDown {
 
 const root = document.getElementsByClassName('js-drop-down');
 
-for (let i = 0; i < root.length; i += 1) {
-  new DropDown(root[i]);
-}
+Array.prototype.forEach.call(root, item => new DropDown(item));
+

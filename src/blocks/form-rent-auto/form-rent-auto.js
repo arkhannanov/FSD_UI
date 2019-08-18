@@ -254,6 +254,4 @@ class FormRentAuto {
 
 const root = document.getElementsByClassName('js-form-rent-auto');
 
-for (let i = 0; i < root.length; i += 1) {
-  new FormRentAuto(root[i]);
-}
+Array.prototype.forEach.call(root, item => new FormRentAuto(item));

@@ -123,6 +123,4 @@ class Player {
 
 const root = document.getElementsByClassName('js-player');
 
-for (let i = 0; i < root.length; i += 1) {
-  new Player(root[i]);
-}
+Array.prototype.forEach.call(root, item => new Player(item));

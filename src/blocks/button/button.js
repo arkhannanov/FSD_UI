@@ -25,6 +25,4 @@ class Button {
 
 const buttons = document.getElementsByName('js-ripple');
 
-for (let i = 0; i < buttons.length; i += 1) {
-  new Button(buttons[i]);
-}
+buttons.forEach(item =>  new Button(item));
