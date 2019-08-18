@@ -122,6 +122,10 @@
 
   &__sliders {
 
+    &-headline {
+     margin: auto;
+    }
+
     &-container {
       display: flex;
       flex-direction: row;
@@ -156,15 +160,28 @@
     }
   }
 
-  &__stages-content {
-    margin: 1.53rem 0 2.85rem 0;
+  &__stages {
 
-    @media screen and (max-width: 720px) {
-      transform: scale(0.7);
+    &-headline {
+      margin: auto;
+    }
+
+    &-content {
+      margin: 1.53rem 0 2.85rem 0;
+
+      @media screen and (max-width: 720px) {
+        transform: scale(0.7);
+      }
     }
   }
 
+
+
   &__form-tick-boxes-toggle {
+
+    &-hedline {
+      margin: auto;
+    }
 
     &-container {
       display: flex;
@@ -301,6 +318,10 @@
 
   &__news-events {
 
+    &-headline {
+      margin: auto;
+    }
+
     &-container {
       width: 25rem;
       display: flex;
@@ -328,9 +349,14 @@
         margin-left: 25%;
       }
     }
-
   }
 
+  &__location {
+
+    &-headline {
+      margin: auto;
+    }
+  }
   &__calendar-messaging {
     display: flex;
     flex-direction: row;
@@ -385,11 +411,18 @@
     }
   }
 
-  &__video-player {
-    margin: 0.8rem 0 1.25rem 0;
+  &__video {
 
-    @media screen and (max-width: 720px) {
-      transform: scale(0.7);
+    &-headline {
+      margin: auto;
+    }
+
+    &-player {
+      margin: 0.8rem 0 1.25rem 0;
+
+      @media screen and (max-width: 720px) {
+        transform: scale(0.7);
+      }
     }
   }
 }

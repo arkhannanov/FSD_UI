@@ -152,7 +152,8 @@ mixin page
                     .page__percents-pie-pie
                         +pie
             .page__sliders
-                +headline ("sliders")
+                .page__sliders-headline
+                    +headline ("sliders")
                 .page__sliders-container
                     .page__sliders-slider-wrapper
                         +slider({
@@ -175,14 +176,16 @@ mixin page
                             color: 'greenkit',
                         })
             .page__stages
-                +headline ("stages")
+                .page__stages-headline
+                    +headline ("stages")
                 .page__stages-content
                     +stages({
                         numberOfPoints: 5,
                         startPoint: 3
                     })
             .page__form-tick-boxes-toggle
-                +headline ("form elements")
+                .page__form-tick-boxes-toggle-hedline
+                    +headline ("form elements")
                 .page__form-tick-boxes-toggle-container
                     .page__form-tick-boxes-toggle-form
                         +form
@@ -246,7 +249,8 @@ mixin page
                                 profession: "developer"
                             })
             .page__news-events
-                +headline ("news & events")
+                .page__news-events-headline
+                    +headline ("news & events")
                 .page__news-events-container
                     .page__news
                         +news({
@@ -266,7 +270,8 @@ mixin page
                             buttonTitle: "add to calendar"
                         })
             .page__location
-                +headline ("location")
+                .page__location-headline
+                    +headline ("location")
                 .page__location-map
                     +location({
                         title: "Meet us!",
@@ -289,7 +294,8 @@ mixin page
                             buttonTitle: "reply"
                         })
             .page__video
-                +headline ("video")
+                .page__video-headline
+                    +headline ("video")
                 .page__video-player
                     +player
             .page__navigation-container
