@@ -1,7 +1,7 @@
 mixin location( options ={ title:"", address:""})
     -let {title, address} = options;
     .location
-        .location__map#map
+        .location__map.js-location__map
             script(src="https://api-maps.yandex.ru/2.1.17/?lang=ru_RU", type="text/javascript")
         .location__content
             .location__content-title= title
