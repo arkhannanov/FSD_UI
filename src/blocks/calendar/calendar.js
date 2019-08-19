@@ -143,7 +143,7 @@ class Calendar {
       colHeader.className = ClassNames.TABLE_COLUMN_HEADER;
       if (this.root.dataset.dayNameSize !== '') {
         colHeader.style.fontSize = `${this.root.dataset.dayNameSize}`;
-        }
+      }
       colHeader.textContent = day;
 
       tableHeadRow.appendChild(colHeader);
@@ -274,30 +274,26 @@ class Calendar {
 
 const root = document.getElementsByClassName('js-calendar__item');
 
-for (let i = 0; i < root.length; i += 1) {
-  window.onload = () => {
-    if (root[i] != null) {
-      const today = new Date();
 
-      const calendar = new Calendar(root[i], {
-        minDate: new Date(
-          today.getFullYear(),
-          today.getMonth(),
-          today.getDate()
-        ),
-        maxDate: new Date(
-          today.getFullYear() + 1,
-          today.getMonth(),
-          today.getDate()
-        ),
-      });
+Array.prototype.forEach.call(root, item => {
 
-      root[i].addEventListener(Events.DATE_SELECTED, (event) => {
-        calendar.setDate(event.detail.date);
-      });
-    }
-  };
-};
+  const today = new Date();
+  const calendar = new Calendar(item, {
+    minDate: new Date(
+      today.getFullYear(),
+      today.getMonth(),
+      today.getDate()
+    ),
+    maxDate: new Date(
+      today.getFullYear() + 1,
+      today.getMonth(),
+      today.getDate()
+    ),
+  });
 
+  item.addEventListener(Events.DATE_SELECTED, (event) => {
+    calendar.setDate(event.detail.date);
+  });
+});
 
   
