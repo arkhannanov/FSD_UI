@@ -15,7 +15,7 @@
     width: 100%;
 
     &-container {
-      max-width: 19.4rem;
+      width: 72%;
       padding-top: 2.5rem;
       display: flex;
       flex-direction: column;
@@ -32,8 +32,18 @@
       align-items: center;
 
       @media screen and (max-width: 720px) {
-        flex-wrap: wrap;
+        display: block;
+        margin: auto;
       }
+    }
+
+    &-item {
+
+      @media screen and (max-width: 720px) {
+        width: 100%;
+        margin: auto;
+      }
+
     }
   }
 
@@ -260,7 +270,7 @@
   &__search-drop-down {
 
     &-container {
-      margin-left: 5%;
+      margin-left: 8%;
       width: 120%;
 
       @media screen and (max-width: 720px) {
@@ -295,7 +305,7 @@
   }
 
   &__user-profile {
-    width: 11.458rem;
+    width: 13.458rem;
     margin-right: 3.9rem;
 
     @media screen and (max-width: 720px) {
