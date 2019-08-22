@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="keywords" content="Ключевые слова">
+    <meta name="description" content="FSD Тестовое задение - Страница 3">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <title>FSD_UI</title>
+  <link href="interior.css" rel="stylesheet"></head>
+  <body>
+    <main class="page-interior">
+      <div class="page-interior__header-interior">
+        <div class="header-interior">
+          <div class="header-interior__top">
+            <div class="header-interior__logo">ARK-Play</div>
+            <div class="header-interior__contacts">
+              <div class="header-interior__time">Ежедневно с 9.00 до 22.00</div>
+              <div class="header-interior__phone-number">+79263864674</div>
+            </div>
+          </div>
+          <div class="header-interior__bottom">
+            <div class="header-interior__main-page"><a class="header-interior__main-page-link" href="/mock-address/change-me">Главная</a></div>
+            <div class="header-interior__photo"><a class="header-interior__photo-link" href="/mock-address/change-me">Фото Работ</a></div>
+            <div class="header-interior__about-us"><a class="header-interior__about-us-link" href="/mock-address/change-me">О Нас</a></div>
+            <div class="header-interior__feedback"><a class="header-interior__feedback-link" href="/mock-address/change-me">Отзывы</a></div>
+            <div class="header-interior__regisration"><a class="header-interior__regisration-link" href="/mock-address/change-me">Регистрация</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="page-interior__content">
+        <div class="page-interior__diagramm-container">
+          <div class="page-interior__overdue-project-diagramm-container">
+            <div class="page-interior__overdue-project-diagramm">
+              <div class="percents">
+                <svg class="percents__image" width="100%" height="100%" viewBox="0 0 100 100">
+                  <circle class="segment" cx="50" cy="50" r="45" fill="transparent" stroke="#e75735" stroke-width="5" stroke-dasharray="0 282.6" stroke-dashoffset="70.65"></circle>
+                </svg>
+                <div class="percents__number">0</div>
+              </div>
+            </div>
+            <div class="page-interior__overdue-project-diagramm-content">Просроченных проектов.</div>
+          </div>
+          <div class="page-interior__early-project-diagramm-container">
+            <div class="page-interior__early-project-diagramm">
+              <div class="percents">
+                <svg class="percents__image" width="100%" height="100%" viewBox="0 0 100 100">
+                  <circle class="segment" cx="50" cy="50" r="45" fill="transparent" stroke="#e75735" stroke-width="5" stroke-dasharray="70.65 211.95000000000002" stroke-dashoffset="70.65"></circle>
+                </svg>
+                <div class="percents__number">25</div>
+              </div>
+            </div>
+            <div class="page-interior__early-project-diagramm-content">Проектов, выполненных досрочно.</div>
+          </div>
+          <div class="page-interior__custom-project-diagramm-container">
+            <div class="page-interior__custom-project-diagramm">
+              <div class="percents">
+                <svg class="percents__image" width="100%" height="100%" viewBox="0 0 100 100">
+                  <circle class="segment" cx="50" cy="50" r="45" fill="transparent" stroke="#e75735" stroke-width="5" stroke-dasharray="98.91 183.69000000000003" stroke-dashoffset="70.65"></circle>
+                </svg>
+                <div class="percents__number">35</div>
+              </div>
+            </div>
+            <div class="page-interior__custom-project-diagramm-content">Нестандартных проектов.</div>
+          </div>
+          <div class="page-interior__satisfied-client-diagramm-container">
+            <div class="page-interior__satisfied-client-diagramm">
+              <div class="percents">
+                <svg class="percents__image" width="100%" height="100%" viewBox="0 0 100 100">
+                  <circle class="segment" cx="50" cy="50" r="45" fill="transparent" stroke="#e75735" stroke-width="5" stroke-dasharray="245.86200000000002 36.738" stroke-dashoffset="70.65"></circle>
+                </svg>
+                <div class="percents__number">87</div>
+              </div>
+            </div>
+            <div class="page-interior__satisfied-client-diagramm-content">Довольных клиентов.</div>
+          </div>
+        </div>
+        <div class="page-interior__feedback">
+          <div class="page-interior__feedback-headline">Оставить отзыв</div>
+          <div class="page-interior__feedback-container">
+            <div class="page-interior__feedback-calendar-container">
+              <div class="page-interior__feedback-calendar-headline">Выбрать день публикации</div>
+              <div class="page-interior__feedback-calendar">
+                <div class="calendar">
+                  <div class="calendar__item js-calendar__item" data-month-size="" data-day-name-size="" data-day-size="" data-today-size="">
+                    <div class="calendar__item-upper-header"><span class="calendar__item-day"></span></div>
+                    <div class="calendar__item-header"><span class="calendar__item-month"></span>
+                      <button class="calendar__item-button calendar__item-button-previous"></button>
+                      <button class="calendar__item-button calendar__item-button-next"></button>
+                    </div>
+                    <div class="calendar__item-patch"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="page-interior__feedback-form">
+              <div class="form js-form">
+                <div class="form__completeform"></div>
+                <div class="form__name">
+                  <input class="form__name-input" type="text" placeholder="Your Name">
+                  <div class="form__name-message-container">error</div>
+                </div>
+                <div class="form__name-input-error-message"></div>
+                <div class="form__email">
+                  <input class="form__email-input" type="text" placeholder="Your E-mail">
+                  <div class="form__email-message-container">error</div>
+                </div>
+                <div class="form__email-input-error-message"></div>
+                <div class="form__message">
+                  <textarea class="form__message-input" type="text" placeholder="Your Message"></textarea>
+                </div>
+                <div class="form__submit">
+                  <div class="button">
+                    <button class="button__item button__item_size_submit button__item_color_green form__submit-button" name="js-ripple" onclick="undefined">submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-interior__navigation">
+          <div class="navigation">
+            <div class="button">
+              <button class="button__item button__item_size_navigation button__item_color_green undefined" name="js-ripple" onclick="document.location='social-network.html'">social-network</button>
+            </div>
+            <div class="button">
+              <button class="button__item button__item_size_navigation button__item_color_green undefined" name="js-ripple" onclick="document.location='job.html'">job</button>
+            </div>
+            <div class="button">
+              <button class="button__item button__item_size_navigation button__item_color_green undefined" name="js-ripple" onclick="document.location='interior.html'">interior</button>
+            </div>
+            <div class="button">
+              <button class="button__item button__item_size_navigation button__item_color_green undefined" name="js-ripple" onclick="document.location='rent-auto.html'">rent-auto</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-interior__footer-interior">
+        <div class="location">
+          <div class="location__map js-location__map">
+            <script src="https://api-maps.yandex.ru/2.1.17/?lang=ru_RU" type="text/javascript"></script>
+          </div>
+          <div class="location__content">
+            <div class="location__content-title">Meet us!</div>
+            <div class="location__content-address">1259  California St san Francisco, CA</div>
+            <div class="location__content-icon-my-location"></div>
+            <div class="location__content-icon-pin"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  <script type="text/javascript" src="interior.js"></script></body>
+</html>

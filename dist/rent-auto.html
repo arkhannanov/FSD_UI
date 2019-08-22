@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="keywords" content="Ключевые слова">
+    <meta name="description" content="FSD Тестовое задение - Страница 4">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <title>FSD_UI</title>
+  <link href="rentAuto.css" rel="stylesheet"></head>
+  <body>
+    <main class="page-rent-auto">
+      <div class="page-rent-auto__header">
+        <div class="header-rent-auto">
+          <div class="header-rent-auto__logotip-container">
+            <div class="header-rent-auto__logotip">logotip</div>
+          </div>
+          <div class="header-rent-auto__menu-container">
+            <div class="button">
+              <button class="button__item button__item_size_navigation button__item_color_green undefined" name="js-ripple" onclick="undefined">Главная</button>
+            </div>
+            <div class="button">
+              <button class="button__item button__item_size_navigation button__item_color_green undefined" name="js-ripple" onclick="undefined">Каталог</button>
+            </div>
+            <div class="button">
+              <button class="button__item button__item_size_navigation button__item_color_green undefined" name="js-ripple" onclick="undefined">О нас</button>
+            </div>
+            <!--button.header-rent-auto__main-page-button(name="button")= mainPage-->
+            <!--button.header-rent-auto__catalogue-button(name="button")= catalogue-->
+            <!--button.header-rent-auto__about-us-button(name="button")= aboutUs-->
+          </div>
+        </div>
+      </div>
+      <div class="page-rent-auto__content">
+        <div class="page-rent-auto__left-side">
+          <div class="page-rent-auto__drop-down-box-header">Коробка передач:</div>
+          <div class="page-rent-auto__drop-down">
+            <div class="drop-down js-drop-down">
+              <div class="drop-down__select">
+                <div class="drop-down__select-title">Choose an Option</div>
+                <button class="drop-down__select-button"></button>
+              </div>
+              <div class="drop-down__options">
+                <div class="drop-down__item">Механика</div>
+                <div class="drop-down__item">Автомат</div>
+              </div>
+            </div>
+          </div>
+          <div class="page-rent-auto__drop-down-place-header">Место оформления аренды:</div>
+          <div class="page-rent-auto__drop-down">
+            <div class="drop-down js-drop-down">
+              <div class="drop-down__select">
+                <div class="drop-down__select-title">Choose an Option</div>
+                <button class="drop-down__select-button"></button>
+              </div>
+              <div class="drop-down__options">
+                <div class="drop-down__item">В офисе</div>
+                <div class="drop-down__item">Ваш адрес (по телефону)</div>
+              </div>
+            </div>
+          </div>
+          <div class="page-rent-auto__slider">
+            <div class="slider">
+              <input class="js-newslider" type="hidden" value="40" data-min="0" data-max="100" data-step="1" data-value="40" data-label="true" data-dial="false" data-color="orange">
+            </div>
+          </div>
+          <div class="page-rent-auto__add">
+            <div class="page-rent-auto__add-headline">Добавить в машину:</div>
+            <div class="page-rent-auto__add-chair-container">
+              <div class="page-rent-auto__add-tick-box">
+                <div class="tick-boxes">
+                  <label for="1">
+                    <input class="tick-boxes__input" id="1" type="checkbox" checked>
+                  </label>
+                </div>
+              </div>
+              <div class="page-rent-auto__add-chair">Детское кресло</div>
+            </div>
+            <div class="page-rent-auto__add-navigator-container">
+              <div class="page-rent-auto__add-tick-box">
+                <div class="tick-boxes">
+                  <label for="2">
+                    <input class="tick-boxes__input" id="2" type="checkbox" checked>
+                  </label>
+                </div>
+              </div>
+              <div class="page-rent-auto__add-navigator">Навигатор</div>
+            </div>
+            <div class="page-rent-auto__add-refrigerator-container">
+              <div class="page-rent-auto__add-tick-box">
+                <div class="tick-boxes">
+                  <label for="3">
+                    <input class="tick-boxes__input" id="3" type="checkbox" checked>
+                  </label>
+                </div>
+              </div>
+              <div class="page-rent-auto__add-refrigerator">Автохолодильник</div>
+            </div>
+          </div>
+          <div class="page-rent-auto__form">
+            <div class="form-rent-auto js-form-rent-auto">
+              <div class="form-rent-auto__surname-container">
+                <input class="form-rent-auto__surname-input" type="text" placeholder="Ваша фамилия">
+                <div class="form-rent-auto__surname-message"></div>
+              </div>
+              <div class="form-rent-auto__surname-error-message"></div>
+              <div class="form-rent-auto__name-container">
+                <input class="form-rent-auto__name-input" type="text" placeholder="Ваше имя">
+                <div class="form-rent-auto__name-message"></div>
+              </div>
+              <div class="form-rent-auto__name-error-message"></div>
+              <div class="form-rent-auto__patronymic-container">
+                <input class="form-rent-auto__patronymic-input" type="text" placeholder="Ваше отчество">
+                <div class="form-rent-auto__patronymic-message"></div>
+              </div>
+              <div class="form-rent-auto__patronymic-error-message"></div>
+              <div class="form-rent-auto__phone-container">
+                <input class="form-rent-auto__phone-input" type="text" placeholder="Контактный телефон">
+                <div class="form-rent-auto__phone-message"></div>
+              </div>
+              <div class="form-rent-auto__phone-error-message"></div>
+              <div class="form-rent-auto__email-container">
+                <input class="form-rent-auto__email-input" type="text" placeholder="E-mail адрес">
+                <div class="form-rent-auto__email-message"></div>
+              </div>
+              <div class="form-rent-auto__email-error-message"></div>
+            </div>
+          </div>
+        </div>
+        <div class="page-rent-auto__right-side">
+          <div class="page-rent-auto__calendar">
+            <div class="calendar">
+              <div class="calendar__item js-calendar__item" data-month-size="" data-day-name-size="" data-day-size="" data-today-size="">
+                <div class="calendar__item-upper-header"><span class="calendar__item-day"></span></div>
+                <div class="calendar__item-header"><span class="calendar__item-month"></span>
+                  <button class="calendar__item-button calendar__item-button-previous"></button>
+                  <button class="calendar__item-button calendar__item-button-next"></button>
+                </div>
+                <div class="calendar__item-patch"></div>
+              </div>
+            </div>
+          </div>
+          <div class="page-rent-auto__submit">
+            <div class="page-rent-auto__form-rent-auto-completeform js-page-rent-auto__form-rent-auto-completeform"></div>
+            <div class="page-rent-auto__form-rent-auto-submit">
+              <div class="button">
+                <button class="button__item button__item_size_rent-auto-sumit-button button__item_color_orange js-form-rent-auto-submit" name="js-ripple" onclick="undefined">Отправить заявку</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-rent-auto__navigation">
+        <div class="navigation">
+          <div class="button">
+            <button class="button__item button__item_size_navigation button__item_color_green undefined" name="js-ripple" onclick="document.location='social-network.html'">social-network</button>
+          </div>
+          <div class="button">
+            <button class="button__item button__item_size_navigation button__item_color_green undefined" name="js-ripple" onclick="document.location='job.html'">job</button>
+          </div>
+          <div class="button">
+            <button class="button__item button__item_size_navigation button__item_color_green undefined" name="js-ripple" onclick="document.location='interior.html'">interior</button>
+          </div>
+          <div class="button">
+            <button class="button__item button__item_size_navigation button__item_color_green undefined" name="js-ripple" onclick="document.location='rent-auto.html'">rent-auto</button>
+          </div>
+        </div>
+      </div>
+      <div class="page-rent-auto__footer-rent-auto">
+        <div class="footer-rent-auto">
+          <div class="footer-rent-auto__logo">logotip</div>
+          <div class="footer-rent-auto__menu-container"><a class="footer-rent-auto__main-page-link" href="/mock-address/change-me">Главная</a><a class="footer-rent-auto__catalogue-link" href="/mock-address/change-me">Каталог</a><a class="footer-rent-auto__contacts-link" href="/mock-address/change-me">Контакты</a></div>
+        </div>
+      </div>
+    </main>
+  <script type="text/javascript" src="rentAuto.js"></script></body>
+</html>
