@@ -197,7 +197,7 @@ mixin page
                         startPoint: 3
                     })
             .page__form-tick-boxes-toggle
-                .page__form-tick-boxes-toggle-hedline
+                .page__form-tick-boxes-toggle-headline
                     +headline ("form elements")
                 .page__form-tick-boxes-toggle-container
                     .page__form-tick-boxes-toggle-form
@@ -312,7 +312,8 @@ mixin page
                 .page__video-player
                     +player
             .page__navigation-container
-                +headline ("_______________________________________")
+                .page__navigation-headline
+                    +headline ("_______________________________________")
                 .page__navigation
                     +navigation({
                         socialNetwork: "social-network",

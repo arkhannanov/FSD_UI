@@ -38,8 +38,6 @@ class Location {
   }
 }
 
-export default Location;
-
 const root = document.getElementsByClassName('js-location__map');
 
 Array.prototype.forEach.call(root, item => new Location(item));

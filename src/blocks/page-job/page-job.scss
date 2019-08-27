@@ -1,5 +1,4 @@
 .page-job {
-
   &__header {
     width: 12.5rem;
     font-size: 0.833rem;
@@ -42,6 +41,10 @@
       width: 5.417rem;
       margin-left: 0.3rem;
     }
+  }
+
+  &__navigation {
+    margin-bottom: 5%;
   }
 
   &__form {

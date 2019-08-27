@@ -1,7 +1,6 @@
 .messaging {
   width: 12rem;
   position: relative;
-  margin-top: 1rem;
 
   &__header {
     background: linear-gradient(to bottom, #4eb7a8 3.375rem, #46ab9d 1.417rem);
@@ -9,7 +8,7 @@
 
   &__name {
     height: 4.792rem;
-    font: lighter 1.417rem $thirdFont;
+    font: lighter 1.417rem $secondFont;
     color: #ffffff;
     letter-spacing: -0.042rem;
     text-align: center;

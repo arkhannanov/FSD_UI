@@ -18,7 +18,6 @@
   }
 
   &__profile {
-
     @media screen and (max-width: 720px) {
       width: 100%;
       margin: auto;
@@ -26,11 +25,14 @@
   }
 
   &__right-side {
-
     @media screen and (max-width: 720px) {
       width: 100%;
       margin: auto;
     }
+  }
+
+  &__navigation {
+    margin-bottom: 5%;
   }
 
   &__footer-social-network {

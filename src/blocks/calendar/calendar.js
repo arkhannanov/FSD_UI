@@ -55,12 +55,10 @@ class Calendar {
     this._year = this._selectedDate.getFullYear();
     this._date = this._selectedDate.getDate();
 
-
     this._updateUi();
   }
 
   previosMonth() {
-
 
     if (this._isMinMonth()) {
       return;

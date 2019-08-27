@@ -1,6 +1,5 @@
 .page-interior {
   color: black;
-  margin: auto;
 
   &__content {
     display: flex;
@@ -153,7 +152,7 @@
   }
 
   &__navigation {
-    margin: auto;
+    margin: auto auto 5% auto;
   }
 
   &__footer-interior {

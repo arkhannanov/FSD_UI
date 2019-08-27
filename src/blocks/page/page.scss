@@ -1,6 +1,5 @@
 .page {
   margin: auto;
-  margin-top: 3.37rem;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -10,13 +9,12 @@
   &__buttons {
     width: 100%;
 
-
     &-container {
       width: 72%;
       padding-top: 2.5rem;
       display: flex;
       flex-direction: column;
-      margin: 0.5rem auto 1.7rem auto;
+      margin: 0.5rem auto 1.5rem auto;
     }
 
     &-clicked,
@@ -28,13 +26,14 @@
       margin-bottom: 0.65rem;
       align-items: center;
 
+      @media screen and (max-width: 480px) {
+        flex-direction: column;
+      }
     }
-
   }
 
   &__arrows {
-    margin: auto auto 1.65rem auto;
-
+    margin: auto auto 1.85rem auto;
 
     &-container {
       display: flex;
@@ -42,6 +41,11 @@
       justify-content: space-between;
       padding-top: 1.4rem;
       width: 80%;
+
+      @media screen and (max-width: 480px) {
+        flex-wrap: wrap;
+        width: 100%;
+      }
 
     }
 
@@ -53,7 +57,6 @@
   }
 
   &__percents-pie {
-
     &-container {
       display: flex;
       flex-direction: row;
@@ -117,7 +120,6 @@
   }
 
   &__sliders {
-
     &-headline {
       margin: auto;
     }
@@ -127,7 +129,7 @@
       flex-direction: row;
       justify-content: space-between;
       width: 25rem;
-      margin: 1.45rem auto 2.5rem auto;
+      margin: 1.45rem auto 2.7rem auto;
 
       @media screen and (max-width: 720px) {
         flex-wrap: wrap;
@@ -157,7 +159,6 @@
   }
 
   &__stages {
-
     &-headline {
       margin: auto;
     }
@@ -170,9 +171,7 @@
 
 
   &__form-tick-boxes-toggle {
-
-
-    &-hedline {
+    &-headline {
       margin: auto;
     }
 
@@ -245,17 +244,16 @@
     justify-content: space-between;
     margin-bottom: 2.7rem;
 
-
     @media screen and (max-width: 720px) {
       flex-wrap: wrap;
     }
   }
 
   &__search-drop-down {
-
     &-search-headline {
-     margin: auto;
+      margin: auto;
     }
+
     &-container {
       margin-left: 8%;
       width: 120%;
@@ -314,7 +312,6 @@
   }
 
   &__news-events {
-
     &-headline {
       margin: auto;
     }
@@ -332,7 +329,6 @@
     }
 
     .page__news {
-
       @media screen and (max-width: 720px) {
         width: 100%;
         margin: 0 0 1rem 25%;
@@ -340,7 +336,6 @@
     }
 
     .page__events {
-
       @media screen and (max-width: 720px) {
         width: 100%;
         margin-left: 25%;
@@ -349,7 +344,6 @@
   }
 
   &__location {
-
     &-headline {
       margin: auto;
     }
@@ -359,7 +353,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.6rem;
 
     @media screen and (max-width: 720px) {
       flex-wrap: wrap;
@@ -376,26 +370,28 @@
   }
 
   &__calendar-headline {
-
     @media screen and (max-width: 720px) {
       margin-right: 5rem;
     }
   }
 
   &__messaging-headline {
-
     @media screen and (max-width: 720px) {
       margin-right: 6rem;
     }
   }
 
-  &__messaging-wrapper {
+  &__messaging {
+    margin-top: 1rem;
 
-    @media screen and (max-width: 720px) {
-      width: 100%;
-      margin-left: 25%;
+    &-wrapper {
+      @media screen and (max-width: 720px) {
+        width: 100%;
+        margin-left: 25%;
+      }
     }
   }
+
 
   &__calendar {
     margin: 1rem auto auto 0;
@@ -410,7 +406,6 @@
   }
 
   &__video {
-
     &-headline {
       margin: auto;
     }
@@ -421,6 +416,14 @@
       @media screen and (max-width: 720px) {
         transform: scale(0.7);
       }
+    }
+  }
+
+  &__navigation {
+    margin-bottom: 10%;
+
+    &-headline {
+      margin: auto;
     }
   }
 }

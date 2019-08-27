@@ -6,7 +6,6 @@ class DropDown {
   }
 
   enableOptions() {
-
     this.targetString = this.root.childNodes[1].children[0];
 
     const text = this.targetString.innerHTML;
