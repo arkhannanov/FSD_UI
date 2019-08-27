@@ -67,9 +67,8 @@ class Player {
 
   handleTogglePlayClick() {
     this.video[this.video.paused ? 'play' : 'pause']();
-    const icon = this.video.paused ? '►' : '❚ ❚';
     this.toggle.classList.remove('player__button_unclicked');
-    this.toggle.textContent = icon;
+    this.toggle.textContent = this.video.paused ? '►' : '❚ ❚';
   }
 
   handleRangeUpdate() {
