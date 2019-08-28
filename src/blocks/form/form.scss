@@ -7,7 +7,7 @@
   &__completeform {
     border: 0;
     height: 0.75rem;
-    font: normal lighter 0.5rem $mainFont;
+    font: normal lighter 0.5rem $lato;
     letter-spacing: 0.021rem;
     color: red;
     margin: 0 0 1rem 3.333rem;
@@ -27,7 +27,7 @@
       padding: 0 0 0 0.4rem;
       border: 0;
       background: #e5e5e5;
-      font: normal 400 0.583rem $secondFont;
+      font: normal 400 0.583rem $sansPro;
       color: #888888;
       line-height: 1.75rem;
       letter-spacing: 0.006rem;
@@ -37,7 +37,7 @@
     &-message-container {
       height: 1.452rem;
       width: 25%;
-      font-family: $mainFont;
+      font-family: $lato;
       font-weight: 400;
       font-size: 0.417rem;
       line-height: 1.2rem;
@@ -55,7 +55,7 @@
   &__name-input-error-message {
     border: 0;
     height: 0.56rem;
-    font: lighter 0.32rem $mainFont;
+    font: lighter 0.32rem $lato;
     line-height: 0.5rem;
     letter-spacing: 0.021rem;
     color: #888888;
@@ -75,7 +75,7 @@
       padding: 0 0 0 0.4rem;
       border: 0;
       background: #e5e5e5;
-      font: normal 0.583rem $secondFont;
+      font: normal 0.583rem $sansPro;
       color: #888888;
       line-height: 1.75rem;
       letter-spacing: 0.006rem;
@@ -85,7 +85,7 @@
     &-message-container {
       width: 25%;
       height: 1.542rem;
-      font-family: $mainFont;
+      font-family: $lato;
       font-weight: 400;
       font-size: 0.417rem;
       line-height: 1.2rem;
@@ -103,7 +103,7 @@
   &__email-input-error-message {
     border: 0;
     height: 0.56rem;
-    font: lighter 0.32rem $mainFont;
+    font: lighter 0.32rem $lato;
     line-height: 0.5rem;
     letter-spacing: 0.021rem;
     color: #888888;
@@ -122,7 +122,7 @@
       border: 0;
       background: #e5e5e5;
       font-size: 0.583rem;
-      font-family: $secondFont;
+      font-family: $sansPro;
       font-weight: 400;
       color: #888888;
       letter-spacing: 0.006rem;
