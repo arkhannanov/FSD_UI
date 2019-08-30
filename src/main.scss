@@ -5,6 +5,17 @@ body {
   font-size: $fontSize;
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .page {

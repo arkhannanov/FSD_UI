@@ -33,8 +33,6 @@ class Stages {
 
       this.root.sections.appendChild(section);
     }
-
-    this.root.points.style.width = `${this.root.sections.offsetWidth + 30}px`;
   }
 
   createPoints() {
