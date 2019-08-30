@@ -9,31 +9,13 @@ class Calendar {
     this._minDate = minDate || Defaults.minDate;
     this._maxDate = maxDate || Defaults.maxDate;
 
-    this.selectElements();
+    this._selectElements();
 
     this._localize();
 
     this._createUi();
 
     this.setDate(selectedDate || new Date());
-  }
-
-  selectElements() {
-    this.dayElem = this.root.querySelector('.calendar__item-day');
-    this.header = this.root.querySelector('.calendar__item-header');
-    this.monthElem = this.root.querySelector('.calendar__item-month');
-    this.previosButton = this.root.querySelector('.calendar__item-button-previous');
-    this.nextButton = this.root.querySelector('.calendar__item-button-next');
-  }
-
-  today() {
-    const today = new Date();
-    this._month = today.getMonth();
-    this._year = today.getFullYear();
-    this._date = today.getDate();
-    this._selectedDate = today;
-
-    this._updateUi();
   }
 
   setDate(date) {
@@ -48,6 +30,16 @@ class Calendar {
     this._selectedDate = date;
 
     this.reset();
+  }
+
+  today() {
+    const today = new Date();
+    this._month = today.getMonth();
+    this._year = today.getFullYear();
+    this._date = today.getDate();
+    this._selectedDate = today;
+
+    this._updateUi();
   }
 
   reset() {
@@ -87,6 +79,14 @@ class Calendar {
     }
 
     this._updateUi();
+  }
+
+  _selectElements() {
+    this.dayElem = this.root.querySelector('.calendar__item-day');
+    this.header = this.root.querySelector('.calendar__item-header');
+    this.monthElem = this.root.querySelector('.calendar__item-month');
+    this.previosButton = this.root.querySelector('.calendar__item-button-previous');
+    this.nextButton = this.root.querySelector('.calendar__item-button-next');
   }
 
   _localize(locale) {

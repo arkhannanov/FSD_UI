@@ -2,10 +2,10 @@ class DropDown {
   constructor(root) {
     this.root = root;
     this.targetString;
-    this.enableOptions();
+    this._enableOptions();
   }
 
-  enableOptions() {
+  _enableOptions() {
     this.targetString = this.root.childNodes[1].children[0];
 
     const text = this.targetString.innerHTML;

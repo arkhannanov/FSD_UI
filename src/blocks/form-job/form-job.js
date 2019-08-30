@@ -15,19 +15,19 @@ class FormJob {
   constructor(root) {
     this.root = root;
 
-    this.startFormJob();
+    this._startFormJob();
   }
 
-  startFormJob() {
-    this.enableElements();
-    this.enableJobTitleInput();
-    this.enableFacebookInput();
-    this.enableTwitterInput();
-    this.enableDribbbleInput();
-    this.enableSubmitButton();
+  _startFormJob() {
+    this._enableElements();
+    this._enableJobTitleInput();
+    this._enableFacebookInput();
+    this._enableTwitterInput();
+    this._enableDribbbleInput();
+    this._enableSubmitButton();
   }
 
-  enableElements() {
+  _enableElements() {
     this.jobTitleInput = this.root.querySelector('.form-job__job-title-input');
     this.jobTitleMessage = this.root.querySelector('.form-job__job-title-message');
     this.jobTitleErrorMessage = this.root.querySelector('.form-job__job-title-error-message');
@@ -44,27 +44,27 @@ class FormJob {
     this.completeForm = this.root.querySelector('.form-job__completeform');
   }
 
-  enableJobTitleInput() {
-    this.jobTitleInput.addEventListener('keyup', this.hadleJobTitleInputKeyUp.bind(this));
+  _enableJobTitleInput() {
+    this.jobTitleInput.addEventListener('keyup', this._hadleJobTitleInputKeyUp.bind(this));
   }
 
-  enableFacebookInput() {
-    this.facebookInput.addEventListener('keyup', this.handleFacebookInputKeyUp.bind(this));
+  _enableFacebookInput() {
+    this.facebookInput.addEventListener('keyup', this._handleFacebookInputKeyUp.bind(this));
   }
 
-  enableTwitterInput() {
-    this.twitterInput.addEventListener('keyup', this.handleTwitterInputKeyUp.bind(this));
+  _enableTwitterInput() {
+    this.twitterInput.addEventListener('keyup', this._handleTwitterInputKeyUp.bind(this));
   }
 
-  enableDribbbleInput() {
-    this.dribbbleInput.addEventListener('keyup', this.handleDribbbleInputKeyUp.bind(this));
+  _enableDribbbleInput() {
+    this.dribbbleInput.addEventListener('keyup', this._handleDribbbleInputKeyUp.bind(this));
   }
 
-  enableSubmitButton() {
-    this.submitButton.addEventListener('click', this.handleSubmitButtonClick.bind(this));
+  _enableSubmitButton() {
+    this.submitButton.addEventListener('click', this._handleSubmitButtonClick.bind(this));
   }
 
-  hadleJobTitleInputKeyUp(element) {
+  _hadleJobTitleInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -81,7 +81,7 @@ class FormJob {
     }
   }
 
-  handleFacebookInputKeyUp(element) {
+  _handleFacebookInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -98,7 +98,7 @@ class FormJob {
     }
   }
 
-  handleTwitterInputKeyUp(element) {
+  _handleTwitterInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -115,7 +115,7 @@ class FormJob {
     }
   }
 
-  handleDribbbleInputKeyUp(element) {
+  _handleDribbbleInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -132,7 +132,7 @@ class FormJob {
     }
   }
 
-  handleSubmitButtonClick() {
+  _handleSubmitButtonClick() {
     if (errorJob === true) {
       this.jobTitleErrorMessage.innerHTML = message;
       this.jobTitleMessage.innerHTML = 'error';

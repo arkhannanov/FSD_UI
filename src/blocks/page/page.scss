@@ -271,7 +271,6 @@
 
   &__messaging {
     margin-top: 1rem;
-
   }
 
   &__calendar {
@@ -894,11 +893,11 @@
     }
 
     .messaging__incoming-message-container {
-      width: 90%;
+      width: 86%;
       background-size: 100% 2.7rem;
 
       .messaging__incoming-message {
-        width:100%;
+        width: 90%;
       }
     }
 

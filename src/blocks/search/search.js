@@ -4,10 +4,10 @@ class Search {
     this.searchInput = null;
     this.searchIcon = null;
     this.value = 0;
-    this.initSearch();
+    this._initSearch();
   }
 
-  initSearch() {
+  _initSearch() {
     const isTrue = (this.root.dataset.error === 'true');
 
     const inputContainder = document.createElement('div');
@@ -28,34 +28,34 @@ class Search {
     inputContainder.appendChild(this.searchInput);
     inputContainder.appendChild(this.searchIcon);
 
-    this.enableSearchIcon();
-    this.enableSearchKeyup();
-    this.enableSearchClick();
+    this._enableSearchIcon();
+    this._enableSearchKeyup();
+    this._enableSearchClick();
   }
 
-  enableSearchIcon() {
-    this.searchIcon.addEventListener('click', this.handleSearchIconClick.bind(this));
+  _enableSearchIcon() {
+    this.searchIcon.addEventListener('click', this._handleSearchIconClick.bind(this));
   }
 
-  enableSearchKeyup() {
-    this.searchInput.addEventListener('keyup', this.handleSearchKeyup.bind(this));
+  _enableSearchKeyup() {
+    this.searchInput.addEventListener('keyup', this._handleSearchKeyup.bind(this));
   }
 
-  enableSearchClick() {
-    this.searchInput.addEventListener('click', this.handleSearchClick.bind(this));
+  _enableSearchClick() {
+    this.searchInput.addEventListener('click', this._handleSearchClick.bind(this));
   }
 
-  handleSearchKeyup(element) {
+  _handleSearchKeyup(element) {
     const usedInput = element.target;
     this.value = usedInput.value;
   }
 
-  handleSearchClick() {
+  _handleSearchClick() {
     this.searchInput.classList.remove('search__input_error');
     this.searchInput.value = '';
   }
 
-  handleSearchIconClick() {
+  _handleSearchIconClick() {
     if (this.value.length > 0) {
       this.searchInput.classList.add('search__input_error');
       this.searchInput.value = 'I’ve not found what I’m looking for...';

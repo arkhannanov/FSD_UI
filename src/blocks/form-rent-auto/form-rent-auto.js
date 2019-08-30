@@ -17,20 +17,20 @@ class FormRentAuto {
   constructor(root) {
     this.root = root;
 
-    this.startFormRentAuto();
+    this._startFormRentAuto();
   }
 
-  startFormRentAuto() {
-    this.enableElements();
-    this.enableSurnameInput();
-    this.enableNameInput();
-    this.enablePatronymicInput();
-    this.enablePhoneInput();
-    this.enableEmailInput();
-    this.enableSubmitForm();
+  _startFormRentAuto() {
+    this._enableElements();
+    this._enableSurnameInput();
+    this._enableNameInput();
+    this._enablePatronymicInput();
+    this._enablePhoneInput();
+    this._enableEmailInput();
+    this._enableSubmitForm();
   }
 
-  enableElements() {
+  _enableElements() {
     this.surnameInput = this.root.querySelector('.form-rent-auto__surname-input');
     this.surnameMessage = this.root.querySelector('.form-rent-auto__surname-message');
     this.surnameErrorMessage = this.root.querySelector('.form-rent-auto__surname-error-message');
@@ -50,31 +50,31 @@ class FormRentAuto {
     this.completeForm = document.getElementsByClassName('js-page-rent-auto__form-rent-auto-completeform')[0];
   }
 
-  enableSurnameInput() {
-    this.surnameInput.addEventListener('keyup', this.handleSurnameInputKeyUp.bind(this));
+  _enableSurnameInput() {
+    this.surnameInput.addEventListener('keyup', this._handleSurnameInputKeyUp.bind(this));
   }
 
-  enableNameInput() {
-    this.nameInput.addEventListener('keyup', this.handleNameInputKeyUp.bind(this));
+  _enableNameInput() {
+    this.nameInput.addEventListener('keyup', this._handleNameInputKeyUp.bind(this));
   }
 
-  enablePatronymicInput() {
-    this.patronymicInput.addEventListener('keyup', this.handlePatronymicInputKeyUp.bind(this));
+  _enablePatronymicInput() {
+    this.patronymicInput.addEventListener('keyup', this._handlePatronymicInputKeyUp.bind(this));
   }
 
-  enablePhoneInput() {
-    this.phoneInput.addEventListener('keyup', this.handlePhoneInputKeyUp.bind(this));
+  _enablePhoneInput() {
+    this.phoneInput.addEventListener('keyup', this._handlePhoneInputKeyUp.bind(this));
   }
 
-  enableEmailInput() {
-    this.emailInput.addEventListener('keyup', this.handleEmailInputKeyUp.bind(this));
+  _enableEmailInput() {
+    this.emailInput.addEventListener('keyup', this._handleEmailInputKeyUp.bind(this));
   }
 
-  enableSubmitForm() {
-    this.submitForm.addEventListener('click', this.handleSubmitFormClick.bind(this));
+  _enableSubmitForm() {
+    this.submitForm.addEventListener('click', this._handleSubmitFormClick.bind(this));
   }
 
-  handleSurnameInputKeyUp(element) {
+  _handleSurnameInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -91,7 +91,7 @@ class FormRentAuto {
     }
   }
 
-  handleNameInputKeyUp(element) {
+  _handleNameInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -108,7 +108,7 @@ class FormRentAuto {
     }
   }
 
-  handlePatronymicInputKeyUp(element) {
+  _handlePatronymicInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -125,7 +125,7 @@ class FormRentAuto {
     }
   }
 
-  handlePhoneInputKeyUp(element) {
+  _handlePhoneInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -142,7 +142,7 @@ class FormRentAuto {
     }
   }
 
-  handleEmailInputKeyUp(element) {
+  _handleEmailInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -159,7 +159,7 @@ class FormRentAuto {
     }
   }
 
-  handleSubmitFormClick() {
+  _handleSubmitFormClick() {
     if (errorSurname === true) {
       this.surnameErrorMessage.innerHTML = message;
       this.surnameMessage.innerHTML = 'error';

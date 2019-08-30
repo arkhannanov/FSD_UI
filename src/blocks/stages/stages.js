@@ -5,25 +5,25 @@ class Stages {
     this.pointsArray = [];
     this.targetPoint;
 
-    this.startStages();
+    this._startStages();
   }
 
-  startStages() {
-    this.enableElements();
-    this.createSections();
-    this.createPoints();
-    this.enablePoints();
-    this.fillArray();
-    this.fillStages();
+  _startStages() {
+    this._enableElements();
+    this._createSections();
+    this._createPoints();
+    this._enablePoints();
+    this._fillArray();
+    this._fillStages();
   }
 
-  enableElements() {
+  _enableElements() {
     this.root.sections = this.root.children[0];
     this.root.points = this.root.children[1];
   }
 
 
-  createSections() {
+  _createSections() {
     const numberOfSections = this.root.sections.dataset.numberOfPoints - 1;
 
     for (let i = 0; i < numberOfSections; i += 1) {
@@ -35,7 +35,7 @@ class Stages {
     }
   }
 
-  createPoints() {
+  _createPoints() {
     const numberOfPoints = this.root.sections.dataset.numberOfPoints;
     this.targetPoint = this.root.sections.dataset.startPoint;
 
@@ -47,7 +47,7 @@ class Stages {
     }
   }
 
-  fillArray() {
+  _fillArray() {
     for (let i = 0; i < this.root.points.childNodes.length; i += 1) {
       if (i < this.targetPoint) {
         this.pointsArray[i] = true;
@@ -56,19 +56,19 @@ class Stages {
       }
     }
 
-    this.fillStages();
+    this._fillStages();
   }
 
-  enablePoints() {
+  _enablePoints() {
     for (let i = 0; i < this.root.points.childNodes.length; i += 1) {
       this.root.points.childNodes[i].addEventListener('click', () => {
         this.targetPoint = i + 1;
-        this.fillArray();
+        this._fillArray();
       });
     }
   }
 
-  fillStages() {
+  _fillStages() {
     if (this.pointsArray[0] === true) {
       this.root.points.children[0].classList.add('stages__point_color_orange');
     }

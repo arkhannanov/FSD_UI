@@ -2,10 +2,10 @@ class Location {
   constructor(root) {
     this.root = root;
     this.myMap;
-    this.createGeoObjects();
+    this._createGeoObjects();
   }
 
-  createMyMap(map) {
+  _createMyMap(map) {
     this.myMap = new map.Map(this.root, {
       center: [37.787509, -122.444838],
       zoom: 13,
@@ -13,9 +13,9 @@ class Location {
     });
   }
 
-  createGeoObjects() {
+  _createGeoObjects() {
     ymaps.load().then((map) => {
-      this.createMyMap(map);
+      this._createMyMap(map);
 
       const myGeoObjects = new map.Placemark([37.787509, -122.444838], {
         balloonContentBody: 'Location',

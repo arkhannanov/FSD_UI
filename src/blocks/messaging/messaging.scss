@@ -74,7 +74,9 @@
     font-size: 0.55rem;
     letter-spacing: 0.026rem;
     border-radius: 0.208rem;
-    padding: 0.833rem 1rem 0 0.75rem;
+    padding: 0.833rem 2rem 0 0.75rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   &__new-message-container {

@@ -3,10 +3,10 @@ import '../../vendors/jquery.range';
 class Slider {
   constructor(root) {
     this.root = $(root);
-    this.enableSlider();
+    this._enableSlider();
   }
 
-  enableSlider() {
+  _enableSlider() {
     const min = this.root.data('min');
     const max = this.root.data('max');
     const step = (this.root.data('max') - this.root.data('min')) / 4;

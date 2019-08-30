@@ -12,18 +12,18 @@ class Form {
   constructor(root) {
     this.root = root;
 
-    this.startForm();
+    this._startForm();
   }
 
-  startForm() {
-    this.enableElements();
-    this.enableFormNameInput();
-    this.enableFormEmailInput();
-    this.enableFormMessageInput();
-    this.enableFormSubmitButton();
+  _startForm() {
+    this._enableElements();
+    this._enableFormNameInput();
+    this._enableFormEmailInput();
+    this._enableFormMessageInput();
+    this._enableFormSubmitButton();
   }
 
-  enableElements() {
+  _enableElements() {
     this.formNameInput = this.root.querySelector('.form__name-input');
     this.formNameMessageContainer = this.root.querySelector('.form__name-message-container');
     this.formNameInputErrorMessage = this.root.querySelector('.form__name-input-error-message');
@@ -35,23 +35,23 @@ class Form {
     this.formCompleteform = this.root.querySelector('.form__completeform');
   }
 
-  enableFormNameInput() {
-    this.formNameInput.addEventListener('keyup', this.handleFormNameInputKeyUp.bind(this));
+  _enableFormNameInput() {
+    this.formNameInput.addEventListener('keyup', this._handleFormNameInputKeyUp.bind(this));
   }
 
-  enableFormEmailInput() {
-    this.formEmailInput.addEventListener('keyup', this.handleFormEmailInputKeyUp.bind(this));
+  _enableFormEmailInput() {
+    this.formEmailInput.addEventListener('keyup', this._handleFormEmailInputKeyUp.bind(this));
   }
 
-  enableFormMessageInput() {
-    this.formMessageInput.addEventListener('keyup', this.handleFormMessageInputKeyUp.bind(this));
+  _enableFormMessageInput() {
+    this.formMessageInput.addEventListener('keyup', this._handleFormMessageInputKeyUp.bind(this));
   }
 
-  enableFormSubmitButton() {
-    this.formSubmitButton.addEventListener('click', this.handleFormSubmitButtonClick.bind(this));
+  _enableFormSubmitButton() {
+    this.formSubmitButton.addEventListener('click', this._handleFormSubmitButtonClick.bind(this));
   }
 
-  handleFormNameInputKeyUp(element) {
+  _handleFormNameInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -68,7 +68,7 @@ class Form {
     }
   }
 
-  handleFormEmailInputKeyUp(element) {
+  _handleFormEmailInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -85,7 +85,7 @@ class Form {
     }
   }
 
-  handleFormMessageInputKeyUp(element) {
+  _handleFormMessageInputKeyUp(element) {
     const usedInput = element.target;
     const inputValue = usedInput.value;
 
@@ -96,7 +96,7 @@ class Form {
     }
   }
 
-  handleFormSubmitButtonClick() {
+  _handleFormSubmitButtonClick() {
 
     if (errorName === true) {
       this.formNameInputErrorMessage.innerHTML = lengthMessage;
