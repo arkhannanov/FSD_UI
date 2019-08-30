@@ -16,7 +16,7 @@
 
   &__stages {
     margin: 1rem auto 2rem auto;
-
+    width: 100%;
     @media screen and (max-width: 630px) {
       transform: scale(0.7);
     }
@@ -51,7 +51,100 @@
     margin: auto;
   }
 }
-  
+
+
+@media screen and (max-width: 500px) {
+  .page-job {
+
+    .form-job {
+      &__job-title-input,
+      &__facebook-input,
+      &__twitter-input,
+      &__dribbble-input {
+        height: 100%;
+        width: 100%;
+      }
+
+      &__job-title-container,
+      &__facebook-container,
+      &__twitter-container,
+      &__dribbble-container {
+        height: 1.6rem;
+        margin-left: 1.3rem;
+      }
+
+      &__job-title-error-message,
+      &__facebook-error-message,
+      &__twitter-error-message,
+      &__dribbble-error-message {
+        margin-left: 1.3rem;
+        margin-bottom: 0.3rem;
+      }
+
+      &__job-title-message,
+      &__facebook-message,
+      &__twitter-message,
+      &__dribbble-message {
+        height: 100%;
+        line-height: 1.6rem;
+        background-size: 100% 90%;
+        background-position: center center;
+      }
+
+      &__completeform {
+        margin: 0.6rem auto;
+      }
+
+      &__toggle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .toggle {
+          margin-bottom: 0.2rem;
+        }
+      }
+
+      &__submit-container {
+        .button {
+          .form-job__submit-button {
+            margin: 0;
+            width: 6rem;
+            height: 2.2rem;
+            margin-bottom: 2rem;
+            font-size: .8rem;
+          }
+        }
+      }
+    }
+
+    &__avatar {
+      width: 9rem;
+      height: 11.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      &-image {
+        width: 100%;
+        height: 8rem;
+        background-position: center center;
+        background-size: contain;
+      }
+
+      &-edit {
+        width: 100%;
+
+        .button__item {
+          width: 96%;
+          height: 1.5rem;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
 
   
 

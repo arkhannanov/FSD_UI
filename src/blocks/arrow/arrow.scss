@@ -53,3 +53,30 @@
     }
   }
 }
+
+.page__arrows-pressed{
+  .arrow{
+    &__button_direction_left{
+      background: #e5e5e5 url('./images/arrow3.png') 0.583rem 0.5rem no-repeat;
+      border: 0.083rem solid transparent;
+    }
+    &__button_direction_right{
+      background: #e5e5e5 url('./images/arrow4.png') 0.583rem 0.5rem no-repeat;
+      border: 0.083rem solid transparent;
+    }
+  }
+}
+
+
+.page__arrows-hovered{
+  .arrow{
+    &__button_direction_left{
+      background: #4eb7a8 url('./images/arrow3.png') 0.583rem 0.5rem no-repeat;
+      border: 0.083rem solid transparent;
+    }
+    &__button_direction_right{
+      background: #4eb7a8 url('./images/arrow4.png') 0.583rem 0.5rem no-repeat;
+      border: 0.083rem solid transparent;
+    }
+  }
+}

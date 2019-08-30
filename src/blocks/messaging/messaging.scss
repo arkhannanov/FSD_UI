@@ -1,5 +1,5 @@
 .messaging {
-  width: 12rem;
+  width: 100%;
   position: relative;
 
   &__header {
@@ -24,12 +24,12 @@
     margin-left: 4.042rem;
     position: absolute;
     top: 2.95rem;
-    left: -0.2rem;
+    right:3.4rem;
     z-index: 3;
   }
 
   &__messages-container {
-    width: 12rem;
+    width: 100%;
     height: 13.5rem;
     background: #f2f2f2;
     display: flex;
@@ -107,6 +107,6 @@
   }
 
   &__button-container {
-    margin-left: 0.9rem;
+    margin-left: 0.3rem;
   }
 }

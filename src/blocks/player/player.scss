@@ -1,6 +1,6 @@
 .player {
   border-radius: 0.208rem;
-  width: 24.75rem;
+  width: 100%;
   height: 14rem;
   overflow: hidden;
   position: relative;
@@ -16,7 +16,7 @@
     justify-content: space-between;
     height: 2rem;
     position: absolute;
-    top: 12rem;
+    top: 80%;
   }
 
   &:fullscreen {

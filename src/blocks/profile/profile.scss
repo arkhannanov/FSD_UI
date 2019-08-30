@@ -1,5 +1,4 @@
 .profile {
-  width: 75%;
   height: 20.833rem;
   display: flex;
   flex-direction: column;
@@ -13,15 +12,10 @@
     margin: 0.417rem;
     padding-left: 0.417rem;
     text-transform: uppercase;
-    width: 125%;
-
-    @media screen and (max-width: 720px) {
-      width: 125%;
-    }
+    width: 95%;
   }
 
   &__content-container {
-    height: 20.833rem;
     background: transparent;
     display: flex;
     flex-direction: row;
