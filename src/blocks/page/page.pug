@@ -27,7 +27,6 @@ mixin page
                 .page__buttons-header
                     +headline ("standard buttons")
                 .page__buttons-container
-                    .page__buttons-clicked
                         .page__buttons-item
                             +button({
                                 size: `small`,
@@ -56,7 +55,6 @@ mixin page
                                 name: `js-ripple`,
                                 title: `button`,
                             })
-                    .page__buttons-hovered
                         .page__buttons-item
                             +button({
                                 size: `small`,
@@ -85,7 +83,6 @@ mixin page
                                 name: `noripple`,
                                 title: `button`,
                             })
-                    .page__buttons-no-action
                         .page__buttons-item
                             +button({
                                 size: `small`,
