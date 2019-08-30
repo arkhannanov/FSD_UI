@@ -19,4 +19,10 @@
     left: 0.2rem;
     top: 1rem;
   }
+
+  &__segment {
+    fill: transparent;
+    stroke: #e75735;
+    stroke-width: 5;
+  }
 }

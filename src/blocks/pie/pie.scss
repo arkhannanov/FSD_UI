@@ -3,4 +3,27 @@
     width: 4rem;
     height: 4rem;
   }
+
+  &__segment {
+    fill: transparent;
+    stroke-width: 17;
+
+    &_color {
+      &_grey {
+        stroke: #747474;
+      }
+
+      &_orange {
+        stroke: #e75735;
+      }
+
+      &_green {
+        stroke: #4eb7a8;
+      }
+
+      &_light-grey {
+        stroke: #e5e5e5;
+      }
+    }
+  }
 }
