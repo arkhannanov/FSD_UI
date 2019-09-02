@@ -17,14 +17,13 @@
   }
 
   &__avatar {
-    height: 3.917rem;
+    height: 3.9017rem;
     width: 3.9017rem;
     background: #e5e5e5;
     border-radius: 50%;
-    margin-left: 4.042rem;
     position: absolute;
     top: 2.95rem;
-    right:3.4rem;
+    left: calc(50% - 1.96rem);
     z-index: 3;
   }
 
