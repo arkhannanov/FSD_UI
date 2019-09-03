@@ -26,6 +26,8 @@ class Stages {
   _createSections() {
     const numberOfSections = this.root.sections.dataset.numberOfPoints - 1;
 
+    console.log(this.root.sections.offsetWidth);
+
     for (let i = 0; i < numberOfSections; i += 1) {
       const section = document.createElement('div');
       section.classList.add('stages__section');
@@ -89,3 +91,12 @@ class Stages {
 const root = document.getElementsByClassName('js-stages');
 
 Array.prototype.forEach.call(root, item => new Stages(item));
+
+window.onresize= function(){
+  let sections = document.querySelectorAll('.stages__sections');
+  for(let section of sections){
+    for(let child of section.children){
+      child.style.width = `${section.offsetWidth / (section.dataset.numberOfPoints - 1)}px`;
+    }
+  }
+}

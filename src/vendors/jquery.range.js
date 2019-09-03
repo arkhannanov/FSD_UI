@@ -385,6 +385,9 @@
       if (!data) {
         $this.data('plugin_' + pluginName, (data = new jRange(this, options)));
         $(window).resize(function () {
+          var width = data.domNode.parent().width();
+          data.options.width = width;
+          data.render();
           data.setValue(data.getValue());
         }); // Update slider position when window is resized to keep it in sync with scale
       }

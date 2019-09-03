@@ -3,10 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="8157867f-740d-4692-8a34-f0abfefb57ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/messaging/messaging.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/messaging/messaging.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/navigation/navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/navigation/navigation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/page/page.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page/page.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/page/page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page/page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/slider/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/slider/slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vendors/jquery.range.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/vendors/jquery.range.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/slider/slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/slider/slider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/globals.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/job/job.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/job/job.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vendors/jquery.range.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/vendors/jquery.range.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,23 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/blocks/page/page.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2891">
-              <caret line="991" column="25" selection-start-line="991" selection-start-column="25" selection-end-line="991" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/blocks/page/page.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
-              <caret line="195" column="12" selection-start-line="195" selection-start-column="12" selection-end-line="259" selection-end-column="30" />
-              <folding>
-                <marker date="1567437278448" expanded="true" signature="7572:10744" ph="..." />
-              </folding>
+            <state relative-caret-position="1275">
+              <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -51,44 +45,83 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/calendar/calendar.scss">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/form/form.scss">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.scss">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/header-rent-auto/header-rent-auto.scss">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/location/location.scss">
+        <entry file="file://$PROJECT_DIR$/src/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="323">
+              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/navigation/navigation.scss">
+        <entry file="file://$PROJECT_DIR$/src/index.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="102">
+              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="115" />
+              <folding>
+                <marker date="1567491170515" expanded="true" signature="97:204" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/stages/stages.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="538">
+              <caret line="98" column="91" selection-start-line="98" selection-start-column="91" selection-end-line="98" selection-end-column="91" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/page/page.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3332">
+              <caret line="196" column="6" lean-forward="true" selection-start-line="196" selection-start-column="6" selection-end-line="281" selection-end-column="22" />
+              <folding>
+                <marker date="1567528099074" expanded="true" signature="10658:11342" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/slider/slider.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/search/search.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="57" column="3" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/vendors/jquery.range.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/stages/stages.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-125">
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -104,7 +137,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>handleUpdateButtonPlay</find>
       <find>addEv</find>
       <find>updateButton</find>
       <find>dia</find>
@@ -133,6 +165,7 @@
       <find>$secondFont</find>
       <find>button</find>
       <find>selectElements</find>
+      <find>20rem</find>
       <find>stages</find>
     </findStrings>
     <replaceStrings>
@@ -187,7 +220,6 @@
         <option value="$PROJECT_DIR$/src/blocks/location/location-init.js" />
         <option value="$PROJECT_DIR$/src/blocks/location/location.pug" />
         <option value="$PROJECT_DIR$/src/blocks/user/user.scss" />
-        <option value="$PROJECT_DIR$/src/index.pug" />
         <option value="$PROJECT_DIR$/src/blocks/header-rent-auto/header-rent-auto.pug" />
         <option value="$PROJECT_DIR$/src/blocks/arrow/arrow.scss" />
         <option value="$PROJECT_DIR$/src/blocks/button/button.scss" />
@@ -195,22 +227,14 @@
         <option value="$PROJECT_DIR$/src/blocks/form-job/form-job.scss" />
         <option value="$PROJECT_DIR$/src/blocks/news/news.scss" />
         <option value="$PROJECT_DIR$/src/blocks/search/search.scss" />
-        <option value="$PROJECT_DIR$/src/vendors/jquery.range.js" />
-        <option value="$PROJECT_DIR$/src/blocks/slider/slider.scss" />
         <option value="$PROJECT_DIR$/src/blocks/footer-rent-auto/footer-rent-auto.scss" />
         <option value="$PROJECT_DIR$/src/blocks/location/location.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/navigation/navigation.scss" />
-        <option value="$PROJECT_DIR$/src/globals.scss" />
         <option value="$PROJECT_DIR$/src/blocks/page-interior/page-interior.scss" />
         <option value="$PROJECT_DIR$/src/blocks/page-job/page-job.scss" />
         <option value="$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.scss" />
         <option value="$PROJECT_DIR$/src/blocks/page-social-network/page-social-network.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/player/player.scss" />
         <option value="$PROJECT_DIR$/src/blocks/profile/profile.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/stages/stages.scss" />
-        <option value="$PROJECT_DIR$/src/main.scss" />
         <option value="$PROJECT_DIR$/src/pages/social-network/social-network.scss" />
-        <option value="$PROJECT_DIR$/src/pages/job/job.scss" />
         <option value="$PROJECT_DIR$/src/blocks/percents/percents.pug" />
         <option value="$PROJECT_DIR$/src/blocks/percents/percents.scss" />
         <option value="$PROJECT_DIR$/src/blocks/pie/pie.scss" />
@@ -222,14 +246,23 @@
         <option value="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.js" />
         <option value="$PROJECT_DIR$/src/blocks/player/player.js" />
         <option value="$PROJECT_DIR$/src/blocks/search/search.js" />
-        <option value="$PROJECT_DIR$/src/blocks/stages/stages.js" />
         <option value="$PROJECT_DIR$/src/blocks/location/location.js" />
         <option value="$PROJECT_DIR$/src/blocks/calendar/calendar.js" />
         <option value="$PROJECT_DIR$/src/blocks/messaging/messaging.scss" />
         <option value="$PROJECT_DIR$/src/vendors/jquery.range.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/page/page.scss" />
+        <option value="$PROJECT_DIR$/src/globals.scss" />
+        <option value="$PROJECT_DIR$/src/pages/job/job.scss" />
+        <option value="$PROJECT_DIR$/src/index.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/navigation/navigation.scss" />
+        <option value="$PROJECT_DIR$/src/vendors/jquery.range.js" />
+        <option value="$PROJECT_DIR$/src/blocks/slider/slider.scss" />
         <option value="$PROJECT_DIR$/src/blocks/slider/slider.js" />
         <option value="$PROJECT_DIR$/src/blocks/page/page.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/stages/stages.js" />
+        <option value="$PROJECT_DIR$/src/blocks/stages/stages.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/player/player.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/page/page.scss" />
+        <option value="$PROJECT_DIR$/src/main.scss" />
       </list>
     </option>
   </component>
@@ -711,21 +744,8 @@
       <workItem from="1567146057552" duration="113000" />
       <workItem from="1567169967190" duration="13002000" />
       <workItem from="1567241974155" duration="16000" />
-      <workItem from="1567427098257" duration="7952000" />
-    </task>
-    <task id="LOCAL-00079" summary="Refactoring #16 Увеличен масштаб LAST NEWS.">
-      <created>1565024669919</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1565024669919</updated>
-    </task>
-    <task id="LOCAL-00080" summary="Refactoring #16 Выравнение чисел в Interior.">
-      <created>1565025920430</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1565025920430</updated>
+      <workItem from="1567427098257" duration="14510000" />
+      <workItem from="1567490611901" duration="11515000" />
     </task>
     <task id="LOCAL-00081" summary="Refactoring #16 Редактирование формы Interior. Использовал готовую компоненту.">
       <created>1565026326933</created>
@@ -1056,11 +1076,25 @@
       <option name="project" value="LOCAL" />
       <updated>1567184038160</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="Промежуточный результат">
+      <created>1567439477790</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1567439477790</updated>
+    </task>
+    <task id="LOCAL-00129" summary="Технический коммит">
+      <created>1567447364349</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1567447364349</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="484205000" />
+    <option name="totallyTimeSpent" value="502278000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1139,8 +1173,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactoring #10 Исправлены стили для html и body." />
-    <MESSAGE value="Refactoring #10 Единообразное использование for" />
     <MESSAGE value="Refactoring #9 Исправил выборку элементов." />
     <MESSAGE value="Refactoring #9 Добавил класс Location" />
     <MESSAGE value="Refactoring #9 Исправлены наименования хендлеров." />
@@ -1164,14 +1196,16 @@
     <MESSAGE value="Refactoring #14 Исправлены стили для SVG" />
     <MESSAGE value="Общий коммит" />
     <MESSAGE value="Refactoring #9 Исправлены публичные, частные методы классов." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring #9 Исправлены публичные, частные методы классов." />
+    <MESSAGE value="Промежуточный результат" />
+    <MESSAGE value="Технический коммит" />
+    <option name="LAST_COMMIT_MESSAGE" value="Технический коммит" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/blocks/stages/stages.js</url>
-          <line>68</line>
+          <line>70</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -1182,44 +1216,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/blocks/slider/slider.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/slider/slider.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/footer-rent-auto/footer-rent-auto.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/form/form.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/search/search.pug">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/page-interior/page-interior.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3134">
@@ -1289,31 +1285,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/globals.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/social-network/social-network.scss" />
-    <entry file="file://$PROJECT_DIR$/src/pages/job/job.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-          <folding>
-            <marker date="1567180251174" expanded="true" signature="0:30" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/percents/percents.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1377,13 +1349,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/stages/stages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="3" selection-start-line="70" selection-start-column="3" selection-end-line="70" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/location/location.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1398,24 +1363,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/search/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="57" column="3" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/calendar/calendar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="295" selection-start-line="295" selection-end-line="295" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/stages/stages.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1443,13 +1394,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/slider/slider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/calendar/calendar.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1469,10 +1413,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/globals.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-start-column="2" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/job/job.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-start-column="2" selection-end-line="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/interior/interior.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/form/form.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/navigation/navigation.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/navigation/navigation.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/news/news.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/slider/slider.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vendors/jquery.range.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/search/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="57" column="3" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/slider/slider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/page/page.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3332">
+          <caret line="196" column="6" lean-forward="true" selection-start-line="196" selection-start-column="6" selection-end-line="281" selection-end-column="22" />
+          <folding>
+            <marker date="1567528099074" expanded="true" signature="10658:11342" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="115" />
+          <folding>
+            <marker date="1567491170515" expanded="true" signature="97:204" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/stages/stages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="98" column="91" selection-start-line="98" selection-start-column="91" selection-end-line="98" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/stages/stages.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1483,23 +1517,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/form/form.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/page/page.scss">
+    <entry file="file://$PROJECT_DIR$/src/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2891">
-          <caret line="991" column="25" selection-start-line="991" selection-start-column="25" selection-end-line="991" selection-end-column="25" />
+        <state relative-caret-position="323">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/page/page.pug">
+    <entry file="file://$PROJECT_DIR$/src/blocks/page/page.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="195" column="12" selection-start-line="195" selection-start-column="12" selection-end-line="259" selection-end-column="30" />
-          <folding>
-            <marker date="1567437278448" expanded="true" signature="7572:10744" ph="..." />
-          </folding>
+        <state relative-caret-position="1275">
+          <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
         </state>
       </provider>
     </entry>

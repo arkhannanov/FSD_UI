@@ -11,8 +11,6 @@ class Slider {
     const max = this.root.data('max');
     const step = (this.root.data('max') - this.root.data('min')) / 4;
 
-    console.log(this.root.parent().parent()[0].offsetWidth);
-
     this.root.jRange({
       from: this.root.data('min'),
       to: this.root.data('max'),
@@ -36,3 +34,4 @@ const $sliders = $('.js-newslider');
 $sliders.each(function createSlider() {
   new Slider(this);
 });
+

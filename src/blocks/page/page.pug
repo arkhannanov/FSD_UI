@@ -23,298 +23,299 @@ include ../slider/slider
 
 mixin page
     main.page
-            .page__buttons
-                .page__buttons-header
-                    +headline ("standard buttons")
-                .page__buttons-container
-                        .page__buttons-item
-                            +button({
-                                size: `small`,
-                                color: `green`,
-                                name: `js-ripple`,
-                                title: `button`,
-                            })
-                        .page__buttons-item
-                            +button({
-                                size: `big`,
-                                color: `green`,
-                                name: `js-ripple`,
-                                title: `button`,
-                            })
-                        .page__buttons-item
-                            +button({
-                                size: `big`,
-                                color: `orange`,
-                                name: `js-ripple`,
-                                title: `button`,
-                            })
-                        .page__buttons-item
-                            +button({
-                                size: `small`,
-                                color: `orange`,
-                                name: `js-ripple`,
-                                title: `button`,
-                            })
-                        .page__buttons-item
-                            +button({
-                                size: `small`,
-                                color: `green`,
-                                name: `noripple`,
-                                title: `button`,
-                            })
-                        .page__buttons-item
-                            +button({
-                                size: `big`,
-                                color: `green`,
-                                name: `noripple`,
-                                title: `button`,
-                            })
-                        .page__buttons-item
-                            +button({
-                                size: `big`,
-                                color: `orange`,
-                                name: `noripple`,
-                                title: `button`,
-                            })
-                        .page__buttons-item
-                            +button({
-                                size: `small`,
-                                color: `orange`,
-                                name: `noripple`,
-                                title: `button`,
-                            })
-                        .page__buttons-item
-                            +button({
-                                size: `small`,
-                                color: `green`,
-                                name: `noripple`,
-                                title: `button`,
-                            })
-                        .page__buttons-item
-                            +button({
-                                size: `big`,
-                                color: `green`,
-                                name: `noripple`,
-                                title: `button`,
-                            })
-                        .page__buttons-item
-                            +button({
-                                size: `big`,
-                                color: `orange`,
-                                name: `noripple`,
-                                title: `button`,
-                            })
-                        .page__buttons-item
-                            +button({
-                                size: `small`,
-                                color: `orange`,
-                                name: `noripple`,
-                                title: `button`,
-                            })
-            .page__arrows
-                .page__arrows-header
-                    +headline ("arrow buttons")
-                .page__arrows-container
-                    .page__arrows-standard
-                        +arrow({
-                            direction: "left"
-                        })
-                    .page__arrows-standard
-                        +arrow({
-                            direction: "right"
-                        })
-                    .page__arrows-pressed
-                        +arrow({
-                            direction: "left"
-                        })
-                    .page__arrows-pressed
-                        +arrow({
-                            direction: "right"
-                        })
-                    .page__arrows-hovered
-                        +arrow({
-                            direction: "left"
-                        })
-                    .page__arrows-hovered
-                        +arrow({
-                            direction: "right"
-                        })
-            .page__percents-pie
-                .page__percents-pie-header
-                    +headline ("percentages / pie chart")
-                .page__percents-pie-container
-                    .page__percents-pie-percents-0
-                        +percents ({
-                            percent: 0
-                        })
-                    .page__percents-pie-percents-38
-                        +percents ({
-                            percent: 38
-                        })
-                    .page__percents-pie-percents-62
-                        +percents ({
-                            percent: 62
-                        })
-                    .page__percents-pie-percents-89
-                        +percents ({
-                            percent: 89
-                        })
-                    .page__percents-pie-pie
-                        +pie
-            //.page__sliders
-            //    .page__sliders-headline
-            //        +headline ("sliders")
-            //    .page__sliders-container
-            //        .page__sliders-slider-wrapper
-            //            +slider({
-            //                min: 0,
-            //                max: 100,
-            //                step: 1,
-            //                value: 40,
-            //                label: 'true',
-            //                dial: 'false',
-            //                color: 'orange',
-            //            })
-            //        .page__sliders-step-slider-wrapper
-            //            +slider({
-            //                min: 0,
-            //                max: 100,
-            //                step: 25,
-            //                value: 75,
-            //                label: 'false',
-            //                dial: 'true',
-            //                color: 'greenkit',
-            //            })
-            .page__stages
-                .page__stages-headline
-                    +headline ("stages")
-                .page__stages-content
-                    +stages({
-                        numberOfPoints: 5,
-                        startPoint: 3
+
+        .page__buttons
+            .page__buttons-header
+                +headline ("standard buttons")
+            .page__buttons-container
+                .page__buttons-item
+                    +button({
+                      size: `small`,
+                      color: `green`,
+                      name: `js-ripple`,
+                      title: `button`,
                     })
-            //.page__form-tick-boxes-toggle
-            //    .page__form-tick-boxes-toggle-headline
-            //        +headline ("form elements")
-            //    .page__form-tick-boxes-toggle-container
-            //        .page__form-tick-boxes-toggle-form
-            //            +form
-            //        .page__form-tick-boxes-toggle-tick-boxes-toggle
-            //            .page__form-tick-boxes-toggle-toggle-headline
-            //                +headline ("toggles")
-            //            .page__form-tick-boxes-toggle-toggle-container
-            //                .page__form-tick-boxes-toggle-toggle
-            //                    +toggle({
-            //                        id: "1"
-            //                    })
-            //                .page__form-tick-boxes-toggle-toggle
-            //                    +toggle({
-            //                        id: "2"
-            //                    })
-            //            .page__form-tick-boxes-toggle-tick-boxes-headline
-            //                +headline ("tick boxes")
-            //            .page__form-tick-boxes-toggle-tick-boxes-container
-            //                +tick-boxes({
-            //                    id: "1"
-            //                })
-            //                +tick-boxes({
-            //                    id: "2"
-            //                })
-            //.page__search-drop-down-user-profile-container
-            //    .page__search-drop-down-container
-            //        .page__search-drop-down-search-headline
-            //            +headline ("search / drop down")
-            //        .page__search-drop-down-search
-            //            .page__search-drop-down-search-false
-            //                +search({
-            //                    error: 'false'
-            //                })
-            //            .page__search-drop-down-search-true
-            //                +search({
-            //                    error: 'true'
-            //                })
-            //        .page__search-drop-down-drop-down
-            //            +drop-down ({
-            //                contentContainer: [
-            //                    {content: "This option 1"},
-            //                    {content: "This option 2"},
-            //                    {content: "This option 3"},
-            //                    {content: "This option 4"},
-            //                ]
-            //            })
-            //    .page__user-profile
-            //        .page__user-profile-headline
-            //            +headline ("user profile")
-            //        .page__user-profile-users-container
-            //            .page__user
-            //                +user ({
-            //                    source: "src/blocks/user/images/user-1.png",
-            //                    name: "John Smith",
-            //                    profession: "ux designer"
-            //                })
-            //            .page__user
-            //                +user ({
-            //                    source: "src/blocks/user/images/user-2.png",
-            //                    name: "Sarah Brown",
-            //                    profession: "developer"
-            //                })
-            //.page__news-events
-            //    .page__news-events-headline
-            //        +headline ("news & events")
-            //    .page__news-events-container
-            //        .page__news
-            //            +news({
-            //                source: "src/blocks/news/images/pic-1.png",
-            //                title: "It’s all going downhill",
-            //                date: "24  august 2013",
-            //                text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            //                    Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.`
-            //            })
-            //        .page__events
-            //            +events({
-            //                source: "src/blocks/events/images/pic-2.png",
-            //                number: "24",
-            //                month: "Aug",
-            //                title: `this is the title`,
-            //                text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
-            //                buttonTitle: "add to calendar"
-            //            })
-            .page__location
-                .page__location-headline
-                    +headline ("location")
-                .page__location-map
-                    +location({
-                        title: "Meet us!",
-                        address: "1259  California St san Francisco, CA"
+                .page__buttons-item
+                    +button({
+                      size: `big`,
+                      color: `green`,
+                      name: `js-ripple`,
+                      title: `button`,
                     })
-            //.page__calendar-messaging
-            //    .page__calendar-wrapper
-            //        .page__calendar-headline
-            //            +headline ("calendar")
-            //        .page__calendar
-            //            +calendar
-            //    .page__messaging-wrapper
-            //        .page__messaging-headline
-            //            +headline ("messaging")
-            //        .page__messaging
-            //            +messaging ({
-            //                name: "Sarah Brown",
-            //                source: "src/blocks/messaging/images/user-2.png",
-            //                incomingMessage: "Hey! So are we cool to meet at the art gallery? Say 8pm",
-            //                buttonTitle: "reply"
-            //            })
-            .page__video
-                .page__video-headline
-                    +headline ("video")
-                .page__video-player
-                    +player
-            .page__navigation-container
-                .page__navigation-headline
-                    +headline ("_______________________________________")
-                .page__navigation
-                    +navigation({
-                        socialNetwork: "social-network",
-                        job: "job",
-                        interior: "interior",
-                        rentAuto: "rent-auto"
+                .page__buttons-item
+                    +button({
+                      size: `big`,
+                      color: `orange`,
+                      name: `js-ripple`,
+                      title: `button`,
                     })
+                .page__buttons-item
+                    +button({
+                      size: `small`,
+                      color: `orange`,
+                      name: `js-ripple`,
+                      title: `button`,
+                    })
+                .page__buttons-item
+                    +button({
+                      size: `small`,
+                      color: `green`,
+                      name: `noripple`,
+                      title: `button`,
+                    })
+                .page__buttons-item
+                    +button({
+                      size: `big`,
+                      color: `green`,
+                      name: `noripple`,
+                      title: `button`,
+                    })
+                .page__buttons-item
+                    +button({
+                      size: `big`,
+                      color: `orange`,
+                      name: `noripple`,
+                      title: `button`,
+                    })
+                .page__buttons-item
+                    +button({
+                      size: `small`,
+                      color: `orange`,
+                      name: `noripple`,
+                      title: `button`,
+                    })
+                .page__buttons-item
+                    +button({
+                      size: `small`,
+                      color: `green`,
+                      name: `noripple`,
+                      title: `button`,
+                    })
+                .page__buttons-item
+                    +button({
+                      size: `big`,
+                      color: `green`,
+                      name: `noripple`,
+                      title: `button`,
+                    })
+                .page__buttons-item
+                    +button({
+                      size: `big`,
+                      color: `orange`,
+                      name: `noripple`,
+                      title: `button`,
+                    })
+                .page__buttons-item
+                    +button({
+                      size: `small`,
+                      color: `orange`,
+                      name: `noripple`,
+                      title: `button`,
+                    })
+        .page__arrows
+            .page__arrows-header
+                +headline ("arrow buttons")
+            .page__arrows-container
+                .page__arrows-standard
+                    +arrow({
+                      direction: "left"
+                    })
+                .page__arrows-standard
+                    +arrow({
+                      direction: "right"
+                    })
+                .page__arrows-pressed
+                    +arrow({
+                      direction: "left"
+                    })
+                .page__arrows-pressed
+                    +arrow({
+                      direction: "right"
+                    })
+                .page__arrows-hovered
+                    +arrow({
+                      direction: "left"
+                    })
+                .page__arrows-hovered
+                    +arrow({
+                      direction: "right"
+                    })
+        .page__percents-pie
+            .page__percents-pie-header
+                +headline ("percentages / pie chart")
+            .page__percents-pie-container
+                .page__percents-pie-percents-0
+                    +percents ({
+                        percent: 0
+                    })
+            .page__percents-pie-percents-38
+                    +percents ({
+                        percent: 38
+                    })
+            .page__percents-pie-percents-62
+                    +percents ({
+                        percent: 62
+                    })
+            .page__percents-pie-percents-89
+                    +percents ({
+                        percent: 89
+                    })
+            .page__percents-pie-pie
+                +pie
+        .page__sliders
+            .page__sliders-headline
+                +headline ("sliders")
+            .page__sliders-container
+                .page__sliders-slider-wrapper
+                    +slider({
+                        min: 0,
+                        max: 100,
+                        step: 1,
+                        value: 40,
+                        label: 'true',
+                        dial: 'false',
+                        color: 'orange',
+                    })
+                .page__sliders-step-slider-wrapper
+                    +slider({
+                        min: 0,
+                        max: 100,
+                        step: 25,
+                        value: 75,
+                        label: 'false',
+                        dial: 'true',
+                        color: 'greenkit',
+                    })
+        .page__stages
+            .page__stages-headline
+                +headline ("stages")
+            .page__stages-content
+                +stages({
+                    numberOfPoints: 5,
+                    startPoint: 3
+                })
+        .page__form-tick-boxes-toggle
+            .page__form-tick-boxes-toggle-headline
+                +headline ("form elements")
+            .page__form-tick-boxes-toggle-container
+                .page__form-tick-boxes-toggle-form
+                    +form
+                .page__form-tick-boxes-toggle-tick-boxes-toggle
+                    .page__form-tick-boxes-toggle-toggle-headline
+                        +headline ("toggles")
+                    .page__form-tick-boxes-toggle-toggle-container
+                        .page__form-tick-boxes-toggle-toggle
+                            +toggle({
+                                id: "1"
+                            })
+                        .page__form-tick-boxes-toggle-toggle
+                            +toggle({
+                                id: "2"
+                            })
+                    .page__form-tick-boxes-toggle-tick-boxes-headline
+                        +headline ("tick boxes")
+                    .page__form-tick-boxes-toggle-tick-boxes-container
+                        +tick-boxes({
+                            id: "1"
+                        })
+                        +tick-boxes({
+                            id: "2"
+                        })
+        .page__search-drop-down-user-profile-container
+            .page__search-drop-down-container
+                .page__search-drop-down-search-headline
+                    +headline ("search / drop down")
+                .page__search-drop-down-search
+                    .page__search-drop-down-search-false
+                        +search({
+                            error: 'false'
+                        })
+                    .page__search-drop-down-search-true
+                        +search({
+                            error: 'true'
+                        })
+                .page__search-drop-down-drop-down
+                    +drop-down ({
+                        contentContainer: [
+                            {content: "This option 1"},
+                            {content: "This option 2"},
+                            {content: "This option 3"},
+                            {content: "This option 4"},
+                        ]
+                    })
+            .page__user-profile
+                .page__user-profile-headline
+                    +headline ("user profile")
+                .page__user-profile-users-container
+                    .page__user
+                        +user ({
+                            source: "src/blocks/user/images/user-1.png",
+                            name: "John Smith",
+                            profession: "ux designer"
+                        })
+                    .page__user
+                        +user ({
+                            source: "src/blocks/user/images/user-2.png",
+                            name: "Sarah Brown",
+                            profession: "developer"
+                        })
+        .page__news-events
+            .page__news-events-headline
+                +headline ("news & events")
+            .page__news-events-container
+                .page__news
+                    +news({
+                        source: "src/blocks/news/images/pic-1.png",
+                        title: "It’s all going downhill",
+                        date: "24  august 2013",
+                        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.`
+                    })
+                .page__events
+                    +events({
+                        source: "src/blocks/events/images/pic-2.png",
+                        number: "24",
+                        month: "Aug",
+                        title: `this is the title`,
+                        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+                        buttonTitle: "add to calendar"
+                    })
+        .page__location
+            .page__location-headline
+                +headline ("location")
+            .page__location-map
+                +location({
+                    title: "Meet us!",
+                    address: "1259  California St san Francisco, CA"
+                })
+        .page__calendar-messaging
+            .page__calendar-wrapper
+                .page__calendar-headline
+                    +headline ("calendar")
+                .page__calendar
+                    +calendar
+            .page__messaging-wrapper
+                .page__messaging-headline
+                    +headline ("messaging")
+                .page__messaging
+                    +messaging ({
+                        name: "Sarah Brown",
+                        source: "src/blocks/messaging/images/user-2.png",
+                        incomingMessage: "Hey! So are we cool to meet at the art gallery? Say 8pm",
+                        buttonTitle: "reply"
+                    })
+        .page__video
+            .page__video-headline
+                +headline ("video")
+            .page__video-player
+                +player
+        .page__navigation-container
+            .page__navigation-headline
+                +headline ("________________")
+            .page__navigation
+                +navigation({
+                    socialNetwork: "social-network",
+                    job: "job",
+                    interior: "interior",
+                    rentAuto: "rent-auto"
+                })

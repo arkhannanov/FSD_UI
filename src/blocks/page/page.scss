@@ -16,19 +16,16 @@
       justify-content: space-between;
       align-items: flex-start;
       margin: 0.5rem auto 1.5rem auto;
-    }
 
-    &-clicked,
-    &-hovered,
-    &-no-action {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-bottom: 0.65rem;
-      align-items: center;
-
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 400px){
         flex-direction: column;
+        align-items: center;
+
+        .button__item_size_small,
+        .button__item_size_big{
+          margin:0;
+          margin-bottom:.7rem;
+        }
       }
     }
   }
@@ -46,6 +43,16 @@
       flex-wrap: wrap;
       padding-top: 1.4rem;
       width: 100%;
+
+      @media (min-width:320px) and (max-width:450px){
+        width:90%;
+        margin-left: 10%;
+      }
+
+      @media screen and (max-width:320px){
+        width:90%;
+        justify-content: center;
+      }
     }
 
     &-standard,
@@ -66,7 +73,7 @@
       padding-top: 1.2rem;
       width: 83%;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       flex-wrap: wrap;
     }
   }
@@ -116,58 +123,81 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    &-form {
-      padding-left: 2rem;
-    }
+    align-items: center;
+    box-sizing: border-box;
+    padding-left:2rem;
 
     &-headline {
       margin: auto;
+    }
+
+    &-form{
+      width:56%;
+    }
+
+    .form{
+      &__name,
+      &__email,
+      &__message{
+        width:100%;
+        &-input{
+          width:75%;
+        }
+        &-message-container{
+          background-size: 100% 80%;
+        }
+      }
+
+      &__message{
+        &-input{
+          width:100%;
+          box-sizing: border-box;
+        }
+      }
+
+      &__submit{
+        margin:0;
+        margin-top: .9rem;
+        align-self: flex-end;
+      }
     }
 
     &-container {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-self: flex-start;
       width: 80%;
       margin-bottom: 2.6rem;
       position: relative;
-      height: 11rem;
-
-      @media screen and (max-width: 720px) {
-        margin-bottom: 10rem;
-      }
     }
 
     &-tick-boxes-toggle {
-      width: 5rem;
       margin-top: 2rem;
-    }
-
-    &-toggle-headline {
-      margin-left: 0.5rem;
     }
 
     &-toggle-container {
       display: flex;
       flex-direction: row;
-      margin: 1.3rem 2rem .45rem 0;
+      margin-top: 1.3rem;
+      margin-bottom: 1.7rem;
     }
 
     &-toggle {
       margin-left: 0.3rem;
+      margin-right: 0.3rem;
     }
 
     &-tick-boxes-headline {
-      margin: 1.5rem 0 0 0.5rem;
       white-space: nowrap;
     }
 
     &-tick-boxes-container {
       display: flex;
       flex-direction: row;
-      margin: 1.2rem 0 1rem 1.4rem;
+      margin :1.2rem auto 1rem;
       width: 70%;
+      justify-content: flex-end;
     }
   }
 
@@ -176,39 +206,55 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 2.7rem;
+    width:90%;
+  }
 
+  &__search-drop-down-container{
+    width:45%;
   }
 
   &__search-drop-down {
     &-search-headline {
       margin: auto;
+      width:100%;
     }
-
-    &-container {
-      margin-left: 8%;
-    }
-
 
     &-search {
       margin: 0.75rem auto auto auto;
+      width:100%;
 
-      &-false {
-        margin-bottom: 0.6rem;
-      }
-
+      &-false,
       &-true {
         margin-bottom: 0.6rem;
+        width:100%;
+        .search{
+          width:100%;
+          &__input-container{
+            width:100%;
+          }
+          &__input{
+            width:100%;
+          }
+        }
       }
     }
 
     &-drop-down {
       margin: 0.803rem 0 4.5rem 0;
+      width:100%;
+      .drop-down{
+        width:100%;
+        &__select{
+          &-title{
+            width:100%;
+          }
+        }
+      }
     }
   }
 
   &__user-profile {
-    width: 13.458rem;
-    margin-right: 3.9rem;
+    width:45%;
 
     &__headline {
       margin-left: 2rem;
@@ -220,7 +266,18 @@
   }
 
   &__user {
-    margin: 0 0 1.042rem 1.458rem;
+    margin-bottom: 1.042rem;
+
+    .user{
+      &__content-container{
+        background-size: 100% 100%;
+        width:65%;
+      }
+      &__links-container{
+        width:70%;
+        margin:.408rem auto 1.583rem;
+      }
+    }
   }
 
   &__news-events {
@@ -265,6 +322,23 @@
 
   &__messaging {
     margin-top: 1rem;
+
+    .messaging{
+      &__button-container{
+        width:95%;
+
+        .button{
+          width:100%;
+          display: flex;
+          justify-content: center;
+
+          .button__item_size_messaging{
+            width:100%;
+            max-width: 11rem;
+          }
+        }
+      }
+    }
   }
 
   &__calendar {
@@ -282,10 +356,6 @@
       margin: auto;
     }
 
-    video {
-      width: 100%;
-    }
-
     &-player {
       width: 100%;
       height: 100%;
@@ -298,19 +368,296 @@
         display: flex;
         justify-content: center;
 
-        &__controls {
-          width: 90%;
-          top: 86%;
+        &__video{
+          width:100%;
         }
       }
     }
   }
+
 
   &__navigation {
     margin-bottom: 10%;
 
     &-headline {
       margin: auto;
+    }
+
+    @media screen and (max-width:450px){
+      &-headline {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width:330px){
+      .button__item_size_navigation{
+        width: 3rem;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 615px) {
+  .page{
+    &__form-tick-boxes-toggle{
+      padding:0;
+
+      &-container{
+        width:90%;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+      }
+
+      &-form{
+        width:100%;
+
+        .form{
+          &__name,
+          &__email{
+            &-input{
+              width:85%;
+            }
+            &-message-container{
+              width:15%;
+            }
+          }
+        }
+      }
+
+      &-tick-boxes-toggle{
+        align-self: center;
+        position: relative;
+        width: 90%;
+        height: 4rem;
+
+        .page__form-tick-boxes-toggle-toggle-container,
+        .page__form-tick-boxes-toggle-tick-boxes-headline,
+        .page__form-tick-boxes-toggle-tick-boxes-container {
+          margin: 0;
+        }
+
+        .page__form-tick-boxes-toggle-tick-boxes-headline {
+          position: absolute;
+          right: 0;
+          top: 0;
+          margin-bottom: 3rem;
+        }
+
+        .page__form-tick-boxes-toggle-tick-boxes-container {
+          position: absolute;
+          bottom:0;
+          right:.5rem;
+        }
+
+        .page__form-tick-boxes-toggle-toggle-headline {
+          position: absolute;
+          left: 1.3rem;
+          margin-bottom: 3rem;
+        }
+        .page__form-tick-boxes-toggle-toggle-container {
+          position: absolute;
+          bottom:0;
+        }
+      }
+    }
+
+    &__search-drop-down-user-profile-container{
+      flex-direction: column;
+    }
+
+    &__search-drop-down{
+      &-drop-down{
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__search-drop-down-container{
+      width:100%;
+    }
+
+    &__user-profile{
+      width:100%;
+
+      .user{
+        &__content-container{
+          width:75%;
+          background-size: 100% 100%;
+        }
+        &__links-container{
+          width:100%;
+          justify-content: center;
+          margin:.408rem auto 1.583rem;
+        }
+        &__facebook,
+        &__twitter,
+        &__dribbble{
+          margin: 0 .3rem;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .page__news,
+  .page__events {
+    margin: 0;
+    margin-bottom: 0.7rem;
+    width: 100%;
+
+    .news, .events,
+    .events__content-container,
+    .news__content-container {
+      width: 100%;
+    }
+  }
+
+  .page__calendar-messaging {
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+  .page__calendar-wrapper,
+  .page__messaging-wrapper {
+    width: 90%;
+    margin-right: 0;
+
+    .page__calendar,
+    .page__messaging.calendar,
+    .messaging,
+    .calendar {
+      width: 100%;
+    }
+
+    .calendar__item,
+    .messaging__item {
+      width: 100%;
+
+      &-upper-header,
+      &-patch,
+      &-table {
+        width: 100%;
+      }
+
+      &-header {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      &-table-footer {
+        width: 100%;
+        box-sizing: border-box;
+        height: 2rem;
+      }
+    }
+
+    .messaging_messages-container {
+      margin: 0;
+    }
+
+    .messaging__incoming-message-container {
+      width: 86%;
+      background-size: 100% 2.7rem;
+
+      .messaging__incoming-message {
+        width: 90%;
+      }
+    }
+
+    .messaging__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .messaging__new-message-container {
+        width: 85%;
+
+        .messaging__new-message {
+          width: 88%;
+        }
+      }
+    }
+  }
+
+  .page__video {
+    width: 90%;
+    height: 40%;
+
+    &-player {
+      width: 100%;
+
+      .player__video {
+        width: 100%;
+        background: black;
+      }
+
+      .player {
+        &__controls {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .page__location {
+    width: 80%;
+    height: 50%;
+    margin: 0;
+
+    &-map {
+      height: 10rem;
+    }
+
+    .location {
+      height: 100%;
+
+      &__map {
+        height: 100%;
+      }
+
+      &__content {
+        display: none;
+      }
+    }
+  }
+
+  .page__buttons {
+    width: 80%;
+  }
+
+  .page__percents-pie {
+    width: 70%;
+
+    &-container {
+      justify-content: center;
+    }
+  }
+
+  .page__sliders {
+    width: 100%;
+
+    &-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin: 1.7rem auto 2.6rem auto;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    &-slider-wrapper {
+      margin-bottom: 2rem;
+    }
+
+    &-step-slider-wrapper,
+    &-slider-wrapper {
+      width: 80.65%;
+      .slider{
+        width:100%;
+      }
     }
   }
 }
@@ -829,173 +1176,5 @@
 //  }
 //}
 
-
-@media screen and (max-width: 700px) {
-  .page__news,
-  .page__events {
-    margin: 0;
-    margin-bottom: 0.7rem;
-    width: 100%;
-
-    .news, .events,
-    .events__content-container,
-    .news__content-container {
-      width: 100%;
-    }
-  }
-
-  .page__calendar-messaging {
-    flex-wrap: wrap;
-    width: 90%;
-  }
-
-  .page__calendar-wrapper,
-  .page__messaging-wrapper {
-    width: 90%;
-    margin-right: 0;
-
-    .page__calendar,
-    .page__messaging.calendar,
-    .messaging,
-    .calendar {
-      width: 100%;
-    }
-
-    .calendar__item,
-    .messaging__item {
-      width: 100%;
-
-      &-upper-header,
-      &-patch,
-      &-table {
-        width: 100%;
-      }
-
-      &-header {
-        width: 100%;
-        box-sizing: border-box;
-      }
-
-      &-table-footer {
-        width: 100%;
-        box-sizing: border-box;
-        height: 2rem;
-      }
-    }
-
-    .messaging_messages-container {
-      margin: 0;
-    }
-
-    .messaging__incoming-message-container {
-      width: 86%;
-      background-size: 100% 2.7rem;
-
-      .messaging__incoming-message {
-        width: 90%;
-      }
-    }
-
-    .messaging__form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .messaging__new-message-container {
-        width: 85%;
-
-        .messaging__new-message {
-          width: 88%;
-        }
-      }
-    }
-  }
-
-  .page__video {
-    width: 90%;
-    height: 40%;
-
-    &-player {
-      width: 100%;
-
-      .player__video {
-        width: 100%;
-        background: black;
-      }
-
-      .player {
-        &__controls {
-          width: 100%;
-          top: 87%;
-        }
-      }
-    }
-  }
-
-  .page__location {
-    width: 80%;
-    height: 50%;
-    margin: 0;
-
-    &-map {
-      height: 10rem;
-    }
-
-    .location {
-      height: 100%;
-
-      &__map {
-        height: 100%;
-      }
-
-      &__content {
-        display: none;
-      }
-    }
-  }
-
-  .page__buttons {
-    width: 80%;
-  }
-
-  .page__percents-pie {
-    width: 70%;
-
-    &-container {
-      justify-content: center;
-    }
-  }
-
-  .page {
-    &__arrows {
-
-      &-container {
-        width: 80%;
-      }
-    }
-  }
-
-  .page__sliders {
-    width: 100%;
-
-    &-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      margin: 1.7rem auto 2.6rem auto;
-      width: 100%;
-      flex-wrap: wrap;
-    }
-
-    &-slider-wrapper {
-      width: 80.65%;
-      margin-bottom: 2rem;
-    }
-
-    &-step-slider-wrapper {
-      width: 80.65%;
-    }
-  }
-}
 
 
