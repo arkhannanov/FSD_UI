@@ -14,7 +14,7 @@
     font-weight: lighter;
     color: #ffffff;
     font-size: 1.167rem;
-    margin: 0.833rem 0 0.625rem 1rem;
+    margin: 0.833rem auto;
     line-height: 1.083rem;
   }
 
@@ -23,17 +23,18 @@
     color: #ffffff;
     font-size: 0.458rem;
     letter-spacing: 0.023rem;
-    margin-left: 1rem;
     line-height: 0.5rem;
     text-transform: uppercase;
+    text-align: center;
   }
 
   &__text {
     font-weight: lighter;
     color: #ffffff;
     font-size: 0.458rem;
-    margin: 0.5rem 0 0 1rem;
+    margin: 0.5rem auto;
     padding-right: 0.317rem;
     letter-spacing: 0.023rem;
+    text-align: center;
   }
 }

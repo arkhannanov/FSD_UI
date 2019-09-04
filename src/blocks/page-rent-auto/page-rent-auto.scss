@@ -1,4 +1,9 @@
 .page-rent-auto {
+  max-width: 33rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
   &__content {
     display: flex;
     flex-direction: row;
@@ -120,7 +125,7 @@
 
     &-headline{
       align-self: center;
-      margin-bottom: .8rem;
+      margin-bottom: 0.8rem;
     }
 
     &-tick-box {
@@ -176,6 +181,7 @@
   }
 
   &__navigation {
-    margin: 1rem 0 5% 0;
+    margin: 1rem auto 5%;
+    align-self: center;
   }
 }

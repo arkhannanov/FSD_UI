@@ -41,5 +41,10 @@
   &__search {
     margin-top: 0.23rem;
     transform: scale(0.85);
+
+    @media screen and (max-width:400px){
+      display: none;
+    }
   }
 }
+

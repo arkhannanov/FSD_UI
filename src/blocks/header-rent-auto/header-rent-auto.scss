@@ -18,7 +18,8 @@
 
   &__menu-container {
     height: 1.667rem;
-    width: 15rem;
+    width:90%;
+    max-width: 15rem;
     margin: auto;
     display: flex;
     flex-direction:row;

@@ -26,8 +26,6 @@ class Stages {
   _createSections() {
     const numberOfSections = this.root.sections.dataset.numberOfPoints - 1;
 
-    console.log(this.root.sections.offsetWidth);
-
     for (let i = 0; i < numberOfSections; i += 1) {
       const section = document.createElement('div');
       section.classList.add('stages__section');

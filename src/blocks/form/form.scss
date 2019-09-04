@@ -67,7 +67,7 @@
     height: 1.167rem;
     display: flex;
     flex-direction:row;
-    
+
     &-input {
       width: 57%;
       height: 1.167rem;
@@ -133,5 +133,33 @@
 
   &__submit {
     margin: 0.9rem 0 0 7rem;
+  }
+}
+
+
+.form{
+  &__name,
+  &__email,
+  &__message{
+    width:100%;
+    &-input{
+      width:75%;
+    }
+    &-message-container{
+      background-size: 100% 80%;
+    }
+  }
+
+  &__message{
+    &-input{
+      width:100%;
+      box-sizing: border-box;
+    }
+  }
+
+  &__submit{
+    margin:0;
+    margin-top: 0.9rem;
+    align-self: flex-end;
   }
 }

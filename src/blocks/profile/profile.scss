@@ -1,7 +1,8 @@
 .profile {
-  height: 20.833rem;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+  padding-left: .5rem;
 
   &__headline {
     font-size: 0.583rem;
@@ -9,25 +10,24 @@
     background: white;
     box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
     line-height: 1.167rem;
-    margin: 0.417rem;
-    padding-left: 0.417rem;
+    margin: 0.417rem auto;
     text-transform: uppercase;
-    width: 95%;
+    width: 100%;
   }
 
   &__content-container {
     background: transparent;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   &__content-left-side-container {
-    width: 5.833rem;
-    margin: 0 0.417rem 0 0.417rem;
+    width: 31%;
   }
 
   &__avatar-container {
-    width: 5.833rem;
+    width: 100%;
     background-color: white;
     box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
     margin-bottom: 0.417rem;
@@ -36,36 +36,55 @@
   }
 
   &__avatar {
-    width: 5.833rem;
+    width: 100%;
     height: 5.833rem;
     background: url('./images/user-large.png') 0.271rem 0.271rem no-repeat;
+    background-position: center;
+
+    @media screen and (max-width: 400px) {
+      background: url('./images/user-small.png') center center no-repeat;
+    }
   }
 
   &__edit {
-    width: 5.417rem;
-    margin-left: 0.3rem;
+    width: 70%;
+    margin: 0 auto;
+    .button__item_size_profile-edit-button{
+      width:100%;
+    }
   }
 
   &__calendar-container {
-    width: 5.833rem;
-    height: 9rem;
+    width: 100%;
+    height: 18rem;
     background-color: white;
     box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
+
+    @media screen and (max-width: 888px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 760px) {
+      display: block;
+    }
+
+    @media screen and (max-width: 581px) {
+      display: none;
+    }
   }
 
   &__calendar {
-    transform: translateY(-5rem) translateX(-1.4rem) scale(0.48);
     background: transparent;
+    width:100%;
   }
 
   &__content-right-side-container {
-    flex-grow: 1;
     height: 16.042rem;
     box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
     background: white;
-    margin-right: 0.417rem;
     display: flex;
     flex-direction: column;
+    width:67%;
   }
 
   &__content-right-side-header {
@@ -99,10 +118,18 @@
     color: #8e8d9c;
     width: 4.167rem;
     text-transform: uppercase;
+
+    @media screen and (max-width: 350px) {
+      font-size: 0.5rem;
+    }
   }
 
   &__profession {
     font-size: 0.583rem;
+
+    @media screen and (max-width: 350px) {
+      font-size: 0.5rem;
+    }
   }
 
   &__phone-container {
@@ -117,11 +144,19 @@
     color: #8e8d9c;
     width: 4.167rem;
     text-transform: uppercase;
+
+    @media screen and (max-width: 350px) {
+      font-size: 0.5rem;
+    }
   }
 
   &__phone {
     font-size: 0.583rem;
     color: #53b6a8;
+
+    @media screen and (max-width: 350px) {
+      font-size: 0.5rem;
+    }
   }
 
   &__twitter-container {
@@ -136,11 +171,19 @@
     color: #8e8d9c;
     width: 4.167rem;
     text-transform: uppercase;
+
+    @media screen and (max-width: 350px) {
+      font-size: 0.5rem;
+    }
   }
 
   &__twitter {
     font-size: 0.583rem;
     color: #53b6a8;
+
+    @media screen and (max-width: 350px) {
+      font-size: 0.5rem;
+    }
   }
 
   &__facebook-container {
@@ -155,11 +198,19 @@
     color: #8e8d9c;
     width: 4.167rem;
     text-transform: uppercase;
+
+    @media screen and (max-width: 350px) {
+      font-size: 0.5rem;
+    }
   }
 
   &__facebook {
     font-size: 0.583rem;
     color: #53b6a8;
+
+    @media screen and (max-width: 350px) {
+      font-size: 0.5rem;
+    }
   }
 
   &__content-right-side-skills {
@@ -205,9 +256,7 @@
   }
 
   &__pie-chart-container {
-    width: 12.5rem;
-    height: 12.5rem;
-    transform: translateY(4rem) translateX(6.75rem) scale(1.7);
+    width: 100%;
     margin: 0 auto 0 auto;
   }
 }

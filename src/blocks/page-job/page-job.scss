@@ -1,6 +1,11 @@
 .page-job {
+  max-width: 27rem;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+
   &__header {
-    width: 12.5rem;
     font-size: 0.833rem;
     color: #e4583d;
     text-align: center;
@@ -16,10 +21,7 @@
 
   &__stages {
     margin: 1rem auto 2rem auto;
-    width: 100%;
-    @media screen and (max-width: 630px) {
-      transform: scale(0.7);
-    }
+    width: 90%;
   }
 
   &__avatar {
@@ -45,6 +47,7 @@
 
   &__navigation {
     margin-bottom: 5%;
+    align-self: center;
   }
 
   &__form {
@@ -112,7 +115,7 @@
             width: 6rem;
             height: 2.2rem;
             margin-bottom: 2rem;
-            font-size: .8rem;
+            font-size: 0.8rem;
           }
         }
       }
