@@ -78,7 +78,7 @@
       position: relative;
       margin-bottom: 4.1rem;
 
-      @media screen and (max-width: 716px) {
+      @media screen and (max-width: 720px) {
         margin-bottom: 0;
         position: static;
       }
@@ -89,7 +89,7 @@
       top: 0.89rem;
       left: -0.62rem;
 
-      @media screen and (max-width: 716px) {
+      @media screen and (max-width: 720px) {
         position: static;
       }
     }
@@ -99,7 +99,7 @@
       top: 0.89rem;
       left: 4rem;
 
-      @media screen and (max-width: 716px) {
+      @media screen and (max-width: 720px) {
         position: static;
       }
     }
@@ -109,7 +109,7 @@
       top: 0.89rem;
       left: 9.5rem;
 
-      @media screen and (max-width: 716px) {
+      @media screen and (max-width: 720px) {
         position: static;
       }
     }
@@ -119,7 +119,7 @@
       top: 0.89rem;
       left: 15rem;
 
-      @media screen and (max-width: 716px) {
+      @media screen and (max-width: 720px) {
         position: static;
       }
     }
@@ -129,7 +129,7 @@
       top: 0.89rem;
       left: 20.3rem;
 
-      @media screen and (max-width: 716px) {
+      @media screen and (max-width: 720px) {
         position: static;
       }
     }
@@ -364,9 +364,15 @@
   }
 
   &__location {
+    width: 85%;
+
     &-headline {
       margin: auto;
       margin-bottom: 1rem;
+    }
+
+    &-map {
+      width: 100%;
     }
   }
 
@@ -375,14 +381,12 @@
     flex-direction: row;
     justify-content: space-evenly;
     margin-bottom: 0.6rem;
-    margin-top: 2.4rem;
+    margin-top: 2.2rem;
   }
 
   &__calendar-wrapper {
     margin-right: 1.2rem;
-
   }
-
 
   &__messaging {
     margin-top: 1rem;
@@ -392,16 +396,10 @@
         width: 85%;
         margin: 0 auto;
 
-        .button {
+        .button__item_size_messaging {
           width: 100%;
-          display: flex;
-          justify-content: center;
-
-          .button__item_size_messaging {
-            width: 100%;
-            max-width: 11rem;
-          }
         }
+
       }
     }
   }
@@ -440,7 +438,6 @@
     }
   }
 
-
   &__navigation {
     margin-bottom: 10%;
 
@@ -462,6 +459,19 @@
   }
 }
 
+
+@media screen and (max-width: 505px) {
+  .location {
+    &__content {
+      justify-content: center;
+    }
+
+    &__content-address {
+      display: none;
+    }
+
+  }
+}
 
 @media screen and (max-width: 615px) {
   .page {
@@ -623,6 +633,10 @@
       }
     }
 
+    .messaging {
+      min-width: 10rem;
+    }
+
     .messaging_messages-container {
       margin: 0;
     }
@@ -645,7 +659,8 @@
         width: 85%;
 
         .messaging__new-message {
-          width: 88%;
+          width: calc(100% - 2rem);
+          margin: auto;
         }
       }
     }
@@ -672,22 +687,19 @@
   }
 
   .page__location {
-    width: 80%;
-    height: 50%;
-    margin: 0;
-
-    &-map {
-      height: 10rem;
-    }
 
     .location {
-      height: 100%;
 
-      &__map {
-        height: 100%;
+      &__content-title {
+        display: none;
       }
 
-      &__content {
+      &__content-address {
+        white-space: nowrap;
+        line-height: 1.3rem;
+      }
+
+      &__content-empty-element {
         display: none;
       }
     }
@@ -729,6 +741,25 @@
         width: 100%;
       }
     }
+  }
+
+  .news__title,
+  .news__date,
+  .news__text {
+    text-align: center;
+  }
+
+  .events__date-container {
+    margin: 0 auto;
+  }
+
+  .events__title,
+  .events__text {
+    text-align: center;
+  }
+
+  .events__button-container {
+    margin: 0.8rem auto;
   }
 }
 

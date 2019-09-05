@@ -1,7 +1,7 @@
 .messaging {
   width: 100%;
   position: relative;
-  min-width:12rem;
+  min-width: 12rem;
 
   &__header {
     background: linear-gradient(to bottom, #4eb7a8 3.375rem, #46ab9d 1.417rem);
@@ -37,7 +37,7 @@
   }
 
   &__icons {
-    width: 10rem;
+    width: 84%;
     height: 2.4rem;
     display: flex;
     flex-direction: row;
@@ -79,27 +79,36 @@
     overflow-wrap: break-word;
   }
 
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
   &__new-message-container {
     margin: 0 auto 0.25rem auto;
     width: 10.2rem;
     height: 4rem;
     background: #ffffff;
     border-radius: 0.208rem;
+    display: flex;
   }
 
   &__new-message {
     font-weight: bold;
-    margin: 0.2rem;
-    width: 8.4rem;
     height: 2.2rem;
     font-size: 0.542rem;
     letter-spacing: 0.026rem;
+    margin: auto;
+    width: calc(100% - 2rem);
     background: #e5e5e5;
     border-radius: 0.208rem;
-    padding: 0.7rem;
     outline: none;
+    padding: 0.7rem;
     border: 0;
     resize: none;
+    align-self: center;
+
 
     &:active,
     &:focus {
@@ -109,6 +118,6 @@
   }
 
   &__button-container {
-    margin-left: 0.3rem;
+    width: 100%;
   }
 }

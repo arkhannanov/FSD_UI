@@ -8,14 +8,17 @@
     display: flex;
     flex-direction: column;
     background: #e75735;
+    border-radius: 0 0.125rem 0.125rem 0;
   }
 
   &__title {
     font-weight: lighter;
     color: #ffffff;
     font-size: 1.167rem;
-    margin: 0.833rem auto;
+    margin: 0.833rem 0;
     line-height: 1.083rem;
+    padding-left: 1rem;
+    text-align: left;
   }
 
   &__date {
@@ -25,7 +28,8 @@
     letter-spacing: 0.023rem;
     line-height: 0.5rem;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
+    padding-left: 1rem;
   }
 
   &__text {
@@ -35,6 +39,7 @@
     margin: 0.5rem auto;
     padding-right: 0.317rem;
     letter-spacing: 0.023rem;
-    text-align: center;
+    text-align: left;
+    padding-left: 1rem;
   }
 }
