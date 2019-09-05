@@ -13,7 +13,7 @@
   &__main-content {
     display: flex;
 
-    @media screen and (max-width:760px){
+    @media screen and (max-width: 760px) {
       flex-direction: column;
     }
   }
@@ -27,52 +27,53 @@
     background: #53b6a8;
   }
 
-  &__profile{
-    width:65%;
+  &__profile {
+    width: 65%;
 
-    @media screen and (max-width:760px){
-      width:100%;
+    @media screen and (max-width: 760px) {
+      width: 98%;
     }
   }
 
-  &__right-side{
-    width:35%;
+  &__right-side {
+    width: 33%;
 
-    @media screen and (max-width:760px){
-      width:100%;
+    @media screen and (max-width: 760px) {
+      width: 97%;
       margin-top: 0.5rem;
     }
   }
 
-  .news{
-    &__text{
-      margin:0;
+  .news {
+    &__text {
+      margin: 0;
     }
   }
 
-  .events{
+  .events {
     &__date-container,
-    &__text-container{
+    &__text-container {
       margin: 0 auto;
     }
 
-    &__title-container{
-      margin:.5rem auto 0;
+    &__title-container {
+      margin: 0.5rem auto 0;
     }
 
-    &__button-container{
-      margin:.8rem auto;
+    &__button-container {
+      margin: 0.8rem auto;
     }
 
-    &__date-month{
+    &__date-month {
       margin-left: 0.1rem;
     }
   }
+
   .calendar {
     width: 100%;
   }
 
-  .calendar__item{
+  .calendar__item {
     width: 100%;
 
     &-upper-header,
@@ -93,10 +94,111 @@
     }
   }
 
-  .pie{
-    &__image{
-      width:6rem;
-      height:6rem;
+  .pie {
+    &__image {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+}
+
+
+@media screen and (max-width: 885px) and (min-width: 760px) {
+  .page-social-network {
+    .news {
+      &__title {
+        font-size: 0.9rem;
+        line-height: 0.8rem;
+      }
+
+      &__date {
+        line-height: 0.1rem;
+        font-size: 0.4rem;
+        margin-bottom: 0.5rem;
+      }
+
+      &__text {
+        font-size: 0.4rem;
+      }
+    }
+
+    .events {
+      &__date-number {
+        font-size: 1rem;
+        margin-top: 2rem;
+      }
+
+      &__date-month {
+        font-size: 1rem;
+        margin: 2rem 0 0 0.4rem;
+      }
+
+      &__text-container {
+        font-size: 0.4rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .page-social-network {
+    .news {
+      &__title {
+        font-size: 1.167rem;
+        margin: 2rem auto 1rem auto;
+      }
+
+      &__date {
+        font-size: 0.458rem;
+        margin: 0 auto 0.2rem auto;
+      }
+
+      &__text {
+        font-size: 0.458rem;
+        text-align: center;
+        margin-top: 0.2rem;
+      }
+    }
+
+    .events {
+      &__date-number {
+        font-size: 3.042rem;
+        margin-top: 0;
+      }
+
+      &__date-month {
+        font-size: 1.25rem;
+        margin: 1rem 0 0 0.6rem;
+      }
+
+      &__title-container {
+        font-size: 0.542rem;
+        margin: 0.5rem 0 0 1.15rem;
+      }
+
+      &__text-container {
+        font-size: 0.458rem;
+        margin: 0.5rem 0 0 1.1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .page-social-network {
+    .news {
+      &__text {
+        font-size: 0.4rem;
+      }
+    }
+  }
+
+  .navigation {
+    flex-direction: column;
+
+    .button__item {
+      width: 90%;
+      align-self: center;
     }
   }
 }

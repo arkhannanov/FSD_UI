@@ -48,6 +48,14 @@
   &__navigation {
     margin-bottom: 5%;
     align-self: center;
+
+    .navigation {
+      justify-content: center;
+
+      .button__item {
+        margin: auto;
+      }
+    }
   }
 
   &__form {
@@ -148,6 +156,10 @@
     }
   }
 }
+
+
+
+
 
   
 

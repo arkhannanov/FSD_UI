@@ -1,4 +1,6 @@
 .button {
+  display: flex;
+
   &__item {
     text-align: center;
     background: #ffffff;
@@ -9,6 +11,7 @@
     overflow: hidden;
     position: relative;
     text-transform: uppercase;
+    align-self: center;
 
     &:active,
     &:focus {

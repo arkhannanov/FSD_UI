@@ -112,14 +112,23 @@
   }
 
   &__slider {
-    transform: translateX(-0.2rem) scale(0.98);
+    width: 80%;
+    margin: auto;
+
+    @media screen and (max-width: 620px) {
+      width: 60%;
+    }
+
+    @media screen and (max-width: 400px) {
+      width: 80%;
+    }
   }
 
   &__add {
     width: 10.417rem;
     font-size: 0.583rem;
     line-height: 0.958rem;
-    margin: 1rem 0 1rem 0;
+    margin: 1rem auto 1rem auto;
     display: flex;
     flex-direction: column;
 
@@ -133,27 +142,15 @@
       z-index: 100;
     }
 
-    &-chair-container {
-      display: flex;
-      flex-direction: row;
-      margin-left: 0;
-      position: relative;
-      z-index: 0;
-    }
-
-    &-navigator-container {
-      display: flex;
-      flex-direction: row;
-      margin-left: 0;
-      position: relative;
-      z-index: 0;
-    }
-
+    &-chair-container,
+    &-navigator-container,
     &-refrigerator-container {
       display: flex;
       flex-direction: row;
       position: relative;
       z-index: 0;
+      margin: auto;
+      width: 7rem;
     }
   }
 
@@ -172,16 +169,26 @@
     color: red;
     font-size: 1rem;
     white-space: nowrap;
-    margin-left: 0.9rem;
+    margin: 0 0 0 0.9rem;
+
   }
 
   &__form-rent-auto-submit {
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
   }
 
   &__navigation {
     margin: 1rem auto 5%;
     align-self: center;
+
+    .navigation {
+      justify-content: center;
+
+      .button__item {
+        margin: auto;
+      }
+    }
   }
 }

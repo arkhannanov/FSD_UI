@@ -5,6 +5,7 @@
 
   &__header {
     background: linear-gradient(to bottom, #4eb7a8 3.375rem, #46ab9d 1.417rem);
+    border-radius: 0.125rem 0.125rem 0 0;
   }
 
   &__name {
@@ -34,6 +35,7 @@
     background: #f2f2f2;
     display: flex;
     flex-direction: column;
+    border-radius: 0 0 0.125rem 0.125rem;
   }
 
   &__icons {

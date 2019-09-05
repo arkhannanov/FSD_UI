@@ -1,5 +1,5 @@
 .form-job {
-  width: 11.458rem;
+  width: 13rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -13,7 +13,7 @@
     letter-spacing: 0.021rem;
     font-weight: lighter;
     color: red;
-    margin-left: 2.917rem;
+    margin: auto;
     margin-bottom: 0.5rem;
   }
 
@@ -214,6 +214,7 @@
     white-space: nowrap;
     line-height: 1rem;
     color: #888888;
+    margin-left: 3%;
   }
 
   &__submit-container {
