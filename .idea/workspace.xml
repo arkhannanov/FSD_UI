@@ -1,28 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8157867f-740d-4692-8a34-f0abfefb57ba" name="Default Changelist" comment="">
+    <list default="true" id="8157867f-740d-4692-8a34-f0abfefb57ba" name="Default Changelist" comment="Refactoring #16 Мелкие правки по макету.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/form/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form/form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/header-rent-auto/header-rent-auto.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header-rent-auto/header-rent-auto.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/header-social-network/header-social-network.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header-social-network/header-social-network.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/messaging/messaging.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/messaging/messaging.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/navigation/navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/navigation/navigation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/news/news.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/news/news.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/page-interior/page-interior.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-interior/page-interior.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/page-job/page-job.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-job/page-job.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/page-social-network/page-social-network.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-social-network/page-social-network.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/page/page.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page/page.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/page/page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page/page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/profile/images/user-large.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/images/user-large.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/profile/profile.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/profile.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/profile/profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/profile.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/right-side/right-side.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/right-side/right-side.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/stages/stages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/stages/stages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/social-network/social-network.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/social-network/social-network.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/profile/images/user-large.png" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -37,20 +18,16 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/page-job/page-job.scss">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="58" column="18" lean-forward="true" selection-start-line="58" selection-end-line="58" selection-end-column="18" />
-            </state>
+            <state relative-caret-position="-153" />
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.pug">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1309">
-              <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="35" />
-            </state>
+            <state relative-caret-position="-153" />
           </provider>
         </entry>
       </file>
@@ -73,10 +50,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/header-social-network/header-social-network.scss">
+        <entry file="file://$PROJECT_DIR$/src/blocks/page/page.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="2703">
+              <caret line="159" column="32" selection-start-line="159" selection-start-column="32" selection-end-line="159" selection-end-column="32" />
+              <folding>
+                <marker date="1567530715052" expanded="true" signature="10678:11362" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/src/blocks/page-social-network/page-social-network.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -93,24 +73,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/right-side/right-side.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
+            <state relative-caret-position="1479">
               <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/profile/profile.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="3604">
               <caret line="212" column="5" selection-start-line="212" selection-start-column="5" selection-end-line="212" selection-end-column="5" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/profile/images/user-large.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -251,7 +226,6 @@
         <option value="$PROJECT_DIR$/src/blocks/profile/profile.pug" />
         <option value="$PROJECT_DIR$/src/blocks/messaging/messaging.scss" />
         <option value="$PROJECT_DIR$/src/index.pug" />
-        <option value="$PROJECT_DIR$/src/blocks/page/page.scss" />
         <option value="$PROJECT_DIR$/src/blocks/page-interior/page-interior.scss" />
         <option value="$PROJECT_DIR$/src/blocks/page-job/page-job.scss" />
         <option value="$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.scss" />
@@ -259,6 +233,7 @@
         <option value="$PROJECT_DIR$/src/main.scss" />
         <option value="$PROJECT_DIR$/src/blocks/page-social-network/page-social-network.scss" />
         <option value="$PROJECT_DIR$/src/blocks/profile/profile.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/page/page.scss" />
       </list>
     </option>
   </component>
@@ -499,7 +474,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="blocks" type="462c0819:PsiDirectoryNode" />
               <item name="profile" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="__images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
@@ -751,21 +726,8 @@
       <workItem from="1567427098257" duration="14510000" />
       <workItem from="1567490611901" duration="11515000" />
       <workItem from="1567529873174" duration="1604000" />
-      <workItem from="1567580154937" duration="6948000" />
-    </task>
-    <task id="LOCAL-00082" summary="Refactoring #16 Текст текстом в Лого и мелкие правки.">
-      <created>1565027975827</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1565027975827</updated>
-    </task>
-    <task id="LOCAL-00083" summary="Refactoring #16 Использовал drop-down компонену на rent-auto страницы. Дописал необходимый js код.">
-      <created>1565033351724</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1565033351727</updated>
+      <workItem from="1567580154937" duration="10184000" />
+      <workItem from="1567663924268" duration="573000" />
     </task>
     <task id="LOCAL-00084" summary="Refactoring #14 Исправлен drop-down по БЭМ.">
       <created>1565074913508</created>
@@ -1096,11 +1058,25 @@
       <option name="project" value="LOCAL" />
       <updated>1567529962696</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="Refactoring #16 Респонсив Финал.">
+      <created>1567613510071</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1567613510072</updated>
+    </task>
+    <task id="LOCAL-00132" summary="Refactoring #16 Мелкие правки по макету.">
+      <created>1567616134097</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1567616134097</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="510830000" />
+    <option name="totallyTimeSpent" value="514639000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1113,9 +1089,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.86206895" visible="true" weight="0.15542677" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.86206895" visible="true" weight="0.1548999" />
       <window_info id="Structure" order="1" sideWeight="0.13793103" side_tool="true" weight="0.12802951" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -1127,10 +1102,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.48946258" weight="0.25785482" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5105374" side_tool="true" weight="0.30985916" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.48840886" visible="true" weight="0.21451788" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5110643" side_tool="true" weight="0.21451788" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49947312" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.48946258" visible="true" weight="0.21451788" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4889357" weight="0.21451788" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1180,8 +1155,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactoring #9 Добавил класс Location" />
-    <MESSAGE value="Refactoring #9 Исправлены наименования хендлеров." />
     <MESSAGE value="Refactoring #9 Удалены ненужные комментарии." />
     <MESSAGE value="Refactoring #9 Небольшой рефакторинг, удалены ненужные методы." />
     <MESSAGE value="Refactoring #16 Добавлена респонсивность." />
@@ -1205,7 +1178,9 @@
     <MESSAGE value="Промежуточный результат" />
     <MESSAGE value="Технический коммит" />
     <MESSAGE value="Refactoring #16 Респонсив" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring #16 Респонсив" />
+    <MESSAGE value="Refactoring #16 Респонсив Финал." />
+    <MESSAGE value="Refactoring #16 Мелкие правки по макету." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring #16 Мелкие правки по макету." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1223,20 +1198,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/blocks/pie/pie.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="97" selection-start-line="6" selection-start-column="97" selection-end-line="6" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/pie/pie.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/button/button.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1413,16 +1374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/page/page.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="163" column="20" selection-start-line="163" selection-start-column="20" selection-end-line="163" selection-end-column="20" />
-          <folding>
-            <marker date="1567530715052" expanded="true" signature="10678:11362" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/navigation/navigation.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1461,13 +1412,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/page/page.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/header-rent-auto/header-rent-auto.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2244">
@@ -1503,17 +1447,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/social-network/social-network.pug">
+    <entry file="file://$PROJECT_DIR$/src/blocks/page/page.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="37" />
+        <state relative-caret-position="119">
+          <caret line="228" column="24" selection-start-line="228" selection-start-column="24" selection-end-line="228" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.scss">
+    <entry file="file://$PROJECT_DIR$/src/blocks/page-job/page-job.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        <state relative-caret-position="986">
+          <caret line="58" column="18" selection-start-line="58" selection-end-line="58" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1524,35 +1468,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/page-job/page-job.scss">
+    <entry file="file://$PROJECT_DIR$/src/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="58" column="18" lean-forward="true" selection-start-line="58" selection-end-line="58" selection-end-column="18" />
+        <state relative-caret-position="374">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/page/page.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2703">
+          <caret line="159" column="32" selection-start-line="159" selection-start-column="32" selection-end-line="159" selection-end-column="32" />
+          <folding>
+            <marker date="1567530715052" expanded="true" signature="10678:11362" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/page-social-network/page-social-network.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/right-side/right-side.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
+        <state relative-caret-position="1479">
           <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/profile/profile.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3604">
+          <caret line="212" column="5" selection-start-line="212" selection-start-column="5" selection-end-line="212" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/profile/images/user-large.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/profile/profile.scss">
+    <entry file="file://$PROJECT_DIR$/src/pages/social-network/social-network.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="212" column="5" selection-start-line="212" selection-start-column="5" selection-end-line="212" selection-end-column="5" />
+        <state relative-caret-position="221">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="37" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153" />
       </provider>
     </entry>
   </component>
