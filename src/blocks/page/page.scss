@@ -440,6 +440,14 @@
   &__navigation {
     margin-bottom: 10%;
 
+    .navigation {
+      justify-content: center;
+
+      .button__item {
+        margin: auto;
+      }
+    }
+
     &-headline {
       margin: auto;
     }
@@ -447,12 +455,6 @@
     @media screen and (max-width: 450px) {
       &-headline {
         display: none;
-      }
-    }
-
-    @media screen and (max-width: 330px) {
-      .button__item_size_navigation {
-        width: 3rem;
       }
     }
   }
@@ -491,10 +493,6 @@
           &__email {
             &-input {
               width: 85%;
-            }
-
-            &-message-container {
-              width: 15%;
             }
           }
         }
@@ -585,7 +583,8 @@
     margin-bottom: 0.7rem;
     width: 100%;
 
-    .news, .events,
+    .news,
+    .events,
     .events__content-container,
     .news__content-container {
       width: 100%;

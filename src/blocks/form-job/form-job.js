@@ -29,19 +29,32 @@ class FormJob {
 
   _enableElements() {
     this.jobTitleInput = this.root.querySelector('.form-job__job-title-input');
-    this.jobTitleMessage = this.root.querySelector('.form-job__job-title-message');
+    this.jobTitleInputMessageFilling = this.root.querySelectorAll('.form-job__job-title-input-message-filling');
+    this.jobTitleInputMessageText = this.root.querySelector('.form-job__job-title-input-message-text');
     this.jobTitleErrorMessage = this.root.querySelector('.form-job__job-title-error-message');
     this.facebookInput = this.root.querySelector('.form-job__facebook-input');
-    this.facebookMessage = this.root.querySelector('.form-job__facebook-message');
+    this.facebookInputMessageFilling = this.root.querySelectorAll('.form-job__facebook-input-message-filling');
+    this.facebookInputMessageText = this.root.querySelector('.form-job__facebook-input-message-text');
     this.facebookErrorMessage = this.root.querySelector('.form-job__facebook-error-message');
     this.twitterInput = this.root.querySelector('.form-job__twitter-input');
-    this.twitterMessage = this.root.querySelector('.form-job__twitter-message');
+    this.twitterInputMessageFilling = this.root.querySelectorAll('.form-job__twitter-input-message-filling');
+    this.twitterInputMessageText = this.root.querySelector('.form-job__twitter-input-message-text');
     this.twitterErrorMessage = this.root.querySelector('.form-job__twitter-error-message');
     this.dribbbleInput = this.root.querySelector('.form-job__dribbble-input');
-    this.dribbbleMessage = this.root.querySelector('.form-job__dribbble-message');
+    this.dribbbleInputMessageFilling = this.root.querySelectorAll('.form-job__dribbble-input-message-filling');
+    this.dribbbleInputMessageText = this.root.querySelector('.form-job__dribbble-input-message-text');
     this.dribbbleErrorMessage = this.root.querySelector('.form-job__dribbble-error-message');
     this.submitButton = this.root.querySelector('.form-job__submit-button');
     this.completeForm = this.root.querySelector('.form-job__completeform');
+
+    this.jobTitleInputMessageFilling[0].style.cssText = 'display: none';
+    this.jobTitleInputMessageFilling[1].style.cssText = 'display: none';
+    this.facebookInputMessageFilling[0].style.cssText = 'display: none';
+    this.facebookInputMessageFilling[1].style.cssText = 'display: none';
+    this.twitterInputMessageFilling[0].style.cssText = 'display: none';
+    this.twitterInputMessageFilling[1].style.cssText = 'display: none';
+    this.dribbbleInputMessageFilling[0].style.cssText = 'display: none';
+    this.dribbbleInputMessageFilling[1].style.cssText = 'display: none';
   }
 
   _enableJobTitleInput() {
@@ -133,17 +146,22 @@ class FormJob {
   }
 
   _handleSubmitButtonClick() {
+
     if (errorJob === true) {
       this.jobTitleErrorMessage.innerHTML = message;
-      this.jobTitleMessage.innerHTML = 'error';
-      this.jobTitleMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-orange.png\');';
+
+      this.jobTitleInputMessageText.innerHTML = 'ERROR';
+      this.jobTitleInputMessageFilling[0].style.cssText = 'border-right: 0.2rem solid #e75735; display:block';
+      this.jobTitleInputMessageFilling[1].style.cssText = 'background: #e75735; display:block';
+
       setTimeout(() => {
         this.jobTitleErrorMessage.innerHTML = '';
       }, 2000);
     } else {
       this.jobTitleErrorMessage.innerHTML = '';
-      this.jobTitleMessage.innerHTML = 'thanks!';
-      this.jobTitleMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-color2.png\');';
+      this.jobTitleInputMessageText.innerHTML = 'THANKS';
+      this.jobTitleInputMessageFilling[0].style.cssText = 'border-right: 0.2rem solid #4eb7a8; display:block';
+      this.jobTitleInputMessageFilling[1].style.cssText = 'background: #4eb7a8; display:block';
       setTimeout(() => {
         this.jobTitleErrorMessage.innerHTML = '';
       }, 2000);
@@ -151,15 +169,17 @@ class FormJob {
 
     if (errorFacebook === true) {
       this.facebookErrorMessage.innerHTML = message;
-      this.facebookMessage.innerHTML = 'error';
-      this.facebookMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-orange.png\');';
+      this.facebookInputMessageText.innerHTML = 'ERROR';
+      this.facebookInputMessageFilling[0].style.cssText = 'border-right: 0.2rem solid #e75735; display:block';
+      this.facebookInputMessageFilling[1].style.cssText = 'background: #e75735; display:block';
       setTimeout(() => {
         this.facebookErrorMessage.innerHTML = '';
       }, 2000);
     } else {
       this.facebookErrorMessage.innerHTML = '';
-      this.facebookMessage.innerHTML = 'thanks!';
-      this.facebookMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-color2.png\');';
+      this.facebookInputMessageText.innerHTML = 'THANKS';
+      this.facebookInputMessageFilling[0].style.cssText = 'border-right: 0.2rem solid #4eb7a8; display:block';
+      this.facebookInputMessageFilling[1].style.cssText = 'background: #4eb7a8; display:block';
       setTimeout(() => {
         this.facebookErrorMessage.innerHTML = '';
       }, 2000);
@@ -167,15 +187,17 @@ class FormJob {
 
     if (errorTwitter === true) {
       this.twitterErrorMessage.innerHTML = message;
-      this.twitterMessage.innerHTML = 'error';
-      this.twitterMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-orange.png\');';
+      this.twitterInputMessageText.innerHTML = 'ERROR';
+      this.twitterInputMessageFilling[0].style.cssText = 'border-right: 0.2rem solid #e75735; display:block';
+      this.twitterInputMessageFilling[1].style.cssText = 'background: #e75735; display:block';
       setTimeout(() => {
         this.twitterErrorMessage.innerHTML = '';
       }, 2000);
     } else {
       this.twitterErrorMessage.innerHTML = '';
-      this.twitterMessage.innerHTML = 'thanks!';
-      this.twitterMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-color2.png\');';
+      this.twitterInputMessageText.innerHTML = 'THANKS';
+      this.twitterInputMessageFilling[0].style.cssText = 'border-right: 0.2rem solid #4eb7a8; display:block';
+      this.twitterInputMessageFilling[1].style.cssText = 'background: #4eb7a8; display:block';
       setTimeout(() => {
         this.twitterErrorMessage.innerHTML = '';
       }, 2000);
@@ -183,15 +205,17 @@ class FormJob {
 
     if (errorDribbble === true) {
       this.dribbbleErrorMessage.innerHTML = message;
-      this.dribbbleMessage.innerHTML = 'error';
-      this.dribbbleMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-orange.png\');';
+      this.dribbbleInputMessageText.innerHTML = 'ERROR';
+      this.dribbbleInputMessageFilling[0].style.cssText = 'border-right: 0.2rem solid #e75735; display:block';
+      this.dribbbleInputMessageFilling[1].style.cssText = 'background: #e75735; display:block';
       setTimeout(() => {
         this.dribbbleErrorMessage.innerHTML = '';
       }, 2000);
     } else {
       this.dribbbleErrorMessage.innerHTML = '';
-      this.dribbbleMessage.innerHTML = 'thanks!';
-      this.dribbbleMessage.style.cssText = 'background-image: url(\'./src/blocks/form-job/images/form-color2.png\');';
+      this.dribbbleInputMessageText.innerHTML = 'THANKS';
+      this.dribbbleInputMessageFilling[0].style.cssText = 'border-right: 0.2rem solid #4eb7a8; display:block';
+      this.dribbbleInputMessageFilling[1].style.cssText = 'background: #4eb7a8; display:block';
       setTimeout(() => {
         this.dribbbleErrorMessage.innerHTML = '';
       }, 2000);

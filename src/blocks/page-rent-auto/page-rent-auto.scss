@@ -16,7 +16,7 @@
     }
   }
 
-  &__submit{
+  &__submit {
     @media screen and (max-width: 620px) {
       .page-rent-auto__form-rent-auto-completeform {
         text-align: center;
@@ -26,34 +26,8 @@
     }
   }
 
-  &__form{
-    input{
-      width:8rem;
-      height:1.7rem;
-      padding-left:10px;
-    }
-  }
-
-  .form-rent-auto{
-    &__surname-error-message,
-    &__name-error-message,
-    &__patronymic-error-message,
-    &__phone-error-message,
-    &__email-error-message {
-      margin-top: 0.3rem;
-    }
-
-    &__surname-message,
-    &__name-message,
-    &__patronymic-message,
-    &__phone-message,
-    &__email-message {
-      height: 1.5rem;
-      background-size: 100% 90%;
-      background-position: center center;
-      margin-top: 0.1rem;
-      line-height: 1.5rem;
-    }
+  &__form {
+    margin: auto;
   }
 
   &__left-side {
@@ -70,7 +44,7 @@
   &__right-side {
     @media screen and (max-width: 620px) {
       width: 100%;
-      margin-bottom:4rem;
+      margin-bottom: 1rem;
 
       .calendar {
         width: 100%;
@@ -81,7 +55,7 @@
           &-upper-header,
           &-patch,
           &-table {
-            width:100%;
+            width: 100%;
           }
 
           &-header {
@@ -108,7 +82,7 @@
   }
 
   &__drop-down {
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
   }
 
   &__slider {
@@ -132,7 +106,7 @@
     display: flex;
     flex-direction: column;
 
-    &-headline{
+    &-headline {
       align-self: center;
       margin-bottom: 0.8rem;
     }
@@ -157,6 +131,10 @@
   &__calendar {
     transform: scale(0.95);
     margin-top: 2.8rem;
+
+    @media screen and (max-width: 620px) {
+      margin-top: 0;
+    }
   }
 
   &__submit {

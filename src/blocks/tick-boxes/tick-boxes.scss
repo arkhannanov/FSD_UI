@@ -9,12 +9,16 @@
     transition: 300ms ease-out;
 
     &:after {
-      content: '';
+      content: '  \2714';
       display: inline-block;
       width: 1.5em;
       height: 0.83rem;
-      background: #E5E5E5 url("./images/tick-box-2.png") 0.16rem 0.2rem no-repeat;
+      background: #E5E5E5;
       border-radius: 50%;
+      color: #757575;
+      white-space: pre;
+      font-weight: normal;
+      letter-spacing: -0.05rem;
     }
 
     &:checked::after {
@@ -26,10 +30,14 @@
   }
 
   &__input:checked:after {
-    content: '';
-    background: #4EB7A8 url("./images/tick-box-1.png") 0.16rem 0.2rem no-repeat;
+    content: '  \2714';
+    background: #4EB7A8;
     border-radius: 50%;
     width: 1.5em;
     height: 0.83rem;
+    color: white;
+    white-space: pre;
+    font-weight: normal;
+    letter-spacing: -0.05rem;
   }
 }

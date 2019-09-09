@@ -1,13 +1,15 @@
 .arrow {
+
   &__button {
     border: 0.083rem solid #4eb7a8;
     text-align: center;
-    width:  2.083rem;
+    width: 2.083rem;
     height: 2.083rem;
     border-radius: 50%;
     transition: 0.2s;
     overflow: hidden;
     position: relative;
+    background: white;
     padding: 0;
 
     &:active,
@@ -23,60 +25,105 @@
     &_direction {
       &_left {
         border: 0.083rem solid #4eb7a8;
-        background: white url('./images/arrow1.png') 0.542rem 0.458rem no-repeat;
 
         &:hover {
-          background: #4eb7a8 url('./images/arrow3.png') 0.583rem 0.5rem no-repeat;
+          background: #4eb7a8;
           border: 0.083rem solid transparent;
+
+          .arrow__image-left-top,
+          .arrow__image-left-bottom {
+            background: white;
+          }
         }
 
         &:active,
         &:focus {
-          background: #e5e5e5 url('./images/arrow3.png') 0.583rem 0.5rem no-repeat;
+          background: #e5e5e5;
+
+          .arrow__image-left-top,
+          .arrow__image-left-bottom {
+            background: white;
+          }
         }
       }
 
       &_right {
         border: 0.083rem solid #4eb7a8;
-        background: white url('./images/arrow2.png') 0.625rem 0.458rem no-repeat;
 
         &:hover {
-          background: #4eb7a8 url('./images/arrow4.png') 0.667rem 0.5rem no-repeat;
+          background: #4eb7a8;
           border: 0.083rem solid transparent;
+
+          .arrow__image-right-top,
+          .arrow__image-right-bottom {
+            background: white;
+          }
         }
 
         &t:active,
         &:focus {
-          background: #e5e5e5 url('./images/arrow4.png') 0.583rem 0.5rem no-repeat
+          background: #e5e5e5;
+
+          .arrow__image-right-top,
+          .arrow__image-right-bottom {
+            background: white;
+          }
         }
       }
     }
   }
-}
 
-.page__arrows-pressed{
-  .arrow{
-    &__button_direction_left{
-      background: #e5e5e5 url('./images/arrow3.png') 0.583rem 0.5rem no-repeat;
-      border: 0.083rem solid transparent;
-    }
-    &__button_direction_right{
-      background: #e5e5e5 url('./images/arrow4.png') 0.583rem 0.5rem no-repeat;
-      border: 0.083rem solid transparent;
-    }
-  }
-}
+  &__image {
+    width: 2.083rem;
+    height: 2.083rem;
+    position: relative;
 
+    &-left {
+      &-top {
+        transform: rotate(-45deg);
+        transform-origin: bottom right;
+        background: #4eb7a8;
+        height: 0.12rem;
+        left: 0.56rem;
+        position: absolute;
+        top: 0.45rem;
+        width: 0.67rem;
+      }
 
-.page__arrows-hovered{
-  .arrow{
-    &__button_direction_left{
-      background: #4eb7a8 url('./images/arrow3.png') 0.583rem 0.5rem no-repeat;
-      border: 0.083rem solid transparent;
+      &-bottom {
+        transform: rotate(45deg);
+        transform-origin: top right;
+        background: #4eb7a8;
+        height: 0.12rem;
+        left: 0.56rem;
+        position: absolute;
+        top: 1.35rem;
+        width: 0.67rem;
+      }
     }
-    &__button_direction_right{
-      background: #4eb7a8 url('./images/arrow4.png') 0.583rem 0.5rem no-repeat;
-      border: 0.083rem solid transparent;
+
+    &-right {
+      &-top {
+        transform: rotate(-135deg);
+        transform-origin: bottom right;
+        background: #4eb7a8;
+        height: 0.12rem;
+        left: 0.18rem;
+        position: absolute;
+        top: 0.36rem;
+        width: 0.67rem;
+      }
+
+      &-bottom {
+        transform: rotate(135deg);
+        transform-origin: top right;
+        background: #4eb7a8;
+        height: 0.12rem;
+        left: 0.18rem;
+        position: absolute;
+        top: 1.44rem;
+        width: 0.67rem;
+      }
     }
   }
 }

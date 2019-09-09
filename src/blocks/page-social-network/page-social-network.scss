@@ -29,6 +29,7 @@
 
   &__profile {
     width: 65%;
+    margin: 0 auto;
 
     @media screen and (max-width: 760px) {
       width: 98%;
@@ -39,7 +40,7 @@
     width: 33%;
 
     @media screen and (max-width: 760px) {
-      width: 97%;
+      width: 98%;
       margin-top: 0.5rem;
     }
   }
@@ -194,11 +195,22 @@
   }
 
   .navigation {
+    justify-content: center;
     flex-direction: column;
 
     .button__item {
-      width: 90%;
-      align-self: center;
+      margin: auto;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .page-social-network {
+    .news {
+      &__title {
+        padding-right: 0.3rem;
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 .form {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: space-between;
   white-space: nowrap;
 
@@ -17,7 +17,7 @@
     width: 14.458rem;
     height: 1.167rem;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     margin-top: 0.2rem;
 
     &-input {
@@ -33,6 +33,7 @@
       letter-spacing: 0.006rem;
       border-radius: 0.125rem;
     }
+
 
     &-message-container {
       height: 1.452rem;
@@ -50,6 +51,7 @@
       background-image: url('./images/form-orange.png');
       text-transform: uppercase;
     }
+
   }
 
   &__name-input-error-message {
@@ -66,7 +68,7 @@
     width: 14.458rem;
     height: 1.167rem;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
 
     &-input {
       width: 57%;
@@ -134,31 +136,34 @@
   &__submit {
     margin: 0.9rem 0 0 7rem;
   }
+
 }
 
 
-.form{
+.form {
   &__name,
   &__email,
-  &__message{
-    width:100%;
-    &-input{
-      width:75%;
+  &__message {
+    width: 100%;
+
+    &-input {
+      width: 75%;
     }
-    &-message-container{
+
+    &-message-container {
       background-size: 100% 80%;
     }
   }
 
-  &__message{
-    &-input{
-      width:100%;
+  &__message {
+    &-input {
+      width: 100%;
       box-sizing: border-box;
     }
   }
 
-  &__submit{
-    margin:0;
+  &__submit {
+    margin: 0;
     margin-top: 0.9rem;
     align-self: flex-end;
   }

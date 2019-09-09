@@ -1,5 +1,6 @@
 include ../toggle/toggle.pug
 include ../button/button.pug
+include ../tooltips/form-tolltip/form-tooltip
 
 mixin form-job(options = {toggleContent: ""})
     -let {toggleContent} = options;
@@ -7,19 +8,27 @@ mixin form-job(options = {toggleContent: ""})
         .form-job__completeform
         .form-job__job-title-container
             input.form-job__job-title-input(type="text", placeholder="Job title")
-            .form-job__job-title-message
+            +form-tooltip({
+              name: 'form-job__job-title-input-message'
+            })
         .form-job__job-title-error-message
         .form-job__facebook-container
             input.form-job__facebook-input(type="text", placeholder="Facebook link")
-            .form-job__facebook-message
+            +form-tooltip({
+              name: 'form-job__facebook-input-message'
+            })
         .form-job__facebook-error-message
         .form-job__twitter-container
             input.form-job__twitter-input(type="text", placeholder="Twitter link", )
-            .form-job__twitter-message
+            +form-tooltip({
+              name: 'form-job__twitter-input-message'
+            })
         .form-job__twitter-error-message
         .form-job__dribbble-container
             input.form-job__dribbble-input(type="text", placeholder="Dribbble link", )
-            .form-job__dribbble-message
+            +form-tooltip({
+              name: 'form-job__dribbble-input-message'
+            })
         .form-job__dribbble-error-message
         .form-job__toggle
             +toggle({

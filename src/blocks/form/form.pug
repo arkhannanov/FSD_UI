@@ -1,23 +1,28 @@
-include ../button/button.pug
+include ../button/button
+include ../tooltips/form-tolltip/form-tooltip
 
 mixin form
     .form.js-form
         .form__completeform
         .form__name
             input.form__name-input(type="text", placeholder="Your Name")
-            .form__name-message-container error
+            +form-tooltip({
+              name: 'form__name-input-message'
+            })
         .form__name-input-error-message
         .form__email
             input.form__email-input(type="text", placeholder="Your E-mail")
-            .form__email-message-container error
+            +form-tooltip({
+              name: 'form__email-input-message'
+            })
         .form__email-input-error-message
         .form__message
             textarea.form__message-input(type="text", placeholder="Your Message")
         .form__submit
             +button({
-                size: `submit`,
-                color: `green`,
-                name: `js-ripple`,
-                title: `submit`,
-                addClassName: 'form__submit-button'
+              size: `submit`,
+              color: `green-submit`,
+              name: `js-ripple`,
+              title: `submit`,
+              addClassName: 'form__submit-button'
             })

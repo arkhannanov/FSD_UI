@@ -215,12 +215,24 @@
   color: white;
   position: absolute;
   top: -1.55rem;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1rem;
+  width: 1.4rem;
   text-align: center;
   line-height: 1rem;
   font-size: 0.542rem;
-  background: url('../blocks/slider/images/slider-bubble-bg.png') 0.05rem 0 no-repeat;
+  border-radius: 0.2rem;
+  background: #e75735;
+
+  &::after {
+    content: '';
+    border: 0.15rem solid transparent;
+    border-top: 0.15rem solid #e75735;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0.55rem;
+    top: 1rem;
+  }
 }
 .theme-orange .back-bar .focused {
   color: white;

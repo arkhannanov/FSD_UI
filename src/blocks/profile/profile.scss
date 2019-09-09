@@ -4,6 +4,14 @@
   box-sizing: border-box;
   padding-left: .5rem;
 
+  @media screen and (max-width: 760px) {
+    width: 99%;
+  }
+
+  @media screen and (max-width: 581px) {
+    width: 100%;
+  }
+
   &__headline {
     font-size: 0.583rem;
     color: black;
@@ -70,13 +78,15 @@
     height: 18rem;
     background-color: white;
     box-shadow: -0.083rem 0.083rem 0.542rem 0 rgba(0, 0, 0, 0.64);
+    display: none;
 
     @media screen and (max-width: 888px) {
       display: none;
     }
 
     @media screen and (max-width: 760px) {
-      display: block;
+      //display: block;
+      display: none;
     }
 
     @media screen and (max-width: 581px) {
@@ -290,11 +300,15 @@
   &__content-right-side-skills {
     width: 95%;
     font-size: 0.583rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
   }
 
   &__skills-container {
     width: 4.167rem;
     margin: auto;
+    align-self: center;
   }
 
   &__horror-container {
@@ -330,8 +344,9 @@
   }
 
   &__pie-chart-container {
-    width: 100%;
+    width: 60%;
     margin: 0 auto 0 auto;
+    align-self: center;
   }
 }
 

@@ -2,192 +2,38 @@
   width: 10.417rem;
   font-size: 0.583rem;
 
-  &__surname-container {
-    width: 10.417rem;
-    display: flex;
-    flex-direction: row;
-  }
-
-  &__surname-input {
-    width: 6.25rem;
-    height: 1.167rem;
-    background: #e5e5e5;
-    border: none;
-    border-radius: 0.125rem;
-  }
-
-  &__surname-message {
-    width: 3.542rem;
-    height: 1.542rem;
-    font-weight: 400;
-    font-size: 0.417rem;
-    line-height: 1.2rem;
-    letter-spacing: 0.021rem;
-    text-align: center;
-    margin-left: 0.167rem;
-    vertical-align: middle;
-    background: transparent no-repeat;
-    color: #ffffff;
-    text-transform: uppercase;
-  }
-
-  &__surname-error-message {
-    font-size: 0.417rem;
-    color: #555564;
-    height: 0.125rem;
-    line-height: 0.1rem;
-    margin-bottom: 0.3rem;
-  }
-
-  &__name-container {
-    width: 10.417rem;
-    display: flex;
-    flex-direction: row;
-  }
-
-  &__name-input {
-    width: 6.25rem;
-    height: 1.083rem;
-    background: #e5e5e5;
-    border: none;
-    border-radius: 0.125rem;
-    margin-top: 0;
-  }
-
-  &__name-message {
-    width: 3.542rem;
-    height: 1.542rem;
-    font-weight: 400;
-    font-size: 0.417rem;
-    line-height: 1.2rem;
-    letter-spacing: 0.021rem;
-    text-align: center;
-    margin-left: 0.167rem;
-    vertical-align: middle;
-    background: transparent no-repeat;
-    color: #ffffff;
-    text-transform: uppercase;
-  }
-
-  &__name-error-message {
-    font-size: 0.417rem;
-    color: #555564;
-    height: 0.125rem;
-    line-height: 0.1rem;
-    margin-bottom: 0.3rem;
-  }
-
-  &__patronymic-container {
-    width: 10.417rem;
-    display: flex;
-    flex-direction: row;
-  }
-
-  &__patronymic-input {
-    width: 6.25rem;
-    height: 1.083rem;
-    background: #e5e5e5;
-    border: none;
-    border-radius: 0.125rem;
-    margin-top: 0;
-  }
-
-  &__patronymic-message {
-    width: 3.542rem;
-    height: 1.542rem;
-    font-weight: 400;
-    font-size: 0.417rem;
-    line-height: 1.2rem;
-    letter-spacing: 0.021rem;
-    text-align: center;
-    margin-left: 0.167rem;
-    vertical-align: middle;
-    background: transparent no-repeat;
-    color: #ffffff;
-    text-transform: uppercase;
-  }
-
-  &__patronymic-error-message {
-    font-size: 0.417rem;
-    color: #555564;
-    height: 0.125rem;
-    line-height: 0.1rem;
-    margin-bottom: 0.3rem;
-  }
-
-  &__phone-container {
-    width: 10.417rem;
-    display: flex;
-    flex-direction: row;
-  }
-
-  &__phone-input {
-    width: 6.25rem;
-    height: 1.083rem;
-    background: #e5e5e5;
-    border: none;
-    border-radius: 0.125rem;
-    margin-top: 0;
-  }
-
-  &__phone-message {
-    width: 3.542rem;
-    height: 1.542rem;
-    font-weight: 400;
-    font-size: 0.417rem;
-    line-height: 1.2rem;
-    letter-spacing: 0.021rem;
-    text-align: center;
-    margin-left: 0.167rem;
-    vertical-align: middle;
-    background: transparent no-repeat;
-    color: #ffffff;
-    text-transform: uppercase;
-  }
-
-  &__phone-error-message {
-    font-size: 0.417rem;
-    color: #555564;
-    height: 0.125rem;
-    line-height: 0.1rem;
-    margin-bottom: 0.3rem;
-  }
-
+  &__surname-container,
+  &__patronymic-container,
+  &__name-container,
+  &__phone-container,
   &__email-container {
-    width: 10.417rem;
+    width: 100%;
     display: flex;
     flex-direction: row;
   }
 
+  &__surname-input,
+  &__name-input,
+  &__patronymic-input,
+  &__phone-input,
   &__email-input {
-    width: 6.25rem;
-    height: 1.083rem;
+    width: 100%;
+    height: 1.4rem;
     background: #e5e5e5;
     border: none;
     border-radius: 0.125rem;
-    margin-top: 0;
+    margin: auto;
   }
 
-  &__email-message {
-    width: 3.542rem;
-    height: 1.542rem;
-    font-weight: 400;
-    font-size: 0.417rem;
-    line-height: 1.2rem;
-    letter-spacing: 0.021rem;
-    text-align: center;
-    margin-left: 0.167rem;
-    vertical-align: middle;
-    background: transparent no-repeat;
-    color: #ffffff;
-    text-transform: uppercase;
-  }
-
+  &__surname-error-message,
+  &__name-error-message,
+  &__patronymic-error-message,
+  &__phone-error-message,
   &__email-error-message {
     font-size: 0.417rem;
     color: #555564;
     height: 0.125rem;
     line-height: 0.1rem;
-    margin-bottom: 0.3rem;
+    margin: 0.3rem 0 0.3rem 0;
   }
 }

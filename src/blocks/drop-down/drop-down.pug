@@ -4,6 +4,9 @@ mixin drop-down(options = {contentContainer:[]})
         .drop-down__select
             .drop-down__select-title Choose an Option
             button.drop-down__select-button
+                .drop-down__select-button-image
+                    .drop-down__select-button-image-left
+                    .drop-down__select-button-image-right
         .drop-down__options
             -contentContainer.forEach(function(item) {
                 .drop-down__item= item.content

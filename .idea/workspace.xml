@@ -2,18 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8157867f-740d-4692-8a34-f0abfefb57ba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/blocks/tooltips/form-tolltip/form-tooltip.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/tooltips/form-tolltip/form-tooltip.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/arrow/arrow.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/arrow/arrow.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/arrow/arrow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/arrow/arrow.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/button/button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/button/button.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/button/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/button/button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/events/events.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/events/events.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/calendar/calendar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/calendar/calendar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/drop-down/drop-down.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/drop-down/drop-down.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/events/events.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/events/events.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/form-interior/form-interior.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/form-interior/form-interior.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/form-job/form-job.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form-job/form-job.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/form-job/form-job.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form-job/form-job.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/form-job/form-job.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form-job/form-job.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/form/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/form/form.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form/form.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/form/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/form/form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/header-rent-auto/header-rent-auto.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header-rent-auto/header-rent-auto.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/header-social-network/header-social-network.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header-social-network/header-social-network.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/location/location.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/location/location.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/messaging/messaging.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/messaging/messaging.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/messaging/messaging.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/messaging/messaging.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/navigation/navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/navigation/navigation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/news/news.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/news/news.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/page-interior/page-interior.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-interior/page-interior.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/page-job/page-job.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-job/page-job.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/page-social-network/page-social-network.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-social-network/page-social-network.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/page/page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page/page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/profile/profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/profile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/right-side/right-side.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/right-side/right-side.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/tick-boxes/tick-boxes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/tick-boxes/tick-boxes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vendors/jquery.range.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/vendors/jquery.range.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,19 +53,47 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/page/page.scss">
+        <entry file="file://$PROJECT_DIR$/src/blocks/tick-boxes/tick-boxes.pug">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/tick-boxes/images/tick-box-2.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/tick-boxes/tick-boxes.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6205">
-              <caret line="365" column="1" selection-start-line="365" selection-start-column="1" selection-end-line="376" selection-end-column="3" />
+            <state relative-caret-position="232">
+              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/page-job/page-job.scss">
+        <entry file="file://$PROJECT_DIR$/src/blocks/location/location.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="57" column="5" lean-forward="true" selection-start-line="51" selection-start-column="4" selection-end-line="57" selection-end-column="5" />
+            <state relative-caret-position="419">
+              <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="918">
+              <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -48,69 +101,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="115" column="16" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
+            <state relative-caret-position="510">
+              <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.pug">
+        <entry file="file://$PROJECT_DIR$/src/blocks/header-rent-auto/header-rent-auto.pug">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/page-interior/page-interior.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5440">
-              <caret line="335" column="1" selection-start-line="335" selection-start-column="1" selection-end-line="335" selection-end-column="1" />
-            </state>
-          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/header-rent-auto/header-rent-auto.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2142">
-              <caret line="132" column="1" selection-start-line="132" selection-start-column="1" selection-end-line="132" selection-end-column="1" />
+            <state relative-caret-position="221">
+              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/page-interior/page-interior.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/page-social-network/page-social-network.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="202" column="3" lean-forward="true" selection-start-line="195" selection-start-column="2" selection-end-line="202" selection-end-column="3" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/blocks/location/location.pug">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -124,11 +137,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dia</find>
-      <find>This field should at least contain 3 characters</find>
-      <find>_dayNames</find>
-      <find>js-calendar</find>
-      <find>js-drop-down</find>
       <find>js-form</find>
       <find>js-form-job</find>
       <find>js-form-rent-auto</find>
@@ -154,6 +162,11 @@
       <find>stages</find>
       <find>400</find>
       <find>absolute</find>
+      <find>back</find>
+      <find>__item</find>
+      <find>form</find>
+      <find>margin</find>
+      <find>label</find>
     </findStrings>
     <replaceStrings>
       <replace>box</replace>
@@ -199,24 +212,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/blocks/search/search.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/footer-rent-auto/footer-rent-auto.scss" />
-        <option value="$PROJECT_DIR$/src/pages/social-network/social-network.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/percents/percents.pug" />
-        <option value="$PROJECT_DIR$/src/blocks/percents/percents.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/pie/pie.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/pie/pie.pug" />
-        <option value="$PROJECT_DIR$/src/blocks/button/button.js" />
-        <option value="$PROJECT_DIR$/src/blocks/drop-down/drop-down.js" />
-        <option value="$PROJECT_DIR$/src/blocks/form-job/form-job.js" />
-        <option value="$PROJECT_DIR$/src/blocks/form/form.js" />
-        <option value="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.js" />
-        <option value="$PROJECT_DIR$/src/blocks/player/player.js" />
-        <option value="$PROJECT_DIR$/src/blocks/search/search.js" />
-        <option value="$PROJECT_DIR$/src/blocks/location/location.js" />
-        <option value="$PROJECT_DIR$/src/blocks/calendar/calendar.js" />
-        <option value="$PROJECT_DIR$/src/vendors/jquery.range.scss" />
-        <option value="$PROJECT_DIR$/src/globals.scss" />
         <option value="$PROJECT_DIR$/src/pages/job/job.scss" />
         <option value="$PROJECT_DIR$/src/vendors/jquery.range.js" />
         <option value="$PROJECT_DIR$/src/blocks/slider/slider.scss" />
@@ -225,30 +220,48 @@
         <option value="$PROJECT_DIR$/src/blocks/player/player.scss" />
         <option value="$PROJECT_DIR$/src/blocks/page/page.pug" />
         <option value="$PROJECT_DIR$/src/blocks/stages/stages.js" />
-        <option value="$PROJECT_DIR$/src/blocks/form/form.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/header-rent-auto/header-rent-auto.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/header-social-network/header-social-network.scss" />
         <option value="$PROJECT_DIR$/src/blocks/right-side/right-side.scss" />
         <option value="$PROJECT_DIR$/src/blocks/profile/profile.pug" />
         <option value="$PROJECT_DIR$/src/index.pug" />
         <option value="$PROJECT_DIR$/src/pages/social-network/social-network.pug" />
         <option value="$PROJECT_DIR$/src/main.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/news/news.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss" />
         <option value="$PROJECT_DIR$/src/blocks/location/location.pug" />
-        <option value="$PROJECT_DIR$/src/blocks/location/location.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/messaging/messaging.pug" />
-        <option value="$PROJECT_DIR$/src/blocks/messaging/messaging.scss" />
         <option value="$PROJECT_DIR$/src/blocks/events/events.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/profile/profile.scss" />
         <option value="$PROJECT_DIR$/src/blocks/navigation/navigation.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/page-social-network/page-social-network.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/button/button.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/calendar/calendar.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/profile/profile.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/header-social-network/header-social-network.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/right-side/right-side.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/news/news.scss" />
         <option value="$PROJECT_DIR$/src/blocks/page-job/page-job.scss" />
-        <option value="$PROJECT_DIR$/src/blocks/form-job/form-job.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/messaging/messaging.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/button/button.js" />
+        <option value="$PROJECT_DIR$/src/blocks/button/button.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/events/events.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/messaging/messaging.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/button/button.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/arrow/arrow.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/form/form.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/tooltips/form-tolltip/form-tooltip.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/tooltips/form-tolltip/form-tooltip.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/form/form.pug" />
         <option value="$PROJECT_DIR$/src/blocks/page/page.scss" />
         <option value="$PROJECT_DIR$/src/blocks/page-interior/page-interior.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/form-job/form-job.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/form-job/form-job.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/form/form.js" />
+        <option value="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/form-job/form-job.js" />
+        <option value="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.js" />
         <option value="$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/page-social-network/page-social-network.scss" />
+        <option value="$PROJECT_DIR$/src/vendors/jquery.range.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/drop-down/drop-down.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/arrow/arrow.pug" />
+        <option value="$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/tick-boxes/tick-boxes.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/location/location.scss" />
+        <option value="$PROJECT_DIR$/src/blocks/header-rent-auto/header-rent-auto.scss" />
         <option value="$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.scss" />
       </list>
     </option>
@@ -307,14 +320,15 @@
               <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="button" type="462c0819:PsiDirectoryNode" />
+              <item name="arrow" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
               <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="calendar" type="462c0819:PsiDirectoryNode" />
+              <item name="button" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
@@ -335,21 +349,7 @@
               <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="footer-rent-auto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
               <item name="form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="form-interior" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
@@ -370,28 +370,7 @@
               <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="header-interior" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
               <item name="header-rent-auto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="header-social-network" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="headline" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
@@ -412,20 +391,6 @@
               <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="navigation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="news" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -434,13 +399,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="blocks" type="462c0819:PsiDirectoryNode" />
               <item name="page-interior" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="page-job" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
@@ -461,70 +419,6 @@
               <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="percents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="pie" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="player" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="right-side" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="slider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="stages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
               <item name="tick-boxes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -532,60 +426,23 @@
               <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="toggle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tick-boxes" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
               <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
               <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="interior" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="job" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="rent-auto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FSD_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="social-network" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="tooltips" type="462c0819:PsiDirectoryNode" />
+              <item name="form-tolltip" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FSD_UI" type="b2602c69:ProjectViewProjectNode" />
@@ -743,14 +600,12 @@
       <workItem from="1567490611901" duration="11515000" />
       <workItem from="1567529873174" duration="1604000" />
       <workItem from="1567580154937" duration="10184000" />
-      <workItem from="1567663924268" duration="24566000" />
-    </task>
-    <task id="LOCAL-00086" summary="Refactoring #9 Добавлены префиксы js.">
-      <created>1565087933541</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1565087933541</updated>
+      <workItem from="1567663924268" duration="25872000" />
+      <workItem from="1567754659033" duration="19855000" />
+      <workItem from="1567838017456" duration="1202000" />
+      <workItem from="1567929175461" duration="2744000" />
+      <workItem from="1568016829765" duration="7722000" />
+      <workItem from="1568032602797" duration="11528000" />
     </task>
     <task id="LOCAL-00087" summary="Refactoring #9 Избавился от сокращения keyNav">
       <created>1565088205754</created>
@@ -1088,11 +943,18 @@
       <option name="project" value="LOCAL" />
       <updated>1567676676406</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="Refactoring #16 Респонсив. Правки.">
+      <created>1567702307714</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1567702307714</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="538632000" />
+    <option name="totallyTimeSpent" value="582989000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1215,236 +1077,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/blocks/player/player.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="84" column="1" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/percents/percents.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/slider/slider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/search/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="57" column="3" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vendors/jquery.range.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/stages/stages.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/stages/stages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="75" selection-start-line="26" selection-start-column="75" selection-end-line="26" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vendors/jquery.range.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="22" />
-          <folding>
-            <marker date="1567611300728" expanded="true" signature="97:204" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/header-social-network/header-social-network.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/social-network/social-network.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/drop-down/drop-down.pug">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/location/location.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/location/location.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/page/page.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="282" column="7" selection-start-line="282" selection-start-column="7" selection-end-line="282" selection-end-column="23" />
-          <folding>
-            <marker date="1567530715052" expanded="true" signature="10678:11362" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/location/location.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/messaging/messaging.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/right-side/right-side.pug">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/messaging/messaging.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/news/news.pug">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/events/events.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/news/news.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="11" lean-forward="true" selection-end-line="44" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/events/events.scss">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="24" column="30" lean-forward="true" selection-end-line="58" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/right-side/right-side.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/profile/images/user-small.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/profile/images/user-large.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/profile/profile.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-578">
-          <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/profile/profile.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/page-social-network/page-social-network.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/navigation/navigation.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/button/button.pug">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/button/button.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1455,93 +1094,290 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/form-job/form-job.scss">
+    <entry file="file://$PROJECT_DIR$/src/blocks/page-job/page-job.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        <state relative-caret-position="-51">
+          <caret line="70" column="6" selection-start-line="70" selection-start-column="8" selection-end-line="103" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/form-job/form-job.pug">
+    <entry file="file://$PROJECT_DIR$/src/blocks/percents/percents.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="149" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="6" selection-end-column="149" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/percents/percents.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/form/form.scss">
+    <entry file="file://$PROJECT_DIR$/src/blocks/drop-down/drop-down.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="156" column="5" lean-forward="true" selection-start-line="156" selection-start-column="5" selection-end-line="156" selection-end-column="5" />
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/events/events.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/arrow/images/arrow1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/events/events.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/messaging/messaging.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/arrow/images/arrow2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/messaging/messaging.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="112" column="19" selection-start-line="112" selection-start-column="19" selection-end-line="112" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/button/button.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/form-interior/form-interior.pug" />
+    <entry file="file://$PROJECT_DIR$/src/blocks/form-interior/form-interior.scss" />
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/page-interior/page-interior.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/page-interior/page-interior.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="254" column="22" selection-start-line="254" selection-start-column="22" selection-end-line="254" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/form-job/form-job.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="156" column="3" selection-start-line="156" selection-start-column="3" selection-end-line="156" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/form/form.pug">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/form/form.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/form/form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="117" column="68" lean-forward="true" selection-start-line="117" selection-start-column="68" selection-end-line="117" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="262" column="16" selection-start-line="262" selection-start-column="16" selection-end-line="262" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/form-job/form-job.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="163" column="95" selection-start-line="163" selection-start-column="95" selection-end-line="163" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/form-job/form-job.pug">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/page/page.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6205">
-          <caret line="365" column="1" selection-start-line="365" selection-start-column="1" selection-end-line="376" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/page-interior/page-interior.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/header-rent-auto/header-rent-auto.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2142">
-          <caret line="132" column="1" selection-start-line="132" selection-start-column="1" selection-end-line="132" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/page-social-network/page-social-network.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="202" column="3" lean-forward="true" selection-start-line="195" selection-start-column="2" selection-end-line="202" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/page-job/page-job.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="57" column="5" lean-forward="true" selection-start-line="51" selection-start-column="4" selection-end-line="57" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.pug">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/page-interior/page-interior.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5440">
-          <caret line="335" column="1" selection-start-line="335" selection-start-column="1" selection-end-line="335" selection-end-column="1" />
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="12" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        <state relative-caret-position="612">
+          <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/page/page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="448" column="5" lean-forward="true" selection-start-line="442" selection-start-column="4" selection-end-line="448" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/page-social-network/page-social-network.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vendors/jquery.range.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="47" column="72" selection-start-line="47" selection-start-column="67" selection-end-line="47" selection-end-column="72" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/tooltips/form-tolltip/form-tooltip.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/tooltips/form-tolltip/form-tooltip.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vendors/jquery.range.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="232" column="14" selection-start-line="232" selection-start-column="14" selection-end-line="232" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/button/button.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/drop-down/drop-down.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/arrow/arrow.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/arrow/arrow.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="117" column="8" lean-forward="true" selection-start-line="117" selection-start-column="8" selection-end-line="118" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/button/button.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="125" column="50" selection-start-line="125" selection-start-column="50" selection-end-line="125" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/drop-down/drop-down.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/tick-boxes/images/tick-box-1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/tick-boxes/tick-boxes.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/tick-boxes/images/tick-box-2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/tick-boxes/tick-boxes.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/location/location.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/location/location.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/form-rent-auto/form-rent-auto.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/header-rent-auto/header-rent-auto.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/header-rent-auto/header-rent-auto.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="58" />
+        <state relative-caret-position="918">
+          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/page-rent-auto/page-rent-auto.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="115" column="16" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
+        <state relative-caret-position="510">
+          <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,7 @@
+
+mixin form-tooltip(options = {name:""})
+    - let {name} = options;
+    .form-tooltip
+        div(class = `form-tooltip-left ${name}-filling`)
+        div(class = `form-tooltip-right ${name}-filling ${name}-text`) error
+

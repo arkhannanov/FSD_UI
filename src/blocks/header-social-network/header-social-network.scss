@@ -36,6 +36,10 @@
     border-radius: 50%;
     background: #e5e5e5;
     margin: 0.242rem 0 0 0.417rem;
+
+    @media screen and (max-width:400px){
+      margin-right: 1rem;
+    }
   }
 
   &__search {

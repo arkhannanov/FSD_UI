@@ -8,6 +8,7 @@ let errorEmail = true;
 const lengthMessage = 'This field should at least contain 4 characters.';
 const emailMessage = 'This seems to be an invalid email.';
 const formNotComplete = 'Form is not complete.';
+
 class Form {
   constructor(root) {
     this.root = root;
@@ -25,14 +26,17 @@ class Form {
 
   _enableElements() {
     this.formNameInput = this.root.querySelector('.form__name-input');
-    this.formNameMessageContainer = this.root.querySelector('.form__name-message-container');
+    this.formNameInputMessageFilling = this.root.querySelectorAll('.form__name-input-message-filling');
+    this.formNameInputMessageText = this.root.querySelector('.form__name-input-message-text');
     this.formNameInputErrorMessage = this.root.querySelector('.form__name-input-error-message');
     this.formEmailInput = this.root.querySelector('.form__email-input');
-    this.formEmailMessageContainer = this.root.querySelector('.form__email-message-container');
+    this.formEmailInputMessageFilling = this.root.querySelectorAll('.form__email-input-message-filling');
+    this.formEmailInputMessageText = this.root.querySelector('.form__email-input-message-text');
     this.formEmailInputErrorMessage = this.root.querySelector(' .form__email-input-error-message');
     this.formMessageInput = this.root.querySelector('.form__message-input');
     this.formSubmitButton = this.root.querySelector('.form__submit-button');
     this.formCompleteform = this.root.querySelector('.form__completeform');
+
   }
 
   _enableFormNameInput() {
@@ -100,15 +104,20 @@ class Form {
 
     if (errorName === true) {
       this.formNameInputErrorMessage.innerHTML = lengthMessage;
-      this.formNameMessageContainer.innerHTML = 'ERROR';
-      this.formNameMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-orange.png\');';
+      this.formNameInputMessageText.innerHTML = 'ERROR';
+      this.formNameInputMessageFilling[0].style.borderRightColor = '#e75735';
+      this.formNameInputMessageFilling[1].style.backgroundColor = '#e75735';
+
       setTimeout(() => {
         this.formNameInputErrorMessage.innerHTML = '';
       }, 2000);
     } else {
       this.formNameInputErrorMessage.innerHTML = '';
-      this.formNameMessageContainer.innerHTML = 'THANKS!';
-      this.formNameMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-color2.png\');';
+      this.formNameInputMessageText.innerHTML = 'THANKS!';
+
+      this.formNameInputMessageFilling[0].style.borderRightColor = '#4eb7a8';
+      this.formNameInputMessageFilling[1].style.backgroundColor = '#4eb7a8';
+
       setTimeout(() => {
         this.formNameInputErrorMessage.innerHTML = '';
       }, 2000);
@@ -116,15 +125,18 @@ class Form {
 
     if (errorEmail === true) {
       this.formEmailInputErrorMessage.innerHTML = emailMessage;
-      this.formEmailMessageContainer.innerHTML = 'ERROR';
-      this.formEmailMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-orange.png\');';
+      this.formEmailInputMessageText.innerHTML = 'ERROR';
+      this.formEmailInputMessageFilling[0].style.borderRightColor = '#e75735';
+      this.formEmailInputMessageFilling[1].style.backgroundColor = '#e75735';
+
       setTimeout(() => {
         this.formEmailInputErrorMessage.innerHTML = '';
       }, 2000);
     } else {
       this.formEmailInputErrorMessage.innerHTML = '';
-      this.formEmailMessageContainer.innerHTML = 'THANKS!';
-      this.formEmailMessageContainer.style.cssText = 'background-image: url(\'./src/blocks/form/images/form-color2.png\');';
+      this.formEmailInputMessageText.innerHTML = 'THANKS!';
+      this.formEmailInputMessageFilling[0].style.borderRightColor = '#4eb7a8';
+      this.formEmailInputMessageFilling[1].style.backgroundColor = '#4eb7a8';
       setTimeout(() => {
         this.formEmailInputErrorMessage.innerHTML = '';
       }, 2000);
