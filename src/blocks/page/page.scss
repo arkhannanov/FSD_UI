@@ -1,9 +1,18 @@
+.page__wrapper {
+  max-width: 29.167rem;
+  min-width: 13.333rem;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 3.5rem;
+}
+
 .page {
   align-items: center;
   display: flex;
   flex-direction: column;
   position: relative;
   width: 100%;
+
 
   &__buttons {
     width: 100%;
@@ -24,7 +33,7 @@
         .button__item_size_small,
         .button__item_size_big {
           margin: 0;
-          margin-bottom: .7rem;
+          margin-bottom: 0.7rem;
         }
       }
     }
@@ -191,35 +200,6 @@
       width: 56%;
     }
 
-    .form {
-      &__name,
-      &__email,
-      &__message {
-        width: 100%;
-
-        &-input {
-          width: 75%;
-        }
-
-        &-message-container {
-          background-size: 100% 80%;
-        }
-      }
-
-      &__message {
-        &-input {
-          width: 100%;
-          box-sizing: border-box;
-        }
-      }
-
-      &__submit {
-        margin: 0;
-        margin-top: .9rem;
-        align-self: flex-end;
-      }
-    }
-
     &-container {
       display: flex;
       flex-direction: row;
@@ -285,34 +265,12 @@
       &-true {
         margin-bottom: 0.6rem;
         width: 100%;
-
-        .search {
-          width: 100%;
-
-          &__input-container {
-            width: 100%;
-          }
-
-          &__input {
-            width: 100%;
-          }
-        }
       }
     }
 
     &-drop-down {
       margin: 0.803rem 0 4.5rem 0;
       width: 100%;
-
-      .drop-down {
-        width: 100%;
-
-        &__select {
-          &-title {
-            width: 100%;
-          }
-        }
-      }
     }
   }
 
@@ -330,18 +288,6 @@
 
   &__user {
     margin-bottom: 1.042rem;
-
-    .user {
-      &__content-container {
-        background-size: 100% 100%;
-        width: 65%;
-      }
-
-      &__links-container {
-        width: 70%;
-        margin: .408rem auto 1.583rem;
-      }
-    }
   }
 
   &__news-events {
@@ -390,17 +336,6 @@
 
   &__messaging {
     margin-top: 1rem;
-
-    .messaging {
-      &__button-container {
-        width: 85%;
-        margin: 0 auto;
-
-        .button__item_size_messaging {
-          width: 100%;
-        }
-      }
-    }
   }
 
   &__calendar {
@@ -424,29 +359,11 @@
       margin: 0.8rem 0 1.25rem 0;
       display: flex;
       justify-content: center;
-
-      .player {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-
-        &__video {
-          width: 100%;
-        }
-      }
     }
   }
 
   &__navigation {
     margin-bottom: 10%;
-
-    .navigation {
-      justify-content: center;
-
-      .button__item {
-        margin: auto;
-      }
-    }
 
     &-headline {
       margin: auto;
@@ -456,19 +373,6 @@
       &-headline {
         display: none;
       }
-    }
-  }
-}
-
-
-@media screen and (max-width: 505px) {
-  .location {
-    &__content {
-      justify-content: center;
-    }
-
-    &__content-address {
-      display: none;
     }
   }
 }
@@ -487,15 +391,6 @@
 
       &-form {
         width: 100%;
-
-        .form {
-          &__name,
-          &__email {
-            &-input {
-              width: 85%;
-            }
-          }
-        }
       }
 
       &-tick-boxes-toggle {
@@ -552,25 +447,6 @@
 
     &__user-profile {
       width: 100%;
-
-      .user {
-        &__content-container {
-          width: 75%;
-          background-size: 100% 100%;
-        }
-
-        &__links-container {
-          width: 100%;
-          justify-content: center;
-          margin: .408rem auto 1.583rem;
-        }
-
-        &__facebook,
-        &__twitter,
-        &__dribbble {
-          margin: 0 0.3rem;
-        }
-      }
     }
   }
 }
@@ -582,13 +458,6 @@
     margin: 0;
     margin-bottom: 0.7rem;
     width: 100%;
-
-    .news,
-    .events,
-    .events__content-container,
-    .news__content-container {
-      width: 100%;
-    }
   }
 
   .page__calendar-messaging {
@@ -600,67 +469,6 @@
   .page__messaging-wrapper {
     width: 90%;
     margin-right: 0;
-
-    .page__calendar,
-    .page__messaging.calendar,
-    .messaging,
-    .calendar {
-      width: 100%;
-    }
-
-    .calendar__item,
-    .messaging__item {
-      width: 100%;
-
-      &-upper-header,
-      &-patch,
-      &-table {
-        width: 100%;
-      }
-
-      &-header {
-        width: 100%;
-        box-sizing: border-box;
-      }
-
-      &-table-footer {
-        width: 100%;
-        box-sizing: border-box;
-        height: 2rem;
-      }
-    }
-
-    .messaging {
-      min-width: 10rem;
-    }
-
-    .messaging_messages-container {
-      margin: 0;
-    }
-
-    .messaging__incoming-message-container {
-      width: 86%;
-      background-size: 100% 2.7rem;
-
-      .messaging__incoming-message {
-        width: 90%;
-      }
-    }
-
-    .messaging__form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .messaging__new-message-container {
-        width: 85%;
-
-        .messaging__new-message {
-          width: calc(100% - 2rem);
-          margin: auto;
-        }
-      }
-    }
   }
 
   .page__video {
@@ -669,36 +477,6 @@
 
     &-player {
       width: 100%;
-
-      .player__video {
-        width: 100%;
-        background: black;
-      }
-
-      .player {
-        &__controls {
-          width: 100%;
-        }
-      }
-    }
-  }
-
-  .page__location {
-
-    .location {
-
-      &__content-title {
-        display: none;
-      }
-
-      &__content-address {
-        white-space: nowrap;
-        line-height: 1.3rem;
-      }
-
-      &__content-empty-element {
-        display: none;
-      }
     }
   }
 
@@ -733,30 +511,7 @@
     &-step-slider-wrapper,
     &-slider-wrapper {
       width: 80.65%;
-
-      .slider {
-        width: 100%;
-      }
     }
-  }
-
-  .news__title,
-  .news__date,
-  .news__text {
-    text-align: center;
-  }
-
-  .events__date-container {
-    margin: 0 auto;
-  }
-
-  .events__title,
-  .events__text {
-    text-align: center;
-  }
-
-  .events__button-container {
-    margin: 0.8rem auto;
   }
 }
 

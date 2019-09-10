@@ -1,5 +1,5 @@
 .drop-down {
-  width: 11.85rem;
+  width: 100%;
   position: relative;
   display: inline-block;
 
@@ -12,11 +12,11 @@
     font: 0.583rem $sansPro;
     color: #888888;
     letter-spacing: 0.02rem;
-    background:#e5e5e5;
-    width: 11.875rem;
+    background: #e5e5e5;
     height: 0.958rem;
     border-radius: 0.125rem 0 0 0.125rem;
     padding: 0.208rem 0 0 0.417rem;
+    width: 100%;
   }
 
   &__select-button {
@@ -58,8 +58,6 @@
       }
     }
   }
-
-
 
   &__options {
     display: none;

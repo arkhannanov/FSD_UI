@@ -4,6 +4,19 @@
   display: flex;
   flex-direction: row;
 
+  @media screen and (max-width: 720px) {
+    &,
+    &__content-container {
+      width: 100%;
+    }
+
+    &__title,
+    &__date,
+    &__text {
+      text-align: center;
+    }
+  }
+
   &__content-container {
     display: flex;
     flex-direction: column;

@@ -2,6 +2,33 @@
   width: 43%;
   height: 19.7rem;
 
+  @media screen and (max-width: 720px) {
+    & {
+      width: 100%;
+    }
+
+    &__item {
+      width: 100%;
+
+      &-upper-header,
+      &-patch,
+      &-table {
+        width: 100%;
+      }
+
+      &-header {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      &-table-footer {
+        width: 100%;
+        box-sizing: border-box;
+        height: 2rem;
+      }
+    }
+  }
+
   &__item {
     padding: 0;
     color: #1e2633;

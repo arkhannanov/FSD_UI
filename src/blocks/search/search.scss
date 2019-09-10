@@ -1,12 +1,14 @@
 .search {
+  width: 100%;
+
   &__input-container {
     display: flex;
     flex-direction: row;
-    width: 104%;
+    width: 100%;
   }
 
   &__input {
-    width: 10.1rem;
+    width: 100%;
     color: #888888;
     font-family: normal 0.583rem $sansPro;
     letter-spacing: 0.006rem;

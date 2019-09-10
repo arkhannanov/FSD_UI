@@ -211,25 +211,6 @@
 
     .calendar {
       width: 100%;
-
-      .calendar__item {
-        width: 100%;
-
-        &-upper-header, &-patch, &-table {
-          width: 100%;
-        }
-
-        &-header {
-          width: 100%;
-          box-sizing: border-box;
-        }
-
-        &-table-footer {
-          width: 100%;
-          box-sizing: border-box;
-          height: 2rem;
-        }
-      }
     }
 
     &-container {
@@ -247,15 +228,6 @@
       width: 90%;
       margin-left: 0;
       margin-bottom: 2.5rem;
-
-      .form {
-        &__name,
-        &__email {
-          &-input {
-            width: 100%;
-          }
-        }
-      }
     }
   }
 
@@ -265,50 +237,10 @@
 
     @media screen and (max-width: 400px) {
       justify-content: center;
-
-      .button__item {
-        margin: auto;
-      }
     }
   }
 
   &__footer-interior {
     width: 85%;
-
-    .location {
-      &-map {
-        width: 100%;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 530px) {
-  .location {
-    &__content {
-      justify-content: center;
-    }
-
-    &__content-address {
-      display: none;
-    }
-  }
-}
-
-@media screen and (max-width: 720px) {
-  .location {
-
-    &__content-title {
-      display: none;
-    }
-
-    &__content-address {
-      white-space: nowrap;
-      line-height: 1.3rem;
-    }
-
-    &__content-empty-element {
-      display: none;
-    }
   }
 }

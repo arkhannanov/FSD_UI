@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   white-space: nowrap;
+  width: 100%;
 
   &__completeform {
     border: 0;
@@ -10,11 +11,11 @@
     font: normal lighter 0.5rem $lato;
     letter-spacing: 0.021rem;
     color: red;
-    margin: 0 0 1rem 3.333rem;
+    margin: 0 auto 1rem auto;
   }
 
   &__name {
-    width: 14.458rem;
+    width: 100%;
     height: 1.167rem;
     display: flex;
     flex-direction: row;
@@ -22,7 +23,7 @@
 
     &-input {
       height: 1.167rem;
-      width: 57%;
+      width: 100%;
       margin: 0;
       padding: 0 0 0 0.4rem;
       border: 0;
@@ -33,25 +34,6 @@
       letter-spacing: 0.006rem;
       border-radius: 0.125rem;
     }
-
-
-    &-message-container {
-      height: 1.452rem;
-      width: 25%;
-      font-family: $lato;
-      font-weight: 400;
-      font-size: 0.417rem;
-      line-height: 1.2rem;
-      letter-spacing: 0.021rem;
-      text-align: center;
-      margin: 0 0 0 0.167rem;
-      vertical-align: middle;
-      background-repeat: no-repeat;
-      color: #ffffff;
-      background-image: url('./images/form-orange.png');
-      text-transform: uppercase;
-    }
-
   }
 
   &__name-input-error-message {
@@ -65,13 +47,13 @@
   }
 
   &__email {
-    width: 14.458rem;
+    width: 100%;
     height: 1.167rem;
     display: flex;
     flex-direction: row;
 
     &-input {
-      width: 57%;
+      width: 100%;
       height: 1.167rem;
       margin: 0;
       padding: 0 0 0 0.4rem;
@@ -82,23 +64,6 @@
       line-height: 1.75rem;
       letter-spacing: 0.006rem;
       border-radius: 0.125rem;
-    }
-
-    &-message-container {
-      width: 25%;
-      height: 1.542rem;
-      font-family: $lato;
-      font-weight: 400;
-      font-size: 0.417rem;
-      line-height: 1.2rem;
-      letter-spacing: 0.021rem;
-      text-align: center;
-      margin-left: 0.167rem;
-      vertical-align: middle;
-      background-repeat: no-repeat;
-      color: #ffffff;
-      background-image: url('./images/form-orange.png');
-      text-transform: uppercase;
     }
   }
 
@@ -113,12 +78,12 @@
   }
 
   &__message {
-    width: 15.2rem;
+    width: 100%;
     height: 3.1rem;
     position: relative;
 
     &-input {
-      width: 76.5%;
+      width: calc(100%-0.4rem);
       height: 3.3rem;
       padding: 0.33rem 0 0 0.4rem;
       border: 0;
@@ -134,37 +99,7 @@
   }
 
   &__submit {
-    margin: 0.9rem 0 0 7rem;
-  }
-
-}
-
-
-.form {
-  &__name,
-  &__email,
-  &__message {
-    width: 100%;
-
-    &-input {
-      width: 75%;
-    }
-
-    &-message-container {
-      background-size: 100% 80%;
-    }
-  }
-
-  &__message {
-    &-input {
-      width: 100%;
-      box-sizing: border-box;
-    }
-  }
-
-  &__submit {
-    margin: 0;
-    margin-top: 0.9rem;
+    margin: 0.9rem 0 0 0;
     align-self: flex-end;
   }
 }

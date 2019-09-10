@@ -48,14 +48,6 @@
   &__navigation {
     margin-bottom: 5%;
     align-self: center;
-
-    .navigation {
-      justify-content: center;
-
-      .button__item {
-        margin: auto;
-      }
-    }
   }
 
   &__form {
@@ -66,35 +58,6 @@
 
 @media screen and (max-width: 500px) {
   .page-job {
-
-    .form-job {
-
-      &__completeform {
-        margin: 0.6rem auto;
-      }
-
-      &__toggle {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .toggle {
-          margin-bottom: 0.2rem;
-        }
-      }
-
-      &__submit-container {
-        .button {
-          .form-job__submit-button {
-            margin: 0;
-            width: 6rem;
-            height: 2.2rem;
-            margin-bottom: 2rem;
-            font-size: 0.8rem;
-          }
-        }
-      }
-    }
 
     &__avatar {
       width: 9rem;

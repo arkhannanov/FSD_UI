@@ -3,6 +3,25 @@
   justify-content: center;
   flex-direction: row;
 
+  @media screen and (max-width: 615px) {
+    &__content-container {
+      background-size: 100% 100%;
+      width: 65%;
+    }
+
+    &__links-container {
+      width: 70%;
+      justify-content: center;
+      margin: .408rem auto 1.583rem;
+    }
+
+    &__facebook,
+    &__twitter,
+    &__dribbble {
+      margin: 0 0.3rem;
+    }
+  }
+
   &__avatar {
     width: 3.917rem;
     height: 3.917rem;

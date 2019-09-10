@@ -33,6 +33,11 @@
   &__left-side {
     margin-top: 2rem;
 
+    .page-rent-auto__drop-down {
+      width: 80%;
+      margin: 0 auto 2.3rem auto;
+    }
+
     @media screen and (max-width: 620px) {
       width: 100%;
       display: flex;
@@ -42,33 +47,14 @@
   }
 
   &__right-side {
+    width: 40%;
+
     @media screen and (max-width: 620px) {
       width: 100%;
       margin-bottom: 1rem;
 
       .calendar {
         width: 100%;
-
-        .calendar__item {
-          width: 100%;
-
-          &-upper-header,
-          &-patch,
-          &-table {
-            width: 100%;
-          }
-
-          &-header {
-            width: 100%;
-            box-sizing: border-box;
-          }
-
-          &-table-footer {
-            width: 100%;
-            box-sizing: border-box;
-            height: 2rem;
-          }
-        }
       }
     }
   }
@@ -160,13 +146,5 @@
   &__navigation {
     margin: 1rem auto 5%;
     align-self: center;
-
-    .navigation {
-      justify-content: center;
-
-      .button__item {
-        margin: auto;
-      }
-    }
   }
 }

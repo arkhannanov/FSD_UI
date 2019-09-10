@@ -1,12 +1,16 @@
 .player {
   border-radius: 0.208rem;
   width: 100%;
-  height: 14rem;
+  height: 100%;
   overflow: hidden;
   position: relative;
+  display: flex;
+  justify-content: center;
 
   &__video {
     border-radius: 0.208rem;
+    width: 100%;
+    background: black;
   }
 
   &__controls {
@@ -16,7 +20,7 @@
     justify-content: space-between;
     height: 2rem;
     position: absolute;
-    bottom:0;
+    bottom: 0;
   }
 
   &:fullscreen {
@@ -59,10 +63,6 @@
 
     &_unclicked:after {
       content: '►';
-    }
-
-    &_clicked:after {
-      content: '❚ ❚';
     }
   }
 
