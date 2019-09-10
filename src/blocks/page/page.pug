@@ -308,7 +308,9 @@ mixin page
             .page__video-headline
                 +headline ("video")
             .page__video-player
-                +player
+                +player({
+                  source: 'video/156181920.mp4'
+                })
         .page__navigation-container
             .page__navigation-headline
                 +headline ("________________")

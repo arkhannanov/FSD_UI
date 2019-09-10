@@ -1,6 +1,7 @@
-mixin player
+mixin player(options = {source: ""})
+    - let {source} = options;
     .player.js-player
-        video.player__video(src="video/156181920.mp4")
+        video.player__video(src=source)
         .player__controls
             button.player__button.player__button_unclicked
             .player__progress
